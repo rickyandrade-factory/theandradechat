@@ -1,0 +1,45 @@
+.login-container{
+  height: 100vh;
+  width: 100%;
+  background-image: url('../../assets/echofin_bg.png');
+}
+
+.sidenav-container{
+  background-color: '#eeeeee';
+}
+
+.app-logo{
+  display: block;
+  margin: auto;
+  width: 50%;
+  height: auto
+}
+.sidenav-container{
+  /* width: 40%; */
+  color: #fff;
+  height: 100vh;
+}
+.login-form{
+  background: rgb(96, 98, 99);
+  height: 100vh;
+}
+.img-cont{
+width: 40%;
+height: 10%;
+}
+
+#wrapper {
+  height:100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+#wrapper td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.mat-sidenav {
+  width: 36.5%;
+}
