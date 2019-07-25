@@ -223,8 +223,9 @@ input:focus{
     transition-delay: 1s;
     display: flex;
     background: #424242;
+    color: #fff;
     height: 100vh;
-    padding: 0 35px;
+    padding: 0 35px 20px 35px;
   }
   .footer-logo{
     display: flex;
@@ -263,36 +264,55 @@ a:-webkit-any-link {
   width: 100%;
 }
 @media screen and (max-width:767px){
-  mat-sidenav{
-    width: 100%!important;
-    min-width: 100%;
-    padding: 0 15px;
-  }
-  .final-img-mobile{
-    display: block!important;
-    padding: 20px 0px 0 0;
-  }
-  .final-img-mobile img{
-    max-width: 300px;
-    width: 100%;
-  }
-  h1 + p{
-    margin-bottom: 15px;
-  }
-  .signup-forget{
-    margin-top: 10px;
-  }
-  h1{
-    margin-top: 0;
-    font-size: 1.5em;
-  }
-  input{
-    font-size: 16px;
-  }
-  .input-field{
-    margin:10px 0;
-  }
-  .footer-reserved{
-    margin: 15px 0;
-  }
+  .login-container {
+    height: 100%;
+}
+.sidenav-container {
+  height: 100%!important;
+}
+mat-sidenav {
+  display: block;
+  height: 100%;
+}
+mat-sidenav{
+  width: 100%!important;
+  min-width: 100%;
+  padding: 0;
+}
+.login-form {
+  padding: 0 15px;
+}
+.sidebar-footer {
+  padding: 0 15px;
+}
+mat-sidenav{
+  padding-bottom: 0;
+}
+.final-img-mobile{
+  display: block!important;
+}
+.final-img-mobile img{
+  max-width: 280px;
+  width: 100%;
+  padding: 20px 10px;
+  margin: 0 auto;
+  display: inherit;
+}
+h1 + p {
+  margin-bottom: 0px;
+}
+.login-form > div{
+ display: inline-block;
+ margin: 0 auto;
+}
+.signup-forget{
+  margin-top: 40px;
+}
+h1{
+  font-size: 1.5em;
+}
+input{
+  font-size: 16px;
+}
+
 }

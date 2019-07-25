@@ -1,11 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 /* @import '@angular/material/prebuilt-themes/deeppurple-amber.css'; */
+
 body{
   margin: 0;
   padding: 0;
   font-family: Roboto,Helvetica Neue,sans-serif;
 }
-
+.sidenav-container {
+  background-color: transparent;
+}
 .mat-drawer-inner-container {
   display: -webkit-box;
   display: flex;
@@ -21,4 +24,10 @@ button.md-ink-ripple:hover{
   box-shadow: 0 4px 8px 0 rgba(0,0,0,.4);
   outline: none;
   border: none;
+}
+@media screen and (max-width:767px){
+  .mat-drawer-inner-container {
+    display: block;
+    overflow: inherit!important;
+  }
 }
