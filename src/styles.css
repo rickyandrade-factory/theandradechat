@@ -1,10 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 /* @import '@angular/material/prebuilt-themes/deeppurple-amber.css'; */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 body{
   margin: 0;
   padding: 0;
+  color:#bbb;
   font-family: Roboto,Helvetica Neue,sans-serif;
+  height:100vh;
+  overflow:hidden;
 }
 .sidenav-container {
   background-color: transparent;
@@ -12,7 +16,7 @@ body{
 .mat-drawer-inner-container {
   display: -webkit-box;
   display: flex;
-  align-items: center;
+  align-items: left;
   flex-direction: column;
 }
 button.md-ink-ripple:hover{
@@ -20,14 +24,34 @@ button.md-ink-ripple:hover{
   outline: none;
   border: none;
 }
+p.teamName {
+  color: #bbb;
+}
 .button.md-ink-ripple:active {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,.4);
   outline: none;
   border: none;
 }
-@media screen and (max-width:767px){
-  .mat-drawer-inner-container {
-    display: block;
-    overflow: inherit!important;
-  }
+.msg_date {
+  color: #929292;
+  font-family: Montserrat,sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
 }
+.mat-menu-content li  a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: #bbbbbb;
+  white-space: nowrap;
+}
+
+
+
+
+
+
+
+
