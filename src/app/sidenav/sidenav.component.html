@@ -1,0 +1,272 @@
+<div id="team-wrapper" header-company-sidebar="" class="ng-isolate-scope" style="position:static;">
+    <img class="sidebar-avatar" ng-src="//cdn.echofin.co/avatar/b7e64405.png?t=1551496349357" src="//cdn.echofin.co/avatar/b7e64405.png?t=1551496349357">
+    <p class="teamName" title="MarketMastersAcademy">
+        <strong class="ng-binding">MarketMastersAcademy</strong>
+        <br><span class="team-members ng-binding"></span>
+    </p>
+  </div>
+  <div class="topLeft hidden-xs sidebar-match">
+    <div class="dropdown">
+        <button class="dropdown-toggle" data-toggle="dropdown"  [matMenuTriggerFor]="appMenu">
+        <span class="glyphicon glyphicon-one-fine-dot sidebar-status-dot userStatus1" ng-class="'userStatus' + currentUser.status"></span>
+        <img class="sidebar-avatar" ng-src="//cdn.echofin.co/avatars/5d053022.png" src="//cdn.echofin.co/avatars/5d053022.png">
+        <strong class="sidebar-username ng-binding">mohit-kumar</strong>
+        <span class="fa fa-angle-down"></span>
+        </button>
+        <mat-menu #appMenu="matMenu" >
+          <li mat-menu-item><a href="#Traders Lounge"><span class="glyphicon glyphicon-one-fine-dot userStatus1" style="padding:0 !important"></span> Online</a></li>
+          <li mat-menu-item><a href="#Traders Lounge" ng-click="ChangeStatus(3);"><span class="glyphicon glyphicon-one-fine-dot userStatus3" style="padding:0 !important"></span> Away</a></li>
+          <li mat-menu-item><a href="#Traders Lounge" ng-click="ChangeStatus(4);"><span class="glyphicon glyphicon-one-fine-dot userStatus4" style="padding:0 !important"></span> Busy</a></li>
+          <li mat-menu-item role="separator" class="divider"></li>
+          <li mat-menu-item><a href="#Traders Lounge" ng-click="LoadSettings()">Preferences</a></li>
+          <li mat-menu-item ng-show="isAdmin" class="ng-hide"><a target="_blank" href="/dashboard/">Dashboard</a></li>
+          <!-- ngIf: isFootnoteVisible -->
+          <li ng-if="isFootnoteVisible" class="ng-scope">
+              <a href="https://cdn.echofin.co/downloads/Echofin_Desktop_Setup_Latest.exe">Download App
+              <span class="fa fa-windows fa-fw"></span>
+              </a>
+          </li>
+          <!-- end ngIf: isFootnoteVisible -->
+          <li mat-menu-item role="separator" class="divider"></li>
+          <!--<li ng-if="isTutorialVisible"><a href ng-click="ViewTutorial()">View Tutorial</a></li>-->
+          <!--<li ng-if="isTutorialVisible" role="separator" class="divider"></li>-->
+          <li mat-menu-item ng-click="logout()"><a href="#Traders Lounge">Logout</a></li>
+        </mat-menu>
+    </div>
+  </div>
+  <!-- list -->
+  <ul class="nav nav-sidebar">
+    <li class="rooms-sidebar-header">ROOMS</li>
+    <li ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }" ng-repeat="chatRoom in chatRooms | filter:{n_type:'!3'}" class="ng-scope">
+        <a ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
+          <span class="flex-child">
+          <i class="roomIcon fa fa-fw fa-hashtag" aria-hidden="true"></i>
+          <span class="room-name ng-binding">On Point FX Signals (USA)</span>
+          </span>
+          <span class="flex-child-icons">
+              <!-- ngIf: chatRoom.n_type==2 --><i style="font-size:12px;" class="roomIcon fa fa-fw ng-scope fa-lock" aria-hidden="true" ng-if="chatRoom.n_type==2" ng-class="{'fa-lock': !chatRoom.haveAccessToRoom, 'fa-unlock': chatRoom.haveAccessToRoom}"></i><!-- end ngIf: chatRoom.n_type==2 -->
+              <!-- ngIf: chatRoom.b_readOnly --><i style="font-size:12px;" class="roomIcon fa fa-eye ng-scope" aria-hidden="true" ng-if="chatRoom.b_readOnly"></i><!-- end ngIf: chatRoom.b_readOnly -->
+          </span>
+        </a>
+    </li>
+    <li ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }" ng-repeat="chatRoom in chatRooms | filter:{n_type:'!3'}" class="ng-scope selectedRoom">
+        <a ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent selectedRoom" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
+        <span class="flex-child">
+        <i class="roomIcon fa fa-fw fa-hashtag" aria-hidden="true"></i>
+        <span class="room-name ng-binding">Traders Lounge</span>
+        </span>
+        </a>
+    </li>
+    <li ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }" ng-repeat="chatRoom in chatRooms | filter:{n_type:'!3'}" class="ng-scope">
+        <a ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
+          <span class="flex-child">
+          <i class="roomIcon fa fa-fw fa-hashtag" aria-hidden="true"></i>
+          <span class="room-name ng-binding">On Point FX Signals (USA)</span>
+          </span>
+          <span class="flex-child-icons">
+              <!-- ngIf: chatRoom.n_type==2 --><i style="font-size:12px;" class="roomIcon fa fa-fw ng-scope fa-lock" aria-hidden="true" ng-if="chatRoom.n_type==2" ng-class="{'fa-lock': !chatRoom.haveAccessToRoom, 'fa-unlock': chatRoom.haveAccessToRoom}"></i><!-- end ngIf: chatRoom.n_type==2 -->
+              <!-- ngIf: chatRoom.b_readOnly --><i style="font-size:12px;" class="roomIcon fa fa-eye ng-scope" aria-hidden="true" ng-if="chatRoom.b_readOnly"></i><!-- end ngIf: chatRoom.b_readOnly -->
+          </span>
+        </a>
+    </li>
+    <li ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }" ng-repeat="chatRoom in chatRooms | filter:{n_type:'!3'}" class="ng-scope">
+        <a ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
+          <span class="flex-child">
+          <i class="roomIcon fa fa-fw fa-hashtag" aria-hidden="true"></i>
+          <span class="room-name ng-binding">The Golden Circle</span>
+          </span>
+          <span class="flex-child-icons">
+              <!-- ngIf: chatRoom.n_type==2 --><i style="font-size:12px;" class="roomIcon fa fa-fw ng-scope fa-lock" aria-hidden="true" ng-if="chatRoom.n_type==2" ng-class="{'fa-lock': !chatRoom.haveAccessToRoom, 'fa-unlock': chatRoom.haveAccessToRoom}"></i><!-- end ngIf: chatRoom.n_type==2 -->
+          </span>
+        </a>
+    </li>
+    <li ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }" ng-repeat="chatRoom in chatRooms | filter:{n_type:'!3'}" class="ng-scope">
+        <a ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
+          <span class="flex-child">
+          <i class="roomIcon fa fa-fw fa-hashtag" aria-hidden="true"></i>
+          <span class="room-name ng-binding">On Point FX Signals (USA)</span>
+          </span>
+          <span class="flex-child-icons">
+              <!-- ngIf: chatRoom.n_type==2 --><i style="font-size:12px;" class="roomIcon fa fa-fw ng-scope fa-lock" aria-hidden="true" ng-if="chatRoom.n_type==2" ng-class="{'fa-lock': !chatRoom.haveAccessToRoom, 'fa-unlock': chatRoom.haveAccessToRoom}"></i><!-- end ngIf: chatRoom.n_type==2 -->
+              <!-- ngIf: chatRoom.b_readOnly --><i style="font-size:12px;" class="roomIcon fa fa-eye ng-scope" aria-hidden="true" ng-if="chatRoom.b_readOnly"></i><!-- end ngIf: chatRoom.b_readOnly -->
+          </span>
+        </a>
+    </li>
+    <li ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }" ng-repeat="chatRoom in chatRooms | filter:{n_type:'!3'}" class="ng-scope">
+        <a ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
+          <span class="flex-child">
+          <i class="roomIcon fa fa-fw fa-hashtag" aria-hidden="true"></i>
+          <span class="room-name ng-binding">The Golden Circle</span>
+          </span>
+          <span class="flex-child-icons">
+              <!-- ngIf: chatRoom.n_type==2 --><i style="font-size:12px;" class="roomIcon fa fa-fw ng-scope fa-lock" aria-hidden="true" ng-if="chatRoom.n_type==2" ng-class="{'fa-lock': !chatRoom.haveAccessToRoom, 'fa-unlock': chatRoom.haveAccessToRoom}"></i><!-- end ngIf: chatRoom.n_type==2 -->
+          </span>
+        </a>
+    </li>
+    <li ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }" ng-repeat="chatRoom in chatRooms | filter:{n_type:'!3'}" class="ng-scope">
+        <a ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
+          <span class="flex-child">
+          <i class="roomIcon fa fa-fw fa-hashtag" aria-hidden="true"></i>
+          <span class="room-name ng-binding">On Point FX Signals (USA)</span>
+          </span>
+          <span class="flex-child-icons">
+              <!-- ngIf: chatRoom.n_type==2 --><i style="font-size:12px;" class="roomIcon fa fa-fw ng-scope fa-lock" aria-hidden="true" ng-if="chatRoom.n_type==2" ng-class="{'fa-lock': !chatRoom.haveAccessToRoom, 'fa-unlock': chatRoom.haveAccessToRoom}"></i><!-- end ngIf: chatRoom.n_type==2 -->
+              <!-- ngIf: chatRoom.b_readOnly --><i style="font-size:12px;" class="roomIcon fa fa-eye ng-scope" aria-hidden="true" ng-if="chatRoom.b_readOnly"></i><!-- end ngIf: chatRoom.b_readOnly -->
+          </span>
+        </a>
+    </li>
+    <li ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }" ng-repeat="chatRoom in chatRooms | filter:{n_type:'!3'}" class="ng-scope">
+        <a ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
+          <span class="flex-child">
+          <i class="roomIcon fa fa-fw fa-hashtag" aria-hidden="true"></i>
+          <span class="room-name ng-binding">The Golden Circle</span>
+          </span>
+          <span class="flex-child-icons">
+              <!-- ngIf: chatRoom.n_type==2 --><i style="font-size:12px;" class="roomIcon fa fa-fw ng-scope fa-lock" aria-hidden="true" ng-if="chatRoom.n_type==2" ng-class="{'fa-lock': !chatRoom.haveAccessToRoom, 'fa-unlock': chatRoom.haveAccessToRoom}"></i><!-- end ngIf: chatRoom.n_type==2 -->
+          </span>
+        </a>
+    </li>
+    <li ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }" ng-repeat="chatRoom in chatRooms | filter:{n_type:'!3'}" class="ng-scope">
+        <a ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
+          <span class="flex-child">
+          <i class="roomIcon fa fa-fw fa-hashtag" aria-hidden="true"></i>
+          <span class="room-name ng-binding">On Point FX Signals (USA)</span>
+          </span>
+          <span class="flex-child-icons">
+              <!-- ngIf: chatRoom.n_type==2 --><i style="font-size:12px;" class="roomIcon fa fa-fw ng-scope fa-lock" aria-hidden="true" ng-if="chatRoom.n_type==2" ng-class="{'fa-lock': !chatRoom.haveAccessToRoom, 'fa-unlock': chatRoom.haveAccessToRoom}"></i><!-- end ngIf: chatRoom.n_type==2 -->
+              <!-- ngIf: chatRoom.b_readOnly --><i style="font-size:12px;" class="roomIcon fa fa-eye ng-scope" aria-hidden="true" ng-if="chatRoom.b_readOnly"></i><!-- end ngIf: chatRoom.b_readOnly -->
+          </span>
+        </a>
+    </li>
+    <li ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }" ng-repeat="chatRoom in chatRooms | filter:{n_type:'!3'}" class="ng-scope">
+        <a ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
+          <span class="flex-child">
+          <i class="roomIcon fa fa-fw fa-hashtag" aria-hidden="true"></i>
+          <span class="room-name ng-binding">The Golden Circle</span>
+          </span>
+          <span class="flex-child-icons">
+              <!-- ngIf: chatRoom.n_type==2 --><i style="font-size:12px;" class="roomIcon fa fa-fw ng-scope fa-lock" aria-hidden="true" ng-if="chatRoom.n_type==2" ng-class="{'fa-lock': !chatRoom.haveAccessToRoom, 'fa-unlock': chatRoom.haveAccessToRoom}"></i><!-- end ngIf: chatRoom.n_type==2 -->
+          </span>
+        </a>
+    </li>
+    <li ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }" ng-repeat="chatRoom in chatRooms | filter:{n_type:'!3'}" class="ng-scope">
+        <a ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
+          <span class="flex-child">
+          <i class="roomIcon fa fa-fw fa-hashtag" aria-hidden="true"></i>
+          <span class="room-name ng-binding">On Point FX Signals (USA)</span>
+          </span>
+          <span class="flex-child-icons">
+              <!-- ngIf: chatRoom.n_type==2 --><i style="font-size:12px;" class="roomIcon fa fa-fw ng-scope fa-lock" aria-hidden="true" ng-if="chatRoom.n_type==2" ng-class="{'fa-lock': !chatRoom.haveAccessToRoom, 'fa-unlock': chatRoom.haveAccessToRoom}"></i><!-- end ngIf: chatRoom.n_type==2 -->
+              <!-- ngIf: chatRoom.b_readOnly --><i style="font-size:12px;" class="roomIcon fa fa-eye ng-scope" aria-hidden="true" ng-if="chatRoom.b_readOnly"></i><!-- end ngIf: chatRoom.b_readOnly -->
+          </span>
+        </a>
+    </li>
+    <li ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }" ng-repeat="chatRoom in chatRooms | filter:{n_type:'!3'}" class="ng-scope">
+        <a ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
+          <span class="flex-child">
+          <i class="roomIcon fa fa-fw fa-hashtag" aria-hidden="true"></i>
+          <span class="room-name ng-binding">The Golden Circle</span>
+          </span>
+          <span class="flex-child-icons">
+              <!-- ngIf: chatRoom.n_type==2 --><i style="font-size:12px;" class="roomIcon fa fa-fw ng-scope fa-lock" aria-hidden="true" ng-if="chatRoom.n_type==2" ng-class="{'fa-lock': !chatRoom.haveAccessToRoom, 'fa-unlock': chatRoom.haveAccessToRoom}"></i><!-- end ngIf: chatRoom.n_type==2 -->
+          </span>
+        </a>
+    </li>
+    <li ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }" ng-repeat="chatRoom in chatRooms | filter:{n_type:'!3'}" class="ng-scope">
+        <a ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
+          <span class="flex-child">
+          <i class="roomIcon fa fa-fw fa-hashtag" aria-hidden="true"></i>
+          <span class="room-name ng-binding">On Point FX Signals (USA)</span>
+          </span>
+          <span class="flex-child-icons">
+              <!-- ngIf: chatRoom.n_type==2 --><i style="font-size:12px;" class="roomIcon fa fa-fw ng-scope fa-lock" aria-hidden="true" ng-if="chatRoom.n_type==2" ng-class="{'fa-lock': !chatRoom.haveAccessToRoom, 'fa-unlock': chatRoom.haveAccessToRoom}"></i><!-- end ngIf: chatRoom.n_type==2 -->
+              <!-- ngIf: chatRoom.b_readOnly --><i style="font-size:12px;" class="roomIcon fa fa-eye ng-scope" aria-hidden="true" ng-if="chatRoom.b_readOnly"></i><!-- end ngIf: chatRoom.b_readOnly -->
+          </span>
+        </a>
+    </li>
+    <li ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }" ng-repeat="chatRoom in chatRooms | filter:{n_type:'!3'}" class="ng-scope">
+        <a ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
+          <span class="flex-child">
+          <i class="roomIcon fa fa-fw fa-hashtag" aria-hidden="true"></i>
+          <span class="room-name ng-binding">The Golden Circle</span>
+          </span>
+          <span class="flex-child-icons">
+              <!-- ngIf: chatRoom.n_type==2 --><i style="font-size:12px;" class="roomIcon fa fa-fw ng-scope fa-lock" aria-hidden="true" ng-if="chatRoom.n_type==2" ng-class="{'fa-lock': !chatRoom.haveAccessToRoom, 'fa-unlock': chatRoom.haveAccessToRoom}"></i><!-- end ngIf: chatRoom.n_type==2 -->
+          </span>
+        </a>
+    </li>
+    <li ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }" ng-repeat="chatRoom in chatRooms | filter:{n_type:'!3'}" class="ng-scope">
+        <a ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
+          <span class="flex-child">
+          <i class="roomIcon fa fa-fw fa-hashtag" aria-hidden="true"></i>
+          <span class="room-name ng-binding">On Point FX Signals (USA)</span>
+          </span>
+          <span class="flex-child-icons">
+              <i style="font-size:12px;" class="roomIcon fa fa-fw ng-scope fa-lock" aria-hidden="true" ng-if="chatRoom.n_type==2" ng-class="{'fa-lock': !chatRoom.haveAccessToRoom, 'fa-unlock': chatRoom.haveAccessToRoom}"></i><!-- end ngIf: chatRoom.n_type==2 -->
+              <i style="font-size:12px;" class="roomIcon fa fa-eye ng-scope" aria-hidden="true" ng-if="chatRoom.b_readOnly"></i><!-- end ngIf: chatRoom.b_readOnly -->
+          </span>
+        </a>
+    </li>
+    <li class="messages-sidebar-header ng-scope" ng-if="(chatRooms|filter:{n_type:3}).length">SERVICES</li>
+    <li ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }" ng-repeat="chatRoom in chatRooms | filter:{n_type:3}" class="ng-scope">
+        <a ng-click="changeRoom(chatRoom);" style="cursor:pointer" class="service-item flex-parent" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
+        <span class="flex-child">
+        <i class="roomIcon fa fa-fw fa-rss" aria-hidden="true"></i>
+        <span ng-style="{'max-width': (chatRoom.fkn_chatPlan)?(chatRoom.n_count)?'113px':'120px':(chatRoom.n_count)?'130px':'157px'}" class="room-name ng-binding" style="max-width: 157px;">Market Mastermind</span>
+        </span>
+        <span class="flex-child-icons">
+        </span>
+        <span class="flex-child-actions">
+        </span>
+        </a>
+    </li>
+    <li ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }" ng-repeat="chatRoom in chatRooms | filter:{n_type:3}" class="ng-scope">
+        <a ng-click="changeRoom(chatRoom);" style="cursor:pointer" class="service-item flex-parent" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
+          <span class="flex-child">
+          <i class="roomIcon fa fa-fw fa-video-camera" aria-hidden="true"></i>
+          <span ng-style="{'max-width': (chatRoom.fkn_chatPlan)?(chatRoom.n_count)?'113px':'120px':(chatRoom.n_count)?'130px':'157px'}" class="room-name ng-binding" style="max-width: 157px;">7 Day Intense Forex Training</span>
+          </span>
+          <span class="flex-child-icons">
+              <!-- ngIf: chatRoom.fkn_chatPlan -->
+          </span>
+          <span class="flex-child-actions">
+              <!-- ngIf: chatRoom.serviceURL -->
+          </span>
+        </a>
+    </li>
+    <li ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }" ng-repeat="chatRoom in chatRooms | filter:{n_type:3}" class="ng-scope">
+        <a ng-click="changeRoom(chatRoom);" style="cursor:pointer" class="service-item flex-parent" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
+          <span class="flex-child">
+          <i class="roomIcon fa fa-fw fa-dollar" aria-hidden="true"></i>
+          <span ng-style="{'max-width': (chatRoom.fkn_chatPlan)?(chatRoom.n_count)?'113px':'120px':(chatRoom.n_count)?'130px':'157px'}" class="room-name ng-binding" style="max-width: 157px;">FREE Strategy Session</span>
+          </span>
+          <span class="flex-child-icons">
+              <!-- ngIf: chatRoom.fkn_chatPlan -->
+          </span>
+          <span class="flex-child-actions">
+              <!-- ngIf: chatRoom.serviceURL -->
+          </span>
+        </a>
+    </li>
+    <div ng-if="brokersEnabled" brokers-sidebar="" selected="roomName" class="ng-scope ng-isolate-scope">
+        <li class="nav-item-header">
+          WEBTRADER
+          <button class="btn btn-link pull-right" ng-click="openNewBrokerModal()">
+          <i class="roomIcon fa fa-fw fa-plus" aria-hidden="true"></i>
+          </button>
+        </li>
+        <!-- ngIf: !myBrokers.length -->
+        <li ng-if="!myBrokers.length" class="nav-item-empty ng-scope">
+          No brokers were added
+        </li>
+    </div>
+    <li class="messages-sidebar-header">DIRECT MESSAGES</li>
+    <li ng-click="Change()" ng-class="{ 'selectedRoom': user.userName == roomName }" title="Jan 1, 1970" ng-repeat="user in users | orderBy:['-n_lastDate','userName']" class="directChat ng-scope" pinned-users="">
+        <a href="@RiskyRicky" ng-class="{ 'selectedRoom': user.userName == roomName }" class="ng-binding">
+        <span class="material-icons userStatus1" ng-class="'userStatus'+user.status">person_outline</span> RiskyRicky
+        </a>
+    </li>
+    <div id="dvFootnote" ng-if="isFootnoteVisible" class="ng-scope">
+        <div invites-tiny-prompt="" forex="isForex" class="footer-invite ng-isolate-scope"><a href="" target="" class="btn btn-primary btn-sm ng-binding">Invite your friends</a></div>
+    </div>
+  </ul>

@@ -6,12 +6,15 @@ import { SignupComponent } from './signup/signup.component';
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
+import { ErrorComponent } from './error/error.component';
+import { AuthGuard } from './auth.guard';
+
 const routes: Routes = [
-  {path: '', component: LoginComponent },
-  {path: 'login', component: LoginComponent },
-  {path: 'register', component: SignupComponent },
-  {path: 'forgotpassword', component: ForgotpasswordComponent },
-  {path: 'dashboard', component: DashboardComponent },
+  { path: '', component: LoginComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: SignupComponent },
+  { path: 'forgotpassword', component: ForgotpasswordComponent },
+  { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard]},
 ];
 
 @NgModule({

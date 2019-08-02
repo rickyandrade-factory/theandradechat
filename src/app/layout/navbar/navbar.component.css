@@ -1,0 +1,9 @@
+.nav-bar{
+  justify-content: space-between;
+  background: #252525;
+  color: #BBBBBB
+}
+
+span{
+  padding-right: 1rem;
+}

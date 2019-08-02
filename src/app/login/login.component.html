@@ -2,50 +2,55 @@
   <mat-sidenav-container class="sidenav-container">
     <mat-sidenav position="end" #sidenav mode="side" opened>
       <div class="final-img-mobile" style="display:none;">
-          <img src="url('./../../../assets/mma_logo2.png" alt="" />
+        <img src="url('./../../../assets/mma_logo2.png" alt="" />
       </div>
       <div class="login-form">
-          <div>
-              <h1>Sign In</h1>
-              <p>Join <span md-colors="{'color': 'accent-500'}" style="color: rgb(223, 178, 66);">MarketMastersAcademy</span> team.</p>
-              <div class="form-input">
-                  <div class="input-group input-field">
-                      <input type="text" class="inputText" required/>
-                      <span class="floating-label">Your email address *</span>
-                    </div>
-                    <div class="input-group input-field">
-                        <input type="text" class="inputText" required/>
-                        <span class="floating-label">Password *</span>
-                      </div>
-                  <button class="md-ink-ripple" type="submit" ng-transclude="" ng-disabled="loading">
-                      Sign In</button>
+        <div>
+          <h1>Sign In</h1>
+          <p>Join <span md-colors="{'color': 'accent-500'}"
+              style="color: rgb(223, 178, 66);">MarketMastersAcademy</span> team.</p>
+          <div class="form-input">
+            <form (submit)="loginUser($event)">
+              <div class="input-group input-field">
+                <input type="text" #username id="username" class="inputText" required />
+                <span class="floating-label">Your email address *</span>
               </div>
-              <div class="signup-forget">
-                 <p>No account? <a href="/register" md-colors="{'color': 'accent-500'}" style="color: rgb(223, 178, 66);">Sign Up</a></p> 
-                 <p><a href="/forgotpassword" md-colors="{'color': 'accent-500'}" style="color: rgb(223, 178, 66);">Forgot Password</a></p>
+              <div class="input-group input-field">
+                <input type="password" #password id="password" class="inputText" required />
+                <span class="floating-label">Password *</span>
               </div>
+              <button class="md-ink-ripple" type="submit" ng-transclude="" ng-disabled="loading">
+                Sign In</button>
+            </form>
           </div>
-      </div>
-      <div class="sidebar-footer" >
-          <div class="footer-logo">
-              <a href="https://play.google.com/store/apps/details?id=com.dynexsolutions.echofin" style="padding:1.5%">
-                <img src="./../../../assets/google-play.png" style="width:100%;">
-              </a>
-              <a href="https://cdn.echofin.co/downloads/Echofin_Desktop_Setup_Latest.exe" style="padding:1.5%">
-                <img src="./../../../assets/windows.png" style="width:100%;">
-              </a>
-              <a href="https://itunes.apple.com/us/app/echofin/id1224598914?ls=1&amp;mt=8" style="padding:1.5%">
-                <img src="./../../../assets/apple-store.png" style="width:100%;">
-              </a>
-          </div>
-          <div class="footer-reserved">
-              © 2019. All RIGHTS RESERVED.
+          <div class="signup-forget">
+            <p>No account? <a href="/register" md-colors="{'color': 'accent-500'}"
+                style="color: rgb(223, 178, 66);">Sign Up</a></p>
+            <p><a href="/forgotpassword" md-colors="{'color': 'accent-500'}" style="color: rgb(223, 178, 66);">Forgot
+                Password</a></p>
           </div>
         </div>
+      </div>
+      <div class="sidebar-footer">
+        <div class="footer-logo">
+          <a href="https://play.google.com/store/apps/details?id=com.dynexsolutions.echofin" style="padding:1.5%">
+            <img src="./../../../assets/google-play.png" style="width:100%;">
+          </a>
+          <a href="https://cdn.echofin.co/downloads/Echofin_Desktop_Setup_Latest.exe" style="padding:1.5%">
+            <img src="./../../../assets/windows.png" style="width:100%;">
+          </a>
+          <a href="https://itunes.apple.com/us/app/echofin/id1224598914?ls=1&amp;mt=8" style="padding:1.5%">
+            <img src="./../../../assets/apple-store.png" style="width:100%;">
+          </a>
+        </div>
+        <div class="footer-reserved">
+          © 2019. All RIGHTS RESERVED.
+        </div>
+      </div>
     </mat-sidenav>
     <div class="img-cont">
       <div class="final-img">
-          <img src="url('./../../../assets/mma_logo2.png" alt="" />
+        <img src="url('./../../../assets/mma_logo2.png" alt="" />
       </div>
     </div>
 

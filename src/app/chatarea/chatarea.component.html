@@ -1,0 +1,534 @@
+<div class="page-data">
+    <div class="msg_placeholder ng-scope messagelineodd msg_placeholder_sep msg_delivered">
+       <div >
+          <div class="chatseparator">
+             <hr class="chatseparator-hr">
+             <p class="chatseparator-p ng-binding">April 11, 2019</p>
+          </div>
+       </div>
+       <div user-popover="" class="msg_avatar ng-isolate-scope" style="cursor: pointer;" title="">
+          <img ng-src="//cdn.echofin.co/avatars/37020b82.png?1564118241731?1564118243132?1564118244561?1564118247765?1564118249553" style="border-radius: 4px;width:40px; height:40px" src="//cdn.echofin.co/avatars/37020b82.png?1564118241731?1564118243132?1564118244561?1564118247765?1564118249553">
+       </div>
+       <div class="msg_username_date" >
+          <span user-popover="" sender-key="private-u-37020b82" class="msg_username ng-binding ng-isolate-scope" ng-class="{'admin_username':item.userType==1}" ng-bind="item.sender" style="cursor: pointer;" data-original-title="" title="">jacobK </span>
+          <span class="msg_date ng-binding" ng-bind="item.dateParsed | vardate2: item.dateOffset">04/11  01:36 AM</span>
+          <span class="msg_date ng-binding"></span>
+          <span style="display: none" class="ng-binding">"2019-04-10T20:06:11.146Z"</span>
+       </div>
+       <div class="thumbpadding ng-binding">
+          <div message-actions="" message="item" class="ng-isolate-scope">
+             <div ng-class="{ 'msg_txt_wrap':!message.s_fileToken, 'msg_img_wrap': message.s_fileToken, 'shout_txt': message.isShout }" class="msg_txt_wrap">
+                <div class="msg_txt ng-isolate-scope" >I still did not receive any email about silver circle </div>
+                <div>
+                   <button class="toolbtn msg_button_edit ng-hide" >
+                   <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                   </button>
+                   <button class="toolbtn msg_button_delete ng-hide">
+                   <i class="fa fa-trash-o" aria-hidden="true"></i>
+                   </button>
+                </div>
+             </div>
+          </div>
+       </div>
+       <div style="clear:both"></div>
+    </div>
+    <div class="msg_placeholder ng-scope messagelineodd msg_placeholder_sep msg_delivered" ng-repeat="item in messagelist | orderBy:['-d_lastEdit']" ng-class-odd="'messagelineodd'" ng-class="{'msg_placeholder_sep':!item.b_isContinuing, 'msg_delivered':item.b_isDelivered, 'msg_not_delivered': !item.b_isDelivered }">
+       <div ng-hide="item.b_isSameUser || !item.dayText">
+          <div class="chatseparator">
+             <hr class="chatseparator-hr">
+          </div>
+       </div>
+       <div user-popover="" class="msg_avatar ng-isolate-scope" ng-hide="item.b_isContinuing" sender-key="private-u-37020b82" style="cursor: pointer;" data-original-title="" title="">
+          <img ng-src="//cdn.echofin.co/avatars/fdd1ec1e.png" style="border-radius: 4px;width:40px; height:40px" src="//cdn.echofin.co/avatars/fdd1ec1e.png">
+       </div>
+       <div class="msg_username_date" ng-hide="item.b_isContinuing">
+          <span user-popover="" sender-key="private-u-37020b82" class="msg_username ng-binding ng-isolate-scope" ng-class="{'admin_username':item.userType==1}" ng-bind="item.sender" style="cursor: pointer;" data-original-title="" title="">
+          Richadesoye </span>
+          <span class="msg_date ng-binding" ng-bind="item.dateParsed | vardate2: item.dateOffset">04/11  01:36 AM</span>
+          <span class="msg_date ng-binding"></span>
+          <span style="display: none" class="ng-binding">"2019-04-10T20:06:11.146Z"</span>
+       </div>
+       <div class="thumbpadding ng-binding">
+          <div message-actions="" message="item" class="ng-isolate-scope">
+             <div ng-class="{ 'msg_txt_wrap':!message.s_fileToken, 'msg_img_wrap': message.s_fileToken, 'shout_txt': message.isShout }" class="msg_txt_wrap">
+                <div message-parser="" message2="message" class="msg_txt ng-isolate-scope" ng-class="[{'msgInEdit':inEdit}, {'msg_admin_txt':isAdmin &amp;&amp; !message.isShout }, {'msg_instructor_txt':isInstructor }, {'msg_moderator_txt':isModerator }]" style="" contenteditable="false">I still did not receive any email about silver circle </div>
+                <div ng-class="{'toolButtons': canEdit() || canDelete() || canPin()}">
+                   <button class="toolbtn msg_button_edit ng-hide" ng-click="editMessage()" ng-show="canEdit()&amp;&amp;!inEdit">
+                   <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                   </button>
+                   <button class="toolbtn msg_button_delete ng-hide" ng-click="deleteMessage()" ng-show="canDelete()&amp;&amp;!inEdit">
+                   <i class="fa fa-trash-o" aria-hidden="true"></i>
+                   </button>
+                </div>
+             </div>
+          </div>
+       </div>
+       <div style="clear:both"></div>
+    </div>
+    <div class="msg_placeholder ng-scope messagelineodd msg_placeholder_sep msg_delivered">
+       <div user-popover="" class="msg_avatar ng-isolate-scope" style="cursor: pointer;" title="">
+          <img ng-src="//cdn.echofin.co/avatars/37020b82.png?1564118241731?1564118243132?1564118244561?1564118247765?1564118249553" style="border-radius: 4px;width:40px; height:40px" src="//cdn.echofin.co/avatars/37020b82.png?1564118241731?1564118243132?1564118244561?1564118247765?1564118249553">
+       </div>
+       <div class="msg_username_date" >
+          <span user-popover="" sender-key="private-u-37020b82" class="msg_username ng-binding ng-isolate-scope" ng-class="{'admin_username':item.userType==1}" ng-bind="item.sender" style="cursor: pointer;" data-original-title="" title="">jacobK </span>
+          <span class="msg_date ng-binding" ng-bind="item.dateParsed | vardate2: item.dateOffset">04/11  01:36 AM</span>
+          <span class="msg_date ng-binding"></span>
+          <span style="display: none" class="ng-binding">"2019-04-10T20:06:11.146Z"</span>
+       </div>
+       <div class="thumbpadding ng-binding">
+          <div message-actions="" message="item" class="ng-isolate-scope">
+             <div ng-class="{ 'msg_txt_wrap':!message.s_fileToken, 'msg_img_wrap': message.s_fileToken, 'shout_txt': message.isShout }" class="msg_txt_wrap">
+                <!-- <div class="msg_txt ng-isolate-scope" >I still did not receive any email about silver circle </div> -->
+                <div>
+                   <button class="toolbtn msg_button_edit ng-hide" >
+                   <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                   </button>
+                   <button class="toolbtn msg_button_delete ng-hide">
+                   <i class="fa fa-trash-o" aria-hidden="true"></i>
+                   </button>
+                </div>
+                <div class=" ng-binding">
+                      <a ng-hide="item.s_fileToken==null &amp;&amp; !item.youtubeid" filetype="2" extension="png" url="//cdn.echofin.co/uploads/c4e269db/9B28AF005F7E4B5C8C696D6F8342725D.png" message="by Market Masters Academy 📈  www.marketmastersacademy.com  Highly accurate forex signals traded during the London and New York Session  Questions? Email us:  Contact@marketmastersacademy.com" popup-link="" title="by Market Masters Academy 📈  www.marketmastersacademy.com  Highly accurate forex signals traded during the London and New York Session  Questions? Email us:  Contact@marketmastersacademy.com" youtubeid="" class="ng-isolate-scope" href="https://t.me/mmaonpointfxsignals" target="_blank">
+                          <div class="msg_file_name ng-isolate-scope" attach-title="" filetype="2" filename="769115be08fd442ba6275a3e17106f0f.png" filelink="https://t.me/mmaonpointfxsignals">Link Shared: https://t.me/mmaonpointfxsignals</div>
+                          <!-- ngIf: item.s_fileName || item.youtubeid --><img ng-if="item.s_fileName || item.youtubeid" imageonload="" scrollcontainer="#dvCenter" auto-scroll="false" class="img-responsive imgUploaded ng-scope ng-isolate-scope" style="max-height:200px;" ng-show="(item.s_fileToken!=null &amp;&amp; item.b_thumb) || item.youtubeid" isuploaded="true" src="//cdn.echofin.co/uploads/c4e269db/9B28AF005F7E4B5C8C696D6F8342725D.thumb.png" imageloader="//cdn.echofin.co/images/loading.gif" imageurl="//cdn.echofin.co/uploads/c4e269db/9B28AF005F7E4B5C8C696D6F8342725D.thumb.png" imageurlfull="//cdn.echofin.co/uploads/c4e269db/9B28AF005F7E4B5C8C696D6F8342725D.png"><!-- end ngIf: item.s_fileName || item.youtubeid -->
+                      </a>
+                      <div message-actions="" message="item" class="ng-isolate-scope"><div ng-class="{ 'msg_txt_wrap':!message.s_fileToken, 'msg_img_wrap': message.s_fileToken, 'shout_txt': message.isShout }" class="msg_img_wrap">
+                          <div message-parser="" message2="message" class="msg_txt ng-isolate-scope msg_admin_txt" ng-class="[{'msgInEdit':inEdit}, {'msg_admin_txt':isAdmin &amp;&amp; !message.isShout }, {'msg_instructor_txt':isInstructor }, {'msg_moderator_txt':isModerator }]" style="" contenteditable="false">by Market Masters Academy 📈  www.marketmastersacademy.com  Highly accurate forex signals traded during the London and New York Session  Questions? <br>
+                               Email us:  Contact@marketmastersacademy.com
+                              <p>kindly check this link thanks!</p>
+                          </div>
+                      </div>
+                      </div>
+
+                  </div>
+             </div>
+          </div>
+       </div>
+       <div style="clear:both"></div>
+    </div>
+    <div class="msg_placeholder ng-scope messagelineodd msg_placeholder_sep msg_delivered">
+       <div user-popover="" class="msg_avatar ng-isolate-scope" style="cursor: pointer;" title="">
+          <img ng-src="//cdn.echofin.co/avatars/37020b82.png?1564118241731?1564118243132?1564118244561?1564118247765?1564118249553" style="border-radius: 4px;width:40px; height:40px" src="//cdn.echofin.co/avatars/37020b82.png?1564118241731?1564118243132?1564118244561?1564118247765?1564118249553">
+       </div>
+       <div class="msg_username_date" >
+          <span user-popover="" sender-key="private-u-37020b82" class="msg_username ng-binding ng-isolate-scope" ng-class="{'admin_username':item.userType==1}" ng-bind="item.sender" style="cursor: pointer;" data-original-title="" title="">jacobK </span>
+          <span class="msg_date ng-binding" ng-bind="item.dateParsed | vardate2: item.dateOffset">04/11  01:36 AM</span>
+          <span class="msg_date ng-binding"></span>
+          <span style="display: none" class="ng-binding">"2019-04-10T20:06:11.146Z"</span>
+       </div>
+       <div class="thumbpadding ng-binding">
+          <div message-actions="" message="item" class="ng-isolate-scope">
+             <div ng-class="{ 'msg_txt_wrap':!message.s_fileToken, 'msg_img_wrap': message.s_fileToken, 'shout_txt': message.isShout }" class="msg_txt_wrap">
+                <div class="msg_txt ng-isolate-scope" >I still did not receive any email about silver circle </div>
+                <div>
+                   <button class="toolbtn msg_button_edit ng-hide" >
+                   <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                   </button>
+                   <button class="toolbtn msg_button_delete ng-hide">
+                   <i class="fa fa-trash-o" aria-hidden="true"></i>
+                   </button>
+                </div>
+             </div>
+          </div>
+       </div>
+       <div style="clear:both"></div>
+    </div>
+    <div class="msg_placeholder ng-scope messagelineodd msg_placeholder_sep msg_delivered">
+       <div user-popover="" class="msg_avatar ng-isolate-scope" style="cursor: pointer;" title="">
+          <img ng-src="//cdn.echofin.co/avatars/37020b82.png?1564118241731?1564118243132?1564118244561?1564118247765?1564118249553" style="border-radius: 4px;width:40px; height:40px" src="//cdn.echofin.co/avatars/37020b82.png?1564118241731?1564118243132?1564118244561?1564118247765?1564118249553">
+       </div>
+       <div class="msg_username_date" >
+          <span user-popover="" sender-key="private-u-37020b82" class="msg_username ng-binding ng-isolate-scope" ng-class="{'admin_username':item.userType==1}" ng-bind="item.sender" style="cursor: pointer;" data-original-title="" title="">jacobK </span>
+          <span class="msg_date ng-binding" ng-bind="item.dateParsed | vardate2: item.dateOffset">04/11  01:36 AM</span>
+          <span class="msg_date ng-binding"></span>
+          <span style="display: none" class="ng-binding">"2019-04-10T20:06:11.146Z"</span>
+       </div>
+       <div class="thumbpadding ng-binding">
+          <div message-actions="" message="item" class="ng-isolate-scope">
+             <div ng-class="{ 'msg_txt_wrap':!message.s_fileToken, 'msg_img_wrap': message.s_fileToken, 'shout_txt': message.isShout }" class="msg_txt_wrap">
+                <div class="msg_txt ng-isolate-scope" >I still did not receive any email about silver circle </div>
+                <div>
+                   <button class="toolbtn msg_button_edit ng-hide" >
+                   <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                   </button>
+                   <button class="toolbtn msg_button_delete ng-hide">
+                   <i class="fa fa-trash-o" aria-hidden="true"></i>
+                   </button>
+                </div>
+             </div>
+          </div>
+       </div>
+       <div style="clear:both"></div>
+    </div>
+    <div class="msg_placeholder ng-scope messagelineodd msg_placeholder_sep msg_delivered">
+       <div >
+          <div class="chatseparator">
+             <hr class="chatseparator-hr">
+             <p class="chatseparator-p ng-binding">April 11, 2019</p>
+          </div>
+       </div>
+       <div user-popover="" class="msg_avatar ng-isolate-scope" style="cursor: pointer;" title="">
+          <img ng-src="//cdn.echofin.co/avatars/37020b82.png?1564118241731?1564118243132?1564118244561?1564118247765?1564118249553" style="border-radius: 4px;width:40px; height:40px" src="//cdn.echofin.co/avatars/37020b82.png?1564118241731?1564118243132?1564118244561?1564118247765?1564118249553">
+       </div>
+       <div class="msg_username_date" >
+          <span user-popover="" sender-key="private-u-37020b82" class="msg_username ng-binding ng-isolate-scope" ng-class="{'admin_username':item.userType==1}" ng-bind="item.sender" style="cursor: pointer;" data-original-title="" title="">jacobK </span>
+          <span class="msg_date ng-binding" ng-bind="item.dateParsed | vardate2: item.dateOffset">04/11  01:36 AM</span>
+          <span class="msg_date ng-binding"></span>
+          <span style="display: none" class="ng-binding">"2019-04-10T20:06:11.146Z"</span>
+       </div>
+       <div class="thumbpadding ng-binding">
+          <div message-actions="" message="item" class="ng-isolate-scope">
+             <div ng-class="{ 'msg_txt_wrap':!message.s_fileToken, 'msg_img_wrap': message.s_fileToken, 'shout_txt': message.isShout }" class="msg_txt_wrap">
+                <div class="msg_txt ng-isolate-scope" >I still did not receive any email about silver circle </div>
+                <div>
+                   <button class="toolbtn msg_button_edit ng-hide" >
+                   <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                   </button>
+                   <button class="toolbtn msg_button_delete ng-hide">
+                   <i class="fa fa-trash-o" aria-hidden="true"></i>
+                   </button>
+                </div>
+             </div>
+          </div>
+       </div>
+       <div style="clear:both"></div>
+    </div>
+    <div class="msg_placeholder ng-scope messagelineodd msg_placeholder_sep msg_delivered">
+       <div user-popover="" class="msg_avatar ng-isolate-scope" style="cursor: pointer;" title="">
+          <img ng-src="//cdn.echofin.co/avatars/37020b82.png?1564118241731?1564118243132?1564118244561?1564118247765?1564118249553" style="border-radius: 4px;width:40px; height:40px" src="//cdn.echofin.co/avatars/37020b82.png?1564118241731?1564118243132?1564118244561?1564118247765?1564118249553">
+       </div>
+       <div class="msg_username_date" >
+          <span user-popover="" sender-key="private-u-37020b82" class="msg_username ng-binding ng-isolate-scope" ng-class="{'admin_username':item.userType==1}" ng-bind="item.sender" style="cursor: pointer;" data-original-title="" title="">jacobK </span>
+          <span class="msg_date ng-binding" ng-bind="item.dateParsed | vardate2: item.dateOffset">04/11  01:36 AM</span>
+          <span class="msg_date ng-binding"></span>
+          <span style="display: none" class="ng-binding">"2019-04-10T20:06:11.146Z"</span>
+       </div>
+       <div class="thumbpadding ng-binding">
+          <div message-actions="" message="item" class="ng-isolate-scope">
+             <div ng-class="{ 'msg_txt_wrap':!message.s_fileToken, 'msg_img_wrap': message.s_fileToken, 'shout_txt': message.isShout }" class="msg_txt_wrap">
+                <div class="msg_txt ng-isolate-scope" >I still did not receive any email about silver circle </div>
+                <div>
+                   <button class="toolbtn msg_button_edit ng-hide" >
+                   <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                   </button>
+                   <button class="toolbtn msg_button_delete ng-hide">
+                   <i class="fa fa-trash-o" aria-hidden="true"></i>
+                   </button>
+                </div>
+             </div>
+          </div>
+       </div>
+       <div style="clear:both"></div>
+    </div>
+    <div class="msg_placeholder ng-scope messagelineodd msg_placeholder_sep msg_delivered">
+       <div user-popover="" class="msg_avatar ng-isolate-scope" style="cursor: pointer;" title="">
+          <img ng-src="//cdn.echofin.co/avatars/37020b82.png?1564118241731?1564118243132?1564118244561?1564118247765?1564118249553" style="border-radius: 4px;width:40px; height:40px" src="//cdn.echofin.co/avatars/37020b82.png?1564118241731?1564118243132?1564118244561?1564118247765?1564118249553">
+       </div>
+       <div class="msg_username_date" >
+          <span user-popover="" sender-key="private-u-37020b82" class="msg_username ng-binding ng-isolate-scope" ng-class="{'admin_username':item.userType==1}" ng-bind="item.sender" style="cursor: pointer;" data-original-title="" title="">jacobK </span>
+          <span class="msg_date ng-binding" ng-bind="item.dateParsed | vardate2: item.dateOffset">04/11  01:36 AM</span>
+          <span class="msg_date ng-binding"></span>
+          <span style="display: none" class="ng-binding">"2019-04-10T20:06:11.146Z"</span>
+       </div>
+       <div class="thumbpadding ng-binding">
+          <div message-actions="" message="item" class="ng-isolate-scope">
+             <div ng-class="{ 'msg_txt_wrap':!message.s_fileToken, 'msg_img_wrap': message.s_fileToken, 'shout_txt': message.isShout }" class="msg_txt_wrap">
+                <div class="msg_txt ng-isolate-scope" >I still did not receive any email about silver circle </div>
+                <div>
+                   <button class="toolbtn msg_button_edit ng-hide" >
+                   <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                   </button>
+                   <button class="toolbtn msg_button_delete ng-hide">
+                   <i class="fa fa-trash-o" aria-hidden="true"></i>
+                   </button>
+                </div>
+             </div>
+          </div>
+       </div>
+       <div style="clear:both"></div>
+    </div>
+    <div class="msg_placeholder ng-scope messagelineodd msg_placeholder_sep msg_delivered">
+       <div >
+          <div class="chatseparator">
+             <hr class="chatseparator-hr">
+             <p class="chatseparator-p ng-binding">April 11, 2019</p>
+          </div>
+       </div>
+       <div user-popover="" class="msg_avatar ng-isolate-scope" style="cursor: pointer;" title="">
+          <img ng-src="//cdn.echofin.co/avatars/37020b82.png?1564118241731?1564118243132?1564118244561?1564118247765?1564118249553" style="border-radius: 4px;width:40px; height:40px" src="//cdn.echofin.co/avatars/37020b82.png?1564118241731?1564118243132?1564118244561?1564118247765?1564118249553">
+       </div>
+       <div class="msg_username_date" >
+          <span user-popover="" sender-key="private-u-37020b82" class="msg_username ng-binding ng-isolate-scope" ng-class="{'admin_username':item.userType==1}" ng-bind="item.sender" style="cursor: pointer;" data-original-title="" title="">jacobK </span>
+          <span class="msg_date ng-binding" ng-bind="item.dateParsed | vardate2: item.dateOffset">04/11  01:36 AM</span>
+          <span class="msg_date ng-binding"></span>
+          <span style="display: none" class="ng-binding">"2019-04-10T20:06:11.146Z"</span>
+       </div>
+       <div class="thumbpadding ng-binding">
+          <div message-actions="" message="item" class="ng-isolate-scope">
+             <div ng-class="{ 'msg_txt_wrap':!message.s_fileToken, 'msg_img_wrap': message.s_fileToken, 'shout_txt': message.isShout }" class="msg_txt_wrap">
+                <div class="msg_txt ng-isolate-scope" >I still did not receive any email about silver circle </div>
+                <div>
+                   <button class="toolbtn msg_button_edit ng-hide" >
+                   <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                   </button>
+                   <button class="toolbtn msg_button_delete ng-hide">
+                   <i class="fa fa-trash-o" aria-hidden="true"></i>
+                   </button>
+                </div>
+             </div>
+          </div>
+       </div>
+       <div style="clear:both"></div>
+    </div>
+    <div class="msg_placeholder ng-scope messagelineodd msg_placeholder_sep msg_delivered">
+       <div user-popover="" class="msg_avatar ng-isolate-scope" style="cursor: pointer;" title="">
+          <img ng-src="//cdn.echofin.co/avatars/37020b82.png?1564118241731?1564118243132?1564118244561?1564118247765?1564118249553" style="border-radius: 4px;width:40px; height:40px" src="//cdn.echofin.co/avatars/37020b82.png?1564118241731?1564118243132?1564118244561?1564118247765?1564118249553">
+       </div>
+       <div class="msg_username_date" >
+          <span user-popover="" sender-key="private-u-37020b82" class="msg_username ng-binding ng-isolate-scope" ng-class="{'admin_username':item.userType==1}" ng-bind="item.sender" style="cursor: pointer;" data-original-title="" title="">jacobK </span>
+          <span class="msg_date ng-binding" ng-bind="item.dateParsed | vardate2: item.dateOffset">04/11  01:36 AM</span>
+          <span class="msg_date ng-binding"></span>
+          <span style="display: none" class="ng-binding">"2019-04-10T20:06:11.146Z"</span>
+       </div>
+       <div class="thumbpadding ng-binding">
+          <div message-actions="" message="item" class="ng-isolate-scope">
+             <div ng-class="{ 'msg_txt_wrap':!message.s_fileToken, 'msg_img_wrap': message.s_fileToken, 'shout_txt': message.isShout }" class="msg_txt_wrap">
+                <div class="msg_txt ng-isolate-scope" >I still did not receive any email about silver circle </div>
+                <div>
+                   <button class="toolbtn msg_button_edit ng-hide" >
+                   <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                   </button>
+                   <button class="toolbtn msg_button_delete ng-hide">
+                   <i class="fa fa-trash-o" aria-hidden="true"></i>
+                   </button>
+                </div>
+             </div>
+          </div>
+       </div>
+       <div style="clear:both"></div>
+    </div>
+    <div class="msg_placeholder ng-scope messagelineodd msg_placeholder_sep msg_delivered">
+       <div user-popover="" class="msg_avatar ng-isolate-scope" style="cursor: pointer;" title="">
+          <img ng-src="//cdn.echofin.co/avatars/37020b82.png?1564118241731?1564118243132?1564118244561?1564118247765?1564118249553" style="border-radius: 4px;width:40px; height:40px" src="//cdn.echofin.co/avatars/37020b82.png?1564118241731?1564118243132?1564118244561?1564118247765?1564118249553">
+       </div>
+       <div class="msg_username_date" >
+          <span user-popover="" sender-key="private-u-37020b82" class="msg_username ng-binding ng-isolate-scope" ng-class="{'admin_username':item.userType==1}" ng-bind="item.sender" style="cursor: pointer;" data-original-title="" title="">jacobK </span>
+          <span class="msg_date ng-binding" ng-bind="item.dateParsed | vardate2: item.dateOffset">04/11  01:36 AM</span>
+          <span class="msg_date ng-binding"></span>
+          <span style="display: none" class="ng-binding">"2019-04-10T20:06:11.146Z"</span>
+       </div>
+       <div class="thumbpadding ng-binding">
+          <div message-actions="" message="item" class="ng-isolate-scope">
+             <div ng-class="{ 'msg_txt_wrap':!message.s_fileToken, 'msg_img_wrap': message.s_fileToken, 'shout_txt': message.isShout }" class="msg_txt_wrap">
+                <div class="msg_txt ng-isolate-scope" >I still did not receive any email about silver circle </div>
+                <div>
+                   <button class="toolbtn msg_button_edit ng-hide" >
+                   <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                   </button>
+                   <button class="toolbtn msg_button_delete ng-hide">
+                   <i class="fa fa-trash-o" aria-hidden="true"></i>
+                   </button>
+                </div>
+             </div>
+          </div>
+       </div>
+       <div style="clear:both"></div>
+    </div>
+    <div class="msg_placeholder ng-scope messagelineodd msg_placeholder_sep msg_delivered">
+       <div user-popover="" class="msg_avatar ng-isolate-scope" style="cursor: pointer;" title="">
+          <img ng-src="//cdn.echofin.co/avatars/37020b82.png?1564118241731?1564118243132?1564118244561?1564118247765?1564118249553" style="border-radius: 4px;width:40px; height:40px" src="//cdn.echofin.co/avatars/37020b82.png?1564118241731?1564118243132?1564118244561?1564118247765?1564118249553">
+       </div>
+       <div class="msg_username_date" >
+          <span user-popover="" sender-key="private-u-37020b82" class="msg_username ng-binding ng-isolate-scope" ng-class="{'admin_username':item.userType==1}" ng-bind="item.sender" style="cursor: pointer;" data-original-title="" title="">jacobK </span>
+          <span class="msg_date ng-binding" ng-bind="item.dateParsed | vardate2: item.dateOffset">04/11  01:36 AM</span>
+          <span class="msg_date ng-binding"></span>
+          <span style="display: none" class="ng-binding">"2019-04-10T20:06:11.146Z"</span>
+       </div>
+       <div class="thumbpadding ng-binding">
+          <div message-actions="" message="item" class="ng-isolate-scope">
+             <div ng-class="{ 'msg_txt_wrap':!message.s_fileToken, 'msg_img_wrap': message.s_fileToken, 'shout_txt': message.isShout }" class="msg_txt_wrap">
+                <div class="msg_txt ng-isolate-scope" >I still did not receive any email about silver circle </div>
+                <div>
+                   <button class="toolbtn msg_button_edit ng-hide" >
+                   <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                   </button>
+                   <button class="toolbtn msg_button_delete ng-hide">
+                   <i class="fa fa-trash-o" aria-hidden="true"></i>
+                   </button>
+                </div>
+             </div>
+          </div>
+       </div>
+       <div style="clear:both"></div>
+    </div>
+    <div class="msg_placeholder ng-scope messagelineodd msg_placeholder_sep msg_delivered">
+       <div >
+          <div class="chatseparator">
+             <hr class="chatseparator-hr">
+             <p class="chatseparator-p ng-binding">April 11, 2019</p>
+          </div>
+       </div>
+       <div user-popover="" class="msg_avatar ng-isolate-scope" style="cursor: pointer;" title="">
+          <img ng-src="//cdn.echofin.co/avatars/37020b82.png?1564118241731?1564118243132?1564118244561?1564118247765?1564118249553" style="border-radius: 4px;width:40px; height:40px" src="//cdn.echofin.co/avatars/37020b82.png?1564118241731?1564118243132?1564118244561?1564118247765?1564118249553">
+       </div>
+       <div class="msg_username_date" >
+          <span user-popover="" sender-key="private-u-37020b82" class="msg_username ng-binding ng-isolate-scope" ng-class="{'admin_username':item.userType==1}" ng-bind="item.sender" style="cursor: pointer;" data-original-title="" title="">jacobK </span>
+          <span class="msg_date ng-binding" ng-bind="item.dateParsed | vardate2: item.dateOffset">04/11  01:36 AM</span>
+          <span class="msg_date ng-binding"></span>
+          <span style="display: none" class="ng-binding">"2019-04-10T20:06:11.146Z"</span>
+       </div>
+       <div class="thumbpadding ng-binding">
+          <div message-actions="" message="item" class="ng-isolate-scope">
+             <div ng-class="{ 'msg_txt_wrap':!message.s_fileToken, 'msg_img_wrap': message.s_fileToken, 'shout_txt': message.isShout }" class="msg_txt_wrap">
+                <div class="msg_txt ng-isolate-scope" >I still did not receive any email about silver circle </div>
+                <div>
+                   <button class="toolbtn msg_button_edit ng-hide" >
+                   <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                   </button>
+                   <button class="toolbtn msg_button_delete ng-hide">
+                   <i class="fa fa-trash-o" aria-hidden="true"></i>
+                   </button>
+                </div>
+             </div>
+          </div>
+       </div>
+       <div style="clear:both"></div>
+    </div>
+    <div class="msg_placeholder ng-scope messagelineodd msg_placeholder_sep msg_delivered">
+       <div user-popover="" class="msg_avatar ng-isolate-scope" style="cursor: pointer;" title="">
+          <img ng-src="//cdn.echofin.co/avatars/37020b82.png?1564118241731?1564118243132?1564118244561?1564118247765?1564118249553" style="border-radius: 4px;width:40px; height:40px" src="//cdn.echofin.co/avatars/37020b82.png?1564118241731?1564118243132?1564118244561?1564118247765?1564118249553">
+       </div>
+       <div class="msg_username_date" >
+          <span user-popover="" sender-key="private-u-37020b82" class="msg_username ng-binding ng-isolate-scope" ng-class="{'admin_username':item.userType==1}" ng-bind="item.sender" style="cursor: pointer;" data-original-title="" title="">jacobK </span>
+          <span class="msg_date ng-binding" ng-bind="item.dateParsed | vardate2: item.dateOffset">04/11  01:36 AM</span>
+          <span class="msg_date ng-binding"></span>
+          <span style="display: none" class="ng-binding">"2019-04-10T20:06:11.146Z"</span>
+       </div>
+       <div class="thumbpadding ng-binding">
+          <div message-actions="" message="item" class="ng-isolate-scope">
+             <div ng-class="{ 'msg_txt_wrap':!message.s_fileToken, 'msg_img_wrap': message.s_fileToken, 'shout_txt': message.isShout }" class="msg_txt_wrap">
+                <div class="msg_txt ng-isolate-scope" >I still did not receive any email about silver circle </div>
+                <div>
+                   <button class="toolbtn msg_button_edit ng-hide" >
+                   <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                   </button>
+                   <button class="toolbtn msg_button_delete ng-hide">
+                   <i class="fa fa-trash-o" aria-hidden="true"></i>
+                   </button>
+                </div>
+             </div>
+          </div>
+       </div>
+       <div style="clear:both"></div>
+    </div>
+    <div class="msg_placeholder ng-scope messagelineodd msg_placeholder_sep msg_delivered">
+       <div >
+          <div class="chatseparator">
+             <hr class="chatseparator-hr">
+             <p class="chatseparator-p ng-binding">April 11, 2019</p>
+          </div>
+       </div>
+       <div user-popover="" class="msg_avatar ng-isolate-scope" style="cursor: pointer;" title="">
+          <img ng-src="//cdn.echofin.co/avatars/37020b82.png?1564118241731?1564118243132?1564118244561?1564118247765?1564118249553" style="border-radius: 4px;width:40px; height:40px" src="//cdn.echofin.co/avatars/37020b82.png?1564118241731?1564118243132?1564118244561?1564118247765?1564118249553">
+       </div>
+       <div class="msg_username_date" >
+          <span user-popover="" sender-key="private-u-37020b82" class="msg_username ng-binding ng-isolate-scope" ng-class="{'admin_username':item.userType==1}" ng-bind="item.sender" style="cursor: pointer;" data-original-title="" title="">jacobK </span>
+          <span class="msg_date ng-binding" ng-bind="item.dateParsed | vardate2: item.dateOffset">04/11  01:36 AM</span>
+          <span class="msg_date ng-binding"></span>
+          <span style="display: none" class="ng-binding">"2019-04-10T20:06:11.146Z"</span>
+       </div>
+       <div class="thumbpadding ng-binding">
+          <div message-actions="" message="item" class="ng-isolate-scope">
+             <div ng-class="{ 'msg_txt_wrap':!message.s_fileToken, 'msg_img_wrap': message.s_fileToken, 'shout_txt': message.isShout }" class="msg_txt_wrap">
+                <div class="msg_txt ng-isolate-scope" >I still did not receive any email about silver circle </div>
+                <div>
+                   <button class="toolbtn msg_button_edit ng-hide" >
+                   <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                   </button>
+                   <button class="toolbtn msg_button_delete ng-hide">
+                   <i class="fa fa-trash-o" aria-hidden="true"></i>
+                   </button>
+                </div>
+             </div>
+          </div>
+       </div>
+       <div style="clear:both"></div>
+    </div>
+    <div class="msg_placeholder ng-scope messagelineodd msg_placeholder_sep msg_delivered">
+       <div >
+          <div class="chatseparator">
+             <hr class="chatseparator-hr">
+             <p class="chatseparator-p ng-binding">April 11, 2019</p>
+          </div>
+       </div>
+       <div user-popover="" class="msg_avatar ng-isolate-scope" style="cursor: pointer;" title="">
+          <img ng-src="//cdn.echofin.co/avatars/37020b82.png?1564118241731?1564118243132?1564118244561?1564118247765?1564118249553" style="border-radius: 4px;width:40px; height:40px" src="//cdn.echofin.co/avatars/37020b82.png?1564118241731?1564118243132?1564118244561?1564118247765?1564118249553">
+       </div>
+       <div class="msg_username_date" >
+          <span user-popover="" sender-key="private-u-37020b82" class="msg_username ng-binding ng-isolate-scope" ng-class="{'admin_username':item.userType==1}" ng-bind="item.sender" style="cursor: pointer;" data-original-title="" title="">jacobK </span>
+          <span class="msg_date ng-binding" ng-bind="item.dateParsed | vardate2: item.dateOffset">04/11  01:36 AM</span>
+          <span class="msg_date ng-binding"></span>
+          <span style="display: none" class="ng-binding">"2019-04-10T20:06:11.146Z"</span>
+       </div>
+       <div class="thumbpadding ng-binding">
+          <div message-actions="" message="item" class="ng-isolate-scope">
+             <div ng-class="{ 'msg_txt_wrap':!message.s_fileToken, 'msg_img_wrap': message.s_fileToken, 'shout_txt': message.isShout }" class="msg_txt_wrap">
+                <div class="msg_txt ng-isolate-scope" >I still did not receive any email about silver circle </div>
+                <div>
+                   <button class="toolbtn msg_button_edit ng-hide" >
+                   <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                   </button>
+                   <button class="toolbtn msg_button_delete ng-hide">
+                   <i class="fa fa-trash-o" aria-hidden="true"></i>
+                   </button>
+                </div>
+             </div>
+          </div>
+       </div>
+       <div style="clear:both"></div>
+    </div>
+    <div class="msg_placeholder ng-scope messagelineodd msg_placeholder_sep msg_delivered" ng-repeat="item in messagelist | orderBy:['-d_lastEdit']" ng-class-odd="'messagelineodd'" ng-class="{'msg_placeholder_sep':!item.b_isContinuing, 'msg_delivered':item.b_isDelivered, 'msg_not_delivered': !item.b_isDelivered }">
+       <div class="new-message-separator ng-hide" ng-show="NewState(messagelist[$index], messagelist[$index-1])" style="">New Messages</div>
+       <div ng-hide="item.b_isSameUser || !item.dayText">
+          <div class="chatseparator">
+             <hr class="chatseparator-hr">
+          </div>
+       </div>
+       <div user-popover="" class="msg_avatar ng-isolate-scope" ng-hide="item.b_isContinuing" sender-key="private-u-37020b82" style="cursor: pointer;" data-original-title="" title="">
+          <img ng-src="//cdn.echofin.co/avatars/fdd1ec1e.png" style="border-radius: 4px;width:40px; height:40px" src="//cdn.echofin.co/avatars/fdd1ec1e.png">
+       </div>
+       <div class="msg_username_date" ng-hide="item.b_isContinuing">
+          <span user-popover="" sender-key="private-u-37020b82" class="msg_username ng-binding ng-isolate-scope" ng-class="{'admin_username':item.userType==1}" ng-bind="item.sender" style="cursor: pointer;" data-original-title="" title="">Richadesoye </span>
+          <span class="msg_date ng-binding" ng-bind="item.dateParsed | vardate2: item.dateOffset">04/11  01:36 AM</span>
+          <span class="msg_date ng-binding"></span>
+          <span style="display: none" class="ng-binding">"2019-04-10T20:06:11.146Z"</span>
+       </div>
+       <div class="thumbpadding ng-binding">
+          <div message-actions="" message="item" class="ng-isolate-scope">
+             <div ng-class="{ 'msg_txt_wrap':!message.s_fileToken, 'msg_img_wrap': message.s_fileToken, 'shout_txt': message.isShout }" class="msg_txt_wrap">
+                <div message-parser="" message2="message" class="msg_txt ng-isolate-scope" ng-class="[{'msgInEdit':inEdit}, {'msg_admin_txt':isAdmin &amp;&amp; !message.isShout }, {'msg_instructor_txt':isInstructor }, {'msg_moderator_txt':isModerator }]" style="" contenteditable="false">I still did not receive any email about silver circle </div>
+                <div ng-class="{'toolButtons': canEdit() || canDelete() || canPin()}">
+                   <button class="toolbtn msg_button_edit ng-hide" ng-click="editMessage()" ng-show="canEdit()&amp;&amp;!inEdit">
+                   <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                   </button>
+                   <button class="toolbtn msg_button_delete ng-hide" ng-click="deleteMessage()" ng-show="canDelete()&amp;&amp;!inEdit">
+                   <i class="fa fa-trash-o" aria-hidden="true"></i>
+                   </button>
+                </div>
+             </div>
+          </div>
+       </div>
+       <div style="clear:both"></div>
+    </div>
+ </div>
+ <div class="chatDiv" style="display: block; right: 25px; left: 10px;">
+    <button class="btnUploader dz-clickable" id="uploadBtn" style="cursor: pointer;"><i class="fa fa-arrow-circle-o-up"></i></button>
+    <button id="emojiBtn" class=""><i class="fa fa-smile-o" aria-hidden="true"></i>
+    </button>
+    <button id="addon_Signal" class="cbAddonsBtn" title="Publish Signal"><i class="fa fa-bullhorn" aria-hidden="true"></i></button>
+    <span id="chatbox-placeholder" style="display: inline;">Message #Traders Lounge</span>
+    <div id="chatbox" contenteditable="true" style="cursor: text;"></div>
+    <span id="faux" style="display: none;"></span>
+    <span class="downloadLink paymentFormRoom"><i class="fa fa-download"></i> Download Desktop App</span
+       >
+ </div>
