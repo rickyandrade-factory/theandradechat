@@ -22,7 +22,7 @@ import { HttpService } from './services/http.service';
 import { AppConfig } from './app.config';
 import { AppLocalConfig } from './app.local.config';
 import { ErrorComponent } from './error/error.component';
-import { User } from './models';
+import { User } from './models/index';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { RightareaComponent } from './rightarea/rightarea.component';
 import { ChatareaComponent } from './chatarea/chatarea.component';
