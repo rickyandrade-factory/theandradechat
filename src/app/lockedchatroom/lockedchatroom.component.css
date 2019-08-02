@@ -1,0 +1,18 @@
+.btn-primary {
+  background-color: #e08600!important;
+  border-color: #f99500!important;
+  color: #fff!important;
+}
+.empty-messages img.small {
+  height: 230px;
+}
+img{
+  margin: 20px;
+}
+.empty-messages {
+  width: 100%;
+  text-align: center;
+  padding: 90px 0 0;
+  font-size: 2em;
+  color: #bbb;
+}
