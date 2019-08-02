@@ -27,6 +27,8 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { RightareaComponent } from './rightarea/rightarea.component';
 import { ChatareaComponent } from './chatarea/chatarea.component';
 import { AuthGuard } from './auth.guard';
+import { LockedchatroomComponent } from './lockedchatroom/lockedchatroom.component';
+import { DirectchatroomComponent } from './directchatroom/directchatroom.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +41,8 @@ import { AuthGuard } from './auth.guard';
     SidenavComponent,
     RightareaComponent,
     ChatareaComponent,
+    LockedchatroomComponent,
+    DirectchatroomComponent,
   ],
   imports: [
     BrowserModule,

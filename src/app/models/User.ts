@@ -2,7 +2,7 @@ import { HttpService } from '../services/http.service';
 import { LocalStorageService, SessionStorageService, LocalStorage, SessionStorage } from 'angular-web-storage';
 
 export class User {
-  constructor( public session: SessionStorageService) { }
+  constructor( ) { }
 
   providerId: string;
   accessToken: string;
