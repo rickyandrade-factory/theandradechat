@@ -60,6 +60,23 @@ p.teamName {
 
 
 /* chat */
+.right-sidenav .mat-drawer-inner-container{
+  background-color: #323232;
+}
+.container-all-page mat-drawer-content {
+  position: static;
+  overflow: visible;
+}
+.example-sidenav-content.widget-btn {
+  position: absolute;
+  right: 0;
+  top: -65px;
+  z-index: 999;
+}
+.container-all-page {
+  z-index: 9999!important;
+  margin-top: 5px;
+}
 .icon-happy2 {
   font-family: 'icomoon' !important;
   speak: none;
@@ -849,7 +866,7 @@ app-dashboard .mat-drawer-content{
 .page-data {
   background-color: #252525;
   color: #fff;
-  height: calc(100vh - 128px);
+  height: calc(100vh - 133px);
   overflow-y: scroll;
   padding-bottom: 10px;
 }
@@ -5295,7 +5312,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-right {
     float: right !important;
     position: fixed;
-    right: 0;
+    right: 70px;
     background-color: #252525;
   }
   .navbar-right ~ .navbar-right {
