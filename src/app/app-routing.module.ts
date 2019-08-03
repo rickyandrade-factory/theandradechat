@@ -5,6 +5,7 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
 
 import { ErrorComponent } from './error/error.component';
 // import { AuthGuard } from './auth.guard';
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'register', component: SignupComponent },
   { path: 'forgotpassword', component: ForgotpasswordComponent },
   { path: 'dashboard', component: DashboardComponent},
+  { path: 'admindashboard', component: AdmindashboardComponent},
 ];
 
 @NgModule({

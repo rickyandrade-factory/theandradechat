@@ -57,7 +57,61 @@ p.teamName {
 
 
 
-
+/* admin panel */
+.admin-dashboard #team-wrapper .teamName{
+  display: inline-block;
+}
+.admin-dashboard img.navbar-brand-logo {
+  height: 38px;
+  margin: 5px;
+}
+.admin-dashboard .teamName {
+  color: #ccc;
+}
+.admin-dashboard  #team-wrapper{
+  background-color: #252525;
+}
+.admin-dashboard .teamName h5{
+  margin:0;
+  font-size:18px;
+}
+.admin-dashboard .teamName span{
+  font-size:12px;
+}
+.admin-dashboard .h1,.admin-dashboard .h2,.admin-dashboard .h3,.admin-dashboard .h4,.admin-dashboard .h5,.admin-dashboard .h6,.admin-dashboard h1,.admin-dashboard h2,.admin-dashboard h3,
+.admin-dashboard h4,.admin-dashboard h5,.admin-dashboard h6 {
+  font-family: Poppins,monospace;
+  font-weight: 300;
+}
+.admin-dashboard{
+  font-size:14px;
+  font-family: Poppins,monospace;
+}
+.admin-dashboard .nav-sidebar i {
+  width: 20px;
+}
+.admin-dashboard .nav-sidebar > li > a {
+  color: #ccc;
+}
+.admin-dashboard .selectedRoom > a{
+  color:#fff!important;
+}
+.admin-dashboard .selectedRoom {
+  background-color: #f99500!important;
+}
+.admin-dashboard .nav-sidebar li a {
+  padding-top:9px;
+  padding-bottom:9px;
+  letter-spacing:0;
+}
+.admin-dashboard .nav-sidebar a.inactive:hover {
+  color: #fff;
+  background: #333;
+}
+.admin-dashboard .mat-drawer-inner-container {
+  background: #252525!important;
+  width: 200px;
+}
 
 /* chat */
 .right-sidenav .mat-drawer-inner-container{
@@ -8925,8 +8979,8 @@ footer {
 
 .hamburger:before, .hamburger .icon, .hamburger:after {
     display: block;
-    width: 95%;
-    height: .09em;
+    width: 80%;
+    height: .08em;
     margin: 0 0 .3em;
     transition: transform .2s ease-in-out;
     border-radius: .05em;

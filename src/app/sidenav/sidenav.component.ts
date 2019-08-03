@@ -11,9 +11,12 @@ export class SidenavComponent implements OnInit {
   constructor(private auth: AuthService) { }
 
   ngOnInit() {
-  }
+  } 
 
   logout() {
     this.auth.logout();
   }
 }
+
+
+

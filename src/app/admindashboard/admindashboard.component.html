@@ -1,0 +1,153 @@
+<div class="login-container admin-dashboard">
+    <mat-drawer-container class="example-container" autosize>
+      <div class="navbar navbar-fixed-top navbar-inverse navbar-static-top" style="position:static;">
+        <mat-drawer #drawer class="example-sidenav sidebar navbar-collapse" opened="true" mode="side"
+          style="position:fixed; left:0;">
+          <a ui-sref="app.main" class="text-center" href="#!/">
+            <span class="logo-mini">
+                <img class="navbar-brand-logo" src="https://marketmastersacademy.echofin.co/dashboard/resources/images/logo.png" title="echofin">
+            </span>
+        </a>
+          <div id="team-wrapper" header-company-sidebar="" class="ng-isolate-scope" style="position:static; min-width: 300px; padding:10px;">
+              <img class="sidebar-avatar" ng-src="//cdn.echofin.co/avatar/b7e64405.png?t=1551496349357" src="//cdn.echofin.co/avatar/b7e64405.png?t=1551496349357">
+              <div class="teamName" title="MarketMastersAcademy">
+                  <h5 class="ng-binding">MarketMastersAcademy</h5>
+                  <span class="team-members ng-binding">b7e64405</span>
+              </div>
+            </div>
+            <!-- list -->
+            <ul class="nav nav-sidebar">
+              <li ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }" ng-repeat="chatRoom in chatRooms | filter:{n_type:'!3'}" class="ng-scope selectedRoom">
+                  <a (click)="isOn= false" ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent selectedRoom" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
+                  <span class="flex-child">
+                      <i class="fa fa-dashboard fa-fw"></i>
+                  <span class="room-name ng-binding">Dashboard</span>
+                  </span>
+                  </a>
+              </li>
+              <li ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }" ng-repeat="chatRoom in chatRooms | filter:{n_type:'!3'}" class="ng-scope">
+                  <a (click)="isOn= false" ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent inactive " ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
+                  <span class="flex-child">
+                      <i class="fa fa-users fa-fw"></i>
+                  <span class="room-name ng-binding">Users</span>
+                  </span>
+                  </a>
+              </li>
+              <li ng-class="{active:vm.$state.includes('app.payments.*')}">
+                  <a class="flex-parent inactive " ui-sref="app.payments.overview" href="#!/payments/">
+                      <i class="fa fa-check-square-o fa-fw"></i>
+                      <span>Payments</span>
+                  </a>
+              </li>
+              <li ng-class="{active:vm.$state.includes('app.subscriptions.*')}">
+                  <a class="flex-parent inactive " ui-sref="app.subscriptions.overview" href="#!/subscriptions/">
+                      <i class="fa fa-money fa-fw"></i>
+                      <span>Subscriptions</span>
+                  </a>
+              </li>
+              <li ng-class="{active:vm.$state.includes('app.payouts.*')}">
+                  <a class="flex-parent inactive " ui-sref="app.payouts.overview" href="#!/payouts/">
+                      <i class="fa fa-bank fa-fw"></i>
+                      <span>Payouts</span>
+                  </a>
+              </li>
+              <li class="divider no-line"></li>
+              <li ng-class="{active:vm.$state.includes('app.billing.*')}">
+                  <a class="flex-parent inactive " ui-sref="app.billing.overview" href="#!/billing/">
+                      <i class="fa fa-credit-card fa-fw"></i>
+                      <span>Billing Plans</span>
+                  </a>
+              </li>
+              <li ng-class="{active:vm.$state.includes('app.coupons.*')}">
+                  <a class="flex-parent inactive " ui-sref="app.coupons.overview" href="#!/coupons/">
+                      <i class="fa fa-tags fa-fw"></i>
+                      <span>Coupons</span>
+                  </a>
+              </li>
+              <li class="divider no-line"></li>
+              <li ng-class="{active:vm.$state.includes('app.chatrooms.*')}">
+                  <a class="flex-parent inactive " ui-sref="app.chatrooms.overview" href="#!/chatrooms/">
+                      <i class="fa fa-comments-o fa-fw"></i>
+                      <span>Chatrooms</span>
+                  </a>
+              </li>
+              <li ng-class="{active:vm.$state.includes('app.pages.*')}">
+                  <a class="flex-parent inactive " ui-sref="app.pages.overview" href="#!/pages/">
+                      <i class="fa fa-files-o fa-fw"></i>
+                      <span>Services</span>
+                  </a>
+              </li>
+              <li ng-class="{active:vm.$state.includes('app.widgets')}">
+                  <a class="flex-parent inactive " ui-sref="app.widgets" href="#!/widgets">
+                      <i class="fa fa-cubes fa-fw"></i>
+                      <span>Widgets</span>
+                  </a>
+              </li>
+              <li class="divider no-line"></li>
+              <li ng-class="{active:vm.$state.includes('app.online')}">
+                  <a class="flex-parent inactive " ui-sref="app.online" href="#!/online">
+                      <i class="fa fa-podcast fa-fw"></i>
+                      <span>Online Activity</span>
+                  </a>
+              </li>
+              <li ng-class="{active:vm.$state.includes('app.compliance')}">
+                  <a  class="flex-parent inactive " ui-sref="app.compliance.overview" href="#!/compliance/">
+                      <i class="fa fa-balance-scale fa-fw"></i>
+                      <span>Compliance</span>
+                  </a>
+              </li>
+              <li class="divider no-line"></li>
+              <li ng-class="{active:vm.$state.includes('app.api')}">
+                  <a class="flex-parent inactive " ui-sref="app.api" href="#!/api">
+                      <i class="fa fa-code fa-fw"></i>
+                      <span>API
+                          <small class="badge" style="font-size: .6rem;
+                          padding: 2px 4px;
+                          margin: 0 0 0 5px; 
+                          background: #FFF;
+                          border-radius: 3px;
+                          color: #666;
+                          line-height: 1rem;">BETA</small>
+                      </span>
+                  </a>
+              </li>
+              <li class="divider no-line"></li>
+              <li>
+                  <a  class="flex-parent inactive " href="#" target="_blank">
+                      <i class="fa fa-youtube fa-fw"></i>
+                      <span>Video Tutorials</span>
+                  </a>
+              </li>
+              <li>
+                  <a class="flex-parent inactive " href="" ng-click="vm.ViewTutorial()">
+                      <i class="fa fa-graduation-cap fa-fw"></i>
+                      <span>Guided Tour</span>
+                  </a>
+              </li>
+            </ul>
+
+
+
+          
+        </mat-drawer>
+  
+        <div class="example-sidenav-content">
+          <button class="hamburgerHeader hamburger hamburger-arrow-left hidden-xs" hamburger-drv="" mat-button
+            (click)="drawer.toggle()">
+            <span class="icon"></span>
+          </button>
+        </div>
+        <div class="roomHeader">
+          <i class="fa" ng-class="{'roomLock': room.n_type==2 , 'fa-unlock': room.n_type==2}" aria-hidden="true"></i>
+          <div header-nav-trial="" class="nav-trial-container">
+            <div class="nav-trial-container-text ng-binding"></div>
+          </div>
+        </div>
+        <app-rightarea></app-rightarea>
+      </div>
+      <!-- <app-chatarea ng-hide="showme"></app-chatarea> -->
+      <app-lockedchatroom></app-lockedchatroom>
+      <!-- <app-directchatroom></app-directchatroom> -->
+    </mat-drawer-container>
+  </div>
+  

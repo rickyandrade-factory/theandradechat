@@ -29,6 +29,7 @@ import { ChatareaComponent } from './chatarea/chatarea.component';
 import { AuthGuard } from './auth.guard';
 import { LockedchatroomComponent } from './lockedchatroom/lockedchatroom.component';
 import { DirectchatroomComponent } from './directchatroom/directchatroom.component';
+import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { DirectchatroomComponent } from './directchatroom/directchatroom.compone
     ChatareaComponent,
     LockedchatroomComponent,
     DirectchatroomComponent,
+    AdmindashboardComponent,
   ],
   imports: [
     BrowserModule,

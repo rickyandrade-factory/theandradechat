@@ -38,7 +38,7 @@
   <ul class="nav nav-sidebar">
     <li class="rooms-sidebar-header">ROOMS</li>
     <li ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }" ng-repeat="chatRoom in chatRooms | filter:{n_type:'!3'}" class="ng-scope">
-        <a ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
+        <a ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent locked" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
           <span class="flex-child">
           <i class="roomIcon fa fa-fw fa-hashtag" aria-hidden="true"></i>
           <span class="room-name ng-binding">On Point FX Signals (USA)</span>
@@ -50,7 +50,7 @@
         </a>
     </li>
     <li ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }" ng-repeat="chatRoom in chatRooms | filter:{n_type:'!3'}" class="ng-scope selectedRoom">
-        <a ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent selectedRoom" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
+        <a (click)="isOn= false" ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent selectedRoom" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
         <span class="flex-child">
         <i class="roomIcon fa fa-fw fa-hashtag" aria-hidden="true"></i>
         <span class="room-name ng-binding">Traders Lounge</span>
@@ -58,7 +58,7 @@
         </a>
     </li>
     <li ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }" ng-repeat="chatRoom in chatRooms | filter:{n_type:'!3'}" class="ng-scope">
-        <a ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
+        <a ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent locked" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
           <span class="flex-child">
           <i class="roomIcon fa fa-fw fa-hashtag" aria-hidden="true"></i>
           <span class="room-name ng-binding">On Point FX Signals (USA)</span>
@@ -70,7 +70,7 @@
         </a>
     </li>
     <li ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }" ng-repeat="chatRoom in chatRooms | filter:{n_type:'!3'}" class="ng-scope">
-        <a ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
+        <a ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent locked" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
           <span class="flex-child">
           <i class="roomIcon fa fa-fw fa-hashtag" aria-hidden="true"></i>
           <span class="room-name ng-binding">The Golden Circle</span>
@@ -81,7 +81,7 @@
         </a>
     </li>
     <li ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }" ng-repeat="chatRoom in chatRooms | filter:{n_type:'!3'}" class="ng-scope">
-        <a ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
+        <a ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent locked" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
           <span class="flex-child">
           <i class="roomIcon fa fa-fw fa-hashtag" aria-hidden="true"></i>
           <span class="room-name ng-binding">On Point FX Signals (USA)</span>
@@ -93,7 +93,7 @@
         </a>
     </li>
     <li ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }" ng-repeat="chatRoom in chatRooms | filter:{n_type:'!3'}" class="ng-scope">
-        <a ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
+        <a ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent locked" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
           <span class="flex-child">
           <i class="roomIcon fa fa-fw fa-hashtag" aria-hidden="true"></i>
           <span class="room-name ng-binding">The Golden Circle</span>
@@ -104,7 +104,7 @@
         </a>
     </li>
     <li ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }" ng-repeat="chatRoom in chatRooms | filter:{n_type:'!3'}" class="ng-scope">
-        <a ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
+        <a ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent locked" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
           <span class="flex-child">
           <i class="roomIcon fa fa-fw fa-hashtag" aria-hidden="true"></i>
           <span class="room-name ng-binding">On Point FX Signals (USA)</span>
@@ -116,7 +116,7 @@
         </a>
     </li>
     <li ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }" ng-repeat="chatRoom in chatRooms | filter:{n_type:'!3'}" class="ng-scope">
-        <a ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
+        <a ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent locked" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
           <span class="flex-child">
           <i class="roomIcon fa fa-fw fa-hashtag" aria-hidden="true"></i>
           <span class="room-name ng-binding">The Golden Circle</span>
@@ -127,7 +127,7 @@
         </a>
     </li>
     <li ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }" ng-repeat="chatRoom in chatRooms | filter:{n_type:'!3'}" class="ng-scope">
-        <a ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
+        <a ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent locked" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
           <span class="flex-child">
           <i class="roomIcon fa fa-fw fa-hashtag" aria-hidden="true"></i>
           <span class="room-name ng-binding">On Point FX Signals (USA)</span>
@@ -139,7 +139,7 @@
         </a>
     </li>
     <li ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }" ng-repeat="chatRoom in chatRooms | filter:{n_type:'!3'}" class="ng-scope">
-        <a ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
+        <a ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent locked" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
           <span class="flex-child">
           <i class="roomIcon fa fa-fw fa-hashtag" aria-hidden="true"></i>
           <span class="room-name ng-binding">The Golden Circle</span>
@@ -150,7 +150,7 @@
         </a>
     </li>
     <li ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }" ng-repeat="chatRoom in chatRooms | filter:{n_type:'!3'}" class="ng-scope">
-        <a ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
+        <a ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent locked" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
           <span class="flex-child">
           <i class="roomIcon fa fa-fw fa-hashtag" aria-hidden="true"></i>
           <span class="room-name ng-binding">On Point FX Signals (USA)</span>
@@ -162,7 +162,7 @@
         </a>
     </li>
     <li ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }" ng-repeat="chatRoom in chatRooms | filter:{n_type:'!3'}" class="ng-scope">
-        <a ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
+        <a ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent locked" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
           <span class="flex-child">
           <i class="roomIcon fa fa-fw fa-hashtag" aria-hidden="true"></i>
           <span class="room-name ng-binding">The Golden Circle</span>
@@ -173,7 +173,7 @@
         </a>
     </li>
     <li ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }" ng-repeat="chatRoom in chatRooms | filter:{n_type:'!3'}" class="ng-scope">
-        <a ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
+        <a ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent locked" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
           <span class="flex-child">
           <i class="roomIcon fa fa-fw fa-hashtag" aria-hidden="true"></i>
           <span class="room-name ng-binding">On Point FX Signals (USA)</span>
@@ -185,7 +185,7 @@
         </a>
     </li>
     <li ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }" ng-repeat="chatRoom in chatRooms | filter:{n_type:'!3'}" class="ng-scope">
-        <a ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
+        <a ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent locked" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
           <span class="flex-child">
           <i class="roomIcon fa fa-fw fa-hashtag" aria-hidden="true"></i>
           <span class="room-name ng-binding">The Golden Circle</span>
