@@ -65,15 +65,131 @@ p.teamName {
   height: 38px;
   margin: 5px;
 }
+.navbar-custom-menu .navbar-nav>li>a {
+  padding: 14px;
+  margin: 0;
+  color: #fff!important;
+}
+.navbar-custom-menu li.dropdown a {
+  padding: 0;
+}
+.navbar-custom-menu li.dropdown a button{
+  padding: 14px;
+  margin-top: 0!important;
+  line-height: normal;
+}
+a + li.divider {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #eee;
+}
+.mat-menu-content {
+  background: #fff!important;
+  border: 1px solid #fff!important;
+}
+a.profile-menu {
+  display: block;
+  padding: 3px 20px;
+  clear: both;  
+  font-weight: 400;
+  line-height: 1.42857;
+  color: #777;
+  white-space: nowrap;
+}
+.navbar-custom-menu .navbar-nav>li>a:hover{
+  background: rgba(0,0,0,.1)!important;
+  color: #f6f6f6!important;
+}
+.admin-dashboard .navbar-custom-menu {
+  right:0;
+  background: transparent;
+}
+.admin-dashboard .mat-drawer-container button.mat-button {
+  padding: 14px;
+  margin-top: 3px!important;
+}
+.admin-dashboard .hamburger:before, .admin-dashboard .hamburger .icon,.admin-dashboard .hamburger:after{
+  width: 40%;
+  background-color:#fff;
+  margin: 0 0 .1em!important;
+}
+.admin-dashboard .navbar {
+  min-height: auto;
+}
+.admin-dashboard .roomHeader {
+  float: left;
+  line-height: 48px;
+}
+.navbar-custom-menu   .user-avatar {
+  width: 25px;
+  height: 25px;
+  margin: -5px 5px -5px 0;
+  border-radius: 10px;
+  border: solid 1px #fff;
+  padding: 2px;
+}
 .admin-dashboard .teamName {
   color: #ccc;
 }
 .admin-dashboard  #team-wrapper{
   background-color: #252525;
 }
+.admin-dashboard .navbar-fixed-top {
+  background-color: #323232;
+  border-bottom: 2px solid #f99500;
+}
+.admin-dashboard mat-drawer-content {
+  background: #fff;
+}
+/* .alert-info, .bg-aqua, .callout.callout-info, .label-info, .modal-info .modal-body {
+  background-color: #2f6cab!important;
+}
+.small-box .icon {
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  z-index: 0;
+  font-size: 90px;
+  color: rgba(0,0,0,.15);
+}
+.small-box>.inner {
+  padding: 10px;
+}
+.small-box .inner h3 {
+  font-size: 5em;
+  height: 61px;
+  text-shadow: 3px 3px 0 rgba(0,0,0,.2);
+}
+.small-box .inner p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+} */
+.admin-dashboard .content-header>h1 {
+  margin: 0;
+  font-size: 24px;
+}
+.content {
+  min-height: 250px;
+  padding: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.admin-dashboard .content-header {
+  position: relative;
+  padding: 15px 15px 0 15px;
+  color:#555;
+}
 .admin-dashboard .teamName h5{
-  margin:0;
-  font-size:18px;
+  margin-bottom: 5px!important;
+  font-size: 18px;
+  margin: 0;
 }
 .admin-dashboard .teamName span{
   font-size:12px;
@@ -111,6 +227,7 @@ p.teamName {
 .admin-dashboard .mat-drawer-inner-container {
   background: #252525!important;
   width: 200px;
+  overflow: hidden;
 }
 
 /* chat */

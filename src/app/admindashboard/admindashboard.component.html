@@ -8,7 +8,7 @@
                 <img class="navbar-brand-logo" src="https://marketmastersacademy.echofin.co/dashboard/resources/images/logo.png" title="echofin">
             </span>
         </a>
-          <div id="team-wrapper" header-company-sidebar="" class="ng-isolate-scope" style="position:static; min-width: 300px; padding:10px;">
+          <div id="team-wrapper" header-company-sidebar="" class="ng-isolate-scope" style="position:static; min-width: 300px; padding: 10px;margin-bottom: 4px;border: none;">
               <img class="sidebar-avatar" ng-src="//cdn.echofin.co/avatar/b7e64405.png?t=1551496349357" src="//cdn.echofin.co/avatar/b7e64405.png?t=1551496349357">
               <div class="teamName" title="MarketMastersAcademy">
                   <h5 class="ng-binding">MarketMastersAcademy</h5>
@@ -125,10 +125,6 @@
                   </a>
               </li>
             </ul>
-
-
-
-          
         </mat-drawer>
   
         <div class="example-sidenav-content">
@@ -143,11 +139,55 @@
             <div class="nav-trial-container-text ng-binding"></div>
           </div>
         </div>
-        <app-rightarea></app-rightarea>
+        <!-- app menubar -->
+        <div class="navbar-right navbar-custom-menu">
+            <ul class="nav navbar-nav">
+                <li ng-class="{active:vm.$state.includes('app.settings')}" class="">
+                    <a ui-sref="app.settings" href="#!/settings">
+                        <span class="fa fa-gears fa-fw"></span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="/">
+                        <span class="fa fa-comments fa-fw"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" id="headwayapp">
+                        <span class="fa fa-envelope-o fa-fw"></span>
+                    <span id="HW_badge_cont" class="HW_visible"><span id="HW_badge" data-count-unseen="" class="HW_softHidden"></span></span></a>
+                </li>
+                <li class="dropdown"> 
+                    <a>
+                        <button mat-button [matMenuTriggerFor]="menu"> puneetsethi25@gmail.com
+                                <span class="caret"></span>
+                        </button>
+                        <mat-menu #menu="matMenu" xPosition="before">
+                                <a class="profile-menu" href="" >Profile</a>
+                                <li class="divider"></li>
+                                <a class="profile-menu" href="">Sign Out</a>
+                        </mat-menu>
+                    </a>
+                </li>
+            </ul>
+         </div>
+
+         
+
       </div>
-      <!-- <app-chatarea ng-hide="showme"></app-chatarea> -->
-      <app-lockedchatroom></app-lockedchatroom>
-      <!-- <app-directchatroom></app-directchatroom> -->
+
+      <!-- page -->
+      <section class="content-header ng-scope">
+            <h1>
+                Dashboard
+                <button type="button" class="btn btn-sm btn-link btn-no-shadow pull-right" ng-click="vm.LoadAll()">
+                    <span class="fa fa-refresh fa-fw" ng-class="{'fa-spin':vm.loading}"></span>
+                </button>
+            </h1>
+        </section>
+        <section class="content">
+        </section>
+        
     </mat-drawer-container>
   </div>
   
