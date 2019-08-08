@@ -61,7 +61,7 @@ input:not(:focus):valid ~ .floating-label{
   bottom: 10px;
   left: 0px;
   font-size: 13px;
-  color: rgb(223, 178, 66);
+  text-decoration:underline;
   opacity: 1;
 }
 
@@ -75,7 +75,7 @@ input:not(:focus):valid ~ .floating-label{
   position: absolute;
   pointer-events: none;
   left: 0px;
-  color: #888;
+  color: #924d27;
   transition: 500ms ease-in-out;
   top: 12px;
 }
@@ -134,7 +134,7 @@ input:focus{
   button{
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
     color: rgba(255,255,255,0.87);
-    background-color: rgb(223,178,66);
+    background-color: #00a2c8;
     padding-top: 5px;
     display: inline-block;
     position: relative;
