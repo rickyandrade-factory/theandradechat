@@ -84,7 +84,7 @@ height: 35px;
 }
 
 .floating-label {
-position: absolute;
+position: absolute; 
 pointer-events: none;
 left: 0px;
 color: #924d27;

@@ -17,32 +17,32 @@ export class AdmindashboardComponent implements OnInit {
 
 
 
-// angular.module('app', ['chart.js']);
+angular.module('app', ['chart.js']);
 
-// angular.module('app')
-//   .controller('MyController', function ($scope, $timeout) {
-//     $scope.labels = ["08/08/2019", "08/09/2019", "08/12/2019", "08/13/2019", "08/15/2019", "08/23/2019", "08/24/2019"];
-//     $scope.series = ['Series A', 'Series B'];
-//     $scope.data = [
-//       [65, 59, 80, 81, 56, 55, 40, 66],
-//       [28, 48, 40, 19, 86, 27, 90, 55]
-//     ];
-//     $scope.onClick = function (points, evt) {  
-//       console.log(points, evt);
-//     };
+angular.module('app')
+  .controller('MyController', function ($scope, $timeout) {
+    $scope.labels = ["08/08/2019", "08/09/2019", "08/12/2019", "08/13/2019", "08/15/2019", "08/23/2019", "08/24/2019"];
+    $scope.series = ['Series A', 'Series B'];
+    $scope.data = [
+      [65, 59, 80, 81, 56, 55, 40, 66],
+      [28, 48, 40, 19, 86, 27, 90, 55]
+    ];
+    $scope.onClick = function (points, evt) {  
+      console.log(points, evt);
+    };
 
-//     // Simulate async data update
-//     $timeout(function () {
-//       $scope.data = [
-//         [28, 48, 40, 19, 86, 27, 90, 76],
-//         [65, 59, 80, 81, 56, 55, 40, 45]
-//       ];
-//     }, 3000);
-//   });
+    // Simulate async data update
+    $timeout(function () {
+      $scope.data = [
+        [28, 48, 40, 19, 86, 27, 90, 76],
+        [65, 59, 80, 81, 56, 55, 40, 45]
+      ];
+    }, 3000);
+  });
 
-// angular.element(document).ready(function(){
-//   angular.bootstrap(document, ['app']);
-// });
+angular.element(document).ready(function(){
+  angular.bootstrap(document, ['app']);
+});
 
 
 

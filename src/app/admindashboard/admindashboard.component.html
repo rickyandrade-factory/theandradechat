@@ -6,6 +6,7 @@
           <a ui-sref="app.main" class="text-center" href="#!/">
             <span class="logo-mini">
                 <img class="navbar-brand-logo" src="https://marketmastersacademy.echofin.co/dashboard/resources/images/logo.png" title="echofin">
+                <img class="navbar-brand-logo-mini" src="https://marketmastersacademy.echofin.co/dashboard/resources/images/icon-white.png" title="echofin">
             </span>
         </a>
           <div id="team-wrapper" header-company-sidebar="" class="ng-isolate-scope" style="position:static; min-width: 300px; padding: 10px;margin-bottom: 4px;border: none;">
@@ -15,22 +16,17 @@
                   <span class="team-members ng-binding">b7e64405</span>
               </div>
             </div>
-            <!-- list -->
             <ul class="nav nav-sidebar">
-              <li ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }" ng-repeat="chatRoom in chatRooms | filter:{n_type:'!3'}" class="ng-scope selectedRoom">
-                  <a (click)="isOn= false" ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent selectedRoom" ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
-                  <span class="flex-child">
+              <li class="ng-scope selectedRoom">
+                  <a style="cursor:pointer" class="flex-parent selectedRoom">
                       <i class="fa fa-dashboard fa-fw"></i>
                   <span class="room-name ng-binding">Dashboard</span>
-                  </span>
                   </a>
               </li>
-              <li ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }" ng-repeat="chatRoom in chatRooms | filter:{n_type:'!3'}" class="ng-scope">
-                  <a (click)="isOn= false" ng-click="changeRoom(chatRoom)" style="cursor:pointer" class="flex-parent inactive " ng-class="{ 'selectedRoom': chatRoom.s_name == roomName }">
-                  <span class="flex-child">
+              <li  class="ng-scope">
+                  <a  style="cursor:pointer" class="flex-parent inactive ">
                       <i class="fa fa-users fa-fw"></i>
-                  <span class="room-name ng-binding">Users</span>
-                  </span>
+                  <span class="ng-binding">Users</span>
                   </a>
               </li>
               <li ng-class="{active:vm.$state.includes('app.payments.*')}">
@@ -127,19 +123,22 @@
             </ul>
         </mat-drawer>
   
-        <div class="example-sidenav-content">
-          <button class="hamburgerHeader hamburger hamburger-arrow-left hidden-xs" hamburger-drv="" mat-button
-            (click)="drawer.toggle()">
+        <!-- <div class="example-sidenav-content">
+          <button  class="hamburgerHeader hamburger hamburger-arrow-left hidden-xs" hamburger-drv="" mat-button (click)="drawer.toggle()">
             <span class="icon"></span>
           </button>
-        </div>
+        </div> -->
+        <div class="example-sidenav-content">
+                <button  class="hamburgerHeader hamburger hamburger-arrow-left sidebar-toggle" hamburger-drv="">
+                  <span class="icon"></span>
+                </button>   
+              </div>
         <div class="roomHeader">
           <i class="fa" ng-class="{'roomLock': room.n_type==2 , 'fa-unlock': room.n_type==2}" aria-hidden="true"></i>
           <div header-nav-trial="" class="nav-trial-container">
             <div class="nav-trial-container-text ng-binding"></div>
           </div>
         </div>
-        <!-- app menubar -->
         <div class="navbar-right navbar-custom-menu">
             <ul class="nav navbar-nav">
                 <li ng-class="{active:vm.$state.includes('app.settings')}" class="">
@@ -163,20 +162,15 @@
                                 <span class="caret"></span>
                         </button>
                         <mat-menu #menu="matMenu" xPosition="before">
-                                <a class="profile-menu" href="" >Profile</a>
+                                <a class="profile-menu white" href="" >Profile</a>
                                 <li class="divider"></li>
-                                <a class="profile-menu" href="">Sign Out</a>
+                                <a class="profile-menu white" href="">Sign Out</a>
                         </mat-menu>
                     </a>
                 </li>
             </ul>
          </div>
-
-         
-
       </div>
-
-      <!-- page -->
       <section class="content-header ng-scope">
             <h1>
                 Dashboard
@@ -188,7 +182,7 @@
         <section class="content">
             <div class="row">
                     <div class="col-md-4 col-lg-2 box-stats">
-                            <div class="small-box " >
+                            <div class="small-box">
                                 <div class="icon">
                                     <i class="fa fa-users fa-fw"></i>
                                 </div>
@@ -211,7 +205,7 @@
                             </div>
                     </div>
                     <div class="col-md-4 col-lg-2 box-stats">
-                            <div class="small-box bg-yellow" >
+                            <div class="small-box bg-yellow">
                                 <div class="icon">
                                     <i class="fa fa-fire"></i>
                                 </div>
@@ -243,7 +237,6 @@
                                 </div>
                             </div>
                     </div>
-
                     <div class="col-md-4 col-lg-2 box-stats">
                             <div class="small-box bg-purple">
                                 <div class="icon">
@@ -260,7 +253,6 @@
                 <div class="col-md-8" style="padding:0 15px;">
                         <div class="row">
                                 <div class="col-md-12">
-                                        
                                         <div class="line-graph" ng-controller="MyController">
                                             <div class="box">
                                                     <div class="box-header with-border">
@@ -285,11 +277,11 @@
                                                                 <div class="dropdown-btn">
                                                                         <button mat-button [matMenuTriggerFor]="beforeMenu">Last 30 days <span class="caret"></span></button>
                                                                         <mat-menu #beforeMenu="matMenu" xPosition="before">
-                                                                          <button mat-menu-item>Last 90 days</button>
-                                                                          <button mat-menu-item>Last 60 days</button>
-                                                                          <button mat-menu-item>Last 30 days</button>
-                                                                          <button mat-menu-item>Last 15 days</button>
-                                                                          <button mat-menu-item>Last 7 days</button>
+                                                                          <button class="white" mat-menu-item>Last 90 days</button>
+                                                                          <button class="white" mat-menu-item>Last 60 days</button>
+                                                                          <button class="white" mat-menu-item>Last 30 days</button>
+                                                                          <button class="white" mat-menu-item>Last 15 days</button>
+                                                                          <button class="white" mat-menu-item>Last 7 days</button>
                                                                         </mat-menu>
                                                                 </div>
                                                                 <button type="button" class="btn btn-sm btn-link btn-no-shadow" ng-click="vm.LoadRegistrations()">
@@ -300,8 +292,7 @@
                                                     <canvas class="chart chart-line" chart-data="data" chart-labels="labels" 
                                                       chart-series="series" chart-click="onClick" height="200"></canvas> 
                                             </div>
-                                               
-                                              </div>
+                                        </div>
                                 </div>
                         </div>
                 </div>
@@ -414,7 +405,6 @@
                 </div>
             </div>
         </section>
-        
     </mat-drawer-container>
   </div>
   

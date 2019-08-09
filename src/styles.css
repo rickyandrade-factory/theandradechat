@@ -10,6 +10,9 @@ body{
   height:100vh;
   overflow:hidden;
 }
+.white{
+ color:#fff!important;
+}
 .img-cont {
   background-color: rgba(220, 101, 38,0.2);
 }
@@ -61,8 +64,75 @@ p.teamName {
 
 
 /* admin panel */
+.mini-sidebar mat-drawer-content {
+  margin-left: 50px!important;
+  transition: transform .3s ease-in-out,width .3s ease-in-out;
+}
+.mini-sidebar .mat-drawer-inner-container {
+  max-width: 50px;
+  transition: transform .3s ease-in-out,margin .3s ease-in-out;
+}
+.mini-sidebar .mat-drawer.mat-drawer-side{
+  overflow: visible!important;
+}
+.mini-sidebar .nav-sidebar{
+  overflow: visible;
+}
+.mini-sidebar .mat-drawer-inner-container{
+  overflow:visible!important;
+}
+.mini-sidebar .nav-sidebar li{
+  position:relative;
+}
+.mini-sidebar .nav-sidebar li a span{
+  display:none;
+}
+.mini-sidebar .nav-sidebar li:hover a span{
+  display: block!important;
+  position: absolute;
+  width: 150px;
+  left: 49px;
+  top: 2px;
+  margin-left: -3px;
+  padding: 12px 5px 12px 20px!important;
+  background-color: #0e2226;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  line-height:24px;
+  font-size: 13px;
+}
+.mini-sidebar .navbar-brand-logo{
+  display:none;
+}
+.admin-dashboard.mini-sidebar .navbar-brand-logo-mini{
+  display:block;
+  height: 38px;
+  margin: 5px;
+}
+
+.mini-sidebar  .nav > li > a.flex-parent {
+  letter-spacing: 0px;
+   padding: 5px 16px 5px 10px!important;
+  line-height: 24px;
+  display: inline-block!important;
+  border-left: 2px solid transparent;
+}
+.mini-sidebar #team-wrapper {
+  display: none;
+}
+
 .admin-dashboard #team-wrapper .teamName{
   display: inline-block;
+}
+.admin-dashboard  li.divider.no-line {
+  background: #2b2b2b;
+  width: 80%;
+  margin: 3px auto;
+  height: 1px;
+  line-height: 24px;
+}
+.admin-dashboard .navbar-brand-logo-mini{
+  display:none;
 }
 .admin-dashboard img.navbar-brand-logo {
   height: 38px;
@@ -109,7 +179,7 @@ a.profile-menu {
   margin-top: 3px!important;
 }
 .admin-dashboard .hamburger:before, .admin-dashboard .hamburger .icon,.admin-dashboard .hamburger:after{
-  width: 40%;
+  width: 50%;
   background-color:#fff;
   margin: 0 0 .1em!important;
 }
@@ -132,10 +202,10 @@ a.profile-menu {
   color: #ccc;
 }
 .admin-dashboard  #team-wrapper{
-  background-color: #252525;
+  background-color: #0e2226;
 }
 .admin-dashboard .navbar-fixed-top {
-  background-color: #323232;
+  background-color: #0e2226;
   border-bottom: 2px solid #f99500;
 }
 .admin-dashboard mat-drawer-content {
@@ -384,15 +454,17 @@ a.profile-menu {
   color: #fff;
   background: #333;
 }
+
 .admin-dashboard .mat-drawer-inner-container {
-  background: #252525!important;
+  background: #0e2226!important;
   width: 200px;
   overflow: hidden;
+  transition: transform .3s ease-in-out,margin .3s ease-in-out;
 }
 
 /* chat */
 .right-sidenav .mat-drawer-inner-container{
-  background-color: #323232;
+  background-color: #15343a;
 }
 .container-all-page mat-drawer-content {
   position: static;
@@ -426,11 +498,11 @@ a.profile-menu {
 .chatDiv{
   color: #ddd;
 	bottom: 30px;
-  border: 2px solid #1d1d1d;
+  border: 2px solid #0e2226;
   z-index: 2;
   width: 99%;
   margin: 0 auto;
-  background: #3e3e3e;
+  background: #1d4046;
   min-width: 200px;
  }
 
@@ -440,10 +512,10 @@ a.profile-menu {
 	width: 50px !important;
 	min-height: 45px;
 	border: none;
-	background: #2a2a2a;
+	background: #173338;
 	color: #d8d8d8;
 	font-size: 2em;
-	line-height: 45px;
+	line-height: 42px;
 	outline: none;
 	padding-left: 0 !important;
 	padding-right:0px !important;
@@ -490,10 +562,10 @@ a.profile-menu {
  
 #chatbox-placeholder{
   position: absolute;
-  left: 62px;
-  top: 0px;
+  left: 67px;
+  bottom: 2px;
   line-height: 43px;
-  z-index: -3;
+  z-index: 1;
   color: #6f6f6f;
   display: none;
 } 
@@ -724,7 +796,7 @@ li.emojiRef{ display: none; }
 .emojiPopup{
   background: #3e3e3e;
   border: solid 1px #111;
-  box-shadow: 0px 0px 10px #252525 !important;
+  box-shadow: 0px 0px 10px #0e2226 !important;
   height: 500px !important;
 }
 #uploadFilename{
@@ -736,7 +808,7 @@ li.emojiRef{ display: none; }
 .userPopup{
     background: #3e3e3e;
     border: solid 1px #111;
-    box-shadow: 0px 0px 10px #252525 !important;
+    box-shadow: 0px 0px 10px #0e2226 !important;
 }
   ul.dropdown-menu.userPopup:after {
       content: 'type to narrow down results';
@@ -791,7 +863,7 @@ li.emojiRef{ display: none; }
   .menuPopup{
     background: #3e3e3e;
     border: solid 1px #111;
-    box-shadow: 0px 0px 10px #252525 !important;
+    box-shadow: 0px 0px 10px #0e2226 !important;
     width: 45px !important;
     min-width: 45px !important;
     border-radius: 10px !important;
@@ -923,17 +995,7 @@ h6.teamName b{
   margin: 0 auto;
   color:#fff;
 }
-/* .mat-tab-label.mat-tab-label-active::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 2px;
-    width: 100%;
-    background-color: #f99500;
-    bottom: 0px;
-    z-index: 9;
-} */
+
 app-dashboard .right-sidenav {
   width: 500px;
   top:60px;
@@ -989,7 +1051,7 @@ div#topBar {
   position: relative;
   display: inline-block;
   padding: 0 22px;
-  border-bottom: 1px solid #3a3a3a;
+  border-bottom: 1px solid rgb(20, 46, 51);
   font-size: 13px;
   font-weight: 600;
   color: #fff;
@@ -999,7 +1061,7 @@ div#topBar {
   cursor: pointer;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
-  background-color: #3a3a3a;
+  background-color: rgb(19, 45, 50);
   width: 180px;
   border: none;
 }
@@ -1051,7 +1113,7 @@ div#topBar {
   text-align: left;
   padding-left: 3px;
   font: bold 11px arial;
-    color: #f99500;
+  color: #e26727;
     text-decoration: none;
     display:inline-block;
   width: 60px;
@@ -1094,17 +1156,15 @@ app-dashboard mat-form-field {
   background-color: #ffffff;
   display:block;
   border: 1px solid #cccccc;
-  color:#252525;  
+  color:#0e2226;  
   height:30px;
 }
 
 .control-label {
-    /* float: left; */
     width: 130px;
     padding-top: 5px;
     font-weight:normal!important;
     padding-left: 20px;
-    /* text-align: right; */
 }
  .control-group {
   margin-bottom: 20px;
@@ -1112,18 +1172,22 @@ app-dashboard mat-form-field {
 }
 #trdt_container legend {
   padding: 10px;
-  background: #3a3a3a;
+  background: rgb(19, 45, 50);
   padding-left: 20px;
   text-transform: uppercase;
   font-size: 11px;
-  color: #f99500;
+  color: #e26727;
   font-weight: bold;
 }
 
 
 /* dashboard */
+app-dashboard .mat-drawer.mat-drawer-side {
+  background-color: #0e2226!important;
+  background-image: none;
+}
 .side-tp span.icon {
-  background: #252525!important;
+  background: #0e2226!important;
   display: inline;
 }
 .header-button span.label {
@@ -1162,18 +1226,18 @@ app-dashboard mat-form-field {
 }
 app-dashboard .mat-drawer-content{
   max-width: 100%;
-  background-color:#252525;
+  background-color:#132d32;
 }
 .messages-sidebar-header, .rooms-sidebar-header, .sidebar .nav-sidebar .nav-item-header {
-    background-color: #1d1d1d!important;
-    color: #f99500!important;
+    background-color: #0e2226!important;
+    color: #e26727!important;
     padding: 10px!important;
     font-family: Montserrat,sans-serif;
-    border-top: 1px solid #252525;
+    border-top: 1px solid #0e2226;
 }
 #dvFootnote .btn-primary {
-  background-color: #bc7000!important;
-  border-color: #c17300!important;
+  background-color: #e26727!important;
+  border-color: #ce500e!important;
   color: #fff!important;
 }
 
@@ -1195,7 +1259,7 @@ app-dashboard .mat-drawer-content{
   -moz-transition: all .2s ease-in-out;
 }
 .page-data {
-  background-color: #252525;
+  background-color: #132d32;
   color: #fff;
   height: calc(100vh - 133px);
   overflow-y: scroll;
@@ -1231,7 +1295,6 @@ app-dashboard .mat-drawer-content{
   border: none;
   width: 219px;
   box-shadow: 0 4px 5px -1px rgba(0,0,0,.3);
-  background-color: #1d1d1d!important;
   border-bottom: solid 1px #000!important;
   height: 60px!important;
 }
@@ -1330,15 +1393,12 @@ li.mat-menu-item {
   text-align: left;
 }
 .mat-menu-content {
-  /* position: absolute; */
   top: 100%;
   left: 0;
   z-index: 1000;
-  /* display: none; */
   float: left;
   min-width: 160px;
   padding: 5px 0;
-  /* margin: 2px 0 0; */
   list-style: none;
   font-size: 14px;
   text-align: left;
@@ -1373,7 +1433,7 @@ li.divider.mat-menu-item {
 }
 .nav-sidebar {
   height: 100%;
-  padding-bottom: 70px;
+  padding-bottom: 10px;
   overflow-y: auto;
 }
 
@@ -1382,13 +1442,7 @@ li.divider.mat-menu-item {
     position: relative;
     display: block;
 }
-.messages-sidebar-header, .rooms-sidebar-header, .sidebar .nav-sidebar .nav-item-header {
-    background-color: #1d1d1d!important;
-    color: #f99500!important;
-    padding: 10px!important;
-    font-family: Montserrat,sans-serif;
-    border-top: 1px solid #252525;
-}
+
 
 .rooms-sidebar-header {
     font-weight: 500;
@@ -1425,7 +1479,7 @@ a.flex-parent span.flex-child-icons {
   background-color: #ffc107!important;
   box-shadow: 0 0 7px #ffc721!important;
   color: #292929;
-    padding: 2px 10px;
+  padding: 2px 10px;
 }
 a.flex-parent span.flex-child-icons .badgeMsg {
   float: none;
@@ -1437,8 +1491,8 @@ a.flex-parent span.flex-child {
   text-overflow: ellipsis;
 }
 .selectedRoom {
-  background-color: rgba(249,149,0,.4)!important;
-  border-left: solid 2px #f99500!important;
+  background-color: rgba(226, 103, 39,0.4)!important;
+  border-left: solid 2px #e26727!important;
   color: #000!important;
   font-family: Poppins,sans-serif,monospace;
 }
@@ -1485,7 +1539,7 @@ body {
 }
 .mat-drawer.mat-drawer-side {
   height: 100vh;
-  border-left: solid 1px rgba(0,0,0,.12);
+  border-left: solid 1px rgb(14, 34, 38);
   border-right: none;
   background-image: linear-gradient(to top, #e26727 , #0e2226);
 }
@@ -2543,16 +2597,12 @@ th {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* html {
-  font-size: 10px;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-} */
 app-dashboard {
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #bbbbbb;
-  background-color: #252525;
+  background-color: #0e2226;
   float:left;
   width:100%;
   height:100vh;
@@ -4239,14 +4289,14 @@ fieldset[disabled] a.btn {
 .btn-default:hover {
   color: #ffffff;
   background-color: #292929;
-  border-color: #242424;
+  border-color: #0e2226;
 }
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
   color: #ffffff;
   background-color: #292929;
-  border-color: #242424;
+  border-color: #0e2226;
 }
 .btn-default:active:hover,
 .btn-default.active:hover,
@@ -5153,7 +5203,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #111111;
+  background-color: #15343a;
 }
 .nav > li.disabled > a {
   color: #444444;
@@ -5349,7 +5399,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding-right: 15px;
   padding-left: 15px;
   border-top: 1px solid transparent;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px 0 rgb(19, 45, 50);
   -webkit-overflow-scrolling: touch;
 }
 .navbar-collapse.in {
@@ -5529,8 +5579,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding: 10px 15px;
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: inset 0 1px 0 rgb(19, 45, 50), 0 1px 0 rgb(19, 45, 50);
+  box-shadow: inset 0 1px 0 rgb(19, 45, 50), 0 1px 0 rgb(19, 45, 50);
   margin-top: 6px;
   margin-bottom: 6px;
 }
@@ -5647,7 +5697,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     float: right !important;
     position: fixed;
     right: 70px;
-    background-color: #252525;
+    background-color: #132d32;
   }
   .navbar-right ~ .navbar-right {
     margin-right: 0;
@@ -8273,7 +8323,7 @@ footer {
 }
 
 .selectedRoom {
-    border-left: solid 2px #f99500 !important;
+    border-left: solid 2px #e26727 !important;
     color: #000 !important;
 }
 
@@ -8344,7 +8394,7 @@ footer {
 }
 
 .thumbpadding:hover {
-    background: #2a2a2a;
+    background: #15343a;
 }
 
 .messageLink {
@@ -8531,8 +8581,8 @@ footer {
 }
 
 .panelFile {
-    border-top: 1px solid #252525;
-    border-bottom: 1px solid #252525;
+    border-top: 1px solid #0e2226;
+    border-bottom: 1px solid #0e2226;
     padding: 10px;
     font-size: 12px;
     text-align: left;
@@ -8712,7 +8762,7 @@ footer {
 .chatseparator-hr {
     display: block;
     height: 0px;
-    border-top: solid 1px #2a2a2a;
+    border-top: solid 1px #15343a;
     border-bottom: none;
     margin-top: 15px;
     border-left: none;
@@ -8730,7 +8780,7 @@ footer {
     font-weight: bold;
     width: 160px;
     letter-spacing: 2px;
-    background-color: darken(#252525, 1%);
+    background-color: darken(#0e2226, 1%);
 }
 
 .new-message-separator {
@@ -8760,7 +8810,7 @@ footer {
     -webkit-transition: -webkit-transform 0.3s ease-out;
     transition: -webkit-transform 0.3s ease-out,-moz-transform 0.3s ease-out,-o-transform 0.3s ease-out,transform 0.3s ease-out;
     -webkit-transform: translateY(0px);
-    -ms-transform: translateY(0px);
+    -ms-transform: translateY(0px); 
     transform: translateY(0px);
 }
 
@@ -9146,7 +9196,7 @@ footer {
 
 
 .navbar-fixed-top {
-    background-color: #252525;
+    background-color: #132d32;
     border: none;
     position:relative!important;
     box-shadow: 0 4px 5px -1px rgba(0,0,0,0.3);
@@ -9223,12 +9273,12 @@ footer {
 
 .toolsMenu {
     background-color: #2a2a2a;
-    border-bottom: solid 1px #252525 !important;
+    border-bottom: solid 1px #0e2226 !important;
     margin-top: 10px;
 }
 
 .tab-content {
-    border-top: solid 1px #252525;
+    border-top: solid 1px #0e2226;
 }
 
 .nav-tabs.nav-justified > li:hover i {
@@ -9359,7 +9409,7 @@ div#vidboxModal {
 .page-iframe {
     height: 100%;
     margin-left: 220px;
-    background: #323232;
+    background: #0e2226;
     border: 0;
 }
 
@@ -9763,7 +9813,7 @@ a.flex-parent {
 }
 
 .msg_file_name, .roomTitle, .roomHash, .header-button.highlight span.icon, .header-button.highlight span.label, .messageMention, .btn-link, .filterpanel-title, a:hover, a:focus, .directChat:hover > .hide-chat, .paymentFormRoom, .loading, .messageMention {
-    color: #f99500;
+    color: #e26727;
 }
 
 .btn-link{
@@ -9821,7 +9871,7 @@ a.flex-parent {
   color: #fff;
 }
 .mat-tab-label.mat-tab-label-active {
-  color: #f99500;
+  color: #e26727;
 }
 .mat-tab-label {
   position: relative;
@@ -9851,7 +9901,7 @@ a.flex-parent {
   font-family: Poppins,sans-serif,monospace;
 }
 .mat-tab-labels {
-  background-color: #000;
+  background-color: #0e2226;
 }
 ::-webkit-scrollbar-thumb {
     background: #363635 !important;
@@ -9963,7 +10013,7 @@ a.flex-parent {
     padding-top: 8px;
     border-bottom: 1px solid #3f3f3f;
     height: 61px;
-    background-color: #131313;
+    background-color: #0c1c1f;
 }
 
 #team-wrapper img.sidebar-avatar {
@@ -10087,4 +10137,5 @@ span.cashtag_text:hover {
     display: block;
     overflow: inherit!important;
   }
+  
 }
