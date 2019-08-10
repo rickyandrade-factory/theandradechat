@@ -30,7 +30,6 @@ import { AuthGuard } from './auth.guard';
 import { LockedchatroomComponent } from './lockedchatroom/lockedchatroom.component';
 import { DirectchatroomComponent } from './directchatroom/directchatroom.component';
 import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
-import { DialogExampleComponent } from './dialog-example/dialog-example.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +45,6 @@ import { DialogExampleComponent } from './dialog-example/dialog-example.componen
     LockedchatroomComponent,
     DirectchatroomComponent,
     AdmindashboardComponent,
-    DialogExampleComponent,
   ],
   imports: [
     BrowserModule,
