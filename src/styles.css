@@ -10,9 +10,6 @@ body{
   height:100vh;
   overflow:hidden;
 }
-.mobile-sidebar{
-  display:none!important;
-}
 .mobile-cross{
   display:none;
 }
@@ -28,7 +25,7 @@ body{
 .sidenav-container {
   background-color: transparent;
 }
-.mat-drawer-inner-container {
+.mat-drawer-inner-container { 
   display: -webkit-box;
   display: flex;
   align-items: left;
@@ -10175,9 +10172,6 @@ span.cashtag_text:hover {
     right: 10px;
     color: #b7b7b7;
     display:block;
-  }
-  .mobile-sidebar{
-    display:block!important;
   }
   .mobile-cross span i{
     font-size:20px;

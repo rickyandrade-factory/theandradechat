@@ -20,16 +20,12 @@
           <li mat-menu-item role="separator" class="divider"></li>
           <li mat-menu-item><a href="#Traders Lounge" ng-click="LoadSettings()">Preferences</a></li>
           <li mat-menu-item ng-show="isAdmin" class="ng-hide"><a target="_blank" href="/dashboard/">Dashboard</a></li>
-          <!-- ngIf: isFootnoteVisible -->
           <li ng-if="isFootnoteVisible" class="ng-scope">
               <a href="#">Download App
-              <span class="fa fa-windows fa-fw"></span>
+                <span class="fa fa-windows fa-fw"></span>
               </a>
           </li>
-          <!-- end ngIf: isFootnoteVisible -->
           <li mat-menu-item role="separator" class="divider"></li>
-          <!--<li ng-if="isTutorialVisible"><a href ng-click="ViewTutorial()">View Tutorial</a></li>-->
-          <!--<li ng-if="isTutorialVisible" role="separator" class="divider"></li>-->
           <li mat-menu-item ng-click="logout()"><a href="#Traders Lounge">Logout</a></li>
         </mat-menu>
     </div>
@@ -38,7 +34,7 @@
   <ul class="nav nav-sidebar">
     <li class="rooms-sidebar-header">ROOMS</li>
     <li class="ng-scope">
-        <a  class="flex-parent locked"  >
+        <a  class="flex-parent locked">
           <span class="flex-child">
           <i class="roomIcon fa fa-fw fa-hashtag" aria-hidden="true"></i>
           <span class="room-name ng-binding">On Point FX Signals (USA)</span>
@@ -62,7 +58,7 @@
         </a>
     </li>
     <li class="ng-scope">
-        <a  class="flex-parent locked"  >
+        <a  class="flex-parent locked">
           <span class="flex-child">
           <i class="roomIcon fa fa-fw fa-hashtag" aria-hidden="true"></i>
           <span class="room-name ng-binding">On Point FX Signals (USA)</span>
@@ -73,19 +69,21 @@
           </span>
         </a>
     </li>
+    <button mat-button (click)="openDialog()">Open dialog</button>
+
     <li class="ng-scope">
-        <a  class="flex-parent locked"  >
+        <a  class="flex-parent locked">
           <span class="flex-child">
           <i class="roomIcon fa fa-fw fa-hashtag" aria-hidden="true"></i>
           <span class="room-name ng-binding">The Golden Circle</span>
           </span>
           <span class="flex-child-icons">
-              <i style="font-size:12px;" class="roomIcon fa fa-fw ng-scope fa-lock" aria-hidden="true"  ></i>
+              <i style="font-size:12px;" class="roomIcon fa fa-fw ng-scope fa-lock" aria-hidden="true"></i>
           </span>
         </a>
     </li>
     <li class="ng-scope">
-        <a  class="flex-parent locked"  >
+        <a  class="flex-parent locked">
           <span class="flex-child">
           <i class="roomIcon fa fa-fw fa-hashtag" aria-hidden="true"></i>
           <span class="room-name ng-binding">On Point FX Signals (USA)</span>
@@ -108,7 +106,7 @@
         </a>
     </li>
     <li class="ng-scope">
-        <a  class="flex-parent locked"  >
+        <a  class="flex-parent locked">
           <span class="flex-child">
           <i class="roomIcon fa fa-fw fa-hashtag" aria-hidden="true"></i>
           <span class="room-name ng-binding">On Point FX Signals (USA)</span>
@@ -120,7 +118,7 @@
         </a>
     </li>
     <li class="ng-scope">
-        <a  class="flex-parent locked"  >
+        <a  class="flex-parent locked">
           <span class="flex-child">
           <i class="roomIcon fa fa-fw fa-hashtag" aria-hidden="true"></i>
           <span class="room-name ng-binding">The Golden Circle</span>
@@ -251,7 +249,7 @@
     <div  selected="roomName" class="ng-scope ng-isolate-scope">
         <li class="nav-item-header">
           WEBTRADER
-          <button class="btn btn-link pull-right">
+          <button class="btn btn-link pull-right" style="padding:0;">
           <i class="roomIcon fa fa-fw fa-plus" aria-hidden="true"></i>
           </button>
         </li>
