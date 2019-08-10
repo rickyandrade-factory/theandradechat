@@ -1,13 +1,18 @@
 <div class="login-container">
   <mat-drawer-container class="example-container" autosize>
     <div class="navbar navbar-fixed-top navbar-inverse navbar-static-top" style="position:static;">
-      <mat-drawer #drawer class="example-sidenav sidebar navbar-collapse" opened="true" mode="side"
+      <mat-drawer #drawer class="example-sidenav sidebar navbar-collapse" mode="side" opened="true"
         style="position:fixed; left:0;">
         <app-sidenav></app-sidenav>
+        <div class="example-sidenav-content mobile-cross">
+            <button class="" hamburger-drv="" mat-button
+              (click)="drawer.toggle()">
+              <i class="fa fa-close"></i>
+            </button>
+          </div>
       </mat-drawer>
-
       <div class="example-sidenav-content">
-        <button class="hamburgerHeader hamburger hamburger-arrow-left hidden-xs" hamburger-drv="" mat-button
+        <button class="hamburgerHeader hamburger hamburger-arrow-left" hamburger-drv="" mat-button
           (click)="drawer.toggle()">
           <span class="icon"></span>
         </button>
@@ -24,8 +29,8 @@
       </div>
       <app-rightarea></app-rightarea>
     </div>
-    <!-- <app-chatarea></app-chatarea> -->
-    <app-lockedchatroom></app-lockedchatroom>
+    <app-chatarea></app-chatarea>
+    <!-- <app-lockedchatroom></app-lockedchatroom> -->
     <!-- <app-directchatroom></app-directchatroom> -->
   </mat-drawer-container>
 </div>

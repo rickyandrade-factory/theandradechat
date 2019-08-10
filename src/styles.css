@@ -10,6 +10,12 @@ body{
   height:100vh;
   overflow:hidden;
 }
+.mobile-sidebar{
+  display:none!important;
+}
+.mobile-cross{
+  display:none;
+}
 .white{
  color:#fff!important;
 }
@@ -29,7 +35,7 @@ body{
   flex-direction: column;
 }
 button.md-ink-ripple:hover{
-  background-color: rgb(219,171,60);
+  background-color: rgba(0, 162, 200,0.8);
   outline: none;
   border: none;
 }
@@ -206,7 +212,7 @@ a.profile-menu {
 }
 .admin-dashboard .navbar-fixed-top {
   background-color: #0e2226;
-  border-bottom: 2px solid #f99500;
+  border-bottom: 2px solid #e26727;
 }
 .admin-dashboard mat-drawer-content {
   background: #ededed;
@@ -443,7 +449,7 @@ a.profile-menu {
   color:#fff!important;
 }
 .admin-dashboard .selectedRoom {
-  background-color: #f99500!important;
+  background-color: rgba(226, 103, 39,0.4)!important;
 }
 .admin-dashboard .nav-sidebar li a {
   padding-top:9px;
@@ -565,7 +571,7 @@ a.profile-menu {
   left: 67px;
   bottom: 2px;
   line-height: 43px;
-  z-index: 1;
+  z-index: 0;
   color: #6f6f6f;
   display: none;
 } 
@@ -1236,8 +1242,8 @@ app-dashboard .mat-drawer-content{
     border-top: 1px solid #0e2226;
 }
 #dvFootnote .btn-primary {
-  background-color: #e26727!important;
-  border-color: #ce500e!important;
+  background-color: #00a2c8!important;
+  border-color: #019dc0!important;
   color: #fff!important;
 }
 
@@ -1420,7 +1426,7 @@ li.divider.mat-menu-item {
   text-decoration: none;
 }
 .mat-menu-content li a:hover {
-  background-color: #f99500!important;
+  background-color: #e26727!important;
   color: #fff!important;
 }
 .userStatus3 {
@@ -9886,6 +9892,9 @@ a.flex-parent {
   padding: 0 15px!important;
   opacity:1!important;
 }
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+  background-color: #e26727;
+}
 
 .mat-tab-label-content {
   padding: 12px 0;
@@ -10137,5 +10146,54 @@ span.cashtag_text:hover {
     display: block;
     overflow: inherit!important;
   }
-  
+  app-dashboard .right-sidenav{
+    width:280px; 
+  }
+  .nav-sidebar{
+    height:auto;
+  }
+  app-dashboard .mat-drawer.mat-drawer-side {
+    width: 320px;
+  }
+  .admin-dashboard .navbar-custom-menu {
+    float: right;
+    text-align: right;
+}
+.admin-dashboard .navbar-custom-menu ul li {
+  display:inline-block!important;
+  }
+  .admin-dashboard .roomHeader {
+    float: left;
+    line-height: 28px;
+  }
+  .admin-dashboard .navbar-custom-menu ul{
+    margin:0;
+  }
+  .mobile-cross{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #b7b7b7;
+    display:block;
+  }
+  .mobile-sidebar{
+    display:block!important;
+  }
+  .mobile-cross span i{
+    font-size:20px;
+  }
+  .mobile-cross button.mat-button {
+    background-color: rgba(255,255,255,0.1);
+    padding: 5px 8px!important;
+    border: 1px solid #484848;
+    min-width: auto;
+    height: auto;
+    line-height: normal;
+    cursor:pointer;
+}
+.admin-dashboard button.hamburgerHeader {
+  position: relative;
+  z-index: 999;
+}
+
 }

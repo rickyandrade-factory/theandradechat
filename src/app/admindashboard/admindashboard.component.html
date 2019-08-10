@@ -3,7 +3,7 @@
       <div class="navbar navbar-fixed-top navbar-inverse navbar-static-top" style="position:static;">
         <mat-drawer #drawer class="example-sidenav sidebar navbar-collapse" opened="true" mode="side"
           style="position:fixed; left:0;">
-          <a ui-sref="app.main" class="text-center" href="#!/">
+          <a ui-sref="app.main" class="text-center" href="#">
             <span class="logo-mini">
                 <img class="navbar-brand-logo" src="https://marketmastersacademy.echofin.co/dashboard/resources/images/logo.png" title="echofin">
                 <img class="navbar-brand-logo-mini" src="https://marketmastersacademy.echofin.co/dashboard/resources/images/icon-white.png" title="echofin">
@@ -30,26 +30,26 @@
                   </a>
               </li>
               <li ng-class="{active:vm.$state.includes('app.payments.*')}">
-                  <a class="flex-parent inactive " ui-sref="app.payments.overview" href="#!/payments/">
+                  <a class="flex-parent inactive " ui-sref="app.payments.overview" href="#">
                       <i class="fa fa-check-square-o fa-fw"></i>
                       <span>Payments</span>
                   </a>
               </li>
               <li ng-class="{active:vm.$state.includes('app.subscriptions.*')}">
-                  <a class="flex-parent inactive " ui-sref="app.subscriptions.overview" href="#!/subscriptions/">
+                  <a class="flex-parent inactive " ui-sref="app.subscriptions.overview" href="#">
                       <i class="fa fa-money fa-fw"></i>
                       <span>Subscriptions</span>
                   </a>
               </li>
               <li ng-class="{active:vm.$state.includes('app.payouts.*')}">
-                  <a class="flex-parent inactive " ui-sref="app.payouts.overview" href="#!/payouts/">
+                  <a class="flex-parent inactive " ui-sref="app.payouts.overview" href="#">
                       <i class="fa fa-bank fa-fw"></i>
                       <span>Payouts</span>
                   </a>
               </li>
               <li class="divider no-line"></li>
               <li ng-class="{active:vm.$state.includes('app.billing.*')}">
-                  <a class="flex-parent inactive " ui-sref="app.billing.overview" href="#!/billing/">
+                  <a class="flex-parent inactive " ui-sref="app.billing.overview" href="#">
                       <i class="fa fa-credit-card fa-fw"></i>
                       <span>Billing Plans</span>
                   </a>
@@ -142,7 +142,7 @@
         <div class="navbar-right navbar-custom-menu">
             <ul class="nav navbar-nav">
                 <li ng-class="{active:vm.$state.includes('app.settings')}" class="">
-                    <a ui-sref="app.settings" href="#!/settings">
+                    <a ui-sref="app.settings" href="#">
                         <span class="fa fa-gears fa-fw"></span>
                     </a>
                 </li>
@@ -152,7 +152,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="" id="headwayapp">
+                    <a href="#" id="headwayapp">
                         <span class="fa fa-envelope-o fa-fw"></span>
                     <span id="HW_badge_cont" class="HW_visible"><span id="HW_badge" data-count-unseen="" class="HW_softHidden"></span></span></a>
                 </li>
@@ -162,9 +162,9 @@
                                 <span class="caret"></span>
                         </button>
                         <mat-menu #menu="matMenu" xPosition="before">
-                                <a class="profile-menu white" href="" >Profile</a>
+                                <a class="profile-menu white" href="#" >Profile</a>
                                 <li class="divider"></li>
-                                <a class="profile-menu white" href="">Sign Out</a>
+                                <a class="profile-menu white" href="#">Sign Out</a>
                         </mat-menu>
                     </a>
                 </li>
@@ -396,7 +396,7 @@
                                                     </div> 
                                                 </div>
                                             <div class="box-footer clearfix">
-                                                <a ui-sref="app.users.overview" class="btn btn-sm btn-link pull-right" href="#!/users/">
+                                                <a ui-sref="app.users.overview" class="btn btn-sm btn-link pull-right" href="#">
                                                     View All Users
                                                 </a>
                                             </div>

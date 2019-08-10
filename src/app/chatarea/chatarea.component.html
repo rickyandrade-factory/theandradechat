@@ -1,5 +1,5 @@
 <mat-drawer-container class="example-container container-all-page" autosize>
-        <mat-drawer #drawer1 class="example-sidenav sidebar navbar-collapse widget-sidenav right-sidenav" mode="side" opened="true" position="end" style="position:fixed; background-color:#252525!important; right:0;">
+        <mat-drawer #drawer1 class="example-sidenav sidebar navbar-collapse widget-sidenav right-sidenav" mode="side" opened="true"  position="end" style="position:fixed; background-color:#252525!important; right:0;">
             <mat-tab-group>
                 <mat-tab label="FX Quotes">
                         <div class="stats-list" style="height: 32px;">
@@ -395,7 +395,7 @@
               </mat-tab-group>
          </mat-drawer>
         <div class="example-sidenav-content widget-btn side-tp ">
-            <button class="hamburgerHeader header-button hamburger hamburger-arrow-left hidden-xs" hamburger-drv="" mat-button (click)="drawer1.toggle()">
+            <button class="hamburgerHeader header-button hamburger hamburger-arrow-left " hamburger-drv="" mat-button (click)="drawer1.toggle()">
             <span class="icon material-icons ng-binding">apps</span><br>
             <span class="label ng-binding">WIDGETS</span>
             </button>
@@ -938,7 +938,7 @@
                 <button id="emojiBtn" class=""><i class="fa fa-smile-o" aria-hidden="true"></i>
                 </button>
                 <button id="addon_Signal" class="cbAddonsBtn" title="Publish Signal"><i class="fa fa-bullhorn" aria-hidden="true"></i></button>
-                <span id="chatbox-placeholder" style="display: inline;">Message #Traders Lounge</span>
+                <span id="chatbox-placeholder" >Message #Traders Lounge</span>
                 <div id="chatbox" contenteditable="true" style="cursor: text;"></div>
                 <span id="faux" style="display: none;"></span>
                 <span class="downloadLink paymentFormRoom"><i class="fa fa-download"></i> Download Desktop App</span
