@@ -13,7 +13,6 @@
   .app-logo{
     display: block;
     margin: auto;
-    width: 50%;
     height: auto;
   }
   .input-field{
@@ -27,7 +26,7 @@
   }
   .mat-drawer-content {
     margin: 0!important;
-  }
+  } 
   .sidenav-container{
     color: #fff;
     height: 100vh;
@@ -40,14 +39,22 @@
     align-items: center;
   }
   .signup-forget {
-    margin-top: 60px;
+    margin: 5px 0 20px 0;
+    float: left;
+    width: 100%;
+}
+.signup-forget p:nth-child(1){
+  float: left;
+}
+.signup-forget p:nth-child(2){
+  float: right;
 }
   h1{
     margin-bottom: 10px;
-    font-weight: 400;
+    font-weight: 400; 
   }
   h1 + p{
-    margin-bottom: 35px;
+    margin-bottom: 20px;
     margin-top: 0;
     font-size: .9em;
   }
@@ -61,7 +68,6 @@ input:not(:focus):valid ~ .floating-label{
   bottom: 10px;
   left: 0px;
   font-size: 13px;
-  text-decoration:underline;
   opacity: 1;
 }
 
@@ -75,9 +81,10 @@ input:not(:focus):valid ~ .floating-label{
   position: absolute;
   pointer-events: none;
   left: 0px;
-  color: #924d27;
+  color: #fff;
   transition: 500ms ease-in-out;
   top: 12px;
+  opacity: 0.4;
 }
 .input-group{
   position: relative;
@@ -107,7 +114,7 @@ a {
   color: rgb(153, 153, 153);
 } 
 input:focus{
-  border-bottom: 2px solid  rgb(223, 178, 66);
+  border-bottom: 2px solid  rgb(225, 102, 38);
 }
   input{
     -webkit-box-ordinal-group: 3;
@@ -129,7 +136,7 @@ input:focus{
     color: #fff;
     box-sizing: border-box;
     float: left;
-    border-bottom: 1px solid rgba(255,255,255,0.12);
+    border-bottom: 1px solid rgb(160, 81, 38);
   }
   button{
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
@@ -157,7 +164,6 @@ input:focus{
     border: 0;
     padding: 0 6px;
     margin: 20px 0 6px 0;
-    color: currentColor;
     white-space: nowrap;
     text-transform: uppercase;
     font-weight: 500;
@@ -216,23 +222,38 @@ input:focus{
   }
 
   mat-sidenav {
-    width: 25%!important;
-    font-size: 1.2em;
-    min-width: 470px;
-    transition: opacity linear .7s;
-    transition-delay: 1s;
-    display: flex;
-    background: #424242;
-    color: #fff;
-    height: 100vh;
-    padding: 0 35px 20px 35px;
+    padding: 0px;
+    transform: none;
+    visibility: visible;
+    width: auto!important;
+    max-width: 470px;
+    margin: 0 auto;
+    position: static;
+    height: auto;
+    vertical-align: middle;
+    border: none!important;
+    margin-top: 0px; color:#fff; 
+    position: relative;
+    overflow:visible;
+    padding-top: 140px;
+    background: transparent;
+  }
+  .main-logo{
+    max-width: 400px;
+    width: auto;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
   }
   .footer-logo{
     display: flex;
   }
+  .store-logos{
+    display: flex;
+  }
   .footer-reserved {
     font-size: .7em;
-    margin: 35px 0 15px;
+    margin: 15px 0 15px;
     line-height: 1.5em;
     text-align: center;
 }
@@ -264,55 +285,17 @@ a:-webkit-any-link {
   width: 100%;
 }
 @media screen and (max-width:767px){
-  .login-container {
-    height: 100%;
-}
-.sidenav-container {
-  height: 100%!important;
-}
-mat-sidenav {
-  display: block;
-  height: 100%;
-}
-mat-sidenav{
-  width: 100%!important;
-  min-width: 100%;
-  padding: 0;
-}
-.login-form {
-  padding: 0 15px;
-}
-.sidebar-footer {
-  padding: 0 15px;
-}
-mat-sidenav{
-  padding-bottom: 0;
-}
-.final-img-mobile{
-  display: block!important;
-}
-.final-img-mobile img{
-  max-width: 280px;
-  width: 100%;
-  padding: 20px 10px;
-  margin: 0 auto;
-  display: inherit;
-}
-h1 + p {
-  margin-bottom: 0px;
-}
-.login-form > div{
- display: inline-block;
- margin: 0 auto;
-}
-.signup-forget{
-  margin-top: 40px;
-}
-h1{
-  font-size: 1.5em;
-}
-input{
-  font-size: 16px;
-}
-
+  .main-logo{
+    position: static;
+    max-width: 100%;
+  }
+  mat-sidenav{
+    padding-top: 0;
+    height: 100vh;
+    background-image: linear-gradient(to top, #e26727 , #0e2226);
+    display: flex;
+    align-items: center;
+    width: 100%!important;
+    max-width: 100%;
+  }
 }

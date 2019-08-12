@@ -1,14 +1,11 @@
 <div class="login-container">
-  <mat-sidenav-container class="sidenav-container">
-    <mat-sidenav position="end" #sidenav mode="side" opened>
-      <div class="final-img-mobile" style="display:none;">
-        <img src="url('./../../../assets/mma_logo2.png" alt="" />
-      </div>
+  <mat-sidenav-container class="sidenav-container" style="display: flex; align-items: center;">
+    <mat-sidenav position="end" #sidenav mode="side" opened position="start">
+      <img src="https://marketmastersacademy.echofin.co/images/mma_logo2.png" class="main-logo">
       <div class="login-form">
         <div>
           <h1>Sign In</h1>
-          <p>Join <span md-colors="{'color': 'accent-500'}"
-            style="text-decoration:underline!important; color:#fff;">MarketMastersAcademy</span> team.</p>
+          <p>Join <span style="text-decoration:underline!important; color:#fff;">MarketMastersAcademy</span> team.</p>
           <div class="form-input">
             <form (submit)="loginUser($event)">
               <div class="input-group input-field">
@@ -24,9 +21,9 @@
             </form>
           </div>
           <div class="signup-forget">
-            <p>No account? <a href="/register" md-colors="{'color': 'accent-500'}"
+            <p>No account? <a href="/register"
               style="text-decoration:underline!important; color:#fff;">Sign Up</a></p>
-            <p><a href="/forgotpassword" md-colors="{'color': 'accent-500'}" style="text-decoration:underline!important; color:#fff;">Forgot
+            <p><a href="/forgotpassword" style="text-decoration:underline!important; color:#fff;">Forgot
                 Password</a></p>
           </div>
         </div>
@@ -50,9 +47,7 @@
     </mat-sidenav>
     <div class="img-cont">
       <div class="final-img">
-        <img src="url('./../../../assets/mma_logo2.png" alt="" />
       </div>
     </div>
-
   </mat-sidenav-container>
 </div>

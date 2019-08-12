@@ -1,5 +1,5 @@
 <mat-drawer-container class="example-container container-all-page" autosize>
-        <mat-drawer #drawer1 class="example-sidenav sidebar navbar-collapse widget-sidenav right-sidenav" mode="side" opened="true"  position="end" style="position:fixed; background-color:#252525!important; right:0;">
+        <mat-drawer #drawer1 class="example-sidenav sidebar navbar-collapse widget-sidenav right-sidenav" mode="side" opened="true"  position="start" >
             <mat-tab-group>
                 <mat-tab label="FX Quotes">
                         <div class="stats-list" style="height: 32px;">
@@ -545,6 +545,57 @@
                    </div>
                    <div style="clear:both"></div>
                 </div>
+                <div class="msg_placeholder ng-scope messagelineodd msg_placeholder_sep msg_delivered" >
+                        <div class="new-message-separator"style="">New Messages</div>
+                        <div ng-hide="item.b_isSameUser || !item.dayText" class="ng-hide">
+                            <div class="chatseparator">
+                                <hr class="chatseparator-hr">
+                                <p class="chatseparator-p ng-binding"></p>
+                            </div>
+                        </div>
+                        <div user-popover="" class="msg_avatar ng-isolate-scope" ng-hide="item.b_isContinuing" sender-key="private-u-58ebae45" style="cursor: pointer;" data-original-title="" title="">
+                            <img ng-src="//cdn.echofin.co/avatars/58ebae45.jpeg?t=1547866325691" style="border-radius: 4px;width:40px; height:40px" src="//cdn.echofin.co/avatars/58ebae45.jpeg?t=1547866325691">
+                        </div>
+                        <div class="msg_username_date" ng-hide="item.b_isContinuing">
+                            <span user-popover="" sender-key="private-u-58ebae45" class="msg_username ng-binding ng-isolate-scope admin_username" ng-class="{'admin_username':item.userType==1}" ng-bind="item.sender" style="cursor: pointer;" data-original-title="" title="">RiskyRicky</span>
+                            <span class="badge-user badge-admin ng-scope" ng-if="item.userType==1">ADMIN</span>
+                          
+                            <span class="msg_date ng-binding" ng-bind="item.dateParsed | vardate2: item.dateOffset">03/01  13:51 PM</span>
+                            <span class="msg_date ng-binding"></span>
+                            <span style="display: none" class="ng-binding">"2019-03-01T08:21:31.207Z"</span>
+                        </div>
+                        <div class="thumbpadding ng-binding">
+                            <a ng-hide="item.s_fileToken==null &amp;&amp; !item.youtubeid" filetype="" extension="" url="//cdn.echofin.co/uploads/58ebae45/null.null" message=":bear: SIGNAL<br>SELL STOP: <b>GBPNZD</b><br>ENTRY: <b>1.94100</b><br>TP: <b>1.93360</b><br>SL: <b>1.94700</b><br>TP2: <b>1.92800</b><br><i>PENDING SELL ORDER. Use Proper Risk Management </i>" popup-link="" title=":bear: SIGNAL<br>SELL STOP: <b>GBPNZD</b><br>ENTRY: <b>1.94100</b><br>TP: <b>1.93360</b><br>SL: <b>1.94700</b><br>TP2: <b>1.92800</b><br><i>PENDING SELL ORDER. Use Proper Risk Management </i>" youtubeid="" class="ng-isolate-scope ng-hide" href=":bear: SIGNAL&lt;br&gt;SELL STOP: &lt;b&gt;GBPNZD&lt;/b&gt;&lt;br&gt;ENTRY: &lt;b&gt;1.94100&lt;/b&gt;&lt;br&gt;TP: &lt;b&gt;1.93360&lt;/b&gt;&lt;br&gt;SL: &lt;b&gt;1.94700&lt;/b&gt;&lt;br&gt;TP2: &lt;b&gt;1.92800&lt;/b&gt;&lt;br&gt;&lt;i&gt;PENDING SELL ORDER. Use Proper Risk Management &lt;/i&gt;" target="_blank">
+                                <div class="msg_file_name ng-isolate-scope" attach-title="" filetype="" filename="" filelink=""></div>
+                    
+                            </a>
+                            <div message-actions="" message="item" class="ng-isolate-scope"><div ng-class="{ 'msg_txt_wrap':!message.s_fileToken, 'msg_img_wrap': message.s_fileToken, 'shout_txt': message.isShout }" class="msg_txt_wrap">
+                            <div message-parser="" message2="message" class="msg_txt ng-isolate-scope msg_admin_txt" ng-class="[{'msgInEdit':inEdit}, {'msg_admin_txt':isAdmin &amp;&amp; !message.isShout }, {'msg_instructor_txt':isInstructor }, {'msg_moderator_txt':isModerator }]" style="" contenteditable="false"><div class="panel panel-primary panel-signal" style="width:300px;"><div class="panel-heading"><img class="text-emoticon message-emoticon" src="https://marketmastersacademy.echofin.co/plugins/chatBox/emojis/svgs/1f4c9.svg"> SIGNAL </div><table class="table"><tbody><tr><td>SELL STOP :</td><th><b>GBPNZD</b> </th></tr><tr><td>ENTRY :</td><th><b>1.94100</b> </th></tr><tr><td>TP :</td><th><span style="color:#4caf50"><b>1.93360</b> </span></th></tr><tr><td>SL :</td><th><span style="color:#f44336"><b>1.94700</b> </span></th></tr><tr><td>TP2 :</td><th><span style="color:#4caf50"><b>1.92800</b> </span></th></tr></tbody></table><div class="panel-footer"><span class="fa fa-fw fa-exclamation-circle"></span> <i>PENDING SELL ORDER. Use Proper Risk Management </i> </div></div></div>
+                            <div ng-class="{'toolButtons': canEdit() || canDelete() || canPin()}" class="toolButtons">
+                        <button class="toolbtn msg_button_edit ng-hide" ng-click="editMessage()" ng-show="canEdit()&amp;&amp;!inEdit">
+                            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                        </button>
+                        <button class="toolbtn msg_button_delete" ng-click="deleteMessage()" ng-show="canDelete()&amp;&amp;!inEdit">
+                            <i class="fa fa-trash-o" aria-hidden="true"></i>
+                        </button>
+                        <button class="toolbtn msg_button_edit" ng-click="pinMessage()" ng-show="canPin()&amp;&amp;!inEdit">
+                            <i class="fa fa-thumb-tack" aria-hidden="true"></i>
+                        </button>
+                        <button class="toolbtn msg_button_save ng-hide" ng-click="saveMessage()" ng-show="inEdit">
+                            <i class="fa fa-floppy-o" aria-hidden="true"></i>
+                        </button>
+                        <button class="toolbtn msg_button_cancel ng-hide" ng-click="cancelMessage()" ng-show="inEdit">
+                            <i class="fa fa-times-circle" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+                </div>
+                
+                        </div>
+                        <div style="clear:both"></div>
+                    </div>
+
+
                 <div class="msg_placeholder ng-scope messagelineodd msg_placeholder_sep msg_delivered">
                    <div user-popover="" class="msg_avatar ng-isolate-scope" style="cursor: pointer;" title="">
                       <img ng-src="//cdn.echofin.co/avatars/37020b82.png?1564118241731?1564118243132?1564118244561?1564118247765?1564118249553" style="border-radius: 4px;width:40px; height:40px" src="//cdn.echofin.co/avatars/37020b82.png?1564118241731?1564118243132?1564118244561?1564118247765?1564118249553">

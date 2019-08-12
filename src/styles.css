@@ -10,6 +10,45 @@ body{
   height:100vh;
   overflow:hidden;
 }
+.mb-30{
+  margin-bottom:30px;
+}
+app-login .mat-drawer-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  display: block;
+  margin:0!important;
+}
+ app-login .mat-drawer-inner-container {
+  background-image: linear-gradient(to top, #e26727 , #0e2226); 
+  padding: 10px 20px;
+} 
+app-forgotpassword .mat-drawer-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  display: block;
+  margin:0!important;
+}
+app-forgotpassword .mat-drawer-inner-container {
+  background-image: linear-gradient(to top, #e26727 , #0e2226); 
+  padding: 10px 20px;
+} 
+app-signup .mat-drawer-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  display: block;
+  margin:0!important;
+}
+app-signup .mat-drawer-inner-container {
+  background-image: linear-gradient(to top, #e26727 , #0e2226); 
+  padding: 10px 20px;
+} 
 .mobile-cross{
   display:none;
 }
@@ -1001,7 +1040,7 @@ h6.teamName b{
 
 app-dashboard .right-sidenav {
   width: 500px;
-  top:60px;
+  top:-2px;
 }
 div#topBar {
   text-align: right;
@@ -1188,6 +1227,8 @@ app-dashboard mat-form-field {
 app-dashboard .mat-drawer.mat-drawer-side {
   background-color: #0e2226!important;
   background-image: none;
+  border-right:1px solid #18535f;
+  height:100vh;
 }
 .side-tp span.icon {
   background: #0e2226!important;
@@ -1211,7 +1252,7 @@ app-dashboard .mat-drawer.mat-drawer-side {
   display:inline-block;
   height: 60px;
   float:right;
-  padding: 0 7px;
+  padding: 0 10px;
 }
 .side-tp button {
   min-width: 70px;
@@ -1528,7 +1569,9 @@ a.flex-parent span.flex-child {
 /* fincss */
 
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
-
+.mat-checkbox-checked.mat-accent .mat-checkbox-background, .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+  background-color: #00a2c8;
+}
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -1541,10 +1584,10 @@ body {
   overflow:visible!important;
 }
 .mat-drawer.mat-drawer-side {
-  height: 100vh;
+  /* height: 100vh; */
   border-left: solid 1px rgb(14, 34, 38);
   border-right: none;
-  background-image: linear-gradient(to top, #e26727 , #0e2226);
+  /* background-image: linear-gradient(to top, #e26727 , #0e2226); */
 }
 article,
 aside,
@@ -5699,7 +5742,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-right {
     float: right !important;
     position: fixed;
-    right: 70px;
+    right: 80px;
     background-color: #132d32;
   }
   .navbar-right ~ .navbar-right {
@@ -5714,7 +5757,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #ffffff;
 }
 .navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
+.navbar-default .navbar-brand:focus { 
   color: #ffffff;
   background-color: transparent;
 }
@@ -6903,7 +6946,7 @@ button.list-group-item-danger.active:focus {
 }
 .panel-primary > .panel-heading {
   color: #ffffff;
-  background-color: #428679;
+  background-color: #00a2c8;
   border-color: #428679;
 }
 .panel-primary > .panel-heading + .panel-collapse > .panel-body {
@@ -9907,7 +9950,7 @@ a.flex-parent {
   font-family: Poppins,sans-serif,monospace;
 }
 .mat-tab-labels {
-  background-color: #0e2226;
+  background-color: #1d4046;
 }
 ::-webkit-scrollbar-thumb {
     background: #363635 !important;
@@ -9934,7 +9977,7 @@ a.flex-parent {
 }
 
 .new-message-separator {
-    color: #f99500 !important;
+  color: #00a2c8 !important;
 }
 
 .emoji-tab-selected {
@@ -10189,5 +10232,39 @@ span.cashtag_text:hover {
   position: relative;
   z-index: 999;
 }
-
+app-login .mat-drawer-inner-container{
+  height: auto;
+  background-image:none;
+  display: inline-block;
+  overflow: inherit!important;
+  max-width: 320px;
+  margin: 0 auto;
+}
+app-forgotpassword .mat-drawer-inner-container{
+  height: auto;
+  background-image:none;
+  display: inline-block;
+  overflow: inherit!important;
+  max-width: 320px;
+  margin: 0 auto;
+}
+app-sinup .mat-drawer-inner-container{
+  height: auto;
+  background-image:none;
+  display: inline-block;
+  overflow: inherit!important;
+  max-width: 320px;
+  margin: 0 auto;
+}
+}
+@media screen and (max-width:414px){
+  app-login .mat-drawer-inner-container{
+    max-width: 100%;
+  }
+  app-forgotpassword .mat-drawer-inner-container{
+    max-width: 100%;
+  }
+  app-signup .mat-drawer-inner-container{
+    max-width: 100%;
+  }
 }
