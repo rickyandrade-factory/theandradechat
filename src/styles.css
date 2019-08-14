@@ -97,11 +97,7 @@ p.teamName {
   line-height: 1.42857143;
   color: #bbbbbb;
   white-space: nowrap;
-}
-
-
-
-
+} 
 
 
 
@@ -484,9 +480,6 @@ a.profile-menu {
 .admin-dashboard .selectedRoom > a{
   color:#fff!important;
 }
-.admin-dashboard .selectedRoom {
-  background-color: rgba(226, 103, 39,0.4)!important;
-}
 .admin-dashboard .nav-sidebar li a {
   padding-top:9px;
   padding-bottom:9px;
@@ -505,19 +498,20 @@ a.profile-menu {
 }
 
 /* chat */
-.right-sidenav .mat-drawer-inner-container{
-  background-color: #15343a;
+.right-sidenav .mat-drawer-inner-container {
+  background-color: #142D31;
+  height: calc(100vh - 67px);
 }
 .container-all-page mat-drawer-content {
   position: static;
   overflow: visible;
 }
-.example-sidenav-content.widget-btn {
+/* .example-sidenav-content.widget-btn {
   position: absolute;
   right: 0;
   top: -65px;
   z-index: 999;
-}
+} */
 .container-all-page {
   z-index: 9999!important;
   margin-top: 5px;
@@ -538,14 +532,15 @@ a.profile-menu {
 }
 
 .chatDiv{
-  color: #ddd;
+  color: #142d31;
 	bottom: 30px;
-  border: 2px solid #0e2226;
+  border: 2px solid #ddd;
   z-index: 2;
   width: 99%;
   margin: 0 auto;
-  background: #1d4046;
+  background: #fff;
   min-width: 200px;
+  box-shadow: 0px 0px 10px 0 #adadad;
  }
 
 
@@ -554,7 +549,8 @@ a.profile-menu {
 	width: 50px !important;
 	min-height: 45px;
 	border: none;
-	background: #173338;
+  background: #fff;
+  border-right: 2px solid #ddd;
 	color: #d8d8d8;
 	font-size: 2em;
 	line-height: 42px;
@@ -564,9 +560,9 @@ a.profile-menu {
 	text-align: center !important;
 	outline: none !important;
 }
-	#uploadBtn:hover{
-		color: #f3f3f3;
-	}
+#uploadBtn:hover {
+  color: #142d31;
+}
 #emojiBtn{ 
 	float: right; 
 	width: 50px;
@@ -582,7 +578,7 @@ a.profile-menu {
 
 }
 	#emojiBtn:hover, #emojiBtn.hover{
-		color: #ffc107;
+		color: #142d31;
     font-size: 1.8em;
     transition: all .2s ease-in-out;
     -webkit-transition: all .2s ease-in-out;
@@ -896,7 +892,7 @@ li.emojiRef{ display: none; }
   margin-right: 2px;
 }
   .cbAddonsBtn:hover{
-    color: #fff;
+    color: #142d31;
     font-size: 1.8em;
     transition: all .2s ease-in-out;
     -webkit-transition: all .2s ease-in-out;
@@ -1039,7 +1035,7 @@ h6.teamName b{
 }
 
 app-dashboard .right-sidenav {
-  width: 500px;
+  width: 480px;
   top:-2px;
 }
 div#topBar {
@@ -1093,7 +1089,7 @@ div#topBar {
   position: relative;
   display: inline-block;
   padding: 0 22px;
-  border-bottom: 1px solid rgb(20, 46, 51);
+  border: 1px solid #fff;
   font-size: 13px;
   font-weight: 600;
   color: #fff;
@@ -1105,7 +1101,6 @@ div#topBar {
   transition: all .4s ease-in-out;
   background-color: rgb(19, 45, 50);
   width: 180px;
-  border: none;
 }
 #calculators select option {
   position: relative;
@@ -1181,9 +1176,9 @@ div#topBar {
   padding-right: 10px;
 }
 .mat-tab-body-content p {
-  color: #717171;
-  display:inline-block;
-  font-size: 0.8em;
+  color: #afafaf;
+  display: inline-block;
+  font-size: 0.9em;
   margin-right: 10px;
 }
 app-dashboard mat-form-field {
@@ -1214,7 +1209,7 @@ app-dashboard mat-form-field {
 }
 #trdt_container legend {
   padding: 10px;
-  background: rgb(19, 45, 50);
+  background: rgb(19, 40, 45);
   padding-left: 20px;
   text-transform: uppercase;
   font-size: 11px;
@@ -1224,11 +1219,41 @@ app-dashboard mat-form-field {
 
 
 /* dashboard */
+.leftnav{
+  height: 100vh;
+  background: #e26727;
+  width: 80px;
+  color:#fff;
+  /* border-right: 1px solid #182b29; */
+  float: left;
+  overflow: hidden;
+  text-align: center;
+  padding-top: 130px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  box-shadow: 0px 0px 3px #13282d;
+}
+.leftnav .side-tp span.icon{
+ background-color:transparent!important;
+}
+.leftnav button{
+  display: inline-block;
+  width: 100%;
+  margin: 5px 0!important;
+  padding: 12px 0px !important;
+  height: auto!important;
+}
+.leftnav button span{
+  color:#fff!important;
+  white-space:normal;
+}
 app-dashboard .mat-drawer.mat-drawer-side {
-  background-color: #0e2226!important;
+  background-color: #0C2124!important;
   background-image: none;
-  border-right:1px solid #18535f;
-  height:100vh;
+  border-right: 1px solid #00a2c8;
+  height: 100vh;
+  box-shadow: 0px 0px 3px #13282d;
 }
 .side-tp span.icon {
   background: #0e2226!important;
@@ -1236,9 +1261,8 @@ app-dashboard .mat-drawer.mat-drawer-side {
 }
 .header-button span.label {
   padding: 0;
-  font-size: .72em;
-  font-weight: 300;
-  letter-spacing: 1px;
+  font-size: 10px;
+  /* font-family: monospace; */
 }
 .side-tp.sec button{
   min-width: 70px;
@@ -1249,15 +1273,18 @@ app-dashboard .mat-drawer.mat-drawer-side {
  color:#fff;
 }
 .side-tp{
-  display:inline-block;
-  height: 60px;
-  float:right;
-  padding: 0 10px;
+  display: inline-block;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  border-left: 2px solid #0c2124;
+  margin: 5px 0!important;
 }
 .side-tp button {
   min-width: 70px;
   padding-left: 0!important;
   padding-right: 0!important;
+  margin: 0!important;
+  height: 72px!important;
 }
 .side-tp span.icon::after{
   background: none;
@@ -1270,7 +1297,8 @@ app-dashboard .mat-drawer.mat-drawer-side {
 }
 app-dashboard .mat-drawer-content{
   max-width: 100%;
-  background-color:#132d32;
+  background-color: #F7fbfe;
+  overflow: hidden;
 }
 .messages-sidebar-header, .rooms-sidebar-header, .sidebar .nav-sidebar .nav-item-header {
     background-color: #0e2226!important;
@@ -1283,18 +1311,19 @@ app-dashboard .mat-drawer-content{
   background-color: #00a2c8!important;
   border-color: #019dc0!important;
   color: #fff!important;
+  text-transform: uppercase;  
 }
 
 .footer-invite .btn {
   border-radius: 15px;
 }
 .sidebar .nav-sidebar .nav-item-empty {
-  color: #484848;
+  color: #696f6f;
   padding: 10px 20px;
 }
 .header-button span.icon {
-  height: 27px;
-  font-size: 24px;
+  height: 30px;
+  font-size: 28px;
 }
 .header-button span.icon, .header-button span.label {
   color: #bbb;
@@ -1303,9 +1332,9 @@ app-dashboard .mat-drawer-content{
   -moz-transition: all .2s ease-in-out;
 }
 .page-data {
-  background-color: #132d32;
-  color: #fff;
-  height: calc(100vh - 133px);
+  background-color: #F7fbfe;
+  color: #000;
+  height: calc(100vh - 129px);
   overflow-y: scroll;
   padding-bottom: 10px;
 }
@@ -1317,12 +1346,6 @@ app-dashboard .mat-drawer-content{
   border: 0;
   box-shadow: none;
   background-color: #1d1d1d!important;
-}
-#team-wrapper {
-  padding-top: 8px;
-  border-bottom: 1px solid #3f3f3f;
-  height: 61px;
-  background-color: #131313;
 }
 .topLeft {
   font-size: 18px;
@@ -1338,9 +1361,9 @@ app-dashboard .mat-drawer-content{
 .sidebar-match {
   border: none;
   width: 219px;
-  box-shadow: 0 4px 5px -1px rgba(0,0,0,.3);
-  border-bottom: solid 1px #000!important;
-  height: 60px!important;
+  /* box-shadow: 0 4px 5px -1px rgba(0,0,0,.3); */
+  /* border-bottom: solid 1px #000!important; */
+  height: 65px!important;
 }
 .dropdown>.dropdown-toggle {
   font-family: Montserrat,sans-serif;
@@ -1360,7 +1383,7 @@ span.glyphicon.glyphicon-one-fine-dot.sidebar-status-dot.userStatus1 {
   margin-top: 15px;
 }
 .userStatus1 {
-  color: #8bc34a;
+  color: #00a2c8;
   font-size: 14px;
 }
 
@@ -1383,11 +1406,10 @@ ul.nav.navbar-sidebar {
 }
 .sidebar-username {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 0;
   float: left;
   margin: 5px 0 0 5px;
-  opacity: .8;
   transition: all .2s ease-in-out;
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
@@ -1489,11 +1511,13 @@ li.divider.mat-menu-item {
 
 
 .rooms-sidebar-header {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 12px;
     background-color: transparent;
     padding-left: 10px;
-    letter-spacing: 3.5px;
+    letter-spacing: 1.5px;
+    border-bottom: 1px solid #053742;
+    margin-top: 10px;
 }
 .nav>li>a.flex-parent {
   letter-spacing: 0;
@@ -1501,7 +1525,7 @@ li.divider.mat-menu-item {
 
 .nav-sidebar > li > a {
   padding-left: 20px;
-  color: #969696;
+  color: #c6c6c6;
   padding-right: 10px;
 }
 .roomIcon {
@@ -1535,7 +1559,7 @@ a.flex-parent span.flex-child {
   text-overflow: ellipsis;
 }
 .selectedRoom {
-  background-color: rgba(226, 103, 39,0.4)!important;
+  background-color: rgb(0, 117, 144)!important;
   border-left: solid 2px #e26727!important;
   color: #000!important;
   font-family: Poppins,sans-serif,monospace;
@@ -2648,7 +2672,7 @@ app-dashboard {
   font-size: 14px;
   line-height: 1.42857143;
   color: #bbbbbb;
-  background-color: #0e2226;
+  background-color: #f7fbfe;
   float:left;
   width:100%;
   height:100vh;
@@ -3218,7 +3242,7 @@ pre code {
     width: 75%;
   }
   .col-md-8 {
-    width: 66.66666667%;
+    width: 66.66666667%; 
   }
   .col-md-7 {
     width: 58.33333333%;
@@ -6727,6 +6751,7 @@ button.list-group-item-danger.active:focus {
   border-top: 1px solid #292929;
   border-bottom-right-radius: -1px;
   border-bottom-left-radius: -1px;
+  color: #c4c4c4;
 }
 .panel > .list-group,
 .panel > .panel-collapse > .list-group {
@@ -8018,9 +8043,9 @@ button.close {
 .bg-danger {
   color: #fff;
 }
-table,
-.table {
+table, .table {
   color: #fff;
+  background: #0C2126;
 }
 table a:not(.btn),
 .table a:not(.btn) {
@@ -8206,6 +8231,7 @@ a.list-group-item-danger.active:focus {
     .roomHeader {
         float: left;
         line-height: 57px;
+        margin-left: -10px; 
     }
 
     .alertDiv {
@@ -8369,14 +8395,14 @@ footer {
 }
 
 .selectedRoom {
-    border-left: solid 2px #e26727 !important;
+    border-left: solid 2px #00a2c8 !important;
     color: #000 !important;
 }
 
 
 .selectedRoom > a {
     padding-left: 15px !important;
-    color: #eee !important;
+    color: #fff !important;
 }
 
 .selectedRoom > a:hover {
@@ -8440,7 +8466,7 @@ footer {
 }
 
 .thumbpadding:hover {
-    background: #15343a;
+    background: #fff;
 }
 
 .messageLink {
@@ -8559,8 +8585,7 @@ footer {
     letter-spacing: 0.5px;
     margin-left: 5px;
     font-size: 18px;
-    font-weight: 400;
-    text-transform: uppercase;
+    font-weight: 600;
     text-shadow: none;
 }
 
@@ -8638,7 +8663,7 @@ footer {
 
 .hamburgerHeader {
     float: left;
-    margin-top: 16px !important;
+    margin-top: 18px !important;
     margin-left: 25px;
     margin-right: 25px;
 }
@@ -8808,7 +8833,7 @@ footer {
 .chatseparator-hr {
     display: block;
     height: 0px;
-    border-top: solid 1px #15343a;
+    border-top: solid 1px #ebebeb;
     border-bottom: none;
     margin-top: 15px;
     border-left: none;
@@ -8831,7 +8856,7 @@ footer {
 
 .new-message-separator {
     float: right;
-    margin-right: 40px;
+    margin-right: 20px;
     color: rgb(44, 218, 184);
 }
 
@@ -9235,17 +9260,17 @@ footer {
 
 
 .roomHash {
-    opacity: .5;
+    opacity: .8;
     font-size: 18px;
 }
 
 
 
 .navbar-fixed-top {
-    background-color: #132d32;
+    background-color: #fff;
     border: none;
     position:relative!important;
-    box-shadow: 0 4px 5px -1px rgba(0,0,0,0.3);
+    box-shadow: 0 1px 5px -1px rgba(0,0,0,0.3);
     margin-bottom:0;
 }
 
@@ -9338,7 +9363,7 @@ footer {
 .hamburger .icon:not(.active),
 .hamburger:not(.active):before,
 .hamburger:not(.active):after {
-    margin: 0 0 .2em;
+    margin: 0 0 .2em 0px;
 }
 
 .hamburger.hamburger-arrow-left.active:after {
@@ -9348,12 +9373,12 @@ footer {
 
 .hamburger:before, .hamburger .icon, .hamburger:after {
     display: block;
-    width: 80%;
+    width: 70%;
     height: .08em;
     margin: 0 0 .3em;
     transition: transform .2s ease-in-out;
     border-radius: .05em;
-    background: #bbb;
+    background: #e26727;
 }
 
 #uploadBtn, #emojiBtn {
@@ -9399,11 +9424,11 @@ footer {
     color: #6b6767 !important;
     display: block;
     width: 100%;
+    padding: 30px 0 15px;
     letter-spacing: .5px;
-    border-top: solid 1px rgba(255,255,255,.1);
-    padding: 10px 0 15px;
+    /* border-top: solid 1px rgba(255,255,255,.1); */
     /* background: @navbarBg; */
-    box-shadow: 0 -1px 0 #000;
+    /* box-shadow: 0 -1px 0 #000; */
 
 }
 
@@ -9647,11 +9672,11 @@ span.border-badge {
 }
 
 .toolButtons {
-    display: none;
     padding-left: 5px;
     padding-right: 5px;
     border-radius: 10px;
     background: rgba(87, 87, 87, 0.69);
+    display:none;
     height: 20px;
 }
 
@@ -9875,7 +9900,7 @@ a.flex-parent {
 
 .msg_txt, .msg_file_name {
     letter-spacing: 0px !important;
-    color: #ccc !important;
+    color: #000 !important;
 }
 
 
@@ -9939,7 +9964,7 @@ a.flex-parent {
 .mat-tab-label-content {
   padding: 12px 0;
   font-size: 0.7rem;
-  font-weight: 100;
+  font-weight: 600;
   display: block;
   text-align: center;
   max-width: 120px;
@@ -9950,7 +9975,7 @@ a.flex-parent {
   font-family: Poppins,sans-serif,monospace;
 }
 .mat-tab-labels {
-  background-color: #1d4046;
+  background-color: #182B29;
 }
 ::-webkit-scrollbar-thumb {
     background: #363635 !important;
@@ -10059,25 +10084,25 @@ a.flex-parent {
 }
 
 #team-wrapper {
-    padding-top: 8px;
-    border-bottom: 1px solid #3f3f3f;
-    height: 61px;
-    background-color: #0c1c1f;
+  padding: 40px 0 30px 0;
+    /* border-bottom: 1px solid #3f3f3f; */
+    background-color: #102127;
 }
 
 #team-wrapper img.sidebar-avatar {
-    border: 1px solid rgb(62,62,62);
-    border-radius: 0px;
-    margin-right: 10px;
-    height: 40px;
-    width: 40px !important;
-    max-width: 40px !important;
-    border-radius: 6px;
+  border: 1px solid rgb(251, 251, 251);
+  margin-right: 10px;
+  height: 56px;
+  width: 56px !important;
+  max-width: 56px !important;
+  border-radius: 3px;
+  padding: 3px;
 }
 
 #team-wrapper .teamName {
     font-size: 15px;
     line-height: 18px;
+    padding-top: 8px;
 }
 
 #team-wrapper .teamName strong {
@@ -10087,12 +10112,15 @@ a.flex-parent {
     max-width: 150px;
     display: inline-block;
     white-space: nowrap;
+    text-transform:uppercase;
 }
 
 #team-wrapper p.teamName span.team-members {
     text-align: left;
     display: -webkit-inline-box;
     font-size: 11px;
+    color: #fff;
+    font-weight: 600;
 }
 
 .istyping {
@@ -10185,6 +10213,9 @@ span.cashtag_text:hover {
   .mat-drawer-inner-container {
     display: block;
     overflow: inherit!important;
+  }
+  h1{
+    font-size:1.6em;
   }
   app-dashboard .right-sidenav{
     width:280px; 

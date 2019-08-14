@@ -1,8 +1,7 @@
 <div class="login-container">
-  <mat-drawer-container class="example-container" autosize>
-    <div class="navbar navbar-fixed-top navbar-inverse navbar-static-top" style="position:static;">
-      <mat-drawer #drawer class="example-sidenav sidebar navbar-collapse" mode="side" opened="true"
-        style="position:fixed; left:0;">
+  <mat-drawer-container class="example-container" autosize style="float:right; width:calc(100% - 80px); overflow:hidden!important;">
+    <!-- <div class="navbar navbar-fixed-top navbar-inverse navbar-static-top" style="position:static!important;"> -->
+      <mat-drawer #drawer class="example-sidenav sidebar navbar-collapse" mode="side" opened="true">
         <app-sidenav></app-sidenav>
         <div class="example-sidenav-content mobile-cross">
             <button class="" hamburger-drv="" mat-button
@@ -10,7 +9,8 @@
               <i class="fa fa-close"></i>
             </button>
           </div>
-      </mat-drawer>
+      </mat-drawer> 
+          <div class="navbar navbar-fixed-top navbar-inverse navbar-static-top" style="position:static!important;">
       <div class="example-sidenav-content">
         <button class="hamburgerHeader hamburger hamburger-arrow-left" hamburger-drv="" mat-button
           (click)="drawer.toggle()">
@@ -25,10 +25,10 @@
         <i class="fa" ng-class="{'roomLock': room.n_type==2 , 'fa-unlock': room.n_type==2}" aria-hidden="true"></i>
         <div header-nav-trial="" class="nav-trial-container">
           <div class="nav-trial-container-text ng-binding"></div>
-        </div>
+        </div>  
+      </div>
       </div>
       <app-rightarea></app-rightarea>
-    </div>
     <app-chatarea></app-chatarea>
     <!-- <app-lockedchatroom></app-lockedchatroom> -->
     <!-- <app-directchatroom></app-directchatroom> -->
