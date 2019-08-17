@@ -1,5 +1,5 @@
 <mat-drawer-container class="example-container container-all-page" autosize >
-        <mat-drawer #drawer1 class="example-sidenav sidebar navbar-collapse widget-sidenav right-sidenav" mode="side" opened="true"  position="end" >
+        <mat-drawer #drawer1 class="example-sidenav sidebar navbar-collapse widget-sidenav right-sidenav" mode="side" opened="true"  position="end" [opened]="screenWidth > 840" [mode]="(screenWidth > 840) ? 'side' : 'over'">
             <mat-tab-group>
                 <mat-tab label="FX Quotes">
                         <div class="stats-list" style="height: 32px;">
@@ -393,7 +393,7 @@
                         <span class="icon fa fa-address-book-o"></span><br>
                          <span class="label ng-binding">DIRECTORY</span>
                     </button> 
-                    <div class="example-sidenav-content widget-btn side-tp ">
+                    <div class="example-sidenav-content widget-btn side-tp "   [ngStyle]="{'display' : (screenWidth > 840) ? '' : 'block'}">
                             <button class="hamburgerHeader header-button hamburger hamburger-arrow-left " hamburger-drv="" mat-button (click)="drawer1.toggle()">
                             <span class="icon material-icons ng-binding">apps</span><br>
                             <span class="label ng-binding">WIDGETS</span>
@@ -570,7 +570,7 @@
                     
                             </a>
                             <div message-actions="" message="item" class="ng-isolate-scope"><div ng-class="{ 'msg_txt_wrap':!message.s_fileToken, 'msg_img_wrap': message.s_fileToken, 'shout_txt': message.isShout }" class="msg_txt_wrap">
-                            <div message-parser="" message2="message" class="msg_txt ng-isolate-scope msg_admin_txt" ng-class="[{'msgInEdit':inEdit}, {'msg_admin_txt':isAdmin &amp;&amp; !message.isShout }, {'msg_instructor_txt':isInstructor }, {'msg_moderator_txt':isModerator }]" style="" contenteditable="false"><div class="panel panel-primary panel-signal" style="width:300px;"><div class="panel-heading"><img class="text-emoticon message-emoticon" src="https://marketmastersacademy.echofin.co/plugins/chatBox/emojis/svgs/1f4c9.svg"> SIGNAL </div><table class="table"><tbody><tr><td>SELL STOP :</td><th><b>GBPNZD</b> </th></tr><tr><td>ENTRY :</td><th><b>1.94100</b> </th></tr><tr><td>TP :</td><th><span style="color:#4caf50"><b>1.93360</b> </span></th></tr><tr><td>SL :</td><th><span style="color:#f44336"><b>1.94700</b> </span></th></tr><tr><td>TP2 :</td><th><span style="color:#4caf50"><b>1.92800</b> </span></th></tr></tbody></table><div class="panel-footer"><span class="fa fa-fw fa-exclamation-circle"></span> <i>PENDING SELL ORDER. Use Proper Risk Management </i> </div></div></div>
+                            <div message-parser="" message2="message" class="msg_txt ng-isolate-scope msg_admin_txt" ng-class="[{'msgInEdit':inEdit}, {'msg_admin_txt':isAdmin &amp;&amp; !message.isShout }, {'msg_instructor_txt':isInstructor }, {'msg_moderator_txt':isModerator }]" style="" contenteditable="false"><div class="panel panel-primary panel-signal"><div class="panel-heading"><img class="text-emoticon message-emoticon" src="https://marketmastersacademy.echofin.co/plugins/chatBox/emojis/svgs/1f4c9.svg"> SIGNAL </div><table class="table"><tbody><tr><td>SELL STOP :</td><th><b>GBPNZD</b> </th></tr><tr><td>ENTRY :</td><th><b>1.94100</b> </th></tr><tr><td>TP :</td><th><span style="color:#4caf50"><b>1.93360</b> </span></th></tr><tr><td>SL :</td><th><span style="color:#f44336"><b>1.94700</b> </span></th></tr><tr><td>TP2 :</td><th><span style="color:#4caf50"><b>1.92800</b> </span></th></tr></tbody></table><div class="panel-footer"><span class="fa fa-fw fa-exclamation-circle"></span> <i>PENDING SELL ORDER. Use Proper Risk Management </i> </div></div></div>
                             <div ng-class="{'toolButtons': canEdit() || canDelete() || canPin()}" class="toolButtons">
                         <button class="toolbtn msg_button_edit " >
                             <i class="fa fa-pencil-square-o" aria-hidden="true"></i>

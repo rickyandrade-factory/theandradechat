@@ -506,12 +506,6 @@ a.profile-menu {
   position: static;
   overflow: visible;
 }
-/* .example-sidenav-content.widget-btn {
-  position: absolute;
-  right: 0;
-  top: -65px;
-  z-index: 999;
-} */
 .container-all-page {
   z-index: 9999!important;
   margin-top: 5px;
@@ -1224,7 +1218,6 @@ app-dashboard mat-form-field {
   background: #e26727;
   width: 80px;
   color:#fff;
-  /* border-right: 1px solid #182b29; */
   float: left;
   overflow: hidden;
   text-align: center;
@@ -1345,7 +1338,7 @@ app-dashboard .mat-drawer-content{
 .sidebar {
   border: 0;
   box-shadow: none;
-  background-color: #1d1d1d!important;
+  background-color: #0C2124!important;
 }
 .topLeft {
   font-size: 18px;
@@ -1361,8 +1354,6 @@ app-dashboard .mat-drawer-content{
 .sidebar-match {
   border: none;
   width: 219px;
-  /* box-shadow: 0 4px 5px -1px rgba(0,0,0,.3); */
-  /* border-bottom: solid 1px #000!important; */
   height: 65px!important;
 }
 .dropdown>.dropdown-toggle {
@@ -9426,9 +9417,6 @@ footer {
     width: 100%;
     padding: 30px 0 15px;
     letter-spacing: .5px;
-    /* border-top: solid 1px rgba(255,255,255,.1); */
-    /* background: @navbarBg; */
-    /* box-shadow: 0 -1px 0 #000; */
 
 }
 
@@ -10085,7 +10073,6 @@ a.flex-parent {
 
 #team-wrapper {
   padding: 40px 0 30px 0;
-    /* border-bottom: 1px solid #3f3f3f; */
     background-color: #102127;
 }
 
@@ -10287,6 +10274,37 @@ app-sinup .mat-drawer-inner-container{
   max-width: 320px;
   margin: 0 auto;
 }
+.leftnav {
+  height: auto;
+  position: fixed;
+  right:0;
+  padding:0;
+  left:auto;
+}
+app-dashboard .mat-drawer-container{
+  width:100%!important;
+}
+app-dashboard  .side-tp{
+  margin: 0!important;
+}
+app-dashboard .side-tp button{
+  padding:0!important;
+  height: 60px!important;
+}
+app-dashboard .dropdown-toggle {
+  margin-top: 0;
+}
+app-dashboard .sidebar-match{
+ height:40px!important;
+}
+app-signup span.mat-checkbox-label {
+  white-space: normal;
+}
+app-signup mat-sidenav{
+  height:100%!important;
+  overflow-y: auto!important;
+}
+
 }
 @media screen and (max-width:414px){
   app-login .mat-drawer-inner-container{

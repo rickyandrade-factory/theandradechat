@@ -8,7 +8,17 @@ declare var angular: any;
 })
 export class AdmindashboardComponent implements OnInit {
 
-  constructor() { }
+  // constructor() { }
+  screenWidth: number;
+
+  constructor() {
+    // set screenWidth on page load
+    this.screenWidth = window.innerWidth;
+    window.onresize = () => {
+      // set screenWidth on screen size change
+      this.screenWidth = window.innerWidth;
+    };
+  }
 
   ngOnInit() {
   }

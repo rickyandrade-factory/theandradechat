@@ -7,7 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChatareaComponent implements OnInit {
 
-  constructor() { }
+  // constructor() { }
+
+    screenWidth: number;
+
+    constructor() {
+      this.screenWidth = window.innerWidth;
+      window.onresize = () => {
+        this.screenWidth = window.innerWidth;
+      };
+    }
 
   ngOnInit() {
   }

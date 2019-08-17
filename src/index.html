@@ -21,13 +21,13 @@
   crossorigin="anonymous"></script>
   <script>
       $(document).ready(function(){
-        // if ($(window).width() <= 767) {
-          
-        //     $('.admin-dashboard').addClass('mini-sidebar');
-        // }
+        if ($(window).width() <= 767) {
+            $('.admin-dashboard').addClass('mini-sidebar');
+        }
         $('.sidebar-toggle').click(function(){
-          $('.admin-dashboard').toggleClass('mini-sidebar');
-        })
+              $('.admin-dashboard').toggleClass('mini-sidebar');
+            })
+       
       });
     </script>
 </body>

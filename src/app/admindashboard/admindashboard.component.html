@@ -1,7 +1,7 @@
 <div class="login-container admin-dashboard">
     <mat-drawer-container class="example-container" autosize>
       <div class="navbar navbar-fixed-top navbar-inverse navbar-static-top" style="position:static;">
-        <mat-drawer #drawer class="example-sidenav sidebar navbar-collapse" opened="true" mode="side"
+        <mat-drawer #drawer class="example-sidenav sidebar navbar-collapse" opened="true" mode="side" 
           style="position:fixed; left:0;">
           <a ui-sref="app.main" class="text-center" href="#">
             <span class="logo-mini">
@@ -122,11 +122,11 @@
               </li>
             </ul>
         </mat-drawer>
-        <div class="example-sidenav-content">
-                <button  class="hamburgerHeader hamburger hamburger-arrow-left sidebar-toggle" hamburger-drv="">
-                  <span class="icon"></span>
-                </button>   
-              </div>
+        <div class="example-sidenav-content hidden-xs">
+            <button class="hamburgerHeader hamburger hamburger-arrow-left sidebar-toggle" hamburger-drv="">
+                <span class="icon"></span>
+            </button>
+        </div>
         <div class="roomHeader">
           <i class="fa" ng-class="{'roomLock': room.n_type==2 , 'fa-unlock': room.n_type==2}" aria-hidden="true"></i>
           <div header-nav-trial="" class="nav-trial-container">
@@ -152,7 +152,7 @@
                 </li>
                 <li class="dropdown"> 
                     <a>
-                        <button mat-button [matMenuTriggerFor]="menu"> puneetsethi25@gmail.com
+                        <button mat-button [matMenuTriggerFor]="menu">puneetsethi25@gmail.com
                                 <span class="caret"></span>
                         </button>
                         <mat-menu #menu="matMenu" xPosition="before">
