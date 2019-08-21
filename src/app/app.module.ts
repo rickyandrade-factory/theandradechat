@@ -31,6 +31,7 @@ import { LockedchatroomComponent } from './lockedchatroom/lockedchatroom.compone
 import { DirectchatroomComponent } from './directchatroom/directchatroom.component';
 import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
 import { LeftnavComponent } from './leftnav/leftnav.component';
+import { UnlockchatroomComponent } from './unlockchatroom/unlockchatroom.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { LeftnavComponent } from './leftnav/leftnav.component';
     DirectchatroomComponent,
     AdmindashboardComponent,
     LeftnavComponent,
+    UnlockchatroomComponent,
   ],
   imports: [
     BrowserModule,

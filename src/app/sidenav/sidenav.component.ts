@@ -31,19 +31,19 @@ export interface DialogData {
  * @title Injecting data when opening a dialog
  */
 
-export class DialogDataExample {
-  constructor(public dialog: MatDialog) {}
+// export class DialogDataExample {
+//   constructor(public dialog: MatDialog) {}
 
-  openDialog() {
-    this.dialog.open(DialogExampleComponent, {
-      data: {
-        animal: 'panda'
-      }
-    });
-  }
-}
+//   openDialog() {
+//     this.dialog.open(DialogExampleComponent, {
+//       data: {
+//         animal: 'panda'
+//       }
+//     });
+//   }
+// }
 
 
-export class DialogExampleComponent {
-  constructor(@Inject(MAT_DIALOG_DATA) public data: DialogData) {}
-}
+// export class DialogExampleComponent {
+//   constructor(@Inject(MAT_DIALOG_DATA) public data: DialogData) {}
+// }

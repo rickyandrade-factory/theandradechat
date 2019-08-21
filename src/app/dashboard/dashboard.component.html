@@ -1,6 +1,5 @@
 <div class="login-container">
   <mat-drawer-container class="example-container" autosize style="float:right; width:calc(100% - 80px); overflow:hidden!important;">
-    <!-- <div class="navbar navbar-fixed-top navbar-inverse navbar-static-top" style="position:static!important;"> -->
       <mat-drawer #drawer class="example-sidenav sidebar navbar-collapse"  [opened]="screenWidth > 840" [mode]="(screenWidth > 840) ? 'side' : 'over'">
         <app-sidenav></app-sidenav>
         <div class="example-sidenav-content mobile-cross">
@@ -28,7 +27,9 @@
         </div>  
       </div>
       </div>
-      <app-rightarea></app-rightarea>
+
+
+      
     <app-chatarea></app-chatarea>
     <!-- <app-lockedchatroom></app-lockedchatroom> -->
     <!-- <app-directchatroom></app-directchatroom> -->

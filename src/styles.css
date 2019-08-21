@@ -9757,7 +9757,7 @@ span#wave {
     padding: 11px;
     line-height: 38px;
 
-}
+}  
 
 .vidPopout {
     border: 0px;
@@ -10275,7 +10275,7 @@ app-sinup .mat-drawer-inner-container{
   margin: 0 auto;
 }
 .leftnav {
-  height: auto;
+  height: 60px;
   position: fixed;
   right:0;
   padding:0;
@@ -10286,6 +10286,8 @@ app-dashboard .mat-drawer-container{
 }
 app-dashboard  .side-tp{
   margin: 0!important;
+  border-left: none;
+  background: transparent;
 }
 app-dashboard .side-tp button{
   padding:0!important;
