@@ -9,29 +9,24 @@
             </button>
           </div>
       </mat-drawer> 
-      <div class="navbar navbar-fixed-top navbar-inverse navbar-static-top" style="position:static!important;" [ngStyle]="{'display' : (screenWidth > 840) ? '' : 'block'}">
       <div class="example-sidenav-content">
-        <button class="hamburgerHeader hamburger hamburger-arrow-left" hamburger-drv="" mat-button
-          (click)="drawer.toggle()">
-          <span class="icon"></span>
-        </button>
-      </div>
-      <div class="roomHeader">
-        <i class="roomHash fa fa-hashtag"
-          aria-hidden="true"></i>
-        <span class="roomTitle ng-binding ng-scope">Traders
-          Lounge</span><!-- end ngIf: room.roomType!=4 && room.s_url.length -->
-        <i class="fa" ng-class="{'roomLock': room.n_type==2 , 'fa-unlock': room.n_type==2}" aria-hidden="true"></i>
-        <div header-nav-trial="" class="nav-trial-container">
-          <div class="nav-trial-container-text ng-binding"></div>
-        </div>  
-      </div>
-      </div>
-
-
-      
-    <app-chatarea></app-chatarea>
-    <!-- <app-lockedchatroom></app-lockedchatroom> -->
-    <!-- <app-directchatroom></app-directchatroom> -->
+          <div class="navbar navbar-fixed-top navbar-inverse navbar-static-top" style="position:static!important;" [ngStyle]="{'display' : (screenWidth > 840) ? '' : 'block'}">
+              <button class="hamburgerHeader hamburger hamburger-arrow-left" hamburger-drv="" mat-button
+            (click)="drawer.toggle()">
+              <span class="icon"></span>
+            </button>
+            <div class="roomHeader" style="float:none;">
+                <i class="roomHash fa fa-hashtag"
+                  aria-hidden="true"></i>
+              <span class="roomTitle ng-binding ng-scope">Traders
+                Lounge</span>
+              <i class="fa" ng-class="{'roomLock': room.n_type==2 , 'fa-unlock': room.n_type==2}" aria-hidden="true"></i>
+              <div header-nav-trial="" class="nav-trial-container">
+                <div class="nav-trial-container-text ng-binding"></div>
+              </div>  
+            </div>
+          </div>
+        <app-chatarea></app-chatarea>
+    </div>
   </mat-drawer-container>
 </div>
