@@ -94,6 +94,7 @@
                         <span style="margin:10px 10px 0 0; float: right;color:#585858;padding:0;">Quotes by Investing.com</span>
                     </div>
                 </div>
+                <!-- <iframe allowtransparency="true" src="https://tradetools.tk/t/forex/?v0.1" style="background: #FFFFFF; width:100%; height:100vh;"></iframe> -->
             </mat-tab>
             <mat-tab label="FX Calculators">
                 <div id="calculators">
@@ -372,44 +373,57 @@
         </mat-drawer>
         <div class="example-sidenav-content">
            <mat-drawer-container class="example-container" autosize>
-              <mat-drawer #drawer4 class="example-sidenav admin_and_users" mode="side" position="end">
-                 <mat-tab-group>
-                    <mat-tab>
-                       <ng-template mat-tab-label>
-                          <i class="fa fa-users fa-lg"></i>
-                       </ng-template>
-                       <div>
-                            <div class="input-user-filter-wrapper">
-                                <input class="form-control input-user-filter" placeholder="User search">
-                            </div>
-                            <div class="">
-                                <div class="userGroupContainer">
-                                    <div class="panelUserLabel ng-binding">
-                                        <span class="border-badge border-admin" aria-hidden="true"></span> Admins
-                                    </div>
-                                    <div class="panelUser" style="float:left;">
-                                        <span class="glyphicon glyphicon-one-fine-dot userStatus2" ></span> 
-                                        <img class="team-user-avatar" src="//cdn.echofin.co/avatars/5007bf5e_e190221b94244369954f8240580a1d80.png" alt="alt-text">
-                                        Jetsetlukas
-                                    </div>
+                <div  class="card_box">
+                        <div class="profile-sidebar">
+                            <div class="ui-widget-header-user ui-draggable-handle ">
+                                <span class="material-icons userStatus1 offline" style="vertical-align:middle; font-size:20px">person_outline</span> brytonmarquis
+                                <div class="pull-right">
+                                    <button class="pull-right btnClose" matTooltip="Close user window"
+                                    aria-label="Button that displays a tooltip when focused or hovered over"
+                                    matTooltipPosition="right">×</button>
                                 </div>
                             </div>
-                       </div>
-                    </mat-tab>
-                    <mat-tab>
-                       <ng-template mat-tab-label>
-                          <i class="fa fa-folder-open-o fa-lg"></i>
-                       </ng-template>
-                       Content 2
-                    </mat-tab>
-                    <mat-tab>
-                       <ng-template mat-tab-label>
-                          <i class="fa fa-at fa-lg"></i>
-                       </ng-template>
-                       Content 3
-                    </mat-tab>
-                 </mat-tab-group>
-              </mat-drawer>
+                            <div class="profile-userpic">
+                                <img src="//cdn.echofin.co/avatars/f40b53a0.png" class="img-responsive" alt="" width="220">
+                            </div>
+                            <div class="profile-usermenu">
+                                <ul class="nav nav-profile">
+                                    <li>
+                                        <a href="#">
+                                            Direct Message
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Block Direct Messages
+                                            <span class="fa fa-info-circle pull-right"  matTooltip="Prevent user from sending you Direct Messages"
+                                            aria-label="Button that displays a tooltip when focused or hovered over"
+                                            matTooltipPosition="right"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a  href="#">
+                                            Mute from Timeline
+                                            <span class="fa fa-info-circle pull-right" matTooltip="Hide the user's messages from the timeline of the current chatroom"
+                                            aria-label="Button that displays a tooltip when focused or hovered over"
+                                            matTooltipPosition="right"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="#">
+                                            Ban from Team
+                                            <span class="fa fa-info-circle pull-right"matTooltip="Kick the user out of the team and lock their account"
+                                            aria-label="Button that displays a tooltip when focused or hovered over"
+                                            matTooltipPosition="right"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <mat-drawer #drawer4 class="example-sidenav admin_and_users" mode="side" position="end">
+                            <app-user-panel></app-user-panel>
+                    </mat-drawer>
               <div class="example-sidenav-content">
                  <app-unlockchatroom></app-unlockchatroom>
                  <!-- <app-lockedchatroom></app-lockedchatroom> -->
@@ -419,7 +433,7 @@
                     <button id="emojiBtn" class=""><i class="fa fa-smile-o" aria-hidden="true"></i>
                     </button>
                     <button id="addon_Signal" class="cbAddonsBtn" title="Publish Signal"><i class="fa fa-bullhorn" aria-hidden="true"></i></button>
-                    <span id="chatbox-placeholder" >Message #Traders Lounge</span>
+                    <span id="chatbox-placeholder">Message #Traders Lounge</span>
                     <div id="chatbox" contenteditable="true" style="cursor: text;"></div>
                     <span id="faux" style="display: none;"></span>
                     <span class="downloadLink paymentFormRoom"><i class="fa fa-download"></i> Download Desktop App</span>

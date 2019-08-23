@@ -32,6 +32,7 @@ import { DirectchatroomComponent } from './directchatroom/directchatroom.compone
 import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
 import { LeftnavComponent } from './leftnav/leftnav.component';
 import { UnlockchatroomComponent } from './unlockchatroom/unlockchatroom.component';
+import { UserPanelComponent } from './user-panel/user-panel.component';
 // import {FileNameDialogComponent} from './file-name-dialog.component';
 
 @NgModule({
@@ -50,6 +51,7 @@ import { UnlockchatroomComponent } from './unlockchatroom/unlockchatroom.compone
     AdmindashboardComponent,
     LeftnavComponent,
     UnlockchatroomComponent,
+    UserPanelComponent,
     // FileNameDialogComponent,
   ],
   imports: [

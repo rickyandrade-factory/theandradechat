@@ -32,7 +32,6 @@ constructor() {
     this.screenWidth = window.innerWidth;
   };
 }
-
   ngOnInit() {}
   
 }

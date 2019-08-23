@@ -10,8 +10,22 @@ body{
   height:100vh;
   overflow:hidden;
 }
+.mat-tooltip {
+  /* your own custom styles here */ 
+  /* e.g. */
+  color: yellow;
+}
 .mb-30{
   margin-bottom:30px;
+}
+iframe{
+  border:none;
+}
+.offline{
+  color:#7e7e7e!important;
+}
+.online{
+  color:#8bc34a!important;
 }
 app-login .mat-drawer-content {
   position: absolute;
@@ -1016,7 +1030,7 @@ h6.teamName{
   letter-spacing: 0.5px;
 }
 h6.teamName b{
-  color: #f99500;
+  color: #e26727;
 }
 
 
@@ -1030,7 +1044,6 @@ h6.teamName b{
 
 app-dashboard .right-sidenav {
   width: 480px;
-  top:-2px;
 }
 div#topBar {
   text-align: right;
@@ -1103,7 +1116,7 @@ div#topBar {
   border-bottom: 1px solid #3a3a3a;
   font-size: 13px;
   font-weight: 600;
-  color: #f99500;
+  color: #e26727;
   text-align: left;
   line-height: 47px;
   height:47px;
@@ -1177,7 +1190,7 @@ div#topBar {
 }
 app-dashboard mat-form-field {
   color:#fff;
-  width: auto;
+  width: auto;  
 }
 .controls {
   margin-left: 20px;
@@ -1216,9 +1229,89 @@ app-dashboard mat-form-field {
 .admin_and_users {
   color: #fff;
   width: 220px;
+  height: calc(100vh - 60px)!important;
+}
+.empty-msg {
+  text-align: center;
+  font-size: 1.7rem;
+  color: #555;
+  text-shadow: -1px -1px 0 #1b1b1b;
+  font-weight: 700;
+  padding: 3rem 0;
+}
+.sidepanel-item:nth-child(odd) {
+  background-color: #13282d!important;
+}
+.sidepanel-item {
+  padding: 0.6rem;
+}
+.sidepanel-item .sidepanel-item-header .sidepanel-item-username {
+  color: #fff;
+  font-weight: 700;
+  font-family: Montserrat,sans-serif;
+}
+.sidepanel-item .sidepanel-item-body img {
+  width: 100%;
+  border: solid 1px #333;
+}
+.sidepanel-item .sidepanel-item-header .sidepanel-item-date {
+  color: #bbb;
+  font-family: 'PT MONO',monospace;
+  padding: 0 0 0 .3rem;
+  font-size: 11px;
+}
+.sidepanel-item .sidepanel-item-body {
+  padding: .3rem 0;
+  overflow: hidden;
+  font-family: Montserrat,sans-serif;
+  color: #ccc;
+  font-size: 14px;
+}
+.sidepanel-item .sidepanel-item-footer {
+  color: #666;
+  font-size: 0.8rem;
+}
+.panelUser:hover {
+  background: #15343a;
 }
 .admin_and_users .mat-tab-label{
   width:33.3%;
+}
+.card_box{
+  position: absolute;
+  right: 230px;
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  background-color: #102127;
+  z-index: 9;
+  color: #fff;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2)
+}
+.card_box .ui-widget-header-user {
+  border: 1px solid #494949;
+  color: #ddd;
+  padding-left: 10px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  line-height: 30px;
+}
+.panelUser{
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+}
+.card_box .btnClose {
+  background: transparent;
+  border: none;
+}
+.card_box {
+  display: none;
+}
+.show_hide {
+  display: block;
 }
 .leftnav{
   height: 100vh;
@@ -8976,7 +9069,7 @@ footer {
     text-align: left;
     border-bottom: solid 1px #2a2a2a;
     margin-right: 10px;
-    margin-top: 15px;
+    margin-top: 20px;
     margin-bottom: 5px;
 }
 
@@ -9573,7 +9666,7 @@ span.border-badge {
 }
 
 .border-admin {
-    border-left: 5px solid #FFC107;
+    border-left: 5px solid #e26727;
 }
 
 .border-instructor {
@@ -9662,7 +9755,7 @@ span.border-badge {
 }
 
 .nav-trial-container-upgrade:hover {
-    background-color: #f99500;
+    background-color: #e26727;
     color: #000;
 }
 
@@ -9686,7 +9779,7 @@ span.border-badge {
 }
 
 .toolbtn:hover {
-    color: #f99500 !important;
+    color: #e26727 !important;
 }
 
 .imgDiv {
@@ -9756,7 +9849,7 @@ span#wave {
 
 
 .banner-open-in-app {
-    background: linear-gradient(to right,fade(#f99500, 10%), #787878);
+    background: linear-gradient(to right,fade(#e26727, 10%), #787878);
     top: 0;
     z-index: 1000000;
     width: 100%;
@@ -9874,7 +9967,7 @@ a.flex-parent {
 }
 
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
-    background-color: #f99500 !important;
+    background-color: #e26727 !important;
     color: #fff !important;
 }
 
@@ -9886,7 +9979,7 @@ a.flex-parent {
     text-decoration: none !important;
 }
 .btn-link:hover {
-    color: #f99500 !important;
+    color: #e26727 !important;
     text-decoration: underline;
 }
 
@@ -9900,25 +9993,25 @@ a.flex-parent {
 
 
 .btn-primary {
-    background-color: darken(#f99500, 5%) !important;
-    border-color: #f99500 !important;
-    color: lighten(#f99500, 90%) !important;
+    background-color: darken(#e26727, 5%) !important;
+    border-color: #e26727 !important;
+    color: lighten(#e26727, 90%) !important;
 }
 
 .btn-primary:hover {
-    background-color: darken(#f99500, 15%) !important;
-    border-color: darken(#f99500, 10%) !important;
-    color: lighten(#f99500, 90%) !important;
+    background-color: darken(#e26727, 15%) !important;
+    border-color: darken(#e26727, 10%) !important;
+    color: lighten(#e26727, 90%) !important;
 }
 
 
 
 .header-button-admin {
-    background-color: darken(#f99500, 25%) !important;
+    background-color: darken(#e26727, 25%) !important;
 }
 
 .header-button-admin.header-button-admin-last {
-    border-right: 1px solid fade(#f99500, 1%) !important;
+    border-right: 1px solid fade(#e26727, 1%) !important;
 }
 
 .imgUploaded {
@@ -9930,7 +10023,7 @@ a.flex-parent {
 }
 
 .widgets .widgets-header .widgets-menu .widgets-menu-item a .line, .label-primary, .profile-usermenu > ul > li > a:hover, .popup > .dropdown-menu > li > a:hover, .popup > .dropdown-menu > li > a:focus, .popup > .dropdown-menu > li > a.selected {
-    background-color: #f99500 !important;
+    background-color: #e26727 !important;
 }
 
 .mat-tab-label, .mat-tab-link{
@@ -9977,7 +10070,7 @@ a.flex-parent {
 }
 
 .tabSelected {
-    border-bottom: solid 2px #f99500 !important;
+    border-bottom: solid 2px #e26727 !important;
 }
 
 .widgets-widget .widgets-premium-banner {
@@ -9988,12 +10081,12 @@ a.flex-parent {
 }
 
 .modal-loading:after {
-    border-color: #f99500 rgba(0,0,0,.1) rgba(0,0,0,.1) !important;
+    border-color: #e26727 rgba(0,0,0,.1) rgba(0,0,0,.1) !important;
 }
 
 .newMsgAlert {
-    background-color: fade(#f99500, 20%) !important;
-    color: lighten(#f99500, 10%) !important;
+    background-color: fade(#e26727, 20%) !important;
+    color: lighten(#e26727, 10%) !important;
 }
 
 .new-message-separator {
@@ -10001,7 +10094,7 @@ a.flex-parent {
 }
 
 .emoji-tab-selected {
-    border-bottom: 2px solid #f99500 !important;
+    border-bottom: 2px solid #e26727 !important;
 }
 
 .emoji-search-div input::-webkit-input-placeholder {
@@ -10038,12 +10131,12 @@ a.flex-parent {
 }
 
 .panel-primary {
-    border-color: fade(#f99500, 80%);
+    border-color: fade(#e26727, 80%);
 }
 
 .panel-primary .panel-heading {
-    border-color: fade(#f99500, 80%);
-    background: fade(#f99500, 80%);
+    border-color: fade(#e26727, 80%);
+    background: fade(#e26727, 80%);
     padding: 6px;
 }
 
@@ -10064,7 +10157,7 @@ a.flex-parent {
 }
 
 .alertify .alert nav button:not(.btn):not(.pure-button):not(.md-button):not(.mdl-button):active, .alertify .alert nav button:not(.btn):not(.pure-button):not(.md-button):not(.mdl-button):hover, .alertify .dialog nav button:not(.btn):not(.pure-button):not(.md-button):not(.mdl-button):active, .alertify .dialog nav button:not(.btn):not(.pure-button):not(.md-button):not(.mdl-button):hover {
-    background-color: #f99500 !important;
+    background-color: #e26727 !important;
     color: #000 !important;
 }
 
@@ -10126,7 +10219,7 @@ a.flex-parent {
 }
 
 .istyping > span.user {
-    color: darken(#f99500, 15%);
+    color: darken(#e26727, 15%);
     font-weight: bold;
 }
 
@@ -10151,7 +10244,7 @@ a.flex-parent {
 
 
 span.cashtag_text {
-    color: #f99500;
+    color: #e26727;
     text-decoration: underline;
     text-decoration-style: dotted;
     font-weight: 500;
@@ -10166,16 +10259,16 @@ span.cashtag_text:hover {
 
 
 .service-item .service-reload-icon {
-    color: #f99500 !important;
+    color: #e26727 !important;
 }
 
 
 .shout_txt {
-    border-left: 5px solid #f99500 !important;
+    border-left: 5px solid #e26727 !important;
 }
 
 .shout_txt:before {
-    color: #f99500 !important;
+    color: #e26727 !important;
 }
 
 .panel-settings-blockandmute-body .label {
