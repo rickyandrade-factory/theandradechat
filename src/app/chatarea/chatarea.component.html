@@ -380,18 +380,16 @@
                        </ng-template>
                        <div>
                             <div class="input-user-filter-wrapper">
-                                <input class="form-control input-user-filter ng-valid ng-dirty ng-valid-parse ng-empty ng-touched" placeholder="User search"
-                                    ng-change="flterNameChange()" ng-model="filtername">
+                                <input class="form-control input-user-filter" placeholder="User search">
                             </div>
-                            <div class="ng-isolate-scope">
-                                <div ng-show="(totalusers | usersfilter:type:banned:filtername).length>0" class="userGroupContainer">
+                            <div class="">
+                                <div class="userGroupContainer">
                                     <div class="panelUserLabel ng-binding">
-                                        <button class="btn_show_all ng-binding ng-hide" ng-show="filteroffline==true" ng-init="blnShowAllToggle=false" ng-click="ToggleOffline()">show all</button>
                                         <span class="border-badge border-admin" aria-hidden="true"></span> Admins
                                     </div>
-                                    <div class="panelUser ng-binding" ng-class="{'currentUser': user.b_isCurrent}" style="float:left;">
-                                        <span class="glyphicon glyphicon-one-fine-dot userStatus2" ></span>
-                                        <img class="team-user-avatar b-lazy b-loaded" src="//cdn.echofin.co/avatars/5007bf5e_e190221b94244369954f8240580a1d80.png" alt="alt-text">
+                                    <div class="panelUser" style="float:left;">
+                                        <span class="glyphicon glyphicon-one-fine-dot userStatus2" ></span> 
+                                        <img class="team-user-avatar" src="//cdn.echofin.co/avatars/5007bf5e_e190221b94244369954f8240580a1d80.png" alt="alt-text">
                                         Jetsetlukas
                                     </div>
                                 </div>
