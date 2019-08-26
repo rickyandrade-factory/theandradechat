@@ -33,6 +33,8 @@ import { AdmindashboardComponent } from './admindashboard/admindashboard.compone
 import { LeftnavComponent } from './leftnav/leftnav.component';
 import { UnlockchatroomComponent } from './unlockchatroom/unlockchatroom.component';
 import { UserPanelComponent } from './user-panel/user-panel.component';
+import { AdminSidebarComponent } from './admin-sidebar/admin-sidebar.component';
+import { AdminusersComponent } from './adminusers/adminusers.component';
 // import {FileNameDialogComponent} from './file-name-dialog.component';
 
 @NgModule({
@@ -52,6 +54,8 @@ import { UserPanelComponent } from './user-panel/user-panel.component';
     LeftnavComponent,
     UnlockchatroomComponent,
     UserPanelComponent,
+    AdminSidebarComponent,
+    AdminusersComponent,
     // FileNameDialogComponent,
   ],
   imports: [

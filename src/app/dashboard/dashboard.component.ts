@@ -15,7 +15,6 @@ export interface Car {
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
-  
 })
 
 
@@ -30,7 +29,7 @@ constructor() {
   window.onresize = () => {
     // set screenWidth on screen size change
     this.screenWidth = window.innerWidth;
-  };
+  }; 
 }
   ngOnInit() {}
   

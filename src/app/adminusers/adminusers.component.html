@@ -1,0 +1,174 @@
+<div class="login-container admin-dashboard">
+  <mat-drawer-container class="example-container" autosize>
+    <div class="navbar navbar-fixed-top navbar-inverse navbar-static-top" style="position:static;">
+      <mat-drawer #drawer class="example-sidenav sidebar navbar-collapse" opened="true" mode="side" 
+        style="position:fixed; left:0;">
+          <app-admin-sidebar></app-admin-sidebar>
+      </mat-drawer>
+      <div class="example-sidenav-content hidden-xs">
+          <button class="hamburgerHeader hamburger hamburger-arrow-left sidebar-toggle" hamburger-drv="">
+              <span class="icon"></span>
+          </button>
+      </div>
+      <div class="roomHeader">
+        <i class="fa" ng-class="{'roomLock': room.n_type==2 , 'fa-unlock': room.n_type==2}" aria-hidden="true"></i>
+        <div header-nav-trial="" class="nav-trial-container">
+          <div class="nav-trial-container-text ng-binding"></div>
+        </div>
+      </div>
+      <div class="navbar-right navbar-custom-menu">
+          <ul class="nav navbar-nav">
+              <li ng-class="{active:vm.$state.includes('app.settings')}" class="">
+                  <a ui-sref="app.settings" href="#">
+                      <span class="fa fa-gears fa-fw"></span>
+                  </a>
+              </li>
+              <li>
+                  <a target="_blank" href="/">
+                      <span class="fa fa-comments fa-fw"></span>
+                  </a>
+              </li>
+              <li>
+                  <a href="#" id="headwayapp">
+                      <span class="fa fa-envelope-o fa-fw"></span>
+                  <span id="HW_badge_cont" class="HW_visible"><span id="HW_badge" data-count-unseen="" class="HW_softHidden"></span></span></a>
+              </li>
+              <li class="dropdown"> 
+                  <a>
+                      <button mat-button [matMenuTriggerFor]="menu">puneetsethi25@gmail.com
+                              <span class="caret"></span>
+                      </button>
+                      <mat-menu #menu="matMenu" xPosition="before">
+                              <a class="profile-menu white" href="#" >Profile</a>
+                              <li class="divider"></li>
+                              <a class="profile-menu white" href="#">Sign Out</a>
+                      </mat-menu>
+                  </a>
+              </li>
+          </ul>
+       </div>
+    </div>
+    <section class="content-header ng-scope">
+        <h1>
+          Users
+        </h1>
+    </section>
+    <section class="content admin-user">
+      <div class="toolbox">
+          <button class="btn btn-blue" ng-click="vm.InitForm()">
+                <span class="fa fa-plus"></span> New User
+            </button>
+            <button class="btn btn-default" ng-click="vm.InviteForm()">
+                <span class="fa fa-plus"></span> Invite Users
+            </button>
+            <button class="btn btn-default" ng-click="vm.Export()" ng-disabled="vm.downloading">
+                <span class="fa fa-download ng-scope" ng-if="!vm.downloading"></span> Export
+            </button>
+            <div class="pull-right">
+                <button ng-click="vm.changeColumns()" uib-popover-template="'myPopoverTemplate.html'" popover-placement="bottom-right" 
+                popover-append-to-body="true" type="button" class="btn btn-default">
+                    <span class="fa fa-columns"></span>
+                    Columns
+                </button>
+                
+                <button class="btn btn-default" ng-click="vm.ToggleFiltering()">
+                    <span class="fa fa-filter"></span> Filters
+                </button>
+                <button class="btn btn-default" ng-click="vm.LoadUsers()">
+                    <span class="fa fa-refresh fa-fw" ng-class="{'fa-spin':vm.loading}"></span>
+                </button>
+            </div>
+        </div>
+
+        <mat-form-field>
+          <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+        </mat-form-field>
+        
+        <div class="mat-elevation-z8">
+          <table mat-table [dataSource]="dataSource" matSort>
+
+             <!-- ID Column -->
+             <ng-container matColumnDef="img">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> </th>
+                <td mat-cell *matCellDef="let row"> 
+                    <div class="user_img">
+                      <img class="img-responsive table-avatar ng-scope" src="//cdn.echofin.co/avatars/67258106.png">
+                    </div> 
+                </td>
+              </ng-container> 
+        
+            <!-- ID Column -->
+            <ng-container matColumnDef="username">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header> Username </th>
+              <td mat-cell *matCellDef="let row"> {{row.username}} </td>
+            </ng-container>
+
+            <!-- Name Column -->
+            <ng-container matColumnDef="email">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header> Email </th>
+              <td mat-cell *matCellDef="let row"> {{row.email}} </td>
+            </ng-container>
+        
+            <!-- Color Column -->
+            <ng-container matColumnDef="verified">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header> Verified </th>
+              <td mat-cell *matCellDef="let row" [style.color]="row.color"> {{row.verified}} </td>
+            </ng-container>
+
+              <!-- Color Column -->
+              <ng-container matColumnDef="subscription">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Subscription </th>
+                <td mat-cell *matCellDef="let row" [style.color]="row.color"> {{row.subscription}} </td>
+              </ng-container>
+
+               <!-- Color Column -->
+               <ng-container matColumnDef="type">
+                  <th mat-header-cell *matHeaderCellDef mat-sort-header> Type </th>
+                  <td mat-cell *matCellDef="let row" [style.color]="row.color"> {{row.type}} </td>
+                </ng-container>
+
+              <!-- Color Column -->
+              <ng-container matColumnDef="devices">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Mobile Devices</th>
+                <td mat-cell *matCellDef="let row" [style.color]="row.color"> 
+                    <span class="badge badge-ios">
+                      <span class="fa fa-apple text-muted"></span>
+                      <span class="text ng-binding">2</span>
+                    </span>  
+                </td>
+              </ng-container>
+
+              <!-- Color Column -->
+              <ng-container matColumnDef="registered">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Registered </th>
+                <td mat-cell *matCellDef="let row" [style.color]="row.color"> {{row.registered}} </td>
+              </ng-container>
+
+              <!-- Color Column -->
+              <ng-container matColumnDef="seen">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Last Seen </th>
+                <td mat-cell *matCellDef="let row" [style.color]="row.color"> {{row.seen}} </td>
+              </ng-container>
+
+              <!-- Color Column -->
+              <ng-container matColumnDef="empty">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>  </th>
+                <td mat-cell *matCellDef="let row" [style.color]="row.color"> <div class="ui-grid-cell-contents">
+                  <button class="btn btn-xs btn-link" data-action="delete" style="margin-right:10px;">
+                    <span class="fa fa-trash text-danger" data-action="delete"></span>
+                  </button><button class="btn btn-xs btn-default" data-action="edit">
+                    <span class="fa fa-pencil"></span> Edit</button>
+                  </div> 
+                </td>
+              </ng-container>
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;">
+            </tr>
+          </table>
+        
+          <mat-paginator [pageSizeOptions]="[13, 25, 50, 100]"></mat-paginator>
+        </div>
+    </section>
+
+  </mat-drawer-container>
+</div>

@@ -1,0 +1,34 @@
+table {
+  width: 100%;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+th{
+  font-weight: bold;
+}
+
+th, td {
+  width: 220px;
+}
+th:nth-child(1), tr td:nth-child(1) {
+  width: 50px;
+  max-width: 50px;
+  min-width: 50px;
+}
+th.mat-column-position, td.mat-column-position {
+  padding-left: 8px;
+}
+
+td, th {
+  border-right: 1px solid #e0e0e0;
+  padding: 5px 10px!important;
+}
+td:last-child, th:last-child {
+  text-align: right;
+  min-width: 120px;
+  width: 120px;
+}
+
