@@ -1,0 +1,256 @@
+<div class="login-container admin-dashboard">
+    <mat-drawer-container class="example-container" autosize>
+      <div class="navbar navbar-fixed-top navbar-inverse navbar-static-top" style="position:static;">
+        <mat-drawer #drawer class="example-sidenav sidebar navbar-collapse" opened="true" mode="side" 
+          style="position:fixed; left:0;">
+            <app-admin-sidebar></app-admin-sidebar>
+        </mat-drawer>
+        <div class="example-sidenav-content hidden-xs">
+            <button class="hamburgerHeader hamburger hamburger-arrow-left sidebar-toggle" hamburger-drv="">
+                <span class="icon"></span>
+            </button>
+        </div>
+        <div class="roomHeader">
+          <i class="fa" ng-class="{'roomLock': room.n_type==2 , 'fa-unlock': room.n_type==2}" aria-hidden="true"></i>
+          <div header-nav-trial="" class="nav-trial-container">
+            <div class="nav-trial-container-text ng-binding"></div>
+          </div>
+        </div>
+        <div class="navbar-right navbar-custom-menu">
+            <ul class="nav navbar-nav">
+                <li ng-class="{active:vm.$state.includes('app.settings')}" class="">
+                    <a ui-sref="app.settings" href="#">
+                        <span class="fa fa-gears fa-fw"></span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="/">
+                        <span class="fa fa-comments fa-fw"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="headwayapp">
+                        <span class="fa fa-envelope-o fa-fw"></span>
+                    <span id="HW_badge_cont" class="HW_visible"><span id="HW_badge" data-count-unseen="" class="HW_softHidden"></span></span></a>
+                </li>
+                <li class="dropdown">
+                    <a>
+                        <button mat-button [matMenuTriggerFor]="menu">puneetsethi25@gmail.com
+                                <span class="caret"></span>
+                        </button>
+                        <mat-menu #menu="matMenu" xPosition="before">
+                                <a class="profile-menu white" href="#" >Profile</a>
+                                <li class="divider"></li>
+                                <a class="profile-menu white" href="#">Sign Out</a>
+                        </mat-menu>
+                    </a>
+                </li>
+            </ul>
+         </div>
+      </div>
+      <section class="content-header ng-scope">
+          <h1>
+            Paymenys
+          </h1>
+      </section>
+      <section class="content admin-payments">
+          <div class="media">
+              <div class="media-body">
+                  <div style="padding: 0 10px;">
+                      <div class="toolbox">
+                          <button class="btn btn-default" ng-click="vm.Export()" ng-disabled="vm.downloading">
+                             <span class="fa fa-download ng-scope" ng-if="!vm.downloading"></span>  Export
+                          </button>
+                          <div class="pull-right">
+                              <button class="btn btn-default" ng-click="vm.ToggleFiltering()">
+                                  <span class="fa fa-filter"></span> Filters
+                              </button>
+                              <button class="btn btn-default" ng-click="vm.LoadPayments()">
+                                  <span class="fa fa-refresh fa-fw" ng-class="{'fa-spin':vm.loading}"></span>
+                              </button>
+                          </div>
+                          <div class="clearfix"></div>
+                      </div>
+                  </div>
+                  <div class="box box-default" >
+                      <div class="mat-elevation-z8">
+                          <table mat-table [dataSource]="dataSource" matSort>
+                
+                             <!-- ID Column -->
+                             <ng-container matColumnDef="date">
+                                <th mat-header-cell *matHeaderCellDef mat-sort-header> Date</th>
+                                <td mat-cell *matCellDef="let row"> 
+                                    {{row.date}} 
+                                </td>
+                              </ng-container> 
+                        
+                            <!-- ID Column -->
+                            <ng-container matColumnDef="username">
+                              <th mat-header-cell *matHeaderCellDef mat-sort-header> Username </th>
+                              <td mat-cell *matCellDef="let row"> {{row.username}} </td>
+                            </ng-container>
+                
+                            <!-- Name Column -->
+                            <ng-container matColumnDef="email">
+                              <th mat-header-cell *matHeaderCellDef mat-sort-header> Email </th>
+                              <td mat-cell *matCellDef="let row"> {{row.email}} </td>
+                            </ng-container>
+                        
+                            <!-- Color Column -->
+                            <ng-container matColumnDef="plan">
+                              <th mat-header-cell *matHeaderCellDef mat-sort-header> Plan </th>
+                              <td mat-cell *matCellDef="let row" > {{row.plan}} </td>
+                            </ng-container>
+                
+                              <!-- Color Column -->
+                              <ng-container matColumnDef="description">
+                                <th mat-header-cell *matHeaderCellDef mat-sort-header> Description </th>
+                                <td mat-cell *matCellDef="let row" [style.color]="row.color"> {{row.description}} </td>
+                              </ng-container>
+                
+                               <!-- Color Column -->
+                               <ng-container matColumnDef="amount">
+                                  <th mat-header-cell *matHeaderCellDef mat-sort-header> Amount </th>
+                                  <td mat-cell *matCellDef="let row" > {{row.amount}} </td>
+                                </ng-container>
+                
+                              <!-- Color Column -->
+                              <ng-container matColumnDef="status">
+                                <th mat-header-cell *matHeaderCellDef mat-sort-header>Status</th>
+                                <td mat-cell *matCellDef="let row"> {{row.status}} 
+                                </td>
+                              </ng-container>
+                            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                            <tr mat-row *matRowDef="let row; columns: displayedColumns;">
+                            </tr>
+                          </table>
+                        
+                          <mat-paginator [pageSizeOptions]="[14, 25, 50, 100]"></mat-paginator>
+                        </div>
+                  </div>
+              </div>
+              <div class="media-right">
+                  <div style="width: 400px;">
+                      <div class="box box-default">
+                          <div class="box-header with-border">
+                              <h3 class="box-title ng-binding">Payments Projection for August 2019</h3>
+                          </div>
+                          <div class="box-body">
+                              <div class="well text-center" style="margin:0;">
+                                  <strong>This calendar is in test mode</strong>
+                                  <br>Amounts might be inaccurate
+                              </div>
+                          </div>
+                          <div style="overflow-x:auto;overflow-y:hidden; width:100%" class="">
+                            <div class=""><table style="margin:0" class="table">
+                              <tbody>
+                                <tr><th class="text-center" style="width:14.28571%">MON</th>
+                                  <th class="text-center" style="width:14.28571%">TUE</th>  
+                                  <th class="text-center" style="width:14.28571%">WED</th>
+                                  <th class="text-center" style="width:14.28571%">THU</th>
+                                  <th class="text-center" style="width:14.28571%">FRI</th>
+                                  <th class="text-center" style="width:14.28571%">SAT</th>
+                                  <th class="text-center" style="width:14.28571%">SUN</th>
+                                </tr>
+                                <tr>
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                              <td class="paymentCalendarTd text-right " style="background-color:undefined"><span class="paymentCalendarDate">1</span><span class="paymentCalendarAmount">0</span></td>
+                              <td class="paymentCalendarTd text-right " style="background-color:undefined"><span class="paymentCalendarDate">2</span><span class="paymentCalendarAmount">0</span></td>
+                              <td class="paymentCalendarTd text-right " style="background-color:undefined"><span class="paymentCalendarDate">3</span><span class="paymentCalendarAmount">0</span></td>
+                              <td class="paymentCalendarTd text-right " style="background-color:undefined"><span class="paymentCalendarDate">4</span><span class="paymentCalendarAmount">0</span></td>
+                              </tr><tr>
+                              <td class="paymentCalendarTd text-right " style="background-color:undefined"><span class="paymentCalendarDate">5</span><span class="paymentCalendarAmount">0</span></td>
+                              <td class="paymentCalendarTd text-right " style="background-color:undefined"><span class="paymentCalendarDate">6</span><span class="paymentCalendarAmount">0</span></td>
+                              <td class="paymentCalendarTd text-right " style="background-color:undefined"><span class="paymentCalendarDate">7</span><span class="paymentCalendarAmount">0</span></td>
+                              <td class="paymentCalendarTd text-right " style="background-color:undefined"><span class="paymentCalendarDate">8</span><span class="paymentCalendarAmount">0</span></td>
+                              <td class="paymentCalendarTd text-right " style="background-color:undefined"><span class="paymentCalendarDate">9</span><span class="paymentCalendarAmount">0</span></td>
+                              <td class="paymentCalendarTd text-right " style="background-color:undefined"><span class="paymentCalendarDate">10</span><span class="paymentCalendarAmount">0</span></td>
+                              <td class="paymentCalendarTd text-right " style="background-color:undefined"><span class="paymentCalendarDate">11</span><span class="paymentCalendarAmount">0</span></td>
+                              </tr><tr>
+                              <td class="paymentCalendarTd text-right " style="background-color:undefined"><span class="paymentCalendarDate">12</span><span class="paymentCalendarAmount">0</span></td>
+                              <td class="paymentCalendarTd text-right " style="background-color:undefined"><span class="paymentCalendarDate">13</span><span class="paymentCalendarAmount">0</span></td>
+                              <td class="paymentCalendarTd text-right " style="background-color:undefined"><span class="paymentCalendarDate">14</span><span class="paymentCalendarAmount">0</span></td>
+                              <td class="paymentCalendarTd text-right " style="background-color:undefined"><span class="paymentCalendarDate">15</span><span class="paymentCalendarAmount">0</span></td>
+                              <td class="paymentCalendarTd text-right " style="background-color:undefined"><span class="paymentCalendarDate">16</span><span class="paymentCalendarAmount">0</span></td>
+                              <td class="paymentCalendarTd text-right " style="background-color:undefined"><span class="paymentCalendarDate">17</span><span class="paymentCalendarAmount">0</span></td>
+                              <td class="paymentCalendarTd text-right " style="background-color:undefined"><span class="paymentCalendarDate">18</span><span class="paymentCalendarAmount">0</span></td>
+                              </tr><tr>
+                              <td class="paymentCalendarTd text-right " style="background-color:undefined"><span class="paymentCalendarDate">19</span><span class="paymentCalendarAmount">0</span></td>
+                              <td class="paymentCalendarTd text-right " style="background-color:undefined"><span class="paymentCalendarDate">20</span><span class="paymentCalendarAmount">0</span></td>
+                              <td class="paymentCalendarTd text-right " style="background-color:undefined"><span class="paymentCalendarDate">21</span><span class="paymentCalendarAmount">0</span></td>
+                              <td class="paymentCalendarTd text-right " style="background-color:undefined"><span class="paymentCalendarDate">22</span><span class="paymentCalendarAmount">0</span></td>
+                              <td class="paymentCalendarTd text-right " style="background-color:undefined"><span class="paymentCalendarDate">23</span><span class="paymentCalendarAmount">0</span></td>
+                              <td class="paymentCalendarTd text-right " style="background-color:undefined"><span class="paymentCalendarDate">24</span><span class="paymentCalendarAmount">0</span></td>
+                              <td class="paymentCalendarTd text-right " style="background-color:undefined"><span class="paymentCalendarDate">25</span><span class="paymentCalendarAmount">0</span></td>
+                              </tr><tr>
+                              <td class="paymentCalendarTd text-right " style="background-color:undefined"><span class="paymentCalendarDate">26</span><span class="paymentCalendarAmount">0</span></td>
+                              <td class="paymentCalendarTd text-right today" style="background-color:undefined"><span class="paymentCalendarDate">27</span><span class="paymentCalendarAmount">0</span></td>
+                              <td class="paymentCalendarTd text-right " style="background-color:undefined"><span class="paymentCalendarDate">28</span><span class="paymentCalendarAmount">0</span></td>
+                              <td class="paymentCalendarTd text-right " style="background-color:undefined"><span class="paymentCalendarDate">29</span><span class="paymentCalendarAmount">0</span></td>
+                              <td class="paymentCalendarTd text-right " style="background-color:undefined"><span class="paymentCalendarDate">30</span><span class="paymentCalendarAmount">0</span></td>
+                              <td class="paymentCalendarTd text-right " style="background-color:undefined"><span class="paymentCalendarDate">31</span><span class="paymentCalendarAmount">0</span></td>
+                              <td>&nbsp;</td>
+                              </tr></tbody></table></div></div>
+                      </div>
+                      <div class="box box-default" style="border-top-color:#00a2c8;">
+                          <div class="box-header with-border">
+                              <h3 class="box-title">Monthly Payments</h3>
+                          </div>
+                          <table class="table">
+                              <thead>
+                                  <tr>
+                                      <th>&nbsp;</th>
+                                      <th style="width:100px;">&nbsp;</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr class="">
+                                      <th style="font-family:monospace" class="ng-binding">2019-03</th>
+                                      <td class="text-right ng-binding" style="font-family:monospace">154.00</td>
+                                  </tr>
+                                  <tr class="">
+                                      <th style="font-family:monospace" class="ng-binding">2019-01</th>
+                                      <td class="text-right ng-binding" style="font-family:monospace">134.00</td>
+                                  </tr>
+                                  <tr  class="">
+                                      <th style="font-family:monospace" class="ng-binding">2018-12</th>
+                                      <td class="text-right ng-binding" style="font-family:monospace">134.00</td>
+                                  </tr>
+                                  <tr  class="">
+                                      <th style="font-family:monospace" class="ng-binding">2018-11</th>
+                                      <td class="text-right ng-binding" style="font-family:monospace">134.00</td>
+                                  </tr>
+                                  <tr  class="">
+                                      <th style="font-family:monospace" class="ng-binding">2018-10</th>
+                                      <td class="text-right ng-binding" style="font-family:monospace">196.00</td>
+                                  </tr>
+                                  <tr  class="">
+                                      <th style="font-family:monospace" class="ng-binding">2018-08</th>
+                                      <td class="text-right ng-binding" style="font-family:monospace">521.00</td>
+                                  </tr>
+                                  <tr  class="">
+                                      <th style="font-family:monospace" class="ng-binding">2018-05</th>
+                                      <td class="text-right ng-binding" style="font-family:monospace">1,079.00</td>
+                                  </tr>
+                                  <tr  class="">
+                                      <th style="font-family:monospace" class="ng-binding">2018-04</th>
+                                      <td class="text-right ng-binding" style="font-family:monospace">2,076.00</td>
+                                  </tr>
+                              </tbody>
+                              <tfoot>
+                                  <tr>
+                                      <th class="text-right">Total</th>
+                                      <td class="text-right ng-
+                                      inding" style="font-family:monospace">18,746.00</td>
+                                  </tr>
+                              </tfoot>
+                          </table>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+    </mat-drawer-container>
+  </div>

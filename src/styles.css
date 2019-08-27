@@ -1274,6 +1274,21 @@ app-dashboard mat-form-field {
   border: #00a2c8!important;
   color: #fff;
 }
+.admin-payments .btn{
+  text-transform: uppercase;
+  border: none;
+  -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,.4);
+  box-shadow: 1px 1px 4px rgba(0,0,0,.4);
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+  margin-right: 3px;
+}
+.admin-payments button.btn.btn-blue {
+  background: #00a2c8!important;
+  border: #00a2c8!important;
+  color: #fff;
+}
 
 /* dashboard */
 .admin_and_users {

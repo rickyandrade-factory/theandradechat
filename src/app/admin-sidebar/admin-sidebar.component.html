@@ -12,84 +12,84 @@
     </div>
   </div>
   <ul class="nav nav-sidebar">
-    <li class="ng-scope selectedRoom">
-        <a style="cursor:pointer" class="flex-parent selectedRoom">
+    <li class="ng-scope">
+        <a [routerLink]="['/admindashboard']" routerLinkActive="selectedRoom" style="cursor:pointer" class="flex-parent">
             <i class="fa fa-dashboard fa-fw"></i>
         <span class="room-name ng-binding">Dashboard</span>
         </a>
     </li>
     <li  class="ng-scope">
-        <a routerLink="/adminusers" style="cursor:pointer" class="flex-parent inactive ">
+        <a [routerLink]="['/adminusers']" routerLinkActive="selectedRoom" style="cursor:pointer" class="flex-parent  ">
             <i class="fa fa-users fa-fw"></i>
         <span class="ng-binding">Users</span>
         </a>
     </li>
     <li ng-class="{active:vm.$state.includes('app.payments.*')}">
-        <a class="flex-parent inactive " ui-sref="app.payments.overview" href="#">
+        <a [routerLink]="['/adminpayments']" routerLinkActive="selectedRoom"   class="flex-parent  " ui-sref="app.payments.overview" href="#">
             <i class="fa fa-check-square-o fa-fw"></i>
             <span>Payments</span>
         </a> 
     </li>
     <li ng-class="{active:vm.$state.includes('app.subscriptions.*')}">
-        <a class="flex-parent inactive " ui-sref="app.subscriptions.overview" href="#">
+        <a class="flex-parent  " ui-sref="app.subscriptions.overview" href="#">
             <i class="fa fa-money fa-fw"></i>
             <span>Subscriptions</span>
         </a>
     </li>
     <li ng-class="{active:vm.$state.includes('app.payouts.*')}">
-        <a class="flex-parent inactive " ui-sref="app.payouts.overview" href="#">
+        <a class="flex-parent  " ui-sref="app.payouts.overview" href="#">
             <i class="fa fa-bank fa-fw"></i>
             <span>Payouts</span>
         </a>
     </li>
     <li class="divider no-line"></li>
     <li ng-class="{active:vm.$state.includes('app.billing.*')}">
-        <a class="flex-parent inactive " ui-sref="app.billing.overview" href="#">
+        <a class="flex-parent  " ui-sref="app.billing.overview" href="#">
             <i class="fa fa-credit-card fa-fw"></i>
             <span>Billing Plans</span>
         </a>
     </li>
     <li ng-class="{active:vm.$state.includes('app.coupons.*')}">
-        <a class="flex-parent inactive " ui-sref="app.coupons.overview" href="#!/coupons/">
+        <a class="flex-parent  " ui-sref="app.coupons.overview" href="#!/coupons/">
             <i class="fa fa-tags fa-fw"></i>
             <span>Coupons</span>
         </a>
     </li>
     <li class="divider no-line"></li>
     <li ng-class="{active:vm.$state.includes('app.chatrooms.*')}">
-        <a class="flex-parent inactive " ui-sref="app.chatrooms.overview" href="#!/chatrooms/">
+        <a class="flex-parent  " ui-sref="app.chatrooms.overview" href="#!/chatrooms/">
             <i class="fa fa-comments-o fa-fw"></i>
             <span>Chatrooms</span>
         </a>
     </li>
     <li ng-class="{active:vm.$state.includes('app.pages.*')}">
-        <a class="flex-parent inactive " ui-sref="app.pages.overview" href="#!/pages/">
+        <a class="flex-parent  " ui-sref="app.pages.overview" href="#!/pages/">
             <i class="fa fa-files-o fa-fw"></i>
             <span>Services</span>
         </a>
     </li>
     <li ng-class="{active:vm.$state.includes('app.widgets')}">
-        <a class="flex-parent inactive " ui-sref="app.widgets" href="#!/widgets">
+        <a class="flex-parent  " ui-sref="app.widgets" href="#!/widgets">
             <i class="fa fa-cubes fa-fw"></i>
             <span>Widgets</span>
         </a>
     </li>
     <li class="divider no-line"></li>
     <li ng-class="{active:vm.$state.includes('app.online')}">
-        <a class="flex-parent inactive " ui-sref="app.online" href="#!/online">
+        <a class="flex-parent  " ui-sref="app.online" href="#!/online">
             <i class="fa fa-podcast fa-fw"></i>
             <span>Online Activity</span>
         </a>
     </li>
     <li ng-class="{active:vm.$state.includes('app.compliance')}">
-        <a  class="flex-parent inactive " ui-sref="app.compliance.overview" href="#!/compliance/">
+        <a  class="flex-parent  " ui-sref="app.compliance.overview" href="#!/compliance/">
             <i class="fa fa-balance-scale fa-fw"></i>
             <span>Compliance</span>
         </a>
     </li>
     <li class="divider no-line"></li>
     <li ng-class="{active:vm.$state.includes('app.api')}">
-        <a class="flex-parent inactive " ui-sref="app.api" href="#!/api">
+        <a class="flex-parent  " ui-sref="app.api" href="#!/api">
             <i class="fa fa-code fa-fw"></i>
             <span>API
                 <small class="badge" style="font-size: .6rem;
@@ -104,13 +104,13 @@
     </li>
     <li class="divider no-line"></li>
     <li>
-        <a  class="flex-parent inactive " href="#" target="_blank">
+        <a  class="flex-parent  " href="#" target="_blank">
             <i class="fa fa-youtube fa-fw"></i>
             <span>Video Tutorials</span>
         </a>
     </li>
     <li>
-        <a class="flex-parent inactive " href="" ng-click="vm.ViewTutorial()">
+        <a class="flex-parent  " href="" ng-click="vm.ViewTutorial()">
             <i class="fa fa-graduation-cap fa-fw"></i>
             <span>Guided Tour</span>
         </a>

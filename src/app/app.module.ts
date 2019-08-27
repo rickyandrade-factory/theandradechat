@@ -35,6 +35,7 @@ import { UnlockchatroomComponent } from './unlockchatroom/unlockchatroom.compone
 import { UserPanelComponent } from './user-panel/user-panel.component';
 import { AdminSidebarComponent } from './admin-sidebar/admin-sidebar.component';
 import { AdminusersComponent } from './adminusers/adminusers.component';
+import { AdminpaymentsComponent } from './adminpayments/adminpayments.component';
 // import {FileNameDialogComponent} from './file-name-dialog.component';
 
 @NgModule({
@@ -56,6 +57,7 @@ import { AdminusersComponent } from './adminusers/adminusers.component';
     UserPanelComponent,
     AdminSidebarComponent,
     AdminusersComponent,
+    AdminpaymentsComponent,
     // FileNameDialogComponent,
   ],
   imports: [
