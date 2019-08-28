@@ -36,7 +36,9 @@ import { UserPanelComponent } from './user-panel/user-panel.component';
 import { AdminSidebarComponent } from './admin-sidebar/admin-sidebar.component';
 import { AdminusersComponent } from './adminusers/adminusers.component';
 import { AdminpaymentsComponent } from './adminpayments/adminpayments.component';
-// import {FileNameDialogComponent} from './file-name-dialog.component';
+import {NewUserComponent} from './adminusers/new-user.component';
+import {NewSubscriptionComponent} from './adminsubscriptions/new-subscription.component';
+import { AdminsubscriptionsComponent } from './adminsubscriptions/adminsubscriptions.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +60,9 @@ import { AdminpaymentsComponent } from './adminpayments/adminpayments.component'
     AdminSidebarComponent,
     AdminusersComponent,
     AdminpaymentsComponent,
-    // FileNameDialogComponent,
+    NewUserComponent,
+    NewSubscriptionComponent,
+    AdminsubscriptionsComponent
   ],
   imports: [
     BrowserModule,
@@ -79,7 +83,7 @@ import { AdminpaymentsComponent } from './adminpayments/adminpayments.component'
     User,
     AuthGuard
   ],
-  // entryComponents: [FileNameDialogComponent],
+   entryComponents: [NewUserComponent, NewSubscriptionComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

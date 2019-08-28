@@ -1,21 +1,12 @@
-
-
-
-// export class AdminusersComponent implements OnInit {
-
-//   constructor() { }
-
-//   ngOnInit() {
-//   }
-
-// }
-
-
 import {Component, OnInit, ViewChild} from '@angular/core';
 import {MatPaginator} from '@angular/material/paginator';
 import {MatSort} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
 import { Subscription } from 'rxjs';
+
+import {VERSION, MatDialog, MatDialogRef} from '@angular/material';
+import { NewUserComponent } from './new-user.component';
+
 
 export interface UserData {
   name: string;
@@ -105,13 +96,32 @@ const VERIFIED: string[] = [
   styleUrls: ['./adminusers.component.css']
 })
 export class AdminusersComponent implements OnInit {
+
+
   displayedColumns: string[] = ['img', 'username', 'email', 'verified', 'subscription', 'type',  'devices', 'registered', 'seen', 'empty'];
   dataSource: MatTableDataSource<UserData>;
 
   @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
   @ViewChild(MatSort, {static: true}) sort: MatSort;
 
-  constructor() {
+
+
+  version = VERSION;
+
+  fileNameDialogRef: MatDialogRef<NewUserComponent>;
+
+  
+
+  files = [
+    { name: 'foo.js', content: ''},
+    { name: 'bar.js', content: ''}
+  ];
+  
+  openAddFileDialog() {
+    this.fileNameDialogRef = this.dialog.open(NewUserComponent);
+  }
+  
+  constructor(private dialog: MatDialog) {
     // Create 100 users
     const users = Array.from({length: 100}, (_, k) => createNewUser(k + 1));
 

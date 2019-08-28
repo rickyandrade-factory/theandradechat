@@ -10,6 +10,7 @@ import { AdminusersComponent } from './adminusers/adminusers.component';
 
 import { ErrorComponent } from './error/error.component';
 import { AdminpaymentsComponent } from './adminpayments/adminpayments.component';
+import { AdminsubscriptionsComponent } from './adminsubscriptions/adminsubscriptions.component';
 // import { AuthGuard } from './auth.guard';
 
 const routes: Routes = [
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'admindashboard', component: AdmindashboardComponent},
   { path: 'adminusers', component: AdminusersComponent},
   { path: 'adminpayments', component: AdminpaymentsComponent},
+  { path: 'adminsubscriptions', component: AdminsubscriptionsComponent},
 ];
 
 @NgModule({

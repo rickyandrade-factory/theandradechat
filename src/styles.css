@@ -15,11 +15,15 @@ body{
   /* e.g. */
   color: yellow;
 }
+.wrap-div{float:left; width:100%;}
 .toolbox {
   margin: 0 -15px 12.5px;
   padding: 10px 15px;
   background: #fff;
   border-bottom: solid 2px #ddd;
+}
+.checkbox label{
+  display: inline-block;
 }
 .user_img{
   width: 24px;
@@ -189,6 +193,40 @@ p.teamName {
   display:block;
   height: 38px;
   margin: 5px;
+}
+.new_user_dialog.modal-content {
+  background-color: #ffffff;
+  border: none;
+  box-shadow: none!important;
+}
+.new_user_dialog role{
+ position: absolute;
+}
+.new_user_dialog mat-form-field{
+  width:100%;
+}
+.new_user_dialog .col-xs-12, .new_user_dialog .col-sm-6 {
+ padding: 0 15px;
+}
+.new_user_dialog .close {
+  color: #757575!important;
+ }
+.new_user_dialog .form-group {
+  margin-bottom: 10px;
+  display: -webkit-box;
+}
+.new_user_dialog{
+  width:500px;
+}
+.new_user_dialog .modal-header {
+  border-bottom: 1px solid #f4f4f4;
+  border-top: solid 5px #e26727;
+}
+.new_user_dialog .modal-footer {
+  border-top: 1px solid #f4f4f4;
+}
+.mat-dialog-container{
+  padding: 0!important;
 }
 
 .mini-sidebar  .nav > li > a.flex-parent {
@@ -1269,7 +1307,7 @@ app-dashboard mat-form-field {
   transition: all .4s;
   margin-right: 3px;
 }
-.admin-user button.btn.btn-blue {
+button.btn.btn-blue {
   background: #00a2c8!important;
   border: #00a2c8!important;
   color: #fff;
@@ -1283,11 +1321,6 @@ app-dashboard mat-form-field {
   -o-transition: all .4s;
   transition: all .4s;
   margin-right: 3px;
-}
-.admin-payments button.btn.btn-blue {
-  background: #00a2c8!important;
-  border: #00a2c8!important;
-  color: #fff;
 }
 
 /* dashboard */

@@ -25,13 +25,13 @@
         </a>
     </li>
     <li ng-class="{active:vm.$state.includes('app.payments.*')}">
-        <a [routerLink]="['/adminpayments']" routerLinkActive="selectedRoom"   class="flex-parent  " ui-sref="app.payments.overview" href="#">
+        <a [routerLink]="['/adminpayments']" routerLinkActive="selectedRoom"   class="flex-parent" ui-sref="app.payments.overview" href="#">
             <i class="fa fa-check-square-o fa-fw"></i>
             <span>Payments</span>
         </a> 
     </li>
     <li ng-class="{active:vm.$state.includes('app.subscriptions.*')}">
-        <a class="flex-parent  " ui-sref="app.subscriptions.overview" href="#">
+        <a [routerLink]="['/adminsubscriptions']" routerLinkActive="selectedRoom"  class="flex-parent  " ui-sref="app.subscriptions.overview" href="#">
             <i class="fa fa-money fa-fw"></i>
             <span>Subscriptions</span>
         </a>
