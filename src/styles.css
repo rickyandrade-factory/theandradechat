@@ -96,6 +96,9 @@ app-signup .mat-drawer-inner-container {
   background-image: linear-gradient(to top, #e26727 , #0e2226); 
   padding: 10px 20px;
 } 
+app-sidenav {
+  width: 250px;
+}
 .mobile-cross{
   display:none;
 }
@@ -199,7 +202,7 @@ p.teamName {
   border: none;
   box-shadow: none!important;
 }
-.new_user_dialog role{
+.new_user_dialog .role{
  position: absolute;
 }
 .new_user_dialog mat-form-field{
@@ -443,6 +446,7 @@ a.profile-menu {
 }
 .bg-green{
   background-color: #008257!important;
+  color:#fff;
 }
 .bg-yellow{
   background-color:#ffaf37!important
@@ -1324,6 +1328,16 @@ button.btn.btn-blue {
 }
 
 /* dashboard */
+.modal-content.locked-dialog {
+  background: #0e2226!important;
+  color: #b3b3b3;
+}
+.biling_dialog mat-checkbox {
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid #949494;
+  padding-bottom: 2px;
+}
 .admin_and_users {
   color: #fff;
   width: 220px;
@@ -3289,6 +3303,7 @@ pre code {
   }
   .col-sm-3 {
     width: 25%;
+    padding:0 15px;
   }
   .col-sm-2 {
     width: 16.66666667%;
@@ -8586,7 +8601,7 @@ footer {
 
 .selectedRoom {
     border-left: solid 2px #00a2c8 !important;
-    color: #000 !important;
+    color: #fff !important;
 }
 
 
@@ -9954,7 +9969,7 @@ span#wave {
     width: 100%;
     color: #fff;
     padding: 11px;
-    line-height: 38px;
+    line-height: 38px;  
 
 }  
 
@@ -10473,6 +10488,7 @@ app-sinup .mat-drawer-inner-container{
   max-width: 320px;
   margin: 0 auto;
 }
+
 .leftnav {
   height: 60px;
   position: fixed;

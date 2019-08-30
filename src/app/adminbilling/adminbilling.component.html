@@ -1,0 +1,123 @@
+<div class="login-container admin-dashboard">
+  <mat-drawer-container class="example-container" autosize>
+    <div class="navbar navbar-fixed-top navbar-inverse navbar-static-top" style="position:static;">
+      <mat-drawer #drawer class="example-sidenav sidebar navbar-collapse" opened="true" mode="side" 
+        style="position:fixed; left:0;">
+          <app-admin-sidebar></app-admin-sidebar>
+      </mat-drawer>
+      <div class="example-sidenav-content hidden-xs">
+          <button class="hamburgerHeader hamburger hamburger-arrow-left sidebar-toggle" hamburger-drv="">
+              <span class="icon"></span>
+          </button>
+      </div>
+      <div class="roomHeader">
+        <i class="fa" ng-class="{'roomLock': room.n_type==2 , 'fa-unlock': room.n_type==2}" aria-hidden="true"></i>
+        <div header-nav-trial="" class="nav-trial-container">
+          <div class="nav-trial-container-text ng-binding"></div>
+        </div>
+      </div>
+      <div class="navbar-right navbar-custom-menu">
+          <ul class="nav navbar-nav">
+              <li ng-class="{active:vm.$state.includes('app.settings')}" class="">
+                  <a ui-sref="app.settings" href="#">
+                      <span class="fa fa-gears fa-fw"></span>
+                  </a>
+              </li>
+              <li>
+                  <a target="_blank" href="/">
+                      <span class="fa fa-comments fa-fw"></span>
+                  </a>
+              </li>
+              <li>
+                  <a href="#" id="headwayapp">
+                      <span class="fa fa-envelope-o fa-fw"></span>
+                  <span id="HW_badge_cont" class="HW_visible"><span id="HW_badge" data-count-unseen="" class="HW_softHidden"></span></span></a>
+              </li>
+              <li class="dropdown"> 
+                  <a>
+                      <button mat-button [matMenuTriggerFor]="menu">puneetsethi25@gmail.com
+                              <span class="caret"></span>
+                      </button>
+                      <mat-menu #menu="matMenu" xPosition="before">
+                              <a class="profile-menu white" href="#" >Profile</a>
+                              <li class="divider"></li>
+                              <a class="profile-menu white" href="#">Sign Out</a>
+                      </mat-menu>
+                  </a>
+              </li>
+          </ul>
+       </div>
+    </div>
+    <section class="content-header ng-scope">
+        <h1>
+          Billing Plans
+        </h1>
+    </section>
+    <section class="content admin-user admin_payouts">
+    <div class="toolbox">
+      <button class="btn btn-blue" (click)="openAddFileDialog()">
+          <span class="fa fa-plus fa-fw"></span> New Billing
+      </button>
+        <div class="pull-right">
+            <button class="btn btn-default">
+                <span class="fa fa-filter fa-fw"></span> Filters
+            </button>
+            <button class="btn btn-default" >
+                <span class="fa fa-refresh fa-fw" ></span>
+            </button>
+        </div>
+    </div>
+
+        
+        <div class="mat-elevation-z8 box box-default">
+          <table mat-table [dataSource]="dataSource" matSort>
+            <!-- ID Column -->
+            <ng-container matColumnDef="name">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
+              <td mat-cell *matCellDef="let row"> {{row.name}} </td>
+            </ng-container>
+            <ng-container matColumnDef="description">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header> Description </th>
+              <td mat-cell *matCellDef="let row"> {{row.description}} </td>
+            </ng-container>
+            <!-- Color Column -->
+            <ng-container matColumnDef="onoff">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header> One-Off </th>
+              <td mat-cell *matCellDef="let row"> {{row.onoff}} </td>
+            </ng-container>
+              <!-- Color Column -->
+              <ng-container matColumnDef="currency">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Currency </th>
+                <td mat-cell *matCellDef="let row"> {{row.currency}} </td>
+              </ng-container>
+               <!-- Color Column -->
+               <ng-container matColumnDef="price">
+                  <th mat-header-cell *matHeaderCellDef mat-sort-header> Price </th>
+                  <td mat-cell *matCellDef="let row"> {{row.price}} </td>
+                </ng-container>
+              <!-- Color Column -->
+              <ng-container matColumnDef="cycle">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>Cycle</th>
+                <td mat-cell *matCellDef="let row"> {{row.cycle}} </td>
+              </ng-container>
+              <!-- Color Column -->
+              <ng-container matColumnDef="term">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>Term</th>
+                <td mat-cell *matCellDef="let row" [style.color]="row.color"> {{row.term}} </td>
+              </ng-container>
+              <!-- Color Column -->
+              <ng-container matColumnDef="alter">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> </th>
+                <td mat-cell *matCellDef="let row" [style.color]="row.color">
+                    <a href=""><span class="fa fa-trash fa-fw text-danger" data-action="delete"></span></a>  
+                </td>
+              </ng-container>
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;">
+            </tr>
+          </table>
+          <mat-paginator [pageSizeOptions]="[14, 30, 50, 100]"></mat-paginator>
+        </div>
+    </section>
+  </mat-drawer-container>
+</div>

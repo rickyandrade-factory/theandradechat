@@ -37,14 +37,14 @@
         </a>
     </li>
     <li ng-class="{active:vm.$state.includes('app.payouts.*')}">
-        <a class="flex-parent  " ui-sref="app.payouts.overview" href="#">
+        <a [routerLink]="['/adminpayouts']" routerLinkActive="selectedRoom" class="flex-parent  " ui-sref="app.payouts.overview" href="#">
             <i class="fa fa-bank fa-fw"></i>
             <span>Payouts</span>
         </a>
     </li>
     <li class="divider no-line"></li>
     <li ng-class="{active:vm.$state.includes('app.billing.*')}">
-        <a class="flex-parent  " ui-sref="app.billing.overview" href="#">
+        <a [routerLink]="['/adminbilling']" routerLinkActive="selectedRoom" class="flex-parent  " ui-sref="app.billing.overview" href="#">
             <i class="fa fa-credit-card fa-fw"></i>
             <span>Billing Plans</span>
         </a>

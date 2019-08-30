@@ -30,15 +30,21 @@ import { AuthGuard } from './auth.guard';
 import { LockedchatroomComponent } from './lockedchatroom/lockedchatroom.component';
 import { DirectchatroomComponent } from './directchatroom/directchatroom.component';
 import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
-import { LeftnavComponent } from './leftnav/leftnav.component';
 import { UnlockchatroomComponent } from './unlockchatroom/unlockchatroom.component';
 import { UserPanelComponent } from './user-panel/user-panel.component';
 import { AdminSidebarComponent } from './admin-sidebar/admin-sidebar.component';
 import { AdminusersComponent } from './adminusers/adminusers.component';
 import { AdminpaymentsComponent } from './adminpayments/adminpayments.component';
 import {NewUserComponent} from './adminusers/new-user.component';
+import {NewBillingComponent} from './adminbilling/new-billing.component';
 import {NewSubscriptionComponent} from './adminsubscriptions/new-subscription.component';
 import { AdminsubscriptionsComponent } from './adminsubscriptions/adminsubscriptions.component';
+import { AdminpayoutsComponent } from './adminpayouts/adminpayouts.component';
+import {WithdrawOptionComponent} from './adminpayouts/withdraw-option.component';
+import { ProfileSidebarComponent } from './profile-sidebar/profile-sidebar.component';
+import { OnpointRoomComponent } from './onpoint-room/onpoint-room.component';
+import { lockeddialogComponent } from './sidenav/locked-dialog.component';
+import { AdminbillingComponent } from './adminbilling/adminbilling.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +60,6 @@ import { AdminsubscriptionsComponent } from './adminsubscriptions/adminsubscript
     LockedchatroomComponent,
     DirectchatroomComponent,
     AdmindashboardComponent,
-    LeftnavComponent,
     UnlockchatroomComponent,
     UserPanelComponent,
     AdminSidebarComponent,
@@ -62,7 +67,14 @@ import { AdminsubscriptionsComponent } from './adminsubscriptions/adminsubscript
     AdminpaymentsComponent,
     NewUserComponent,
     NewSubscriptionComponent,
-    AdminsubscriptionsComponent
+    AdminsubscriptionsComponent,
+    AdminpayoutsComponent,
+    WithdrawOptionComponent,
+    ProfileSidebarComponent,
+    OnpointRoomComponent,
+    lockeddialogComponent,
+    AdminbillingComponent,
+    NewBillingComponent,
   ],
   imports: [
     BrowserModule,
@@ -83,7 +95,7 @@ import { AdminsubscriptionsComponent } from './adminsubscriptions/adminsubscript
     User,
     AuthGuard
   ],
-   entryComponents: [NewUserComponent, NewSubscriptionComponent],
+   entryComponents: [NewUserComponent, NewSubscriptionComponent, WithdrawOptionComponent, lockeddialogComponent, NewBillingComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

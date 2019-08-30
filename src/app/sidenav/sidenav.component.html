@@ -34,7 +34,7 @@
   <ul class="nav nav-sidebar">
     <li class="rooms-sidebar-header">ROOMS</li>
     <li class="ng-scope">
-        <a  href="#" class="flex-parent locked">
+        <a (click)="openAddFileDialog()" [routerLink]="['/onpoint-room']" routerLinkActive="selectedRoom" href="#" class="flex-parent locked">
           <span class="flex-child">
             <i class="roomIcon fa fa-fw fa-hashtag" aria-hidden="true"></i>
             <span class="room-name ng-binding">On Point FX Signals (USA)</span>
@@ -45,8 +45,8 @@
           </span>
         </a>
     </li>
-    <li class="ng-scope selectedRoom">
-        <a href="#" (click)="isOn= false"  class="flex-parent selectedRoom"  >
+    <li class="ng-scope">
+        <a [routerLink]="['/dashboard']" routerLinkActive="selectedRoom"  href="#" (click)="isOn= false"  class="flex-parent"  >
         <span class="flex-child">
         <i class="roomIcon fa fa-fw fa-hashtag" aria-hidden="true"></i>
         <span class="room-name ng-binding">Traders Lounge</span>

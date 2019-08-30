@@ -11,6 +11,9 @@ import { AdminusersComponent } from './adminusers/adminusers.component';
 import { ErrorComponent } from './error/error.component';
 import { AdminpaymentsComponent } from './adminpayments/adminpayments.component';
 import { AdminsubscriptionsComponent } from './adminsubscriptions/adminsubscriptions.component';
+import { AdminpayoutsComponent } from './adminpayouts/adminpayouts.component';
+import { AdminbillingComponent } from './adminbilling/adminbilling.component';
+import { OnpointRoomComponent } from './onpoint-room/onpoint-room.component';
 // import { AuthGuard } from './auth.guard';
 
 const routes: Routes = [
@@ -23,6 +26,9 @@ const routes: Routes = [
   { path: 'adminusers', component: AdminusersComponent},
   { path: 'adminpayments', component: AdminpaymentsComponent},
   { path: 'adminsubscriptions', component: AdminsubscriptionsComponent},
+  { path: 'adminpayouts', component: AdminpayoutsComponent},
+  { path: 'adminbilling', component: AdminbillingComponent},
+  { path: 'onpoint-room', component: OnpointRoomComponent},
 ];
 
 @NgModule({
