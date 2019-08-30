@@ -112,11 +112,6 @@ export class AdminusersComponent implements OnInit {
 
   
 
-  files = [
-    { name: 'foo.js', content: ''},
-    { name: 'bar.js', content: ''}
-  ];
-  
   openAddFileDialog() {
     this.fileNameDialogRef = this.dialog.open(NewUserComponent);
   }

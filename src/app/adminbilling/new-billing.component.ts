@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-
 @Component({
   template: `
   <div class="modal-content new_user_dialog biling_dialog">
@@ -16,14 +15,14 @@ import { Component } from '@angular/core';
       <div class="row">
           <div class="col-xs-12">
               <mat-form-field>
-                <input matInput placeholder="Name" value=""> 
+                <input matInput placeholder="Name *" value=""> 
               </mat-form-field>
           </div>
       </div>    
       <div class="row">
           <div class="col-xs-12">
-              <mat-form-field class="example-full-width" >
-                  <textarea matInput placeholder="Description" ></textarea>
+              <mat-form-field class="example-full-width">
+                  <textarea matInput placeholder="Description *" ></textarea>
               </mat-form-field>
           </div>
       </div>
@@ -59,7 +58,7 @@ import { Component } from '@angular/core';
                   position: relative; top: -3px; color: #757575;">One-Off Payment</span>
                  <mat-checkbox> is one-off</mat-checkbox>
             </div>
-        </div>   
+        </div>
         <div class="row">
           <div class="col-sm-3">
                 <mat-form-field>
@@ -100,12 +99,11 @@ import { Component } from '@angular/core';
             </div>
             <div class="col-sm-6">
                 <mat-form-field>
-                    <input matInput placeholder="Sub-Coupon *" value="--Without Default Couple" disable="disabled"> 
+                    <input matInput placeholder="Sub-Coupon *" value="--Without Default Couple" disable=""> 
                 </mat-form-field>
             </div>
         </div>
-   
-        </div>
+      </div>
       <div class="modal-footer wrap-div">
          <button autofocus="" class="btn btn-default pull-left" type="button">Cancel</button>
          <button class="btn btn-blue">Save</button>
