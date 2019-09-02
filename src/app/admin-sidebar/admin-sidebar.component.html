@@ -49,21 +49,21 @@
             <span>Billing Plans</span>
         </a>
     </li>
-    <li ng-class="{active:vm.$state.includes('app.coupons.*')}">
-        <a class="flex-parent  " ui-sref="app.coupons.overview" href="#!/coupons/">
+    <li >
+        <a [routerLink]="['/admincoupons']" routerLinkActive="selectedRoom" class="flex-parent" href="# ">
             <i class="fa fa-tags fa-fw"></i>
             <span>Coupons</span>
         </a>
-    </li>
+    </li> 
     <li class="divider no-line"></li>
-    <li ng-class="{active:vm.$state.includes('app.chatrooms.*')}">
-        <a class="flex-parent  " ui-sref="app.chatrooms.overview" href="#!/chatrooms/">
+    <li>
+        <a [routerLink]="['/adminchatroom']" routerLinkActive="selectedRoom" class="flex-parent" >
             <i class="fa fa-comments-o fa-fw"></i>
             <span>Chatrooms</span>
         </a>
     </li>
-    <li ng-class="{active:vm.$state.includes('app.pages.*')}">
-        <a class="flex-parent  " ui-sref="app.pages.overview" href="#!/pages/">
+    <li>
+        <a [routerLink]="['/adminservices']" routerLinkActive="selectedRoom" class="flex-parent  " ui-sref="app.pages.overview" href="#!/pages/">
             <i class="fa fa-files-o fa-fw"></i>
             <span>Services</span>
         </a>
@@ -81,15 +81,15 @@
             <span>Online Activity</span>
         </a>
     </li>
-    <li ng-class="{active:vm.$state.includes('app.compliance')}">
-        <a  class="flex-parent  " ui-sref="app.compliance.overview" href="#!/compliance/">
+    <li>
+        <a [routerLink]="['/admincompliance']" routerLinkActive="selectedRoom" class="flex-parent"  href="#">
             <i class="fa fa-balance-scale fa-fw"></i>
             <span>Compliance</span>
         </a>
     </li>
     <li class="divider no-line"></li>
-    <li ng-class="{active:vm.$state.includes('app.api')}">
-        <a class="flex-parent  " ui-sref="app.api" href="#!/api">
+    <li>
+        <a [routerLink]="['/adminapi']" routerLinkActive="selectedRoom"  class="flex-parent">
             <i class="fa fa-code fa-fw"></i>
             <span>API
                 <small class="badge" style="font-size: .6rem;

@@ -14,6 +14,11 @@ import { AdminsubscriptionsComponent } from './adminsubscriptions/adminsubscript
 import { AdminpayoutsComponent } from './adminpayouts/adminpayouts.component';
 import { AdminbillingComponent } from './adminbilling/adminbilling.component';
 import { OnpointRoomComponent } from './onpoint-room/onpoint-room.component';
+import { AdmincouponsComponent } from './admincoupons/admincoupons.component';
+import { AdminchatroomComponent } from './adminchatroom/adminchatroom.component';
+import { AdminservicesComponent } from './adminservices/adminservices.component';
+import { AdminapiComponent } from './adminapi/adminapi.component';
+import { AdmincomplianceComponent } from './admincompliance/admincompliance.component';
 // import { AuthGuard } from './auth.guard';
 
 const routes: Routes = [
@@ -29,6 +34,11 @@ const routes: Routes = [
   { path: 'adminpayouts', component: AdminpayoutsComponent},
   { path: 'adminbilling', component: AdminbillingComponent},
   { path: 'onpoint-room', component: OnpointRoomComponent},
+  { path: 'admincoupons', component: AdmincouponsComponent},
+  { path: 'adminchatroom', component: AdminchatroomComponent},
+  { path: 'adminservices', component: AdminservicesComponent},
+  { path: 'adminapi', component: AdminapiComponent},
+  { path: 'admincompliance', component: AdmincomplianceComponent},
 ];
 
 @NgModule({

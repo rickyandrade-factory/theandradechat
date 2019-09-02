@@ -45,6 +45,14 @@ import { ProfileSidebarComponent } from './profile-sidebar/profile-sidebar.compo
 import { OnpointRoomComponent } from './onpoint-room/onpoint-room.component';
 import { lockeddialogComponent } from './sidenav/locked-dialog.component';
 import { AdminbillingComponent } from './adminbilling/adminbilling.component';
+import { AdmincouponsComponent } from './admincoupons/admincoupons.component';
+import { NewCouponsComponent } from './admincoupons/new-coupons.component';
+import { AdminchatroomComponent } from './adminchatroom/adminchatroom.component';
+import { NewChatroomComponent } from './adminchatroom/new-cahtroom.component';
+import { AdminservicesComponent } from './adminservices/adminservices.component';
+import { NewServicesComponent } from './adminservices/new-services.component';
+import { AdminapiComponent } from './adminapi/adminapi.component';
+import { AdmincomplianceComponent } from './admincompliance/admincompliance.component';
 
 @NgModule({
   declarations: [
@@ -75,6 +83,14 @@ import { AdminbillingComponent } from './adminbilling/adminbilling.component';
     lockeddialogComponent,
     AdminbillingComponent,
     NewBillingComponent,
+    AdmincouponsComponent,
+    NewCouponsComponent,
+    AdminchatroomComponent,
+    NewChatroomComponent,
+    AdminservicesComponent,
+    NewServicesComponent,
+    AdminapiComponent,
+    AdmincomplianceComponent,
   ],
   imports: [
     BrowserModule,
@@ -95,7 +111,7 @@ import { AdminbillingComponent } from './adminbilling/adminbilling.component';
     User,
     AuthGuard
   ],
-   entryComponents: [NewUserComponent, NewSubscriptionComponent, WithdrawOptionComponent, lockeddialogComponent, NewBillingComponent],
+   entryComponents: [NewUserComponent, NewSubscriptionComponent, WithdrawOptionComponent, lockeddialogComponent, NewBillingComponent, NewCouponsComponent,NewChatroomComponent,NewServicesComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
