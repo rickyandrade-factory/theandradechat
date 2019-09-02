@@ -1,0 +1,25 @@
+table {
+    width: 100%;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+  th{
+    font-weight: bold;
+  }
+  
+  th.mat-column-position, td.mat-column-position {
+    padding-left: 8px;
+  }
+  
+  td, th {
+    border-right: 1px solid #e0e0e0;
+    padding: 5px 10px!important;
+    white-space: nowrap;
+  }
+  
+  .admin_payouts .col-md-3{
+   padding: 0 15px;
+  }

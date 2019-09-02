@@ -1,0 +1,35 @@
+.box .empty {
+    padding: 0;
+    background: #fff;
+    border: none;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin-top: -95px;
+    color: #ccc;
+}
+.box .box-body {
+    padding: 15px;
+}
+.box.box-default {
+    border-top-color: #d2d6de;
+    min-height: 211px;
+}
+.empty {
+    padding: 50px;
+    text-align: center;
+    color: #999;
+    font-size: 2em;
+    font-weight: 300;
+    background: #eee;
+    border: solid 1px #ddd;
+}
+.box {
+    position: relative;
+    border-radius: 3px;
+    background: #fff;
+    border-top: 3px solid #d2d6de;
+    margin-bottom: 20px;
+    width: 100%;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+}

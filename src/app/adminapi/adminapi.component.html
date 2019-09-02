@@ -1,0 +1,101 @@
+<div class="login-container admin-dashboard">
+    <mat-drawer-container class="example-container" autosize>
+      <div class="navbar navbar-fixed-top navbar-inverse navbar-static-top" style="position:static;">
+        <mat-drawer #drawer class="example-sidenav sidebar navbar-collapse" opened="true" mode="side" 
+          style="position:fixed; left:0;">
+            <app-admin-sidebar></app-admin-sidebar>
+        </mat-drawer>
+        <div class="example-sidenav-content hidden-xs">
+            <button class="hamburgerHeader hamburger hamburger-arrow-left sidebar-toggle" hamburger-drv="">
+                <span class="icon"></span>
+            </button>
+        </div>
+        <div class="roomHeader">
+          <i class="fa" ng-class="{'roomLock': room.n_type==2 , 'fa-unlock': room.n_type==2}" aria-hidden="true"></i>
+          <div header-nav-trial="" class="nav-trial-container">
+            <div class="nav-trial-container-text ng-binding"></div>
+          </div>
+        </div>
+        <div class="navbar-right navbar-custom-menu">
+            <ul class="nav navbar-nav">
+                <li ng-class="{active:vm.$state.includes('app.settings')}" class="">
+                    <a ui-sref="app.settings" href="#">
+                        <span class="fa fa-gears fa-fw"></span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="/">
+                        <span class="fa fa-comments fa-fw"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="headwayapp">
+                        <span class="fa fa-envelope-o fa-fw"></span>
+                    <span id="HW_badge_cont" class="HW_visible"><span id="HW_badge" data-count-unseen="" class="HW_softHidden"></span></span></a>
+                </li>
+                <li class="dropdown">
+                    <a>
+                        <button mat-button [matMenuTriggerFor]="menu">puneetsethi25@gmail.com
+                                <span class="caret"></span>
+                        </button>
+                        <mat-menu #menu="matMenu" xPosition="before">
+                                <a class="profile-menu white" href="#" >Profile</a>
+                                <li class="divider"></li>
+                                <a class="profile-menu white" href="#">Sign Out</a>
+                        </mat-menu>
+                    </a>
+                </li>
+            </ul>
+         </div>
+      </div>
+      <section class="content-header ng-scope">
+          <h1>
+            API Events History
+          </h1>
+      </section>
+      <section class="content admin-payments">
+          <div class="media">
+              <div class="media-body">
+                  <div class="box box-default" >
+                      <div class="box-body">
+                            <div class="empty" style="margin: 0;position: relative;padding: 5rem;">
+                                no events were found for
+                                <br>
+                                <strong class="ng-binding">September 2, 2019</strong>
+                            </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="media-right">
+                    <div style="width: 400px;">
+                        <div class="box box-default">
+                            <div class="box-body text-center">
+                                    
+                            </div>
+                        </div>
+                        <div class="box box-default">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">
+                                    Token
+                                </h3>
+                            </div>
+                            <div class="box-body">
+                                <p>Echofin's API allows the integration with third-party systems. Please generate your authentication token.</p>
+                                <p>Every token is bound to the underlying administrator level account.</p>
+                                <p>For more details on how to use the web API please refer to the web API
+                                    <a target="_blank" href="https://www.echofin.co/docs/api/">documentation</a>.</p>
+                                <div ng-if="!vm.currentApiKey" class="ng-scope">
+                                    You do not have any key generated yet. Click generate button to create a new one.
+                                    <hr>
+                                    <div class="text-center">
+                                        <button class="btn btn-blue" type="button">Generate</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          </div>
+      </section>
+    </mat-drawer-container>
+  </div>
