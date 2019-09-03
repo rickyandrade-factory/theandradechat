@@ -15,8 +15,20 @@ body{
   /* e.g. */
   color: yellow;
 }
+.checkbox label {
+  font-size: 15px;
+}
 mat-calendar table {
   background: #fff;
+}
+.modal-body{
+  overflow-y: scroll;
+  max-height: calc(100vh - 140px);
+}
+.checkbox.checkbox-form {
+  -webkit-box-shadow: inset 0 -1px 0 #ddd;
+  box-shadow: inset 0 -1px 0 #ddd;
+  padding-bottom: 10px;
 }
 .content-header>h1>small {
   font-size: 14px;
@@ -207,10 +219,22 @@ p.teamName {
 .mini-sidebar .navbar-brand-logo{
   display:none;
 }
+.mat-tab-label-content i {
+  margin-right: 10px;
+}
 .admin-dashboard.mini-sidebar .navbar-brand-logo-mini{
   display:block;
   height: 38px;
   margin: 5px;
+}
+.custom_widget .mat-tab-body-content{
+  overflow: hidden;
+}
+.custom_widget {
+  width: 600px!important;
+}
+.custom_widget hr{
+  border-top: 1px solid #eeeeee;
 }
 .new_user_dialog.modal-content {
   background-color: #ffffff;
@@ -332,6 +356,13 @@ a.profile-menu {
 .admin-dashboard .roomHeader {
   float: left;
   line-height: 48px;
+}
+.admin-widget .mat-tab-body-content{
+  background: #fff;
+  padding: 0px 15px;
+}
+.admin-widget .mat-tab-header i {
+  margin-right: 10px!important;
 }
 .navbar-custom-menu   .user-avatar {
   width: 25px;
@@ -2683,7 +2714,7 @@ th {
 }
 .glyphicon-registration-mark:before {
   content: "\e195";
-}
+} 
 .glyphicon-cloud-download:before {
   content: "\e197";
 }
@@ -3311,7 +3342,14 @@ pre code {
   }
   .col-sm-8 {
     width: 66.66666667%;
+    padding:0 015px;
   }
+  .col-md-8 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
   .col-sm-7 {
     width: 58.33333333%;
   }
@@ -3323,6 +3361,7 @@ pre code {
   }
   .col-sm-4 {
     width: 33.33333333%;
+    padding:0 015px;
   }
   .col-sm-3 {
     width: 25%;
@@ -6549,9 +6588,14 @@ a.thumbnail.active {
 .alert > p,
 .alert > ul {
   margin-bottom: 0;
+  color: #fff;
 }
 .alert > p + p {
   margin-top: 5px;
+}
+.alert.alert-default {
+  background: #eee;
+  color: #666;
 }
 .alert-dismissable,
 .alert-dismissible {
@@ -9272,8 +9316,6 @@ footer {
 
 .paymentFormRoom {
     color: #29b499;
-
-  
 }
 
 #masterDiv {
@@ -9287,13 +9329,10 @@ footer {
     font-size: 11px;
     float: right;
     padding-top: 3px;
-
-   
 }
 
 .input-user-filter-wrapper {
     padding: 10px;
-
 }
 
 .profile-usermenu > ul > li > a:hover {
@@ -9376,8 +9415,6 @@ footer {
     padding-top: 60px;
     width: 100%;
     z-index: 0;
-
-
 }
 
 .chatroom-iframe-loading {

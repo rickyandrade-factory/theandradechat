@@ -69,7 +69,7 @@
         </a>
     </li>
     <li ng-class="{active:vm.$state.includes('app.widgets')}">
-        <a class="flex-parent  " ui-sref="app.widgets" href="#!/widgets">
+        <a [routerLink]="['/adminwidget']" routerLinkActive="selectedRoom" class="flex-parent  " ui-sref="app.widgets" href="#!/widgets">
             <i class="fa fa-cubes fa-fw"></i>
             <span>Widgets</span>
         </a>

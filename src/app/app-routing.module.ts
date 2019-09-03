@@ -19,6 +19,7 @@ import { AdminchatroomComponent } from './adminchatroom/adminchatroom.component'
 import { AdminservicesComponent } from './adminservices/adminservices.component';
 import { AdminapiComponent } from './adminapi/adminapi.component';
 import { AdmincomplianceComponent } from './admincompliance/admincompliance.component';
+import { AdminwidgetComponent } from './adminwidget/adminwidget.component';
 // import { AuthGuard } from './auth.guard';
 
 const routes: Routes = [
@@ -39,6 +40,7 @@ const routes: Routes = [
   { path: 'adminservices', component: AdminservicesComponent},
   { path: 'adminapi', component: AdminapiComponent},
   { path: 'admincompliance', component: AdmincomplianceComponent},
+  { path: 'adminwidget', component: AdminwidgetComponent},
 ];
 
 @NgModule({

@@ -53,6 +53,9 @@ import { AdminservicesComponent } from './adminservices/adminservices.component'
 import { NewServicesComponent } from './adminservices/new-services.component';
 import { AdminapiComponent } from './adminapi/adminapi.component';
 import { AdmincomplianceComponent } from './admincompliance/admincompliance.component';
+import { AdminwidgetComponent } from './adminwidget/adminwidget.component';
+import { CustomwidgetComponent } from './adminwidget/customwidget-dialog.component';
+import { ConfiguredialogComponent } from './adminwidget/configure-dialog.component';
 
 @NgModule({
   declarations: [
@@ -91,6 +94,9 @@ import { AdmincomplianceComponent } from './admincompliance/admincompliance.comp
     NewServicesComponent,
     AdminapiComponent,
     AdmincomplianceComponent,
+    AdminwidgetComponent,
+    CustomwidgetComponent,
+    ConfiguredialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -111,7 +117,9 @@ import { AdmincomplianceComponent } from './admincompliance/admincompliance.comp
     User,
     AuthGuard
   ],
-   entryComponents: [NewUserComponent, NewSubscriptionComponent, WithdrawOptionComponent, lockeddialogComponent, NewBillingComponent, NewCouponsComponent,NewChatroomComponent,NewServicesComponent],
+   entryComponents: [NewUserComponent, NewSubscriptionComponent, WithdrawOptionComponent,
+     lockeddialogComponent, NewBillingComponent, CustomwidgetComponent, NewCouponsComponent, 
+     NewChatroomComponent,NewServicesComponent, ConfiguredialogComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
