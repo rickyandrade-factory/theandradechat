@@ -56,6 +56,7 @@ import { AdmincomplianceComponent } from './admincompliance/admincompliance.comp
 import { AdminwidgetComponent } from './adminwidget/adminwidget.component';
 import { CustomwidgetComponent } from './adminwidget/customwidget-dialog.component';
 import { ConfiguredialogComponent } from './adminwidget/configure-dialog.component';
+import { AdminonlineativityComponent } from './adminonlineativity/adminonlineativity.component';
 
 @NgModule({
   declarations: [
@@ -97,6 +98,7 @@ import { ConfiguredialogComponent } from './adminwidget/configure-dialog.compone
     AdminwidgetComponent,
     CustomwidgetComponent,
     ConfiguredialogComponent,
+    AdminonlineativityComponent,
   ],
   imports: [
     BrowserModule,

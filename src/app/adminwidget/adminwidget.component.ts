@@ -25,7 +25,7 @@ export class AdminwidgetComponent implements OnInit {
   }
   
   openConfigureDialog() {
-    this.fileNameDialogRef = this.dialog.open(CustomwidgetComponent);
+    this.fileNameDialogRef = this.dialog.open(ConfiguredialogComponent);
   }
   
   constructor(private dialog: MatDialog) {}

@@ -606,12 +606,12 @@ a.profile-menu {
 }
 .admin-dashboard .h1,.admin-dashboard .h2,.admin-dashboard .h3,.admin-dashboard .h4,.admin-dashboard .h5,.admin-dashboard .h6,.admin-dashboard h1,.admin-dashboard h2,.admin-dashboard h3,
 .admin-dashboard h4,.admin-dashboard h5,.admin-dashboard h6 {
-  font-family: Poppins,monospace;
+  /* font-family: Poppins,monospace; */
   font-weight: 300;
 }
 .admin-dashboard{
   font-size:14px;
-  font-family: Poppins,monospace;
+  /* font-family: Poppins,monospace; */
 }
 .admin-dashboard .nav-sidebar i {
   width: 20px;
@@ -1170,7 +1170,7 @@ h6.teamName b{
   color:#fff;
 }
 app-admincompliance table td a {
-  color: #004dc8!important;
+  color: #3c8dbc!important;
 }
 app-dashboard .right-sidenav {
   width: 480px;
@@ -3049,7 +3049,7 @@ mark,
   text-align: right;
 }
 .text-center {
-  text-align: center;
+  text-align: center!important;
 }
 .text-justify {
   text-align: justify;
@@ -4843,6 +4843,7 @@ fieldset[disabled] .btn-info.focus {
   color: #ffffff;
   background-color: #ff8800;
   border-color: #ff8800;
+  text-transform: uppercase;
 }
 .btn-warning:focus,
 .btn-warning.focus {
@@ -4900,6 +4901,7 @@ fieldset[disabled] .btn-warning.focus {
   color: #ffffff;
   background-color: #cc0000;
   border-color: #cc0000;
+  text-transform: uppercase;
 }
 .btn-danger:focus,
 .btn-danger.focus {
@@ -6392,8 +6394,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 .label {
   display: inline;
-  padding: .2em .6em .3em;
-  font-size: 75%;
+  padding: .2em 0.9em .3em;
+  font-size: 70%;
   font-weight: bold;
   line-height: 1;
   color: #ffffff;
@@ -6473,6 +6475,9 @@ a.label:focus {
 }
 .badge:empty {
   display: none;
+}
+.btn-no-shadow {
+  box-shadow: none!important;
 }
 .btn .badge {
   position: relative;
@@ -8458,20 +8463,6 @@ a.list-group-item-danger.active:focus {
 .jumbotron h6 {
   color: #fff;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

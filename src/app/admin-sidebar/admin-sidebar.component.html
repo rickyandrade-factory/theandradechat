@@ -75,8 +75,8 @@
         </a>
     </li>
     <li class="divider no-line"></li>
-    <li ng-class="{active:vm.$state.includes('app.online')}">
-        <a class="flex-parent  " ui-sref="app.online" href="#!/online">
+    <li  ng-class="{active:vm.$state.includes('app.online')}">
+        <a [routerLink]="['/adminonlineactivity']" routerLinkActive="selectedRoom" class="flex-parent" ui-sref="app.online">
             <i class="fa fa-podcast fa-fw"></i>
             <span>Online Activity</span>
         </a>
