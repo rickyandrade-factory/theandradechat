@@ -10,7 +10,10 @@
     font-weight: bold;
   }
   
-
+td, th{
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
   .media-body th.mat-column-position, .media-body td.mat-column-position {
     padding-left: 8px;
   }
@@ -65,4 +68,115 @@ h2{
 }
 hr {
     border-top: 1px solid #d2d6de;
+}
+.dl-horizontal dt {
+  float: left;
+  width: 160px;
+  clear: left;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.session-row {
+  padding-left: 20px;
+  position: relative;
+}
+.idle-badge {
+  float: left;
+}
+.label-default {
+  background-color: #d2d6de;
+  color: #444;
+}
+.idle-badge span {
+  width: 10px;
+  height: 10px;
+  display: block;
+  padding: 0;
+  margin: 4px;
+  border-radius: 5px;
+}
+
+dd {
+  margin-left: 200px;
+}
+/* .progress {
+  height: 15px;
+  margin: 2px 0;
+}
+.progress {
+  position: relative;
+  z-index: 1;
+  height: 6px;
+  background-color: #f5f5f5;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+} */
+.popover_text{
+  position: relative;
+  width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.popover_text:hover .popover_text + .popover_tooltop{
+  display: block;
+}
+.popover_tooltop{
+  position: absolute;
+  right: 0;
+  display: none;
+}
+.collapse_row{
+  display: none;
+}
+.popover-inner {
+  width: 400px;
+  background: #fff;
+  border: 1px solid #ccc;
+  z-index: 99999;
+  position: relative;
+}
+.dl-horizontal-sm dt{
+  width: 80px;
+}
+
+.dl-horizontal-sm dd {
+  margin-left: 90px;
+  white-space: normal;
+  font-weight: normal;
+}
+
+.arrow {
+  top: 50%;
+  left: -11px;
+  margin-top: -11px;
+  border-left-width: 0;
+  border-right-color: #999;
+  border-right-color: rgba(0,0,0,.25);
+}
+
+.arrow {
+  border-width: 11px;
+}
+.arrow, .arrow:after {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  left: -20px
+}
+.right>.arrow:after {
+  content: " ";
+  left: 1px;
+  bottom: -10px;
+  border-left-width: 0;
+  border-right-color: #e3e3e3;
+}
+.arrow:after {
+  border-width: 10px;
+  content: "";
 }

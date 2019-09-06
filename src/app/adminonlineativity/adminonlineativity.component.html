@@ -13,7 +13,7 @@
         <div class="roomHeader">
           <i class="fa" ng-class="{'roomLock': room.n_type==2 , 'fa-unlock': room.n_type==2}" aria-hidden="true"></i>
           <div header-nav-trial="" class="nav-trial-container">
-            <div class="nav-trial-container-text ng-binding"></div>
+            <div class="nav-trial-container-text "></div>
           </div>
         </div>
         <div class="navbar-right navbar-custom-menu">
@@ -60,7 +60,7 @@
                             <div class="toolbox" style="padding:10px 25px">
                                 <button type="button" class="btn btn-blue" [matMenuTriggerFor]="groupsession">
                                     <span class="fa fa-object-group fa-fw"></span> Group:
-                                    <span class="ng-binding">session</span>&nbsp;
+                                    <span class="">session</span>&nbsp;
                                     <span class="caret"></span>
                                 </button>
                                 <mat-menu #groupsession="matMenu">
@@ -80,10 +80,9 @@
                         </div>
                         <div class="box box-default" >
                             <div class="mat-elevation-z8">
-                                <!-- <table >
+                                <table>
                                     <thead>
                                         <th>
-
                                         </th>
                                         <th>User</th>
                                         <th>
@@ -98,27 +97,25 @@
                                         <th>
                                             Devices
                                         </th>
-                                        <th>
-
-                                        </th>
+                                        <th></th>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td>
-                                                    <button class="btn btn-xs btn-link btn-no-shadow">
-                                                            <span class="fa fa-angle-right"></span>
-                                                        </button>
+                                                <button class="btn btn-xs btn-link btn-no-shadow collapse_carret">
+                                                    <span class="fa fa-angle-right"></span>
+                                                </button>
                                             </td>
                                             <td>
-                                                    puneetsethi25
-                                                    <div class="status-badge pull-right">
-                                                        <span class="label label-success" >online</span>
-                                                    </div>
+                                                puneetsethi25
+                                                <div class="status-badge pull-right">
+                                                    <span class="label label-success">online</span>
+                                                </div>
                                             </td>
                                             <td>
-                                                    <div class="idle-badge">
-                                                        <span class="label label-success">&nbsp;</span>
-                                                    </div>  
+                                                <div class="idle-badge">
+                                                    <span class="label label-success">&nbsp;</span>
+                                                </div>  
                                             </td>
                                             <td>
                                                 5 Sessions
@@ -128,10 +125,56 @@
                                             </td>
                                             <td>1 devices</td>
                                         </tr>
+                                        <tr class="collapse_row">
+                                            <td colspan="6">
+                                                    <div class="">
+                                                        <dt class="session-row serial" >
+                                                            <div class="idle-badge">
+                                                                <span class="label label-default " >&nbsp;</span>
+                                                            </div>
+                                                            <div class="popover_text">
+                                                                    189476cc6e3c4e4e81395e8896d6f40e
+                                                            </div>
+                                                            <div class="popover_tooltop  right" style="top: -120px; left: 165px;">
+                                                                <div class="arrow"></div>
+                                                                <div class="popover-inner">
+                                                                    <div class="popover-content">
+                                                                        <div class="">
+                                                                            <dl class="dl-horizontal dl-horizontal-sm text-left">
+                                                                                <dt>Session</dt>
+                                                                                <dd class="serial ">6bcac9ea0554445092c0c6b313ebb689</dd>
+                                                                                <dt>Inserted</dt>
+                                                                                <dd class="">2019-09-04 15:48:33</dd>
+                                                                                <dt>Updated</dt>
+                                                                                <dd class="">2019-09-04 15:59:29</dd>
+                                                                                <dt>IP</dt>
+                                                                                <dd class="serial ">122.173.178.62</dd>
+                                                                                <dt>Unique ID</dt>
+                                                                                <dd class="serial ">9ced2f9ab62d466ef9f28a0d2ad52af0</dd>
+                                                                                <dt>Device</dt>
+                                                                                <dd class="serial ">6a59b086035a6bd8aab55149752569f6</dd>
+                                                                                <dt>OS</dt>
+                                                                                <dd class="">Linuxx86_64</dd>
+                                                                                <dt>Browser</dt>
+                                                                                <dd class="">Chrome 66.0.3359.139</dd>
+                                                                                <dt>User Agent</dt>
+                                                                                <dd class="">Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36</dd>
+                                                                            </dl>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </dt>
+                                                        <dd>
+                                                            <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+                                                        </dd>
+                                                    </div>
+                                            </td>
+                                        </tr>
                                     </tbody>
-                                </table> -->
-                                <table mat-table [dataSource]="dataSource" matSort>
-                                      <!-- ID Column -->
+                                </table>
+                                <!-- <table mat-table [dataSource]="dataSource" matSort>
+                      
                                    <ng-container matColumnDef="empty">
                                         <th mat-header-cell *matHeaderCellDef mat-sort-header></th>
                                         <td mat-cell *matCellDef="let row"> 
@@ -140,7 +183,7 @@
                                                 </button>
                                         </td>
                                     </ng-container>                                     
-                                   <!-- ID Column -->
+                   
                                    <ng-container matColumnDef="user">
                                       <th mat-header-cell *matHeaderCellDef mat-sort-header> User</th>
                                       <td mat-cell *matCellDef="let row"> 
@@ -150,7 +193,7 @@
                                             </div>
                                       </td>
                                     </ng-container> 
-                                  <!-- ID Column -->
+                  
                                   <ng-container matColumnDef="activesessions">
                                     <th mat-header-cell *matHeaderCellDef mat-sort-header> Active Sessions </th>
                                     <td mat-cell *matCellDef="let row"> 
@@ -159,17 +202,17 @@
                                             </div>    
                                     </td>
                                   </ng-container>
-                                  <!-- Name Column -->
+  
                                   <ng-container matColumnDef="sessions">
                                     <th mat-header-cell *matHeaderCellDef mat-sort-header> Sessions </th>
                                     <td mat-cell *matCellDef="let row"> {{row.sessions}} </td>
                                   </ng-container>
-                                  <!-- Color Column -->
+                        
                                   <ng-container matColumnDef="ip">
                                     <th mat-header-cell *matHeaderCellDef mat-sort-header> IPs </th>
                                     <td mat-cell *matCellDef="let row" > {{row.ip}} </td>
                                   </ng-container>
-                                    <!-- Color Column -->
+                       
                                     <ng-container matColumnDef="devices">
                                       <th mat-header-cell *matHeaderCellDef mat-sort-header> Devices </th>
                                       <td mat-cell *matCellDef="let row" [style.color]="row.color"> {{row.devices}} </td>
@@ -179,7 +222,7 @@
                                   <tr mat-row *matRowDef="let row; columns: displayedColumns;">
                                   </tr>
                                 </table>
-                                <mat-paginator [pageSizeOptions]="[14, 25, 50, 100]"></mat-paginator>
+                                <mat-paginator [pageSizeOptions]="[14, 25, 50, 100]"></mat-paginator> -->
                               </div>
                         </div>
                     </div>
@@ -219,7 +262,8 @@
                                 <div style="margin-bottom:4px">
                                     <div class="idle-badge" style="float:left;margin-right:5px;">
                                         <span class="label label-warning">&nbsp;</span>
-                                    </div> Idle session ie. the browser is not focused, the mobile app is in the background or the browser has no activity for more than 5 minutes</div>
+                                    </div> Idle session ie. the browser is not focused, the mobile app is in the background or the browser has no activity 
+                                    for more than 5 minutes</div>
                                 <div style="margin-bottom:4px">
                                     <div class="idle-badge" style="float:left;margin-right:5px;">
                                         <span class="label label-default">&nbsp;</span>

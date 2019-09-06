@@ -11,8 +11,6 @@ body{
   overflow:hidden;
 }
 .mat-tooltip {
-  /* your own custom styles here */ 
-  /* e.g. */
   color: yellow;
 }
 .checkbox label {
@@ -1477,7 +1475,7 @@ button.btn.btn-blue {
   display: none;
 }
 .show_hide {
-  display: block;
+  display: block!important;
 }
 .leftnav{
   height: 100vh;
@@ -1869,6 +1867,13 @@ body {
   border-left: solid 1px rgb(14, 34, 38);
   border-right: none;
   /* background-image: linear-gradient(to top, #e26727 , #0e2226); */
+}
+.mat-progress-bar{
+  height: 7px!important;
+  top: -12px;
+}
+.mat-progress-bar-fill::after {
+  background-color: #00a2c8;
 }
 article,
 aside,
@@ -9753,8 +9758,6 @@ div#vidboxModal {
     padding: 90px 0 0;
     font-size: 2em;
     color: #bbbbbb;
-
- 
 }
 
 .footer-invite {

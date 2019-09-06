@@ -53,6 +53,9 @@ export class AdminonlineativityComponent implements OnInit {
   displayedColumns: string[] = ['empty', 'user', 'activesessions', 'sessions', 'ip', 'devices'];
   dataSource: MatTableDataSource<UserData>;
 
+
+
+
   @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
   @ViewChild(MatSort, {static: true}) sort: MatSort;
 
@@ -93,3 +96,10 @@ function createNewUser(id: number): UserData {
     ip: IP[Math.round(Math.random() * (COLORS.length - 1))]
   };
 }
+
+
+
+
+
+
+
