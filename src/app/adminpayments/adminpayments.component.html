@@ -18,7 +18,7 @@
         </div>
         <div class="navbar-right navbar-custom-menu">
             <ul class="nav navbar-nav">
-                <li ng-class="{active:vm.$state.includes('app.settings')}" class="">
+                <li class="settings-menu">
                     <a ui-sref="app.settings" href="#">
                         <span class="fa fa-gears fa-fw"></span>
                     </a>
@@ -75,7 +75,7 @@
                   <div class="box box-default" >
                       <div class="mat-elevation-z8">
                           <table mat-table [dataSource]="dataSource" matSort>
-                
+
                              <!-- ID Column -->
                              <ng-container matColumnDef="date">
                                 <th mat-header-cell *matHeaderCellDef mat-sort-header> Date</th>
@@ -124,7 +124,6 @@
                             <tr mat-row *matRowDef="let row; columns: displayedColumns;">
                             </tr>
                           </table>
-                        
                           <mat-paginator [pageSizeOptions]="[14, 25, 50, 100]"></mat-paginator>
                         </div>
                   </div>
@@ -142,7 +141,8 @@
                               </div>
                           </div>
                           <div style="overflow-x:auto;overflow-y:hidden; width:100%" class="">
-                            <div class=""><table style="margin:0" class="table">
+                            <div class="">
+                                <table style="margin:0" class="table">
                               <tbody>
                                 <tr><th class="text-center" style="width:14.28571%">MON</th>
                                   <th class="text-center" style="width:14.28571%">TUE</th>  
@@ -192,7 +192,9 @@
                               <td class="paymentCalendarTd text-right " style="background-color:undefined"><span class="paymentCalendarDate">30</span><span class="paymentCalendarAmount">0</span></td>
                               <td class="paymentCalendarTd text-right " style="background-color:undefined"><span class="paymentCalendarDate">31</span><span class="paymentCalendarAmount">0</span></td>
                               <td>&nbsp;</td>
-                              </tr></tbody></table></div></div>
+                              </tr>
+                            </tbody>
+                        </table></div></div>
                       </div>
                       <div class="box box-default" style="border-top-color:#00a2c8;">
                           <div class="box-header with-border">

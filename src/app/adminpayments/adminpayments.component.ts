@@ -27,7 +27,6 @@ export interface UserData {
   email: string;
   amount: string;
   plan: string;
-
 }
 
 /** Constants used to fill up our data base. */

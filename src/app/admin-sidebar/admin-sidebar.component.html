@@ -13,13 +13,13 @@
   </div>
   <ul class="nav nav-sidebar">
     <li class="ng-scope">
-        <a [routerLink]="['/admindashboard']" routerLinkActive="selectedRoom" style="cursor:pointer" class="flex-parent">
+        <a [routerLink]="['/admindashboard']" routerLinkActive="selectedRoom" style="cursor:pointer" class="flex-parent dashboard-link">
             <i class="fa fa-dashboard fa-fw"></i>
         <span class="room-name ng-binding">Dashboard</span>
         </a>
     </li>
     <li  class="ng-scope">
-        <a [routerLink]="['/adminusers']" routerLinkActive="selectedRoom" style="cursor:pointer" class="flex-parent  ">
+        <a [routerLink]="['/adminusers']" routerLinkActive="selectedRoom" style="cursor:pointer" class="flex-parent users-link">
             <i class="fa fa-users fa-fw"></i>
         <span class="ng-binding">Users</span>
         </a>
@@ -44,7 +44,7 @@
     </li>
     <li class="divider no-line"></li>
     <li ng-class="{active:vm.$state.includes('app.billing.*')}">
-        <a [routerLink]="['/adminbilling']" routerLinkActive="selectedRoom" class="flex-parent  " ui-sref="app.billing.overview" href="#">
+        <a [routerLink]="['/adminbilling']" routerLinkActive="selectedRoom" class="flex-parent billing-link " ui-sref="app.billing.overview" href="#">
             <i class="fa fa-credit-card fa-fw"></i>
             <span>Billing Plans</span>
         </a>
@@ -57,7 +57,7 @@
     </li> 
     <li class="divider no-line"></li>
     <li>
-        <a [routerLink]="['/adminchatroom']" routerLinkActive="selectedRoom" class="flex-parent" >
+        <a [routerLink]="['/adminchatroom']" routerLinkActive="selectedRoom" class="flex-parent chatroom-link" >
             <i class="fa fa-comments-o fa-fw"></i>
             <span>Chatrooms</span>
         </a>
@@ -69,7 +69,7 @@
         </a>
     </li>
     <li ng-class="{active:vm.$state.includes('app.widgets')}">
-        <a [routerLink]="['/adminwidget']" routerLinkActive="selectedRoom" class="flex-parent  " ui-sref="app.widgets" href="#!/widgets">
+        <a [routerLink]="['/adminwidget']" routerLinkActive="selectedRoom" class="flex-parent  widget-link" ui-sref="app.widgets" href="#!/widgets">
             <i class="fa fa-cubes fa-fw"></i>
             <span>Widgets</span>
         </a>
@@ -104,13 +104,13 @@
     </li>
     <li class="divider no-line"></li>
     <li>
-        <a  class="flex-parent  " href="#" target="_blank">
+        <a  class="flex-parent  video-link" href="#" target="_blank">
             <i class="fa fa-youtube fa-fw"></i>
             <span>Video Tutorials</span>
         </a>
     </li>
     <li>
-        <a class="flex-parent  " href="" ng-click="vm.ViewTutorial()">
+        <a class="flex-parent  tour-link">
             <i class="fa fa-graduation-cap fa-fw"></i>
             <span>Guided Tour</span>
         </a>

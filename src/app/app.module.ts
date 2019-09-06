@@ -124,4 +124,4 @@ import { AdminonlineativityComponent } from './adminonlineativity/adminonlineati
      NewChatroomComponent,NewServicesComponent, ConfiguredialogComponent],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

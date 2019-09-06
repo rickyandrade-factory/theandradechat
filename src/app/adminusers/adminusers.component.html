@@ -18,7 +18,7 @@
       </div>
       <div class="navbar-right navbar-custom-menu">
           <ul class="nav navbar-nav">
-              <li ng-class="{active:vm.$state.includes('app.settings')}" class="">
+              <li class="settings-menu">
                   <a ui-sref="app.settings" href="#">
                       <span class="fa fa-gears fa-fw"></span>
                   </a>
@@ -48,7 +48,7 @@
           </ul>
        </div>
     </div>
-    <section class="content-header ng-scope">
+    <section class="content-header">
         <h1>
           Users
         </h1>
@@ -89,7 +89,7 @@
                 <td mat-cell *matCellDef="let row"> 
                     <div class="user_img">
                       <img class="img-responsive table-avatar ng-scope" src="//cdn.echofin.co/avatars/a16ea39c.png">
-                    </div> 
+                    </div>
                 </td>
               </ng-container> 
             <!-- ID Column -->
@@ -149,7 +149,7 @@
                 </td>
               </ng-container>
             <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-            
+
             <tr mat-row *matRowDef="let row; columns: displayedColumns;">
             </tr>
           </table>
