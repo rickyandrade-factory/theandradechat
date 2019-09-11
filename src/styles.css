@@ -16,12 +16,44 @@ body{
 .checkbox label {
   font-size: 15px;
 }
+.box.box-default{
+  overflow-x:auto;
+  max-width: 100%;
+}
+.mat-tab-header-pagination-disabled .mat-tab-header-pagination-chevron{
+  border-color: #fff;
+}
+.mat-tab-header-pagination-chevron{
+  border-color: #fff;
+}
 mat-calendar table {
   background: #fff;
 }
 .modal-body{
   overflow-y: scroll;
   max-height: calc(100vh - 140px);
+}
+.enjoyhint_next_btn{
+  border-color: #ff5700!important;
+  color:#ff5700;
+}
+.enjoyhint_next_btn:hover {
+  color: rgba(255,255,255,1);
+  background: #ff5700!important;
+}
+.enjoyhint_skip_btn{
+  border-color:#ff5700!important;
+  color:#ff5700;
+}
+.enjoyhint_skip_btn:hover {
+  color: rgba(255,255,255,1);
+  background: #ff5700!important;
+}
+.enjoyhint_close_btn{
+  border-color: #ff5700!important;
+}
+.enjoyhint_close_btn:hover{
+  background-color: #ff5700!important;
 }
 .checkbox.checkbox-form {
   -webkit-box-shadow: inset 0 -1px 0 #ddd;
@@ -45,6 +77,7 @@ span.bottom_line {
   padding: 10px 15px;
   background: #fff;
   border-bottom: solid 2px #ddd;
+  display: flow-root;
 }
 .checkbox label{
   display: inline-block;
@@ -801,7 +834,7 @@ li.emojiRef{ display: none; }
   z-index: 1000;
   display: none;
   float: left;
-  min-width: 340px;
+  min-width: 340px; 
   height: 197px;
   padding: 2px;
   margin: 2px 0 0;
@@ -937,6 +970,14 @@ li.emojiRef{ display: none; }
   top: auto;
   bottom: 100%;
   margin-bottom: 2px;
+}
+@media screen and (min-width: 1367px) and (max-width: 1920px)  {
+
+}
+@media (max-width: 1366px)  {
+  .widget-sidenav {
+    width: 400px!important;
+  }
 }
 @media (min-width: 768px) {
   .navbar-right .popup>.dropdown-menu {
@@ -1394,6 +1435,7 @@ button.btn.btn-blue {
   color: #fff;
   width: 220px;
   height: calc(100vh - 60px)!important;
+  background: #19373c;
 }
 .empty-msg {
   text-align: center;
@@ -1551,18 +1593,18 @@ app-dashboard .mat-drawer.mat-drawer-side {
 }
 .side-tp button:before, .side-tp button:after {
   background: none;
-}
-app-dashboard .mat-drawer-content{
+} 
+.mat-drawer-content{
   max-width: 100%;
-  background-color: #F7fbfe;
-  overflow: hidden;
+  /* background-color: #F7fbfe; */
+  /* overflow: hidden!important; */
 }
 .messages-sidebar-header, .rooms-sidebar-header, .sidebar .nav-sidebar .nav-item-header {
-    background-color: #0e2226!important;
-    color: #e26727!important;
-    padding: 10px!important;
-    font-family: Montserrat,sans-serif;
-    border-top: 1px solid #0e2226;
+  background-color: #0e2226!important;
+  color: #e26727!important;
+  padding: 10px!important;
+  font-family: Montserrat,sans-serif;
+  border-top: 1px solid #0e2226;
 }
 #dvFootnote .btn-primary {
   background-color: #00a2c8!important;
@@ -3505,35 +3547,57 @@ pre code {
   }
   .col-md-11 {
     width: 91.66666667%;
+    padding-right: 15px;
+    padding-left: 15px;
   }
   .col-md-10 {
     width: 83.33333333%;
+    padding-right: 15px;
+    padding-left: 15px;
   }
   .col-md-9 {
     width: 75%;
+    padding-right: 15px;
+    padding-left: 15px;
   }
   .col-md-8 {
     width: 66.66666667%; 
+    padding-right: 15px;
+    padding-left: 15px;
   }
   .col-md-7 {
     width: 58.33333333%;
+    padding-right: 15px;
+    padding-left: 15px;
   }
   .col-md-6 {
     width: 50%;
+    padding-right: 15px;
+    padding-left: 15px;
   }
   .col-md-5 {
     width: 41.66666667%;
+    padding-right: 15px;
+    padding-left: 15px;
   }
   .col-md-4 {
     width: 33.33333333%;
+    padding-right: 15px;
+    padding-left: 15px;
   }
   .col-md-3 {
     width: 25%;
+    padding-right: 15px;
+    padding-left: 15px;
   }
   .col-md-2 {
     width: 16.66666667%;
+    padding-right: 15px;
+    padding-left: 15px;
   }
   .col-md-1 {
+    padding-right: 15px;
+    padding-left: 15px;
     width: 8.33333333%;
   }
   .col-md-pull-12 {
@@ -5892,6 +5956,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     border: 0;
     box-shadow: none;
   }
+  .widget-sidenav {
+    width: 320px!important;
+}
   .navbar-nav .open .dropdown-menu > li > a,
   .navbar-nav .open .dropdown-menu .dropdown-header {
     padding: 5px 15px 5px 25px;
@@ -8527,10 +8594,7 @@ a.list-group-item-danger.active:focus {
         color: #bbb !important;
     }
 
-    .roomHeader {
-        float: left;
-        margin-top: 17px;
-    }
+  
 
     .chatDiv {
         left: 15px;
@@ -10458,6 +10522,10 @@ span.cashtag_text:hover {
   app-dashboard .right-sidenav{
     width:280px; 
   }
+  .roomHeader {
+      float: left;
+      margin-top: 17px;
+  }
   .nav-sidebar{
     height:auto;
   }
@@ -10534,10 +10602,10 @@ app-sinup .mat-drawer-inner-container{
   left:auto;
 }
 
-app-dashboard .mat-drawer-container{
+.mat-drawer-container{
   width:100%!important;
 }
-app-dashboard  .side-tp{
+.side-tp{
   margin: 0!important;
   border-left: none;
   background: transparent;

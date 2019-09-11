@@ -1,12 +1,12 @@
 <div class="login-container admin-dashboard">
         <mat-drawer-container class="example-container" autosize>
           <div class="navbar navbar-fixed-top navbar-inverse navbar-static-top" style="position:static;">
-            <mat-drawer #drawer class="example-sidenav sidebar navbar-collapse" opened="true" mode="side" 
+            <mat-drawer #drawer7 class="example-sidenav sidebar navbar-collapse" opened="true" mode="side" 
               style="position:fixed; left:0;">
                 <app-admin-sidebar></app-admin-sidebar>
             </mat-drawer>
-            <div class="example-sidenav-content hidden-xs">
-                <button class="hamburgerHeader hamburger hamburger-arrow-left sidebar-toggle" hamburger-drv="">
+            <div class="example-sidenav-content">
+                <button class="hamburgerHeader hamburger hamburger-arrow-left sidebar-toggle" hamburger-drv="" (click)="drawer7.toggle();">
                     <span class="icon"></span>
                 </button>
             </div>
@@ -29,8 +29,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" id="headwayapp">
-                            <span class="fa fa-envelope-o fa-fw"></span>
+                        <a href="#" id="headwayapp"><span class="fa fa-envelope-o fa-fw"></span>
                         <span id="HW_badge_cont" class="HW_visible"><span id="HW_badge" data-count-unseen="" class="HW_softHidden"></span></span></a>
                     </li>
                     <li class="dropdown"> 
@@ -69,7 +68,7 @@
                                                     <img class="img-thumbnail img-responsive" src="https://cdn.echofin.co/widgets/tradetools.stockscreener.png">
                                                 </td>
                                                 <td>
-                                                    <h4 class="">Stock Screener
+                                                    <h4 class="">Stock Screener 
                                                         <small class="">TradeTools</small>
                                                     </h4>
                                                     <p class="">Stock Screener is a powerfull widget allowing you to search for a stock symbol or company 
@@ -311,7 +310,7 @@
                                                             <img class="img-responsive" src="https://cdn.echofin.co/widgets/echofin.fxcal.jpg">
                                                         </td>
                                                         <td>
-                                                            <h4 >
+                                                            <h4>
                                                                 Indices
                                                                 <small class="">TradeTools</small>
                                                                 <span ng-if="!w.isEnabled" class="label label-warning ng-scope">disabled</span>
@@ -323,7 +322,7 @@
                                                             </button>
                                                         </td>
                                                     </tr>
-                                                    <tr  >
+                                                    <tr>
                                                         
                                                             <td style="width: 50px">
                                                                 <img class="img-responsive" src="https://cdn.echofin.co/widgets/echofin.commodities.jpg">

@@ -1,12 +1,12 @@
 <div class="login-container admin-dashboard">
     <mat-drawer-container class="example-container" autosize>
       <div class="navbar navbar-fixed-top navbar-inverse navbar-static-top" style="position:static;">
-        <mat-drawer #drawer class="example-sidenav sidebar navbar-collapse" opened="true" mode="side" 
+        <mat-drawer #drawer7 class="example-sidenav sidebar navbar-collapse" opened="true" mode="side" 
           style="position:fixed; left:0;">
             <app-admin-sidebar></app-admin-sidebar>
         </mat-drawer>
-        <div class="example-sidenav-content hidden-xs">
-            <button class="hamburgerHeader hamburger hamburger-arrow-left sidebar-toggle" hamburger-drv="">
+        <div class="example-sidenav-content">
+            <button class="hamburgerHeader hamburger hamburger-arrow-left sidebar-toggle" hamburger-drv="" (click)="drawer7.toggle();">
                 <span class="icon"></span>
             </button>
         </div>
@@ -55,48 +55,48 @@
       </section>
       <section class="content admin-user admin_payouts">
           <div class="row">
-              <div class="col-md-3 col-lg-3 box-stats">
+              <div class="col-md-6 col-lg-3 box-stats">
                       <div class="small-box  bg-teal">
                           <div class="icon">
                               <i class="fa fa-credit-card fa-fw"></i>
                           </div>
                           <div class="inner">
-                              <h3  class="ng-binding ng-scope" style="font-size: 65px; line-height: 77px; display: block;">$18746.00</h3>
+                              <h3  class="ng-binding ng-scope" style="font-size: 45px; line-height: 77px; display: block;">$18746.00</h3>
                               <p>Total Payments</p>
                           </div>
                       </div>
               </div>
-              <div class="col-md-3 col-lg-3 box-stats">
+              <div class="col-md-6 col-lg-3 box-stats">
                       <div class="small-box " >
                           <div class="icon">
                               <i class="fa fa-dollar fa-fw"></i>
                           </div>
                           <div class="inner">
-                              <h3  class="ng-binding ng-scope" style="font-size: 65px; line-height: 77px; display: block;">$18746.00
+                              <h3  class="ng-binding ng-scope" style="font-size: 45px; line-height: 77px; display: block;">$18746.00
                                   </h3>
                               <p>Total Gross Payouts</p>
                           </div>
                       </div>
               </div>
-              <div class="col-md-3 col-lg-3 box-stats">
+              <div class="col-md-6 col-lg-3 box-stats">
                       <div class="small-box bg-green">
                           <div class="icon">
                               <i class="fa fa-money fa-fw"></i>
                           </div>
                           <div class="inner">
-                              <h3  class="ng-binding ng-scope" style="font-size: 65px; line-height: 77px; display: block;">$16871.42
+                              <h3  class="ng-binding ng-scope" style="font-size: 45px; line-height: 77px; display: block;">$16871.42
                                 </h3>
                               <p>Total Net Payouts</p>
                           </div>
                       </div>
               </div>
-              <div class="col-md-3 col-lg-3 box-stats">
+              <div class="col-md-6 col-lg-3 box-stats">
                       <div class="small-box bg-yellow">
                           <div class="icon">
                               <i class="fa fa-bank fa-fw"></i>
                           </div>
                           <div class="inner">
-                              <h3  class="ng-binding ng-scope" style="font-size: 65px; line-height: 77px; display: block;">$0.00
+                              <h3  class="ng-binding ng-scope" style="font-size: 45px; line-height: 77px; display: block;">$0.00
                                 </h3>
                               <p>Current Payouts Balance</p>
                           </div>

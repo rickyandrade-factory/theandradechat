@@ -1,12 +1,12 @@
 <div class="login-container admin-dashboard">
     <mat-drawer-container class="example-container" autosize>
       <div class="navbar navbar-fixed-top navbar-inverse navbar-static-top" style="position:static;">
-        <mat-drawer #drawer class="example-sidenav sidebar navbar-collapse" opened="true" mode="side" 
+        <mat-drawer #drawer7 class="example-sidenav sidebar navbar-collapse admindrawer" opened="true" mode="side" 
           style="position:fixed; left:0;">
             <app-admin-sidebar></app-admin-sidebar>
         </mat-drawer>
         <div class="example-sidenav-content hidden-xs">
-            <button class="hamburgerHeader hamburger hamburger-arrow-left sidebar-toggle" hamburger-drv="">
+            <button class="hamburgerHeader hamburger hamburger-arrow-left sidebar-toggle" hamburger-drv="" (click)="drawer7.toggle();">
                 <span class="icon"></span>
             </button>
         </div>
@@ -70,7 +70,11 @@
                     <div style="width: 400px;">
                         <div class="box box-default">
                             <div class="box-body text-center">
-                                    
+                                <!-- <mat-form-field class="example-full-width">
+                                    <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+                                    <mat-datepicker #picker></mat-datepicker>
+                                  </mat-form-field>
+                                  <button mat-raised-button (click)="picker.open()">Open</button> -->
                             </div>
                         </div>
                         <div class="box box-default">
@@ -83,7 +87,7 @@
                                 <p>Echofin's API allows the integration with third-party systems. Please generate your authentication token.</p>
                                 <p>Every token is bound to the underlying administrator level account.</p>
                                 <p>For more details on how to use the web API please refer to the web API
-                                    <a target="_blank" href="https://www.echofin.co/docs/api/">documentation</a>.</p>
+                                    <a target="_blank" href="#">documentation</a>.</p>
                                 <div ng-if="!vm.currentApiKey" class="ng-scope">
                                     You do not have any key generated yet. Click generate button to create a new one.
                                     <hr>

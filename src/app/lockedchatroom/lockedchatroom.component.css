@@ -5,6 +5,7 @@
 }
 .empty-messages img.small {
   height: 230px;
+  max-width: 100%;
 }
 .page-data > img {
   margin: 0;

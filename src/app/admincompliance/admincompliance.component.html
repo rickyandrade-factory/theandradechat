@@ -1,12 +1,12 @@
 <div class="login-container admin-dashboard">
         <mat-drawer-container class="example-container" autosize>
           <div class="navbar navbar-fixed-top navbar-inverse navbar-static-top" style="position:static;">
-            <mat-drawer #drawer class="example-sidenav sidebar navbar-collapse" opened="true" mode="side" 
+            <mat-drawer #drawer7 class="example-sidenav sidebar navbar-collapse" opened="true" mode="side" 
               style="position:fixed; left:0;">
                 <app-admin-sidebar></app-admin-sidebar>
             </mat-drawer>
-            <div class="example-sidenav-content hidden-xs">
-                <button class="hamburgerHeader hamburger hamburger-arrow-left sidebar-toggle" hamburger-drv="">
+            <div class="example-sidenav-content">
+                <button class="hamburgerHeader hamburger hamburger-arrow-left sidebar-toggle" hamburger-drv="" (click)="drawer7.toggle();">
                     <span class="icon"></span>
                 </button>
             </div>
@@ -39,7 +39,7 @@
                                     <span class="caret"></span>
                             </button>
                             <mat-menu #menu="matMenu" xPosition="before">
-                                    <a class="profile-menu white" href="#" >Profile</a>
+                                    <a class="profile-menu white" href="#">Profile</a>
                                     <li class="divider"></li>
                                     <a class="profile-menu white" href="#">Sign Out</a>
                             </mat-menu>

@@ -86,7 +86,9 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/custom.js"
+            ]
           }
         },
         "lint": {

@@ -280,17 +280,17 @@ text-decoration: underline;
 width: 100%;
 }
 @media screen and (max-width:767px){
-.main-logo{
-  position: static;
-  max-width: 100%;
-}
-mat-sidenav{
-  padding-top: 0;
-  height: 100vh;
-  background-image: linear-gradient(to top, #e26727 , #0e2226);
-  display: flex;
-  align-items: center;
-  width: 100%!important;
-  max-width: 100%;
-}
+  .main-logo{
+    position: static;
+    max-width: 100%;
+  }
+  mat-sidenav{
+    padding-top: 0;
+    height: 100vh;
+    background-image: linear-gradient(to top, #e26727 , #0e2226);
+    display: flex;
+    align-items: center;
+    width: 100%!important;
+    max-width: 100%;
+  }
 }

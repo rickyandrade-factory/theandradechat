@@ -1,12 +1,12 @@
 <div class="login-container admin-dashboard">
     <mat-drawer-container class="example-container" autosize>
       <div class="navbar navbar-fixed-top navbar-inverse navbar-static-top" style="position:static;">
-        <mat-drawer #drawer class="example-sidenav sidebar navbar-collapse" opened="true" mode="side" 
+        <mat-drawer #drawer7 class="example-sidenav sidebar navbar-collapse" opened="true" mode="side" 
           style="position:fixed; left:0;">
             <app-admin-sidebar></app-admin-sidebar>
         </mat-drawer>
-        <div class="example-sidenav-content hidden-xs">
-            <button class="hamburgerHeader hamburger hamburger-arrow-left sidebar-toggle" hamburger-drv="">
+        <div class="example-sidenav-content">
+            <button class="hamburgerHeader hamburger hamburger-arrow-left sidebar-toggle" hamburger-drv="" (click)="drawer7.toggle();">
                 <span class="icon"></span>
             </button>
         </div>
@@ -55,8 +55,8 @@
       </section>
       <section class="content admin-payments">
           <div class="media">
-              <div class="media-body">
-                  <div style="padding: 0 10px;">
+              <div class="col-md-8 col-lg-8 no-pad">
+                  <div style="padding: 0 15px;">
                       <div class="toolbox">
                           <button class="btn btn-default" ng-click="vm.Export()" ng-disabled="vm.downloading">
                              <span class="fa fa-download ng-scope" ng-if="!vm.downloading"></span>  Export
@@ -128,8 +128,8 @@
                         </div>
                   </div>
               </div>
-              <div class="media-right">
-                  <div style="width: 400px;">
+              <div class="col-md-4 col-lg-4">
+                  <div style="width: 100%;">
                       <div class="box box-default">
                           <div class="box-header with-border">
                               <h3 class="box-title ng-binding">Payments Projection for August 2019</h3>

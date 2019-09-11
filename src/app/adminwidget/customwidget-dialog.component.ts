@@ -82,7 +82,7 @@ import { Component } from '@angular/core';
                   <div class="col-sm-6">
                       <div class="checkbox checkbox-form">
                         <label>
-                        <input type="checkbox" class="">On-Point FX Signals 7-Day FREE Trial
+                         <input type="checkbox" class="">On-Point FX Signals 7-Day FREE Trial
                         </label>
                       </div>
                   </div>
@@ -402,7 +402,7 @@ import { Component } from '@angular/core';
                     <strong>Documentation</strong>
                     <br>
                     <p>You may find the full documentation on implementing the widget functions and callback at
-                        <a href="https://echofin.co/docs/widgets">widgets documentation</a>
+                        <a href="#">widgets documentation</a>
                     </p>
               </div> 
               <div class="alert alert-default">
