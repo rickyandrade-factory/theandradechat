@@ -1659,7 +1659,7 @@ app-dashboard .mat-drawer.mat-drawer-side {
 
 .sidebar-match {
   border: none;
-  width: 219px;
+  width: 219px; 
   height: 65px!important;
 }
 .dropdown>.dropdown-toggle {

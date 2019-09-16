@@ -20,7 +20,7 @@
     height: auto;
 }
 section.admin-widget {
-    width: 860px;
+    max-width: 860px;
     margin: 0 auto;
 }
 table, .table {

@@ -70,17 +70,17 @@
         </a>
     </li>
         <li class="ng-scope">
-                <a  href="#" class="flex-parent locked">
-                  <span class="flex-child">
-                  <i class="roomIcon fa fa-fw fa-hashtag" aria-hidden="true"></i>
-                  <span class="room-name ng-binding">Traders Lounge</span>
-                  </span>
-                  <span class="flex-child-icons">
-                     <i style="font-size:12px;" class="roomIcon fa fa-fw ng-scope fa-lock" aria-hidden="true"  ></i>
-                      <i style="font-size:12px;" class="roomIcon fa fa-eye ng-scope" aria-hidden="true"></i>
-                  </span>
-                </a>
-            </li>
+            <a  href="#" class="flex-parent locked">
+                <span class="flex-child">
+                <i class="roomIcon fa fa-fw fa-hashtag" aria-hidden="true"></i>
+                <span class="room-name ng-binding">Traders Lounge</span>
+                </span>
+                <span class="flex-child-icons">
+                    <i style="font-size:12px;" class="roomIcon fa fa-fw ng-scope fa-lock" aria-hidden="true"  ></i>
+                    <i style="font-size:12px;" class="roomIcon fa fa-eye ng-scope" aria-hidden="true"></i>
+                </span>
+            </a>
+        </li>
     <li class="ng-scope">
         <a  href="#" class="flex-parent locked">
           <span class="flex-child">
@@ -141,7 +141,7 @@
     </li>
     <li class="messages-sidebar-header ng-scope" ng-if="(chatRooms|filter:{n_type:3}).length">SERVICES</li>
     <li   ng-repeat="chatRoom in chatRooms | filter:{n_type:3}" class="ng-scope">
-        <a ng-click="changeRoom(chatRoom);" style="cursor:pointer" class="service-item flex-parent"  >
+        <a ng-click="changeRoom(chatRoom);" style="cursor:pointer" class="service-item flex-parent">
         <span class="flex-child">
         <i class="roomIcon fa fa-fw fa-rss" aria-hidden="true"></i>
         <span class="room-name ng-binding" style="max-width: 157px;">Market Mastermind</span>
