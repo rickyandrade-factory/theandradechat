@@ -21,6 +21,7 @@ import { AdminapiComponent } from './adminapi/adminapi.component';
 import { AdmincomplianceComponent } from './admincompliance/admincompliance.component';
 import { AdminwidgetComponent } from './adminwidget/adminwidget.component';
 import { AdminonlineativityComponent } from './adminonlineativity/adminonlineativity.component';
+import { AdminsettingsComponent } from './adminsettings/adminsettings.component';
 // import { AuthGuard } from './auth.guard';
 
 const routes: Routes = [
@@ -42,7 +43,7 @@ const routes: Routes = [
   { path: 'adminapi', component: AdminapiComponent},
   { path: 'admincompliance', component: AdmincomplianceComponent},
   { path: 'adminwidget', component: AdminwidgetComponent},
-  { path: 'adminonlineactivity', component:AdminonlineativityComponent},
+  { path: 'adminsettings', component:AdminsettingsComponent},
 ];
 
 @NgModule({

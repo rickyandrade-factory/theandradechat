@@ -1,0 +1,153 @@
+<div class="login-container admin-dashboard">
+    <mat-drawer-container class="example-container" autosize>
+      <div class="navbar navbar-fixed-top navbar-inverse navbar-static-top" style="position:static;">
+        <mat-drawer #drawer7 class="example-sidenav sidebar navbar-collapse" opened="true" mode="side" 
+          style="position:fixed; left:0;">
+            <app-admin-sidebar></app-admin-sidebar>
+        </mat-drawer>
+        <div class="example-sidenav-content">
+            <button class="hamburgerHeader hamburger hamburger-arrow-left sidebar-toggle" hamburger-drv="" (click)="drawer7.toggle();">
+                <span class="icon"></span>
+            </button>
+        </div>
+        <div class="roomHeader">
+          <i class="fa" ng-class="{'roomLock': room.n_type==2 , 'fa-unlock': room.n_type==2}" aria-hidden="true"></i>
+          <div header-nav-trial="" class="nav-trial-container">
+            <div class="nav-trial-container-text ng-binding"></div>
+          </div>
+        </div>
+        <div class="navbar-right navbar-custom-menu">
+            <ul class="nav navbar-nav">
+                <li class="settings-menu">
+                    <a [routerLink]="['/adminsettings']" routerLinkActive="selectedRoom">
+                        <span class="fa fa-gears fa-fw"></span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="/">
+                        <span class="fa fa-comments fa-fw"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="headwayapp"><span class="fa fa-envelope-o fa-fw"></span>
+                    <span id="HW_badge_cont" class="HW_visible"><span id="HW_badge" data-count-unseen="" class="HW_softHidden"></span></span></a>
+                </li>
+                <li class="dropdown"> 
+                    <a>
+                        <button mat-button [matMenuTriggerFor]="menu">puneetsethi25@gmail.com
+                                <span class="caret"></span>
+                        </button>
+                        <mat-menu #menu="matMenu" xPosition="before">
+                                <a class="profile-menu white" href="#" >Profile</a>
+                                <li class="divider"></li>
+                                <a class="profile-menu white" href="#">Sign Out</a>
+                        </mat-menu>
+                    </a>
+                </li>
+            </ul>
+         </div>
+      </div>
+      <section class="content-header admin-widget">
+          <h1>
+            Settings
+          </h1>
+      </section>
+      <section class="content admin-widget">
+        <div class="box box-default">
+            <div class="box-body">
+                <table class="table">
+                    <tbody><tr>
+                        <td style="border:none!important;">
+                            <h4>Team Options</h4>
+                            <img class="img-thumbnail" style="height:28px;padding: 1px;margin: -3px 5px 0 0;" src="//cdn.echofin.co/avatar/b7e64405.png?t=1551496349357">
+                            <a href="">
+                                Change team avatar
+                            </a>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" > Display user count on chat header
+                                </label>
+                                <button class="btn btn-xs btn-link" >
+                                    <span class="fa fa-question-circle-o fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" > Disable Direct Messages between users
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Allow regular users to send Signals
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>Privacy Options</h4>
+                            <p class="text-muted">This mode disables the registration page and only admin can add or invite users from the Users section.</p>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Make your team private.
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>Custom Scripts</h4>
+                            <div class="checkbox">
+                                <a href="">
+                                    Edit scripts
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>Features</h4>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Enable Web Trader panel
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>Customer support email</h4>
+                            <form>
+                                <mat-form-field style="display:inline-block; width: 90%; padding-right: 10px;">
+                                    <input matInput placeholder="Customer support email
+                                    " value="contact@marketmastersacademy.com"  class="example-right-align">
+                                </mat-form-field>
+                                <span class="input-group-btn" style="display:inline-block;">
+                                    <button class="btn btn-success btn-blue">
+                                        Save
+                                    </button>
+                                </span>
+                            </form>
+                            <p>This email will be used in the email billing receipts.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>Chat Reload</h4>
+                            <p>Reload the chat app on your users' web browser. Use with caution!</p>
+                            <button class="btn btn-danger">Reload</button>
+                        </td>
+                    </tr>
+                </tbody></table>
+                        <h4>Force close stream</h4>
+                        <p>
+                            Close video stream |
+                            <span class="text-warning">Closed</span>
+                            <button class="btn btn-link" ><span class="fa fa-refresh"></span></button>
+                        </p>
+                        <button class="btn btn-success btn-md" disabled="disabled">Close Stream</button>
+            </div>
+        </div>
+    </section>
+    </mat-drawer-container>
+  </div>

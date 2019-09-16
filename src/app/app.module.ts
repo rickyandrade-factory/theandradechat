@@ -57,6 +57,7 @@ import { AdminwidgetComponent } from './adminwidget/adminwidget.component';
 import { CustomwidgetComponent } from './adminwidget/customwidget-dialog.component';
 import { ConfiguredialogComponent } from './adminwidget/configure-dialog.component';
 import { AdminonlineativityComponent } from './adminonlineativity/adminonlineativity.component';
+import { AdminsettingsComponent } from './adminsettings/adminsettings.component';
 
 @NgModule({
   declarations: [
@@ -99,6 +100,7 @@ import { AdminonlineativityComponent } from './adminonlineativity/adminonlineati
     CustomwidgetComponent,
     ConfiguredialogComponent,
     AdminonlineativityComponent,
+    AdminsettingsComponent,
   ],
   imports: [
     BrowserModule,
