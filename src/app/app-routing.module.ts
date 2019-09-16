@@ -43,6 +43,7 @@ const routes: Routes = [
   { path: 'adminapi', component: AdminapiComponent},
   { path: 'admincompliance', component: AdmincomplianceComponent},
   { path: 'adminwidget', component: AdminwidgetComponent},
+  { path: 'adminonlineativity', component: AdminonlineativityComponent},
   { path: 'adminsettings', component:AdminsettingsComponent},
 ];
 
