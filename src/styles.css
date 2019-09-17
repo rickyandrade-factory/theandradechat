@@ -10563,6 +10563,9 @@ span.cashtag_text:hover {
     display: block;
     overflow: inherit!important;
   }
+  .admin-dashboard .mat-drawer-backdrop {
+      display: none;
+  }
   h1{
     font-size:1.6em;
   }
