@@ -58,6 +58,8 @@ import { CustomwidgetComponent } from './adminwidget/customwidget-dialog.compone
 import { ConfiguredialogComponent } from './adminwidget/configure-dialog.component';
 import { AdminonlineativityComponent } from './adminonlineativity/adminonlineativity.component';
 import { AdminsettingsComponent } from './adminsettings/adminsettings.component';
+import { NewTeamAvatarComponent } from './adminsettings/new-teamavatar.component';
+import { CustomScriptComponent } from './adminsettings/custom-script.component';
 
 @NgModule({
   declarations: [
@@ -101,6 +103,8 @@ import { AdminsettingsComponent } from './adminsettings/adminsettings.component'
     ConfiguredialogComponent,
     AdminonlineativityComponent,
     AdminsettingsComponent,
+    NewTeamAvatarComponent,
+    CustomScriptComponent
   ],
   imports: [
     BrowserModule,
@@ -123,7 +127,7 @@ import { AdminsettingsComponent } from './adminsettings/adminsettings.component'
   ],
    entryComponents: [NewUserComponent, NewSubscriptionComponent, WithdrawOptionComponent,
      lockeddialogComponent, NewBillingComponent, CustomwidgetComponent, NewCouponsComponent, 
-     NewChatroomComponent,NewServicesComponent, ConfiguredialogComponent],
+     NewChatroomComponent,NewServicesComponent, ConfiguredialogComponent, NewTeamAvatarComponent,CustomScriptComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
