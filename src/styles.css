@@ -1258,8 +1258,8 @@ h6.teamName b{
 app-admincompliance table td a {
   color: #3c8dbc!important;
 }
-app-dashboard .right-sidenav {
-  width: 480px;
+ .right-sidenav {
+  width: 480px!important;
 }
 div#topBar {
   text-align: right;
