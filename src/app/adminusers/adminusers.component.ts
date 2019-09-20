@@ -81,14 +81,6 @@ const VERIFIED: string[] = [
 
 
 
-/**
- * @title Data table with sorting, pagination, and filtering.
- */ 
-// @Component({
-//   selector: 'table-overview-example',
-//   styleUrls: ['table-overview-example.css'],
-//   templateUrl: 'table-overview-example.html',
-// })
 
 @Component({
   selector: 'app-adminusers',
