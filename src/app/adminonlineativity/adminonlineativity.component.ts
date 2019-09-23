@@ -3,6 +3,7 @@ import {MatPaginator} from '@angular/material/paginator';
 import {MatSort} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
 import { Subscription } from 'rxjs';
+declare var $:any;
 
 export interface UserData {
   name: string;
@@ -71,6 +72,18 @@ export class AdminonlineativityComponent implements OnInit {
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
   }
+
+  ngAfterViewInit() {
+    $('.fa-angle-right').click(function(){
+      $(this).toggleClass('fa-angle-down')
+      $('.collapse_row').toggle(500);
+    });
+
+    $('.popover_text').click(function(){
+      $('.popover_tooltop').toggle(100);
+    });
+  }
+
 
   applyFilter(filterValue: string) {
     this.dataSource.filter = filterValue.trim().toLowerCase();
