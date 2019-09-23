@@ -10634,7 +10634,7 @@ app-forgotpassword .mat-drawer-inner-container{
   display: inline-block;
   overflow: inherit!important;
   max-width: 320px;
-  margin: 0 auto;
+  margin: 0 auto; 
 }
 app-sinup .mat-drawer-inner-container{
   height: auto;
