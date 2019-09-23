@@ -13,7 +13,7 @@ import { Component } from '@angular/core';
    </div>
     <div class="modal-body wrap-div">
         <div style="position: relative">
-        <img style="width: 100%" src="//cdn.echofin.co/avatar/b7e64405.png?t=1551496349357">f
+        <img style="width: 100%" src="//cdn.echofin.co/avatar/b7e64405.png?t=1551496349357">
         <div class="hoving-avatar">
             <input type="file">
             <span>SELECT NEW FILE</span>
