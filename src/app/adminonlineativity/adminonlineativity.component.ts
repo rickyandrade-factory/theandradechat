@@ -74,8 +74,8 @@ export class AdminonlineativityComponent implements OnInit {
   }
 
   ngAfterViewInit() {
-    $('.fa-angle-right').click(function(){
-      $(this).toggleClass('fa-angle-down')
+    $('.collapse_carret').click(function(){
+      $('.collapse_carret .fa-angle-right').toggleClass('fa-angle-down')
       $('.collapse_row').toggle(500);
     });
 
