@@ -7525,6 +7525,8 @@ button.close {
   background: transparent;
   border: 0;
   -webkit-appearance: none;
+  outline: none;
+  box-shadow: none;
 }
 .modal-open {
   overflow: hidden;
@@ -8159,6 +8161,7 @@ button.close {
 .container-fluid:after,
 .row:after,
 .form-horizontal .form-group:after,
+.container-fluid:after,
 .btn-toolbar:after,
 .btn-group-vertical > .btn-group:after,
 .nav:after,
