@@ -60,6 +60,7 @@ import { AdminonlineativityComponent } from './adminonlineativity/adminonlineati
 import { AdminsettingsComponent } from './adminsettings/adminsettings.component';
 import { NewTeamAvatarComponent } from './adminsettings/new-teamavatar.component';
 import { CustomScriptComponent } from './adminsettings/custom-script.component';
+import { ViewPaymentComponent } from './adminpayouts/view-payment.component';
 
 @NgModule({
   declarations: [
@@ -104,7 +105,8 @@ import { CustomScriptComponent } from './adminsettings/custom-script.component';
     AdminonlineativityComponent,
     AdminsettingsComponent,
     NewTeamAvatarComponent,
-    CustomScriptComponent
+    CustomScriptComponent,
+    ViewPaymentComponent
   ],
   imports: [
     BrowserModule,
@@ -127,7 +129,7 @@ import { CustomScriptComponent } from './adminsettings/custom-script.component';
   ],
    entryComponents: [NewUserComponent, NewSubscriptionComponent, WithdrawOptionComponent,
      lockeddialogComponent, NewBillingComponent, CustomwidgetComponent, NewCouponsComponent, 
-     NewChatroomComponent,NewServicesComponent, ConfiguredialogComponent, NewTeamAvatarComponent,CustomScriptComponent],
+     NewChatroomComponent,NewServicesComponent, ConfiguredialogComponent, NewTeamAvatarComponent,CustomScriptComponent,ViewPaymentComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

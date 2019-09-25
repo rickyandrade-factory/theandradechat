@@ -4127,6 +4127,14 @@ table th[class*="col-"] {
     -ms-overflow-style: -ms-autohiding-scrollbar;
     border: 1px solid #292929;
   }
+  .new_user_dialog {
+      width: 100%;
+  }
+  .view_payment .col-xs-12{
+    width: 100%;
+    text-align: left;
+    padding:0!important;
+  }
   .table-responsive > .table {
     margin-bottom: 0;
   }
