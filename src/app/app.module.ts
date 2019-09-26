@@ -120,7 +120,7 @@ import { AdminonlineativityComponent } from './adminonlineativity/adminonlineati
     AuthGuard
   ],
    entryComponents: [NewUserComponent, NewSubscriptionComponent, WithdrawOptionComponent,
-     lockeddialogComponent, NewBillingComponent, CustomwidgetComponent, NewCouponsComponent, 
+     lockeddialogComponent, NewBillingComponent, CustomwidgetComponent, NewCouponsComponent,
      NewChatroomComponent,NewServicesComponent, ConfiguredialogComponent],
   bootstrap: [AppComponent]
 })

@@ -3,6 +3,8 @@ import { HttpService } from './http.service';
 import { LocalStorageService, SessionStorageService, LocalStorage, SessionStorage } from 'angular-web-storage';
 import { User } from '../models';
 import { Router } from '@angular/router';
+import { JwtHelperService } from '@auth0/angular-jwt';
+
 
 
 @Injectable()
@@ -36,6 +38,7 @@ export class AuthService {
 
   public loginSuccess(user) {
     this.user.setLoginUser(user.data);
+    this.user.setAllRooms(user.rooms);
     this.afterLogin();
   }
 
@@ -47,6 +50,6 @@ export class AuthService {
   }
   public logout() {
     this.user.logout();
-    // this.router.navigate(['/login']);
+    this.router.navigate(['/login']);
   }
 }

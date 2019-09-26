@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {MatInputModule} from '@angular/material/input';
 import {AuthService} from '../services/auth.service';
+import { User } from '../models';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -9,9 +11,13 @@ import {AuthService} from '../services/auth.service';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private auth: AuthService) { }
+  constructor(private auth: AuthService, public user: User, public router: Router) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    if (this.user.getLoginUserId()) {
+      this.router.navigate(['/dashboard']);
+    }
+  }
 
   loginUser(event) {
     event.preventDefault();

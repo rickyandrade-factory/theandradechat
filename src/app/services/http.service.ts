@@ -7,6 +7,7 @@ import { Observable } from 'rxjs';
 @Injectable()
 export class HttpService {
   public static localStorageUserName = 'login_user';
+  public static localStorageAllRooms = 'all_rooms';
 
   public user: User;
 
@@ -39,6 +40,7 @@ export class HttpService {
 
   // tslint:disable-next-line: variable-name
   getEndPoint(string: string, method: string, queryParam: string = '') {
+    console.log(this.getBaseUrl() + this.getApiEndPoint(string));
     if (method === 'GET') {
       return this.getBaseUrl() + this.getApiEndPoint(string) + '?' + queryParam;
     }

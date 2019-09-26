@@ -2,7 +2,7 @@ import { HttpService } from '../services/http.service';
 import { LocalStorageService, SessionStorageService, LocalStorage, SessionStorage } from 'angular-web-storage';
 
 export class User {
-  constructor( ) { }
+  constructor() { }
 
   providerId: string;
   accessToken: string;
@@ -24,7 +24,7 @@ export class User {
   }
 
   getLoginUserId() {
-    if(this.getLoginUser()) {
+    if (this.getLoginUser()) {
       return JSON.parse(this.getLoginUser()).id;
     }
     return false;
@@ -42,12 +42,20 @@ export class User {
     return JSON.parse(this.getLoginUser()).userFirstname + ' ' + JSON.parse(this.getLoginUser()).userLastname;
   }
 
-  setLoginUser(user, expired: number = 0) {
+  setLoginUser(user) {
     localStorage.setItem(HttpService.localStorageUserName, JSON.stringify(user));
   }
 
   get() {
     return localStorage.getItem(HttpService.localStorageUserName);
+  }
+
+  setAllRooms(rooms) {
+    localStorage.setItem(HttpService.localStorageAllRooms, JSON.stringify(rooms));
+  }
+
+  getRooms() {
+    return localStorage.getItem(HttpService.localStorageAllRooms);
   }
 
   clear() {
@@ -56,6 +64,7 @@ export class User {
 
   logout() {
     console.log('-------logging-out');
+    localStorage.clear();
     localStorage.removeItem(HttpService.localStorageUserName);
   }
 }

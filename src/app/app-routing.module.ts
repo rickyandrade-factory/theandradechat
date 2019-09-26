@@ -21,28 +21,29 @@ import { AdminapiComponent } from './adminapi/adminapi.component';
 import { AdmincomplianceComponent } from './admincompliance/admincompliance.component';
 import { AdminwidgetComponent } from './adminwidget/adminwidget.component';
 import { AdminonlineativityComponent } from './adminonlineativity/adminonlineativity.component';
-// import { AuthGuard } from './auth.guard';
+import { AuthGuard } from './auth.guard';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: SignupComponent },
   { path: 'forgotpassword', component: ForgotpasswordComponent },
-  { path: 'dashboard', component: DashboardComponent},
-  { path: 'admindashboard', component: AdmindashboardComponent},
-  { path: 'adminusers', component: AdminusersComponent},
-  { path: 'adminpayments', component: AdminpaymentsComponent},
-  { path: 'adminsubscriptions', component: AdminsubscriptionsComponent},
-  { path: 'adminpayouts', component: AdminpayoutsComponent},
-  { path: 'adminbilling', component: AdminbillingComponent},
-  { path: 'onpoint-room', component: OnpointRoomComponent},
-  { path: 'admincoupons', component: AdmincouponsComponent},
-  { path: 'adminchatroom', component: AdminchatroomComponent},
-  { path: 'adminservices', component: AdminservicesComponent},
-  { path: 'adminapi', component: AdminapiComponent},
-  { path: 'admincompliance', component: AdmincomplianceComponent},
-  { path: 'adminwidget', component: AdminwidgetComponent},
-  { path: 'adminonlineactivity', component:AdminonlineativityComponent},
+  { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard]},
+  { path: 'admindashboard', component: AdmindashboardComponent, canActivate: [AuthGuard]},
+  { path: 'adminusers', component: AdminusersComponent, canActivate: [AuthGuard]},
+  { path: 'adminpayments', component: AdminpaymentsComponent, canActivate: [AuthGuard]},
+  { path: 'adminsubscriptions', component: AdminsubscriptionsComponent, canActivate: [AuthGuard]},
+  { path: 'adminpayouts', component: AdminpayoutsComponent, canActivate: [AuthGuard]},
+  { path: 'adminbilling', component: AdminbillingComponent, canActivate: [AuthGuard]},
+  { path: 'onpoint-room', component: OnpointRoomComponent, canActivate: [AuthGuard]},
+  { path: 'admincoupons', component: AdmincouponsComponent, canActivate: [AuthGuard]},
+  { path: 'adminchatroom', component: AdminchatroomComponent, canActivate: [AuthGuard]},
+  { path: 'adminservices', component: AdminservicesComponent, canActivate: [AuthGuard]},
+  { path: 'adminapi', component: AdminapiComponent, canActivate: [AuthGuard]},
+  { path: 'admincompliance', component: AdmincomplianceComponent, canActivate: [AuthGuard]},
+  { path: 'adminwidget', component: AdminwidgetComponent, canActivate: [AuthGuard]},
+  { path: 'adminonlineactivity', component: AdminonlineativityComponent, canActivate: [AuthGuard]},
+  {path: '**', redirectTo: '/dashboard'}
 ];
 
 @NgModule({
