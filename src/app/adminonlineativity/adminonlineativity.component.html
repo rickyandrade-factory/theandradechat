@@ -19,12 +19,12 @@
         <div class="navbar-right navbar-custom-menu">
             <ul class="nav navbar-nav">
                 <li class="settings-menu">
-                    <a ui-sref="app.settings" href="#">
+                    <a [routerLink]="['/adminsettings']" routerLinkActive="selectedRoom">
                         <span class="fa fa-gears fa-fw"></span>
                     </a>
                 </li>
                 <li>
-                    <a target="_blank" href="/">
+                    <a [routerLink]="['/dashboard']" target="_blank" href="/">
                         <span class="fa fa-comments fa-fw"></span>
                     </a>
                 </li>
@@ -78,7 +78,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="box box-default" >
+                        <div class="box box-default" style="overflow: visible;">
                             <div class="mat-elevation-z8">
                                 <table>
                                     <thead>

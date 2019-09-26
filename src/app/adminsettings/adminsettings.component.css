@@ -68,3 +68,9 @@ td{
 .admin-widget h3 {
     font-size: 1.4em;
 }
+table a{
+    color: #007590;
+}
+.box-body {
+    padding: 15px;
+}

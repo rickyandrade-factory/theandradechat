@@ -16,6 +16,10 @@ body{
 .checkbox label {
   font-size: 15px;
 }
+.p_12{
+  font-size:12px;
+  color:#888;
+}
 .box.box-default{
   overflow-x:auto;
   max-width: 100%;
@@ -25,6 +29,48 @@ body{
 }
 .mat-tab-header-pagination-chevron{
   border-color: #fff;
+}
+.new-teamavatar textarea.inputText {
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  box-shadow: none;
+  outline: none;
+}
+.new-teamavatar textarea.inputText:focus{
+  box-shadow: none;
+  outline: none;
+}
+.hoving-avatar input[type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 99;
+  width: 100%;
+}
+.hoving-avatar span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
+  background-color: rgba(0,0,0,0.2);
+  cursor:pointer;
+}
+.hoving-avatar input[type="file"]:hover + span{
+  opacity: 1;
 }
 mat-calendar table {
   background: #fff;
@@ -371,6 +417,7 @@ a.profile-menu {
 .admin-dashboard .navbar-custom-menu {
   right:0;
   background: transparent;
+  position: absolute!important;
 }
 .admin-dashboard .mat-drawer-container button.mat-button {
   padding: 14px;
@@ -1211,8 +1258,8 @@ h6.teamName b{
 app-admincompliance table td a {
   color: #3c8dbc!important;
 }
-app-dashboard .right-sidenav {
-  width: 480px;
+ .right-sidenav {
+  width: 480px!important;
 }
 div#topBar {
   text-align: right;
@@ -1529,6 +1576,7 @@ button.btn.btn-blue {
   text-align: center;
   padding-top: 130px;
   position: fixed;
+  z-index:9; 
   left: 0;
   top: 0;
   box-shadow: 0px 0px 3px #13282d;
@@ -1659,7 +1707,7 @@ app-dashboard .mat-drawer.mat-drawer-side {
 
 .sidebar-match {
   border: none;
-  width: 219px;
+  width: 219px; 
   height: 65px!important;
 }
 .dropdown>.dropdown-toggle {
@@ -4078,6 +4126,14 @@ table th[class*="col-"] {
     overflow-y: hidden;
     -ms-overflow-style: -ms-autohiding-scrollbar;
     border: 1px solid #292929;
+  }
+  .new_user_dialog {
+      width: 100%;
+  }
+  .view_payment .col-xs-12{
+    width: 100%;
+    text-align: left;
+    padding:0!important;
   }
   .table-responsive > .table {
     margin-bottom: 0;
@@ -7477,6 +7533,8 @@ button.close {
   background: transparent;
   border: 0;
   -webkit-appearance: none;
+  outline: none;
+  box-shadow: none;
 }
 .modal-open {
   overflow: hidden;
@@ -8111,6 +8169,7 @@ button.close {
 .container-fluid:after,
 .row:after,
 .form-horizontal .form-group:after,
+.container-fluid:after,
 .btn-toolbar:after,
 .btn-group-vertical > .btn-group:after,
 .nav:after,
@@ -10516,6 +10575,9 @@ span.cashtag_text:hover {
     display: block;
     overflow: inherit!important;
   }
+  .admin-dashboard .mat-drawer-backdrop {
+      display: none;
+  }
   h1{
     font-size:1.6em;
   }
@@ -10583,7 +10645,7 @@ app-forgotpassword .mat-drawer-inner-container{
   display: inline-block;
   overflow: inherit!important;
   max-width: 320px;
-  margin: 0 auto;
+  margin: 0 auto; 
 }
 app-sinup .mat-drawer-inner-container{
   height: auto;

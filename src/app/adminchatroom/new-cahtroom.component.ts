@@ -47,7 +47,7 @@ import { Component } from '@angular/core';
                         </span>
             </div>
         </div>
-        <div class="row">f
+        <div class="row">
             <div class="col-xs-12">
             <h5>Who is able to post messages:</h5>
                 <mat-radio-group aria-label="Select an option">

@@ -57,6 +57,10 @@ import { AdminwidgetComponent } from './adminwidget/adminwidget.component';
 import { CustomwidgetComponent } from './adminwidget/customwidget-dialog.component';
 import { ConfiguredialogComponent } from './adminwidget/configure-dialog.component';
 import { AdminonlineativityComponent } from './adminonlineativity/adminonlineativity.component';
+import { AdminsettingsComponent } from './adminsettings/adminsettings.component';
+import { NewTeamAvatarComponent } from './adminsettings/new-teamavatar.component';
+import { CustomScriptComponent } from './adminsettings/custom-script.component';
+import { ViewPaymentComponent } from './adminpayouts/view-payment.component';
 
 @NgModule({
   declarations: [
@@ -99,6 +103,10 @@ import { AdminonlineativityComponent } from './adminonlineativity/adminonlineati
     CustomwidgetComponent,
     ConfiguredialogComponent,
     AdminonlineativityComponent,
+    AdminsettingsComponent,
+    NewTeamAvatarComponent,
+    CustomScriptComponent,
+    ViewPaymentComponent
   ],
   imports: [
     BrowserModule,
@@ -121,7 +129,8 @@ import { AdminonlineativityComponent } from './adminonlineativity/adminonlineati
   ],
    entryComponents: [NewUserComponent, NewSubscriptionComponent, WithdrawOptionComponent,
      lockeddialogComponent, NewBillingComponent, CustomwidgetComponent, NewCouponsComponent,
-     NewChatroomComponent,NewServicesComponent, ConfiguredialogComponent],
+     // tslint:disable-next-line: max-line-length
+     NewChatroomComponent, NewServicesComponent, ConfiguredialogComponent, NewTeamAvatarComponent, CustomScriptComponent,ViewPaymentComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

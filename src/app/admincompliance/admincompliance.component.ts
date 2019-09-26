@@ -104,7 +104,7 @@ export class AdmincomplianceComponent implements OnInit {
       this.dataSource.paginator.firstPage();
     }
   }
-}
+} 
 
 /** Builds and returns a new User. */
 function createNewUser(id: number): UserData {

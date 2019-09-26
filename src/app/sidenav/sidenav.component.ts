@@ -22,6 +22,7 @@ export class SidenavComponent implements OnInit {
   public appConfig: any = {};
   private user: User;
   private fullnameq;
+  public userfirstname;
 
   files = [
     { name: 'foo.js', content: '' },
@@ -29,6 +30,7 @@ export class SidenavComponent implements OnInit {
   ];
   constructor(private dialog: MatDialog, private config: AppConfig, private auth: AuthService) {
     this.appConfig = this.config.getConfig();
+    this.userfirstname = 'mye';
     this.socket = io.connect(this.appConfig.apiUrl);
     // this.user = JSON.parse(this.user.get());
     // this.fullname = JSON.parse(this.user.get());

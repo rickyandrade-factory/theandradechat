@@ -7,7 +7,8 @@ import {MatTableDataSource} from '@angular/material/table';
 import { Subscription } from 'rxjs';
 
 import {VERSION, MatDialog, MatDialogRef} from '@angular/material';
- import { WithdrawOptionComponent } from './withdraw-option.component';
+import { WithdrawOptionComponent } from './withdraw-option.component';
+import { ViewPaymentComponent } from './view-payment.component';
 
 
 
@@ -112,6 +113,10 @@ export class AdminpayoutsComponent implements OnInit {
   
   openAddFileDialog() {
     this.fileNameDialogRef = this.dialog.open(WithdrawOptionComponent);
+  }
+
+  openpayment() {
+    this.fileNameDialogRef = this.dialog.open(ViewPaymentComponent);
   }
 
   constructor(private dialog: MatDialog) {
