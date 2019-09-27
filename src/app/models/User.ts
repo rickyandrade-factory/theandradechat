@@ -25,7 +25,7 @@ export class User {
 
   getLoginUserId() {
     if (this.getLoginUser()) {
-      return JSON.parse(this.getLoginUser()).id;
+      return JSON.parse(this.getLoginUser())._id;
     }
     return false;
   }

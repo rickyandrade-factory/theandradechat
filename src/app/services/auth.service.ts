@@ -24,8 +24,8 @@ export class AuthService {
     return this.user.getLoginUserId() ? true : false;
   }
 
-  public loginUser(username, password) {
-    return this.http.getUserDetails({ username, password }).subscribe(
+  public loginUser(email, password) {
+    return this.http.getUserDetails({ email, password }).subscribe(
       data => {
         if (data && data.hasOwnProperty('success')) {
           this.loginSuccess(data);
@@ -38,11 +38,12 @@ export class AuthService {
 
   public loginSuccess(user) {
     this.user.setLoginUser(user.data);
-    this.user.setAllRooms(user.rooms);
+    this.user.setAllRooms(user.data.rooms);
     this.afterLogin();
   }
 
   public afterLogin() {
+    console.log("user.data-----");
     this.router.navigate(['/dashboard']);
   }
   public loginFailed() {
