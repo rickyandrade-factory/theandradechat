@@ -30,6 +30,9 @@ export class User {
     return false;
   }
 
+  getUser() {
+    return JSON.parse(this.getLoginUser());
+  }
   getFirstName() {
     return JSON.parse(this.getLoginUser()).userFirstname;
   }
@@ -55,7 +58,7 @@ export class User {
   }
 
   getRooms() {
-    return localStorage.getItem(HttpService.localStorageAllRooms);
+    return JSON.parse(localStorage.getItem(HttpService.localStorageAllRooms));
   }
 
   clear() {

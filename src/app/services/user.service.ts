@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { User } from '../models/User';
-  import { from } from 'rxjs';
+import { from } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -13,11 +13,11 @@ export class UserService {
     this.userModel = userModel;
   }
 
-  getUser(){
+  getUser() {
     return this.userModel.getUser();;
   }
 
-  getRooms(){
+  getRooms() {
     return this.userModel.getRooms();
   }
 

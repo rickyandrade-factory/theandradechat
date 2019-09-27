@@ -1,14 +1,14 @@
 <div class="login-container">
   <mat-drawer-container class="example-container" autosize style="float:right; width:calc(100% - 80px); overflow:hidden!important;">
       <mat-drawer #drawer class="example-sidenav sidebar navbar-collapse"  [opened]="screenWidth > 840" [mode]="(screenWidth > 840) ? 'side' : 'over'">
-        <app-sidenav></app-sidenav>
+        <app-sidenav [rooms] = "rooms"></app-sidenav>
         <div class="example-sidenav-content mobile-cross">
             <button class="" hamburger-drv="" mat-button
               (click)="drawer.toggle()">
               <i class="fa fa-close"></i>
             </button>
           </div>
-      </mat-drawer> 
+      </mat-drawer>
       <div class="example-sidenav-content">
           <div class="navbar navbar-fixed-top navbar-inverse navbar-static-top" style="position:static!important;" [ngStyle]="{'display' : (screenWidth > 840) ? '' : 'block'}">
               <button class="hamburgerHeader hamburger hamburger-arrow-left" hamburger-drv="" mat-button
@@ -28,7 +28,7 @@
           </div>
 
         <mat-drawer-container class="example-container container-all-page" autosize >
-            <mat-drawer #drawer1 class="example-sidenav sidebar navbar-collapse widget-sidenav right-sidenav" mode="side" opened="true" 
+            <mat-drawer #drawer1 class="example-sidenav sidebar navbar-collapse widget-sidenav right-sidenav" mode="side" opened="true"
             position="end" [opened]="screenWidth > 840" [mode]="(screenWidth > 840) ? 'side' : 'over'" >
                         <app-chatarea></app-chatarea>
             </mat-drawer>
@@ -71,12 +71,12 @@
                   <button class="hidden-xs header-button ng-scope" mat-button (click)="drawer4.toggle()">
                   <span class="icon fa fa-address-book-o"></span><br>
                   <span class="label ng-binding">DIRECTORY</span>
-                  </button> 
+                  </button>
                   <div class="example-sidenav-content widget-btn side-tp ">
                      <button class="hamburgerHeader header-button hamburger hamburger-arrow-left " hamburger-drv="" mat-button (click)="drawer1.toggle()">
                      <span class="icon material-icons ng-binding">apps</span><br>
                      <span class="label ng-binding">WIDGETS</span>
-                     </button>  
+                     </button>
                   </div>
                </div>
             </div>

@@ -13,7 +13,7 @@
         ng-class="'userStatus' + currentUser.status"></span>
       <img class="sidebar-avatar" ng-src="//cdn.echofin.co/avatars/5d053022.png"
         src="//cdn.echofin.co/avatars/5d053022.png">
-      <strong class="sidebar-username ng-binding">userfirstname</strong>
+      <strong class="text-capitalize sidebar-username ng-binding">{{user.firstname}} {{user.lastname}}</strong>
       <span class="fa fa-angle-down"></span>
     </button>
     <!-- dropdown for user online status -->
@@ -42,18 +42,22 @@
   <li class="rooms-sidebar-header">ROOMS</li>
 
   <li class="ng-scope" *ngFor="let room of rooms">
-    <a (click)="!room.active ? openAddFileDialog() : ''" [routerLink]="['/{room.roomTitle}']" routerLinkActive="selectedRoom" href="#" class="flex-parent locked">
-      <span class="flex-child">
-        <i class="roomIcon fa fa-fw fa-hashtag" aria-hidden="true"></i>
-        <span class="room-name ng-binding">{{room.roomTitle}}</span>
-      </span>
-      <span class="flex-child-icons">
-        <i style="font-size:12px;" class="roomIcon fa fa-fw ng-scope fa-lock" aria-hidden="true"></i>
-        <i style="font-size:12px;" class="roomIcon fa fa-eye ng-scope" aria-hidden="true"></i>
-      </span>
-    </a>
+      <a
+      (click)="room.status == 'private' ? openAddFileDialog() : ''"
+      [routerLink]="['/{room.title}']" routerLinkActive="selectedRoom"
+      href="#" class="flex-parent locked">
+        <span class="flex-child">
+          <i class="roomIcon fa fa-fw fa-hashtag" aria-hidden="true"></i>
+          <span class="text-capitalize room-name ng-binding">{{room.title}}</span>
+        </span>
+        <span class="flex-child-icons">
+          <i style="font-size:12px;" [ngClass]="room.status === 'private' ? 'fa-lock' : 'fa-globe'" class="roomIcon fa fa-fw ng-scope" aria-hidden="true"></i>
+          <i style="font-size:12px;" class="roomIcon fa fa-eye ng-scope" aria-hidden="true"></i>
+        </span>
+      </a>
 
-  </li>
+    </li>
+
 
 
   <!-- <li class="ng-scope">

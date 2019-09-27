@@ -1,6 +1,6 @@
-import { Component, OnInit, Inject } from '@angular/core';
+import { Component, OnInit, Inject, Input } from '@angular/core';
 import { AuthService } from '../services/auth.service';
-import { User } from '../models';
+import { UserService } from '../services/user.service';
 import * as io from 'socket.io-client';
 import { AppConfig } from '../app.config';
 
@@ -16,24 +16,27 @@ import { lockeddialogComponent } from './locked-dialog.component';
 export class SidenavComponent implements OnInit {
 
   version = VERSION;
-  rooms: [];
+  @Input() rooms: [];
   fileNameDialogRef: MatDialogRef<lockeddialogComponent>;
   socket: SocketIOClient.Socket;
   public appConfig: any = {};
-  private user: User;
-  private fullnameq;
-  public userfirstname;
+  dialog: MatDialog;
+  public auth: AuthService;
+  public user: any = {
+    firstname: String,
+    lastname: String
+  };
 
-  files = [
-    { name: 'foo.js', content: '' },
-    { name: 'bar.js', content: '' }
-  ];
-  constructor(private dialog: MatDialog, private config: AppConfig, private auth: AuthService) {
-    this.appConfig = this.config.getConfig();
-    this.userfirstname = 'mye';
+  constructor(
+    config: AppConfig,
+    userService: UserService,
+    authService: AuthService
+  ) {
+    this.appConfig = config.getConfig();
     this.socket = io.connect(this.appConfig.apiUrl);
-    // this.user = JSON.parse(this.user.get());
-    // this.fullname = JSON.parse(this.user.get());
+    this.rooms = userService.getRooms();
+    this.user = userService.getUser();
+    this.auth = authService;
   }
 
   openAddFileDialog() {
@@ -41,19 +44,6 @@ export class SidenavComponent implements OnInit {
   }
 
   ngOnInit() {
-    if (this.user) {
-      this.rooms = JSON.parse(this.user.getRooms());
-      console.log(this.rooms);
-      // const joiningRoom = this.user.rooms.find((element) => {
-      //   return element.isActive;
-      // });
-      // this.socket.on('historyCatchUp', (data: any) => {
-      // });
-      // this.socket.emit('joinRoom', joiningRoom.roomUsername, newNumberOfMembers => {
-      //   console.log(newNumberOfMembers);
-      // });
-      // this.socket.emit('event1', {msg: 'Client to server, can you hear me server?'});
-    }
 
   }
 
