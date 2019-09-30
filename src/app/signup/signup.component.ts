@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 import { validateHorizontalPosition } from '@angular/cdk/overlay';
-import {AuthService} from '../services/auth.service';
+import { AuthService } from '../services/auth.service';
 import { User } from '../models';
 import { Router } from '@angular/router';
 
@@ -12,28 +13,23 @@ import { Router } from '@angular/router';
 export class SignupComponent implements OnInit {
 
   errorMessage: {}
+  useData = new FormGroup({
+    fullname: new FormControl(""),
+    username: new FormControl(""),
+    email: new FormControl(""),
+    password: new FormControl(""),
+    cpassword: new FormControl("")
+  })
+
 
   constructor(private auth: AuthService, public user: User, public router: Router) { }
 
   ngOnInit() {
   }
 
-  /**
-   * {
-	"firstname":"tarun",
-	"lastname":"jangra",
-	"username":"tarun",
-	"email":"tarun",
-	"password": "123",
-	"status": 0
-
-}
-   */
-  registerUser(event) {
-    event.preventDefault();
+  registerUser() {
     let userData = this.validateData();
     if (userData) {
-      userData.status = 1;
       this.auth.registerUser(userData);
     } else {
       console.log(this.errorMessage);
@@ -45,50 +41,46 @@ export class SignupComponent implements OnInit {
   }
 
   validateData() {
-    const fullname = event.target.querySelector('#fullname').value;
-    const email = event.target.querySelector('#email').value;
-    const username = event.target.querySelector('#username').value;
-    const password = event.target.querySelector('#password').value;
-    const cpassword = event.target.querySelector('#cpassword').value;
-    let userData = {
-      firstname: String,
-      lastname: String,
-      email: String,
-      username: String,
-      password: String,
-      status: Number,
+    let userData = this.useData.value;
+    var procesData = {
+      firstname: "",
+      lastname: "",
+      email: "",
+      username: "",
+      password: "",
+      status: 1,
     };
-
-    if (fullname) {
-      let name = fullname.split(" ", 2);
-      userData.firstname = name[0];
+    if (userData.fullname) {
+      let name = userData.fullname.split(" ", 2);
+      procesData.firstname = name[0];
       if (name.length > 1) {
-        userData.lastname = name[1];
+        procesData.lastname = name[1];
       }
     } else {
-      this.errorMessage = {message: "Please enter a valid fullname"}
+      this.errorMessage = { message: "Please enter a valid fullname" }
       return false;
     }
 
-    if (this.validateEmail(email)) {
-      userData.email = email;
+    if (this.validateEmail(userData.email)) {
+      procesData.email = userData.email;
     } else {
-      this.errorMessage = {message: "Please enter a valid email"}
+      this.errorMessage = { message: "Please enter a valid email" }
       return false;
     }
-    if (username) {
-      userData.username = username;
+    if (userData.username) {
+      procesData.username = userData.username;
     } else {
-      this.errorMessage = {message: "Please enter a valid username"}
+      this.errorMessage = { message: "Please enter a valid username" }
       return false;
     }
-    if (password && cpassword && password == cpassword) {
-      userData.password = password;
+    if (userData.password && userData.cpassword && userData.password == userData.cpassword) {
+      procesData.password = userData.password;
     } else {
-      this.errorMessage = {message: "Password does not match"}
+      this.errorMessage = { message: "Password does not match" }
       return false;
     }
-    return userData;
+    return procesData;
   }
 
 }
+

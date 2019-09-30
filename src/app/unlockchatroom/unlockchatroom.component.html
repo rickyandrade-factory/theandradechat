@@ -1,4 +1,4 @@
-<div class="page-data wrap_messages">
+<div class=" wrap_messages">
   <div class="msg_placeholder ng-scope messagelineodd msg_placeholder_sep msg_delivered" *ngFor="let msg of messages">
     <div user-popover="" class="msg_avatar " style="cursor: pointer;" title="">
       <img style="border-radius: 4px;width:40px; height:40px"
@@ -39,7 +39,7 @@
         <i class="fa fa-bullhorn" aria-hidden="true"></i></button>
       <input id="chatbox" [(ngModel)]="chat.message" name="chatMessage" style="cursor: text;" required>
       <span id="faux" style="display: none;"></span>
-      <button type="submit" class="btn btn-success">Submit</button>
+      <!-- <button type="submit" class="btn btn-success">Submit</button> -->
     </div>
   </div>
 </form>

@@ -756,6 +756,11 @@ a.profile-menu {
   min-width: 200px;
   box-shadow: 0px 0px 10px 0 #adadad;
  }
+ .chatDiv input {
+  margin: 0!important;
+  width: calc(100% - 155px);
+  border: none;
+}
 
 
 #uploadBtn{
@@ -1645,7 +1650,7 @@ app-dashboard .mat-drawer.mat-drawer-side {
 .mat-drawer-content{
   max-width: 100%;
   /* background-color: #F7fbfe; */
-  /* overflow: hidden!important; */
+  overflow: hidden!important;
 }
 .messages-sidebar-header, .rooms-sidebar-header, .sidebar .nav-sidebar .nav-item-header {
   background-color: #0e2226!important;
@@ -1681,7 +1686,7 @@ app-dashboard .mat-drawer.mat-drawer-side {
 .page-data {
   background-color: #F7fbfe;
   color: #000;
-  height: calc(100vh - 129px);
+  height: 100vh;
   overflow-y: scroll;
   padding-bottom: 10px;
 }

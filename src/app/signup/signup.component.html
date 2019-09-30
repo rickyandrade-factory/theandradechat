@@ -6,26 +6,32 @@
         <div>
           <h1>Sign Up</h1>
           <p></p>
-          <form (submit)="registerUser($event)">
+          <!-- <form (submit)="registerUser($event)"> -->
+            <form [formGroup]= "useData" (ngSubmit)="registerUser()">
             <div class="form-input">
               <div class="input-group input-field">
-                <input type="text" #fullname id="fullname" class="inputText" required />
+                <!-- <input type="text" #fullname id="fullname" class="inputText" required /> -->
+                <input class="inputText" formControlName="fullname" name="fullname" style="cursor: text;" required>
                 <span class="floating-label">Full Name *</span>
               </div>
               <div class="input-group input-field">
-                <input type="text" #email class="inputText" id="email" required />
+                <!-- <input type="text" #email class="inputText" id="email" required /> -->
+                <input class="inputText"  formControlName="email" name="email" style="cursor: text;" required>
                 <span class="floating-label">Email *</span>
               </div>
               <div class="input-group input-field">
-                <input type="text" #username class="inputText"  id="username" required />
+                <!-- <input type="text" #username class="inputText"  id="username" required /> -->
+                <input id="userdata_username" class="inputText"  formControlName="username" name="username" style="cursor: text;" required>
                 <span class="floating-label">Username *</span>
               </div>
               <div class="input-group input-field">
-                <input type="text" #password class="inputText" id="password" required />
+                <!-- <input type="text" #password class="inputText" id="password" required /> -->
+                <input id="userdata_pwd" class="inputText"  formControlName="password" name="password" style="cursor: text;" required>
                 <span class="floating-label">Password *</span>
               </div>
               <div class="input-group input-field">
-                <input type="text" #cpassword class="inputText" id="cpassword" required />
+                <!-- <input type="text" #cpassword class="inputText" id="cpassword" required /> -->
+                <input id="userdata_cpassword" class="inputText"  formControlName="cpassword" name="cpassword" style="cursor: text;" required>
                 <span class="floating-label">Retype Password *</span>
               </div>
               <div class="md-label" style="float:left; width:100%;text-align:left;">
