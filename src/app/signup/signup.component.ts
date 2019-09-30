@@ -50,7 +50,14 @@ export class SignupComponent implements OnInit {
     const username = event.target.querySelector('#username').value;
     const password = event.target.querySelector('#password').value;
     const cpassword = event.target.querySelector('#cpassword').value;
-    let userData = {};
+    let userData = {
+      firstname: String,
+      lastname: String,
+      email: String,
+      username: String,
+      password: String,
+      status: Number,
+    };
 
     if (fullname) {
       let name = fullname.split(" ", 2);
