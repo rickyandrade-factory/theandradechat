@@ -24,6 +24,19 @@ export class AuthService {
     return this.user.getLoginUserId() ? true : false;
   }
 
+  public registerUser(data) {
+    return this.http.registerUser(data).subscribe((data) => {
+        console.log(data);
+        if (data && data.hasOwnProperty('success')) {
+          this.loginSuccess(data);
+        } else {
+          this.loginFailed();
+        }
+      }
+    );
+
+  }
+
   public loginUser(email, password) {
     return this.http.getUserDetails({ email, password }).subscribe(
       data => {
@@ -37,6 +50,10 @@ export class AuthService {
   }
 
   public loginSuccess(user) {
+    this.initlializeUser(user);
+  }
+
+  public initlializeUser(user) {
     this.user.setLoginUser(user.data);
     this.user.setAllRooms(user.data.rooms);
     this.afterLogin();

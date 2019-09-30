@@ -38,6 +38,10 @@ export class HttpService {
     return this.http.post(this.getEndPoint('loginUser', 'POST'), params);
   }
 
+  registerUser(params) {
+    return this.http.post(this.getEndPoint('registerUser', 'POST'), params);
+  }
+
   // tslint:disable-next-line: variable-name
   getEndPoint(string: string, method: string, queryParam: string = '') {
     console.log(this.getBaseUrl() + this.getApiEndPoint(string));
@@ -53,7 +57,8 @@ export class HttpService {
 
   getCommonEndPoints() {
     return {
-      loginUser: 'api/login'
+      loginUser: 'api/login',
+      registerUser: 'api/register'
     };
   }
 

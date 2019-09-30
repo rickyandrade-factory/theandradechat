@@ -9,23 +9,23 @@
           <form (submit)="registerUser($event)">
             <div class="form-input">
               <div class="input-group input-field">
-                <input type="text" class="inputText" required />
+                <input type="text" #fullname id="fullname" class="inputText" required />
                 <span class="floating-label">Full Name *</span>
               </div>
               <div class="input-group input-field">
-                <input type="text" class="inputText" required />
+                <input type="text" #email class="inputText" id="email" required />
                 <span class="floating-label">Email *</span>
               </div>
               <div class="input-group input-field">
-                <input type="text" class="inputText" required />
+                <input type="text" #username class="inputText"  id="username" required />
                 <span class="floating-label">Username *</span>
               </div>
               <div class="input-group input-field">
-                <input type="text" class="inputText" required />
+                <input type="text" #password class="inputText" id="password" required />
                 <span class="floating-label">Password *</span>
               </div>
               <div class="input-group input-field">
-                <input type="text" class="inputText" required />
+                <input type="text" #cpassword class="inputText" id="cpassword" required />
                 <span class="floating-label">Retype Password *</span>
               </div>
               <div class="md-label" style="float:left; width:100%;text-align:left;">
