@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import * as io from 'socket.io-client';
-import { AppConfig } from '../app.config';
+import { Component, OnInit, Input } from '@angular/core';
+import { SocketService } from '../services/socket.service';
+import { OnpointRoomComponent } from '../onpoint-room/onpoint-room.component';
+import { UserService } from '../services/user.service';
 
 @Component({
   selector: 'app-unlockchatroom',
@@ -8,15 +9,39 @@ import { AppConfig } from '../app.config';
   styleUrls: ['./unlockchatroom.component.css']
 })
 export class UnlockchatroomComponent implements OnInit {
-  public appConfig: any = {};
-  socket: SocketIOClient.Socket;
 
-  constructor(private config: AppConfig ) {
-    this.appConfig = this.config.getConfig();
-    this.socket = io.connect(this.appConfig.apiUrl);
+  ioConnection: any;
+  messages: any = [];
+  userId: String;
+  @Input() selectedRoom: any = {
+    _id: String
+  };
+  chat = {
+    message: ""
+  };
+  constructor(private socketService: SocketService, userService: UserService) {
+    this.userId = userService.getUserId();
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
+    this.socketService.onEvent("messageToClients").subscribe((message) => {
+      this.messages.push(message.data);
+    });
+    this.socketService.onEvent('historyCatchUp').subscribe((response) => {
+      this.messages = (response.hasOwnProperty('data') ? response.data : []);
+    });
   }
 
+  sendMessage(e){
+    if(this.chat.message){
+      let msg = {
+        text: this.chat.message,
+        type: 0,
+        senderId: this.userId
+      }
+      this.socketService.sendMessage(msg);
+      this.chat.message = "";
+    }
+
+  }
 }

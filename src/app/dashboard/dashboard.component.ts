@@ -1,9 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { AuthService } from '../services/auth.service';
 import { UserService } from '../services/user.service';
-import * as io from 'socket.io-client';
-import { AppConfig } from '../app.config';
+import { SocketService } from '../services/socket.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -13,24 +12,21 @@ import { AppConfig } from '../app.config';
 
 export class DashboardComponent implements OnInit {
 
-  rooms: []
   screenWidth: number;
-  socket: SocketIOClient.Socket;
+  roomTitle: String;
 
   constructor(
-    config: AppConfig,
-    userService: UserService,
+    private socketService: SocketService
   ) {
-    // set screenWidth on page load
-    this.screenWidth = window.innerWidth;
-    window.onresize = () => { this.screenWidth = window.innerWidth; };
-
-    this.appConfig = config.getConfig();
-    this.socket = io.connect(this.appConfig.apiUrl);
-    this.rooms = userService.getRooms();
+    this.socketService.initSocket();
   }
-  ngOnInit() { }
 
+  ngOnInit() {}
+
+  setRoomTitle(roomTitle){
+    console.log(`roomTitle: ${roomTitle}`);
+    this.roomTitle = roomTitle;
+  }
 }
 
 

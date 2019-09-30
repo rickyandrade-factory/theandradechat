@@ -1,12 +1,9 @@
-import { Component, OnInit, Inject, Input } from '@angular/core';
+import { Component, OnInit, Inject, Input, Output, EventEmitter, SimpleChanges } from '@angular/core';
 import { AuthService } from '../services/auth.service';
 import { UserService } from '../services/user.service';
-import * as io from 'socket.io-client';
-import { AppConfig } from '../app.config';
-
-
 import { VERSION, MatDialog, MatDialogRef } from '@angular/material';
 import { lockeddialogComponent } from './locked-dialog.component';
+import { SocketService } from '../services/socket.service';
 
 @Component({
   selector: 'app-sidenav',
@@ -16,10 +13,13 @@ import { lockeddialogComponent } from './locked-dialog.component';
 export class SidenavComponent implements OnInit {
 
   version = VERSION;
-  @Input() rooms: [];
+  rooms = [];
+  roomId: any = ""
+  ioConnection: any;
+  userService: UserService;
+  authService: AuthService;
+  @Output() selectedRoom: EventEmitter<any> = new EventEmitter<any>();
   fileNameDialogRef: MatDialogRef<lockeddialogComponent>;
-  socket: SocketIOClient.Socket;
-  public appConfig: any = {};
   dialog: MatDialog;
   public auth: AuthService;
   public user: any = {
@@ -27,24 +27,37 @@ export class SidenavComponent implements OnInit {
     lastname: String
   };
 
-  constructor(
-    config: AppConfig,
-    userService: UserService,
-    authService: AuthService
-  ) {
-    this.appConfig = config.getConfig();
-    this.socket = io.connect(this.appConfig.apiUrl);
-    this.rooms = userService.getRooms();
-    this.user = userService.getUser();
+  constructor(userService: UserService, authService: AuthService, private socketService: SocketService) {
     this.auth = authService;
+    this.userService = userService;
+  }
+
+  ngOnChanges(changes: SimpleChanges) {
   }
 
   openAddFileDialog() {
     this.fileNameDialogRef = this.dialog.open(lockeddialogComponent);
   }
 
-  ngOnInit() {
+  clickRoom(room) {
+    if (room.status == 'private') {
+      this.openAddFileDialog();
+    } else {
+      this.socketService.joinRoom(room._id);
+      this.selectedRoom.emit(room.title);
+    }
+  }
 
+  ngOnInit(): void {
+    this.user = this.userService.getUser();
+    this.rooms = this.userService.getRooms();
+    console.log(this.rooms);
+    console.log(this.user);
+    if (this.rooms.length > 0) {
+      this.roomId = this.rooms[0]._id;
+      this.socketService.joinRoom(this.rooms[0]._id);
+      this.selectedRoom.emit(this.rooms[0].title);
+    }
   }
 
   logout() {

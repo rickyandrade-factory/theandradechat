@@ -17,6 +17,10 @@ export class UserService {
     return this.userModel.getUser();;
   }
 
+  getUserId() {
+    return this.userModel.getLoginUserId();;
+  }
+
   getRooms() {
     return this.userModel.getRooms();
   }

@@ -11,4 +11,19 @@ export class SignupComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  /**
+   * {
+	"firstname":"tarun",
+	"lastname":"jangra",
+	"username":"tarun",
+	"email":"tarun",
+	"password": "123",
+	"status": 0
+
+}
+   */
+  registerUser(event){
+    event.preventDefault();
+  }
 }

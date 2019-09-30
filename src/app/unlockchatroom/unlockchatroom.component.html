@@ -1,5 +1,59 @@
-<div class="page-data">
-
-
-
+<div class="page-data wrap_messages">
+  <div class="msg_placeholder ng-scope messagelineodd msg_placeholder_sep msg_delivered" *ngFor="let msg of messages">
+    <div user-popover="" class="msg_avatar " style="cursor: pointer;" title="">
+      <img style="border-radius: 4px;width:40px; height:40px"
+        src="//cdn.echofin.co/avatars/37020b82.png?1564118241731?1564118243132?1564118244561?1564118247765?1564118249553">
+    </div>
+    <div class="msg_username_date">
+      <span user-popover="" class="msg_username " style="cursor: pointer;" title="">{{msg.userinfo.username}} </span>
+      <span class="msg_date ">{{msg.created_date}}</span>
+    </div>
+    <div class="thumbpadding ">
+      <div message-actions="" message="item" class="">
+        <div class="msg_txt_wrap">
+          <div class="msg_txt ">{{msg.message}}</div>
+          <div>
+            <button class="toolbtn msg_button_edit ng-hide">
+              <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+            </button>
+            <button class="toolbtn msg_button_delete ng-hide">
+              <i class="fa fa-trash-o" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="clear:both"></div>
+  </div>
 </div>
+
+
+<form (ngSubmit)="sendMessage(chatForm)" #chatForm="ngForm">
+  <div class="form-group">
+    <div class="chatDiv" style="display: block; right: 25px; left: 10px;">
+      <button class="btnUploader dz-clickable" id="uploadBtn" (click)="sendMessage()" style="cursor: pointer;"><i
+          class="fa fa-arrow-circle-o-up"></i></button>
+      <button id="emojiBtn" class=""><i class="fa fa-smile-o" aria-hidden="true"></i>
+      </button>
+      <button id="addon_Signal" class="cbAddonsBtn" title="Publish Signal">
+        <i class="fa fa-bullhorn" aria-hidden="true"></i></button>
+      <input id="chatbox" [(ngModel)]="chat.message" name="chatMessage" style="cursor: text;" required>
+      <span id="faux" style="display: none;"></span>
+      <button type="submit" class="btn btn-success">Submit</button>
+    </div>
+  </div>
+</form>
+<!--
+<form (submit)="sendMessage()">
+  <div class="chatDiv" style="display: block; right: 25px; left: 10px;">
+    <button class="btnUploader dz-clickable" id="uploadBtn" (click)="sendMessage()" style="cursor: pointer;"><i
+        class="fa fa-arrow-circle-o-up"></i></button>
+    <button id="emojiBtn" class=""><i class="fa fa-smile-o" aria-hidden="true"></i>
+    </button>
+    <button id="addon_Signal" class="cbAddonsBtn" title="Publish Signal">
+      <i class="fa fa-bullhorn" aria-hidden="true"></i></button>
+    <div id="chatbox" contenteditable="true" [(ngModel)]="chatMessage" name="chatMessage" style="cursor: text;"></div>
+    <span id="faux" style="display: none;"></span>
+
+  </div>
+</form> -->

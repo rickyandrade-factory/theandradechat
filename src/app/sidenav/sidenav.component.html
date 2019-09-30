@@ -42,10 +42,8 @@
   <li class="rooms-sidebar-header">ROOMS</li>
 
   <li class="ng-scope" *ngFor="let room of rooms">
-      <a
-      (click)="room.status == 'private' ? openAddFileDialog() : ''"
-      [routerLink]="['/{room.title}']" routerLinkActive="selectedRoom"
-      href="#" class="flex-parent locked">
+      <!-- (click)="room.status == 'private' ? openAddFileDialog(room) : selectRoom(room)" -->
+      <a (click)="clickRoom(room)" class="flex-parent locked" style="cursor: pointer">
         <span class="flex-child">
           <i class="roomIcon fa fa-fw fa-hashtag" aria-hidden="true"></i>
           <span class="text-capitalize room-name ng-binding">{{room.title}}</span>
