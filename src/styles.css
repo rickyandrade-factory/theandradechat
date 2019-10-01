@@ -1647,6 +1647,9 @@ app-dashboard .mat-drawer.mat-drawer-side {
 .side-tp button:before, .side-tp button:after {
   background: none;
 } 
+.admin-dashboard .mat-drawer-content {
+  overflow-y: visible!important;
+}
 .mat-drawer-content{
   max-width: 100%;
   /* background-color: #F7fbfe; */

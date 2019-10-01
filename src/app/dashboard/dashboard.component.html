@@ -1,7 +1,7 @@
 <div class="login-container">
   <mat-drawer-container class="example-container" autosize
     style="float:right; width:calc(100% - 80px); overflow:hidden!important; height:100vh;">
-    <mat-drawer #drawer class="example-sidenav sidebar navbar-collapse" mode="side" [opened]="true">
+    <mat-drawer #drawer class="example-sidenav sidebar navbar-collapse"  [opened]="screenWidth > 840" [mode]="(screenWidth > 840) ? 'side' : 'over'" >
       <app-sidenav (selectedRoom) = "setRoomTitle($event)" ></app-sidenav>
       <div class="example-sidenav-content mobile-cross">
         <button class="" hamburger-drv="" mat-button (click)="drawer.toggle()">
@@ -9,9 +9,8 @@
         </button>
       </div>
     </mat-drawer>
-    <div class="example-sidenav-content">
-      <div class="navbar navbar-fixed-top navbar-inverse navbar-static-top" style="position:static!important;"
-          [ngStyle]="{'display' : (screenWidth > 840) ? '' : 'block'}">
+    <div class="example-sidenav-content" >
+      <div class="navbar navbar-fixed-top navbar-inverse navbar-static-top" style="position:static!important;">
           <button class="hamburgerHeader hamburger hamburger-arrow-left" hamburger-drv="" mat-button
             (click)="drawer.toggle()">
             <span class="icon"></span>
@@ -28,7 +27,7 @@
 
          <mat-drawer-container class="example-container container-all-page" autosize>
             <mat-drawer #drawer1 class="example-sidenav sidebar navbar-collapse widget-sidenav right-sidenav" mode="side"
-              opened="true" position="end">
+               position="end" [opened]="screenWidth > 840" [mode]="(screenWidth > 840) ? 'side' : 'over'">
               <app-chatarea></app-chatarea>
             </mat-drawer>
             <div class="example-sidenav-content">

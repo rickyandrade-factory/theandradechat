@@ -17,8 +17,15 @@ export class DashboardComponent implements OnInit {
 
   constructor(
     private socketService: SocketService
-  ) {
+  ) 
+  {
     this.socketService.initSocket();
+
+    //for mat-drawer responsive
+    this.screenWidth = window.innerWidth;
+    window.onresize = () => {
+      this.screenWidth = window.innerWidth;
+    };
   }
 
   ngOnInit() {}
@@ -28,5 +35,6 @@ export class DashboardComponent implements OnInit {
     this.roomTitle = roomTitle;
   }
 }
+
 
 
