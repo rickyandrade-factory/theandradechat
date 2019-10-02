@@ -16,7 +16,7 @@ export class SocketService {
   }
 
   public initSocket(): void {
-    this.socket = socketIo(`${this.appConfig.config.nodeServerUrl}/user`);
+    this.socket = socketIo(`${this.appConfig.config.nodeServerUrl}user`);
   }
 
   public joinRoom(roomId): void {

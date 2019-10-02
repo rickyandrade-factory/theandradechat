@@ -3,8 +3,8 @@ import { Injectable } from '@angular/core';
 
 export class AppLocalConfig {
   config = {
-    apiUrl: 'http://dev.api.ricky.24x7.cloud',
-    nodeServerUrl: 'http://dev.api.ricky.24x7.cloud',
+    apiUrl: 'http://dev.api.ricky.24x7.cloud/',
+    nodeServerUrl: 'http://dev.api.ricky.24x7.cloud'/,
     // apiUrl: 'http://localhost:3007/',
     // nodeServerUrl: 'http://localhost:3007/',
     name: 'MarketMaster Academy',
