@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+
 @Component({
   template: `
   <div class="modal-content new_user_dialog biling_dialog">
@@ -15,10 +16,10 @@ import { Component } from '@angular/core';
       <div class="row">
           <div class="col-xs-12">
               <mat-form-field>
-                <input matInput placeholder="Name *" value=""> 
+                <input matInput placeholder="Name *" value="">
               </mat-form-field>
           </div>
-      </div>    
+      </div>
         <div class="row">
             <div class="col-sm-6">
                 <mat-form-field>
@@ -31,7 +32,7 @@ import { Component } from '@angular/core';
             </div>
             <div class="col-sm-6">
                 <mat-form-field>
-                    <input matInput placeholder="Percent Off" value="" > 
+                    <input matInput placeholder="Percent Off" value="" >
                 </mat-form-field>
             </div>
         </div>
@@ -48,7 +49,7 @@ import { Component } from '@angular/core';
             </div>
             <div class="col-sm-6">
                 <mat-form-field>
-                    <input matInput placeholder="Months" value="" > 
+                    <input matInput placeholder="Months" value="" >
                 </mat-form-field>
             </div>
         </div>
@@ -60,8 +61,9 @@ import { Component } from '@angular/core';
    </form>
 </div>
   `
-}) 
+})
 
 export class NewCouponsComponent {
     duration= 'once';
+    discounttype = "";
 }

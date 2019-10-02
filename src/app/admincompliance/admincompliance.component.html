@@ -1,7 +1,7 @@
 <div class="login-container admin-dashboard">
         <mat-drawer-container class="example-container" autosize>
           <div class="navbar navbar-fixed-top navbar-inverse navbar-static-top" style="position:static;">
-            <mat-drawer #drawer7 class="example-sidenav sidebar navbar-collapse" opened="true" mode="side" 
+            <mat-drawer #drawer7 class="example-sidenav sidebar navbar-collapse" opened="true" mode="side"
               style="position:fixed; left:0;">
                 <app-admin-sidebar></app-admin-sidebar>
             </mat-drawer>
@@ -33,7 +33,7 @@
                             <span class="fa fa-envelope-o fa-fw"></span>
                         <span id="HW_badge_cont" class="HW_visible"><span id="HW_badge" data-count-unseen="" class="HW_softHidden"></span></span></a>
                     </li>
-                    <li class="dropdown"> 
+                    <li class="dropdown">
                         <a>
                             <button mat-button [matMenuTriggerFor]="menu">puneetsethi25@gmail.com
                                     <span class="caret"></span>
@@ -59,21 +59,21 @@
                     <div class="form-group">
                         <mat-form-field>
                                 <mat-label>Report</mat-label>
-                                <mat-select [(value)]="Report">
+                                <mat-select value="Report">
                                 <mat-option value="Session">Session</mat-option>
                                 <mat-option value="Messages">Messages</mat-option>
                                 </mat-select>
                             </mat-form-field>
-                    </div>   
+                    </div>
                     <div class="form-group">
                         <mat-form-field>
                                 <mat-label>Room</mat-label>
-                                <mat-select [(value)]="Room" aria-disabled="false"> 
+                                <mat-select value="Room" aria-disabled="false">
                                 <mat-option value="room1">room1</mat-option>
                                 <mat-option value="room2">room2</mat-option>
                                 </mat-select>
                             </mat-form-field>
-                    </div>  
+                    </div>
                     <div class="form-group">
                             <mat-form-field color="accent">
                                     <mat-label>From</mat-label>

@@ -32,7 +32,7 @@ export class UnlockchatroomComponent implements OnInit {
     });
   }
 
-  sendMessage(e){
+  sendMessage(){
     if(this.chat.message){
       let msg = {
         text: this.chat.message,
