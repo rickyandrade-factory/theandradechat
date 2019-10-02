@@ -2,17 +2,22 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import * as socketIo from 'socket.io-client';
 import { Event } from '../models/Events';
+import { AppConfig } from '../app.config';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SocketService {
   private socket;
+  private appConfig: AppConfig;
+
+  constructor(appConfig: AppConfig) {
+    this.appConfig = appConfig;
+  }
 
   public initSocket(): void {
-    this.socket = socketIo('http://localhost:3007/user');
+    this.socket = socketIo(`${this.appConfig.config.nodeServerUrl}/user`);
   }
-  constructor() { }
 
   public joinRoom(roomId): void {
     this.socket.emit(Event.JOIN_ROOM, roomId);
