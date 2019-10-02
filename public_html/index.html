@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AndradeApp</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/enjoyhint/3.1.0/enjoyhint.min.js"></script>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/enjoyhint/3.1.0/enjoyhint.css" rel="stylesheet">
+	
+<link rel="stylesheet" href="styles.549e284d91639ee1f9cf.css"></head>
+<body>
+<app-root></app-root>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.bundle.js"></script>
+<script src="https://cdn.jsdelivr.net/angular.chartjs/latest/angular-chart.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+    // if ($(window).width() <= 767) {
+    //       $('.admin-dashboard').addClass('mini-sidebar');
+    //   }
+      // $('.sidebar-toggle').click(function(){
+      //     $('.admin-dashboard').toggleClass('mini-sidebar');
+      // })
+  });
+</script>
+<script>
+  // guided tour
+  function guidedtour() {
+    var enjoyhint_instance = new EnjoyHint({});
+    var enjoyhint_script_steps = [
+      {
+        'next .settings-menu' : 'Open your team settings<br>to upload your team logo or modify current options',
+      },
+      {
+        'next .dashboard-link' : 'The dashboard gives you an overview<br>of important metrics, like new user registrations<br>incoming payments, online users, etc',
+      },
+      {
+        'next .users-link' : 'Access your team user list<br>to edit users, change user roles (make admins, moderators<br>or instructors). Export your user list<br> to load into your marketing or CRM services',
+      },
+      {
+        'next .billing-link' : '    Set up billing plans to create<br>pay-to-access chatrooms and services.<br>You can set your own billing scheme <br> renewal period, one-off payments, trials, etc.',
+      },
+      {
+        'next .chatroom-link' : 'Create chatrooms of different types:<br>Public (free for all to join), Premium (pay-to-access)<br>or Private (by invitation or authorization by an admin).<br> You can even create read-only rooms where only<br>admins can post there!',
+      },
+      {
+        'next .widget-link' : 'Install amazing widgets<br>from our marketplace or <br>add third-party widgets with a few clicks.',
+      },
+      {
+        'next .video-link' : 'Make sure to check out<br>our YouTube channel for tutorials<br>and How-To videos',
+      },
+      {
+        'key #mySearchButton' : "Insert your search request and press 'Enter'",
+        'keyCode' : 13
+      },
+      {
+        'click .btn' : 'This button allows you to switch between the search results'
+      },
+      {
+        'next .about' : 'Check the list of all the features available',
+        'shape': 'circle'
+      },
+      {
+        'next .contact' : 'Your feedback will be appreciated',
+        'shape': 'circle',
+        'radius': 70,
+        'showSkip' : false,
+        'nextButton' : {className: "myNext", text: "Got it!"}
+      }
+    ];
+    enjoyhint_instance.set(enjoyhint_script_steps);
+    enjoyhint_instance.run();
+} 
+
+</script>
+<script src="runtime-es2015.703a23e48ad83c851e49.js" type="module"></script><script src="polyfills-es2015.cbebf580d919cd91d46a.js" type="module"></script><script src="runtime-es5.465c2333d355155ec5f3.js" nomodule></script><script src="polyfills-es5.5fa4acc204a6bcab790b.js" nomodule></script><script src="main-es2015.38eafa7bedaf1e400b2d.js" type="module"></script><script src="main-es5.f13b6e377cbab317a107.js" nomodule></script></body>
+</html>
