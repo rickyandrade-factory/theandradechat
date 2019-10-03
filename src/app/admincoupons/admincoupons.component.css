@@ -10,13 +10,6 @@ table {
     font-weight: bold;
   }
   
-  /* th, td {
-    width: 220px;
-  } */
-  /* td:last-child{
-    width: 400px!important;
-  } */
-  
   th.mat-column-position, td.mat-column-position {
     padding-left: 8px;
   }
