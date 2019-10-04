@@ -42,6 +42,19 @@ export class HttpService {
     return this.http.post(this.getEndPoint('registerUser', 'POST'), params);
   }
 
+  createNewRoom(params) {
+    return this.http.post(this.getEndPoint('createNewRoom', 'POST'), params);
+  }
+
+  getRoomsList() {
+    return this.http.post(this.getEndPoint('allRoomsList', 'POST'), {});
+  }
+
+  deleteChatRoom(roomId) {
+    console.log("deleteChatRoom::", roomId)
+    return this.http.post(this.getEndPoint('deleteChatRoom', 'POST'), roomId);
+  }
+
   // tslint:disable-next-line: variable-name
   getEndPoint(string: string, method: string, queryParam: string = '') {
     console.log(this.getBaseUrl() + this.getApiEndPoint(string));
@@ -58,7 +71,10 @@ export class HttpService {
   getCommonEndPoints() {
     return {
       loginUser: 'api/login',
-      registerUser: 'api/register'
+      registerUser: 'api/register',
+      allRoomsList: 'api/rooms',
+      deleteChatRoom: 'api/deleteroom',
+      createNewRoom: 'api/createroom'
     };
   }
 

@@ -20,12 +20,28 @@ export class User {
   country: string;
 
   getLoginUser() {
-    return localStorage.getItem(HttpService.localStorageUserName);
+    return localStorage.getItem(HttpService.localStorageUserName).toString();
   }
 
   getLoginUserId() {
-    if (this.getLoginUser()) {
+    // if (this.getLoginUser() && this.getLoginUser() != undefined) {
+    if (this.getLoginUser() === "undefined" || !this.getLoginUser()) {
+      return false;
+    } else {
       return JSON.parse(this.getLoginUser())._id;
+    }
+  }
+
+  getUserRole() {
+    if (this.getLoginUser()) {
+      return JSON.parse(this.getLoginUser()).status;
+    }
+    return false;
+  }
+
+  userIsAdmin() {
+    if (this.getLoginUser()) {
+      return (JSON.parse(this.getLoginUser()).status == 1 ? true : false);
     }
     return false;
   }
@@ -66,7 +82,6 @@ export class User {
   }
 
   logout() {
-    console.log('-------logging-out');
     localStorage.clear();
     localStorage.removeItem(HttpService.localStorageUserName);
   }

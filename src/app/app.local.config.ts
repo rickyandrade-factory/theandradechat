@@ -5,8 +5,8 @@ export class AppLocalConfig {
   config = {
     apiUrl: 'http://dev.api.ricky.24x7.cloud/',
     nodeServerUrl: 'http://dev.api.ricky.24x7.cloud/',
-    // apiUrl: 'http://localhost:3007/',
-    // nodeServerUrl: 'http://localhost:3007/',
+    // apiUrl: 'http://localhost:3000/',
+    // nodeServerUrl: 'http://localhost:3000/',
     name: 'MarketMaster Academy',
     title: 'Communication App with Admin Panel & Dashboard App with Angular 8.0 support',
     version: '1.0.0',

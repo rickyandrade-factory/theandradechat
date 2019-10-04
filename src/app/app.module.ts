@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MaterialModule } from './material.module';
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
@@ -35,12 +36,12 @@ import { UserPanelComponent } from './user-panel/user-panel.component';
 import { AdminSidebarComponent } from './admin-sidebar/admin-sidebar.component';
 import { AdminusersComponent } from './adminusers/adminusers.component';
 import { AdminpaymentsComponent } from './adminpayments/adminpayments.component';
-import {NewUserComponent} from './adminusers/new-user.component';
-import {NewBillingComponent} from './adminbilling/new-billing.component';
-import {NewSubscriptionComponent} from './adminsubscriptions/new-subscription.component';
+import { NewUserComponent } from './adminusers/new-user.component';
+import { NewBillingComponent } from './adminbilling/new-billing.component';
+import { NewSubscriptionComponent } from './adminsubscriptions/new-subscription.component';
 import { AdminsubscriptionsComponent } from './adminsubscriptions/adminsubscriptions.component';
 import { AdminpayoutsComponent } from './adminpayouts/adminpayouts.component';
-import {WithdrawOptionComponent} from './adminpayouts/withdraw-option.component';
+import { WithdrawOptionComponent } from './adminpayouts/withdraw-option.component';
 import { ProfileSidebarComponent } from './profile-sidebar/profile-sidebar.component';
 import { OnpointRoomComponent } from './onpoint-room/onpoint-room.component';
 import { lockeddialogComponent } from './sidenav/locked-dialog.component';
@@ -49,6 +50,7 @@ import { AdmincouponsComponent } from './admincoupons/admincoupons.component';
 import { NewCouponsComponent } from './admincoupons/new-coupons.component';
 import { AdminchatroomComponent } from './adminchatroom/adminchatroom.component';
 import { NewChatroomComponent } from './adminchatroom/new-cahtroom.component';
+import { DeleteChatroomComponent } from './adminchatroom/deletechatroom.component';
 import { AdminservicesComponent } from './adminservices/adminservices.component';
 import { NewServicesComponent } from './adminservices/new-services.component';
 import { AdminapiComponent } from './adminapi/adminapi.component';
@@ -106,7 +108,8 @@ import { ViewPaymentComponent } from './adminpayouts/view-payment.component';
     AdminsettingsComponent,
     NewTeamAvatarComponent,
     CustomScriptComponent,
-    ViewPaymentComponent
+    ViewPaymentComponent,
+    DeleteChatroomComponent
   ],
   imports: [
     BrowserModule,
@@ -127,10 +130,10 @@ import { ViewPaymentComponent } from './adminpayouts/view-payment.component';
     User,
     AuthGuard
   ],
-   entryComponents: [NewUserComponent, NewSubscriptionComponent, WithdrawOptionComponent,
-     lockeddialogComponent, NewBillingComponent, CustomwidgetComponent, NewCouponsComponent,
-     // tslint:disable-next-line: max-line-length
-     NewChatroomComponent, NewServicesComponent, ConfiguredialogComponent, NewTeamAvatarComponent, CustomScriptComponent,ViewPaymentComponent],
+  entryComponents: [NewUserComponent, NewSubscriptionComponent, WithdrawOptionComponent,
+    lockeddialogComponent, NewBillingComponent, CustomwidgetComponent, NewCouponsComponent,
+    NewChatroomComponent, NewServicesComponent, ConfiguredialogComponent, NewTeamAvatarComponent,
+    CustomScriptComponent, ViewPaymentComponent, DeleteChatroomComponent],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }

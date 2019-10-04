@@ -26,27 +26,29 @@ export class AuthService {
 
   public registerUser(data) {
     return this.http.registerUser(data).subscribe((data) => {
-        console.log(data);
-        if (data && data.hasOwnProperty('success')) {
-          this.loginSuccess(data);
-        } else {
-          this.loginFailed();
-        }
+      console.log(data);
+      if (data && data.hasOwnProperty('success')) {
+        this.loginSuccess(data);
+      } else {
+        this.loginFailed();
       }
-    );
+    });
+  }
 
+  public createNewRoom(data) {
+    return this.http.createNewRoom(data);
+  }
+
+  public deleteChatRoom(data) {
+    return this.http.deleteChatRoom(data);
+  }
+
+  public getRoomsList() {
+    return this.http.getRoomsList();
   }
 
   public loginUser(email, password) {
-    return this.http.getUserDetails({ email, password }).subscribe(
-      data => {
-        if (data && data.hasOwnProperty('success')) {
-          this.loginSuccess(data);
-        } else {
-          this.loginFailed();
-        }
-      }
-    );
+    return this.http.getUserDetails({ email, password })
   }
 
   public loginSuccess(user) {

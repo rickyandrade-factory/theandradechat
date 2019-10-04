@@ -2,27 +2,33 @@
   <mat-sidenav-container class="sidenav-container" style="display: flex; align-items: center;">
     <mat-sidenav position="end" #sidenav mode="side" opened position="start">
       <img src="https://marketmastersacademy.echofin.co/images/mma_logo2.png" class="main-logo">
+      <div *ngIf="isLoading" class="loading-indicator">
+        <mat-spinner style="margin:0 auto;" mode="indeterminate"></mat-spinner>
+      </div>
       <div class="login-form">
         <div>
           <h1>Sign In</h1>
           <p>Join <span style="text-decoration:underline!important; color:#fff;">MarketMastersAcademy</span> team.</p>
           <div class="form-input">
-            <form (submit)="loginUser($event)">
+            <form [formGroup]="loginUseData" (ngSubmit)="loginUser()">
               <div class="input-group input-field">
-                <input type="text" #username id="username" class="inputText" required />
+                <input class="inputText" formControlName="email" name="email" style="cursor: text;" required>
                 <span class="floating-label">Your email address *</span>
+                <p style="margin:0px;" *ngIf="!isValid && errorMessageEmail">{{errorMessageEmail}}</p>
               </div>
               <div class="input-group input-field">
-                <input type="password" #password id="password" class="inputText" required />
+                <input class="inputText" formControlName="password" name="email" type="password" style="cursor: text;"
+                  required>
                 <span class="floating-label">Password *</span>
+                <p style="margin:0px;" *ngIf="!isValid && errorMessagePassword">{{errorMessagePassword}}</p>
               </div>
-              <button class="md-ink-ripple" type="submit" ng-transclude="" ng-disabled="loading">
+              <p style="margin:0px;" *ngIf="incorrectLogin && errorMessageLogin">{{errorMessageLogin}}</p>
+              <button class="md-ink-ripple" type="submit" ng-transclude="" [disabled]="loginUseData.errors">
                 Sign In</button>
             </form>
           </div>
           <div class="signup-forget">
-            <p>No account? <a href="/register"
-              style="text-decoration:underline!important; color:#fff;">Sign Up</a></p>
+            <p>No account? <a href="/register" style="text-decoration:underline!important; color:#fff;">Sign Up</a></p>
             <p><a href="/forgotpassword" style="text-decoration:underline!important; color:#fff;">Forgot
                 Password</a></p>
           </div>
