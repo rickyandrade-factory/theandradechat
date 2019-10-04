@@ -8292,6 +8292,9 @@ button.close {
   .visible-sm {
     display: block !important;
   }
+  .leftnav{
+    padding-top: 0!important;
+  }
   table.visible-sm {
     display: table !important;
   }
@@ -8381,6 +8384,9 @@ button.close {
 @media (max-width: 767px) {
   .hidden-xs {
     display: none !important;
+  }
+  .leftnav{
+    padding-top: 0!important;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -10598,11 +10604,14 @@ span.cashtag_text:hover {
   .admin-dashboard .mat-drawer-backdrop {
       display: none;
   }
+  #team-wrapper .teamName{
+    display:inline-block;
+  }
   h1{
     font-size:1.6em;
   }
   app-dashboard .right-sidenav{
-    width:280px; 
+    width:320px!important; 
   }
   .roomHeader {
       float: left;
