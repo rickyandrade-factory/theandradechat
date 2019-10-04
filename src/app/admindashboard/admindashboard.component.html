@@ -1,7 +1,7 @@
 <div class="login-container admin-dashboard">
     <mat-drawer-container class="example-container" autosize>
       <div class="navbar navbar-fixed-top navbar-inverse navbar-static-top" style="position:static;">
-        <mat-drawer #drawer7 class="example-sidenav sidebar navbar-collapse" opened="true" mode="side" 
+        <mat-drawer #drawer7 class="example-sidenav sidebar navbar-collapse" opened="true" mode="side" [opened]="screenWidth > 840" [mode]="(screenWidth > 840) ? 'side' : 'over'" 
           style="position:fixed; left:0;">
             <app-admin-sidebar></app-admin-sidebar>
         </mat-drawer>

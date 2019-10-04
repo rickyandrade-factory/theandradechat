@@ -8,13 +8,6 @@ import {VERSION, MatDialog, MatDialogRef} from '@angular/material';
 import { NewBillingComponent } from './new-billing.component';
 
 
-
-
-
-
-
-
-
 export interface UserData {
   name: string;
   color: string;
