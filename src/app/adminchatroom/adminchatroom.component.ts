@@ -128,7 +128,7 @@ export class AdminchatroomComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.auth.getRoomsList().subscribe((response) => {
+    this.auth.getRoomsList().subscribe((response: any) => {
       if (response.hasOwnProperty("success") && response.hasOwnProperty("data")) {
         this.rooms = response.data;
       }else{

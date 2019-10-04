@@ -15,9 +15,9 @@ export class LoginComponent implements OnInit {
   public isLoading = false;
   public isValid = true;
   public incorrectLogin = false;
-  public errorMessageEmail: String;
-  public errorMessagePassword: String;
-  public errorMessageLogin: String;
+  public errorMessageEmail: any;
+  public errorMessagePassword: any;
+  public errorMessageLogin: any;
   public loginUseData = new FormGroup({
     email: new FormControl("", Validators.required),
     password: new FormControl("", Validators.required)
@@ -35,7 +35,7 @@ export class LoginComponent implements OnInit {
     let userData = this.validateData();
     if (userData) {
       this.isLoading = true;
-      this.auth.loginUser(userData.email, userData.password).subscribe((data) => {
+      this.auth.loginUser(userData.email, userData.password).subscribe((data: any) => {
         this.isLoading = false;
         if (data.success) {
           this.auth.loginSuccess(data);
@@ -44,11 +44,11 @@ export class LoginComponent implements OnInit {
         }
       });
     } else {
-      console.log(this.errorMessage);
+      console.log(this.errorMessageLogin);
     }
   }
 
-  loginFailed(data){
+  loginFailed(data: any){
     this.incorrectLogin = true;
     this.errorMessageLogin = data.error;
   }
