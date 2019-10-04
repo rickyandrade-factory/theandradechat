@@ -1917,7 +1917,11 @@ a.flex-parent span.flex-child {
   color: #000!important;
   font-family: Poppins,sans-serif,monospace;
 }
-
+.rooms_list a.active{
+  background-color: rgb(0, 117, 144)!important;
+  color: #fff!important;
+  font-family: Poppins,sans-serif,monospace;
+}
 
 
 

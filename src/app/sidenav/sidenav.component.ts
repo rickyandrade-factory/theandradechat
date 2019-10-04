@@ -4,6 +4,7 @@ import { UserService } from '../services/user.service';
 import { VERSION, MatDialog, MatDialogRef } from '@angular/material';
 import { lockeddialogComponent } from './locked-dialog.component';
 import { SocketService } from '../services/socket.service';
+declare var $:any;
 
 @Component({
   selector: 'app-sidenav',
@@ -58,6 +59,13 @@ export class SidenavComponent implements OnInit {
       this.socketService.joinRoom(this.rooms[0]._id);
       this.selectedRoom.emit(this.rooms[0].title);
     }
+  }
+
+  ngAfterViewInit() {
+    $('.rooms_list a').click(function(){
+      $('.rooms_list a').removeClass('active');
+      $(this).addClass('active');
+    });
   }
 
   logout() {

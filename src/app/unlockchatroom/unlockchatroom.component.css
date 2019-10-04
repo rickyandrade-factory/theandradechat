@@ -8,3 +8,6 @@
   vertical-align: top;
   display: -webkit-box;
 }
+.wrap_messages .msg_delivered:last-child {
+  padding-bottom: 15px;
+}
