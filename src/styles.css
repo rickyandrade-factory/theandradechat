@@ -201,7 +201,7 @@ app-signup .mat-drawer-inner-container {
   padding: 10px 20px;
 } 
 app-sidenav {
-  width: 250px;
+  width: 240px;
 }
 .mobile-cross{
   display:none;
@@ -1026,9 +1026,17 @@ li.emojiRef{ display: none; }
 @media screen and (min-width: 1367px) and (max-width: 1920px)  {
 
 }
+@media (max-width: 1200px)  {
+  mat-drawer.widget-sidenav {
+    width: 380px!important;
+  }
+}
 @media (max-width: 1366px)  {
-  .widget-sidenav {
+  mat-drawer.widget-sidenav {
     width: 400px!important;
+  }
+  .leftnav{
+    padding-top: 25px!important;
   }
 }
 @media (min-width: 768px) {
@@ -1579,7 +1587,7 @@ button.btn.btn-blue {
   float: left;
   overflow: hidden;
   text-align: center;
-  padding-top: 130px;
+  padding-top: 110px;
   position: fixed;
   z-index:9; 
   left: 0;
