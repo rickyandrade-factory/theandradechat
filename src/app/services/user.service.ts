@@ -14,11 +14,15 @@ export class UserService {
   }
 
   getUser() {
-    return this.userModel.getUser();;
+    return this.userModel.getUser();
   }
 
   getUserId() {
-    return this.userModel.getLoginUserId();;
+    return this.userModel.getLoginUserId();
+  }
+
+  userIsAdmin() {
+    return this.userModel.userIsAdmin();
   }
 
   getRooms() {

@@ -3,6 +3,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { AuthService } from '../services/auth.service';
 import { UserService } from '../services/user.service';
 import { SocketService } from '../services/socket.service';
+import { User } from '../models';
 
 @Component({
   selector: 'app-dashboard',
@@ -14,12 +15,18 @@ export class DashboardComponent implements OnInit {
 
   screenWidth: number;
   roomTitle: String;
+  isAdmin = false;
+  userService: UserService;
 
   constructor(
-    private socketService: SocketService
-  ) 
-  {
+    private socketService: SocketService,
+    public user: User,
+    userService: UserService,
+  ) {
+    this.userService = userService;
     this.socketService.initSocket();
+    this.isAdmin = this.userService.userIsAdmin();
+    console.log(`this.isAdmin: ${this.isAdmin}`);
 
     //for mat-drawer responsive
     this.screenWidth = window.innerWidth;
@@ -28,9 +35,9 @@ export class DashboardComponent implements OnInit {
     };
   }
 
-  ngOnInit() {}
+  ngOnInit() { }
 
-  setRoomTitle(roomTitle){
+  setRoomTitle(roomTitle) {
     console.log(`roomTitle: ${roomTitle}`);
     this.roomTitle = roomTitle;
   }

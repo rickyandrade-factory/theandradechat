@@ -26,7 +26,7 @@
   }
   .mat-drawer-content {
     margin: 0!important;
-  } 
+  }
   .sidenav-container{
     color: #fff;
     height: 100vh;
@@ -51,7 +51,7 @@
 }
   h1{
     margin-bottom: 10px;
-    font-weight: 400; 
+    font-weight: 400;
   }
   h1 + p{
     margin-bottom: 20px;
@@ -99,20 +99,20 @@ input:not(:focus):valid ~ .floating-label{
     box-shadow: none;
     outline: none;
   }
-  ::placeholder { 
+  ::placeholder {
     color: rgb(153, 153, 153);
-} 
+}
 a {
   text-decoration: none!important;
 }
-  
-:-ms-input-placeholder { 
+
+:-ms-input-placeholder {
   color: rgb(153, 153, 153);
-} 
-  
-::-ms-input-placeholder { 
+}
+
+::-ms-input-placeholder {
   color: rgb(153, 153, 153);
-} 
+}
 input:focus{
   border-bottom: 2px solid  rgb(225, 102, 38);
 }
@@ -232,7 +232,7 @@ input:focus{
     height: auto;
     vertical-align: middle;
     border: none!important;
-    margin-top: 0px; color:#fff; 
+    margin-top: 0px; color:#fff;
     position: relative;
     overflow:visible;
     padding-top: 140px;
@@ -298,4 +298,28 @@ a:-webkit-any-link {
     width: 100%!important;
     max-width: 100%;
   }
+}
+/* Absolute Center Spinner */
+.loading-indicator {
+  position: fixed;
+  z-index: 999;
+  height: 2em;
+  overflow: show;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/* Transparent Overlay */
+.loading-indicator:before {
+  content: '';
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
 }
