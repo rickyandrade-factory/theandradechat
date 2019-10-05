@@ -1,6 +1,6 @@
 <div class="login-container">
   <mat-drawer-container class="example-container" autosize
-    style="float:right; width:calc(100% - 80px); overflow:hidden!important; height:100vh;">
+    style="float:right; width:calc(100% - 80px); overflow:hidden!important; height:100vh; z-index:auto;">
     <mat-drawer #drawer class="example-sidenav sidebar navbar-collapse" [opened]="screenWidth > 840"
       [mode]="(screenWidth > 840) ? 'side' : 'over'">
       <app-sidenav (selectedRoom)="setRoomTitle($event)"></app-sidenav>
@@ -11,7 +11,7 @@
       </div>
     </mat-drawer>
     <div class="example-sidenav-content">
-      <div class="navbar navbar-fixed-top navbar-inverse navbar-static-top" style="position:static!important;">
+      <div class="navbar navbar-fixed-top navbar-inverse navbar-static-top">
         <button class="hamburgerHeader hamburger hamburger-arrow-left" hamburger-drv="" mat-button
           (click)="drawer.toggle()">
           <span class="icon"></span>

@@ -1,5 +1,5 @@
 <div class="login-container">
-  <mat-drawer-container class="example-container" autosize style="float:right; width:calc(100% - 80px); overflow:hidden!important;">
+  <mat-drawer-container class="example-container" autosize style="float:right; width:calc(100% - 80px); overflow:hidden!important; z-index:auto;">
       <mat-drawer #drawer class="example-sidenav sidebar navbar-collapse"  [opened]="screenWidth > 840" [mode]="(screenWidth > 840) ? 'side' : 'over'">
         <app-sidenav></app-sidenav>
         <div class="example-sidenav-content mobile-cross">
@@ -10,7 +10,7 @@
           </div>
       </mat-drawer> 
       <div class="example-sidenav-content">
-          <div class="navbar navbar-fixed-top navbar-inverse navbar-static-top" style="position:static!important;" [ngStyle]="{'display' : (screenWidth > 840) ? '' : 'block'}">
+          <div class="navbar navbar-fixed-top navbar-inverse navbar-static-top" [ngStyle]="{'display' : (screenWidth > 840) ? '' : 'block'}">
               <button class="hamburgerHeader hamburger hamburger-arrow-left" hamburger-drv="" mat-button
             (click)="drawer.toggle()">
               <span class="icon"></span>

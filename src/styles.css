@@ -16,6 +16,9 @@ body{
 .checkbox label {
   font-size: 15px;
 }
+.container-all-page .mat-drawer-content{
+ z-index: auto!important;
+}
 .p_12{
   font-size:12px;
   color:#888;
@@ -4146,6 +4149,13 @@ table th[class*="col-"] {
     overflow-y: hidden;
     -ms-overflow-style: -ms-autohiding-scrollbar;
     border: 1px solid #292929;
+  }
+  .example-sidenav-content .navbar-fixed-top{
+    position: fixed!important;
+  }
+  .example-sidenav-content .container-all-page{
+    position: fixed!important;
+    top:60px;
   }
   .new_user_dialog {
       width: 100%;
@@ -10600,6 +10610,16 @@ span.cashtag_text:hover {
   .mat-drawer-inner-container {
     display: block;
     overflow: inherit!important;
+  }
+  .hamburger:before, .hamburger .icon, .hamburger:after{
+    width:100%;
+  }
+  .mat-button, .mat-flat-button, .mat-icon-button, .mat-stroked-button{
+    min-width: 40px!important;
+    padding:0 10px!important;
+  }
+  .hamburger{
+    height: 1.2em;
   }
   .admin-dashboard .mat-drawer-backdrop {
       display: none;
