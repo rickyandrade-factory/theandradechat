@@ -48,7 +48,7 @@ export class SignupComponent implements OnInit {
       email: "",
       username: "",
       password: "",
-      status: 1,
+      status: 0,
     };
     if (userData.fullname) {
       let name = userData.fullname.split(" ", 2);
