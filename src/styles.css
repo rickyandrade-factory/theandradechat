@@ -6042,6 +6042,15 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     border: 0;
     box-shadow: none;
   }
+  #team-wrapper .teamName strong{
+    max-width: 130px!important;
+  }
+  #team-wrapper{
+    display: inline-block;
+  }
+  .sidebar-match{
+    width:210px;
+  }
   .widget-sidenav {
     width: 320px!important;
 }
