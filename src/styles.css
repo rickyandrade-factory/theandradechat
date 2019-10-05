@@ -16,6 +16,9 @@ body{
 .checkbox label {
   font-size: 15px;
 }
+.container-all-page .mat-drawer-content{
+ z-index: auto!important;
+}
 .p_12{
   font-size:12px;
   color:#888;
@@ -201,7 +204,7 @@ app-signup .mat-drawer-inner-container {
   padding: 10px 20px;
 } 
 app-sidenav {
-  width: 250px;
+  width: 240px;
 }
 .mobile-cross{
   display:none;
@@ -1026,9 +1029,17 @@ li.emojiRef{ display: none; }
 @media screen and (min-width: 1367px) and (max-width: 1920px)  {
 
 }
+@media (max-width: 1200px)  {
+  mat-drawer.widget-sidenav {
+    width: 380px!important;
+  }
+}
 @media (max-width: 1366px)  {
-  .widget-sidenav {
+  mat-drawer.widget-sidenav {
     width: 400px!important;
+  }
+  .leftnav{
+    padding-top: 25px!important;
   }
 }
 @media (min-width: 768px) {
@@ -1579,7 +1590,7 @@ button.btn.btn-blue {
   float: left;
   overflow: hidden;
   text-align: center;
-  padding-top: 130px;
+  padding-top: 110px;
   position: fixed;
   z-index:9; 
   left: 0;
@@ -1917,7 +1928,11 @@ a.flex-parent span.flex-child {
   color: #000!important;
   font-family: Poppins,sans-serif,monospace;
 }
-
+.rooms_list a.active{
+  background-color: rgb(0, 117, 144)!important;
+  color: #fff!important;
+  font-family: Poppins,sans-serif,monospace;
+}
 
 
 
@@ -4134,6 +4149,13 @@ table th[class*="col-"] {
     overflow-y: hidden;
     -ms-overflow-style: -ms-autohiding-scrollbar;
     border: 1px solid #292929;
+  }
+  .example-sidenav-content .navbar-fixed-top{
+    position: fixed!important;
+  }
+  .example-sidenav-content .container-all-page{
+    position: fixed!important;
+    top:60px;
   }
   .new_user_dialog {
       width: 100%;
@@ -8280,6 +8302,9 @@ button.close {
   .visible-sm {
     display: block !important;
   }
+  .leftnav{
+    padding-top: 0!important;
+  }
   table.visible-sm {
     display: table !important;
   }
@@ -8369,6 +8394,9 @@ button.close {
 @media (max-width: 767px) {
   .hidden-xs {
     display: none !important;
+  }
+  .leftnav{
+    padding-top: 0!important;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -10583,14 +10611,27 @@ span.cashtag_text:hover {
     display: block;
     overflow: inherit!important;
   }
+  .hamburger:before, .hamburger .icon, .hamburger:after{
+    width:100%;
+  }
+  .mat-button, .mat-flat-button, .mat-icon-button, .mat-stroked-button{
+    min-width: 40px!important;
+    padding:0 10px!important;
+  }
+  .hamburger{
+    height: 1.2em;
+  }
   .admin-dashboard .mat-drawer-backdrop {
       display: none;
+  }
+  #team-wrapper .teamName{
+    display:inline-block;
   }
   h1{
     font-size:1.6em;
   }
   app-dashboard .right-sidenav{
-    width:280px; 
+    width:320px!important; 
   }
   .roomHeader {
       float: left;

@@ -40,7 +40,7 @@
 <ul class="nav nav-sidebar">
   <li class="rooms-sidebar-header">ROOMS</li>
 
-  <li class="ng-scope" *ngFor="let room of rooms">
+  <li class="ng-scope rooms_list" *ngFor="let room of rooms">
     <!-- (click)="room.status == 'private' ? openAddFileDialog(room) : selectRoom(room)" -->
     <a (click)="clickRoom(room)" class="flex-parent locked" style="cursor: pointer">
       <span class="flex-child">
