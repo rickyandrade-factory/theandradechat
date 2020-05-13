@@ -48,7 +48,7 @@
             </ul>
          </div>
       </div>
-      <section class="content-header ng-scope">
+      <section class="content-header">
           <h1>
             Sales
           </h1>
@@ -58,8 +58,8 @@
               <div class="col-md-8 col-lg-8 no-pad">
                   <div style="padding: 0 15px;">
                       <div class="toolbox">
-                          <button class="btn btn-default" ng-click="vm.Export()" ng-disabled="vm.downloading">
-                             <span class="fa fa-download ng-scope" ng-if="!vm.downloading"></span>  Export
+                          <button class="btn btn-default" (click)="exporter.exportTable('xlsx')">
+                             <span class="fa fa-download "></span>  Export
                           </button>
                           <div class="pull-right">
                               <button class="btn btn-default" ng-click="vm.ToggleFiltering()">
@@ -74,7 +74,9 @@
                   </div>
                   <div class="box box-default" >
                       <div class="mat-elevation-z8">
-                          <table mat-table [dataSource]="dataSource" matSort>
+                          <table mat-table matTableExporter #exporter="matTableExporter" [hiddenColumns]="[0]"
+                          
+                          [dataSource]="dataSource" matSort >
 
                              <!-- ID Column -->
                              <ng-container matColumnDef="date">

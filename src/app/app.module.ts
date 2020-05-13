@@ -61,6 +61,7 @@ import { AdminsettingsComponent } from './adminsettings/adminsettings.component'
 import { NewTeamAvatarComponent } from './adminsettings/new-teamavatar.component';
 import { CustomScriptComponent } from './adminsettings/custom-script.component';
 import { InviteContactComponent } from './admincontacts/invite-contact.component';
+import { MatTableExporterModule } from 'mat-table-exporter';
 
 @NgModule({
   declarations: [
@@ -117,6 +118,7 @@ import { InviteContactComponent } from './admincontacts/invite-contact.component
     MatNativeDateModule,
     ReactiveFormsModule,
     AppRoutingModule,
+    MatTableExporterModule
   ],
   providers: [
     AuthService,
