@@ -1468,8 +1468,8 @@ app-dashboard mat-form-field {
   margin-right: 3px;
 }
 button.btn.btn-blue {
-  background: #00a2c8!important;
-  border: #00a2c8!important;
+  background: #1A83F5!important;
+  border: #1A83F5!important;
   color: #fff;
 }
 .admin-payments .btn{
@@ -1614,7 +1614,7 @@ button.btn.btn-blue {
 app-dashboard .mat-drawer.mat-drawer-side {
   background-color: #0C2124!important;
   background-image: none;
-  border-right: 1px solid #00a2c8;
+  border-right: 1px solid #1A83F5;
   height: 100vh;
   box-shadow: 0px 0px 3px #13282d;
 }
@@ -1674,7 +1674,7 @@ app-dashboard .mat-drawer.mat-drawer-side {
   border-top: 1px solid #0e2226;
 }
 #dvFootnote .btn-primary {
-  background-color: #00a2c8!important;
+  background-color: #1A83F5!important;
   border-color: #019dc0!important;
   color: #fff!important;
   text-transform: uppercase;  
@@ -1747,7 +1747,7 @@ span.glyphicon.glyphicon-one-fine-dot.sidebar-status-dot.userStatus1 {
   margin-top: 15px;
 }
 .userStatus1 {
-  color: #00a2c8;
+  color: #1A83F5;
   font-size: 14px;
 }
 
@@ -1962,7 +1962,7 @@ a.flex-parent span.flex-child {
 
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
 .mat-checkbox-checked.mat-accent .mat-checkbox-background, .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
-  background-color: #00a2c8;
+  background-color: #1A83F5;
 }
 html {
   font-family: sans-serif;
@@ -1986,7 +1986,7 @@ body {
   top: -12px;
 }
 .mat-progress-bar-fill::after {
-  background-color: #00a2c8;
+  background-color: #1A83F5;
 }
 article,
 aside,
@@ -7415,7 +7415,7 @@ button.list-group-item-danger.active:focus {
 }
 .panel-primary > .panel-heading {
   color: #ffffff;
-  background-color: #00a2c8;
+  background-color: #1A83F5;
   border-color: #428679;
 }
 .panel-primary > .panel-heading + .panel-collapse > .panel-body {
@@ -8831,7 +8831,7 @@ footer {
 }
 
 .selectedRoom {
-    border-left: solid 2px #00a2c8 !important;
+    border-left: solid 2px #1A83F5 !important;
     color: #fff !important;
 }
 
@@ -10415,7 +10415,7 @@ a.flex-parent {
 }
 
 .new-message-separator {
-  color: #00a2c8 !important;
+  color: #1A83F5 !important;
 }
 
 .emoji-tab-selected {
