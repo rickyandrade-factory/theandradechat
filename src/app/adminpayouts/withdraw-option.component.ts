@@ -15,7 +15,7 @@ import { Component } from '@angular/core';
       <div class="modal-body wrap-div">
         <div class="row">
           <div class="col-xs-12">
-            <mat-form-field class="example-full-width" >
+            <mat-form-field  >
             <textarea matInput placeholder="Business Details" value="Market Masters Academy 
 19800 MacArthur Blvd. Suite 300 
 Irvine, CA 92612" style="height:65px;"></textarea>

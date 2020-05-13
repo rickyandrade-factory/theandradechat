@@ -6,6 +6,7 @@ import { Subscription } from 'rxjs';
 
 import {VERSION, MatDialog, MatDialogRef} from '@angular/material';
 import { NewContactComponent } from './new-contact.component';
+import { InviteContactComponent } from './invite-contact.component';
 
 
 export interface UserData {
@@ -101,11 +102,16 @@ export class AdmincontactsComponent implements OnInit {
   version = VERSION;
 
   fileNameDialogRef: MatDialogRef<NewContactComponent>;
+  fileNameDialogRef1: MatDialogRef<NewContactComponent>;
 
   
 
   openAddFileDialog() {
     this.fileNameDialogRef = this.dialog.open(NewContactComponent);
+  }
+
+  openInviteContactDialog() {
+    this.fileNameDialogRef1 = this.dialog.open(InviteContactComponent);
   }
   
   constructor(private dialog: MatDialog) {

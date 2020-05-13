@@ -63,6 +63,7 @@ import { AdminsettingsComponent } from './adminsettings/adminsettings.component'
 import { NewTeamAvatarComponent } from './adminsettings/new-teamavatar.component';
 import { CustomScriptComponent } from './adminsettings/custom-script.component';
 import { ViewPaymentComponent } from './adminpayouts/view-payment.component';
+import { InviteContactComponent } from './admincontacts/invite-contact.component';
 
 @NgModule({
   declarations: [
@@ -109,7 +110,8 @@ import { ViewPaymentComponent } from './adminpayouts/view-payment.component';
     CustomScriptComponent,
     ViewPaymentComponent,
     DeleteChatroomComponent,
-    NewContactComponent
+    NewContactComponent,
+    InviteContactComponent
   ],
   imports: [
     BrowserModule,
@@ -130,7 +132,7 @@ import { ViewPaymentComponent } from './adminpayouts/view-payment.component';
     User,
     AuthGuard
   ],
-  entryComponents: [ NewContactComponent, NewSubscriptionComponent, WithdrawOptionComponent,
+  entryComponents: [InviteContactComponent, NewContactComponent, NewSubscriptionComponent, WithdrawOptionComponent,
     lockeddialogComponent, NewBillingComponent, CustomwidgetComponent, NewCouponsComponent,
     NewChatroomComponent, NewServicesComponent, ConfiguredialogComponent, NewTeamAvatarComponent,
     CustomScriptComponent, ViewPaymentComponent, DeleteChatroomComponent],

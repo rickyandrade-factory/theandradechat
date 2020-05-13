@@ -58,7 +58,7 @@
           <button class="btn btn-blue" (click)="openAddFileDialog()">
                 <span class="fa fa-plus"></span> Add Contact
             </button>
-            <button class="btn btn-default" ng-click="vm.InviteForm()">
+            <button class="btn btn-default" (click)="openInviteContactDialog()">
                 <span class="fa fa-plus"></span> Invite Contact
             </button>
             <button class="btn btn-default" ng-click="vm.Export()" ng-disabled="vm.downloading">
