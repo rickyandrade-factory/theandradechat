@@ -100,12 +100,12 @@ export class AdmincontactsComponent implements OnInit {
 
   version = VERSION;
 
-  fileNameDialogRef: MatDialogRef<NewUserComponent>;
+  fileNameDialogRef: MatDialogRef<NewContactComponent>;
 
   
 
   openAddFileDialog() {
-    this.fileNameDialogRef = this.dialog.open(NewUserComponent);
+    this.fileNameDialogRef = this.dialog.open(NewContactComponent);
   }
   
   constructor(private dialog: MatDialog) {

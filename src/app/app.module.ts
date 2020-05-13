@@ -108,7 +108,8 @@ import { ViewPaymentComponent } from './adminpayouts/view-payment.component';
     NewTeamAvatarComponent,
     CustomScriptComponent,
     ViewPaymentComponent,
-    DeleteChatroomComponent
+    DeleteChatroomComponent,
+    NewContactComponent
   ],
   imports: [
     BrowserModule,
@@ -129,7 +130,7 @@ import { ViewPaymentComponent } from './adminpayouts/view-payment.component';
     User,
     AuthGuard
   ],
-  entryComponents: [ NewSubscriptionComponent, WithdrawOptionComponent,
+  entryComponents: [ NewContactComponent, NewSubscriptionComponent, WithdrawOptionComponent,
     lockeddialogComponent, NewBillingComponent, CustomwidgetComponent, NewCouponsComponent,
     NewChatroomComponent, NewServicesComponent, ConfiguredialogComponent, NewTeamAvatarComponent,
     CustomScriptComponent, ViewPaymentComponent, DeleteChatroomComponent],
