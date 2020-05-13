@@ -86,7 +86,7 @@ import { Component } from '@angular/core';
 </div>
   `
 })
-export class NewUserComponent {
+export class NewContactComponent {
 
 }
 

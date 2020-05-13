@@ -34,9 +34,9 @@ import { AdmindashboardComponent } from './admindashboard/admindashboard.compone
 import { UnlockchatroomComponent } from './unlockchatroom/unlockchatroom.component';
 import { UserPanelComponent } from './user-panel/user-panel.component';
 import { AdminSidebarComponent } from './admin-sidebar/admin-sidebar.component';
-import { AdminusersComponent } from './adminusers/adminusers.component';
+import { AdmincontactsComponent } from './admincontacts/admincontacts.component';
 import { AdminpaymentsComponent } from './adminpayments/adminpayments.component';
-import { NewUserComponent } from './adminusers/new-user.component';
+import { NewContactComponent } from './admincontacts/new-contact.component';
 import { NewBillingComponent } from './adminbilling/new-billing.component';
 import { NewSubscriptionComponent } from './adminsubscriptions/new-subscription.component';
 import { AdminsubscriptionsComponent } from './adminsubscriptions/adminsubscriptions.component';
@@ -81,9 +81,8 @@ import { ViewPaymentComponent } from './adminpayouts/view-payment.component';
     UnlockchatroomComponent,
     UserPanelComponent,
     AdminSidebarComponent,
-    AdminusersComponent,
+    AdmincontactsComponent,
     AdminpaymentsComponent,
-    NewUserComponent,
     NewSubscriptionComponent,
     AdminsubscriptionsComponent,
     AdminpayoutsComponent,
@@ -130,7 +129,7 @@ import { ViewPaymentComponent } from './adminpayouts/view-payment.component';
     User,
     AuthGuard
   ],
-  entryComponents: [NewUserComponent, NewSubscriptionComponent, WithdrawOptionComponent,
+  entryComponents: [ NewSubscriptionComponent, WithdrawOptionComponent,
     lockeddialogComponent, NewBillingComponent, CustomwidgetComponent, NewCouponsComponent,
     NewChatroomComponent, NewServicesComponent, ConfiguredialogComponent, NewTeamAvatarComponent,
     CustomScriptComponent, ViewPaymentComponent, DeleteChatroomComponent],

@@ -5,7 +5,7 @@ import {MatTableDataSource} from '@angular/material/table';
 import { Subscription } from 'rxjs';
 
 import {VERSION, MatDialog, MatDialogRef} from '@angular/material';
-import { NewUserComponent } from './new-user.component';
+import { NewContactComponent } from './new-contact.component';
 
 
 export interface UserData {
@@ -83,11 +83,11 @@ const VERIFIED: string[] = [
 
 
 @Component({
-  selector: 'app-adminusers',
-  templateUrl: './adminusers.component.html',
-  styleUrls: ['./adminusers.component.css']
+  selector: 'app-admincontactss',
+  templateUrl: './admincontacts.component.html',
+  styleUrls: ['./admincontacts.component.css']
 })
-export class AdminusersComponent implements OnInit {
+export class AdmincontactsComponent implements OnInit {
 
 
   displayedColumns: string[] = ['img', 'username', 'email', 'verified', 'subscription', 'type',  'devices', 'registered', 'seen', 'empty'];

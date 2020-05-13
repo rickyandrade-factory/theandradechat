@@ -6,7 +6,7 @@ import { SignupComponent } from './signup/signup.component';
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
-import { AdminusersComponent } from './adminusers/adminusers.component';
+import { AdmincontactsComponent } from './admincontacts/admincontacts.component';
 
 import { ErrorComponent } from './error/error.component';
 import { AdminpaymentsComponent } from './adminpayments/adminpayments.component';
@@ -30,7 +30,7 @@ const routes: Routes = [
   { path: 'forgotpassword', component: ForgotpasswordComponent },
   { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard]},
   { path: 'admindashboard', component: AdmindashboardComponent, canActivate: [AuthGuard]},
-  { path: 'adminusers', component: AdminusersComponent, canActivate: [AuthGuard]},
+  { path: 'admincontacts', component: AdmincontactsComponent, canActivate: [AuthGuard]},
   { path: 'adminpayments', component: AdminpaymentsComponent, canActivate: [AuthGuard]},
   { path: 'adminsubscriptions', component: AdminsubscriptionsComponent, canActivate: [AuthGuard]},
   { path: 'adminpayouts', component: AdminpayoutsComponent, canActivate: [AuthGuard]},

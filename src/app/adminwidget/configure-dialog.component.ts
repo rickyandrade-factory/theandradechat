@@ -19,7 +19,7 @@ import { Component } from '@angular/core';
                     <p>This widget is preconfigured by a third party. You may only disabled it and/or uninstall it.</p>
                 </div>
             </div>
-        </div>
+        </div>  
    </div>
 
    <div class="modal-footer wrap-div text-center">
