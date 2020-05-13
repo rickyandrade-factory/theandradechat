@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
          <button  mat-dialog-close  class="close">
              <span aria-hidden="true">×</span>
          </button>
-         Create User
+         Add Contact
       </h4>
    </div>
    <form class="">
