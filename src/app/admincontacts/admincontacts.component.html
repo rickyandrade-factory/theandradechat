@@ -61,9 +61,9 @@
             <button class="btn btn-default" (click)="openInviteContactDialog()">
                 <span class="fa fa-plus"></span> Invite Contact
             </button>
-            <button class="btn btn-default" ng-click="vm.Export()" ng-disabled="vm.downloading">
-                <span class="fa fa-download ng-scope" ng-if="!vm.downloading"></span> Export
-            </button>
+            <button class="btn btn-default" (click)="exporter.exportTable('xlsx')">
+              <span class="fa fa-download "></span>  Export
+           </button>
             <div class="pull-right">
                 <button ng-click="vm.changeColumns()" uib-popover-template="'myPopoverTemplate.html'" popover-placement="bottom-right" 
                 popover-append-to-body="true" type="button" class="btn btn-default">
@@ -82,7 +82,7 @@
           <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
         </mat-form-field>
         <div class="mat-elevation-z8 box box-default">
-          <table mat-table [dataSource]="dataSource" matSort>
+          <table mat-table matTableExporter #exporter="matTableExporter" [dataSource]="dataSource" matSort>
              <!-- ID Column -->
              <ng-container matColumnDef="img">
                 <th mat-header-cell *matHeaderCellDef mat-sort-header> </th>
