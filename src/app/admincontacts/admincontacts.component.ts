@@ -102,7 +102,7 @@ export class AdmincontactsComponent implements OnInit {
   version = VERSION;
 
   fileNameDialogRef: MatDialogRef<NewContactComponent>;
-  fileNameDialogRef1: MatDialogRef<NewContactComponent>;
+  fileNameDialogRef1: MatDialogRef<InviteContactComponent>;
 
   
 

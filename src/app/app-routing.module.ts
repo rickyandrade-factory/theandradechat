@@ -10,7 +10,7 @@ import { AdmincontactsComponent } from './admincontacts/admincontacts.component'
 
 import { ErrorComponent } from './error/error.component';
 import { AdminpaymentsComponent } from './adminpayments/adminpayments.component';
-import { AdminsubscriptionsComponent } from './adminsubscriptions/adminsubscriptions.component';
+import { AdminoffersComponent } from './adminoffers/adminoffers.component';
 import { AdminbillingComponent } from './adminbilling/adminbilling.component';
 import { OnpointRoomComponent } from './onpoint-room/onpoint-room.component';
 import { AdmincouponsComponent } from './admincoupons/admincoupons.component';
@@ -31,7 +31,7 @@ const routes: Routes = [
   { path: 'admindashboard', component: AdmindashboardComponent, canActivate: [AuthGuard]},
   { path: 'admincontacts', component: AdmincontactsComponent, canActivate: [AuthGuard]},
   { path: 'adminpayments', component: AdminpaymentsComponent, canActivate: [AuthGuard]},
-  { path: 'adminsubscriptions', component: AdminsubscriptionsComponent, canActivate: [AuthGuard]},
+  { path: 'adminoffers', component: AdminoffersComponent, canActivate: [AuthGuard]},
   { path: 'adminbilling', component: AdminbillingComponent, canActivate: [AuthGuard]},
   { path: 'onpoint-room', component: OnpointRoomComponent, canActivate: [AuthGuard]},
   { path: 'admincoupons', component: AdmincouponsComponent, canActivate: [AuthGuard]},

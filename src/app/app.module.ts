@@ -38,8 +38,8 @@ import { AdmincontactsComponent } from './admincontacts/admincontacts.component'
 import { AdminpaymentsComponent } from './adminpayments/adminpayments.component';
 import { NewContactComponent } from './admincontacts/new-contact.component';
 import { NewBillingComponent } from './adminbilling/new-billing.component';
-import { NewSubscriptionComponent } from './adminsubscriptions/new-subscription.component';
-import { AdminsubscriptionsComponent } from './adminsubscriptions/adminsubscriptions.component';
+import { NewOfferComponent } from './adminoffers/new-offer.component';
+import { AdminoffersComponent } from './adminoffers/adminoffers.component';
 import { ProfileSidebarComponent } from './profile-sidebar/profile-sidebar.component';
 import { OnpointRoomComponent } from './onpoint-room/onpoint-room.component';
 import { lockeddialogComponent } from './sidenav/locked-dialog.component';
@@ -81,8 +81,8 @@ import { InviteContactComponent } from './admincontacts/invite-contact.component
     AdminSidebarComponent,
     AdmincontactsComponent,
     AdminpaymentsComponent,
-    NewSubscriptionComponent,
-    AdminsubscriptionsComponent,
+    NewOfferComponent,
+    AdminoffersComponent,
     ProfileSidebarComponent,
     OnpointRoomComponent,
     lockeddialogComponent,
@@ -126,7 +126,7 @@ import { InviteContactComponent } from './admincontacts/invite-contact.component
     User,
     AuthGuard
   ],
-  entryComponents: [InviteContactComponent, NewContactComponent, NewSubscriptionComponent,
+  entryComponents: [InviteContactComponent, NewContactComponent, NewOfferComponent,
     lockeddialogComponent, NewBillingComponent, CustomwidgetComponent, NewCouponsComponent,
     NewChatroomComponent, NewServicesComponent, ConfiguredialogComponent, NewTeamAvatarComponent,
     CustomScriptComponent, DeleteChatroomComponent],
