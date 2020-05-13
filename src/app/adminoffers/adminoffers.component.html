@@ -58,9 +58,9 @@
               <button class="btn btn-blue" (click)="openAddFileDialog()">
                   <span class="fa fa-plus"></span> Add New Offer
               </button>
-              <button class="btn btn-default" >
-                  <span class="fa fa-download ng-scope" ></span>Export
-              </button>
+              <button class="btn btn-default" (click)="offersExporter.exportTable('xlsx')">
+                <span class="fa fa-download "></span>  Export
+             </button>
               <div class="pull-right">
                   <button class="btn btn-default" >
                       <span class="fa fa-filter"></span> Filters
@@ -71,7 +71,7 @@
               </div>
           </div>
           <div class="mat-elevation-z8 box box-default">
-            <table mat-table [dataSource]="dataSource" matSort>
+            <table mat-table [dataSource]="dataSource" matTableExporter #offersExporter="matTableExporter" matSort>
               <!-- ID Column -->
               <ng-container matColumnDef="username">
                   <th mat-header-cell *matHeaderCellDef mat-sort-header> Username </th>
