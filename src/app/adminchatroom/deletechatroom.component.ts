@@ -9,9 +9,9 @@ import { Inject } from '@angular/core';
   <div class="modal-content new_user_dialog chatroom_dialog">
    <div class="modal-header">
       <h4 class="modal-title">
-         <button type="button" class="close" aria-label="Close">
-         <span aria-hidden="true" (click)="closeDialog()">×</span>
-         </button>
+      <button  mat-dialog-close  class="close">
+          <span aria-hidden="true">×</span>
+      </button> 
          # {{room.title}}
       </h4>
    </div>
@@ -25,7 +25,7 @@ import { Inject } from '@angular/core';
       </div>
    </div>
     <div class="modal-footer wrap-div">
-        <button autofocus="" class="btn btn-default pull-left" type="button" (click)="closeDialog()">Cancel</button>
+        <button mat-dialog-close  class="btn btn-default pull-left" type="button" (click)="closeDialog()">Cancel</button>
         <button (click)="deleteChatRoom()" class="btn btn-blue">Confirm Delete</button>
     </div>
 </div>

@@ -5,9 +5,9 @@ import { Component } from '@angular/core';
   <div class="modal-content new_user_dialog custom_widget">
    <div class="modal-header">
       <h4 class="modal-title">
-         <button type="button" class="close" aria-label="Close">
-         <span aria-hidden="true">×</span>
-         </button>
+      <button  mat-dialog-close  class="close">
+          <span aria-hidden="true">×</span>
+      </button> 
          Configure Widget
       </h4>
    </div>
