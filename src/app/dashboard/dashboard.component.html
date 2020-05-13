@@ -18,10 +18,10 @@
         </button>
         <div class="roomHeader" style="float:none;">
           <i class="roomHash fa fa-hashtag" aria-hidden="true"></i>
-          <span class="roomTitle text-capitalize ng-binding ng-scope">{{roomTitle}}</span>
+          <span class="roomTitle text-capitalize  ">{{roomTitle}}</span>
           <i class="fa" ng-class="{'roomLock': room.n_type==2 , 'fa-unlock': room.n_type==2}" aria-hidden="true"></i>
           <div header-nav-trial="" class="nav-trial-container">
-            <div class="nav-trial-container-text ng-binding"></div>
+            <div class="nav-trial-container-text "></div>
           </div>
         </div>
       </div>
@@ -45,36 +45,42 @@
           </mat-drawer-container>
           <div class="leftnav">
 
-            <button *ngIf="isAdmin" class="hidden-xs header-button ng-scope">
+            <button *ngIf="isAdmin" class="hidden-xs header-button dashboard ">
               <a href="/admindashboard">
                 <span class="icon fa fa-desktop"></span><br>
-                <span class="label ng-binding">DASHBOARD</span>
+                <span class="label">DASHBOARD</span>
               </a>
             </button>
-            <button class="hidden-xs header-button ng-scope">
+            <button *ngIf="isAdmin" class="hidden-xs header-button broadcast">
+              <a href="#">
+                <span class="icon fa fa-video-camera"></span><br>
+                <span class="label">BROADCAST</span>
+              </a>
+            </button>
+            <button class="hidden-xs header-button ">
               <span class="icon fa fa-bar-chart"></span><br>
-              <span class="label ng-binding">CHARTS</span>
+              <span class="label ">CHARTS</span>
             </button>
-            <button class="hidden-xs header-button ng-scope">
+            <button class="hidden-xs header-button ">
               <span class="icon fa fa-clock-o"></span><br>
-              <span class="label ng-binding">MARKET HOURS</span>
-            </button> <button class="hidden-xs header-button ng-scope">
+              <span class="label ">MARKET HOURS</span>
+            </button> <button class="hidden-xs header-button ">
               <span class="icon fa fa-thermometer-full"></span><br>
-              <span class="label ng-binding">FX HEATMAP</span>
+              <span class="label ">FX HEATMAP</span>
             </button>
-            <button class="hidden-xs header-button ng-scope">
+            <button class="hidden-xs header-button ">
               <span class="icon fa fa-bolt"></span><br>
-              <span class="label ng-binding">DATAFLASH</span>
+              <span class="label ">DATAFLASH</span>
             </button>
-            <button class="hidden-xs header-button ng-scope" mat-button (click)="drawer4.toggle()">
+            <button class="hidden-xs header-button " mat-button (click)="drawer4.toggle()">
               <span class="icon fa fa-address-book-o"></span><br>
-              <span class="label ng-binding">DIRECTORY</span>
+              <span class="label ">DIRECTORY</span>
             </button>
             <div class="example-sidenav-content widget-btn side-tp ">
               <button class="hamburgerHeader header-button hamburger hamburger-arrow-left " hamburger-drv="" mat-button
                 (click)="drawer1.toggle()">
-                <span class="icon material-icons ng-binding">apps</span><br>
-                <span class="label ng-binding">WIDGETS</span>
+                <span class="icon material-icons ">apps</span><br>
+                <span class="label ">WIDGETS</span>
               </button>
             </div>
           </div>

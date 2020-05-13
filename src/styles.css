@@ -1462,7 +1462,7 @@ app-dashboard mat-form-field {
   border: none;
   -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,.4);
   box-shadow: 1px 1px 4px rgba(0,0,0,.4);
-  -webkit-transition: all .4s;
+  -webkit-transition: all .4s;  
   -o-transition: all .4s;
   transition: all .4s;
   margin-right: 3px;
@@ -1582,6 +1582,12 @@ button.btn.btn-blue {
 .show_hide {
   display: block!important;
 }
+.header-button.dashboard{
+ background-color: #ff7f3a!important
+}
+.header-button.broadcast{
+  background-color: #8a3000!important;
+ }
 .leftnav{
   height: 100vh;
   background: #e26727;
@@ -1603,7 +1609,7 @@ button.btn.btn-blue {
 .leftnav button{
   display: inline-block;
   width: 100%;
-  margin: 5px 0!important;
+  margin: 0!important;
   padding: 12px 0px !important;
   height: auto!important;
 }
