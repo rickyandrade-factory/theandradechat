@@ -40,8 +40,6 @@ import { NewContactComponent } from './admincontacts/new-contact.component';
 import { NewBillingComponent } from './adminbilling/new-billing.component';
 import { NewSubscriptionComponent } from './adminsubscriptions/new-subscription.component';
 import { AdminsubscriptionsComponent } from './adminsubscriptions/adminsubscriptions.component';
-import { AdminpayoutsComponent } from './adminpayouts/adminpayouts.component';
-import { WithdrawOptionComponent } from './adminpayouts/withdraw-option.component';
 import { ProfileSidebarComponent } from './profile-sidebar/profile-sidebar.component';
 import { OnpointRoomComponent } from './onpoint-room/onpoint-room.component';
 import { lockeddialogComponent } from './sidenav/locked-dialog.component';
@@ -62,7 +60,6 @@ import { AdminonlineativityComponent } from './adminonlineativity/adminonlineati
 import { AdminsettingsComponent } from './adminsettings/adminsettings.component';
 import { NewTeamAvatarComponent } from './adminsettings/new-teamavatar.component';
 import { CustomScriptComponent } from './adminsettings/custom-script.component';
-import { ViewPaymentComponent } from './adminpayouts/view-payment.component';
 import { InviteContactComponent } from './admincontacts/invite-contact.component';
 
 @NgModule({
@@ -86,8 +83,6 @@ import { InviteContactComponent } from './admincontacts/invite-contact.component
     AdminpaymentsComponent,
     NewSubscriptionComponent,
     AdminsubscriptionsComponent,
-    AdminpayoutsComponent,
-    WithdrawOptionComponent,
     ProfileSidebarComponent,
     OnpointRoomComponent,
     lockeddialogComponent,
@@ -108,7 +103,6 @@ import { InviteContactComponent } from './admincontacts/invite-contact.component
     AdminsettingsComponent,
     NewTeamAvatarComponent,
     CustomScriptComponent,
-    ViewPaymentComponent,
     DeleteChatroomComponent,
     NewContactComponent,
     InviteContactComponent
@@ -132,10 +126,10 @@ import { InviteContactComponent } from './admincontacts/invite-contact.component
     User,
     AuthGuard
   ],
-  entryComponents: [InviteContactComponent, NewContactComponent, NewSubscriptionComponent, WithdrawOptionComponent,
+  entryComponents: [InviteContactComponent, NewContactComponent, NewSubscriptionComponent,
     lockeddialogComponent, NewBillingComponent, CustomwidgetComponent, NewCouponsComponent,
     NewChatroomComponent, NewServicesComponent, ConfiguredialogComponent, NewTeamAvatarComponent,
-    CustomScriptComponent, ViewPaymentComponent, DeleteChatroomComponent],
+    CustomScriptComponent, DeleteChatroomComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
