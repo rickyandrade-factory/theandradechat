@@ -4,18 +4,6 @@ import {MatSort} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
 import { Subscription } from 'rxjs';
 
-
-
-// export class AdminpaymentsComponent implements OnInit {
-
-//   constructor() { }
-
-//   ngOnInit() {
-//   }
-
-// }
-
-
 export interface UserData {
   name: string;
   progress: string;
@@ -74,21 +62,12 @@ const PLAN: string[] = [
 
 
 
-/**
- * @title Data table with sorting, pagination, and filtering.
- */ 
-// @Component({
-//   selector: 'table-overview-example',
-//   styleUrls: ['table-overview-example.css'],
-//   templateUrl: 'table-overview-example.html',
-// })
-
 @Component({
-  selector: 'app-adminpayments',
-  templateUrl: './adminpayments.component.html',
-  styleUrls: ['./adminpayments.component.css']
+  selector: 'app-adminsales',
+  templateUrl: './adminsales.component.html',
+  styleUrls: ['./adminsales.component.css']
 })
-export class AdminpaymentsComponent implements OnInit {
+export class AdminsalesComponent implements OnInit {
   displayedColumns: string[] = ['date', 'username', 'email', 'plan', 'description', 'amount',  'status'];
   dataSource: MatTableDataSource<UserData>;
 

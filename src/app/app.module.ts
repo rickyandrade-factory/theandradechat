@@ -35,7 +35,7 @@ import { UnlockchatroomComponent } from './unlockchatroom/unlockchatroom.compone
 import { UserPanelComponent } from './user-panel/user-panel.component';
 import { AdminSidebarComponent } from './admin-sidebar/admin-sidebar.component';
 import { AdmincontactsComponent } from './admincontacts/admincontacts.component';
-import { AdminpaymentsComponent } from './adminpayments/adminpayments.component';
+import { AdminsalesComponent } from './adminsales/adminsales.component';
 import { NewContactComponent } from './admincontacts/new-contact.component';
 import { NewBillingComponent } from './adminbilling/new-billing.component';
 import { NewOfferComponent } from './adminoffers/new-offer.component';
@@ -80,7 +80,7 @@ import { InviteContactComponent } from './admincontacts/invite-contact.component
     UserPanelComponent,
     AdminSidebarComponent,
     AdmincontactsComponent,
-    AdminpaymentsComponent,
+    AdminsalesComponent,
     NewOfferComponent,
     AdminoffersComponent,
     ProfileSidebarComponent,
