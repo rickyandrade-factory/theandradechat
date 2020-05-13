@@ -327,9 +327,6 @@ p.teamName {
 .mat-radio-button{
   margin-bottom: 10px;
 }
-.new_user_dialog .role{
- position: absolute;
-}
 .new_user_dialog mat-form-field{
   width:100%;
 }

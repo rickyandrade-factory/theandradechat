@@ -34,18 +34,18 @@ import { Component } from '@angular/core';
          </div>
          <div class="row">
             <div class="col-sm-6">
-               <div class="role">
-                  <label>
-                  Role
-                  </label>
-                  <button class="btn btn-xs btn-link btn-no-shadow" type="button" uib-popover-template="'users/_common/user-type-info.html'" popover-trigger="'mouseenter'" popover-class="popover-lg">
-                  <span class="fa fa-info-circle fa-fw text-muted"></span>
-                  </button>
-               </div>
                <mat-form-field>
-                  <mat-select placeholder="Select">
-                     <mat-option value="option">Option</mat-option>
+                  <mat-select placeholder="Role">
+                     <mat-option value="Admin">Admin</mat-option>
+                     <mat-option value="Instructor">Instructor</mat-option>
+                     <mat-option value="Moderator">Moderator</mat-option>
+                     <mat-option value="User">User</mat-option>
                   </mat-select>
+                  <mat-hint>
+                     <a href="#" class="">
+                           <i class="fa fa-info-circle"></i>
+                     </a>
+                  </mat-hint>
                </mat-form-field>
             </div>
             <div class="col-sm-6">
