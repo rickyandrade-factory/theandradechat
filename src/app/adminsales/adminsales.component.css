@@ -1,6 +1,5 @@
 table {
   width: 100%;
-  position: relative;
 }
 
 .mat-form-field {
@@ -10,7 +9,6 @@ table {
 th{
   font-weight: bold;
 }
-
 th.mat-column-position, td.mat-column-position {
   padding-left: 8px;
 }
