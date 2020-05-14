@@ -441,6 +441,10 @@ a.profile-menu {
   background: #fff;
   padding: 0px 15px;
 }
+.admin-marketing .mat-tab-body-content{
+  background: #fff;
+  padding: 0px 15px;
+}
 .admin-widget .mat-tab-header i {
   margin-right: 10px!important;
 }

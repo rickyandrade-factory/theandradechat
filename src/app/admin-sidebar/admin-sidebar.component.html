@@ -68,6 +68,12 @@
             <span>Widgets</span>
         </a>
     </li>
+    <li ng-class="{active:vm.$state.includes('app.widgets')}">
+        <a [routerLink]="['/adminmarketing']" routerLinkActive="selectedRoom" class="flex-parent  widget-link" ui-sref="app.widgets" href="#!/widgets">
+            <i class="fa fa-bullhorn fa-fw"></i>
+            <span>Marketing</span>
+        </a>
+    </li>
     <li class="divider no-line"></li>
     <li  ng-class="{active:vm.$state.includes('app.online')}">
         <a [routerLink]="['/adminonlineativity']" routerLinkActive="selectedRoom" class="flex-parent" ui-sref="app.online">

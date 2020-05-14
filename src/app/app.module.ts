@@ -62,6 +62,7 @@ import { NewTeamAvatarComponent } from './adminsettings/new-teamavatar.component
 import { CustomScriptComponent } from './adminsettings/custom-script.component';
 import { InviteContactComponent } from './admincontacts/invite-contact.component';
 import { MatTableExporterModule } from 'mat-table-exporter';
+import { AdminmarketingComponent } from './adminmarketing/adminmarketing.component';
 
 @NgModule({
   declarations: [
@@ -106,7 +107,8 @@ import { MatTableExporterModule } from 'mat-table-exporter';
     CustomScriptComponent,
     DeleteChatroomComponent,
     NewContactComponent,
-    InviteContactComponent
+    InviteContactComponent,
+    AdminmarketingComponent
   ],
   imports: [
     BrowserModule,
