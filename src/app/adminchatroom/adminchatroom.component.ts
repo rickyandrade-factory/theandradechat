@@ -8,6 +8,7 @@ import { NewChatroomComponent } from './new-cahtroom.component';
 import { DeleteChatroomComponent } from './deletechatroom.component';
 import { AuthService } from '../services/auth.service';
 
+import {ProgressSpinnerMode} from '@angular/material/progress-spinner';
 
 export interface UserData {
   name: string;
@@ -88,7 +89,9 @@ const TYPE: string[] = [
 })
 
 export class AdminchatroomComponent implements OnInit {
-
+  mode: ProgressSpinnerMode = 'determinate';
+  showSpinner= false;
+  
   displayedColumns: string[] = ['name', 'description', 'type', 'plan', 'coupon', 'sort', 'checkout', 'alter'];
   rooms = []
   dataSource: MatTableDataSource<UserData>;
@@ -137,6 +140,17 @@ export class AdminchatroomComponent implements OnInit {
     });
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
+  }
+
+  // onrefresh
+  onRefresh(){
+    console.log('it isw')
+    this.showSpinner= true;
+    this.mode = 'indeterminate';
+    setTimeout(() => {
+      this.mode = 'determinate';
+      this.showSpinner= false;
+    }, 1000)
   }
 
   applyFilter(filterValue: string) {

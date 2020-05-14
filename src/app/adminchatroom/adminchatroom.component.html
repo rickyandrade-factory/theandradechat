@@ -61,13 +61,14 @@
           <span class="fa fa-plus fa-fw"></span> New Chatroom
         </button>
         <div class="pull-right">
-          <button class="btn btn-default">
+          <button class="btn btn-default" (click)="onRefresh()">
             <span class="fa fa-refresh fa-fw" ng-class="{'fa-spin':vm.loading}"></span>
           </button>
         </div>
       </div>
       <div class="mat-elevation-z8 box box-default">
-        <table mat-table [dataSource]="rooms" matSort>
+        <table mat-table [dataSource]="rooms" matSort
+        [ngClass]="{'ActiveSpinner': showSpinner == true}">
           <!-- ID Column -->
           <ng-container matColumnDef="name">
             <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
@@ -114,6 +115,8 @@
           </tr>
         </table>
         <mat-paginator [pageSizeOptions]="[14, 30, 50, 100]"></mat-paginator>
+        <mat-progress-spinner  [mode]="mode">
+        </mat-progress-spinner>
       </div>
     </section>
   </mat-drawer-container>

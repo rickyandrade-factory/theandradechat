@@ -4,6 +4,8 @@ import {MatSort} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
 import { Subscription } from 'rxjs';
 
+import {ProgressSpinnerMode} from '@angular/material/progress-spinner';
+
 export interface UserData {
   name: string;
   progress: string;
@@ -68,6 +70,12 @@ const PLAN: string[] = [
   styleUrls: ['./adminsales.component.css']
 })
 export class AdminsalesComponent implements OnInit {
+
+ 
+  mode: ProgressSpinnerMode = 'determinate';
+  showSpinner= false;
+
+
   displayedColumns: string[] = ['date', 'username', 'email', 'plan', 'description', 'amount',  'status'];
   dataSource: MatTableDataSource<UserData>;
 
@@ -94,6 +102,17 @@ export class AdminsalesComponent implements OnInit {
       this.dataSource.paginator.firstPage();
     }
   }
+
+  // onrefresh
+  onRefresh(){
+    this.showSpinner= true;
+    this.mode = 'indeterminate';
+    setTimeout(() => {
+      this.mode = 'determinate';
+      this.showSpinner= false;
+    }, 1000)
+  }
+ 
 }
 
 /** Builds and returns a new User. */

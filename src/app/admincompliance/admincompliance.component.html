@@ -50,7 +50,7 @@
           </div>
           <section class="content-header ng-scope">
               <h1>
-                Coupons
+                Compliance
               </h1>
           </section>
           <section class="content admin-user admin_payouts">
@@ -95,14 +95,15 @@
                     </button>
                 </form>
                 <div class="pull-right">
-                    <button class="btn btn-default">
+                    <button class="btn btn-default" (click)="onRefresh()">
                         <span class="fa fa-refresh fa-fw" ></span>
                     </button>
                 </div>
                 <div class="clearfix"></div>
             </div>
               <div class="mat-elevation-z8 box box-default">
-                <table mat-table [dataSource]="dataSource" matSort>
+                <table mat-table [dataSource]="dataSource" matSort
+                [ngClass]="{'ActiveSpinner': showSpinner == true}">
                   <!-- Color Column -->
                   <ng-container matColumnDef="date">
                     <th mat-header-cell *matHeaderCellDef mat-sort-header> Date </th>
@@ -128,6 +129,8 @@
                   </tr>
                 </table>
                 <mat-paginator [pageSizeOptions]="[14, 30, 50, 100]"></mat-paginator>
+                <mat-progress-spinner  [mode]="mode">
+                </mat-progress-spinner>
               </div>
           </section>
         </mat-drawer-container>

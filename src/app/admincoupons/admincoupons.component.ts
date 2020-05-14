@@ -7,6 +7,8 @@ import { Subscription } from 'rxjs';
 import {VERSION, MatDialog, MatDialogRef} from '@angular/material';
 import { NewCouponsComponent } from './new-coupons.component';
 
+import {ProgressSpinnerMode} from '@angular/material/progress-spinner';
+
 export interface UserData {
   name: string;
   color: string;
@@ -61,6 +63,9 @@ const AMOUNT: string[] = [
 })
 
 export class AdmincouponsComponent implements OnInit {
+  mode: ProgressSpinnerMode = 'determinate';
+  showSpinner= false;
+
   displayedColumns: string[] = ['name', 'amount',  'currency', 'percentoff', 'alter'];
   dataSource: MatTableDataSource<UserData>;
 
@@ -88,6 +93,17 @@ export class AdmincouponsComponent implements OnInit {
   ngOnInit() {
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
+  }
+
+  // onrefresh
+  onRefresh(){
+    console.log('it isw')
+    this.showSpinner= true;
+    this.mode = 'indeterminate';
+    setTimeout(() => {
+      this.mode = 'determinate';
+      this.showSpinner= false;
+    }, 1000)
   }
 
   applyFilter(filterValue: string) {

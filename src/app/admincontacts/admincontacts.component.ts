@@ -8,7 +8,7 @@ import {VERSION, MatDialog, MatDialogRef} from '@angular/material';
 import { NewContactComponent } from './new-contact.component';
 import { InviteContactComponent } from './invite-contact.component';
 
-
+import {ProgressSpinnerMode} from '@angular/material/progress-spinner';
 export interface UserData {
   name: string;
   progress: string;
@@ -90,6 +90,8 @@ const VERIFIED: string[] = [
 })
 export class AdmincontactsComponent implements OnInit {
 
+  mode: ProgressSpinnerMode = 'determinate';
+  showSpinner= false;
 
   displayedColumns: string[] = ['img', 'username', 'email', 'verified', 'subscription', 'type',  'devices', 'registered', 'seen', 'empty'];
   dataSource: MatTableDataSource<UserData>;
@@ -134,6 +136,17 @@ export class AdmincontactsComponent implements OnInit {
       this.dataSource.paginator.firstPage();
     }
   }
+
+    // onrefresh
+    onRefresh(){
+      console.log('it isw')
+      this.showSpinner= true;
+      this.mode = 'indeterminate';
+      setTimeout(() => {
+        this.mode = 'determinate';
+        this.showSpinner= false;
+      }, 1000)
+    }
 }
 
 /** Builds and returns a new User. */

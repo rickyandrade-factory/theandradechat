@@ -73,7 +73,7 @@
                 <button class="btn btn-default" ng-click="vm.ToggleFiltering()">
                     <span class="fa fa-filter"></span> Filters
                 </button>
-                <button class="btn btn-default" ng-click="vm.LoadUsers()">
+                <button class="btn btn-default" ng-click="vm.LoadUsers()" (click)="onRefresh()">
                     <span class="fa fa-refresh fa-fw" ng-class="{'fa-spin':vm.loading}"></span>
                 </button>
             </div>
@@ -82,7 +82,9 @@
           <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
         </mat-form-field>
         <div class="mat-elevation-z8 box box-default">
-          <table mat-table matTableExporter #exporter="matTableExporter" [dataSource]="dataSource" matSort>
+          <table mat-table matTableExporter #exporter="matTableExporter"
+          [ngClass]="{'ActiveSpinner': showSpinner == true}"
+          [dataSource]="dataSource" matSort>
              <!-- ID Column -->
              <ng-container matColumnDef="img">
                 <th mat-header-cell *matHeaderCellDef mat-sort-header> </th>
@@ -152,8 +154,11 @@
 
             <tr mat-row *matRowDef="let row; columns: displayedColumns;">
             </tr>
+        
           </table>
           <mat-paginator [pageSizeOptions]="[13, 25, 50, 100]"></mat-paginator>
+          <mat-progress-spinner  [mode]="mode">
+          </mat-progress-spinner>
         </div>
     </section>
   </mat-drawer-container>

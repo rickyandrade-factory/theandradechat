@@ -4,8 +4,7 @@ import {MatSort} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
 import { Subscription } from 'rxjs';
 import {VERSION, MatDialog, MatDialogRef} from '@angular/material';
-//import { NewCouponsComponent } from './new-coupons.component';
-
+import {ProgressSpinnerMode} from '@angular/material/progress-spinner';
 export interface UserData {
   name: string;
   color: string;
@@ -76,6 +75,9 @@ const DATE: string[] = [
 })
 
 export class AdmincomplianceComponent implements OnInit {
+  mode: ProgressSpinnerMode = 'determinate';
+  showSpinner= false;
+
   displayedColumns: string[] = ['date',  'user', 'ip', 'report'];
   dataSource: MatTableDataSource<UserData>;
 
@@ -96,6 +98,17 @@ export class AdmincomplianceComponent implements OnInit {
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
   }
+
+    // onrefresh
+    onRefresh(){
+      console.log('it isw')
+      this.showSpinner= true;
+      this.mode = 'indeterminate';
+      setTimeout(() => {
+        this.mode = 'determinate';
+        this.showSpinner= false;
+      }, 1000)
+    }
 
   applyFilter(filterValue: string) {
     this.dataSource.filter = filterValue.trim().toLowerCase();

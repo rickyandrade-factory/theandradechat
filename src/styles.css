@@ -257,7 +257,6 @@ p.teamName {
 } 
 
 
-
 /* admin panel */
 .mini-sidebar mat-drawer-content {
   margin-left: 50px!important;
@@ -515,6 +514,19 @@ a.profile-menu {
   zoom: 1;
   overflow: hidden;
 }
+/* spinner */
+.mat-progress-spinner{
+  position: absolute!important;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%)!important;
+  -webkit-transform: translateX(-50%) translateY(-50%)!important;
+  transform: translateX(-50%) translateY(-50%)!important;
+}
+.ActiveSpinner{
+  background-color: rgba(0,0,0,.055);
+}
+
 .line-graph .btn-link {
   border-radius: 4px;
   -webkit-box-shadow: none;

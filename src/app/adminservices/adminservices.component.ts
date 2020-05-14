@@ -8,7 +8,7 @@ import { Subscription } from 'rxjs';
 import {VERSION, MatDialog, MatDialogRef} from '@angular/material';
 import { NewServicesComponent } from './new-services.component';
 
-
+import {ProgressSpinnerMode} from '@angular/material/progress-spinner';
 export interface UserData {
   name: string;
   color: string;
@@ -85,8 +85,6 @@ const URL: string[] = [
   'www.mmagoldencircle.com/market-mastermind-1','www.onpointfxsignals.com/7-day-forex-training', 'app.acuityscheduling.com/schedule.php?owner=17124016&calendarID=2736894',
 ]
 
-
-
 @Component({
   selector: 'app-adminservices',
   templateUrl: './adminservices.component.html',
@@ -94,12 +92,14 @@ const URL: string[] = [
 })
 
 export class AdminservicesComponent implements OnInit {
+  mode: ProgressSpinnerMode = 'determinate';
+  showSpinner= false;
+
   displayedColumns: string[] = ['name', 'description', 'url',  'plan', 'coupon', 'sort',  'checkout', 'alter'];
   dataSource: MatTableDataSource<UserData>;
 
   @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator; 
   @ViewChild(MatSort, {static: true}) sort: MatSort;
-
 
   version = VERSION;
 
@@ -120,6 +120,17 @@ export class AdminservicesComponent implements OnInit {
   ngOnInit() {
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
+  }
+
+  // onrefresh
+  onRefresh(){
+    console.log('it isw')
+    this.showSpinner= true;
+    this.mode = 'indeterminate';
+    setTimeout(() => {
+      this.mode = 'determinate';
+      this.showSpinner= false;
+    }, 1000)
   }
 
   applyFilter(filterValue: string) {

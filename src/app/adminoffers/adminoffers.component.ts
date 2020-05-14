@@ -7,7 +7,7 @@ import { Subscription } from 'rxjs';
 import {VERSION, MatDialog, MatDialogRef} from '@angular/material';
 import { NewOfferComponent } from './new-offer.component';
 
-
+import {ProgressSpinnerMode} from '@angular/material/progress-spinner';
 
 export interface UserData {
   name: string;
@@ -88,6 +88,9 @@ const PLAN: string[] = [
   styleUrls: ['./adminoffers.component.css']
 })
 export class AdminoffersComponent implements OnInit {
+  mode: ProgressSpinnerMode = 'determinate';
+  showSpinner= false;
+
   displayedColumns: string[] = ['username', 'email', 'plan',  'startt', 'endt', 'no',  'start', 'end',  'canceled', 'empty'];
   dataSource: MatTableDataSource<UserData>;
 
@@ -117,6 +120,17 @@ export class AdminoffersComponent implements OnInit {
     // Assign the data to the data source for the table to render
     this.dataSource = new MatTableDataSource(users);
   }
+
+     // onrefresh
+     onRefresh(){
+      console.log('it isw')
+      this.showSpinner= true;
+      this.mode = 'indeterminate';
+      setTimeout(() => {
+        this.mode = 'determinate';
+        this.showSpinner= false;
+      }, 1000)
+    }
 
   ngOnInit() {
     this.dataSource.paginator = this.paginator;

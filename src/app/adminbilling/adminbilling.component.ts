@@ -7,6 +7,7 @@ import { Subscription } from 'rxjs';
 import {VERSION, MatDialog, MatDialogRef} from '@angular/material';
 import { NewBillingComponent } from './new-billing.component';
 
+import {ProgressSpinnerMode} from '@angular/material/progress-spinner';
 
 export interface UserData {
   name: string;
@@ -89,6 +90,9 @@ const ONOFF: string[] = [
 })
 
 export class AdminbillingComponent implements OnInit {
+  mode: ProgressSpinnerMode = 'determinate';
+  showSpinner= false;
+
   displayedColumns: string[] = ['name', 'description', 'onoff',  'currency', 'price', 'cycle',  'term', 'alter'];
   dataSource: MatTableDataSource<UserData>;
 
@@ -117,6 +121,17 @@ export class AdminbillingComponent implements OnInit {
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
   }
+
+  // onrefresh
+     onRefresh(){
+      console.log('it isw')
+      this.showSpinner= true;
+      this.mode = 'indeterminate';
+      setTimeout(() => {
+        this.mode = 'determinate';
+        this.showSpinner= false;
+      }, 1000)
+    }
 
   applyFilter(filterValue: string) {
     this.dataSource.filter = filterValue.trim().toLowerCase();

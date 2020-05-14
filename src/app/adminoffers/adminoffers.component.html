@@ -65,13 +65,15 @@
                   <button class="btn btn-default" >
                       <span class="fa fa-filter"></span> Filters
                   </button>
-                  <button class="btn btn-default">
+                  <button class="btn btn-default" (click)="onRefresh()">
                       <span class="fa fa-refresh fa-fw"></span>
                   </button>
               </div>
           </div>
           <div class="mat-elevation-z8 box box-default">
-            <table mat-table [dataSource]="dataSource" matTableExporter #offersExporter="matTableExporter" matSort>
+            <table mat-table [dataSource]="dataSource" matTableExporter
+            [ngClass]="{'ActiveSpinner': showSpinner == true}"
+            #offersExporter="matTableExporter" matSort>
               <!-- ID Column -->
               <ng-container matColumnDef="username">
                   <th mat-header-cell *matHeaderCellDef mat-sort-header> Username </th>
@@ -130,6 +132,8 @@
               </tr>
             </table>
             <mat-paginator [pageSizeOptions]="[14, 30, 50, 100]"></mat-paginator>
+            <mat-progress-spinner  [mode]="mode">
+            </mat-progress-spinner>
           </div>
       </section>
     </mat-drawer-container>
