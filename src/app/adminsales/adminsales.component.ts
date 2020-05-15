@@ -18,7 +18,7 @@ export class AdminsalesComponent implements OnInit {
   showSpinner= false;
 
   displayedColumns: string[] = ['date', 'username', 'email', 'plan', 'description', 'amount',  'status'];
-  dataSource = new MatTableDataSource(this.salesService.getSalesData());
+  dataSource = new MatTableDataSource<SalesInterface>(this.salesService.getSalesData());
 
   filterActive= false;
 
@@ -26,7 +26,6 @@ export class AdminsalesComponent implements OnInit {
   @ViewChild(MatSort, {static: true}) sort: MatSort;
 
   constructor( private salesService: SalesService) {}
-
   ngOnInit() {
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;

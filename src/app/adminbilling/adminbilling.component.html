@@ -59,7 +59,7 @@
           <span class="fa fa-plus fa-fw"></span> New Billing
       </button>
         <div class="pull-right">
-            <button class="btn btn-default">
+            <button class="btn btn-default" (click)="onActiveFilter()">
                 <span class="fa fa-filter fa-fw"></span> Filters
             </button>
             <button class="btn btn-default" (click)="onRefresh()">
@@ -67,6 +67,9 @@
             </button>
         </div>
     </div>
+    <mat-form-field *ngIf="filterActive">
+      <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Search">
+    </mat-form-field>
         <div class="mat-elevation-z8 box box-default">
           <table mat-table [dataSource]="dataSource" matSort
           [ngClass]="{'ActiveSpinner': showSpinner == true}">

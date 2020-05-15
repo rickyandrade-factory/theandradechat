@@ -92,7 +92,7 @@ const ONOFF: string[] = [
 export class AdminbillingComponent implements OnInit {
   mode: ProgressSpinnerMode = 'determinate';
   showSpinner= false;
-
+  filterActive= false;
   displayedColumns: string[] = ['name', 'description', 'onoff',  'currency', 'price', 'cycle',  'term', 'alter'];
   dataSource: MatTableDataSource<UserData>;
 
@@ -131,6 +131,11 @@ export class AdminbillingComponent implements OnInit {
         this.mode = 'determinate';
         this.showSpinner= false;
       }, 1000)
+    }
+
+    // filter
+    onActiveFilter(){
+      this.filterActive= !this.filterActive;
     }
 
   applyFilter(filterValue: string) {

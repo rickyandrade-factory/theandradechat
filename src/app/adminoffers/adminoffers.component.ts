@@ -94,6 +94,8 @@ export class AdminoffersComponent implements OnInit {
   displayedColumns: string[] = ['username', 'email', 'plan',  'startt', 'endt', 'no',  'start', 'end',  'canceled', 'empty'];
   dataSource: MatTableDataSource<UserData>;
 
+  filterActive= false;
+  
   @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
   @ViewChild(MatSort, {static: true}) sort: MatSort;
 
@@ -132,10 +134,16 @@ export class AdminoffersComponent implements OnInit {
       }, 1000)
     }
 
+     // filter
+     onActiveFilter(){
+      this.filterActive= !this.filterActive;
+    }
+
   ngOnInit() {
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
   }
+
 
   applyFilter(filterValue: string) {
     this.dataSource.filter = filterValue.trim().toLowerCase();

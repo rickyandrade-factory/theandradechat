@@ -65,7 +65,7 @@ const AMOUNT: string[] = [
 export class AdmincouponsComponent implements OnInit {
   mode: ProgressSpinnerMode = 'determinate';
   showSpinner= false;
-
+  filterActive= false;
   displayedColumns: string[] = ['name', 'amount',  'currency', 'percentoff', 'alter'];
   dataSource: MatTableDataSource<UserData>;
 
@@ -105,6 +105,11 @@ export class AdmincouponsComponent implements OnInit {
       this.showSpinner= false;
     }, 1000)
   }
+
+    // filter
+    onActiveFilter(){
+      this.filterActive= !this.filterActive;
+    }
 
   applyFilter(filterValue: string) {
     this.dataSource.filter = filterValue.trim().toLowerCase();
