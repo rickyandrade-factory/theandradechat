@@ -132,12 +132,12 @@
                                 <div class="col-md-12">
                                         <div class="line-graph" ng-controller="MyController">
                                             <div class="box">
-                                                    <div class="box-header with-border">
-                                                            <h3 class="box-title">
+                                                    <div class="box-header with-border" style="padding-bottom: 0;">
+                                                            <h3 class="box-title" style="line-height: 50px;">
                                                                 Registrations Overview
                                                             </h3>
                                                             <div class="box-tools pull-right">
-                                                                <button type="button" class="btn btn-sm btn-link btn-no-shadow" ng-click="vm._isLine = !vm._isLine">
+                                                                <button type="button" class="btn btn-sm btn-link btn-no-shadow" >
                                                                     <span ng-show="!vm._isLine">
                                                                         <span class="text-muted">
                                                                             <span class="fa fa-line-chart fa-fw"></span>Line</span>/
@@ -152,14 +152,15 @@
                                                                     </span>
                                                                 </button>
                                                                 <div class="dropdown-btn">
-                                                                        <button mat-button [matMenuTriggerFor]="beforeMenu">Last 30 days <span class="caret"></span></button>
-                                                                        <mat-menu #beforeMenu="matMenu" xPosition="before">
-                                                                          <button class="white" mat-menu-item>Last 90 days</button>
-                                                                          <button class="white" mat-menu-item>Last 60 days</button>
-                                                                          <button class="white" mat-menu-item>Last 30 days</button>
-                                                                          <button class="white" mat-menu-item>Last 15 days</button>
-                                                                          <button class="white" mat-menu-item>Last 7 days</button>
-                                                                        </mat-menu>
+                                                                        <mat-form-field>
+                                                                            <mat-select [(value)]="selected">
+                                                                              <mat-option value="option1">Last 90 days</mat-option>
+                                                                              <mat-option value="option2">Last 60 days</mat-option>
+                                                                              <mat-option value="option3">Last 30 days</mat-option>
+                                                                              <mat-option value="option1">Last 15 days</mat-option>
+                                                                              <mat-option value="option2">Last 7 days</mat-option>
+                                                                            </mat-select>
+                                                                          </mat-form-field>
                                                                 </div>
                                                                 <button type="button" class="btn btn-sm btn-link btn-no-shadow" ng-click="vm.LoadRegistrations()">
                                                                     <span class="fa fa-refresh fa-fw" ng-class="{'fa-spin':vm.loading_statistics_registrations}"></span>

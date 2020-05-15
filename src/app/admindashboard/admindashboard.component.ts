@@ -8,6 +8,8 @@ declare var angular: any;
 })
 export class AdmindashboardComponent implements OnInit {
 
+  selected= 'option2';
+  
   // constructor() { }
   screenWidth: number;
 
