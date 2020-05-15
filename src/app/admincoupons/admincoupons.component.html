@@ -97,7 +97,9 @@
                 <ng-container matColumnDef="alter">
                   <th mat-header-cell *matHeaderCellDef mat-sort-header> </th>
                   <td mat-cell *matCellDef="let row" [style.color]="row.color">
-                      <a href=""><span class="fa fa-trash fa-fw text-danger" data-action="delete"></span></a>  
+                    <a mat-icon-button color="warn">
+                      <i class="fa fa-trash fa-fw" ></i>
+                    </a> 
                   </td>
                 </ng-container>
               <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

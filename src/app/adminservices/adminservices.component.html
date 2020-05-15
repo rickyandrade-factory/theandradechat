@@ -99,13 +99,19 @@
                 <!-- Color Column -->
                 <ng-container matColumnDef="checkout">
                   <th mat-header-cell *matHeaderCellDef mat-sort-header>Checkout</th>
-                  <td mat-cell *matCellDef="let row" [style.color]="row.color"> {{row.checkout}} </td>
+                  <td mat-cell *matCellDef="let row" > 
+                    <a mat-icon-button color="accent">
+                      <i class="fa fa-cart-plus" ></i>
+                    </a>  
+                  </td>
                 </ng-container>
                 <!-- Color Column -->
                 <ng-container matColumnDef="alter">
                   <th mat-header-cell *matHeaderCellDef mat-sort-header> </th>
-                  <td mat-cell *matCellDef="let row" [style.color]="row.color">
-                      <a href=""><span class="fa fa-trash fa-fw text-danger" data-action="delete"></span></a>  
+                  <td mat-cell *matCellDef="let row">
+                      <a mat-icon-button color="warn">
+                        <i class="fa fa-trash fa-fw" ></i>
+                      </a> 
                   </td>
                 </ng-container>
               <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

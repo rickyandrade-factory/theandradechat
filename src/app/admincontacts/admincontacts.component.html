@@ -142,11 +142,14 @@
               <!-- Color Column -->
               <ng-container matColumnDef="action">
                 <th mat-header-cell *matHeaderCellDef mat-sort-header>  </th>
-                <td mat-cell *matCellDef="let row" [style.color]="row.color"> <div class="ui-grid-cell-contents">
-                  <button class="btn btn-xs btn-link" data-action="delete" style="margin-right:10px;">
-                    <span class="fa fa-trash text-danger" data-action="delete"></span>
-                  </button><button class="btn btn-xs btn-default" data-action="edit">
-                    <span class="fa fa-pencil"></span> Edit</button>
+                <td mat-cell *matCellDef="let row" [style.color]="row.color"> 
+                  <div class="ui-grid-cell-contents">
+                    <a mat-icon-button color="warn">
+                      <i class="fa fa-trash fa-fw" ></i>
+                    </a> 
+                    <a mat-icon-button color="primary">
+                      <i class="fa fa-edit fa-fw" ></i>
+                    </a> 
                   </div> 
                 </td>
               </ng-container>

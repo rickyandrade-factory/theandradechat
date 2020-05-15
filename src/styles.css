@@ -13,6 +13,9 @@ body{
 .mat-tooltip {
   color: yellow;
 }
+a:focus{
+  outline: none!important;
+ }
 .p-10{
   padding: 10px!important;
 }
