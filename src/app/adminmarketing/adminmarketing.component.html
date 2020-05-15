@@ -50,25 +50,30 @@
                 </ul>
             </div>
         </div>
-        <section class="admin-marketing">
-            <h1>
-                Marketing
-                <button class="btn btn-blue pull-right">
-                    <span class="fa fa-plus fa-fw"></span>New Marketing
-                </button>
-            </h1>
+        <section class="admin-marketing ">
+            <button class="btn btn-blue pull-right new_marketing">
+                <span class="fa fa-plus fa-fw"></span>New Marketing
+            </button>
         </section>
-        <section class="admin-marketing">
-            <mat-tab-group>
+        <section class="admin-marketing pt-70">
+            <h1 class="pull-left">
+                Marketing
+            </h1>
+            <mat-form-field class="searchbar_marketing pull-right">
+                <input matInput placeholder="Search">
+            </mat-form-field>
+        </section>
+
+        <section class="admin-marketing pos-rel" style="clear: both;">
+            <mat-tab-group animationDuration="0ms">
                 <mat-tab>
                     <ng-template mat-tab-label>
-                        <!-- <i class="fa fa-search fa-1x"></i> -->
                         All
                     </ng-template>
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-12 p-10">
                             <a mat-icon-button>
-                                <i class="fa fa-user"></i>
+                                <i class="fa fa-envelope"></i>
                             </a>
                             <div class="name_and_desc">
                                 <h3>Live Analysis</h3>
@@ -76,21 +81,89 @@
                             </div>
                             <div class="toolbar-spacer"></div>
                             <div class="stats">
-                                <h4>20,017</h4>
-                                <span>Sends</span>
+                                <h3>20,017</h3>
+                                <p>Sends</p>
                             </div>
                             <div class="stats">
-                                <h4>20,017</h4>
-                                <span>Sends</span>
+                                <h3>320,017</h3>
+                                <p>Sends</p>
                             </div>
                             <div class="stats">
-                                <h4>1%</h4>
-                                <span>Clicked</span>
+                                <h3>1%</h3>
+                                <p>Clicked</p>
+                            </div>
+                        </div>
+                        <mat-divider class="wrap-div"></mat-divider>
+                        <div class="col-md-12 p-10">
+                            <a mat-icon-button>
+                                <i class="fa fa-paper-plane"></i>
+                            </a>
+                            <div class="name_and_desc">
+                                <h3>Live Analysis</h3>
+                                <p>Sent May 05, 2020 01:44PM</p>
+                            </div>
+                            <div class="toolbar-spacer"></div>
+                            <div class="stats">
+                                <h3>20,017</h3>
+                                <p>Sends</p>
+                            </div>
+                            <div class="stats">
+                                <h3>320,017</h3>
+                                <p>Sends</p>
+                            </div>
+                            <div class="stats">
+                                <h3>1%</h3>
+                                <p>Clicked</p>
+                            </div>
+                        </div>
+                        <mat-divider class="wrap-div"></mat-divider>
+                        <div class="col-md-12 p-10">
+                            <a mat-icon-button>
+                                <i class="fa fa-refresh"></i>
+                            </a>
+                            <div class="name_and_desc">
+                                <h3>UPSELL - On Point Crypto Signal</h3>
+                                <p>Sent May 05, 2020 01:44PM</p>
+                            </div>
+                            <div class="toolbar-spacer"></div>
+                            <div class="stats">
+                                <h3>20,017</h3>
+                                <p>Sends</p>
+                            </div>
+                            <div class="stats">
+                                <h3>320,017</h3>
+                                <p>Sends</p>
+                            </div>
+                            <div class="stats">
+                                <h3>1%</h3>
+                                <p>Clicked</p>
+                            </div>
+                        </div>
+                        <mat-divider class="wrap-div"></mat-divider>
+                        <div class="col-md-12 p-10">
+                            <a mat-icon-button>
+                                <i class="fa fa-paper-plane"></i>
+                            </a>
+                            <div class="name_and_desc">
+                                <h3>Live Analysis</h3>
+                                <p>Sent May 05, 2020 01:44PM</p>
+                            </div>
+                            <div class="toolbar-spacer"></div>
+                            <div class="stats">
+                                <h3>20,017</h3>
+                                <p>Sends</p>
+                            </div>
+                            <div class="stats">
+                                <h3>320,017</h3>
+                                <p>Sends</p>
+                            </div>
+                            <div class="stats">
+                                <h3>1%</h3>
+                                <p>Clicked</p>
                             </div>
                         </div>
                     </div>
                 </mat-tab>
-
                 <mat-tab>
                     <ng-template mat-tab-label>
                         Draft
@@ -135,7 +208,6 @@
                         </div>
                     </div>
                 </mat-tab>
-                
             </mat-tab-group>
         </section>
     </mat-drawer-container>

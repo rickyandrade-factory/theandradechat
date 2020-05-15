@@ -3,6 +3,9 @@ section.admin-marketing {
     max-width: 860px;
     margin: 0 auto;
 }
+.admin-marketing h1{
+    margin: 10px 0;
+}
 .col-md-12{
     display: flex;
     align-items: center;
@@ -14,12 +17,32 @@ section.admin-marketing {
     width: 10%;
     text-align: center;
 }
-.stats h4{
-    margin: 10px;
+.stats p{
+    margin: 0;
+}
+mat-tab-group h3{
+ margin: 0 0 10px 0;
 }
 mat-tab-body{
     background-color: #fff;
 }
 .col-md-12 a:focus{
  outline: none!important;
+}
+.name_and_desc p{
+ margin-bottom: 0;
+}
+.name_and_desc {
+    margin-left: 5px;
+}
+.pt-70{
+    padding-top: 70px;
+}
+.new_marketing{
+    margin-top: 20px;
+}
+.admin-marketing mat-form-field{
+ width: 300px;
+ position: relative;
+ bottom: -5px;
 }
