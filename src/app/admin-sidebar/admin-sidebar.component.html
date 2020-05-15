@@ -12,39 +12,39 @@
     </div>
   </div>
   <ul class="nav nav-sidebar">
-    <li class="ng-scope">
-        <a [routerLink]="['/admindashboard']" routerLinkActive="selectedRoom" style="cursor:pointer" class="flex-parent dashboard-link">
+    <li>
+        <a [routerLink]="['/admindashboard']" routerLinkActive="selectedRoom" class="flex-parent dashboard-link">
             <i class="fa fa-dashboard fa-fw"></i>
         <span class="room-name ng-binding">Dashboard</span>
         </a>
     </li>
-    <li  class="ng-scope">
-        <a [routerLink]="['/admincontacts']" routerLinkActive="selectedRoom" style="cursor:pointer" class="flex-parent users-link">
+    <li >
+        <a [routerLink]="['/admincontacts']" routerLinkActive="selectedRoom" class="flex-parent users-link">
             <i class="fa fa-users fa-fw"></i>
         <span class="ng-binding">Contacts</span>
         </a>
     </li>
-    <li ng-class="{active:vm.$state.includes('app.payments.*')}">
-        <a [routerLink]="['/adminsales']" routerLinkActive="selectedRoom"   class="flex-parent" ui-sref="app.payments.overview" href="#">
+    <li>
+        <a [routerLink]="['/adminsales']" routerLinkActive="selectedRoom"   class="flex-parent">
             <i class="fa fa-usd fa-fw"></i>
             <span>Sales</span>
         </a> 
     </li>
-    <li ng-class="{active:vm.$state.includes('app.subscriptions.*')}">
-        <a [routerLink]="['/adminoffers']" routerLinkActive="selectedRoom"  class="flex-parent  " ui-sref="app.subscriptions.overview" href="#">
+    <li>
+        <a [routerLink]="['/adminoffers']" routerLinkActive="selectedRoom"  class="flex-parent" >
             <i class="fa fa-percent fa-fw"></i>
             <span>Offers</span>
         </a>
     </li>
     <li class="divider no-line"></li>
-    <li ng-class="{active:vm.$state.includes('app.billing.*')}">
-        <a [routerLink]="['/adminbilling']" routerLinkActive="selectedRoom" class="flex-parent billing-link " ui-sref="app.billing.overview" href="#">
+    <li>
+        <a [routerLink]="['/adminbilling']" routerLinkActive="selectedRoom" class="flex-parent billing-link ">
             <i class="fa fa-credit-card fa-fw"></i>
             <span>Billing Plans</span>
         </a>
     </li>
     <li >
-        <a [routerLink]="['/admincoupons']" routerLinkActive="selectedRoom" class="flex-parent" href="# ">
+        <a [routerLink]="['/admincoupons']" routerLinkActive="selectedRoom" class="flex-parent" >
             <i class="fa fa-tags fa-fw"></i>
             <span>Coupons</span>
         </a>
@@ -57,26 +57,26 @@
         </a>
     </li>
     <li>
-        <a [routerLink]="['/adminservices']" routerLinkActive="selectedRoom" class="flex-parent  " ui-sref="app.pages.overview" href="#!/pages/">
+        <a [routerLink]="['/adminservices']" routerLinkActive="selectedRoom" class="flex-parent"  >
             <i class="fa fa-files-o fa-fw"></i>
             <span>Services</span>
         </a>
     </li>
-    <li ng-class="{active:vm.$state.includes('app.widgets')}">
-        <a [routerLink]="['/adminwidget']" routerLinkActive="selectedRoom" class="flex-parent  widget-link" ui-sref="app.widgets" href="#!/widgets">
+    <li>
+        <a [routerLink]="['/adminwidget']" routerLinkActive="selectedRoom" class="flex-parent  widget-link"  >
             <i class="fa fa-cubes fa-fw"></i>
             <span>Widgets</span>
         </a>
     </li>
-    <li ng-class="{active:vm.$state.includes('app.widgets')}">
-        <a [routerLink]="['/adminmarketing']" routerLinkActive="selectedRoom" class="flex-parent  widget-link" ui-sref="app.widgets" href="#!/widgets">
+    <li>
+        <a [routerLink]="['/adminmarketing']" routerLinkActive="selectedRoom" class="flex-parent  widget-link"  >
             <i class="fa fa-bullhorn fa-fw"></i>
             <span>Marketing</span>
         </a>
     </li>
     <li class="divider no-line"></li>
-    <li  ng-class="{active:vm.$state.includes('app.online')}">
-        <a [routerLink]="['/adminonlineativity']" routerLinkActive="selectedRoom" class="flex-parent" ui-sref="app.online">
+    <li>
+        <a [routerLink]="['/adminonlineativity']" routerLinkActive="selectedRoom" class="flex-parent" >
             <i class="fa fa-podcast fa-fw"></i>
             <span>Online Activity</span>
         </a>
