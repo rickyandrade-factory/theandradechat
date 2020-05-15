@@ -65,7 +65,7 @@
                                 <span class="fa fa-download "></span> Export
                             </button>
                             <div class="pull-right">
-                                <button class="btn btn-default" ng-click="vm.ToggleFiltering()">
+                                <button class="btn btn-default" (click)="onActiveFilter()">
                                     <span class="fa fa-filter"></span> Filters
                                 </button>
                                 <button class="btn btn-default" (click)="onRefresh()">
@@ -75,7 +75,11 @@
                             <div class="clearfix"></div>
                         </div>
                     </div>
+                    <mat-form-field *ngIf="filterActive">
+                        <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Search">
+                      </mat-form-field>
                     <div class="box box-default">
+                       
                         <div class="mat-elevation-z8">
                             <table mat-table matTableExporter #salesExporter="matTableExporter" [hiddenColumns]="[0]"
                                 [ngClass]="{'ActiveSpinner': showSpinner == true}" [dataSource]="dataSource" matSort>
@@ -128,7 +132,7 @@
                                 <tr mat-row *matRowDef="let row; columns: displayedColumns;">
                                 </tr>
                             </table>
-                            <mat-paginator [pageSizeOptions]="[14, 25, 50, 100]"></mat-paginator>
+                            <mat-paginator [pageSizeOptions]="[10, 25, 50, 100]"></mat-paginator>
 
                             <mat-progress-spinner *ngIf="showSpinner" [mode]="mode">
                             </mat-progress-spinner>

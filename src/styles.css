@@ -533,7 +533,7 @@ a.profile-menu {
   transform: translateX(-50%) translateY(-50%)!important;
 }
 .ActiveSpinner{
-  background-color: rgba(0,0,0,.055);
+  background-color: rgba(0,0,0,.055)!important;
 }
 
 .line-graph .btn-link {
