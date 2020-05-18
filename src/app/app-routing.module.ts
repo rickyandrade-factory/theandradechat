@@ -21,8 +21,10 @@ import { AdmincomplianceComponent } from './admincompliance/admincompliance.comp
 import { AdminwidgetComponent } from './adminwidget/adminwidget.component';
 import {AdminmarketingComponent} from './adminmarketing/adminmarketing.component'
 import { AdminonlineativityComponent } from './adminonlineativity/adminonlineativity.component';
+import { AdminsettingsComponent } from './adminsettings/adminsettings.component';
 import { AuthGuard } from './auth.guard';
 import { from } from 'rxjs';
+
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -40,6 +42,7 @@ const routes: Routes = [
   { path: 'adminchatroom', component: AdminchatroomComponent, canActivate: [AuthGuard]},
   { path: 'adminservices', component: AdminservicesComponent, canActivate: [AuthGuard]},
   { path: 'adminapi', component: AdminapiComponent, canActivate: [AuthGuard]},
+  { path: 'adminsettings', component: AdminsettingsComponent, canActivate: [AuthGuard]},
   { path: 'admincompliance', component: AdmincomplianceComponent, canActivate: [AuthGuard]},
   { path: 'adminwidget', component: AdminwidgetComponent, canActivate: [AuthGuard]},
   { path: 'adminmarketing', component: AdminmarketingComponent, canActivate: [AuthGuard]},

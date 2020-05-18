@@ -5,9 +5,9 @@ import { Component } from '@angular/core';
   <div class="modal-content new_subs new_user_dialog">
    <div class="modal-header">
       <h4 class="modal-title">
-         <button type="button" class="close" aria-label="Close">
-         <span aria-hidden="true">×</span>
-         </button>
+        <button  mat-dialog-close  class="close">
+            <span aria-hidden="true">×</span>
+        </button> 
          Team Avatar
       </h4>
    </div>
@@ -21,7 +21,7 @@ import { Component } from '@angular/core';
     </div>
     </div>
     <div class="modal-footer wrap-div">
-        <button autofocus="" class="btn btn-default pull-left" type="button">Cancel</button>
+        <button mat-dialog-close class="btn btn-default pull-left" type="button">Cancel</button>
         <button class="btn btn-blue">Upload</button>
     </div>
 </div>
