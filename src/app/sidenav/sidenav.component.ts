@@ -20,15 +20,15 @@ export class SidenavComponent implements OnInit {
   userService: UserService;
   authService: AuthService;
   @Output() selectedRoom: EventEmitter<any> = new EventEmitter<any>();
-  fileNameDialogRef: MatDialogRef<lockeddialogComponent>;
-  dialog: MatDialog;
   public auth: AuthService;
   public user: any = {
     firstname: String,
     lastname: String
   };
 
-  constructor(userService: UserService, authService: AuthService, private socketService: SocketService) {
+  constructor(userService: UserService, authService: AuthService,
+     private socketService: SocketService,
+     public dialog : MatDialog) {
     this.auth = authService;
     this.userService = userService;
   }
@@ -37,7 +37,13 @@ export class SidenavComponent implements OnInit {
   }
 
   openAddFileDialog() {
-    this.fileNameDialogRef = this.dialog.open(lockeddialogComponent);
+    const fileNameDialogRef = this.dialog.open(lockeddialogComponent);
+  }
+  openPreferencesDialog(){
+    const dialogRef = this.dialog.open(PreferencesDialog, {
+      width: '650px',
+    });
+
   }
 
   clickRoom(room) {
@@ -70,5 +76,56 @@ export class SidenavComponent implements OnInit {
 
   logout() {
     this.auth.logout();
+  }
+
+}
+
+// preferences dialog
+@Component({
+  selector: 'preferences-dialog',
+  templateUrl: 'preferences-dialog.html',
+  styleUrls: ['./sidenav.component.css']
+})
+export class PreferencesDialog {
+  profile:boolean= true;
+  notification:boolean;
+  blockMute:boolean;
+  billing:boolean;
+  advanced:boolean;
+
+  onProfile(){
+    this.profile= true;
+    this.notification= false;
+    this.blockMute= false;
+    this.billing= false;
+    this.advanced= false;
+  }
+  onNotification(){
+    this.profile= false;
+    this.notification= true;
+    this.blockMute= false;
+    this.billing= false;
+    this.advanced= false;
+  }
+  onBlockMute(){
+    this.profile= false;
+    this.notification= false;
+    this.blockMute= true;
+    this.billing= false;
+    this.advanced= false;
+  }
+  onBilling(){
+    this.profile= false;
+    this.notification= false;
+    this.blockMute= false;
+    this.billing= true;
+    this.advanced= false;
+  }
+  onAdvanced(){
+    this.profile= false;
+    this.notification= false;
+    this.blockMute= false;
+    this.billing= false;
+    this.advanced= true;
   }
 }

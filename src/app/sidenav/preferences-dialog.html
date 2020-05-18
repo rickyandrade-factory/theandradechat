@@ -1,0 +1,507 @@
+<h2 mat-dialog-title>Preferences
+    <button mat-dialog-close class="close">
+        <span aria-hidden="true">×</span>
+    </button>
+</h2>
+<div class="preference-container">
+    <div class="row">   
+        <div class="col-md-3 p-0">
+            <mat-nav-list class="p-0">
+                <a mat-list-item (click)="onProfile()" [ngClass]="{'active': profile == true}">
+                    
+                    <span matLine><i class="fa fa-user-circle fa-fw"></i> Profile</span>
+                </a>
+                <a mat-list-item (click)="onNotification()" [ngClass]="{'active': notification == true}">
+                    <span matLine><i class="fa fa-bell-o fa-fw"></i> Notifications</span>
+                </a>
+                <a mat-list-item (click)="onBlockMute()" [ngClass]="{'active': blockMute == true}">
+                    <span matLine><i class="fa fa-comment-o fa-fw"></i> Block/Mute</span>
+                </a>
+                <a mat-list-item (click)="onBilling()" [ngClass]="{'active': billing == true}">
+                    <span matLine><i class="fa fa-credit-card fa-fw"></i> Billing</span>
+                </a>
+                <a mat-list-item (click)="onAdvanced()" [ngClass]="{'active': advanced == true}">
+                    <span matLine><i class="fa fa-gears fa-fw"></i> Advanced</span>
+                </a>
+            </mat-nav-list>
+        </div>
+        <div class="col-md-9 p-0">
+            <div class="content" *ngIf="profile">
+                <div class="row">
+                    <div class="col-sm-4 col-md-4 col-lg-4 text-center">
+                        <img class="avatarThumb" src="//cdn.echofin.co/avatars/f02df689.png">
+                        <input class="btn btn-success btn-sm avatarUpload dz-clickable" style="margin-top: 5px;"
+                            value="Upload avatar">
+                        <input class="btn btn-default btn-sm avatarReset" style="margin-top: 5px;"
+                            value="Default avatar">
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="col-sm-12">
+                            <mat-form-field>
+                                <mat-label>Username</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                        </div>
+                        <div class="col-sm-12">
+                            <mat-form-field>
+                                <mat-label>Full Name</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                        </div>
+                        <div class="col-sm-12">
+                            <mat-form-field>
+                                <mat-label>Timezone:</mat-label>
+                                <mat-select>
+                                    <mat-option value="option">GMT</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                        <div class="col-sm-12">
+                            <mat-form-field>
+                                <mat-label>Date format:</mat-label>
+                                <mat-select>
+                                    <mat-option value="option">mm/dd</mat-option>
+                                    <mat-option value="option">dd/mm</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content" *ngIf="notification">
+                <div ng-show="activeMenu==2" class="panel-settings panel-settings-notifications">
+                    <div class="form-group">
+                        <label>Desktop and Mobile Notifications</label>
+                    </div>
+                    <p>Receive notifcations from:</p>
+                    <mat-checkbox>All Rooms</mat-checkbox>
+                    <mat-divider></mat-divider>
+                    <div class="rooms-overflow">
+                        <mat-checkbox>Traders Lounge</mat-checkbox>
+                        <mat-checkbox>On Point FX Signals 🇺🇸 (USA)</mat-checkbox>
+                        <mat-checkbox>Suggestions/Bug Reports</mat-checkbox>
+                        <mat-checkbox>Market Analysis</mat-checkbox>
+                        <mat-checkbox>Private Forex Mentoring</mat-checkbox>
+                        <mat-checkbox>7 Day Intense Private Training</mat-checkbox>
+                        <mat-checkbox>Official Partners</mat-checkbox>
+                        <mat-checkbox>The Golden Circle</mat-checkbox>
+                        <mat-checkbox>Präzise FX Signals 🇩🇪 (GER)</mat-checkbox>
+                        <mat-checkbox>Website Testing A/B</mat-checkbox>
+                        <mat-checkbox>chat dev</mat-checkbox>
+                    </div>
+                    <mat-divider></mat-divider>
+                    <mat-checkbox>Direct messages</mat-checkbox>
+                    <mat-checkbox>Mentions</mat-checkbox>
+                    <mat-checkbox>Admins, Instructors and Moderators</mat-checkbox>
+                </div>
+            </div>
+            <div class="content" *ngIf="blockMute">
+                <div ng-show="activeMenu==4" class="panel-settings panel-settings-blockandmute">
+                    <div class="blockandmute-title">
+                        <label>Blocks</label>
+                    </div>
+                    <div class="blockandmute-body">
+                        <div class="text-center">
+                            <span class="fa fa-inbox fa-4x"></span>
+                            <br>
+                            <span>You have not blocked any user</span>
+                        </div>
+                    </div>
+
+                    <div class="blockandmute-title">
+                        <label>Mutes</label>
+                    </div>
+                    <div class="blockandmute-body">
+                        <div class="text-center">
+                            <span class="fa fa-inbox fa-4x"></span>
+                            <br>
+                            <span>You have not muted any user</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="blockandmute-title">
+                            <label>Bans</label>
+                        </div>
+                        <div class="blockandmute-body">
+                            <div class="label label-primary ">
+                                JustinGoldsmith
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                Andiaishoo7
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                robertoscott
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                james1979
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                ARamirez7
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                eagleeyes94
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                Eren68
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                Eldi123
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                Ryanchaney
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                thisvinceguy
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                Rafacapozzi
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                ajeoluwatoromo
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                kevinmijares
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                Jeanluis
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                BJ318
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                jeanluis1
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                Will_10
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                robertoascott
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                Donniek23
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                Sheko
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                Marcus760
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                King_Alfie19
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                SnblJuan
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                victorjsb
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                thecarter
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                Flakox1
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                MarcosRuiz
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                Forex101
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                jeanluis11
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                Nav1234
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                Will_15
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                Atlboss7
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                Tadukas
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                Howellj5
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                campbecj13
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                Nate
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                TGT2
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                Donnbe2020
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                rtallen04
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                Marqus241
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                Fred163
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                MannyDeolMusic
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                Marvb11
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                slickrick
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                Shabazz
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                jaybush89
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                EthynBlair
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                Castacio10
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                Trent10
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                dc5cm
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                Shaunda87
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                Kiiy
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                jondiaz
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                JosueMesidor
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                papabing
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                JamarqusJ
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                France
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                trevorxmartin
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                            <div class="label label-primary ">
+                                DainBauman
+                                <button class="btn btn-link btn-xs">
+                                    <span class="fa fa-times fa-fw"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content" *ngIf="billing">
+                <div class="form-group">
+                    <label>Billing
+                    </label>
+                </div>
+                <p class="empty-msg">
+                    You don't have any billing plans
+                </p>
+            </div>
+            <div class="content" *ngIf="advanced">
+                <div class="form-group">
+                    <label>Direct Messages
+                    </label>
+                </div>
+                <mat-checkbox>Accept Direct Messages from free users</mat-checkbox>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <button mat-dialog-close class="btn btn-default">Cancel</button>
+    <button [mat-dialog-close]="true" class="btn btn-success">Install</button>
+</div>

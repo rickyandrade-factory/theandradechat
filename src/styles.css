@@ -19,6 +19,12 @@ a:focus{
 .p-10{
   padding: 10px!important;
 }
+.p-0{
+  padding: 0!important;
+}
+.m-0{
+  margin: 0!important;
+}
 .checkbox label {
   font-size: 15px;
 }
@@ -1907,6 +1913,26 @@ li.divider.mat-menu-item {
   margin: 9px 0;
   overflow: hidden;
   background-color: #292929;
+}
+/*  preferences dialog */
+preferences-dialog{
+  display: block;
+  padding: 0;
+  overflow: hidden;
+}
+preferences-dialog .preference-container{
+  padding: 0 15px;
+}
+preferences-dialog h2{
+  margin: 0!important;
+  display: block;
+  padding: 10px 15px;
+}
+preferences-dialog h2 .close{
+  color: #444;
+}
+preferences-dialog .modal-footer{
+  padding:10px;
 }
 .mat-menu-content li a{
   text-decoration: none;

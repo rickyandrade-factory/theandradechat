@@ -24,7 +24,7 @@ import { AppConfig } from './app.config';
 import { AppLocalConfig } from './app.local.config';
 import { ErrorComponent } from './error/error.component';
 import { User } from './models/index';
-import { SidenavComponent } from './sidenav/sidenav.component';
+import { SidenavComponent, PreferencesDialog } from './sidenav/sidenav.component';
 import { RightareaComponent } from './rightarea/rightarea.component';
 import { ChatareaComponent } from './chatarea/chatarea.component';
 import { AuthGuard } from './auth.guard';
@@ -108,7 +108,8 @@ import { AdminmarketingComponent } from './adminmarketing/adminmarketing.compone
     DeleteChatroomComponent,
     NewContactComponent,
     InviteContactComponent,
-    AdminmarketingComponent
+    AdminmarketingComponent,
+    PreferencesDialog
   ],
   imports: [
     BrowserModule,
@@ -130,7 +131,7 @@ import { AdminmarketingComponent } from './adminmarketing/adminmarketing.compone
     User,
     AuthGuard
   ],
-  entryComponents: [InviteContactComponent, NewContactComponent, NewOfferComponent,
+  entryComponents: [PreferencesDialog, InviteContactComponent, NewContactComponent, NewOfferComponent,
     lockeddialogComponent, NewBillingComponent, CustomwidgetComponent, NewCouponsComponent,
     NewChatroomComponent, NewServicesComponent, ConfiguredialogComponent, NewTeamAvatarComponent,
     CustomScriptComponent, DeleteChatroomComponent],

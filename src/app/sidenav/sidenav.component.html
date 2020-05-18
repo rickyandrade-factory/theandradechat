@@ -24,7 +24,7 @@
       <li mat-menu-item><a href="#Traders Lounge" ng-click="ChangeStatus(4);"><span
             class="glyphicon glyphicon-one-fine-dot userStatus4" style="padding:0 !important"></span> Busy</a></li>
       <li mat-menu-item role="separator" class="divider"></li>
-      <li mat-menu-item><a href="#Traders Lounge" ng-click="LoadSettings()">Preferences</a></li>
+      <li mat-menu-item><a (click)="openPreferencesDialog()">Preferences</a></li>
       <li mat-menu-item ng-show="isAdmin" class="ng-hide"><a target="_blank" href="/dashboard/">Dashboard</a></li>
       <li ng-if="isFootnoteVisible" class="ng-scope">
         <a href="#">Download App
