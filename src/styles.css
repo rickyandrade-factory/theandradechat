@@ -1929,7 +1929,7 @@ preferences-dialog h2{
   padding: 10px 15px;
 }
 preferences-dialog h2 .close{
-  color: #444;
+  color: #444!important
 }
 preferences-dialog .modal-footer{
   padding:10px;

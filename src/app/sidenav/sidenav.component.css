@@ -58,3 +58,18 @@ mat-checkbox{
 .preference-container > .row .col-md-9{
   flex: auto 0;
 }
+.preference-container .upload_file{
+ position: relative;
+}
+.preference-container .content.profile .btn{
+  width: 100%;
+}
+.preference-container .upload_file input{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  z-index: 1;
+  line-height: 38px;
+  cursor: pointer;
+ }

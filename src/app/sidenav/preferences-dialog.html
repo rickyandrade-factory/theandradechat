@@ -26,13 +26,17 @@
             </mat-nav-list>
         </div>
         <div class="col-md-9 p-0">
-            <div class="content" *ngIf="profile">
+            <div class="content profile" *ngIf="profile">
                 <div class="row">
                     <div class="col-sm-4 col-md-4 col-lg-4 text-center">
-                        <img class="avatarThumb" src="//cdn.echofin.co/avatars/f02df689.png">
-                        <input class="btn btn-success btn-sm avatarUpload dz-clickable" style="margin-top: 5px;"
-                            value="Upload avatar">
-                        <input class="btn btn-default btn-sm avatarReset" style="margin-top: 5px;"
+                        <img class="avatarThumb" src="assets/profile_img.png">
+                        <div class="upload_file">
+                            <input type="file">
+                            <button class="btn btn-success btn-sm" style="margin-top: 5px;">
+                                Upload avatar
+                            </button>
+                        </div>
+                        <input class="btn btn-default btn-sm" style="margin-top: 5px;"
                             value="Default avatar">
                     </div>
                     <div class="col-sm-7">
