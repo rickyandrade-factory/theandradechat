@@ -4,6 +4,7 @@ import { AuthService } from '../services/auth.service';
 import { UserService } from '../services/user.service';
 import { SocketService } from '../services/socket.service';
 import { User } from '../models';
+import { MatDialog } from '@angular/material';
 
 @Component({
   selector: 'app-dashboard',
@@ -22,6 +23,7 @@ export class DashboardComponent implements OnInit {
     private socketService: SocketService,
     public user: User,
     userService: UserService,
+    public dialog: MatDialog
   ) {
     this.userService = userService;
     this.socketService.initSocket();
@@ -35,6 +37,14 @@ export class DashboardComponent implements OnInit {
     };
   }
 
+  openChartsDialog() {
+    const dialog = this.dialog.open(ChartsDialog, {
+        width: '650px'
+      }
+    );
+
+  }
+
   ngOnInit() { }
 
   setRoomTitle(roomTitle) {
@@ -43,5 +53,10 @@ export class DashboardComponent implements OnInit {
   }
 }
 
-
+// charts Dialog
+@Component({
+  selector: 'charts-dialog',
+  templateUrl: 'charts-dialog.html',
+})
+export class ChartsDialog {}
 

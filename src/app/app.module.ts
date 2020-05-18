@@ -16,7 +16,7 @@ import { RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { DashboardComponent, ChartsDialog } from './dashboard/dashboard.component';
 import { AngularWebStorageModule } from 'angular-web-storage';
 import { AuthService } from './services/auth.service';
 import { HttpService } from './services/http.service';
@@ -109,7 +109,8 @@ import { AdminmarketingComponent } from './adminmarketing/adminmarketing.compone
     NewContactComponent,
     InviteContactComponent,
     AdminmarketingComponent,
-    PreferencesDialog
+    PreferencesDialog,
+    ChartsDialog
   ],
   imports: [
     BrowserModule,
@@ -131,7 +132,7 @@ import { AdminmarketingComponent } from './adminmarketing/adminmarketing.compone
     User,
     AuthGuard
   ],
-  entryComponents: [PreferencesDialog, InviteContactComponent, NewContactComponent, NewOfferComponent,
+  entryComponents: [ChartsDialog, PreferencesDialog, InviteContactComponent, NewContactComponent, NewOfferComponent,
     lockeddialogComponent, NewBillingComponent, CustomwidgetComponent, NewCouponsComponent,
     NewChatroomComponent, NewServicesComponent, ConfiguredialogComponent, NewTeamAvatarComponent,
     CustomScriptComponent, DeleteChatroomComponent],
