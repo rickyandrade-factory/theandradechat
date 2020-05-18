@@ -29,9 +29,38 @@
                   </a>
               </li>
               <li>
-                  <a href="#" id="headwayapp">
-                      <span class="fa fa-envelope-o fa-fw"></span>
-                  <span id="HW_badge_cont" class="HW_visible"><span id="HW_badge" data-count-unseen="" class="HW_softHidden"></span></span></a>
+                  <a mat-icon-button [matMenuTriggerFor]="notificationMenu" > 
+    <span class="fa fa-envelope-o fa-fw"></span>
+</a>
+<mat-menu #notificationMenu="matMenu" class="notificationMenu">
+    <h3 class="mat-h4">Latest Changes</h3>
+    <mat-divider></mat-divider>
+    <button mat-menu-item>
+        <span>new</span>
+        <a><b>Echofin v2</b></a>
+        The new Echofin platform has been released. Get all the details here: https://www.echofin.com/
+    </button>
+    <button mat-menu-item>
+        <span>new</span>
+        <a><b>Zoom widget integration</b></a>
+        A new widget has been added that allows your team members to watch your Zoom broadcast within...
+    </button>
+    <button mat-menu-item>
+        <span>new</span>
+        <a><b>Dashboard\Users</b></a>
+        Added a Subscriptions tab on the details panel.
+    </button>
+    <button mat-menu-item>
+        <span>new</span>
+        <a><b>Email</b></a>
+        All email billing receipts will now include a reply-to which can be set within the...
+    </button>
+    <button mat-menu-item>
+        <span>new</span>
+        <a><b>API</b></a>
+        The initial version of the Echofin API has been released. For more details please check the API...
+    </button>
+</mat-menu>
               </li>
               <li class="dropdown"> 
                   <a>

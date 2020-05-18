@@ -1,54 +1,89 @@
 <div class="login-container admin-dashboard">
     <mat-drawer-container class="example-container" autosize>
-      <div class="navbar navbar-fixed-top navbar-inverse navbar-static-top" style="position:static;">
-        <mat-drawer #drawer7 class="example-sidenav sidebar navbar-collapse" opened="true" mode="side" [opened]="screenWidth > 840" [mode]="(screenWidth > 840) ? 'side' : 'over'" 
-          style="position:fixed; left:0;">
-            <app-admin-sidebar></app-admin-sidebar>
-        </mat-drawer>
-        <div class="example-sidenav-content">
-            <button class="hamburgerHeader hamburger hamburger-arrow-left sidebar-toggle" hamburger-drv="" (click)="drawer7.toggle();">
-                <span class="icon"></span>
-            </button>
-        </div>
-        <div class="roomHeader">
-          <i class="fa" ng-class="{'roomLock': room.n_type==2 , 'fa-unlock': room.n_type==2}" aria-hidden="true"></i>
-          <div header-nav-trial="" class="nav-trial-container">
-            <div class="nav-trial-container-text ng-binding"></div>
-          </div>
-        </div>
-        <div class="navbar-right navbar-custom-menu">
-            <ul class="nav navbar-nav">
-                <li class="settings-menu">
-                    <a [routerLink]="['/adminsettings']" routerLinkActive="selectedRoom">
-                        <span class="fa fa-gears fa-fw"></span>
-                    </a>
-                </li>
-                <li>
-                    <a [routerLink]="['/dashboard']" target="_blank" href="/">
-                        <span class="fa fa-comments fa-fw"></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" id="headwayapp">
-                        <span class="fa fa-envelope-o fa-fw"></span>
-                    <span id="HW_badge_cont" class="HW_visible"><span id="HW_badge" data-count-unseen="" class="HW_softHidden"></span></span></a>
-                </li>
-                <li class="dropdown"> 
-                    <a>
-                        <button mat-button [matMenuTriggerFor]="menu">puneetsethi25@gmail.com
-                                <span class="caret"></span>
-                        </button>
-                        <mat-menu #menu="matMenu" xPosition="before">
-                                <a class="profile-menu white" href="#" >Profile</a>
-                                <li class="divider"></li>
-                                <a class="profile-menu white" href="#">Sign Out</a>
+        <div class="navbar navbar-fixed-top navbar-inverse navbar-static-top" style="position:static;">
+            <mat-drawer #drawer7 class="example-sidenav sidebar navbar-collapse" opened="true" mode="side"
+                [opened]="screenWidth > 840" [mode]="(screenWidth > 840) ? 'side' : 'over'"
+                style="position:fixed; left:0;">
+                <app-admin-sidebar></app-admin-sidebar>
+            </mat-drawer>
+            <div class="example-sidenav-content">
+                <button class="hamburgerHeader hamburger hamburger-arrow-left sidebar-toggle" hamburger-drv=""
+                    (click)="drawer7.toggle();">
+                    <span class="icon"></span>
+                </button>
+            </div>
+            <div class="roomHeader">
+                <i class="fa" ng-class="{'roomLock': room.n_type==2 , 'fa-unlock': room.n_type==2}"
+                    aria-hidden="true"></i>
+                <div header-nav-trial="" class="nav-trial-container">
+                    <div class="nav-trial-container-text ng-binding"></div>
+                </div>
+            </div>
+            <div class="navbar-right navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                    <li class="settings-menu">
+                        <a [routerLink]="['/adminsettings']" routerLinkActive="selectedRoom">
+                            <span class="fa fa-gears fa-fw"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/dashboard']" target="_blank" href="/">
+                            <span class="fa fa-comments fa-fw"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a mat-icon-button [matMenuTriggerFor]="notificationMenu">
+                            <span class="fa fa-envelope-o fa-fw"></span>
+                        </a>
+                        <mat-menu #notificationMenu="matMenu" class="notificationMenu">
+                            <h3 class="mat-h4">Latest Changes</h3>
+                            <mat-divider></mat-divider>
+                            <button mat-menu-item>
+                                <span>new</span>
+                                <a><b>Echofin v2</b></a>
+                                The new Echofin platform has been released. Get all the details here:
+                                https://www.echofin.com/
+                            </button>
+                            <button mat-menu-item>
+                                <span>new</span>
+                                <a><b>Zoom widget integration</b></a>
+                                A new widget has been added that allows your team members to watch your Zoom broadcast
+                                within...
+                            </button>
+                            <button mat-menu-item>
+                                <span>new</span>
+                                <a><b>Dashboard\Users</b></a>
+                                Added a Subscriptions tab on the details panel.
+                            </button>
+                            <button mat-menu-item>
+                                <span>new</span>
+                                <a><b>Email</b></a>
+                                All email billing receipts will now include a reply-to which can be set within the...
+                            </button>
+                            <button mat-menu-item>
+                                <span>new</span>
+                                <a><b>API</b></a>
+                                The initial version of the Echofin API has been released. For more details please check
+                                the API...
+                            </button>
                         </mat-menu>
+                    </li>
+                    <li class="dropdown">
+                        <a>
+                            <button mat-button [matMenuTriggerFor]="menu">puneetsethi25@gmail.com
+                                <span class="caret"></span>
+                            </button>
+                            <mat-menu #menu="matMenu" xPosition="before">
+                                <a class="profile-menu white" href="#">Profile</a>
+                    <li class="divider"></li>
+                    <a class="profile-menu white" href="#">Sign Out</a>
+                    </mat-menu>
                     </a>
-                </li>
-            </ul>
-         </div>
-      </div>
-      <section class="content-header">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <section class="content-header">
             <h1>
                 Dashboard
                 <button type="button" class="btn btn-sm btn-link btn-no-shadow pull-right" ng-click="vm.LoadAll()">
@@ -58,230 +93,249 @@
         </section>
         <section class="content">
             <div class="row">
-                    <div class="col-md-4 col-lg-2 box-stats">
-                            <div class="small-box">
-                                <div class="icon">
-                                    <i class="fa fa-users fa-fw"></i>
-                                </div>
-                                <div class="inner">
-                                    <h3  class="ng-binding ng-scope" style="font-size: 55px; line-height: 77px; display: block;">3343</h3>
-                                    <p>Total Registered</p>
-                                </div>
-                            </div>
-                    </div>
-                    <div class="col-md-4 col-lg-2 box-stats">
-                            <div class="small-box bg-green" >
-                                <div class="icon">
-                                    <i class="fa fa-user"></i>
-                                </div>
-                                <div class="inner">
-                                    <h3  class="ng-binding ng-scope" style="font-size: 55px; line-height: 77px; display: block;">0
-                                        </h3>
-                                    <p>New this month</p>
-                                </div>
-                            </div>
-                    </div>
-                    <div class="col-md-4 col-lg-2 box-stats">
-                            <div class="small-box bg-yellow">
-                                <div class="icon">
-                                    <i class="fa fa-fire"></i>
-                                </div>
-                                <div class="inner">
-                                    <h3  class="ng-binding ng-scope" style="font-size: 55px; line-height: 77px; display: block;">320</h3>
-                                    <p>Total PremiumNew</p>
-                                </div>
-                            </div>
-                    </div>
-                    <div class="col-md-4 col-lg-2 box-stats">
-                            <div class="small-box bg-teal" >
-                                <div class="icon">
-                                    <i class="fa fa-credit-card fa-fw"></i>
-                                </div>
-                                <div class="inner">
-                                    <h3  class="ng-binding ng-scope" style="font-size: 55px; line-height: 77px; display: block;">$0</h3>
-                                    <p>This Month Payments</p>
-                                </div>
-                            </div>
-                    </div>
-                    <div class="col-md-4 col-lg-2 box-stats">
-                            <div class="small-box bg-maroon" >
-                                <div class="icon">
-                                    <i class="fa fa-credit-card fa-fw"></i>
-                                </div>
-                                <div class="inner">
-                                    <h3  class="ng-binding ng-scope" style="font-size: 55px; line-height: 77px; display: block;">$0</h3>
-                                    <p>Today Payments</p>
-                                </div>
-                            </div>
-                    </div>
-                    <div class="col-md-4 col-lg-2 box-stats">
-                            <div class="small-box bg-purple">
-                                <div class="icon">
-                                    <i class="fa fa-commenting"></i>
-                                </div>
-                                <div class="inner">
-                                    <h3  class="ng-binding ng-scope" style="font-size: 55px; line-height: 77px; display: block;">98</h3>
-                                    <p>Online Users</p>
-                                </div>
-                            </div>
-                    </div>
-            </div>
-            <div class="row"> 
-                <div class="col-md-8" style="padding:0 15px;">
-                        <div class="row">
-                                <div class="col-md-12">
-                                        <div class="line-graph" ng-controller="MyController">
-                                            <div class="box">
-                                                    <div class="box-header with-border" style="padding-bottom: 0;">
-                                                            <h3 class="box-title" style="line-height: 50px;">
-                                                                Registrations Overview
-                                                            </h3>
-                                                            <div class="box-tools pull-right">
-                                                                <button type="button" class="btn btn-sm btn-link btn-no-shadow" >
-                                                                    <span ng-show="!vm._isLine">
-                                                                        <span class="text-muted">
-                                                                            <span class="fa fa-line-chart fa-fw"></span>Line</span>/
-                                                                        <strong>
-                                                                            <span class="fa fa-bar-chart fa-fw"></span>Bar</strong>
-                                                                    </span>
-                                                                    <span ng-show="vm._isLine" class="ng-hide">
-                                                                        <strong>
-                                                                            <span class="fa fa-line-chart fa-fw"></span>Line</strong>/
-                                                                        <span class="text-muted">
-                                                                            <span class="fa fa-bar-chart fa-fw"></span>Bar</span>
-                                                                    </span>
-                                                                </button>
-                                                                <div class="dropdown-btn">
-                                                                        <mat-form-field>
-                                                                            <mat-select [(value)]="selected">
-                                                                              <mat-option value="option1">Last 90 days</mat-option>
-                                                                              <mat-option value="option2">Last 60 days</mat-option>
-                                                                              <mat-option value="option3">Last 30 days</mat-option>
-                                                                              <mat-option value="option1">Last 15 days</mat-option>
-                                                                              <mat-option value="option2">Last 7 days</mat-option>
-                                                                            </mat-select>
-                                                                          </mat-form-field>
-                                                                </div>
-                                                                <button type="button" class="btn btn-sm btn-link btn-no-shadow" ng-click="vm.LoadRegistrations()">
-                                                                    <span class="fa fa-refresh fa-fw" ng-class="{'fa-spin':vm.loading_statistics_registrations}"></span>
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    <canvas class="chart chart-line" chart-data="data" chart-labels="labels" 
-                                                      chart-series="series" chart-click="onClick" height="200"></canvas> 
-                                            </div>
-                                        </div>
-                                </div>
+                <div class="col-md-4 col-lg-2 box-stats">
+                    <div class="small-box">
+                        <div class="icon">
+                            <i class="fa fa-users fa-fw"></i>
                         </div>
+                        <div class="inner">
+                            <h3 class="ng-binding ng-scope" style="font-size: 55px; line-height: 77px; display: block;">
+                                3343</h3>
+                            <p>Total Registered</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2 box-stats">
+                    <div class="small-box bg-green">
+                        <div class="icon">
+                            <i class="fa fa-user"></i>
+                        </div>
+                        <div class="inner">
+                            <h3 class="ng-binding ng-scope" style="font-size: 55px; line-height: 77px; display: block;">
+                                0
+                            </h3>
+                            <p>New this month</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2 box-stats">
+                    <div class="small-box bg-yellow">
+                        <div class="icon">
+                            <i class="fa fa-fire"></i>
+                        </div>
+                        <div class="inner">
+                            <h3 class="ng-binding ng-scope" style="font-size: 55px; line-height: 77px; display: block;">
+                                320</h3>
+                            <p>Total PremiumNew</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2 box-stats">
+                    <div class="small-box bg-teal">
+                        <div class="icon">
+                            <i class="fa fa-credit-card fa-fw"></i>
+                        </div>
+                        <div class="inner">
+                            <h3 class="ng-binding ng-scope" style="font-size: 55px; line-height: 77px; display: block;">
+                                $0</h3>
+                            <p>This Month Payments</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2 box-stats">
+                    <div class="small-box bg-maroon">
+                        <div class="icon">
+                            <i class="fa fa-credit-card fa-fw"></i>
+                        </div>
+                        <div class="inner">
+                            <h3 class="ng-binding ng-scope" style="font-size: 55px; line-height: 77px; display: block;">
+                                $0</h3>
+                            <p>Today Payments</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2 box-stats">
+                    <div class="small-box bg-purple">
+                        <div class="icon">
+                            <i class="fa fa-commenting"></i>
+                        </div>
+                        <div class="inner">
+                            <h3 class="ng-binding ng-scope" style="font-size: 55px; line-height: 77px; display: block;">
+                                98</h3>
+                            <p>Online Users</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8" style="padding:0 15px;">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="line-graph" ng-controller="MyController">
+                                <div class="box">
+                                    <div class="box-header with-border" style="padding-bottom: 0;">
+                                        <h3 class="box-title" style="line-height: 50px;">
+                                            Registrations Overview
+                                        </h3>
+                                        <div class="box-tools pull-right">
+                                            <button type="button" class="btn btn-sm btn-link btn-no-shadow">
+                                                <span ng-show="!vm._isLine">
+                                                    <span class="text-muted">
+                                                        <span class="fa fa-line-chart fa-fw"></span>Line</span>/
+                                                    <strong>
+                                                        <span class="fa fa-bar-chart fa-fw"></span>Bar</strong>
+                                                </span>
+                                                <span ng-show="vm._isLine" class="ng-hide">
+                                                    <strong>
+                                                        <span class="fa fa-line-chart fa-fw"></span>Line</strong>/
+                                                    <span class="text-muted">
+                                                        <span class="fa fa-bar-chart fa-fw"></span>Bar</span>
+                                                </span>
+                                            </button>
+                                            <div class="dropdown-btn">
+                                                <mat-form-field>
+                                                    <mat-select [(value)]="selected">
+                                                        <mat-option value="option1">Last 90 days</mat-option>
+                                                        <mat-option value="option2">Last 60 days</mat-option>
+                                                        <mat-option value="option3">Last 30 days</mat-option>
+                                                        <mat-option value="option1">Last 15 days</mat-option>
+                                                        <mat-option value="option2">Last 7 days</mat-option>
+                                                    </mat-select>
+                                                </mat-form-field>
+                                            </div>
+                                            <button type="button" class="btn btn-sm btn-link btn-no-shadow"
+                                                ng-click="vm.LoadRegistrations()">
+                                                <span class="fa fa-refresh fa-fw"
+                                                    ng-class="{'fa-spin':vm.loading_statistics_registrations}"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <canvas class="chart chart-line" chart-data="data" chart-labels="labels"
+                                        chart-series="series" chart-click="onClick" height="200"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-4" style="padding:0 15px;">
-                            <div class="col-md-12 users-box">
-                                    <div class="box box-default ">
-                                            <div class="box-header with-border">
-                                                <h3 class="box-title">Latest Registrations</h3>
-                                            </div>
-                                            <div class="list-group">
-                                                    <div class="list-group-item">
-                                                        <div class="media">
-                                                            <div class="media-left">
-                                                                <img class="img-circle img-sm"   src="//cdn.echofin.co/avatars/5d053022.png">
-                                                            </div>
-                                                            <div class="media-body ng-binding">
-                                                                <strong class="ng-binding">mohit-kumar</strong><br> 2019-07-25 16:01:17
-                                                            </div>
-                                                        </div>
-                                                    </div> <div class="list-group-item">
-                                                        <div class="media">
-                                                            <div class="media-left">
-                                                                <img class="img-circle img-sm"   src="//cdn.echofin.co/avatars/1b14b4b6.png">
-                                                            </div>
-                                                            <div class="media-body ng-binding">
-                                                                <strong class="ng-binding">puneetsethi25</strong><br> 2019-07-18 13:45:01
-                                                            </div>
-                                                        </div>
-                                                    </div> <div class="list-group-item">
-                                                        <div class="media">
-                                                            <div class="media-left">
-                                                                <img class="img-circle img-sm"   src="//cdn.echofin.co/avatars/f47c2751.png">
-                                                            </div>
-                                                            <div class="media-body ng-binding">
-                                                                <strong class="ng-binding">Domulo</strong><br> 2019-06-12 12:59:48
-                                                            </div>
-                                                        </div>
-                                                    </div> <div class="list-group-item">
-                                                        <div class="media">
-                                                            <div class="media-left">
-                                                                <img class="img-circle img-sm"   src="//cdn.echofin.co/avatars/39fad28a.png">
-                                                            </div>
-                                                            <div class="media-body ng-binding">
-                                                                <strong class="ng-binding">Ricky</strong><br> 2019-05-21 14:34:21
-                                                            </div>
-                                                        </div>
-                                                    </div> <div class="list-group-item">
-                                                        <div class="media">
-                                                            <div class="media-left">
-                                                                <img class="img-circle img-sm"  src="//cdn.echofin.co/avatars/73d68540.png">
-                                                            </div>
-                                                            <div class="media-body ng-binding">
-                                                                <strong class="ng-binding">sterrones</strong><br> 2019-05-21 11:13:52
-                                                            </div>
-                                                        </div>
-                                                    </div> <div class="list-group-item">
-                                                        <div class="media">
-                                                            <div class="media-left">
-                                                                <img class="img-circle img-sm"  src="//cdn.echofin.co/avatars/6ca0ba32.png">
-                                                            </div>
-                                                            <div class="media-body ng-binding">
-                                                                <strong class="ng-binding">elturco34</strong><br> 2019-05-07 15:34:11
-                                                            </div>
-                                                        </div>
-                                                    </div> <div class="list-group-item">
-                                                        <div class="media">
-                                                            <div class="media-left">
-                                                                <img class="img-circle img-sm"  src="//cdn.echofin.co/avatars/f29fd757.png">
-                                                            </div>
-                                                            <div class="media-body">
-                                                                <strong class="ng-binding">bkells06</strong><br> 2019-04-28 14:37:56
-                                                            </div>
-                                                        </div>
-                                                    </div> <div class="list-group-item">
-                                                        <div class="media">
-                                                            <div class="media-left">
-                                                                <img class="img-circle img-sm"  src="//cdn.echofin.co/avatars/d913dd34.png">
-                                                            </div>
-                                                            <div class="media-body ng-binding">
-                                                                <strong class="ng-binding">Joshkido13349</strong><br> 2019-04-23 08:05:54
-                                                            </div>
-                                                        </div>
-                                                    </div> <div class="list-group-item">
-                                                        <div class="media">
-                                                            <div class="media-left">
-                                                                <img class="img-circle img-sm"  ng-src="//cdn.echofin.co/avatars/e4f49140.png" src="//cdn.echofin.co/avatars/e4f49140.png">
-                                                            </div>
-                                                            <div class="media-body ng-binding">
-                                                                <strong class="ng-binding">Milordjuste</strong><br> 2019-04-22 00:32:44
-                                                            </div>
-                                                        </div>
-                                                    </div> <div class="list-group-item">
-                                                        <div class="media">
-                                                            <div class="media-left">
-                                                                <img class="img-circle img-sm"  src="//cdn.echofin.co/avatars/11b139bd.png">
-                                                            </div>
-                                                            <div class="media-body ng-binding">
-                                                                <strong class="ng-binding">sebastienb23</strong><br> 2019-04-21 22:37:36
-                                                            </div>
-                                                        </div>
-                                                    </div> 
-                                                </div>
-                                            <div class="box-footer">
-                                                <a routerLink="/admincontacts" class="btn btn-sm btn-link pull-right">
-                                                    View All Users
-                                                </a>
-                                            </div>
-                                        </div>
+                    <div class="col-md-12 users-box">
+                        <div class="box box-default ">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">Latest Registrations</h3>
                             </div>
+                            <div class="list-group">
+                                <div class="list-group-item">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <img class="img-circle img-sm" src="//cdn.echofin.co/avatars/5d053022.png">
+                                        </div>
+                                        <div class="media-body ng-binding">
+                                            <strong class="ng-binding">mohit-kumar</strong><br> 2019-07-25 16:01:17
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <img class="img-circle img-sm" src="//cdn.echofin.co/avatars/1b14b4b6.png">
+                                        </div>
+                                        <div class="media-body ng-binding">
+                                            <strong class="ng-binding">puneetsethi25</strong><br> 2019-07-18 13:45:01
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <img class="img-circle img-sm" src="//cdn.echofin.co/avatars/f47c2751.png">
+                                        </div>
+                                        <div class="media-body ng-binding">
+                                            <strong class="ng-binding">Domulo</strong><br> 2019-06-12 12:59:48
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <img class="img-circle img-sm" src="//cdn.echofin.co/avatars/39fad28a.png">
+                                        </div>
+                                        <div class="media-body ng-binding">
+                                            <strong class="ng-binding">Ricky</strong><br> 2019-05-21 14:34:21
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <img class="img-circle img-sm" src="//cdn.echofin.co/avatars/73d68540.png">
+                                        </div>
+                                        <div class="media-body ng-binding">
+                                            <strong class="ng-binding">sterrones</strong><br> 2019-05-21 11:13:52
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <img class="img-circle img-sm" src="//cdn.echofin.co/avatars/6ca0ba32.png">
+                                        </div>
+                                        <div class="media-body ng-binding">
+                                            <strong class="ng-binding">elturco34</strong><br> 2019-05-07 15:34:11
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <img class="img-circle img-sm" src="//cdn.echofin.co/avatars/f29fd757.png">
+                                        </div>
+                                        <div class="media-body">
+                                            <strong class="ng-binding">bkells06</strong><br> 2019-04-28 14:37:56
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <img class="img-circle img-sm" src="//cdn.echofin.co/avatars/d913dd34.png">
+                                        </div>
+                                        <div class="media-body ng-binding">
+                                            <strong class="ng-binding">Joshkido13349</strong><br> 2019-04-23 08:05:54
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <img class="img-circle img-sm"
+                                                ng-src="//cdn.echofin.co/avatars/e4f49140.png"
+                                                src="//cdn.echofin.co/avatars/e4f49140.png">
+                                        </div>
+                                        <div class="media-body ng-binding">
+                                            <strong class="ng-binding">Milordjuste</strong><br> 2019-04-22 00:32:44
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <img class="img-circle img-sm" src="//cdn.echofin.co/avatars/11b139bd.png">
+                                        </div>
+                                        <div class="media-body ng-binding">
+                                            <strong class="ng-binding">sebastienb23</strong><br> 2019-04-21 22:37:36
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-footer">
+                                <a routerLink="/admincontacts" class="btn btn-sm btn-link pull-right">
+                                    View All Users
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </mat-drawer-container>
-  </div>
+</div>
