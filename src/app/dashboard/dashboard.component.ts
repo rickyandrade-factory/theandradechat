@@ -42,7 +42,27 @@ export class DashboardComponent implements OnInit {
         width: '650px'
       }
     );
+  }
 
+  openMarketHoursDialog() {
+    const dialog = this.dialog.open(MarketHoursDialog, {
+        width: '738px'
+      }
+    );
+  }
+
+  openFXHeatmapDialog() {
+    const dialog = this.dialog.open(FXHeatmapDialog, {
+        width: '780px'
+      }
+    );
+  }
+
+  openCoin360Dialog() {
+    const dialog = this.dialog.open(Coin360Dialog, {
+        width: '880px'
+      }
+    );
   }
 
   ngOnInit() { }
@@ -60,3 +80,23 @@ export class DashboardComponent implements OnInit {
 })
 export class ChartsDialog {}
 
+// Market Hours Dialog
+@Component({
+  selector: 'market-hours-dialog',
+  templateUrl: 'market-hours-dialog.html',
+})
+export class MarketHoursDialog {}
+
+// FX Heatmap Dialog
+@Component({
+  selector: 'fx-heatmap-dialog',
+  templateUrl: 'fx-heatmap-dialog.html',
+})
+export class FXHeatmapDialog {}
+
+// COIN360 Dialog
+@Component({
+  selector: 'coin-360-dialog',
+  templateUrl: 'coin-360-dialog.html',
+})
+export class Coin360Dialog {}
