@@ -1104,9 +1104,6 @@ li.emojiRef{ display: none; }
   mat-drawer.widget-sidenav {
     width: 400px!important;
   }
-  .leftnav{
-    padding-top: 25px!important;
-  }
 }
 @media (min-width: 768px) {
   .navbar-right .popup>.dropdown-menu {
@@ -1662,7 +1659,6 @@ button.btn.btn-blue {
   float: left;
   overflow: hidden;
   text-align: center;
-  padding-top: 110px;
   position: fixed;
   z-index:9; 
   left: 0;
@@ -8406,9 +8402,6 @@ button.close {
   .visible-sm {
     display: block !important;
   }
-  .leftnav{
-    padding-top: 0!important;
-  }
   table.visible-sm {
     display: table !important;
   }
@@ -8498,9 +8491,6 @@ button.close {
 @media (max-width: 767px) {
   .hidden-xs {
     display: none !important;
-  }
-  .leftnav{
-    padding-top: 0!important;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -9190,6 +9180,13 @@ footer {
     text-align: left;
     word-break: break-word;
 
+}
+/* widget button */
+button.widget-btn{
+  background: #e26727!important;
+}
+button.widget-btn span span{
+    color: #fff!important;
 }
 
 .hamburgerHeader {
@@ -10813,7 +10810,6 @@ app-sinup .mat-drawer-inner-container{
   height: 60px;
   position: fixed;
   right:0;
-  padding:0;
   left:auto;
 }
 

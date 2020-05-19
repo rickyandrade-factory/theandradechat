@@ -65,6 +65,30 @@ export class DashboardComponent implements OnInit {
     );
   }
 
+  openLiveTVDialog() {
+    const dialog = this.dialog.open(LiveTVDialog, 
+       {
+        width: '520px'
+       }
+    );
+  }
+
+  openFXCrossRatesDialog(){
+    const dialog = this.dialog.open(FXCrossRatesDialog, 
+      {
+      width: '780px'
+      }
+    );
+  }
+
+  openOtherChartDialog(){
+    const dialog = this.dialog.open(OtherChartDialog, 
+      {
+      width: '640px'
+      }
+    );
+  }
+
   ngOnInit() { }
 
   setRoomTitle(roomTitle) {
@@ -100,3 +124,23 @@ export class FXHeatmapDialog {}
   templateUrl: 'coin-360-dialog.html',
 })
 export class Coin360Dialog {}
+
+// LIVE TV Dialog
+@Component({
+  selector: 'live-tv-dialog',
+  templateUrl: 'live-tv-dialog.html',
+})
+export class LiveTVDialog {}
+
+// FX Cross Rates Dialog 
+@Component({
+  selector: 'fx-cross-rates-dialog',
+  templateUrl: 'fx-cross-rates-dialog.html',
+})
+export class FXCrossRatesDialog {}
+// Open Other Chart Dialog
+@Component({
+  selector: 'open-other-chart-dialog',
+  templateUrl: 'open-other-chart-dialog.html',
+})
+export class OtherChartDialog {}

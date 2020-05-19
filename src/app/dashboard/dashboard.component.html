@@ -21,7 +21,15 @@
           <span class="roomTitle text-capitalize  ">{{roomTitle}}</span>
           <i class="fa" ng-class="{'roomLock': room.n_type==2 , 'fa-unlock': room.n_type==2}" aria-hidden="true"></i>
           <div header-nav-trial="" class="nav-trial-container">
-            <div class="nav-trial-container-text "></div>
+            <button class="widget-btn hidden-xs header-button pull-right" color="primary" mat-raised-button
+              (click)="drawer1.toggle()">
+              <span class="icon material-icons">apps</span><br>
+              <span class="label ">WIDGETS</span>
+            </button>
+            <button class="hidden-xs header-button pull-right" color="accent" mat-button (click)="drawer4.toggle()">
+              <span class="icon fa fa-address-book-o"></span><br>
+              <span class="label ">DIRECTORY</span>
+            </button>
           </div>
         </div>
       </div>
@@ -72,25 +80,40 @@
               <span class="icon fa fa-bitcoin"></span><br>
               <span class="label ">COIN360</span>
             </button>
+            <button class="hidden-xs header-button " (click)="openLiveTVDialog()">
+              <span class="icon fa fa-tv"></span><br>
+              <span class="label ">LIVETV</span>
+            </button>
+            <button class="hidden-xs header-button ">
+              <span class="icon fa fa-video-camera"></span><br>
+              <span class="label ">ZOOM</span>
+            </button>
+            <button class="hidden-xs header-button " (click)="openOtherChartDialog()">
+              <span class="icon fa fa-area-chart"></span><br>
+              <span class="label ">Charts</span>
+            </button>
+            <button class="hidden-xs header-button " (click)="openFXCrossRatesDialog()">
+              <span class="icon fa fa-exchange"></span><br>
+              <span class="label ">FX CROSS RATES</span>
+            </button>
             <button class="hidden-xs header-button ">
               <span class="icon fa fa-bolt"></span><br>
               <span class="label ">DATAFLASH</span>
             </button>
-            <button class="hidden-xs header-button " mat-button (click)="drawer4.toggle()">
+            <!-- <button class="hidden-xs header-button " mat-button (click)="drawer4.toggle()">
               <span class="icon fa fa-address-book-o"></span><br>
               <span class="label ">DIRECTORY</span>
             </button>
             <div class="example-sidenav-content widget-btn side-tp ">
-              <button class="hamburgerHeader header-button hamburger hamburger-arrow-left " hamburger-drv="" mat-button
+              <button class="hamburgerHeader header-button hamburger hamburger-arrow-left" mat-button
                 (click)="drawer1.toggle()">
-                <span class="icon material-icons ">apps</span><br>
+                <span class="icon material-icons">apps</span><br>
                 <span class="label ">WIDGETS</span>
               </button>
-            </div>
+            </div> -->
           </div>
         </div>
       </mat-drawer-container>
-
     </div>
   </mat-drawer-container>
 </div>
