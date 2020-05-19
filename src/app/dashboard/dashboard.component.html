@@ -53,50 +53,48 @@
           </mat-drawer-container>
           <div class="leftnav">
 
-            <button *ngIf="isAdmin" class="hidden-xs header-button dashboard ">
-              <a href="/admindashboard">
+            <button *ngIf="isAdmin" mat-button class="hidden-xs header-button dashboard ">
+              <a routerLink="/admindashboard">
                 <span class="icon fa fa-desktop"></span><br>
                 <span class="label">DASHBOARD</span>
               </a>
             </button>
-            <button *ngIf="isAdmin" class="hidden-xs header-button broadcast">
-              <a href="#">
+            <button *ngIf="isAdmin" class="hidden-xs header-button broadcast" mat-button>
                 <span class="icon fa fa-video-camera"></span><br>
                 <span class="label">BROADCAST</span>
-              </a>
             </button>
-            <button class="hidden-xs header-button" (click)="openChartsDialog()">
+            <button class="hidden-xs header-button" (click)="openChartsDialog()" mat-button>
               <span class="icon fa fa-bar-chart"></span><br>
               <span class="label ">CHARTS</span>
             </button>
-            <button class="hidden-xs header-button " (click)="openMarketHoursDialog()">
+            <button class="hidden-xs header-button" (click)="openMarketHoursDialog()" mat-button>
               <span class="icon fa fa-clock-o"></span><br>
               <span class="label ">MARKET HOURS</span>
-            </button> <button class="hidden-xs header-button " (click)="openFXHeatmapDialog()">
+            </button> <button class="hidden-xs header-button" (click)="openFXHeatmapDialog()" mat-button>
               <span class="icon fa fa-thermometer-full"></span><br>
               <span class="label ">FX HEATMAP</span>
             </button>
-            <button class="hidden-xs header-button " (click)="openCoin360Dialog()">
+            <button class="hidden-xs header-button" (click)="openCoin360Dialog()" mat-button>
               <span class="icon fa fa-bitcoin"></span><br>
               <span class="label ">COIN360</span>
             </button>
-            <button class="hidden-xs header-button " (click)="openLiveTVDialog()">
+            <button class="hidden-xs header-button" (click)="openLiveTVDialog()" mat-button>
               <span class="icon fa fa-tv"></span><br>
               <span class="label ">LIVETV</span>
             </button>
-            <button class="hidden-xs header-button ">
+            <button class="hidden-xs header-button" (click)="openZoomDialog()" mat-button>
               <span class="icon fa fa-video-camera"></span><br>
               <span class="label ">ZOOM</span>
             </button>
-            <button class="hidden-xs header-button " (click)="openOtherChartDialog()">
+            <button class="hidden-xs header-button" (click)="openOtherChartDialog()" mat-button>
               <span class="icon fa fa-area-chart"></span><br>
               <span class="label ">CHARTS</span>
             </button>
-            <button class="hidden-xs header-button " (click)="openFXCrossRatesDialog()">
+            <button class="hidden-xs header-button" (click)="openFXCrossRatesDialog()" mat-button>
               <span class="icon fa fa-exchange"></span><br>
               <span class="label ">FX CROSS RATES</span>
             </button>
-            <button class="hidden-xs header-button ">
+            <button class="hidden-xs header-button" mat-button>
               <span class="icon fa fa-bolt"></span><br>
               <span class="label ">DATAFLASH</span>
             </button>

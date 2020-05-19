@@ -89,6 +89,14 @@ export class DashboardComponent implements OnInit {
     );
   }
 
+  openZoomDialog(){
+    const dialog = this.dialog.open(ZoomDialog, 
+      {
+      width: '1090px'
+      }
+    );
+  }
+
   ngOnInit() { }
 
   setRoomTitle(roomTitle) {
@@ -138,9 +146,17 @@ export class LiveTVDialog {}
   templateUrl: 'fx-cross-rates-dialog.html',
 })
 export class FXCrossRatesDialog {}
+
 // Open Other Chart Dialog
 @Component({
-  selector: 'open-other-chart-dialog',
-  templateUrl: 'open-other-chart-dialog.html',
+  selector: 'other-chart-dialog',
+  templateUrl: 'other-chart-dialog.html',
 })
 export class OtherChartDialog {}
+
+// Open zoom Dialog
+@Component({
+  selector: 'zoom-dialog',
+  templateUrl: 'zoom-dialog.html',
+})
+export class ZoomDialog {}

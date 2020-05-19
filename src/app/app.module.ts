@@ -16,7 +16,7 @@ import { RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
-import { DashboardComponent, ChartsDialog, MarketHoursDialog,FXHeatmapDialog,Coin360Dialog, LiveTVDialog,FXCrossRatesDialog, OtherChartDialog } from './dashboard/dashboard.component';
+import { DashboardComponent, ChartsDialog, MarketHoursDialog,FXHeatmapDialog,Coin360Dialog, LiveTVDialog,FXCrossRatesDialog, OtherChartDialog, ZoomDialog } from './dashboard/dashboard.component';
 import { AngularWebStorageModule } from 'angular-web-storage';
 import { AuthService } from './services/auth.service';
 import { HttpService } from './services/http.service';
@@ -115,7 +115,8 @@ import { AdminmarketingComponent } from './adminmarketing/adminmarketing.compone
     Coin360Dialog,
     LiveTVDialog,
     FXCrossRatesDialog,
-    OtherChartDialog
+    OtherChartDialog,
+    ZoomDialog
   ],
   imports: [
     BrowserModule,
@@ -127,7 +128,7 @@ import { AdminmarketingComponent } from './adminmarketing/adminmarketing.compone
     MatNativeDateModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    MatTableExporterModule,
+    MatTableExporterModule
   ],
   providers: [
     AuthService,
@@ -137,7 +138,7 @@ import { AdminmarketingComponent } from './adminmarketing/adminmarketing.compone
     User,
     AuthGuard
   ],
-  entryComponents: [OtherChartDialog, FXCrossRatesDialog,LiveTVDialog,Coin360Dialog,FXHeatmapDialog, MarketHoursDialog, ChartsDialog, PreferencesDialog, InviteContactComponent, NewContactComponent, NewOfferComponent,
+  entryComponents: [ZoomDialog,OtherChartDialog, FXCrossRatesDialog,LiveTVDialog,Coin360Dialog,FXHeatmapDialog, MarketHoursDialog, ChartsDialog, PreferencesDialog, InviteContactComponent, NewContactComponent, NewOfferComponent,
     lockeddialogComponent, NewBillingComponent, CustomwidgetComponent, NewCouponsComponent,
     NewChatroomComponent, NewServicesComponent, ConfiguredialogComponent, NewTeamAvatarComponent,
     CustomScriptComponent, DeleteChatroomComponent],

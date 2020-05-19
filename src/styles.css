@@ -20,6 +20,10 @@ a:focus{
   padding: 10px 15px;
   margin: 0;
 }
+h2.iframe{
+  padding: 5px 10px;
+  font-size: 14px;
+}
 h2.mat-dialog-title .close{
   color: #444;
 }
