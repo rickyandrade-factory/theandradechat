@@ -134,7 +134,7 @@ export class AdminoffersComponent implements OnInit {
     }
 
      // filter
-     onActiveFilter(){
+     onActiveSearch(){
       this.filterActive= !this.filterActive;
     }
 

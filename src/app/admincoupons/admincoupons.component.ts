@@ -51,7 +51,7 @@ export class AdmincouponsComponent implements OnInit {
   }
 
     // filter
-    onActiveFilter(){
+    onActiveSearch(){
       this.filterActive= !this.filterActive;
     }
 

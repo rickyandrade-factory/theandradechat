@@ -88,7 +88,7 @@
                 <span class="fa fa-plus fa-fw"></span> New Coupon
             </button>
             <div class="pull-right">
-                <button class="btn btn-default" (click)="onActiveFilter()">
+                <button class="btn btn-default" (click)="onActiveSearch()">
                     <span class="fa fa-search"></span> Search
                 </button>
                 <button class="btn btn-default" (click)="onRefresh()">
@@ -96,30 +96,50 @@
                 </button>
             </div>
         </div>
-        <mat-form-field *ngIf="filterActive">
-          <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Search">
-        </mat-form-field>
           <div class="mat-elevation-z8 box box-default">
-            <table mat-table [dataSource]="dataSource" matSort
+            <table class="searchTable" mat-table [dataSource]="dataSource" matSort
             [ngClass]="{'ActiveSpinner': showSpinner == true}">
               <!-- ID Column -->
               <ng-container matColumnDef="name">
-                  <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
+                  <th mat-header-cell *matHeaderCellDef mat-sort-header> Name 
+                  <mat-form-field *ngIf="filterActive">
+                      <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Name">
+                    </mat-form-field> 
+                  </th>
                 <td mat-cell *matCellDef="let row"> {{row.name}} </td>
               </ng-container>
               <!-- Color Column -->
               <ng-container matColumnDef="amount">
-                <th mat-header-cell *matHeaderCellDef mat-sort-header> Amount </th>
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Amount 
+                  <mat-form-field *ngIf="filterActive">
+                    <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Amount">
+                  </mat-form-field> 
+                </th>
                 <td mat-cell *matCellDef="let row"> {{row.amount}} </td>
               </ng-container>
                 <!-- Color Column -->
                 <ng-container matColumnDef="currency">
-                  <th mat-header-cell *matHeaderCellDef mat-sort-header> Currency </th>
+                  <th mat-header-cell *matHeaderCellDef mat-sort-header> Currency 
+                    <mat-form-field *ngIf="filterActive">
+                          <mat-select (keyup)="applyFilter($event.target.value)" placeholder="Currency">
+                            <mat-option value="USD">USD</mat-option>
+                            <mat-option value="EUR">EUR</mat-option>
+                            <mat-option value="GBP">GBP</mat-option>
+                            <mat-option value="CAD">CAD</mat-option>
+                            <mat-option value="AUD">AUD</mat-option>
+                            <mat-option value="JPY">JPY</mat-option>
+                          </mat-select>
+                    </mat-form-field>
+                  </th>
                   <td mat-cell *matCellDef="let row"> {{row.currency}} </td>
                 </ng-container>
                  <!-- Color Column -->
                  <ng-container matColumnDef="percentoff">
-                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Percent Off </th>
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Percent Off 
+                      <mat-form-field *ngIf="filterActive">
+                        <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Percent Off ">
+                      </mat-form-field> 
+                    </th>
                     <td mat-cell *matCellDef="let row"> {{row.percentoff}} </td>
                   </ng-container>
                 <!-- Color Column -->

@@ -53,7 +53,7 @@ export class AdminbillingComponent implements OnInit {
     }
 
     // filter
-    onActiveFilter(){
+    onActiveSearch(){
       this.filterActive= !this.filterActive;
     }
 

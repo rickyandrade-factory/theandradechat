@@ -50,7 +50,7 @@ export class AdminsalesComponent implements OnInit {
   }
 
   // filter
-  onActiveFilter(){
+  onActiveSearch(){
     this.filterActive= !this.filterActive;
   }
  

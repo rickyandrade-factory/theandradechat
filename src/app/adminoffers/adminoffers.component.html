@@ -92,7 +92,7 @@
           <span class="fa fa-download "></span> Export
         </button>
         <div class="pull-right">
-          <button class="btn btn-default" (click)="onActiveFilter()">
+          <button class="btn btn-default" (click)="onActiveSearch()">
             <span class="fa fa-search"></span> Search
           </button>
           <button class="btn btn-default" (click)="onRefresh()">
@@ -100,24 +100,33 @@
           </button>
         </div>
       </div>
-      <mat-form-field *ngIf="filterActive">
-        <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Search">
-      </mat-form-field>
       <div class="mat-elevation-z8 box box-default">
-        <table mat-table [dataSource]="dataSource" matTableExporter [ngClass]="{'ActiveSpinner': showSpinner == true}"
+        <table class="searchTable" mat-table [dataSource]="dataSource" matTableExporter [ngClass]="{'ActiveSpinner': showSpinner == true}"
           #offersExporter="matTableExporter" matSort>
           <!-- ID Column -->
           <ng-container matColumnDef="username">
-            <th mat-header-cell *matHeaderCellDef mat-sort-header> Username </th>
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Username 
+              <mat-form-field *ngIf="filterActive">
+                <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Username">
+              </mat-form-field> 
+            </th>
             <td mat-cell *matCellDef="let row"> {{row.username}} </td>
           </ng-container>
           <ng-container matColumnDef="email">
-            <th mat-header-cell *matHeaderCellDef mat-sort-header> Email </th>
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Email 
+              <mat-form-field *ngIf="filterActive">
+                <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Email">
+              </mat-form-field> 
+            </th>
             <td mat-cell *matCellDef="let row"> {{row.email}} </td>
           </ng-container>
           <!-- Color Column -->
           <ng-container matColumnDef="plan">
-            <th mat-header-cell *matHeaderCellDef mat-sort-header> Plan </th>
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Plan 
+              <mat-form-field *ngIf="filterActive">
+                <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Plan">
+              </mat-form-field> 
+            </th>
             <td mat-cell *matCellDef="let row"> {{row.plan}} </td>
           </ng-container>
           <!-- Color Column -->
@@ -132,7 +141,14 @@
           </ng-container>
           <!-- Color Column -->
           <ng-container matColumnDef="no">
-            <th mat-header-cell *matHeaderCellDef mat-sort-header> No CC</th>
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> No CC
+              <mat-form-field *ngIf="filterActive">
+                <mat-select (keyup)="applyFilter($event.target.value)" placeholder="Select No CC">
+                  <mat-option value="YES">YES</mat-option>
+                  <mat-option value="NO">NO</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </th>
             <td mat-cell *matCellDef="let row"> {{row.no}} </td>
           </ng-container>
           <!-- Color Column -->
@@ -147,7 +163,14 @@
           </ng-container>
           <!-- Color Column -->
           <ng-container matColumnDef="canceled">
-            <th mat-header-cell *matHeaderCellDef mat-sort-header> Canceled</th>
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Canceled
+              <mat-form-field *ngIf="filterActive">
+                  <mat-select (keyup)="applyFilter($event.target.value)" placeholder="Canceled">
+                    <mat-option value="YES">YES</mat-option>
+                    <mat-option value="NO">NO</mat-option>
+                  </mat-select>
+            </mat-form-field>
+            </th>
             <td mat-cell *matCellDef="let row" [style.color]="row.color"> {{row.canceled}} </td>
           </ng-container>
           <!-- Color Column -->

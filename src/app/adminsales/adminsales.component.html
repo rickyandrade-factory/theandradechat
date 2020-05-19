@@ -96,7 +96,7 @@
                                 <span class="fa fa-download "></span> Export
                             </button>
                             <div class="pull-right">
-                                <button class="btn btn-default" (click)="onActiveFilter()">
+                                <button class="btn btn-default" (click)="onActiveSearch()">
                                     <span class="fa fa-search"></span> Search
                                 </button>
                                 <button class="btn btn-default" (click)="onRefresh()">
@@ -106,17 +106,15 @@
                             <div class="clearfix"></div>
                         </div>
                     </div>
-                    <mat-form-field *ngIf="filterActive">
-                        <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Search">
-                    </mat-form-field>
                     <div class="box box-default">
 
                         <div class="mat-elevation-z8">
-                            <table mat-table matTableExporter #salesExporter="matTableExporter" [hiddenColumns]="[0]"
+                            <table class="searchTable" mat-table matTableExporter #salesExporter="matTableExporter" [hiddenColumns]="[0]"
                                 [ngClass]="{'ActiveSpinner': showSpinner == true}" [dataSource]="dataSource" matSort>
                                 <!-- ID Column -->
                                 <ng-container matColumnDef="date">
-                                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Date</th>
+                                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Date
+                                    </th>
                                     <td mat-cell *matCellDef="let row">
                                         {{row.date}}
                                     </td>
@@ -124,25 +122,45 @@
 
                                 <!-- ID Column -->
                                 <ng-container matColumnDef="username">
-                                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Username </th>
+                                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Username 
+                                        <mat-form-field *ngIf="filterActive">
+                                            <input matInput (keyup)="applyFilter($event.target.value)"
+                                                placeholder="Username">
+                                        </mat-form-field>
+                                    </th>
                                     <td mat-cell *matCellDef="let row"> {{row.username}} </td>
                                 </ng-container>
 
                                 <!-- Name Column -->
                                 <ng-container matColumnDef="email">
-                                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Email </th>
+                                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Email 
+                                        <mat-form-field *ngIf="filterActive">
+                                            <input matInput (keyup)="applyFilter($event.target.value)"
+                                                placeholder="Email">
+                                        </mat-form-field>
+                                    </th>
                                     <td mat-cell *matCellDef="let row"> {{row.email}} </td>
                                 </ng-container>
 
                                 <!-- Color Column -->
                                 <ng-container matColumnDef="plan">
-                                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Plan </th>
+                                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Plan 
+                                        <mat-form-field *ngIf="filterActive">
+                                            <input matInput (keyup)="applyFilter($event.target.value)"
+                                                placeholder="Plan">
+                                        </mat-form-field>
+                                    </th>
                                     <td mat-cell *matCellDef="let row"> {{row.plan}} </td>
                                 </ng-container>
 
                                 <!-- Color Column -->
                                 <ng-container matColumnDef="description">
-                                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Description </th>
+                                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Description 
+                                        <mat-form-field *ngIf="filterActive">
+                                            <input matInput (keyup)="applyFilter($event.target.value)"
+                                                placeholder="Description">
+                                        </mat-form-field>
+                                    </th>
                                     <td mat-cell *matCellDef="let row" [style.color]="row.color"> {{row.description}}
                                     </td>
                                 </ng-container>
@@ -155,7 +173,14 @@
 
                                 <!-- Color Column -->
                                 <ng-container matColumnDef="status">
-                                    <th mat-header-cell *matHeaderCellDef mat-sort-header>Status</th>
+                                    <th mat-header-cell *matHeaderCellDef mat-sort-header>Status
+                                        <mat-form-field *ngIf="filterActive">
+                                            <mat-select (keyup)="applyFilter($event.target.value)" placeholder="Select Status">
+                                              <mat-option value="FAILED">FAILED</mat-option>
+                                              <mat-option value="SUCCEED">SUCCEED</mat-option>
+                                            </mat-select>
+                                          </mat-form-field>
+                                    </th>
                                     <td mat-cell *matCellDef="let row"> {{row.status}}
                                     </td>
                                 </ng-container>

@@ -63,7 +63,7 @@ export class AdmincontactsComponent implements OnInit {
     }
 
     // filter
-    onActiveFilter(){
+    onActiveSearch(){
       this.filterActive= !this.filterActive;
     }
 
