@@ -1835,6 +1835,12 @@ span.glyphicon.glyphicon-one-fine-dot.sidebar-status-dot.userStatus1 {
   margin: 0 5px;
   float: left;
 }
+.sidebar-avatar.usr_img{
+  border-radius: 50%!important;
+}
+.usr_img + .sidebar-username{
+  margin-left: 0;
+}
 
 ul.nav.navbar-sidebar {
   float: left;
@@ -1968,7 +1974,6 @@ preferences-dialog .modal-footer{
     display: block;
 }
 
-
 .rooms-sidebar-header {
     font-weight: 400;
     font-size: 12px;
@@ -1976,7 +1981,6 @@ preferences-dialog .modal-footer{
     padding-left: 10px;
     letter-spacing: 1.5px;
     border-bottom: 1px solid #053742;
-    margin-top: 10px;
 }
 .nav>li>a.flex-parent {
   letter-spacing: 0;
@@ -9280,10 +9284,6 @@ button.widget-btn span span{
     -moz-transition: color .2s ease-in-out;
 
 
-}
-
-.fa-search {
-    margin-right: 20px !important;
 }
 
 .btnStream, .btnLive {
