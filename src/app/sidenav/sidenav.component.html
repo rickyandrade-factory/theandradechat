@@ -102,11 +102,11 @@
   <div selected="roomName" class="ng-scope ng-isolate-scope">
     <li class="nav-item-header rooms-sidebar-header">
       WEBTRADER
-      <button class="btn btn-link pull-right" style="padding:0;">
+      <button class="btn btn-link pull-right" style="padding:0;" (click)="onManageBrockerDialog()">
         <i class="roomIcon fa fa-fw fa-plus" aria-hidden="true"></i>
       </button>
     </li>
-    <li ng-if="!myBrokers.length" class="nav-item-empty ng-scope">
+    <li ng-if="!myBrokers.length" class="nav-item-empty">
       No brokers were added
     </li>
   </div>

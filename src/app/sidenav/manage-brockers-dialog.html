@@ -1,0 +1,70 @@
+<h2 mat-dialog-title>Manage Brokers
+    <button mat-dialog-close class="close">
+        <span aria-hidden="true">×</span>
+    </button>
+</h2>
+<mat-divider></mat-divider>
+<div class="manage_Brocker_container">
+    <div class="row">
+        <div class="col-md-6">
+
+            <div class="add_own_brocker" *ngIf="addOwn">
+                <h4>
+                    Search for brokers
+                    <a mat-button class="btn btn-link pull-right" (click)="onClickOwn()" style="margin-top:-7px">or add your own</a>
+                </h4>
+                <mat-divider></mat-divider>
+                <mat-form-field>
+                    <mat-label>Search</mat-label>
+                    <input matInput>
+                </mat-form-field>
+                <div class="list-group" style="height:280px;overflow-y:auto">
+                    <div class="empty-msg text-center">
+                        find your broker's<br>web trading terminal using<br>the search bar above
+                    </div>
+                </div>
+            </div>
+
+            <div class="add_own_brocker" *ngIf="addFromList">
+                <h4>
+                    Add your own broker
+                    <a mat-button class="btn btn-link pull-right" (click)="onClickList()" style="margin-top:-7px">or add from list</a>
+                </h4>
+                <mat-divider></mat-divider>
+                <mat-form-field>
+                    <mat-label>Broker Title</mat-label>
+                    <input matInput>
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Web Trading Terminal Link</mat-label>
+                    <input matInput>
+                    <span matPrefix>https://&nbsp;</span>
+                </mat-form-field>
+                <div class="text-right">
+                    <button class="btn btn-primary btn-sm">
+                        <span class="fa fa-plus fa-fw"></span> Add
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6" style="border-left:solid 1px #ddd; font-size:1.3em">
+            <div class="add_own_brocker">
+                <h4>
+                    My Terminals
+                </h4>
+                <mat-divider></mat-divider>
+                <div class="list-group" style="height:350px;overflow-y:auto">
+                    <div class="empty-msg text-center">
+                        you have no brokers<br>in your list yet
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="modal-footer p-10">
+    <button mat-dialog-close class="btn btn-default">Cancel</button>
+    <button [mat-dialog-close]="true" class="btn btn-success">Install</button>
+</div>

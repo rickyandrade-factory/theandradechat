@@ -33,6 +33,12 @@ export class SidenavComponent implements OnInit {
     this.userService = userService;
   }
 
+  onManageBrockerDialog(){
+    const dialog = this.dialog.open(ManageBrockersDialog, {
+      width: '900px',
+    });
+  }
+
   ngOnChanges(changes: SimpleChanges) {
   }
 
@@ -77,6 +83,27 @@ export class SidenavComponent implements OnInit {
   logout() {
     this.auth.logout();
   }
+
+}
+
+// manage Brockers (webtraser add)
+@Component({
+  selector: 'manage-brockers-dialog',
+  templateUrl: 'manage-brockers-dialog.html',
+  styleUrls: ['./sidenav.component.css']
+})
+export class ManageBrockersDialog {
+  addOwn: boolean= false;
+  addFromList: boolean= true;
+  onClickOwn(){
+    this.addOwn= false;
+    this.addFromList = true;
+  }
+  onClickList(){
+    this.addFromList= false;
+    this.addOwn= true;
+  }
+
 
 }
 
