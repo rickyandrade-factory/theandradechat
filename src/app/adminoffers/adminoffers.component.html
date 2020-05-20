@@ -106,7 +106,7 @@
           <!-- ID Column -->
           <ng-container matColumnDef="username">
             <th mat-header-cell *matHeaderCellDef mat-sort-header> Username 
-              <mat-form-field *ngIf="filterActive">
+              <mat-form-field *ngIf="searchActive">
                 <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Username">
               </mat-form-field> 
             </th>
@@ -114,7 +114,7 @@
           </ng-container>
           <ng-container matColumnDef="email">
             <th mat-header-cell *matHeaderCellDef mat-sort-header> Email 
-              <mat-form-field *ngIf="filterActive">
+              <mat-form-field *ngIf="searchActive">
                 <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Email">
               </mat-form-field> 
             </th>
@@ -123,7 +123,7 @@
           <!-- Color Column -->
           <ng-container matColumnDef="plan">
             <th mat-header-cell *matHeaderCellDef mat-sort-header> Plan 
-              <mat-form-field *ngIf="filterActive">
+              <mat-form-field *ngIf="searchActive">
                 <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Plan">
               </mat-form-field> 
             </th>
@@ -142,7 +142,7 @@
           <!-- Color Column -->
           <ng-container matColumnDef="no">
             <th mat-header-cell *matHeaderCellDef mat-sort-header> No CC
-              <mat-form-field *ngIf="filterActive">
+              <mat-form-field *ngIf="searchActive">
                 <mat-select (keyup)="applyFilter($event.target.value)" placeholder="Select No CC">
                   <mat-option value="YES">YES</mat-option>
                   <mat-option value="NO">NO</mat-option>
@@ -164,7 +164,7 @@
           <!-- Color Column -->
           <ng-container matColumnDef="canceled">
             <th mat-header-cell *matHeaderCellDef mat-sort-header> Canceled
-              <mat-form-field *ngIf="filterActive">
+              <mat-form-field *ngIf="searchActive">
                   <mat-select (keyup)="applyFilter($event.target.value)" placeholder="Canceled">
                     <mat-option value="YES">YES</mat-option>
                     <mat-option value="NO">NO</mat-option>

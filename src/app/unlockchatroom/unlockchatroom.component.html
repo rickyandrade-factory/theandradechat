@@ -30,8 +30,11 @@
   <form (ngSubmit)="sendMessage()" #chatForm="ngForm">
       <div class="form-group">
         <div class="chatDiv" style="display: block; right: 25px; left: 10px;">
-          <button class="btnUploader dz-clickable" id="uploadBtn" (click)="sendMessage()" style="cursor: pointer;"><i
+          <div class="upload_file_for_chat">
+            <button class="btnUploader dz-clickable" id="uploadBtn" (click)="sendMessage()" style="cursor: pointer;"><i
               class="fa fa-arrow-circle-o-up"></i></button>
+              <input type="file"  (change)="onUpload($event)" >
+          </div>
           <button id="emojiBtn" class=""><i class="fa fa-smile-o" aria-hidden="true"></i>
           </button>
           <button id="addon_Signal" class="cbAddonsBtn" title="Publish Signal">

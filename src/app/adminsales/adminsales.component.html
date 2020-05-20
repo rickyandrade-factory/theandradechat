@@ -123,7 +123,7 @@
                                 <!-- ID Column -->
                                 <ng-container matColumnDef="username">
                                     <th mat-header-cell *matHeaderCellDef mat-sort-header> Username 
-                                        <mat-form-field *ngIf="filterActive">
+                                        <mat-form-field *ngIf="searchActive">
                                             <input matInput (keyup)="applyFilter($event.target.value)"
                                                 placeholder="Username">
                                         </mat-form-field>
@@ -134,7 +134,7 @@
                                 <!-- Name Column -->
                                 <ng-container matColumnDef="email">
                                     <th mat-header-cell *matHeaderCellDef mat-sort-header> Email 
-                                        <mat-form-field *ngIf="filterActive">
+                                        <mat-form-field *ngIf="searchActive">
                                             <input matInput (keyup)="applyFilter($event.target.value)"
                                                 placeholder="Email">
                                         </mat-form-field>
@@ -145,7 +145,7 @@
                                 <!-- Color Column -->
                                 <ng-container matColumnDef="plan">
                                     <th mat-header-cell *matHeaderCellDef mat-sort-header> Plan 
-                                        <mat-form-field *ngIf="filterActive">
+                                        <mat-form-field *ngIf="searchActive">
                                             <input matInput (keyup)="applyFilter($event.target.value)"
                                                 placeholder="Plan">
                                         </mat-form-field>
@@ -156,7 +156,7 @@
                                 <!-- Color Column -->
                                 <ng-container matColumnDef="description">
                                     <th mat-header-cell *matHeaderCellDef mat-sort-header> Description 
-                                        <mat-form-field *ngIf="filterActive">
+                                        <mat-form-field *ngIf="searchActive">
                                             <input matInput (keyup)="applyFilter($event.target.value)"
                                                 placeholder="Description">
                                         </mat-form-field>
@@ -174,7 +174,7 @@
                                 <!-- Color Column -->
                                 <ng-container matColumnDef="status">
                                     <th mat-header-cell *matHeaderCellDef mat-sort-header>Status
-                                        <mat-form-field *ngIf="filterActive">
+                                        <mat-form-field *ngIf="searchActive">
                                             <mat-select (keyup)="applyFilter($event.target.value)" placeholder="Select Status">
                                               <mat-option value="FAILED">FAILED</mat-option>
                                               <mat-option value="SUCCEED">SUCCEED</mat-option>

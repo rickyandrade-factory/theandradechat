@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { SocketService } from '../services/socket.service';
 import { OnpointRoomComponent } from '../onpoint-room/onpoint-room.component';
 import { UserService } from '../services/user.service';
-
+import { MatDialog } from '@angular/material';
 @Component({
   selector: 'app-unlockchatroom',
   templateUrl: './unlockchatroom.component.html',
@@ -19,7 +19,8 @@ export class UnlockchatroomComponent implements OnInit {
   chat = {
     message: ""
   };
-  constructor(private socketService: SocketService, userService: UserService) {
+  constructor(private socketService: SocketService, userService: UserService,
+    private dialog: MatDialog) {
     this.userId = userService.getUserId();
   }
 
@@ -31,6 +32,12 @@ export class UnlockchatroomComponent implements OnInit {
       this.messages = (response.hasOwnProperty('data') ? response.data : []);
     });
   }
+
+  onUpload(event) {
+    const dialog = this.dialog.open(MediaUploadDialog, {
+      width: '598px',
+    });
+}
 
   sendMessage(){
     if(this.chat.message){
@@ -45,3 +52,12 @@ export class UnlockchatroomComponent implements OnInit {
 
   }
 }
+
+
+// media upload
+@Component({
+  selector: 'media-upload-dialog',
+  templateUrl: 'media-upload-dialog.html',
+  styleUrls: ['./unlockchatroom.component.css']
+})
+export class MediaUploadDialog {}

@@ -20,7 +20,7 @@ export class AdmincontactsComponent implements OnInit {
 
   mode: ProgressSpinnerMode = 'determinate';
   showSpinner= false;
-  filterActive= false;
+  searchActive= false;
   displayedColumns: string[] = ['img', 'username', 'email', 'verified', 'subscription', 'type',  'devices', 'registered', 'lastSeen', 'action'];
   dataSource= new MatTableDataSource<ContactsInterface>(this.contactsService.getContacts());
 
@@ -64,7 +64,7 @@ export class AdmincontactsComponent implements OnInit {
 
     // filter
     onActiveSearch(){
-      this.filterActive= !this.filterActive;
+      this.searchActive= !this.searchActive;
     }
 
     

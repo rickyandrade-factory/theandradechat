@@ -20,7 +20,7 @@ export class AdminsalesComponent implements OnInit {
   displayedColumns: string[] = ['date', 'username', 'email', 'plan', 'description', 'amount',  'status'];
   dataSource = new MatTableDataSource<SalesInterface>(this.salesService.getSalesData());
 
-  filterActive= false;
+  searchActive= false;
 
   @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
   @ViewChild(MatSort, {static: true}) sort: MatSort;
@@ -51,7 +51,7 @@ export class AdminsalesComponent implements OnInit {
 
   // filter
   onActiveSearch(){
-    this.filterActive= !this.filterActive;
+    this.searchActive= !this.searchActive;
   }
  
 }

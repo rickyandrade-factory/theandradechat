@@ -19,7 +19,7 @@ import {CouponsInterface} from './admincoupons.interface';
 export class AdmincouponsComponent implements OnInit {
   mode: ProgressSpinnerMode = 'determinate';
   showSpinner= false;
-  filterActive= false;
+  searchActive= false;
   displayedColumns: string[] = ['name', 'amount',  'currency', 'percentoff', 'alter'];
   dataSource= new MatTableDataSource<CouponsInterface>(this.couponService.getCoupons());
 
@@ -52,7 +52,7 @@ export class AdmincouponsComponent implements OnInit {
 
     // filter
     onActiveSearch(){
-      this.filterActive= !this.filterActive;
+      this.searchActive= !this.searchActive;
     }
 
   applyFilter(filterValue: string) {

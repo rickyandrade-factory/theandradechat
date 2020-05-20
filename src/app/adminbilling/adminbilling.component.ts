@@ -21,7 +21,7 @@ import {BillingInterface} from './adminbilling.interface';
 export class AdminbillingComponent implements OnInit {
   mode: ProgressSpinnerMode = 'determinate';
   showSpinner= false;
-  filterActive= false;
+  searchActive= false;
   displayedColumns: string[] = ['name', 'description', 'onoff',  'currency', 'price', 'cycle',  'term', 'alter'];
   dataSource= new MatTableDataSource<BillingInterface>(this.billingService.getBillings());
 
@@ -54,7 +54,7 @@ export class AdminbillingComponent implements OnInit {
 
     // filter
     onActiveSearch(){
-      this.filterActive= !this.filterActive;
+      this.searchActive= !this.searchActive;
     }
 
   applyFilter(filterValue: string) {

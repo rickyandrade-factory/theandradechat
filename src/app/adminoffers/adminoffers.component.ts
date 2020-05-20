@@ -96,7 +96,7 @@ export class AdminoffersComponent implements OnInit {
   displayedColumns: string[] = ['username', 'email', 'plan',  'startt', 'endt', 'no',  'start', 'end',  'canceled', 'action'];
   dataSource= new MatTableDataSource<OffersInterface>(this.offersService.getOffers());
 
-  filterActive= false;
+  searchActive= false;
 
   @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
   @ViewChild(MatSort, {static: true}) sort: MatSort;
@@ -135,7 +135,7 @@ export class AdminoffersComponent implements OnInit {
 
      // filter
      onActiveSearch(){
-      this.filterActive= !this.filterActive;
+      this.searchActive= !this.searchActive;
     }
 
   ngOnInit() {

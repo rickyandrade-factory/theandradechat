@@ -3552,6 +3552,12 @@ pre code {
   margin-left: -15px;
   margin-right: -15px;
 }
+@media (max-width: 767px) {
+  .col-xs-12{
+    padding:0 15px;
+  }
+}
+
 @media (min-width: 768px) {
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left;
@@ -3570,7 +3576,7 @@ pre code {
   }
   .col-sm-8 {
     width: 66.66666667%;
-    padding:0 015px;
+    padding:0 15px;
   }
   .col-md-8 {
     position: relative;
@@ -4253,6 +4259,9 @@ table th[class*="col-"] {
   min-height: 0.01%;
 }
 @media screen and (max-width: 767px) {
+  #uploadPreview{
+    margin-bottom: 10px;
+  }
   .table-responsive {
     width: 100%;
     margin-bottom: 15px;

@@ -102,7 +102,7 @@
               <!-- ID Column -->
               <ng-container matColumnDef="name">
                   <th mat-header-cell *matHeaderCellDef mat-sort-header> Name 
-                  <mat-form-field *ngIf="filterActive">
+                  <mat-form-field *ngIf="searchActive">
                       <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Name">
                     </mat-form-field> 
                   </th>
@@ -111,7 +111,7 @@
               <!-- Color Column -->
               <ng-container matColumnDef="amount">
                 <th mat-header-cell *matHeaderCellDef mat-sort-header> Amount 
-                  <mat-form-field *ngIf="filterActive">
+                  <mat-form-field *ngIf="searchActive">
                     <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Amount">
                   </mat-form-field> 
                 </th>
@@ -120,7 +120,7 @@
                 <!-- Color Column -->
                 <ng-container matColumnDef="currency">
                   <th mat-header-cell *matHeaderCellDef mat-sort-header> Currency 
-                    <mat-form-field *ngIf="filterActive">
+                    <mat-form-field *ngIf="searchActive">
                           <mat-select (keyup)="applyFilter($event.target.value)" placeholder="Currency">
                             <mat-option value="USD">USD</mat-option>
                             <mat-option value="EUR">EUR</mat-option>
@@ -136,7 +136,7 @@
                  <!-- Color Column -->
                  <ng-container matColumnDef="percentoff">
                     <th mat-header-cell *matHeaderCellDef mat-sort-header> Percent Off 
-                      <mat-form-field *ngIf="filterActive">
+                      <mat-form-field *ngIf="searchActive">
                         <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Percent Off ">
                       </mat-form-field> 
                     </th>
