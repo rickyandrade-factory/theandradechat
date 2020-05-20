@@ -930,7 +930,8 @@ a.profile-menu {
 }
 #uploadPreview>img{
 	max-width: 100px;
-	max-height: 100px;
+  max-height: 100px;
+  border-radius: 50%;
 }
 .btnUploader{
   outline:  none !important;
@@ -1810,7 +1811,7 @@ app-dashboard .mat-drawer.mat-drawer-side {
 .sidebar-match {
   border: none;
   width: 219px; 
-  height: 65px!important;
+  height: 55px!important;
 }
 .dropdown>.dropdown-toggle {
   font-family: Montserrat,sans-serif;
@@ -2046,7 +2047,7 @@ a.flex-parent span.flex-child {
   font-family: Poppins,sans-serif,monospace;
 }
 .rooms_list a.active{
-  background-color: rgb(0, 117, 144)!important;
+  background-color:rgba(26, 131, 245, 0.5)!important;
   color: #fff!important;
   font-family: Poppins,sans-serif,monospace;
 }
@@ -3214,7 +3215,7 @@ img {
   line-height: 1.42857143;
   background-color: #292929;
   border: 1px solid #292929;
-  border-radius: 0px;
+  border-radius: 50%;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -10592,7 +10593,7 @@ a.flex-parent {
 }
 
 #team-wrapper {
-  padding: 40px 0 30px 0;
+  padding: 20px 0;
     background-color: #102127;
 }
 
@@ -10602,7 +10603,7 @@ a.flex-parent {
   height: 56px;
   width: 56px !important;
   max-width: 56px !important;
-  border-radius: 3px;
+  border-radius: 50%;
   padding: 3px;
 }
 

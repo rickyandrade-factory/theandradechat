@@ -40,17 +40,17 @@
 <ul class="nav nav-sidebar">
   <li class="rooms-sidebar-header">ROOMS</li>
 
-  <li class="ng-scope rooms_list" *ngFor="let room of rooms">
+  <li class=" rooms_list" *ngFor="let room of rooms">
     <!-- (click)="room.status == 'private' ? openAddFileDialog(room) : selectRoom(room)" -->
     <a (click)="clickRoom(room)" class="flex-parent locked" style="cursor: pointer">
       <span class="flex-child">
         <i class="roomIcon fa fa-fw fa-hashtag" aria-hidden="true"></i>
-        <span class="text-capitalize room-name ng-binding">{{room.title}}</span>
+        <span class="text-capitalize room-name">{{room.title}}</span>
       </span>
       <span class="flex-child-icons">
         <i style="font-size:12px;" [ngClass]="room.status === 'private' ? 'fa-lock' : 'fa-globe'"
-          class="roomIcon fa fa-fw ng-scope" aria-hidden="true"></i>
-        <i style="font-size:12px;" class="roomIcon fa fa-eye ng-scope" aria-hidden="true"></i>
+          class="roomIcon fa fa-fw" aria-hidden="true"></i>
+        <i style="font-size:12px;" class="roomIcon fa fa-eye" aria-hidden="true"></i>
       </span>
     </a>
   </li>
