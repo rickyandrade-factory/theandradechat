@@ -40,9 +40,9 @@
 <ul class="nav nav-sidebar">
   <li class="rooms-sidebar-header">ROOMS</li>
 
-  <li class=" rooms_list" *ngFor="let room of rooms">
+  <li class=" rooms_list" *ngFor="let room of rooms; let index= index">
     <!-- (click)="room.status == 'private' ? openAddFileDialog(room) : selectRoom(room)" -->
-    <a (click)="clickRoom(room)" class="flex-parent locked" style="cursor: pointer">
+    <a (click)="clickRoom(room)" class="flex-parent locked" [class.active]="index == 0" style="cursor: pointer">
       <span class="flex-child">
         <i class="roomIcon fa fa-fw fa-hashtag" aria-hidden="true"></i>
         <span class="text-capitalize room-name">{{room.title}}</span>
