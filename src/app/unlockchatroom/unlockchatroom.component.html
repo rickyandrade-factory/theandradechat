@@ -1,5 +1,5 @@
 <div class=" wrap_messages">
-  <div class="message_list">
+  <div class="message_list" #scrollMe [scrollTop]="scrollMe.scrollHeight">
       <div class="msg_placeholder ng-scope messagelineodd msg_placeholder_sep msg_delivered" *ngFor="let msg of messages">
           <div user-popover="" class="msg_avatar " style="cursor: pointer;" title="">
             <img style="border-radius: 50%;width:40px; height:40px"

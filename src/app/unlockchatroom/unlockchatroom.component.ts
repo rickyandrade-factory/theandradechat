@@ -49,7 +49,7 @@ export class UnlockchatroomComponent implements OnInit {
       this.socketService.sendMessage(msg);
       this.chat.message = "";
     }
-
+    
   }
 }
 
