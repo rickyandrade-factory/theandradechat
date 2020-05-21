@@ -544,7 +544,7 @@ a.profile-menu {
   overflow: hidden;
 }
 /* admin table search */
-.searchTable .mat-sort-header-button{
+/* .searchTable .mat-sort-header-button{
   display: block!important;
   text-align: left;
   padding-top: 15px;
@@ -553,6 +553,15 @@ a.profile-menu {
     margin-top: 5px;
     float: left;
     width: 100%;
+} */
+.searchTable tr.mat-header-row{
+  height: 40px;
+}
+.activeRow{
+ display: contents!important;
+}
+.activeSearchHeader th{
+  border-bottom:none!important;
 }
 /* spinner */
 .mat-progress-spinner{

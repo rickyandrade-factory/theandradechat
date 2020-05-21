@@ -30,38 +30,38 @@
             </a>
           </li>
           <li>
-            <a mat-icon-button [matMenuTriggerFor]="notificationMenu" > 
-    <span class="fa fa-envelope-o fa-fw"></span>
-</a>
-<mat-menu #notificationMenu="matMenu" class="notificationMenu">
-    <h3 class="mat-h4">Latest Changes</h3>
-    <mat-divider></mat-divider>
-    <button mat-menu-item>
-        <span>new</span>
-        <a><b>Echofin v2</b></a>
-        The new Echofin platform has been released. Get all the details here: https://www.echofin.com/
-    </button>
-    <button mat-menu-item>
-        <span>new</span>
-        <a><b>Zoom widget integration</b></a>
-        A new widget has been added that allows your team members to watch your Zoom broadcast within...
-    </button>
-    <button mat-menu-item>
-        <span>new</span>
-        <a><b>Dashboard\Users</b></a>
-        Added a Subscriptions tab on the details panel.
-    </button>
-    <button mat-menu-item>
-        <span>new</span>
-        <a><b>Email</b></a>
-        All email billing receipts will now include a reply-to which can be set within the...
-    </button>
-    <button mat-menu-item>
-        <span>new</span>
-        <a><b>API</b></a>
-        The initial version of the Echofin API has been released. For more details please check the API...
-    </button>
-</mat-menu>
+            <a mat-icon-button [matMenuTriggerFor]="notificationMenu">
+              <span class="fa fa-envelope-o fa-fw"></span>
+            </a>
+            <mat-menu #notificationMenu="matMenu" class="notificationMenu">
+              <h3 class="mat-h4">Latest Changes</h3>
+              <mat-divider></mat-divider>
+              <button mat-menu-item>
+                <span>new</span>
+                <a><b>Echofin v2</b></a>
+                The new Echofin platform has been released. Get all the details here: https://www.echofin.com/
+              </button>
+              <button mat-menu-item>
+                <span>new</span>
+                <a><b>Zoom widget integration</b></a>
+                A new widget has been added that allows your team members to watch your Zoom broadcast within...
+              </button>
+              <button mat-menu-item>
+                <span>new</span>
+                <a><b>Dashboard\Users</b></a>
+                Added a Subscriptions tab on the details panel.
+              </button>
+              <button mat-menu-item>
+                <span>new</span>
+                <a><b>Email</b></a>
+                All email billing receipts will now include a reply-to which can be set within the...
+              </button>
+              <button mat-menu-item>
+                <span>new</span>
+                <a><b>API</b></a>
+                The initial version of the Echofin API has been released. For more details please check the API...
+              </button>
+            </mat-menu>
           </li>
           <li class="dropdown">
             <a>
@@ -98,94 +98,144 @@
         </div>
       </div>
       <div class="mat-elevation-z8 box box-default">
-        <table class="searchTable" mat-table [dataSource]="dataSource" matSort [ngClass]="{'ActiveSpinner': showSpinner == true}">
-          <!-- ID Column -->
+        <table class="searchTable" mat-table [dataSource]="dataSource" matSort
+          [ngClass]="{'ActiveSpinner': showSpinner == true}">
+          <!-- name Column -->
           <ng-container matColumnDef="name">
-            <th mat-header-cell *matHeaderCellDef mat-sort-header> Name 
-              <mat-form-field *ngIf="searchActive">
-                <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Name">
-              </mat-form-field> 
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Name
             </th>
             <td mat-cell *matCellDef="let row"> {{row.name}} </td>
           </ng-container>
           <ng-container matColumnDef="description">
-            <th mat-header-cell *matHeaderCellDef mat-sort-header> Description 
-              <mat-form-field *ngIf="searchActive">
-                <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Description">
-              </mat-form-field> 
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Description
             </th>
             <td mat-cell *matCellDef="let row"> {{row.description}} </td>
           </ng-container>
           <!-- Color Column -->
           <ng-container matColumnDef="onoff">
-            <th mat-header-cell *matHeaderCellDef mat-sort-header> One-Off 
-              <mat-form-field *ngIf="searchActive">
-                    <mat-select (keyup)="applyFilter($event.target.value)" placeholder="One-Off">
-                      <mat-option value="YES">YES</mat-option>
-                      <mat-option value="NO">NO</mat-option>
-                    </mat-select>
-              </mat-form-field>
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> One-Off
             </th>
             <td mat-cell *matCellDef="let row"> {{row.onoff}} </td>
           </ng-container>
           <!-- Color Column -->
           <ng-container matColumnDef="currency">
-            <th mat-header-cell *matHeaderCellDef mat-sort-header> Currency 
-              <mat-form-field *ngIf="searchActive">
-                    <mat-select (keyup)="applyFilter($event.target.value)" placeholder="Currency">
-                      <mat-option value="USD">USD</mat-option>
-                      <mat-option value="EUR">EUR</mat-option>
-                      <mat-option value="GBP">GBP</mat-option>
-                      <mat-option value="CAD">CAD</mat-option>
-                      <mat-option value="AUD">AUD</mat-option>
-                      <mat-option value="JPY">JPY</mat-option>
-                    </mat-select>
-              </mat-form-field>
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Currency
             </th>
             <td mat-cell *matCellDef="let row"> {{row.currency}} </td>
           </ng-container>
           <!-- Color Column -->
           <ng-container matColumnDef="price">
-            <th mat-header-cell *matHeaderCellDef mat-sort-header> Price 
-              <mat-form-field *ngIf="searchActive">
-                <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Price">
-              </mat-form-field> 
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Price
             </th>
             <td mat-cell *matCellDef="let row"> {{row.price}} </td>
           </ng-container>
           <!-- Color Column -->
           <ng-container matColumnDef="cycle">
             <th mat-header-cell *matHeaderCellDef mat-sort-header>Cycle
-              <mat-form-field *ngIf="searchActive">
-                <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Plan">
-              </mat-form-field> 
             </th>
             <td mat-cell *matCellDef="let row"> {{row.cycle}} </td>
           </ng-container>
           <!-- Color Column -->
           <ng-container matColumnDef="term">
             <th mat-header-cell *matHeaderCellDef mat-sort-header>Term
-              <mat-form-field *ngIf="searchActive">
-                    <mat-select (keyup)="applyFilter($event.target.value)" placeholder="Term">
-                      <mat-option value="DAY">DAY</mat-option>
-                      <mat-option value="MONTH">MONTH</mat-option>
-                      <mat-option value="YEAR">YEAR</mat-option>
-                      <mat-option value="FOREVER">FOREVER</mat-option>
-                    </mat-select>
-              </mat-form-field>
+
             </th>
-            <td mat-cell *matCellDef="let row" > {{row.term}} </td>
+            <td mat-cell *matCellDef="let row"> {{row.term}} </td>
           </ng-container>
           <!-- Color Column -->
           <ng-container matColumnDef="alter">
             <th mat-header-cell *matHeaderCellDef mat-sort-header> </th>
             <td mat-cell *matCellDef="let row">
               <a mat-icon-button color="warn">
-                <i class="fa fa-trash fa-fw" ></i>
-              </a> 
+                <i class="fa fa-trash fa-fw"></i>
+              </a>
             </td>
           </ng-container>
-          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+
+
+
+          <!-- name search Column -->
+          <ng-container matColumnDef="nameSearch">
+            <th mat-header-cell *matHeaderCellDef>
+              <mat-form-field *ngIf="searchActive">
+                <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Name">
+              </mat-form-field>
+            </th>
+          </ng-container>
+          <!-- description search Column -->
+          <ng-container matColumnDef="descriptionSearch">
+            <th mat-header-cell *matHeaderCellDef>
+              <mat-form-field *ngIf="searchActive">
+                <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Description">
+              </mat-form-field>
+            </th>
+          </ng-container>
+          <!-- oneOff search Column -->
+          <ng-container matColumnDef="oneOffSearch">
+            <th mat-header-cell *matHeaderCellDef>
+              <mat-form-field *ngIf="searchActive">
+                <mat-select (keyup)="applyFilter($event.target.value)" placeholder="One-Off">
+                  <mat-option value="YES">YES</mat-option>
+                  <mat-option value="NO">NO</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </th>
+          </ng-container>
+          <!-- currency search Column  -->
+          <ng-container matColumnDef="currencySearch">
+            <th mat-header-cell *matHeaderCellDef>
+              <mat-form-field *ngIf="searchActive">
+                <mat-select (keyup)="applyFilter($event.target.value)" placeholder="Currency">
+                  <mat-option value="USD">USD</mat-option>
+                  <mat-option value="EUR">EUR</mat-option>
+                  <mat-option value="GBP">GBP</mat-option>
+                  <mat-option value="CAD">CAD</mat-option>
+                  <mat-option value="AUD">AUD</mat-option>
+                  <mat-option value="JPY">JPY</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </th>
+          </ng-container>
+          <!-- price search Column -->
+          <ng-container matColumnDef="priceSearch">
+            <th mat-header-cell *matHeaderCellDef>
+              <mat-form-field *ngIf="searchActive">
+                <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Price">
+              </mat-form-field>
+            </th>
+          </ng-container>
+          <!-- cycle search Column  -->
+          <ng-container matColumnDef="cycleSearch">
+            <th mat-header-cell *matHeaderCellDef>
+              <mat-form-field *ngIf="searchActive">
+                <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Cycle">
+              </mat-form-field>
+            </th>
+          </ng-container>
+          <!--term search Column -->
+          <ng-container matColumnDef="termSearch">
+            <th mat-header-cell *matHeaderCellDef>
+              <mat-form-field *ngIf="searchActive">
+                <mat-select (keyup)="applyFilter($event.target.value)" placeholder="Term">
+                  <mat-option value="DAY">DAY</mat-option>
+                  <mat-option value="MONTH">MONTH</mat-option>
+                  <mat-option value="YEAR">YEAR</mat-option>
+                  <mat-option value="FOREVER">FOREVER</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </th>
+          </ng-container>
+          <!--empty search Column -->
+          <ng-container matColumnDef="empty1">
+            <th mat-header-cell *matHeaderCellDef> </th>
+          </ng-container>
+
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns" [ngClass]="{'activeSearchHeader': searchActive == true}"></tr>
+          <tr mat-header-row
+            *matHeaderRowDef="['nameSearch', 'descriptionSearch', 'oneOffSearch','currencySearch','priceSearch', 'cycleSearch','termSearch','empty1']"
+            [ngClass]="{'activeRow': searchActive == true}" style="display: none;">
+          </tr>
           <tr mat-row *matRowDef="let row; columns: displayedColumns;">
           </tr>
         </table>

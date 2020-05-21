@@ -101,31 +101,22 @@
         </div>
       </div>
       <div class="mat-elevation-z8 box box-default">
-        <table class="searchTable" mat-table [dataSource]="dataSource" matTableExporter [ngClass]="{'ActiveSpinner': showSpinner == true}"
-          #offersExporter="matTableExporter" matSort>
+        <table class="searchTable" mat-table [dataSource]="dataSource" matTableExporter
+          [ngClass]="{'ActiveSpinner': showSpinner == true}" #offersExporter="matTableExporter" matSort>
           <!-- ID Column -->
           <ng-container matColumnDef="username">
-            <th mat-header-cell *matHeaderCellDef mat-sort-header> Username 
-              <mat-form-field *ngIf="searchActive">
-                <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Username">
-              </mat-form-field> 
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Username
             </th>
             <td mat-cell *matCellDef="let row"> {{row.username}} </td>
           </ng-container>
           <ng-container matColumnDef="email">
-            <th mat-header-cell *matHeaderCellDef mat-sort-header> Email 
-              <mat-form-field *ngIf="searchActive">
-                <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Email">
-              </mat-form-field> 
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Email
             </th>
             <td mat-cell *matCellDef="let row"> {{row.email}} </td>
           </ng-container>
           <!-- Color Column -->
           <ng-container matColumnDef="plan">
-            <th mat-header-cell *matHeaderCellDef mat-sort-header> Plan 
-              <mat-form-field *ngIf="searchActive">
-                <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Plan">
-              </mat-form-field> 
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Plan
             </th>
             <td mat-cell *matCellDef="let row"> {{row.plan}} </td>
           </ng-container>
@@ -142,12 +133,6 @@
           <!-- Color Column -->
           <ng-container matColumnDef="no">
             <th mat-header-cell *matHeaderCellDef mat-sort-header> No CC
-              <mat-form-field *ngIf="searchActive">
-                <mat-select (keyup)="applyFilter($event.target.value)" placeholder="Select No CC">
-                  <mat-option value="YES">YES</mat-option>
-                  <mat-option value="NO">NO</mat-option>
-                </mat-select>
-              </mat-form-field>
             </th>
             <td mat-cell *matCellDef="let row"> {{row.no}} </td>
           </ng-container>
@@ -164,12 +149,6 @@
           <!-- Color Column -->
           <ng-container matColumnDef="canceled">
             <th mat-header-cell *matHeaderCellDef mat-sort-header> Canceled
-              <mat-form-field *ngIf="searchActive">
-                  <mat-select (keyup)="applyFilter($event.target.value)" placeholder="Canceled">
-                    <mat-option value="YES">YES</mat-option>
-                    <mat-option value="NO">NO</mat-option>
-                  </mat-select>
-            </mat-form-field>
             </th>
             <td mat-cell *matCellDef="let row" [style.color]="row.color"> {{row.canceled}} </td>
           </ng-container>
@@ -182,7 +161,80 @@
               </div>
             </td>
           </ng-container>
-          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+
+
+          <!-- username search Column -->
+          <ng-container matColumnDef="usernameSearch">
+            <th mat-header-cell *matHeaderCellDef>
+              <mat-form-field *ngIf="searchActive">
+                <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Username">
+              </mat-form-field>
+            </th>
+          </ng-container>
+          <!-- email search Column  -->
+          <ng-container matColumnDef="emailSearch">
+            <th mat-header-cell *matHeaderCellDef>
+              <mat-form-field *ngIf="searchActive">
+                <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Email">
+              </mat-form-field>
+            </th>
+          </ng-container>
+          <!--type search Column -->
+          <ng-container matColumnDef="planSearch">
+            <th mat-header-cell *matHeaderCellDef>
+              <mat-form-field *ngIf="searchActive">
+                <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Plan">
+              </mat-form-field>
+            </th>
+          </ng-container>
+          <!--empty search Column -->
+          <ng-container matColumnDef="empty1">
+            <th mat-header-cell *matHeaderCellDef> </th>
+          </ng-container>
+          <!--empty search Column -->
+          <ng-container matColumnDef="empty2">
+            <th mat-header-cell *matHeaderCellDef> </th>
+          </ng-container>
+          <!-- noCCSearch search Column  -->
+          <ng-container matColumnDef="noCCSearch">
+            <th mat-header-cell *matHeaderCellDef>
+              <mat-form-field *ngIf="searchActive">
+                <mat-select (keyup)="applyFilter($event.target.value)" placeholder="Select No CC">
+                  <mat-option value="YES">YES</mat-option>
+                  <mat-option value="NO">NO</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </th>
+          </ng-container>
+          <!--empty search Column -->
+          <ng-container matColumnDef="empty3">
+            <th mat-header-cell *matHeaderCellDef> </th>
+          </ng-container>
+          <!--empty search Column -->
+          <ng-container matColumnDef="empty4">
+            <th mat-header-cell *matHeaderCellDef> </th>
+          </ng-container>
+          <!-- canceledSearch search Column  -->
+          <ng-container matColumnDef="canceledSearch">
+            <th mat-header-cell *matHeaderCellDef>
+              <mat-form-field *ngIf="searchActive">
+                <mat-select (keyup)="applyFilter($event.target.value)" placeholder="Canceled">
+                  <mat-option value="YES">YES</mat-option>
+                  <mat-option value="NO">NO</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </th>
+          </ng-container>
+          <!--empty search Column -->
+          <ng-container matColumnDef="empty5">
+            <th mat-header-cell *matHeaderCellDef> </th>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns" [ngClass]="{'activeSearchHeader': searchActive == true}"></tr>
+          <tr mat-header-row
+            *matHeaderRowDef="['usernameSearch', 'emailSearch', 'planSearch', 'empty1','empty2','noCCSearch','empty3','empty4', 'canceledSearch', 'empty5']"
+            [ngClass]="{'activeRow': searchActive == true}" style="display: none;">
+          </tr>
           <tr mat-row *matRowDef="let row; columns: displayedColumns;">
           </tr>
         </table>
