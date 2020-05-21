@@ -5,7 +5,9 @@ import { UserService } from '../services/user.service';
 import { SocketService } from '../services/socket.service';
 import { User } from '../models';
 import { MatDialog } from '@angular/material';
-
+import {ConfiguredialogComponent} from '../adminwidget/configure-dialog.component';
+import {AdminWidgetService} from '../adminwidget/adminwidget.service';
+import { LocalStorageService } from 'angular-web-storage';
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -14,6 +16,7 @@ import { MatDialog } from '@angular/material';
 
 export class DashboardComponent implements OnInit {
 
+  chartsDisable;
   screenWidth: number;
   roomTitle: String;
   isAdmin = false;
@@ -23,8 +26,11 @@ export class DashboardComponent implements OnInit {
     private socketService: SocketService,
     public user: User,
     userService: UserService,
-    public dialog: MatDialog
+    public dialog: MatDialog,
+    private adminWidgetService: AdminWidgetService,
+    private localStorage: LocalStorageService
   ) {
+    this.chartsDisable= this.localStorage.get('widget');
     this.userService = userService;
     this.socketService.initSocket();
     this.isAdmin = this.userService.userIsAdmin();

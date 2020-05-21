@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-
+import {AdminWidgetService} from './adminwidget.service'
+import { LocalStorageService } from 'angular-web-storage';
 @Component({
   template: `
   <div class="modal-content new_user_dialog custom_widget">
@@ -23,8 +24,11 @@ import { Component } from '@angular/core';
    </div>
 
    <div class="modal-footer wrap-div text-center">
-      <button class="btn btn-md btn-warning">
+      <button class="btn btn-md btn-warning" (click)="onDisabledWidget()" *ngIf="!widget">
             <span class="fa fa-times fa-fw"></span> disable
+        </button>
+        <button class="btn btn-md btn-warning" (click)="onEnableWidget()" *ngIf="widget">
+            <span class="fa fa-check fa-fw"></span> Enable
         </button>
       <button class="btn btn-md btn-danger">
             <span class="fa fa-trash-o fa-fw"></span> uninstall
@@ -34,5 +38,21 @@ import { Component } from '@angular/core';
   `
 })
 export class ConfiguredialogComponent {
+  constructor(private adminWidgetService: AdminWidgetService,
+    private localStorage: LocalStorageService){
+    }
   position= 'right-bar';
+
+  widget=this.localStorage.get('widget');
+  
+  onDisabledWidget(){
+    this.adminWidgetService.widget = true;
+    this.widget= !this.widget;
+    this.localStorage.set('widget', this.adminWidgetService.widget);
+  }
+  onEnableWidget(){
+    this.adminWidgetService.widget = false;
+    this.widget= !this.widget;
+    this.localStorage.set('widget', this.adminWidgetService.widget);
+  }
 }

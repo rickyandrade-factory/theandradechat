@@ -33,7 +33,7 @@
               <span class="material-icons">video_call</span>
               <a>BROADCAST</a>
             </button> -->
-            <button class="button_wrap" mat-icon-button (click)="openChartsDialog()">
+            <button class="button_wrap" mat-icon-button (click)="openChartsDialog()" *ngIf="!chartsDisable">
               <span class="material-icons">bar_chart</span>
               <a (click)="openChartsDialog()">CHARTS</a>
             </button>

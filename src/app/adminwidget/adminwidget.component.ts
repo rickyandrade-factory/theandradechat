@@ -7,6 +7,8 @@ import { Subscription } from 'rxjs';
 import {VERSION, MatDialog, MatDialogRef} from '@angular/material';
 import { CustomwidgetComponent } from './customwidget-dialog.component';
 import { ConfiguredialogComponent } from './configure-dialog.component';
+import { AdminWidgetService } from './adminwidget.service';
+import { LocalStorageService } from 'angular-web-storage';
 
 @Component({
   selector: 'app-adminwidget',
@@ -15,6 +17,8 @@ import { ConfiguredialogComponent } from './configure-dialog.component';
 })
 export class AdminwidgetComponent implements OnInit {
   version = VERSION;
+  widgetStatus;
+  topBarWidgets= this.adminwidgetService.topbar;
 
   fileNameDialogRef: MatDialogRef<CustomwidgetComponent>;
 
@@ -28,7 +32,10 @@ export class AdminwidgetComponent implements OnInit {
     this.fileNameDialogRef = this.dialog.open(ConfiguredialogComponent);
   }
   
-  constructor(private dialog: MatDialog) {}
+  constructor(private dialog: MatDialog, private adminwidgetService:AdminWidgetService,
+    private localStorage: LocalStorageService) {
+      this.widgetStatus= this.localStorage.get('widget');
+    }
 
   ngOnInit() {
   }

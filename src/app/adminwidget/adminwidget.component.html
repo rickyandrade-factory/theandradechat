@@ -344,16 +344,18 @@
                             </h3>
                             <div class="">
                                 <table class="table">
-                                    <tbody class=" ui-sortable">
-                                        <tr>
+                                    <tbody class="ui-sortable">
+                                        <tr *ngFor="let widget of topBarWidgets">
                                             <td style="width: 50px">
                                                 <img class="img-responsive"
-                                                    src="https://cdn.echofin.co/widgets/echofin.commodities.jpg">
+                                                    src="{{widget.img}}">
                                             </td>
                                             <td>
                                                 <h4>
-                                                    Commodities
-                                                    <small class="">TradeTools</small>
+                                                    {{widget.name}}
+                                                    <small style="margin-right: 5px;">{{widget.description}}</small> 
+                                                    <span *ngIf="widgetStatus"
+                                                        class="label label-warning">disabled</span>
                                                 </h4>
                                             </td>
                                             <td style="vertical-align: middle; width: 50px;">
@@ -362,7 +364,7 @@
                                                 </button>
                                             </td>
                                         </tr>
-                                        <tr>
+                                        <!-- <tr>
                                             <td style="width: 50px">
                                                 <img class="img-responsive"
                                                     src="https://cdn.echofin.co/widgets/echofin.fxcal.jpg">
@@ -417,7 +419,7 @@
                                                     <span class="fa fa-cog fa-fw text-muted"></span>
                                                 </button>
                                             </td>
-                                        </tr>
+                                        </tr> -->
                                     </tbody>
                                 </table>
                             </div>
