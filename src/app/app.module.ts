@@ -16,7 +16,7 @@ import { RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
-import { DashboardComponent, ChartsDialog, MarketHoursDialog,FXHeatmapDialog,Coin360Dialog, LiveTVDialog,FXCrossRatesDialog, OtherChartDialog, ZoomDialog } from './dashboard/dashboard.component';
+import { DashboardComponent, ChartsDialog, MarketHoursDialog,FXHeatmapDialog,Coin360Dialog, LiveTVDialog,FXCrossRatesDialog, OtherChartDialog, ZoomDialog, DataFlashDialog } from './dashboard/dashboard.component';
 import { AngularWebStorageModule } from 'angular-web-storage';
 import { AuthService } from './services/auth.service';
 import { HttpService } from './services/http.service';
@@ -118,7 +118,8 @@ import { AdminmarketingComponent } from './adminmarketing/adminmarketing.compone
     OtherChartDialog,
     ZoomDialog,
     ManageBrockersDialog,
-    MediaUploadDialog
+    MediaUploadDialog,
+    DataFlashDialog
   ],
   imports: [
     BrowserModule,
@@ -140,7 +141,7 @@ import { AdminmarketingComponent } from './adminmarketing/adminmarketing.compone
     User,
     AuthGuard
   ],
-  entryComponents: [MediaUploadDialog,ManageBrockersDialog, ZoomDialog,OtherChartDialog, FXCrossRatesDialog,LiveTVDialog,Coin360Dialog,FXHeatmapDialog, MarketHoursDialog, ChartsDialog, PreferencesDialog, InviteContactComponent, NewContactComponent, NewOfferComponent,
+  entryComponents: [DataFlashDialog, MediaUploadDialog,ManageBrockersDialog, ZoomDialog,OtherChartDialog, FXCrossRatesDialog,LiveTVDialog,Coin360Dialog,FXHeatmapDialog, MarketHoursDialog, ChartsDialog, PreferencesDialog, InviteContactComponent, NewContactComponent, NewOfferComponent,
     lockeddialogComponent, NewBillingComponent, CustomwidgetComponent, NewCouponsComponent,
     NewChatroomComponent, NewServicesComponent, ConfiguredialogComponent, NewTeamAvatarComponent,
     CustomScriptComponent, DeleteChatroomComponent],

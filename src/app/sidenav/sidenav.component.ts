@@ -103,8 +103,6 @@ export class ManageBrockersDialog {
     this.addFromList= false;
     this.addOwn= true;
   }
-
-
 }
 
 // preferences dialog

@@ -103,6 +103,14 @@ export class DashboardComponent implements OnInit {
     );
   }
 
+  openDataFlashDialog(){
+    const dialog = this.dialog.open(DataFlashDialog, 
+      {
+      width: '310px'
+      }
+    );
+  }
+
   ngOnInit() { }
 
   setRoomTitle(roomTitle) {
@@ -153,16 +161,23 @@ export class LiveTVDialog {}
 })
 export class FXCrossRatesDialog {}
 
-// Open Other Chart Dialog
+// Other Chart Dialog
 @Component({
   selector: 'other-chart-dialog',
   templateUrl: 'other-chart-dialog.html',
 })
 export class OtherChartDialog {}
 
-// Open zoom Dialog
+// zoom Dialog
 @Component({
   selector: 'zoom-dialog',
   templateUrl: 'zoom-dialog.html',
 })
 export class ZoomDialog {}
+
+// data flash Dialog
+@Component({
+  selector: 'data-flash-dialog',
+  templateUrl: 'data-flash-dialog.html',
+})
+export class DataFlashDialog {}
