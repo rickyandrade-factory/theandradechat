@@ -1,0 +1,90 @@
+<h2 mat-dialog-title>New Signal
+    <button mat-dialog-close class="close">
+        <span aria-hidden="true">×</span>
+    </button>
+</h2>
+<mat-divider></mat-divider>
+<div class="new_signal_dialog wrap-div">
+    <div class="col-md-12" style="padding: 15px;">
+        <table class="signal-table text-white">
+            <tbody>
+                <tr>
+                    <th>Order Type</th>
+                </tr>
+            </tbody>
+        </table>
+        <div class="btn-group">
+            <p><a class="btn btn-xs btn-default">NONE</a></p>
+            <p><a class="btn btn-xs btn-success" >BUY</a><a
+                    class="btn btn-xs btn-success active">BUY MARKET</a><a
+                    class="btn btn-xs btn-success" >BUY STOP</a><a
+                    class="btn btn-xs btn-success">BUY LIMIT</a></p>
+            <p><a class="btn btn-xs btn-danger" >SELL</a><a
+                    class="btn btn-xs btn-danger" >SELL MARKET</a><a
+                    class="btn btn-xs btn-danger" >SELL STOP</a><a
+                    class="btn btn-xs btn-danger">SELL LIMIT</a></p>
+        </div>
+        <p>&nbsp;</p>
+        <div class="signal-error"></div>
+        <p></p>
+        <table class="signal-table text-white">
+            <tbody>
+                <tr style="text-align: center;">
+                    <th><span class="noedtbl">Symbol</span></th>
+                    <th><span class="noedtbl">Entry</span></th>
+                    <th><span class="edtbl" contenteditable="true" autocomplete="off"
+                            autocapitalize="off" spellcheck="false">TP</span> <span
+                            class="fa fa-pencil-square-o editTitle"></span></th>
+                    <th><span class="edtbl" contenteditable="true" autocomplete="off"
+                            autocapitalize="off" spellcheck="false">SL</span> <span
+                            class="fa fa-pencil-square-o editTitle"></span></th>
+                    <th><span class="edtbl"  contenteditable="true" autocomplete="off"
+                            autocapitalize="off" spellcheck="false">Custom</span> 
+                            <span
+                            class="fa fa-pencil-square-o editTitle"></span></th>
+                </tr>
+                <tr style="margin-top: 5px;">
+                    <td>
+                        <mat-form-field appearance="fill">
+                            <input matInput>
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-form-field appearance="fill">
+                            <input matInput>
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-form-field appearance="fill">
+                            <input matInput>
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-form-field appearance="fill">
+                            <input matInput>
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-form-field appearance="fill">
+                            <input matInput>
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="color: #999;">
+                        <small style="position: relative; top:-10px">* Fields and titles are free-text
+                            so you can type anything you like</small></td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <mat-form-field appearance="fill">
+            <mat-label>Comment</mat-label>
+            <textarea matInput></textarea>
+        </mat-form-field>
+    </div>
+</div>
+<mat-divider class="wrap-div"></mat-divider>
+<div class="modal-footer p-10 wrap-div" style="border: none;">
+    <button [mat-dialog-close]="true" class="btn btn-success">Publish</button>
+</div>

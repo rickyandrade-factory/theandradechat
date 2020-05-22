@@ -20,6 +20,9 @@ a:focus{
   padding: 10px 15px;
   margin: 0;
 }
+.text-white{
+  color:#fff;
+}
 h2.iframe{
   padding: 5px 10px;
   font-size: 14px;
@@ -343,6 +346,10 @@ p.teamName {
 }
 .custom_widget hr{
   border-top: 1px solid #eeeeee;
+}
+/* new signal */
+.signal-table mat-form-field .mat-form-field-wrapper .mat-form-field-flex{
+  padding: 0;
 }
 .new_user_dialog.modal-content {
   background-color: #ffffff;

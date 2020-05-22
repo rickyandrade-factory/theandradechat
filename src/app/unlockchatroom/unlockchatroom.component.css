@@ -44,3 +44,18 @@ width: 99%;
 .col-sm-9{
   padding-right: 15px;
 }
+/* new signal */
+.signal-table mat-form-field {
+ max-width: 110px;
+ padding: 0 2px;
+}
+.signal-table th{
+  font-weight: 400;
+  font-size: 14px;
+}
+.signal-table{
+  color: #444;
+}
+mat-form-field{
+  width: 100%;
+}

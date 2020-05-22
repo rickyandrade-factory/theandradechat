@@ -31,7 +31,7 @@ import { AuthGuard } from './auth.guard';
 import { LockedchatroomComponent } from './lockedchatroom/lockedchatroom.component';
 import { DirectchatroomComponent } from './directchatroom/directchatroom.component';
 import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
-import { UnlockchatroomComponent, MediaUploadDialog } from './unlockchatroom/unlockchatroom.component';
+import { UnlockchatroomComponent, MediaUploadDialog, NewSignalDialog } from './unlockchatroom/unlockchatroom.component';
 import { UserPanelComponent } from './user-panel/user-panel.component';
 import { AdminSidebarComponent } from './admin-sidebar/admin-sidebar.component';
 import { AdmincontactsComponent } from './admincontacts/admincontacts.component';
@@ -119,7 +119,8 @@ import { AdminmarketingComponent } from './adminmarketing/adminmarketing.compone
     ZoomDialog,
     ManageBrockersDialog,
     MediaUploadDialog,
-    DataFlashDialog
+    DataFlashDialog,
+    NewSignalDialog
   ],
   imports: [
     BrowserModule,
@@ -141,7 +142,7 @@ import { AdminmarketingComponent } from './adminmarketing/adminmarketing.compone
     User,
     AuthGuard
   ],
-  entryComponents: [DataFlashDialog, MediaUploadDialog,ManageBrockersDialog, ZoomDialog,OtherChartDialog, FXCrossRatesDialog,LiveTVDialog,Coin360Dialog,FXHeatmapDialog, MarketHoursDialog, ChartsDialog, PreferencesDialog, InviteContactComponent, NewContactComponent, NewOfferComponent,
+  entryComponents: [NewSignalDialog,DataFlashDialog, MediaUploadDialog,ManageBrockersDialog, ZoomDialog,OtherChartDialog, FXCrossRatesDialog,LiveTVDialog,Coin360Dialog,FXHeatmapDialog, MarketHoursDialog, ChartsDialog, PreferencesDialog, InviteContactComponent, NewContactComponent, NewOfferComponent,
     lockeddialogComponent, NewBillingComponent, CustomwidgetComponent, NewCouponsComponent,
     NewChatroomComponent, NewServicesComponent, ConfiguredialogComponent, NewTeamAvatarComponent,
     CustomScriptComponent, DeleteChatroomComponent],

@@ -3,6 +3,7 @@ import { SocketService } from '../services/socket.service';
 import { OnpointRoomComponent } from '../onpoint-room/onpoint-room.component';
 import { UserService } from '../services/user.service';
 import { MatDialog } from '@angular/material';
+declare var $:any;
 @Component({
   selector: 'app-unlockchatroom',
   templateUrl: './unlockchatroom.component.html',
@@ -39,6 +40,12 @@ export class UnlockchatroomComponent implements OnInit {
     });
 }
 
+  openNewSignal() {
+      const dialog = this.dialog.open(NewSignalDialog, {
+        width: '598px',
+      });
+    }
+
   sendMessage(){
     if(this.chat.message){
       let msg = {
@@ -61,3 +68,23 @@ export class UnlockchatroomComponent implements OnInit {
   styleUrls: ['./unlockchatroom.component.css']
 })
 export class MediaUploadDialog {}
+
+// new Signal
+@Component({
+  selector: 'new-signal-dialog',
+  templateUrl: 'new-signal-dialog.html',
+  styleUrls: ['./unlockchatroom.component.css']
+})
+
+export class NewSignalDialog {
+  ngAfterViewInit() {
+    $('.editTitle').click(function(){
+      $(this).prev().focus();
+    });
+    $('.btn-group p a.btn').click(function(){
+      $('.btn-group p a.btn').removeClass('active');
+      $(this).addClass('active');
+    });
+
+  }  
+}
