@@ -1,7 +1,9 @@
-<h2 mat-dialog-title class="iframe">DATAFLASH
+<h2 mat-dialog-title class="iframe" cdkDrag cdkDragRootElement=".cdk-overlay-pane" cdkDragHandle>DATAFLASH
     <button mat-dialog-close class="close">
         <span aria-hidden="true">×</span>
     </button>
 </h2>
-<iframe src="https://dev2.newsimpact.com/NewsWidget/echofin" style="    width: 310px;
-height: 478px;"></iframe>
+<mat-dialog-content class="m-0 p-0" style="resize: both; max-height: 100%; height: 525px; width: 310px;">
+    <iframe src="https://dev2.newsimpact.com/NewsWidget/echofin" style="width: 100%; height: 100%;
+"></iframe>
+</mat-dialog-content>

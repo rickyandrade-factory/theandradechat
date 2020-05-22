@@ -1,7 +1,9 @@
-<h2 mat-dialog-title class="iframe">FX CROSS RATES
+<h2 mat-dialog-title class="iframe" cdkDrag cdkDragRootElement=".cdk-overlay-pane" cdkDragHandle>FX CROSS RATES
     <button mat-dialog-close class="close">
         <span aria-hidden="true">×</span>
     </button>
 </h2>
-<iframe src="https://plugins.echofin.co/plugins/tv_crossrates/" style="    width: 780px;
-height: 500px;"></iframe>
+<mat-dialog-content class="m-0 p-0" style="resize: both; max-height: 100%; height: 500px; width: 780px;">
+    <iframe src="https://plugins.echofin.co/plugins/tv_crossrates/" style="width: 100%; height: 100%;
+"></iframe>
+</mat-dialog-content>

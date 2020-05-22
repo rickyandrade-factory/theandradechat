@@ -44,79 +44,52 @@ export class DashboardComponent implements OnInit {
   }
 
   openChartsDialog() {
-    const dialog = this.dialog.open(ChartsDialog, {
-        width: '650px'
-      }
-    );
+    const dialog = this.dialog.open(ChartsDialog);
   }
 
   openMarketHoursDialog() {
-    const dialog = this.dialog.open(MarketHoursDialog, {
-        width: '738px'
-      }
-    );
+    const dialog = this.dialog.open(MarketHoursDialog);
   }
 
   openFXHeatmapDialog() {
-    const dialog = this.dialog.open(FXHeatmapDialog, {
-        width: '780px'
-      }
-    );
+    const dialog = this.dialog.open(FXHeatmapDialog);
   }
 
   openCoin360Dialog() {
-    const dialog = this.dialog.open(Coin360Dialog, {
-        width: '880px'
-      }
-    );
+    const dialog = this.dialog.open(Coin360Dialog);
   }
 
   openLiveTVDialog() {
-    const dialog = this.dialog.open(LiveTVDialog, 
-       {
-        width: '520px'
-       }
-    );
+    const dialog = this.dialog.open(LiveTVDialog);
   }
 
   openFXCrossRatesDialog(){
-    const dialog = this.dialog.open(FXCrossRatesDialog, 
-      {
-      width: '780px'
-      }
-    );
+    const dialog = this.dialog.open(FXCrossRatesDialog);
   }
 
   openOtherChartDialog(){
-    const dialog = this.dialog.open(OtherChartDialog, 
-      {
-      width: '640px'
-      }
-    );
+    const dialog = this.dialog.open(OtherChartDialog);
   }
 
   openZoomDialog(){
-    const dialog = this.dialog.open(ZoomDialog, 
-      {
-      width: '1090px'
-      }
-    );
+    const dialog = this.dialog.open(ZoomDialog);
   }
 
   openDataFlashDialog(){
-    const dialog = this.dialog.open(DataFlashDialog, 
-      {
-      width: '310px'
-      }
-    );
+    const dialog = this.dialog.open(DataFlashDialog);
   }
 
-  ngOnInit() { }
+  ngOnInit() { 
+  
+  }
 
   setRoomTitle(roomTitle) {
     console.log(`roomTitle: ${roomTitle}`);
     this.roomTitle = roomTitle;
   }
+
+
+
 }
 
 // charts Dialog

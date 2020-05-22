@@ -23,6 +23,10 @@ a:focus{
 h2.iframe{
   padding: 5px 10px;
   font-size: 14px;
+  cursor: move;
+}
+.cdk-overlay-pane{
+  resize:both;
 }
 h2.mat-dialog-title .close{
   color: #444;
