@@ -10,8 +10,8 @@
     <button class="dropdown-toggle" data-toggle="dropdown" [matMenuTriggerFor]="appMenu">
       <span class="glyphicon glyphicon-one-fine-dot sidebar-status-dot userStatus1"
         ng-class="'userStatus' + currentUser.status"></span>
-      <img class="sidebar-avatar usr_img" ng-src="//cdn.echofin.co/avatars/5d053022.png"
-        src="//cdn.echofin.co/avatars/5d053022.png">
+      <img class="sidebar-avatar usr_img" *ngIf="!imgURL" src="assets/mini-logo.png">
+      <img class="sidebar-avatar usr_img" *ngIf="imgURL" [src]="imgURL">
       <strong class="text-capitalize sidebar-username ng-binding">{{user.firstname}} {{user.lastname}}</strong>
       <span class="fa fa-angle-down"></span>
     </button>

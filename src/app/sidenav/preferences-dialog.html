@@ -29,9 +29,10 @@
             <div class="content profile" *ngIf="profile">
                 <div class="row">
                     <div class="col-sm-4 col-md-4 col-lg-4 text-center">
-                        <img class="avatarThumb" src="assets/profile_img.png">
+                        <img class="avatarThumb"  src="assets/profile_img.png" *ngIf="!imgURL">
+                        <img class="avatarThumb" [src]="imgURL" *ngIf="imgURL">
                         <div class="upload_file">
-                            <input type="file">
+                            <input #file type="file" accept='image/*' (change)="preview(file.files)" />
                             <button class="btn btn-success btn-sm" style="margin-top: 5px;">
                                 Upload avatar
                             </button>
@@ -506,6 +507,6 @@
     </div>
 </div>
 <div class="modal-footer">
-    <button mat-dialog-close class="btn btn-default">Cancel</button>
-    <button [mat-dialog-close]="true" class="btn btn-success">Install</button>
+    <button mat-dialog-close class="btn btn-default">Close</button>
+    <button [mat-dialog-close]="true" class="btn btn-success">Save</button>
 </div>

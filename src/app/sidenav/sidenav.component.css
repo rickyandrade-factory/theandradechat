@@ -73,6 +73,9 @@ mat-checkbox{
   line-height: 38px;
   cursor: pointer;
  }
+ .avatarThumb{
+   border: 1px solid #ddd;
+ }
  /* manage_Brocker dialog */
  .manage_Brocker_container {
   padding: 0 15px;

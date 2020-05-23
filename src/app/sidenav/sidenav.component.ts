@@ -4,6 +4,7 @@ import { UserService } from '../services/user.service';
 import { VERSION, MatDialog, MatDialogRef } from '@angular/material';
 import { lockeddialogComponent } from './locked-dialog.component';
 import { SocketService } from '../services/socket.service';
+import { LocalStorageService } from 'angular-web-storage';
 declare var $:any;
 
 @Component({
@@ -12,7 +13,7 @@ declare var $:any;
   styleUrls: ['./sidenav.component.css']
 })
 export class SidenavComponent implements OnInit {
-
+  imgURL;
   version = VERSION;
   rooms = [];
   roomId: any = ""
@@ -28,7 +29,9 @@ export class SidenavComponent implements OnInit {
 
   constructor(userService: UserService, authService: AuthService,
      private socketService: SocketService,
-     public dialog : MatDialog) {
+     public dialog : MatDialog,
+     private localstorage: LocalStorageService) {
+    this.imgURL = this.localstorage.get('imgURL');
     this.auth = authService;
     this.userService = userService;
   }
@@ -118,6 +121,10 @@ export class PreferencesDialog {
   billing:boolean;
   advanced:boolean;
 
+  constructor(private localstorage: LocalStorageService){
+    this.imgURL = this.localstorage.get('imgURL');
+  }
+
   onProfile(){
     this.profile= true;
     this.notification= false;
@@ -152,5 +159,18 @@ export class PreferencesDialog {
     this.blockMute= false;
     this.billing= false;
     this.advanced= true;
+  }
+
+  // upload
+  imgURL;
+  preview(files) {
+    if (files.length === 0)
+      return;
+    var reader = new FileReader();
+    reader.readAsDataURL(files[0]);
+    reader.onload = (_event) => {
+      this.imgURL = reader.result;
+      this.localstorage.set("imgURL", this.imgURL);
+    };
   }
 }

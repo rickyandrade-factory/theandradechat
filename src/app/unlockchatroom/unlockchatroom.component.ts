@@ -3,6 +3,7 @@ import { SocketService } from '../services/socket.service';
 import { OnpointRoomComponent } from '../onpoint-room/onpoint-room.component';
 import { UserService } from '../services/user.service';
 import { MatDialog } from '@angular/material';
+import { LocalStorageService } from 'angular-web-storage';
 declare var $:any;
 @Component({
   selector: 'app-unlockchatroom',
@@ -10,7 +11,7 @@ declare var $:any;
   styleUrls: ['./unlockchatroom.component.css']
 })
 export class UnlockchatroomComponent implements OnInit {
-
+  imgURL;
   ioConnection: any;
   messages: any = [];
   userId: String;
@@ -21,7 +22,9 @@ export class UnlockchatroomComponent implements OnInit {
     message: ""
   };
   constructor(private socketService: SocketService, userService: UserService,
-    private dialog: MatDialog) {
+    private dialog: MatDialog,
+    private localstorage: LocalStorageService) {
+    this.imgURL = this.localstorage.get('imgURL');
     this.userId = userService.getUserId();
   }
 

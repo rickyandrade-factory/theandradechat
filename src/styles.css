@@ -10618,7 +10618,7 @@ a.flex-parent {
 }
 
 #team-wrapper img.sidebar-avatar {
-  border: 1px solid rgb(251, 251, 251);
+  border: 1px solid rgba(251, 251, 251, 0.2);
   margin-right: 10px;
   height: 56px;
   width: 56px !important;
