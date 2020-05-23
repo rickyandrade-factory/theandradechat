@@ -349,7 +349,7 @@ p.teamName {
 }
 /* new signal */
 .signal-table mat-form-field .mat-form-field-wrapper .mat-form-field-flex{
-  padding: 0;
+  padding: 0 0 0 0.5em;
 }
 .new_user_dialog.modal-content {
   background-color: #ffffff;

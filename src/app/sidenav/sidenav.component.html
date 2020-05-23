@@ -17,16 +17,17 @@
     </button>
     <!-- dropdown for user online status -->
     <mat-menu #appMenu="matMenu">
-      <li mat-menu-item><a href="#Traders Lounge"><span class="glyphicon glyphicon-one-fine-dot userStatus1"
+      <li mat-menu-item><a><span class="glyphicon glyphicon-one-fine-dot userStatus1"
             style="padding:0 !important"></span> Online</a></li>
-      <li mat-menu-item><a href="#Traders Lounge" ng-click="ChangeStatus(3);"><span
+      <li mat-menu-item><a><span
             class="glyphicon glyphicon-one-fine-dot userStatus3" style="padding:0 !important"></span> Away</a></li>
-      <li mat-menu-item><a href="#Traders Lounge" ng-click="ChangeStatus(4);"><span
-            class="glyphicon glyphicon-one-fine-dot userStatus4" style="padding:0 !important"></span> Busy</a></li>
+      <li mat-menu-item>
+        <a><span class="glyphicon glyphicon-one-fine-dot userStatus4" style="padding:0 !important"></span> Busy</a>
+      </li>
       <li mat-menu-item role="separator" class="divider"></li>
       <li mat-menu-item><a (click)="openPreferencesDialog()">Preferences</a></li>
       <li mat-menu-item ng-show="isAdmin" class="ng-hide"><a target="_blank" href="/dashboard/">Dashboard</a></li>
-      <li ng-if="isFootnoteVisible" class="ng-scope">
+      <li ng-if="isFootnoteVisible">
         <a href="#">Download App
           <span class="fa fa-windows fa-fw"></span>
         </a>
