@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Inject } from '@angular/core';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { AuthService } from '../services/auth.service';
 import { UserService } from '../services/user.service';
@@ -8,6 +8,8 @@ import { MatDialog } from '@angular/material';
 import {ConfiguredialogComponent} from '../adminwidget/configure-dialog.component';
 import {AdminWidgetService} from '../adminwidget/adminwidget.service';
 import { LocalStorageService } from 'angular-web-storage';
+import { DOCUMENT } from '@angular/common';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -15,14 +17,30 @@ import { LocalStorageService } from 'angular-web-storage';
 })
 
 export class DashboardComponent implements OnInit {
-
+  darkTheme= false;
   chartsDisable;
   screenWidth: number;
   roomTitle: String;
   isAdmin = false;
   userService: UserService;
 
+
+  ngOnInit(){
+  }
+  
+  onDarkTheme(){
+    if(this.darkTheme == false){
+      this.document.body.classList.add('dark-theme');
+    }
+    else{
+      this.document.body.classList.remove('dark-theme');
+    }
+    
+  }
+
   constructor(
+    @Inject(DOCUMENT) private document: Document,
+    private router: Router,
     private socketService: SocketService,
     public user: User,
     userService: UserService,
@@ -30,6 +48,7 @@ export class DashboardComponent implements OnInit {
     private adminWidgetService: AdminWidgetService,
     private localStorage: LocalStorageService
   ) {
+    this.document.body.classList.remove('dark-theme');
     this.chartsDisable= this.localStorage.get('widget');
     this.userService = userService;
     this.socketService.initSocket();
@@ -43,6 +62,10 @@ export class DashboardComponent implements OnInit {
     };
   }
 
+  onRedirectAdmin(){
+    this.router.navigate(['admindashboard']);
+    this.document.body.classList.remove('dark-theme');
+  }
   openChartsDialog() {
     const dialog = this.dialog.open(ChartsDialog);
   }
@@ -77,10 +100,6 @@ export class DashboardComponent implements OnInit {
 
   openDataFlashDialog(){
     const dialog = this.dialog.open(DataFlashDialog);
-  }
-
-  ngOnInit() { 
-  
   }
 
   setRoomTitle(roomTitle) {

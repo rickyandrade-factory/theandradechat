@@ -820,7 +820,92 @@ a.profile-menu {
   overflow: hidden;
   transition: transform .3s ease-in-out,margin .3s ease-in-out;
 }
-
+/* dark-theme */
+.dark-theme .example-container {
+  background: #252525;
+}
+.dark-theme .example-container .page-data {
+  background: #252525;
+  color: #fff;
+}
+.dark-theme .msg_txt{
+  color: #fff!important;
+}
+.dark-theme #chatbox{
+  color: #fff!important;
+  background: #252525;
+}
+.dark-theme .chatDiv{
+  color: #fff!important;
+  background: #252525!important;
+  border: 2px solid #000;
+}
+.dark-theme  #uploadBtn{
+  background: #252525!important;
+  border-right: 2px solid #000!important;
+}
+.dark-theme .upload_file_for_chat{
+  border-right: 2px solid #000!important;
+}
+.dark-theme .thumbpadding:hover{
+  background: #222!important;
+}
+.dark-theme .navbar-fixed-top{
+  background: #252525!important;
+}
+.dark-theme .navbar-fixed-top button.button_wrap::after{
+  background: #000!important;
+}
+.dark-theme .rectangular-btn{
+  border-left:none!important;
+}
+.dark-theme .mat-drawer.mat-drawer-side{
+  border-right: none!important;
+  background-color: #000000!important;
+}
+.dark-theme #team-wrapper{
+  background-color: #111;
+}
+.dark-theme .messages-sidebar-header, 
+.dark-theme .rooms-sidebar-header, 
+.dark-theme .sidebar .nav-sidebar .nav-item-header{
+  background-color: #111!important;
+}
+.dark-theme .mat-dialog-container{
+  background: #3c3c3c!important;
+  color: #fff!important;
+}
+.dark-theme .mat-form-field-label {
+  color: rgba(255, 255, 255, 0.7);
+}
+.dark-theme  .mat-hint {
+  color: rgba(255, 255, 255, 0.7);
+}
+.dark-theme h2.mat-dialog-title .close{
+  color: #fff!important;
+}
+.dark-theme .preference-container .content{
+  background-color: #3d3d3d!important;
+}
+.dark-theme .preference-container .col-md-3{
+  background:#252525!important;
+  color: #fff;
+}
+.dark-theme .mat-list-base .mat-list-item {
+  color: rgba(255,255,255,.87);
+}
+.dark-theme .mat-tab-labels{
+  background-color: #111!important;
+}
+.dark-theme .card_box{
+  background-color: #111!important;
+}
+.dark-theme .panelUser:hover{
+  background-color: #252525!important;
+}
+.dark-theme .right-sidenav .mat-drawer-inner-container{
+  background-color: #111!important;
+}
 /* chat */
 .right-sidenav .mat-drawer-inner-container {
   background-color: #142D31;
@@ -1771,7 +1856,7 @@ app-dashboard .mat-drawer.mat-drawer-side {
   overflow: hidden!important;
 }
 .messages-sidebar-header, .rooms-sidebar-header, .sidebar .nav-sidebar .nav-item-header {
-  background-color: #0e2226!important;
+  background-color: #0e2226;
   color: #e26727!important;
   padding: 10px!important;
   font-family: Montserrat,sans-serif;
@@ -5844,7 +5929,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #15343a;
+  background-color: rgba(26, 131, 245, 0.2)!important;
 }
 .nav > li.disabled > a {
   color: #444444;
