@@ -48,7 +48,6 @@ export class DashboardComponent implements OnInit {
     private adminWidgetService: AdminWidgetService,
     private localStorage: LocalStorageService
   ) {
-    this.document.body.classList.remove('dark-theme');
     this.chartsDisable= this.localStorage.get('widget');
     this.userService = userService;
     this.socketService.initSocket();

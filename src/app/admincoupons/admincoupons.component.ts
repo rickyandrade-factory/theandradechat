@@ -1,4 +1,4 @@
-import {Component, OnInit, ViewChild} from '@angular/core';
+import {Component, OnInit, ViewChild, Inject} from '@angular/core';
 import {MatPaginator} from '@angular/material/paginator';
 import {MatSort} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
@@ -9,6 +9,7 @@ import { NewCouponsComponent } from './new-coupons.component';
 import {ProgressSpinnerMode} from '@angular/material/progress-spinner';
 import { CouponService } from './admincoupons.service';
 import {CouponsInterface} from './admincoupons.interface';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-admincoupons',
@@ -31,9 +32,10 @@ export class AdmincouponsComponent implements OnInit {
     const fileNameDialogRef = this.dialog.open(NewCouponsComponent);
   }
 
-  constructor(private dialog: MatDialog, 
-    private couponService: CouponService) {  }
-
+  constructor(private couponService: CouponService,private dialog: MatDialog, @Inject(DOCUMENT) private document: Document) {
+    this.document.body.classList.remove('dark-theme');
+  }
+ 
   ngOnInit() {
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;

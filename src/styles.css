@@ -838,14 +838,15 @@ a.profile-menu {
 .dark-theme .chatDiv{
   color: #fff!important;
   background: #252525!important;
-  border: 2px solid #000;
+  border: 1px solid #222;
+  box-shadow: 0px 0px 10px 0 #1b1b1b;
 }
 .dark-theme  #uploadBtn{
-  background: #252525!important;
+  background: #111!important;
   border-right: 2px solid #000!important;
 }
 .dark-theme .upload_file_for_chat{
-  border-right: 2px solid #000!important;
+  border-right: 1px solid #222!important;
 }
 .dark-theme .thumbpadding:hover{
   background: #222!important;
@@ -886,6 +887,7 @@ a.profile-menu {
 }
 .dark-theme .preference-container .content{
   background-color: #3d3d3d!important;
+  border-top: rgba(0,0,0,.12)!important;
 }
 .dark-theme .preference-container .col-md-3{
   background:#252525!important;
@@ -905,6 +907,18 @@ a.profile-menu {
 }
 .dark-theme .right-sidenav .mat-drawer-inner-container{
   background-color: #111!important;
+}
+.dark-theme .modal-footer{
+ border-top: rgba(0,0,0,.12)!important;
+}
+.dark-theme .preference-container{
+  border-top: rgba(0,0,0,.12)!important;
+}
+.dark-theme .signal-table{
+  color: #ccc!important;
+}
+.mat-slide-toggle-bar {
+  background: rgba(255, 255, 255, 0.5);
 }
 /* chat */
 .right-sidenav .mat-drawer-inner-container {

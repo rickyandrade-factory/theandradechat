@@ -1,4 +1,4 @@
-import {Component, OnInit, ViewChild} from '@angular/core';
+import {Component, OnInit, ViewChild, Inject} from '@angular/core';
 import {MatPaginator} from '@angular/material/paginator';
 import {MatSort} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
@@ -10,6 +10,7 @@ import { InviteContactComponent } from './invite-contact.component';
 import {ProgressSpinnerMode} from '@angular/material/progress-spinner';
 import {ContactsInterface} from './admincontacts.interface';
 import {ContactsService } from './admincontacts.service'
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-admincontactss',
@@ -35,9 +36,11 @@ export class AdmincontactsComponent implements OnInit {
   openInviteContactDialog() {
     const fileNameDialogRef1 = this.dialog.open(InviteContactComponent);
   }
-  
-  constructor(private dialog: MatDialog, 
-    private contactsService: ContactsService) {}
+    constructor(private dialog: MatDialog, 
+      private contactsService: ContactsService,
+      @Inject(DOCUMENT) private document: Document) {
+      this.document.body.classList.remove('dark-theme');
+      }
 
   ngOnInit() {
     this.dataSource.paginator = this.paginator;
