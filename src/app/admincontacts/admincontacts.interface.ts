@@ -7,5 +7,5 @@ export interface ContactsInterface {
    type: string;
    deviceNumber: number;
    registered: string;
-   lastSeen: string;
+   lastActivity: string;
   }
