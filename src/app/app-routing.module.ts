@@ -23,7 +23,6 @@ import {AdminmarketingComponent} from './adminmarketing/adminmarketing.component
 import { AdminonlineativityComponent } from './adminonlineativity/adminonlineativity.component';
 import { AdminsettingsComponent } from './adminsettings/adminsettings.component';
 import { AuthGuard } from './auth.guard';
-import { from } from 'rxjs';
 
 
 const routes: Routes = [

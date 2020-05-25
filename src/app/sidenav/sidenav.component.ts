@@ -115,7 +115,7 @@ export class ManageBrockersDialog {
   templateUrl: 'preferences-dialog.html',
   styleUrls: ['./sidenav.component.css']
 })
-export class PreferencesDialog {
+export class PreferencesDialog{
   profile:boolean= true;
   notification:boolean;
   blockMute:boolean;
@@ -125,7 +125,8 @@ export class PreferencesDialog {
   constructor(private localstorage: LocalStorageService){
     this.imgURL = this.localstorage.get('imgURL');
   }
-
+  ngOnChanges() {
+  }
   onProfile(){
     this.profile= true;
     this.notification= false;
@@ -172,6 +173,7 @@ export class PreferencesDialog {
     reader.onload = (_event) => {
       this.imgURL = reader.result;
       this.localstorage.set("imgURL", this.imgURL);
+      this.ngOnChanges();
     };
   }
 }
