@@ -50,23 +50,16 @@ import { Component } from '@angular/core';
             </div>
             <div class="col-sm-6">
                   <mat-form-field>
-                      <input matInput placeholder="Phone Number">
+                      <input matInput placeholder="Password">
                   </mat-form-field>
             </div>
          </div>
          <div class="row">
-            <div class="col-sm-6">
-                  <mat-form-field>
-                      <input matInput placeholder="Password">
-                  </mat-form-field>
-            </div>
             <div class="col-sm-6">
                   <mat-form-field>
                       <input matInput placeholder="Repeat Password">
                   </mat-form-field>
             </div>
-         </div>
-         <div class="row">
             <div class="col-sm-6">
                <div class="checkbox">
                   <label>

@@ -260,7 +260,7 @@ app-sidenav {
   flex-direction: column;
 }
 button.md-ink-ripple:hover{
-  background-color: rgba(0, 162, 200,0.8);
+  background-color: rgba(26, 131, 245,0.8);
   outline: none;
   border: none;
 }

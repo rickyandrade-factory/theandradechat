@@ -57,8 +57,7 @@ P{
   font-size: .9em;
 }
 
-input:focus ~ .floating-label,
-input:not(:focus):valid ~ .floating-label{
+input:focus ~ .floating-label{
 top: -2px;
 bottom: 10px;
 left: 0px;
@@ -136,7 +135,7 @@ input{
 button{
   box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
   color: rgba(255,255,255,0.87);
-  background-color: #00a2c8;
+  background-color: #1A83F5;
   padding-top: 5px;
   display: inline-block;
   position: relative;
