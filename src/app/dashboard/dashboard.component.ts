@@ -28,15 +28,7 @@ export class DashboardComponent implements OnInit {
   ngOnInit(){
   }
   
-  onDarkTheme(){
-    if(this.darkTheme == false){
-      this.document.body.classList.add('dark-theme');
-    }
-    else{
-      this.document.body.classList.remove('dark-theme');
-    }
-    
-  }
+
 
   constructor(
     @Inject(DOCUMENT) private document: Document,

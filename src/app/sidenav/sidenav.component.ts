@@ -5,6 +5,7 @@ import { VERSION, MatDialog, MatDialogRef } from '@angular/material';
 import { lockeddialogComponent } from './locked-dialog.component';
 import { SocketService } from '../services/socket.service';
 import { LocalStorageService } from 'angular-web-storage';
+import { DOCUMENT } from '@angular/common';
 declare var $:any;
 
 @Component({
@@ -13,6 +14,7 @@ declare var $:any;
   styleUrls: ['./sidenav.component.css']
 })
 export class SidenavComponent implements OnInit {
+  darkTheme= false;
   imgURL;
   version = VERSION;
   rooms = [];
@@ -27,13 +29,23 @@ export class SidenavComponent implements OnInit {
     lastname: String
   };
 
-  constructor(userService: UserService, authService: AuthService,
+  constructor(@Inject(DOCUMENT) private document: Document,
+  userService: UserService, authService: AuthService,
      private socketService: SocketService,
      public dialog : MatDialog,
      private localstorage: LocalStorageService) {
     this.imgURL = this.localstorage.get('imgURL');
     this.auth = authService;
     this.userService = userService;
+  }
+
+  onDarkTheme(){
+    if(this.darkTheme == false){
+      this.document.body.classList.add('dark-theme');
+    }
+    else{
+      this.document.body.classList.remove('dark-theme');
+    }
   }
 
   onManageBrockerDialog(){

@@ -84,3 +84,11 @@ mat-checkbox{
   margin: 20px 0 10px 0;
   font-size: 18px;
 }
+/* dark theme toggle */
+mat-slide-toggle{
+  position: relative;
+  top: -5px;
+}
+#team-wrapper{
+  padding:20px 0 0px 0;
+}

@@ -1,7 +1,7 @@
 a.selectedRoom {
   color: #fff!important;
-  border-left: solid 2px #00a2c8 !important;
-  background-color: rgb(20, 60, 68)!important;
+  border-left: solid 2px #1b83f5 !important;
+  background-color: rgba(27, 131, 245, 0.3)!important;
 }
 .tour-link{
  cursor: pointer;
