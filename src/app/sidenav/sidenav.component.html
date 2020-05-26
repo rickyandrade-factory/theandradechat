@@ -1,4 +1,4 @@
-<div id="team-wrapper" header-company-sidebar="" class="ng-isolate-scope" style="position:static;">
+<div id="team-wrapper" header-company-sidebar="" style="position:static;">
   <img class="sidebar-avatar" ng-src="//cdn.echofin.co/avatar/b7e64405.png?t=1551496349357"
     src="//cdn.echofin.co/avatar/b7e64405.png?t=1551496349357">
   <p class="teamName" title="MarketMastersAcademy">
@@ -103,7 +103,7 @@
       </span>
     </a>
   </li>
-  <div selected="roomName" class="ng-scope ng-isolate-scope">
+  <div selected="roomName" >
     <li class="nav-item-header rooms-sidebar-header">
       WEBTRADER
       <button class="btn btn-link pull-right" style="padding:0;" (click)="onManageBrockerDialog()">
@@ -116,12 +116,12 @@
   </div>
   <li class="messages-sidebar-header rooms-sidebar-header">DIRECT MESSAGES</li>
   <li class="directChat ng-scope">
-    <a href="#" class="ng-binding">
+    <a href="#" >
       <span class="material-icons userStatus1" ng-class="'userStatus'+user.status">person_outline</span> RiskyRicky
     </a>
   </li>
   <div id="dvFootnote" class="ng-scope">
-    <div class="footer-invite ng-isolate-scope"><a href="" target="" class="btn btn-primary btn-sm ng-binding">Invite
+    <div class="footer-invite"><a href="" target="" class="btn btn-primary btn-sm" (click)="onInviteFriendDialog()">Invite
         your friends</a></div>
   </div>
 </ul>

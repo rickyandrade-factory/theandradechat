@@ -844,6 +844,16 @@ a.profile-menu {
   overflow: hidden;
   transition: transform .3s ease-in-out,margin .3s ease-in-out;
 }
+.panelBox{
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #eee;
+  color: #888;
+  margin-bottom: 20px;
+}
+.panelBox p b{
+ color:#444;
+}
 /* dark-theme */
 .dark-theme .example-container {
   background: #252525;
@@ -941,9 +951,20 @@ a.profile-menu {
 .dark-theme .signal-table{
   color: #ccc!important;
 }
+.dark-theme  .panelBox{
+  padding: 10px;
+    border: 1px solid #556f7b;
+    background-color: #4f5e66;
+    color: #ababab;
+    margin-bottom: 20px;
+}
+.dark-theme  .panelBox p b{
+  color:#fff;
+}
 app-dashboard .mat-slide-toggle-bar {
   background: rgba(255, 255, 255, 0.5);
 }
+
 /* chat */
 .right-sidenav .mat-drawer-inner-container {
   background-color: #142D31;
@@ -10476,10 +10497,6 @@ span#wave {
 
 a.flex-parent {
     display: flex !important;
-
-}
-
-.panelBox {
 
 }
 

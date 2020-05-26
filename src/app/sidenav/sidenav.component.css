@@ -92,3 +92,11 @@ mat-slide-toggle{
 #team-wrapper{
   padding:20px 0 0px 0;
 }
+/* invite friend dialog */
+.media-right{
+  position: relative;
+  bottom: -10px;
+}
+.invite_friend_container{
+  padding: 15px;
+}

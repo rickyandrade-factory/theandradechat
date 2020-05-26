@@ -24,7 +24,7 @@ import { AppConfig } from './app.config';
 import { AppLocalConfig } from './app.local.config';
 import { ErrorComponent } from './error/error.component';
 import { User } from './models/index';
-import { SidenavComponent, PreferencesDialog, ManageBrockersDialog } from './sidenav/sidenav.component';
+import { SidenavComponent, PreferencesDialog, ManageBrockersDialog, InviteFriendDialog } from './sidenav/sidenav.component';
 import { RightareaComponent } from './rightarea/rightarea.component';
 import { ChatareaComponent } from './chatarea/chatarea.component';
 import { AuthGuard } from './auth.guard';
@@ -122,7 +122,8 @@ import { RegistrationSetiingsComponent } from './registration-setiings/registrat
     MediaUploadDialog,
     DataFlashDialog,
     NewSignalDialog,
-    RegistrationSetiingsComponent
+    RegistrationSetiingsComponent,
+    InviteFriendDialog
   ],
   imports: [
     BrowserModule,
@@ -144,7 +145,7 @@ import { RegistrationSetiingsComponent } from './registration-setiings/registrat
     User,
     AuthGuard
   ],
-  entryComponents: [NewSignalDialog,DataFlashDialog, MediaUploadDialog,ManageBrockersDialog, ZoomDialog,OtherChartDialog, FXCrossRatesDialog,LiveTVDialog,Coin360Dialog,FXHeatmapDialog, MarketHoursDialog, ChartsDialog, PreferencesDialog, InviteContactComponent, NewContactComponent, NewOfferComponent,
+  entryComponents: [InviteFriendDialog, NewSignalDialog,DataFlashDialog, MediaUploadDialog,ManageBrockersDialog, ZoomDialog,OtherChartDialog, FXCrossRatesDialog,LiveTVDialog,Coin360Dialog,FXHeatmapDialog, MarketHoursDialog, ChartsDialog, PreferencesDialog, InviteContactComponent, NewContactComponent, NewOfferComponent,
     lockeddialogComponent, NewBillingComponent, CustomwidgetComponent, NewCouponsComponent,
     NewChatroomComponent, NewServicesComponent, ConfiguredialogComponent, NewTeamAvatarComponent,
     CustomScriptComponent, DeleteChatroomComponent],

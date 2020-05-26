@@ -64,7 +64,12 @@ export class SidenavComponent implements OnInit {
     const dialogRef = this.dialog.open(PreferencesDialog, {
       width: '650px',
     });
+  }
 
+  onInviteFriendDialog(){
+    const dialogRef = this.dialog.open(InviteFriendDialog, {
+      width: '600px',
+    });
   }
 
   clickRoom(room) {
@@ -188,4 +193,14 @@ export class PreferencesDialog{
       this.ngOnChanges();
     };
   }
+}
+
+// invite friend dialog
+@Component({
+  selector: 'invite-friend-dialog',
+  templateUrl: 'invite-friend-dialog.html',
+  styleUrls: ['./sidenav.component.css']
+})
+export class InviteFriendDialog{
+  value = `https://MarketMastersAcademy.echofin.co`
 }
