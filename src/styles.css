@@ -207,6 +207,30 @@ app-login .mat-drawer-content {
   display: block;
   margin:0!important;
 }
+/* footer before login pages */
+.sidebar-footer .footer-logo .text-center{
+  flex: 1; 
+}
+.sidebar-footer .footer-logo .text-center a{
+  display: inline-block;
+  margin: 0 10px;
+}
+.sidebar-footer .footer-logo .text-center a.facebook{
+  background-color: #3b5998;
+}
+.sidebar-footer .footer-logo .text-center a.insta{
+  background: #f09433; 
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+}
+.sidebar-footer .footer-logo .text-center a.linkedin{
+  background-color: #0e76a8;
+}
+.sidebar-footer .footer-logo .text-center a i{
+ font-size: 20px;
+ color: #fff;
+}
  app-login .mat-drawer-inner-container {
   background-image: linear-gradient(to top, #e26727 , #0e2226); 
   padding: 10px 20px;
