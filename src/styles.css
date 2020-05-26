@@ -2189,6 +2189,14 @@ a.flex-parent span.flex-child {
   color: #000!important;
   font-family: Poppins,sans-serif,monospace;
 }
+.navbar-right .nav li a.selectedRoom {
+  background: rgba(9, 24, 27, 0.9)!important;
+  border: none!important;
+}
+.navbar-right .nav li a.selectedRoom:focus {
+  background: rgba(9, 24, 27, 0.9)!important;
+  border: none!important;
+}
 .rooms_list a.active{
   background-color:rgba(26, 131, 245, 0.5)!important;
   color: #fff!important;
