@@ -63,6 +63,7 @@ import { CustomScriptComponent } from './adminsettings/custom-script.component';
 import { InviteContactComponent } from './admincontacts/invite-contact.component';
 import { MatTableExporterModule } from 'mat-table-exporter';
 import { AdminmarketingComponent } from './adminmarketing/adminmarketing.component';
+import { RegistrationSetiingsComponent } from './registration-setiings/registration-setiings.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -120,7 +121,8 @@ import { AdminmarketingComponent } from './adminmarketing/adminmarketing.compone
     ManageBrockersDialog,
     MediaUploadDialog,
     DataFlashDialog,
-    NewSignalDialog
+    NewSignalDialog,
+    RegistrationSetiingsComponent
   ],
   imports: [
     BrowserModule,

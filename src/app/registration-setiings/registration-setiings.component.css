@@ -1,0 +1,30 @@
+section.admin-widget {
+    max-width: 860px;
+    margin: 0 auto;
+}
+.box-body {
+    padding: 15px;
+}
+mat-slide-toggle{
+    position: absolute;
+    right: 20px;
+}
+mat-list-item span{
+    position: absolute;
+    right: 20px;
+}
+mat-list-item{
+    border-bottom: 1px solid #ddd;
+}
+mat-list-option{
+    border-bottom: 1px solid #eee;
+}
+mat-list-option:last-child{
+    border: none;
+}
+mat-selection-list:focus{
+    outline: none!important;
+}
+mat-selection-list mat-list-option:focus{
+    outline: none!important;
+}

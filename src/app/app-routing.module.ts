@@ -23,6 +23,7 @@ import {AdminmarketingComponent} from './adminmarketing/adminmarketing.component
 import { AdminonlineativityComponent } from './adminonlineativity/adminonlineativity.component';
 import { AdminsettingsComponent } from './adminsettings/adminsettings.component';
 import { AuthGuard } from './auth.guard';
+import { RegistrationSetiingsComponent } from './registration-setiings/registration-setiings.component';
 
 
 const routes: Routes = [
@@ -42,6 +43,7 @@ const routes: Routes = [
   { path: 'adminservices', component: AdminservicesComponent, canActivate: [AuthGuard]},
   { path: 'adminapi', component: AdminapiComponent, canActivate: [AuthGuard]},
   { path: 'adminsettings', component: AdminsettingsComponent, canActivate: [AuthGuard]},
+  { path: 'admin-registration-settings', component: RegistrationSetiingsComponent, canActivate: [AuthGuard]},
   { path: 'admincompliance', component: AdmincomplianceComponent, canActivate: [AuthGuard]},
   { path: 'adminwidget', component: AdminwidgetComponent, canActivate: [AuthGuard]},
   { path: 'adminmarketing', component: AdminmarketingComponent, canActivate: [AuthGuard]},

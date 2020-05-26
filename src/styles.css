@@ -941,7 +941,7 @@ a.profile-menu {
 .dark-theme .signal-table{
   color: #ccc!important;
 }
-.mat-slide-toggle-bar {
+app-dashboard .mat-slide-toggle-bar {
   background: rgba(255, 255, 255, 0.5);
 }
 /* chat */
@@ -2202,14 +2202,7 @@ a.flex-parent span.flex-child {
   color: #fff!important;
   font-family: Poppins,sans-serif,monospace;
 }
-
-
-
-
-
-
-
-
+/* registration settings */
 
 
 
