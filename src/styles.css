@@ -13,6 +13,9 @@ body{
 .mat-tooltip {
   color: yellow;
 }
+a{
+  cursor: pointer;
+}
 a:focus{
   outline: none!important;
  }

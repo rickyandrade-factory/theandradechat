@@ -58,7 +58,7 @@ import { CustomwidgetComponent } from './adminwidget/customwidget-dialog.compone
 import { ConfiguredialogComponent } from './adminwidget/configure-dialog.component';
 import { AdminonlineativityComponent } from './adminonlineativity/adminonlineativity.component';
 import { AdminsettingsComponent } from './adminsettings/adminsettings.component';
-import { NewTeamAvatarComponent } from './adminsettings/new-teamavatar.component';
+import { NewTeamAvatarDialog } from './adminsettings/adminsettings.component';
 import { CustomScriptComponent } from './adminsettings/custom-script.component';
 import { InviteContactComponent } from './admincontacts/invite-contact.component';
 import { MatTableExporterModule } from 'mat-table-exporter';
@@ -103,7 +103,7 @@ import { RegistrationSetiingsComponent } from './registration-setiings/registrat
     ConfiguredialogComponent,
     AdminonlineativityComponent,
     AdminsettingsComponent,
-    NewTeamAvatarComponent,
+    NewTeamAvatarDialog,
     CustomScriptComponent,
     DeleteChatroomComponent,
     NewContactComponent,
@@ -147,7 +147,7 @@ import { RegistrationSetiingsComponent } from './registration-setiings/registrat
   ],
   entryComponents: [InviteFriendDialog, NewSignalDialog,DataFlashDialog, MediaUploadDialog,ManageBrockersDialog, ZoomDialog,OtherChartDialog, FXCrossRatesDialog,LiveTVDialog,Coin360Dialog,FXHeatmapDialog, MarketHoursDialog, ChartsDialog, PreferencesDialog, InviteContactComponent, NewContactComponent, NewOfferComponent,
     lockeddialogComponent, NewBillingComponent, CustomwidgetComponent, NewCouponsComponent,
-    NewChatroomComponent, NewServicesComponent, ConfiguredialogComponent, NewTeamAvatarComponent,
+    NewChatroomComponent, NewServicesComponent, ConfiguredialogComponent, NewTeamAvatarDialog,
     CustomScriptComponent, DeleteChatroomComponent],
   bootstrap: [AppComponent]
 })

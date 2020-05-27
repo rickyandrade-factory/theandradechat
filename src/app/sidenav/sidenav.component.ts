@@ -1,7 +1,7 @@
 import { Component, OnInit, Inject, Input, Output, EventEmitter, SimpleChanges } from '@angular/core';
 import { AuthService } from '../services/auth.service';
 import { UserService } from '../services/user.service';
-import { VERSION, MatDialog, MatDialogRef } from '@angular/material';
+import { MatDialog } from '@angular/material';
 import { lockeddialogComponent } from './locked-dialog.component';
 import { SocketService } from '../services/socket.service';
 import { LocalStorageService } from 'angular-web-storage';
@@ -16,7 +16,6 @@ declare var $:any;
 export class SidenavComponent implements OnInit {
   darkTheme= false;
   imgURL;
-  version = VERSION;
   rooms = [];
   roomId: any = ""
   ioConnection: any;
@@ -190,7 +189,6 @@ export class PreferencesDialog{
     reader.onload = (_event) => {
       this.imgURL = reader.result;
       this.localstorage.set("imgURL", this.imgURL);
-      this.ngOnChanges();
     };
   }
 }
