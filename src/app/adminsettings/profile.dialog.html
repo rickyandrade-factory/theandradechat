@@ -1,0 +1,110 @@
+<div class="modal-header">
+    <button mat-dialog-close class="close">
+        <span aria-hidden="true">×</span>
+    </button>
+    <div class="media-body-left">
+        <img class="media-object img-responsive img-circle img-thumbnail" src="//cdn.echofin.co/avatars/f02df689.png">
+    </div>
+    <div class="media-body-right">
+        <h4 class="media-heading">Testechofin</h4>
+        <p>Test123456@gmail.com</p>
+        <p class="info">
+            Last Login: 5/27/20 9:02 AM | Last Message: -
+        </p>
+    </div>
+</div>
+<div class="modal-body wrap-div profile_dialog">
+    <mat-tab-group>
+        <mat-tab label="General">
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <mat-form-field>
+                        <mat-label>Full Name</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-sm-12">
+                    <mat-form-field>
+                        <mat-label>Email</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-7">
+                    <mat-form-field>
+                        <mat-label>Email</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-5">
+                    <mat-form-field>
+                        <mat-select placeholder="Role">
+                           <mat-option value="Admin">Admin</mat-option>
+                           <mat-option value="Instructor">Instructor</mat-option>
+                           <mat-option value="Moderator">Moderator</mat-option>
+                           <mat-option value="User">User</mat-option>
+                        </mat-select>
+                        <mat-hint>
+                           <a class="">
+                                 <i class="fa fa-info-circle"></i>
+                           </a>
+                        </mat-hint>
+                     </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <mat-form-field >
+                        <mat-label>Address</mat-label>
+                        <textarea matInput></textarea>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <mat-form-field>
+                        <mat-label>City</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-4">
+                    <mat-form-field>
+                        <mat-label>Zip</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-4">
+                    <mat-form-field>
+                        <mat-label>Country</mat-label>
+                        <mat-select>
+                           <mat-option value="Afghanistan">Afghanistan</mat-option>
+                        </mat-select>
+                     </mat-form-field>
+                </div>
+              </div>
+            <div class="modal-footer wrap-div">
+                <button mat-dialog-close class="btn btn-blue">Save Details</button>
+            </div>
+        </mat-tab>
+        <mat-tab label="Security"> 
+            <div class="alert alert-info text-center">
+                <strong>Notice</strong>
+                <p>Remember to notify your user for the password change</p>
+              </div>    
+              <mat-form-field>
+                <mat-label>Password</mat-label>
+                <input matInput>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Repeat Password</mat-label>
+                <input matInput>
+            </mat-form-field>
+        </mat-tab>
+        <mat-tab label="Subscriptions"> Content 3 </mat-tab>
+    </mat-tab-group>
+</div>

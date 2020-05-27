@@ -967,7 +967,14 @@ a.profile-menu {
 app-dashboard .mat-slide-toggle-bar {
   background: rgba(255, 255, 255, 0.5);
 }
-
+/* app dialog */
+profile-dialog .modal-header{
+  border-bottom: 1px solid #ccc;
+}
+profile-dialog .modal-footer{
+  border-top: 1px solid #ccc;
+  padding: 20px 0 0 20px;
+}
 /* chat */
 .right-sidenav .mat-drawer-inner-container {
   background-color: #142D31;

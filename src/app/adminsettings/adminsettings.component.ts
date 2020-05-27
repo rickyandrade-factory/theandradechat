@@ -15,6 +15,11 @@ export class AdminsettingsComponent implements OnInit {
   openscript() {
     const fileNameDialogRef = this.dialog.open(CustomScriptComponent);
   }
+  onProfile(){
+    const fileNameDialogRef = this.dialog.open(ProfileDialog, {
+      width: '600px',
+    });
+  }
 
   constructor(private dialog: MatDialog) {
 
@@ -24,7 +29,16 @@ export class AdminsettingsComponent implements OnInit {
   }
 
 }
-// new avatar component
+
+// profile dialog
+@Component({
+  selector: 'profile-dialog',
+  templateUrl: './profile.dialog.html',
+  styleUrls: ['./adminsettings.component.css']
+})
+export class ProfileDialog {}
+
+// new avatar dialog
 @Component({
   selector: 'new-teamavatar',
   templateUrl: './new-teamavatar.dialog.html',

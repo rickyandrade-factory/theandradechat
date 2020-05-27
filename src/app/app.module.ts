@@ -64,6 +64,7 @@ import { InviteContactComponent } from './admincontacts/invite-contact.component
 import { MatTableExporterModule } from 'mat-table-exporter';
 import { AdminmarketingComponent } from './adminmarketing/adminmarketing.component';
 import { RegistrationSetiingsComponent } from './registration-setiings/registration-setiings.component';
+import {ProfileDialog} from './adminsettings/adminsettings.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -123,7 +124,8 @@ import { RegistrationSetiingsComponent } from './registration-setiings/registrat
     DataFlashDialog,
     NewSignalDialog,
     RegistrationSetiingsComponent,
-    InviteFriendDialog
+    InviteFriendDialog,
+    ProfileDialog
   ],
   imports: [
     BrowserModule,
@@ -145,7 +147,7 @@ import { RegistrationSetiingsComponent } from './registration-setiings/registrat
     User,
     AuthGuard
   ],
-  entryComponents: [InviteFriendDialog, NewSignalDialog,DataFlashDialog, MediaUploadDialog,ManageBrockersDialog, ZoomDialog,OtherChartDialog, FXCrossRatesDialog,LiveTVDialog,Coin360Dialog,FXHeatmapDialog, MarketHoursDialog, ChartsDialog, PreferencesDialog, InviteContactComponent, NewContactComponent, NewOfferComponent,
+  entryComponents: [ProfileDialog,InviteFriendDialog, NewSignalDialog,DataFlashDialog, MediaUploadDialog,ManageBrockersDialog, ZoomDialog,OtherChartDialog, FXCrossRatesDialog,LiveTVDialog,Coin360Dialog,FXHeatmapDialog, MarketHoursDialog, ChartsDialog, PreferencesDialog, InviteContactComponent, NewContactComponent, NewOfferComponent,
     lockeddialogComponent, NewBillingComponent, CustomwidgetComponent, NewCouponsComponent,
     NewChatroomComponent, NewServicesComponent, ConfiguredialogComponent, NewTeamAvatarDialog,
     CustomScriptComponent, DeleteChatroomComponent],
