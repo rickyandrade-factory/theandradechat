@@ -1,13 +1,12 @@
 .login-container{
   height: 100vh;
   width: 100%;
-  background-image: url('../../assets/echofin_bg.png');
+  background-image: url('/assets/pre-login-background-brown-and-blue-circles.jpg');
   background-size: cover;
-  background-position: center;
 }
 
 .sidenav-container{
-  background-color: '#eeeeee';
+  background-color: rgba(66, 28, 0, 0.3);
 }
 
 .app-logo{
@@ -231,6 +230,7 @@ mat-sidenav {
   overflow:visible;
   padding-top: 140px;
   background: transparent;
+  box-shadow: none!important;
 }
 .main-logo{
   max-width: 400px;
