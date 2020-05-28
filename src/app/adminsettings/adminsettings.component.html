@@ -95,8 +95,10 @@
                             <tr>
                                 <td style="border:none!important;">
                                     <h4>Team Options</h4>
-                                    <img class="img-thumbnail" style="height:28px;padding: 1px;margin: -3px 5px 0 0;"
-                                        src="//cdn.echofin.co/avatar/b7e64405.png?t=1551496349357">
+                                    <img class="img-thumbnail" style="height:28px;padding: 1px;margin: -3px 5px 0 0; border-radius: 50%;"
+                                        src="//cdn.echofin.co/avatar/b7e64405.png?t=1551496349357" *ngIf="!adminImgPath">
+                                    <img class="img-thumbnail" style="height:28px;padding: 1px;margin: -3px 5px 0 0; border-radius: 50%;"
+                                         src="{{adminImgPath}}" *ngIf="adminImgPath">
                                     <a (click)="openteamavatar()">
                                         Change team avatar
                                     </a>

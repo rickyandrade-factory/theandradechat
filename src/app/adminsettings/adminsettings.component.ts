@@ -21,9 +21,12 @@ export class AdminsettingsComponent implements OnInit {
     });
   }
 
-  constructor(private dialog: MatDialog) {
-
+  constructor(private dialog: MatDialog,
+    private localStorage: LocalStorageService){
+    this.adminImgPath = this.localStorage.get('admin_user_profile');
   }
+  adminImgPath;
+
 
   ngOnInit() {
   }
@@ -36,7 +39,30 @@ export class AdminsettingsComponent implements OnInit {
   templateUrl: './profile.dialog.html',
   styleUrls: ['./adminsettings.component.css']
 })
-export class ProfileDialog {}
+export class ProfileDialog {
+ ELEMENT_DATA = [
+    {plan: '7 Day Trial', trial: '', CC: '', period: '2020-06-12', canceled: 'NO'},
+  ];
+  
+  displayedColumns: string[] = ['plan', 'trial', 'CC', 'period', 'canceled'];
+  dataSource = this.ELEMENT_DATA;
+
+  constructor(private localStorage: LocalStorageService){
+    this.adminImgPath = this.localStorage.get('admin_user_profile');
+  }
+  adminImgPath;
+  preview(files) {
+    if (files.length === 0)
+      return;
+    var reader = new FileReader();
+    reader.readAsDataURL(files[0]);
+    reader.onload = (_event) => {
+      this.adminImgPath = reader.result;
+      this.localStorage.set("admin_user_profile", this.adminImgPath);
+    };
+  }
+
+}
 
 // new avatar dialog
 @Component({
