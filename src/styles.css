@@ -820,6 +820,7 @@ a.profile-menu {
 }
 .admin-dashboard{
   font-size:14px;
+  height: 100vh;
   /* font-family: Poppins,monospace; */
 }
 .admin-dashboard .nav-sidebar i {

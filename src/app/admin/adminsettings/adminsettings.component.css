@@ -1,0 +1,77 @@
+.is-new {
+    background: #1e88e5;
+    border-radius: 0 3px 3px 0;
+    color: #FFF;
+    margin: 11px 0 0 -2px;
+    padding: 2px 11px;
+    position: absolute;
+}
+.img-thumbnail {
+    padding: 4px;
+    line-height: 1.42857;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+section.admin-widget {
+    max-width: 860px;
+    margin: 0 auto;
+}
+table, .table {
+    color: #333;
+    background: #ffffff;
+}
+h4 small {
+    font-weight: 400;
+    line-height: 1;
+    color: #777;
+}
+p {
+    color: #333!important;
+    font-size: 1em;
+}
+h4 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+.col-md-4{
+    padding:0 15px;
+}
+.lead {
+    border: solid 1px #eee;
+    padding: 15px 25px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 30px #eee;
+    font-size: 16px;
+}
+.page-header {
+    margin: 10px 0 20px 0;
+    font-size: 20px;
+}
+
+.page-header {
+    padding-bottom: 9px;
+    border-bottom: 1px solid #eee;
+}
+td{
+    border-top: 1px solid #ededed!important;
+}
+.row{
+    padding: 15px 0;
+}
+.admin-widget h3 {
+    font-size: 1.4em;
+}
+table a{
+    color: #007590;
+}
+.box-body {
+    padding: 15px;
+}
+

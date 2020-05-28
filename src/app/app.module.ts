@@ -30,41 +30,43 @@ import { ChatareaComponent } from './chatarea/chatarea.component';
 import { AuthGuard } from './auth.guard';
 import { LockedchatroomComponent } from './lockedchatroom/lockedchatroom.component';
 import { DirectchatroomComponent } from './directchatroom/directchatroom.component';
-import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
+import { AdmindashboardComponent } from './admin/admindashboard/admindashboard.component';
 import { UnlockchatroomComponent, MediaUploadDialog, NewSignalDialog } from './unlockchatroom/unlockchatroom.component';
 import { UserPanelComponent } from './user-panel/user-panel.component';
-import { AdminSidebarComponent } from './admin-sidebar/admin-sidebar.component';
-import { AdmincontactsComponent } from './admincontacts/admincontacts.component';
-import { AdminsalesComponent } from './adminsales/adminsales.component';
-import { NewContactComponent } from './admincontacts/new-contact.component';
-import { NewBillingComponent } from './adminbilling/new-billing.component';
-import { NewOfferComponent } from './adminoffers/new-offer.component';
-import { AdminoffersComponent } from './adminoffers/adminoffers.component';
+import { AdminSidebarComponent } from './admin/admin-sidebar/admin-sidebar.component';
+import { AdmincontactsComponent } from './admin/admincontacts/admincontacts.component';
+import { AdminsalesComponent } from './admin/adminsales/adminsales.component';
+import { NewContactComponent } from './admin/admincontacts/new-contact.component';
+import { NewBillingComponent } from './admin/adminbilling/new-billing.component';
+import { NewOfferComponent } from './admin/adminoffers/new-offer.component';
+import { AdminoffersComponent } from './admin/adminoffers/adminoffers.component';
 import { ProfileSidebarComponent } from './profile-sidebar/profile-sidebar.component';
 import { OnpointRoomComponent } from './onpoint-room/onpoint-room.component';
 import { lockeddialogComponent } from './sidenav/locked-dialog.component';
-import { AdminbillingComponent } from './adminbilling/adminbilling.component';
-import { AdmincouponsComponent } from './admincoupons/admincoupons.component';
-import { NewCouponsComponent } from './admincoupons/new-coupons.component';
-import { AdminchatroomComponent } from './adminchatroom/adminchatroom.component';
-import { NewChatroomComponent } from './adminchatroom/new-cahtroom.component';
-import { DeleteChatroomComponent } from './adminchatroom/deletechatroom.component';
-import { AdminservicesComponent } from './adminservices/adminservices.component';
-import { NewServicesComponent } from './adminservices/new-services.component';
-import { AdminapiComponent } from './adminapi/adminapi.component';
-import { AdmincomplianceComponent } from './admincompliance/admincompliance.component';
-import { AdminwidgetComponent } from './adminwidget/adminwidget.component';
-import { CustomwidgetComponent } from './adminwidget/customwidget-dialog.component';
-import { ConfiguredialogComponent } from './adminwidget/configure-dialog.component';
-import { AdminonlineativityComponent } from './adminonlineativity/adminonlineativity.component';
-import { AdminsettingsComponent } from './adminsettings/adminsettings.component';
-import { NewTeamAvatarDialog } from './adminsettings/adminsettings.component';
-import { CustomScriptComponent } from './adminsettings/custom-script.component';
-import { InviteContactComponent } from './admincontacts/invite-contact.component';
+import { AdminbillingComponent } from './admin/adminbilling/adminbilling.component';
+import { AdmincouponsComponent } from './admin/admincoupons/admincoupons.component';
+import { NewCouponsComponent } from './admin/admincoupons/new-coupons.component';
+import { AdminchatroomComponent } from './admin/adminchatroom/adminchatroom.component';
+import { NewChatroomComponent } from './admin/adminchatroom/new-cahtroom.component';
+import { DeleteChatroomComponent } from './admin/adminchatroom/deletechatroom.component';
+import { AdminservicesComponent } from './admin/adminservices/adminservices.component';
+import { NewServicesComponent } from './admin/adminservices/new-services.component';
+import { AdminapiComponent } from './admin/adminapi/adminapi.component';
+import { AdmincomplianceComponent } from './admin/admincompliance/admincompliance.component';
+import { AdminwidgetComponent } from './admin/adminwidget/adminwidget.component';
+import { CustomwidgetComponent } from './admin/adminwidget/customwidget-dialog.component';
+import { ConfiguredialogComponent } from './admin/adminwidget/configure-dialog.component';
+import { AdminonlineativityComponent } from './admin/adminonlineativity/adminonlineativity.component';
+import { AdminsettingsComponent } from './admin/adminsettings/adminsettings.component';
+import { NewTeamAvatarDialog } from './admin/adminsettings/adminsettings.component';
+import { CustomScriptComponent } from './admin/adminsettings/custom-script.component';
+import { InviteContactComponent } from './admin/admincontacts/invite-contact.component';
 import { MatTableExporterModule } from 'mat-table-exporter';
-import { AdminmarketingComponent } from './adminmarketing/adminmarketing.component';
-import { RegistrationSetiingsComponent } from './registration-setiings/registration-setiings.component';
-import {ProfileDialog} from './adminsettings/adminsettings.component'
+import { AdminmarketingComponent } from './admin/adminmarketing/adminmarketing.component';
+import { RegistrationSetiingsComponent } from './admin/registration-setiings/registration-setiings.component';
+import {ProfileDialog} from './admin/topbar/topbar.component';
+import { AdminComponent } from './admin/admin.component';
+import { TopbarComponent } from './admin/topbar/topbar.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -125,7 +127,9 @@ import {ProfileDialog} from './adminsettings/adminsettings.component'
     NewSignalDialog,
     RegistrationSetiingsComponent,
     InviteFriendDialog,
-    ProfileDialog
+    ProfileDialog,
+    AdminComponent,
+    TopbarComponent
   ],
   imports: [
     BrowserModule,

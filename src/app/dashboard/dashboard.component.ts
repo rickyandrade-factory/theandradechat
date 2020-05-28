@@ -5,8 +5,8 @@ import { UserService } from '../services/user.service';
 import { SocketService } from '../services/socket.service';
 import { User } from '../models';
 import { MatDialog } from '@angular/material';
-import {ConfiguredialogComponent} from '../adminwidget/configure-dialog.component';
-import {AdminWidgetService} from '../adminwidget/adminwidget.service';
+import {ConfiguredialogComponent} from '../admin/adminwidget/configure-dialog.component';
+import {AdminWidgetService} from '../admin/adminwidget/adminwidget.service';
 import { LocalStorageService } from 'angular-web-storage';
 import { DOCUMENT } from '@angular/common';
 import { Router } from '@angular/router';
@@ -54,7 +54,7 @@ export class DashboardComponent implements OnInit {
   }
 
   onRedirectAdmin(){
-    this.router.navigate(['admindashboard']);
+    this.router.navigate(['admin/dashboard']);
     this.document.body.classList.remove('dark-theme');
   }
   openChartsDialog() {
