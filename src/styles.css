@@ -965,6 +965,9 @@ a.profile-menu {
 .dark-theme  .panelBox p b{
   color:#fff;
 }
+.dark-theme .roomHeader button {
+  background: black;
+}
 app-dashboard .mat-slide-toggle-bar {
   background: rgba(255, 255, 255, 0.5);
 }
@@ -1837,7 +1840,17 @@ button.btn.btn-blue {
   display: block!important;
 }
 .header-button.dashboard{
- background-color: #ff7f3a!important
+ background-color: #ff7f3a!important;
+}
+.dashboard-btn{
+  background-color: #ff7f3a!important;
+  color:#fff;
+}
+.dashboard-btn span{
+  color:#fff;
+ }
+.dashboard-btn a{
+ color:#fff!important;
 }
 .header-button.broadcast{
   background-color: #8a3000!important;
@@ -8959,7 +8972,7 @@ a.list-group-item-danger.active:focus {
 
     .roomHeader {
         float: left;
-        line-height: 68px;
+        line-height: 74px;
         margin-left: -10px; 
     }
 

@@ -18,11 +18,12 @@
 .button_wrap{
   float: left;
   color: #e26727;
-  width: 70px;
-  height: 70px;
+  width: 74px;
+  height: 74px;
   text-align: center;
   position: relative;
   margin: 0 5px;
+  background-color: floralwhite;
 }
 button.button_wrap::after {
   position: absolute;

@@ -26,8 +26,8 @@
           <span class="roomTitle text-capitalize  ">{{roomTitle}}</span>
           <i class="fa" ng-class="{'roomLock': room.n_type==2 , 'fa-unlock': room.n_type==2}" aria-hidden="true"></i>
           <div header-nav-trial="" class="nav-trial-container">
-            <button  (click)="onRedirectAdmin()" mat-button *ngIf="isAdmin"
-              class="hidden-xs rectangular-btn button_wrap dashboard-btn">
+            <button  (click)="onRedirectAdmin()" mat-icon-button mat-button *ngIf="isAdmin"
+              class="hidden-xs button_wrap dashboard-btn">
               <span class="icon fa fa-tachometer"></span>
               <a>DASHBOARD</a>
             </button>
