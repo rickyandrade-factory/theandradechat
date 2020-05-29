@@ -4,6 +4,7 @@ import { OnpointRoomComponent } from '../onpoint-room/onpoint-room.component';
 import { UserService } from '../services/user.service';
 import { MatDialog } from '@angular/material';
 import { LocalStorageService } from 'angular-web-storage';
+import { PreferenceService } from '../sidenav/preferences.service';
 declare var $:any;
 @Component({
   selector: 'app-unlockchatroom',
@@ -22,13 +23,18 @@ export class UnlockchatroomComponent implements OnInit {
     message: ""
   };
   constructor(private socketService: SocketService, userService: UserService,
-    private dialog: MatDialog,
+    private dialog: MatDialog,private preferenceService: PreferenceService,
     private localstorage: LocalStorageService) {
     this.imgURL = this.localstorage.get('imgURL');
     this.userId = userService.getUserId();
   }
 
   ngOnInit(): void {
+    this.preferenceService.userProfile.subscribe(
+      () => {
+        this.imgURL= this.localstorage.get('imgURL')
+      }
+    )
     this.socketService.onEvent("messageToClients").subscribe((message) => {
       this.messages.push(message.data);
     });

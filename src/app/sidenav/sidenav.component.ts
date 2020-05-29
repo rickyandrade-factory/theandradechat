@@ -6,6 +6,7 @@ import { lockeddialogComponent } from './locked-dialog.component';
 import { SocketService } from '../services/socket.service';
 import { LocalStorageService } from 'angular-web-storage';
 import { DOCUMENT } from '@angular/common';
+import { PreferenceService } from './preferences.service';
 declare var $:any;
 
 @Component({
@@ -28,7 +29,7 @@ export class SidenavComponent implements OnInit {
     lastname: String
   };
 
-  constructor(@Inject(DOCUMENT) private document: Document,
+  constructor(@Inject(DOCUMENT) private document: Document, private preferenceService: PreferenceService,
   userService: UserService, authService: AuthService,
      private socketService: SocketService,
      public dialog : MatDialog,
@@ -81,6 +82,11 @@ export class SidenavComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.preferenceService.userProfile.subscribe(
+      imgPath => {
+        this.imgURL= this.localstorage.get('imgURL');
+      }
+    )
     this.user = this.userService.getUser();
     this.rooms = this.userService.getRooms();
     console.log(this.rooms);
@@ -138,7 +144,7 @@ export class PreferencesDialog{
   billing:boolean;
   advanced:boolean;
 
-  constructor(private localstorage: LocalStorageService){
+  constructor(private localstorage: LocalStorageService, private preferenceService: PreferenceService){
     this.imgURL = this.localstorage.get('imgURL');
   }
   ngOnChanges() {
@@ -189,6 +195,7 @@ export class PreferencesDialog{
     reader.onload = (_event) => {
       this.imgURL = reader.result;
       this.localstorage.set("imgURL", this.imgURL);
+      this.preferenceService.userProfile.next(true);
     };
   }
 }
