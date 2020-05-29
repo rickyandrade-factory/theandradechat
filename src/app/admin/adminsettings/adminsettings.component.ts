@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {MatDialog} from '@angular/material';
 import { CustomScriptComponent } from './custom-script.component';
 import { LocalStorageService } from 'angular-web-storage';
+import { NewAvatarService } from './new-avatar.service';
 @Component({
   selector: 'app-adminsettings',
   templateUrl: './adminsettings.component.html',
@@ -18,13 +19,19 @@ export class AdminsettingsComponent implements OnInit {
 
 
   constructor(private dialog: MatDialog,
-    private localStorage: LocalStorageService){
+    private localStorage: LocalStorageService,
+    private newAvatarService: NewAvatarService){
     this.adminImgPath = this.localStorage.get('admin_user_profile');
   }
   adminImgPath;
 
 
   ngOnInit() {
+    this.newAvatarService.newAvatar.subscribe(
+      () => {
+        this.adminImgPath= this.localStorage.get('admin_user_profile');
+      }
+    )
   }
 
 }
@@ -35,10 +42,13 @@ export class AdminsettingsComponent implements OnInit {
   templateUrl: './new-teamavatar.dialog.html',
   styleUrls: ['./adminsettings.component.css']
 })
-export class NewTeamAvatarDialog {
-  constructor(private localStorage: LocalStorageService){
+export class NewTeamAvatarDialog implements OnInit {
+  constructor(private localStorage: LocalStorageService, private newAvatarService: NewAvatarService){
     this.adminImgPath = this.localStorage.get('admin_user_profile');
   }
+ ngOnInit(){
+   
+ }
   adminImgPath;
   preview(files) {
     if (files.length === 0)
@@ -48,6 +58,7 @@ export class NewTeamAvatarDialog {
     reader.onload = (_event) => {
       this.adminImgPath = reader.result;
       this.localStorage.set("admin_user_profile", this.adminImgPath);
+      this.newAvatarService.newAvatar.next(true);
     };
   }
 }

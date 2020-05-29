@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material';
 import { LocalStorageService } from 'angular-web-storage';
+import { NewAvatarService } from '../adminsettings/new-avatar.service';
 
 @Component({
   selector: 'app-topbar',
@@ -28,7 +29,7 @@ export class TopbarComponent implements OnInit {
   templateUrl: './profile.dialog.html',
   styleUrls: ['./topbar.component.css']
 })
-export class ProfileDialog {
+export class ProfileDialog implements OnInit {
  ELEMENT_DATA = [
     {plan: '7 Day Trial', trial: '', CC: '', period: '2020-06-12', canceled: 'NO'},
   ];
@@ -36,8 +37,16 @@ export class ProfileDialog {
   displayedColumns: string[] = ['plan', 'trial', 'CC', 'period', 'canceled'];
   dataSource = this.ELEMENT_DATA;
 
-  constructor(private localStorage: LocalStorageService){
-    this.adminImgPath = this.localStorage.get('admin_user_profile');
+  constructor(private localStorage: LocalStorageService, private newAvatarService: NewAvatarService){
+    this.adminImgPath= this.localStorage.get('admin_user_profile');
+  }
+  ngOnInit(){
+    this.newAvatarService.newAvatar.subscribe(
+      newPath => {
+        this.adminImgPath= this.localStorage.get('admin_user_profile');
+      }
+      
+    )
   }
   adminImgPath;
   preview(files) {

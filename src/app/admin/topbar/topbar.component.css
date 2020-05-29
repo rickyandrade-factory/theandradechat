@@ -11,6 +11,7 @@
 }
 .media-body-left img{
     border-radius: 50%;
+    width: 100%;
 }
 .media-body-right {
     display: inline-block;
@@ -19,7 +20,7 @@
 }
 .modal-header button{
     color: #888;
-}
+}   
 .profile_dialog mat-form-field{
     width: 100%;
 }
