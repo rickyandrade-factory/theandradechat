@@ -236,7 +236,45 @@ app-login .mat-drawer-content {
 }
  app-login .mat-drawer-inner-container {
   background-image: linear-gradient(to top, #e26727 , #0e2226); 
-  padding: 10px 20px;
+  padding: 10px 30px;
+
+  width: 470px;
+    background: rgba(10, 10, 10, 0.57);
+    box-sizing: border-box;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 8px solid #e26727;
+    border-radius: 30px 30px 50px 50px;
+} 
+app-forgotpassword .mat-drawer-inner-container {
+  background-image: linear-gradient(to top, #e26727 , #0e2226); 
+  padding: 10px 30px;
+
+  width: 470px;
+    background: rgba(10, 10, 10, 0.57);
+    box-sizing: border-box;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 8px solid #e26727;
+    border-radius: 30px 30px 50px 50px;
+} 
+app-signup .mat-drawer-inner-container {
+  background-image: linear-gradient(to top, #e26727 , #0e2226); 
+  padding: 10px 30px;
+
+  width: 470px;
+    background: rgba(10, 10, 10, 0.57);
+    box-sizing: border-box;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 8px solid #e26727;
+    border-radius: 30px 30px 50px 50px;
 } 
 app-forgotpassword .mat-drawer-content {
   position: absolute;
@@ -246,10 +284,7 @@ app-forgotpassword .mat-drawer-content {
   display: block;
   margin:0!important;
 }
-app-forgotpassword .mat-drawer-inner-container {
-  background-image: linear-gradient(to top, #e26727 , #0e2226); 
-  padding: 10px 20px;
-} 
+
 app-signup .mat-drawer-content {
   position: absolute;
   left: 0;
@@ -258,10 +293,6 @@ app-signup .mat-drawer-content {
   display: block;
   margin:0!important;
 }
-app-signup .mat-drawer-inner-container {
-  background-image: linear-gradient(to top, #e26727 , #0e2226); 
-  padding: 10px 20px;
-} 
 app-sidenav {
   width: 240px;
 }
@@ -10982,23 +11013,52 @@ app-login .mat-drawer-inner-container{
   display: inline-block;
   overflow: inherit!important;
   max-width: 320px;
-  margin: 0 auto;
+  margin: 100px auto 0 auto;
+  background: transparent;
+  border: none;
+  position: relative;
 }
+.mat-drawer-inner-container .circle{
+  height: 100%!important;
+  width: 100%!important;
+  background-image: none!important;
+  position: static!important;
+  text-align: center;
+}
+.mat-drawer-inner-container .circle h1{
+ position: static!important;
+}
+.mat-drawer-inner-container .circle p{
+  position: static!important;
+  max-width: 320px!important;
+  padding: 0!important;
+
+ }
 app-forgotpassword .mat-drawer-inner-container{
   height: auto;
   background-image:none;
   display: inline-block;
   overflow: inherit!important;
   max-width: 320px;
-  margin: 0 auto; 
+  margin: 100px auto 0 auto;
+  background: transparent;
+  border: none;
+  position: relative;
 }
-app-sinup .mat-drawer-inner-container{
+app-signup .mat-drawer-inner-container{
   height: auto;
-  background-image:none;
+  background-image: none;
   display: inline-block;
   overflow: inherit!important;
   max-width: 320px;
-  margin: 0 auto;
+  margin: 170px auto 0 auto;
+  background: transparent;
+  border: none;
+  overflow: visible!important;
+  position: relative;
+}
+app-signup  mat-sidenav{
+  margin: 0!important;
 }
 
 /* .leftnav {
