@@ -4,7 +4,7 @@
     </button>
     <div class="media-body-left" style="position: relative;">
         <img src="//cdn.echofin.co/avatar/b7e64405.png?t=1551496349357" *ngIf="!adminImgPath" alt="">
-        <img style="width: 100%" src="{{adminImgPath}}" *ngIf="adminImgPath">
+        <img style="width: 100%; height: 100%;" src="{{adminImgPath}}" *ngIf="adminImgPath">
         <div class="hoving-avatar">
             <input #file type="file" accept='image/*' (change)="preview(file.files)" />
             <span style="color: #fff;">Change</span>

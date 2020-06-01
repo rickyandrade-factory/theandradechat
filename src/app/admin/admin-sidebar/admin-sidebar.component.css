@@ -6,3 +6,6 @@ a.selectedRoom {
 .tour-link{
  cursor: pointer;
 }
+img{
+  cursor: pointer;
+}
