@@ -236,6 +236,9 @@
           <tr mat-row *matRowDef="let row; columns: displayedColumns;">
           </tr>
         </table>
+        <div class="empty_data" *ngIf="!dataSource.data.length">
+          No data available
+        </div>
         <mat-paginator [pageSizeOptions]="[14, 30, 50, 100]"></mat-paginator>
         <mat-progress-spinner [mode]="mode">
         </mat-progress-spinner>

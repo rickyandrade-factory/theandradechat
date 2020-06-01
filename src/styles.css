@@ -348,6 +348,12 @@ p.teamName {
 
 
 /* admin panel */
+.empty_data{
+  text-align: center;
+  padding: 30px;
+  color: #444;
+  border-bottom: 1px solid #eee;
+}
 .mini-sidebar mat-drawer-content {
   margin-left: 50px!important;
   transition: transform .3s ease-in-out,width .3s ease-in-out;

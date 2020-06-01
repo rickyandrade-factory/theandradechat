@@ -2,10 +2,10 @@ export interface ContactsInterface {
    imgPath: string;
    username: string;
    email: string;
-   phoneNumber: number;
+   phoneNumber: string;
    subscription: string;
    type: string;
-   deviceNumber: number;
+   deviceNumber: string;
    registered: string;
    lastActivity: string;
   }
