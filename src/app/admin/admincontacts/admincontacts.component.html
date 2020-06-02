@@ -42,12 +42,12 @@
         </td>
       </ng-container>
       <!-- ID Column -->
-      <ng-container matColumnDef="username">
+      <ng-container matColumnDef="fullname">
         <th mat-header-cell *matHeaderCellDef mat-sort-header>
-          Username
+          Name
         </th>
         <td mat-cell *matCellDef="let row">
-          {{row.username}} </td>
+          {{row.fullname}} </td>
       </ng-container>
       <!-- Name Column -->
       <ng-container matColumnDef="email">
@@ -114,10 +114,10 @@
         <th mat-header-cell *matHeaderCellDef> </th>
       </ng-container>
       <!-- username search Column -->
-      <ng-container matColumnDef="usernameSearch">
+      <ng-container matColumnDef="nameSearch">
         <th mat-header-cell *matHeaderCellDef>
           <mat-form-field *ngIf="searchActive">
-            <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Username">
+            <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Name">
           </mat-form-field>
         </th>
       </ng-container>
@@ -130,13 +130,10 @@
         </th>
       </ng-container>
       <!-- verified search Column -->
-      <ng-container matColumnDef="verifiedSearch">
+      <ng-container matColumnDef="phoneSearch">
         <th mat-header-cell *matHeaderCellDef>
           <mat-form-field *ngIf="searchActive">
-            <mat-select (keyup)="applyFilter($event.target.value)" placeholder="Select Verified">
-              <mat-option value="YES">YES</mat-option>
-              <mat-option value="NO">NO</mat-option>
-            </mat-select>
+            <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Phone Number">
           </mat-form-field>
         </th>
       </ng-container>
@@ -181,7 +178,7 @@
       <tr mat-header-row *matHeaderRowDef="displayedColumns" [ngClass]="{'activeSearchHeader': searchActive == true}">
       </tr>
       <tr mat-header-row
-        *matHeaderRowDef="['userImgSearch','usernameSearch', 'emailSearch', 'verifiedSearch', 'subscriptionSearch', 'typeSearch','empty1','empty2','empty3','empty4']"
+        *matHeaderRowDef="['userImgSearch','nameSearch', 'emailSearch', 'phoneSearch', 'subscriptionSearch', 'typeSearch','empty1','empty2','empty3','empty4']"
         [ngClass]="{'activeRow': searchActive == true}" style="display: none;">
       </tr>
       <tr mat-row *matRowDef="let row; columns: displayedColumns;">

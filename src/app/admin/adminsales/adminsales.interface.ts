@@ -1,6 +1,6 @@
 export interface SalesInterface {
    date: string;
-   username: string;
+   fullname: string;
    email: string;
    plan: string;
    description: string;

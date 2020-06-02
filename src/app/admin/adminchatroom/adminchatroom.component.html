@@ -60,6 +60,9 @@
               <a mat-icon-button color="warn" (click)="deleteRoom(row)">
                 <i class="fa fa-trash fa-fw" ></i>
               </a> 
+              <a mat-icon-button color="primary" (click)="editRoom(row)">
+                <i class="fa fa-edit fa-fw" ></i>
+              </a> 
             </td>
           </ng-container>
           <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

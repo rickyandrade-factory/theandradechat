@@ -22,7 +22,7 @@ export class AdmincontactsComponent implements OnInit {
   mode: ProgressSpinnerMode = 'determinate';
   showSpinner= false;
   searchActive= false;
-  displayedColumns: string[] = ['img', 'username', 'email', 'phone', 'subscription', 'type',  'devices', 'registered', 'lastActivity', 'action'];
+  displayedColumns: string[] = ['img', 'fullname', 'email', 'phone', 'subscription', 'type',  'devices', 'registered', 'lastActivity', 'action'];
   dataSource= new MatTableDataSource<ContactsInterface>(this.contactsService.getContacts());
 
 

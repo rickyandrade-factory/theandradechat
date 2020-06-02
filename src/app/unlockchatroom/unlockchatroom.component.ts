@@ -12,6 +12,7 @@ declare var $:any;
   styleUrls: ['./unlockchatroom.component.css']
 })
 export class UnlockchatroomComponent implements OnInit {
+  adminImgPath;
   imgURL;
   ioConnection: any;
   messages: any = [];
@@ -23,18 +24,14 @@ export class UnlockchatroomComponent implements OnInit {
     message: ""
   };
   constructor(private socketService: SocketService, userService: UserService,
-    private dialog: MatDialog,private preferenceService: PreferenceService,
+    private dialog: MatDialog,
     private localstorage: LocalStorageService) {
     this.imgURL = this.localstorage.get('imgURL');
     this.userId = userService.getUserId();
+    this.adminImgPath= this.localstorage.get('admin_user_profile');
   }
 
   ngOnInit(): void {
-    this.preferenceService.userProfile.subscribe(
-      () => {
-        this.imgURL= this.localstorage.get('imgURL')
-      }
-    )
     this.socketService.onEvent("messageToClients").subscribe((message) => {
       this.messages.push(message.data);
     });

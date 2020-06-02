@@ -1,6 +1,6 @@
 <div id="team-wrapper" header-company-sidebar="" style="position:static;">
-  <img class="sidebar-avatar" ng-src="//cdn.echofin.co/avatar/b7e64405.png?t=1551496349357"
-    src="//cdn.echofin.co/avatar/b7e64405.png?t=1551496349357">
+  <img class="sidebar-avatar" src="assets/mini-logo.png" *ngIf="!adminImgPath">
+  <img class="sidebar-avatar" src="{{adminImgPath}}" *ngIf="adminImgPath">
   <p class="teamName" title="MarketMastersAcademy">
     <strong class="ng-binding">MarketMastersAcademy</strong>
   </p>

@@ -1,6 +1,6 @@
 export interface ContactsInterface {
    imgPath: string;
-   username: string;
+   fullname: string;
    email: string;
    phoneNumber: string;
    subscription: string;

@@ -15,6 +15,7 @@ declare var $:any;
   styleUrls: ['./sidenav.component.css']
 })
 export class SidenavComponent implements OnInit {
+  adminImgPath;
   darkTheme= false;
   imgURL;
   rooms = [];
@@ -37,6 +38,7 @@ export class SidenavComponent implements OnInit {
     this.imgURL = this.localstorage.get('imgURL');
     this.auth = authService;
     this.userService = userService;
+    this.adminImgPath= this.localstorage.get('admin_user_profile');
   }
 
   onDarkTheme(){
@@ -82,11 +84,6 @@ export class SidenavComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.preferenceService.userProfile.subscribe(
-      imgPath => {
-        this.imgURL= this.localstorage.get('imgURL');
-      }
-    )
     this.user = this.userService.getUser();
     this.rooms = this.userService.getRooms();
     console.log(this.rooms);
@@ -195,7 +192,6 @@ export class PreferencesDialog{
     reader.onload = (_event) => {
       this.imgURL = reader.result;
       this.localstorage.set("imgURL", this.imgURL);
-      this.preferenceService.userProfile.next(true);
     };
   }
 }

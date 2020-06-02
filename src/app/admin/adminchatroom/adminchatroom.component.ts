@@ -30,7 +30,7 @@ export class AdminchatroomComponent implements OnInit {
   version = VERSION;
   createRoomDialogRef: MatDialogRef<NewChatroomComponent>;
   deleteRoomDialogRef: MatDialogRef<DeleteChatroomComponent>;
-
+  editRoomDialogRef: MatDialogRef<NewChatroomComponent>
   constructor(private dialog: MatDialog, private auth: AuthService,
     private chatRoomService: ChatRoomService) {
  
@@ -47,6 +47,9 @@ export class AdminchatroomComponent implements OnInit {
     this.deleteRoomDialogRef = this.dialog.open(DeleteChatroomComponent, {
       data: room
     });
+  }
+  editRoom(room) {
+    this.editRoomDialogRef = this.dialog.open(NewChatroomComponent);
   }
 
   getCoupons(coupon){

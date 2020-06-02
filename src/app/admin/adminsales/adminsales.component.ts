@@ -17,7 +17,7 @@ export class AdminsalesComponent implements OnInit {
   mode: ProgressSpinnerMode = 'determinate';
   showSpinner= false;
 
-  displayedColumns: string[] = ['date', 'username', 'email', 'plan', 'description', 'amount',  'status'];
+  displayedColumns: string[] = ['date', 'fullname', 'email', 'plan', 'description', 'amount',  'status'];
   dataSource = new MatTableDataSource<SalesInterface>(this.salesService.getSalesData());
 
   searchActive= false;

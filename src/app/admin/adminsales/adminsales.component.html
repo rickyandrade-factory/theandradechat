@@ -38,10 +38,10 @@
                         </ng-container>
 
                         <!-- ID Column -->
-                        <ng-container matColumnDef="username">
-                            <th mat-header-cell *matHeaderCellDef mat-sort-header> Username
+                        <ng-container matColumnDef="fullname">
+                            <th mat-header-cell *matHeaderCellDef mat-sort-header> Name
                             </th>
-                            <td mat-cell *matCellDef="let row"> {{row.username}} </td>
+                            <td mat-cell *matCellDef="let row"> {{row.fullname}} </td>
                         </ng-container>
 
                         <!-- Name Column -->
@@ -86,10 +86,10 @@
                         </ng-container>
 
                         <!-- username search Column -->
-                        <ng-container matColumnDef="usernameSearch">
+                        <ng-container matColumnDef="nameSearch">
                             <th mat-header-cell *matHeaderCellDef>
                                 <mat-form-field *ngIf="searchActive">
-                                    <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Username">
+                                    <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Name">
                                 </mat-form-field>
                             </th>
                         </ng-container>
@@ -138,7 +138,7 @@
                         <tr mat-header-row *matHeaderRowDef="displayedColumns"
                             [ngClass]="{'activeSearchHeader': searchActive == true}"></tr>
                         <tr mat-header-row
-                            *matHeaderRowDef="['dateSearch','usernameSearch', 'emailSearch','planSearch', 'descriptionSearch','empty1','statusSearch']"
+                            *matHeaderRowDef="['dateSearch','nameSearch', 'emailSearch','planSearch', 'descriptionSearch','empty1','statusSearch']"
                             [ngClass]="{'activeRow': searchActive == true}" style="display: none;">
                         </tr>
                         <tr mat-row *matRowDef="let row; columns: displayedColumns;">

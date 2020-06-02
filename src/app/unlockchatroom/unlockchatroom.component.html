@@ -2,8 +2,8 @@
   <div class="message_list" #scrollMe [scrollTop]="scrollMe.scrollHeight">
       <div class="msg_placeholder messagelineodd msg_placeholder_sep msg_delivered" *ngFor="let msg of messages">
           <div user-popover="" class="msg_avatar " style="cursor: pointer;" title="">
-            <img style="border-radius: 50%;width:40px; height:40px" [src]="imgURL" *ngIf="imgURL">
-            <img style="border-radius: 50%;width:40px; height:40px" src="assets/mini-logo.png" *ngIf="!imgURL">
+            <img style="border-radius: 50%;width:40px; height:40px" src="assets/mini-logo.png" *ngIf="!adminImgPath">
+            <img style="border-radius: 50%;width:40px; height:40px" src="{{adminImgPath}}" *ngIf="adminImgPath">
           </div>
           <div class="msg_username_date">
             <span user-popover="" class="msg_username " style="cursor: pointer;" title="">{{msg.userinfo.username}} </span>
