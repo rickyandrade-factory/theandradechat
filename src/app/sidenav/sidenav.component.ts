@@ -16,7 +16,7 @@ declare var $:any;
 })
 export class SidenavComponent implements OnInit {
   adminImgPath;
-  darkTheme= false;
+  darkTheme;
   imgURL;
   rooms = [];
   roomId: any = ""
@@ -42,11 +42,13 @@ export class SidenavComponent implements OnInit {
   }
 
   onDarkTheme(){
-    if(this.darkTheme == false){
-      this.document.body.classList.add('dark-theme');
+    if(this.darkTheme == true){
+      this.localstorage.set("theme", false);
+      this.document.body.classList.remove('dark-theme');
     }
     else{
-      this.document.body.classList.remove('dark-theme');
+      this.localstorage.set("theme", true);
+      this.document.body.classList.add('dark-theme');
     }
   }
 
@@ -84,6 +86,14 @@ export class SidenavComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.darkTheme= this.localstorage.get('theme');
+    if(this.darkTheme == true){
+      this.document.body.classList.add('dark-theme');
+    }
+    else{
+      this.document.body.classList.remove('dark-theme');
+    }
+
     this.user = this.userService.getUser();
     this.rooms = this.userService.getRooms();
     console.log(this.rooms);
