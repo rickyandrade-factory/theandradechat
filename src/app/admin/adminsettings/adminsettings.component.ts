@@ -19,7 +19,7 @@ export class AdminsettingsComponent implements OnInit {
 
 
   constructor(private dialog: MatDialog,
-    private localStorage: LocalStorageService,
+    private localStorage: LocalStorageService,  
     private newAvatarService: NewAvatarService){
     this.adminImgPath = this.localStorage.get('admin_user_profile');
   }
@@ -49,6 +49,7 @@ export class NewTeamAvatarDialog implements OnInit {
  ngOnInit(){
    
  }
+
   adminImgPath;
   preview(files) {
     if (files.length === 0)
@@ -58,7 +59,11 @@ export class NewTeamAvatarDialog implements OnInit {
     reader.onload = (_event) => {
       this.adminImgPath = reader.result;
       this.localStorage.set("admin_user_profile", this.adminImgPath);
-      this.newAvatarService.newAvatar.next(true);
+      
     };
+  }
+
+  onUpload(){
+    this.newAvatarService.newAvatar.next(true);
   }
 }

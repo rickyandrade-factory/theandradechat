@@ -57,6 +57,7 @@ export class ProfileDialog implements OnInit {
     reader.onload = (_event) => {
       this.adminImgPath = reader.result;
       this.localStorage.set("admin_user_profile", this.adminImgPath);
+      this.newAvatarService.newAvatar.next(true);
     };
   }
 

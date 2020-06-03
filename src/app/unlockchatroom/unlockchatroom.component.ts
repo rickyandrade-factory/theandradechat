@@ -4,7 +4,6 @@ import { OnpointRoomComponent } from '../onpoint-room/onpoint-room.component';
 import { UserService } from '../services/user.service';
 import { MatDialog } from '@angular/material';
 import { LocalStorageService } from 'angular-web-storage';
-import { PreferenceService } from '../sidenav/preferences.service';
 declare var $:any;
 @Component({
   selector: 'app-unlockchatroom',

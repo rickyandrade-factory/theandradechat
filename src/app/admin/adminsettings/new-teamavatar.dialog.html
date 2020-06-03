@@ -14,13 +14,13 @@
         <img style="width: 100%" src="{{adminImgPath}}" *ngIf="adminImgPath">
         <div class="hoving-avatar">
             <input #file type="file" accept='image/*' (change)="preview(file.files)" />
-            <span>SELECT NEW FILE</span>
+            <span style="color: #fff;">SELECT NEW FILE</span>
         </div>
     </div>
     </div>
     <div class="modal-footer wrap-div">
         <button mat-dialog-close class="btn btn-default pull-left" type="button">Cancel</button>
-        <button mat-dialog-close class="btn btn-blue" >Upload</button>
+        <button mat-dialog-close class="btn btn-blue" (click)="onUpload()">Upload</button>
     </div>
 </div>
 

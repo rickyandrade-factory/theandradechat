@@ -6,7 +6,6 @@ import { lockeddialogComponent } from './locked-dialog.component';
 import { SocketService } from '../services/socket.service';
 import { LocalStorageService } from 'angular-web-storage';
 import { DOCUMENT } from '@angular/common';
-import { PreferenceService } from './preferences.service';
 declare var $:any;
 
 @Component({
@@ -30,7 +29,7 @@ export class SidenavComponent implements OnInit {
     lastname: String
   };
 
-  constructor(@Inject(DOCUMENT) private document: Document, private preferenceService: PreferenceService,
+  constructor(@Inject(DOCUMENT) private document: Document,
   userService: UserService, authService: AuthService,
      private socketService: SocketService,
      public dialog : MatDialog,
@@ -151,7 +150,7 @@ export class PreferencesDialog{
   billing:boolean;
   advanced:boolean;
 
-  constructor(private localstorage: LocalStorageService, private preferenceService: PreferenceService){
+  constructor(private localstorage: LocalStorageService){
     this.imgURL = this.localstorage.get('imgURL');
   }
   ngOnChanges() {
