@@ -466,6 +466,8 @@ p.teamName {
 
 .admin-dashboard #team-wrapper .teamName{
   display: inline-block;
+  max-width: 130px;
+  overflow: hidden;
 }
 .admin-dashboard  li.divider.no-line {
   background: #2b2b2b;
@@ -693,7 +695,6 @@ a.profile-menu {
   border-bottom: 1px solid #f4f4f4;
 }
 .box-header {
-  color: #444;
   display: block;
   padding: 10px;
   position: relative;
@@ -734,10 +735,10 @@ a.profile-menu {
   -o-transition: all .3s linear;
   transition: all .3s linear;
   position: absolute;
-  top: 0px;
+  top: 20px;
   right: 10px;
   z-index: 0;
-  font-size: 90px;
+  font-size: 80px;
   color: rgba(0,0,0,.15);
 }
 .content .col-lg-2 {
@@ -751,8 +752,11 @@ a.profile-menu {
   z-index: 1;
 }
 .small-box {
-  z-index: 0;
-  height: 120px;
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+  margin: 0 auto 20px auto;
+  padding: 25px 5px;
 }
 .small-box>.inner {
   padding: 10px;
@@ -840,12 +844,14 @@ a.profile-menu {
 .admin-dashboard .content-header {
   position: relative;
   padding: 15px 15px 0 15px;
-  color:#555;
 }
 .admin-dashboard .teamName h5{
   margin-bottom: 5px!important;
   font-size: 18px;
   margin: 0;
+  text-overflow: ellipsis;
+  width: 100%;
+  overflow: hidden;
 }
 .admin-dashboard .teamName span{
   font-size:12px;
@@ -895,7 +901,212 @@ a.profile-menu {
 .panelBox p b{
  color:#444;
 }
-/* dark-theme */
+/* dark-theme admin */
+.black-theme app-admin .mat-drawer-container {
+  background-color: #252525!important;
+  color: rgba(255,255,255,.87)!important;
+}
+.black-theme app-adminsettings .content .box {
+  background: #111;
+  border-top: 3px solid #000!important;
+}
+.black-theme app-adminsettings .content .box .box-body table{
+  background: #111!important;
+}
+.black-theme app-adminsettings .content .box .box-body table td {
+  border-top: 1px solid #252525!important;
+}
+.black-theme .admin-dashboard .list-group-item {
+  background-color: #252525;
+  border: 1px solid #000;
+}
+.black-theme .admin-dashboard .box-footer {
+  background-color: #252525;
+  border-top: 1px solid #252525;
+  padding: 2px;
+}
+.black-theme .notificationMenu .mat-menu-content {
+  background: #252525;
+  border: #fff;
+  padding: 0!important;
+}
+.black-theme .mat-menu-item {
+  color: rgb(230, 230, 230);
+  border-bottom: 1px solid #000!important;
+}
+.black-theme  app-registration-settings .box-body{
+  background: #111;
+  color: #fff;
+}
+.black-theme  app-registration-setiings .mat-list-base .mat-list-item {
+  color: rgba(255,255,255,.87);
+  border-bottom: 1px solid rgba(0,0,0,.87);
+}
+.black-theme  app-registration-setiings .mat-list-base .mat-list-item:last-child {
+  border-bottom: none;
+}
+.black-theme  app-registration-setiings mat-list-option {
+  border-bottom: 1px solid rgba(0,0,0,.87);
+}
+.black-theme app-adminapi .empty {
+  background: #111!important;
+}
+.black-theme app-adminapi .box-body {
+  background: #111!important;
+}
+.black-theme app-adminapi  .box.box-default {
+  background: #111!important;
+}
+.black-theme app-registration-setiings .box .box-body{
+ background-color: #111;
+}
+.black-theme app-adminonlineativity table{
+  color: #c7c7c7;
+  background: #111;
+}
+.black-theme app-adminonlineativity table td,.black-theme app-adminonlineativity table th {
+  border-right: solid 1px #1b1b1b;
+  border-bottom: solid 1px #1b1b1b;
+}
+.black-theme app-adminonlineativity table td:first-child button {
+  color: #c7c7c7!important;
+}
+.black-theme app-adminonlineativity .popover-inner{
+  background: #1c1c1c;
+  border: 1px solid #353535;
+}
+.black-theme app-adminonlineativity .box.box-default {
+  border-top: 3px solid #000!important;
+  box-shadow: none;
+  border: 1px solid #1b1b1b;
+  background: #111;
+}
+.black-theme .admin-marketing .mat-tab-body-content {
+  background: #111;
+}
+.black-theme .mat-list-item-disabled{
+  background-color: #252525;
+}
+.black-theme app-admin .toolbox {
+  background: #252525;
+  border-bottom: solid 2px #1b1b1b;
+}
+.black-theme .mat-dialog-container {
+  background: #252525;
+  color: rgba(255,255,255,.87); 
+}
+.black-theme .new_user_dialog.modal-content {
+  background-color: #252525;
+}
+.black-theme  .new_user_dialog .modal-header {
+  border-bottom: 1px solid #161616;
+}
+.black-theme .new_user_dialog .modal-footer {
+  border-top: 1px solid #161616;
+}
+.black-theme .mat-form-field-label {
+  color: rgba(255, 255, 255, 0.7);
+}
+.black-theme  .mat-hint {
+  color: rgba(255, 255, 255, 0.7);
+}
+.black-theme .new_user_dialog .close span{
+  color: #fff!important;
+}
+.black-theme mat-select .mat-select-value-text span{
+  color: rgba(255, 255, 255, 0.7);
+}
+.black-theme .mat-table .mat-header-cell {
+  color: rgba(255,255,255,.74);
+}
+.black-theme .mat-table {
+  background-color: #252525;
+}
+.black-theme .mat-table .mat-cell, .mat-footer-cell {
+  color: rgba(255,255,255,.74);
+}
+.black-theme .mat-paginator, .mat-paginator-page-size .mat-select-trigger {
+  color: rgba(255,255,255,.74);
+}
+.black-theme .mat-paginator {
+  background-color: #252525;
+}
+.black-theme .mat-table td,.black-theme .mat-table th{
+  border-right: 1px solid rgba(0,0,0,.12);
+}
+.black-theme .admin-dashboard .box {
+  border-top: 3px solid #1b1b1b!important;
+  box-shadow: none;
+  border: 1px solid #1b1b1b;
+  background: #252525;
+}
+.black-theme .empty_data {
+  border-bottom: 1px solid rgba(0,0,0,.12);
+  color: rgba(255,255,255,.74);
+}
+.black-theme .admin-dashboard .mat-drawer-inner-container {
+  background: #000!important;
+}
+.black-theme .admin-dashboard #team-wrapper {
+  background-color: #111;
+}
+.black-theme .box .btn-link {
+  color: #fff;
+}
+.black-theme .text-muted {
+  color: #fff;
+}
+.black-theme .well{
+  background-color: #000000!important;
+}
+.black-theme app-adminsales .box-body + div  table{
+  color: #f4f4f4;
+  background: #252525;
+  border: 1px solid #fff;
+}
+.black-theme app-adminsales .paymentCalendarDate{
+  color: rgba(255,255,255,.5);
+}
+.black-theme app-adminsales .box-header + table {
+  color: #f4f4f4;
+  background: #252525;
+  border: 1px solid #ddd;
+  margin: 0;
+}
+.black-theme .admin-dashboard .navbar-fixed-top {
+  background-color: #000000;
+}
+.black-theme .box-body table {
+  color: #f4f4f4;
+  background: #252525;
+}
+.black-theme app-adminsettings p {
+  color: #afafaf!important;
+}
+.black-theme .admin-widget .mat-tab-body-content {
+  background: #111;
+}
+.black-theme app-adminwidget mat-tab-body table.table{
+  color: #fff!important;
+  background: #252525!important;
+}
+.black-theme app-adminwidget mat-tab-body table.table td p{
+  color:#bbb!important;
+}
+.black-theme app-adminwidget mat-tab-body table.table td{
+  border-top:none!important;
+}
+.black-theme app-adminwidget mat-tab-body table.table td h4 small{
+  color:#bbb!important;
+}
+.black-theme app-adminwidget .lead{
+    border: solid 1px #000;
+    box-shadow: inset 0 0 30px #545454;
+}
+.black-theme .mat-tab-labels {
+  background-color: #000000;
+}
+/* dark-theme app */
 .dark-theme .example-container {
   background: #252525;
 }
@@ -1005,7 +1216,7 @@ a.profile-menu {
 .dark-theme .roomHeader button {
   background: black;
 }
-app-dashboard .mat-slide-toggle-bar {
+.theme .mat-slide-toggle-bar {
   background: rgba(255, 255, 255, 0.5);
 }
 /* app dialog */

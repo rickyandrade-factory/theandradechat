@@ -9,7 +9,6 @@ import { NewCouponsComponent } from './new-coupons.component';
 import {ProgressSpinnerMode} from '@angular/material/progress-spinner';
 import { CouponService } from './admincoupons.service';
 import {CouponsInterface} from './admincoupons.interface';
-import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-admincoupons',
@@ -32,8 +31,7 @@ export class AdmincouponsComponent implements OnInit {
     const fileNameDialogRef = this.dialog.open(NewCouponsComponent);
   }
 
-  constructor(private couponService: CouponService,private dialog: MatDialog, @Inject(DOCUMENT) private document: Document) {
-    this.document.body.classList.remove('dark-theme');
+  constructor(private couponService: CouponService,private dialog: MatDialog) {
   }
  
   ngOnInit() {

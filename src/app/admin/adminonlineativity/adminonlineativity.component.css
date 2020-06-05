@@ -40,7 +40,7 @@ td, th{
     width: 35px;
 }
 td:first-child button{
-    color: #333!important;
+    color: #333;
 }
 .box .box-body {
     padding: 15px;

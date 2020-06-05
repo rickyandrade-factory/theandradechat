@@ -1,5 +1,4 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import { DOCUMENT } from '@angular/common';
 declare var angular: any;
 
 @Component({
@@ -14,8 +13,7 @@ export class AdmindashboardComponent implements OnInit {
   // constructor() { }
   screenWidth: number;
 
-  constructor(@Inject(DOCUMENT) private document: Document) {
-    this.document.body.classList.remove('dark-theme');
+  constructor() {
     // set screenWidth on page load
     this.screenWidth = window.innerWidth;
     window.onresize = () => {

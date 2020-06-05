@@ -10,7 +10,6 @@ import { InviteContactComponent } from './invite-contact.component';
 import {ProgressSpinnerMode} from '@angular/material/progress-spinner';
 import {ContactsInterface} from './admincontacts.interface';
 import {ContactsService } from './admincontacts.service'
-import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-admincontactss',
@@ -37,9 +36,7 @@ export class AdmincontactsComponent implements OnInit {
     const fileNameDialogRef1 = this.dialog.open(InviteContactComponent);
   }
     constructor(private dialog: MatDialog, 
-      private contactsService: ContactsService,
-      @Inject(DOCUMENT) private document: Document) {
-      this.document.body.classList.remove('dark-theme');
+      private contactsService: ContactsService) {
       }
 
   ngOnInit() {
