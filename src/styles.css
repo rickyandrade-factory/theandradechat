@@ -323,7 +323,7 @@ button.md-ink-ripple:hover{
   border: none;
 }
 p.teamName {
-  color: #bbb;
+  color: #182b2a;
 }
 .button.md-ink-ripple:active {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,.4);
@@ -902,6 +902,22 @@ a.profile-menu {
  color:#444;
 }
 /* dark-theme admin */
+.black-theme .mat-menu-content {
+  background: #111;
+  border: 1px solid #000;
+}
+.black-theme a.profile-menu {
+  color: #fff;
+}
+.black-theme li.divider.mat-menu-item{
+  background: #000;
+}
+.black-theme .mat-menu-content li a {
+  color: #eee;
+}
+.black-theme .dropdown>.dropdown-toggle {
+  color: #fff;
+}
 .black-theme app-admin .mat-drawer-container {
   background-color: #252525!important;
   color: rgba(255,255,255,.87)!important;
@@ -1107,6 +1123,29 @@ a.profile-menu {
   background-color: #000000;
 }
 /* dark-theme app */
+.dark-theme .sidepanel-item .sidepanel-item-header .sidepanel-item-username {
+  color: #fff;
+}
+.dark-theme p.teamName {
+  color: #ffffff;
+}
+.dark-theme .profile-usermenu > ul > li > a {
+  color: #fff;
+  border-bottom: 1px solid #000;
+}
+body.dark-theme .mat-menu-content {
+  background: #111;
+  border: 1px solid #000;
+}
+body.dark-theme li.divider.mat-menu-item{
+  background: #000;
+}
+body.dark-theme .mat-menu-content li a {
+  color: #eee;
+}
+.dark-theme .dropdown>.dropdown-toggle {
+  color: #fff;
+}
 .dark-theme .example-container {
   background: #252525;
 }
@@ -1152,6 +1191,17 @@ a.profile-menu {
 }
 .dark-theme #team-wrapper{
   background-color: #111;
+  border-bottom: 1px solid #053742;
+}
+.dark-theme .rooms-sidebar-header{
+  border-bottom: 1px solid #053742;
+  border-top: 1px solid #053742;
+}
+.dark-theme  .messages-sidebar-header, .dark-theme  .rooms-sidebar-header, .dark-theme  .sidebar .nav-sidebar .nav-item-header {
+  border-top: 1px solid #053742;
+}
+.dark-theme .nav-sidebar > li > a {
+  color: #ccc;
 }
 .dark-theme .messages-sidebar-header, 
 .dark-theme .rooms-sidebar-header, 
@@ -1184,10 +1234,20 @@ a.profile-menu {
 }
 .dark-theme .mat-tab-labels{
   background-color: #111!important;
+  color: #fff;
+}
+.dark-theme .mat-drawer.mat-drawer-side.admin_and_users {
+  background: #323232!important;
+  color: #fff;
 }
 .dark-theme .card_box{
   background-color: #111!important;
+  color: #fff;
 }
+.dark-theme  .sidepanel-item:nth-child(odd) {
+  background-color: #000!important;
+}
+.sid
 .dark-theme .panelUser:hover{
   background-color: #252525!important;
 }
@@ -1216,9 +1276,7 @@ a.profile-menu {
 .dark-theme .roomHeader button {
   background: black;
 }
-.theme .mat-slide-toggle-bar {
-  background: rgba(255, 255, 255, 0.5);
-}
+
 /* app dialog */
 profile-dialog .modal-header{
   border-bottom: 1px solid #ccc;
@@ -1229,7 +1287,7 @@ profile-dialog .modal-footer{
 }
 /* chat */
 .right-sidenav .mat-drawer-inner-container {
-  background-color: #142D31;
+  background-color: #fff;
   height: calc(100vh - 67px);
 }
 .container-all-page mat-drawer-content {
@@ -1926,7 +1984,6 @@ div#topBar {
   margin-right: 10px;
 }
 app-dashboard mat-form-field {
-  color:#fff;
   width: auto;  
 }
 .controls {
@@ -2000,10 +2057,9 @@ button.btn.btn-blue {
   padding-bottom: 2px;
 }
 .admin_and_users {
-  color: #fff;
+  color: #111;
   width: 220px;
   height: calc(100vh - 60px)!important;
-  background: #19373c;
 }
 .empty-msg {
   text-align: center;
@@ -2014,13 +2070,13 @@ button.btn.btn-blue {
   padding: 3rem 0;
 }
 .sidepanel-item:nth-child(odd) {
-  background-color: #13282d!important;
+  background-color: #f1f1f1!important;
 }
 .sidepanel-item {
   padding: 0.6rem;
 }
 .sidepanel-item .sidepanel-item-header .sidepanel-item-username {
-  color: #fff;
+  color: #323232;
   font-weight: 700;
   font-family: Montserrat,sans-serif;
 }
@@ -2046,7 +2102,7 @@ button.btn.btn-blue {
   font-size: 0.8rem;
 }
 .panelUser:hover {
-  background: #15343a;
+  background: rgba(80, 157, 247, 0.2);
 }
 .admin_and_users .mat-tab-label{
   width:33.3%;
@@ -2057,15 +2113,13 @@ button.btn.btn-blue {
   transition: all .2s ease-in-out;
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
-  background-color: #102127;
+  background-color: #fff;
   z-index: 9;
-  color: #fff;
+  color: #323232;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2)
 }
 .card_box .ui-widget-header-user {
-  border: 1px solid #494949;
-  color: #ddd;
   padding-left: 10px;
   font-size: 14px;
   letter-spacing: 1px;
@@ -2131,8 +2185,11 @@ button.btn.btn-blue {
   color:#fff!important;
   white-space:normal;
 } */
+.widget-sidenav {
+  border-right: none!important;
+}
 app-dashboard .mat-drawer.mat-drawer-side {
-  background-color: #0C2124!important;
+  background-color: #fff!important;
   background-image: none;
   border-right: 1px solid #1A83F5;
   height: 100vh;
@@ -2187,11 +2244,11 @@ app-dashboard .mat-drawer.mat-drawer-side {
   overflow: hidden!important;
 }
 .messages-sidebar-header, .rooms-sidebar-header, .sidebar .nav-sidebar .nav-item-header {
-  background-color: #0e2226;
+  background-color: #fff;
   color: #e26727!important;
   padding: 10px!important;
   font-family: Montserrat,sans-serif;
-  border-top: 1px solid #0e2226;
+  border-top: 1px solid #eee;
 }
 #dvFootnote .btn-primary {
   background-color: #1A83F5!important;
@@ -2231,7 +2288,7 @@ app-dashboard .mat-drawer.mat-drawer-side {
 .sidebar {
   border: 0;
   box-shadow: none;
-  background-color: #0C2124!important;
+  background-color: #fff!important;
 }
 .topLeft {
   font-size: 18px;
@@ -2255,9 +2312,10 @@ app-dashboard .mat-drawer.mat-drawer-side {
   background-color: transparent;
   border-style: none;
   border-width: 0;
-  color: #ddd;
+  color: #182a2b;
   padding: 0;
 }
+
 span.glyphicon.glyphicon-one-fine-dot.sidebar-status-dot.userStatus1 {
   top: 14px;
 }
@@ -2366,6 +2424,16 @@ li.mat-menu-item {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   background-clip: padding-box;
 }
+body .mat-menu-content {
+  background: #fff;
+  border: 1px solid #eee;
+}
+body li.divider.mat-menu-item{
+  background: #eee;
+}
+body .mat-menu-content li a {
+  color: #182b2a;
+}
 button.mat-menu-item {
   font-size: 13px;
 }
@@ -2432,10 +2500,11 @@ preferences-dialog .modal-footer{
 .rooms-sidebar-header {
     font-weight: 400;
     font-size: 12px;
-    background-color: transparent;
+    background-color: #fff;
     padding-left: 10px;
     letter-spacing: 1.5px;
-    border-bottom: 1px solid #053742;
+    font-weight: 600;
+    border-bottom: 1px solid #eee;
 }
 .nav>li>a.flex-parent {
   letter-spacing: 0;
@@ -2443,8 +2512,9 @@ preferences-dialog .modal-footer{
 
 .nav-sidebar > li > a {
   padding-left: 20px;
-  color: #c6c6c6;
+  color: #182b2a;
   padding-right: 10px;
+  font-weight: 500;
 }
 .roomIcon {
   opacity: .5;
@@ -2491,9 +2561,10 @@ a.flex-parent span.flex-child {
   border: none!important;
 }
 .rooms_list a.active{
-  background-color:rgba(26, 131, 245, 0.5)!important;
+  background-color:rgba(26, 131, 245, 0.8)!important;
   color: #fff!important;
   font-family: Poppins,sans-serif,monospace;
+  border-left: 3px solid rgb(26, 131, 245);
 }
 /* registration settings */
 
@@ -6261,7 +6332,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: rgba(26, 131, 245, 0.2)!important;
+  background-color: rgba(26, 131, 245, 0.3)!important;
+}
+.rooms_list a.active:hover {
+  background: rgba(26, 131, 245, 0.7)!important;
 }
 .nav > li.disabled > a {
   color: #444444;
@@ -9780,7 +9854,7 @@ button.widget-btn span span{
 .dropdown-toggle:hover .fa-angle-down,
 .dropdown-toggle:hover .sidebar-username {
     opacity: 1;
-    color: #fff;
+    color: #e26727;
 }
 
 .filterForm {
@@ -10035,7 +10109,8 @@ button.widget-btn span span{
 }
 
 .input-user-filter-wrapper {
-    padding: 10px;
+  padding: 10px 10px;
+  margin-bottom: -20px;
 }
 
 .profile-usermenu > ul > li > a:hover {
@@ -10884,6 +10959,7 @@ a.flex-parent {
 
 .widgets .widgets-header .widgets-menu .widgets-menu-item a .line, .label-primary, .profile-usermenu > ul > li > a:hover, .popup > .dropdown-menu > li > a:hover, .popup > .dropdown-menu > li > a:focus, .popup > .dropdown-menu > li > a.selected {
     background-color: #e26727 !important;
+    color: #fff;
 }
 
 .mat-tab-label, .mat-tab-link{
@@ -10891,6 +10967,9 @@ a.flex-parent {
 }
 .mat-tab-label.mat-tab-label-active {
   color: #e26727;
+}
+.mat-tab-header{
+  border-bottom: none;
 }
 .mat-tab-label {
   position: relative;
@@ -10924,6 +11003,9 @@ a.flex-parent {
 }
 .mat-tab-labels {
   background-color: #182B29;
+}
+app-dashboard .mat-tab-labels {
+  background-color: #323232;
 }
 ::-webkit-scrollbar-thumb {
     background: #363635 !important;
@@ -10981,7 +11063,8 @@ a.flex-parent {
 
 
 .profile-usermenu > ul > li > a {
-    color: #fff !important;
+  color: #323232;
+  border-bottom: 1px solid #ddd;
 }
 
 .panel-primary {
@@ -11027,7 +11110,7 @@ a.flex-parent {
 
 #team-wrapper {
   padding: 20px 0;
-    background-color: #102127;
+  border-bottom: 1px solid #eee;
 }
 
 #team-wrapper img.sidebar-avatar {

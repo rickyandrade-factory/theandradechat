@@ -66,9 +66,9 @@
       </span>
     </a>
   </li>
-  <li class="messages-sidebar-header ng-scope" ng-if="(chatRooms|filter:{n_type:3}).length">SERVICES</li>
-  <li ng-repeat="chatRoom in chatRooms | filter:{n_type:3}" class="ng-scope">
-    <a ng-click="changeRoom(chatRoom);" style="cursor:pointer" class="service-item flex-parent">
+  <li class="rooms-sidebar-header" >SERVICES</li>
+  <li>
+    <a style="cursor:pointer" class="service-item flex-parent">
       <span class="flex-child">
         <i class="roomIcon fa fa-fw fa-rss" aria-hidden="true"></i>
         <span class="room-name ng-binding" style="max-width: 157px;">Market Mastermind</span>
@@ -79,23 +79,11 @@
       </span>
     </a>
   </li>
-  <li ng-repeat="chatRoom in chatRooms | filter:{n_type:3}" class="ng-scope">
+  <li class="ng-scope">
     <a ng-click="changeRoom(chatRoom);" style="cursor:pointer" class="service-item flex-parent">
       <span class="flex-child">
         <i class="roomIcon fa fa-fw fa-video-camera" aria-hidden="true"></i>
         <span class="room-name ng-binding" style="max-width: 157px;">7 Day Intense Forex Training</span>
-      </span>
-      <span class="flex-child-icons">
-      </span>
-      <span class="flex-child-actions">
-      </span>
-    </a>
-  </li>
-  <li ng-repeat="chatRoom in chatRooms | filter:{n_type:3}" class="ng-scope">
-    <a ng-click="changeRoom(chatRoom);" style="cursor:pointer" class="service-item flex-parent">
-      <span class="flex-child">
-        <i class="roomIcon fa fa-fw fa-dollar" aria-hidden="true"></i>
-        <span class="room-name ng-binding" style="max-width: 157px;">FREE Strategy Session</span>
       </span>
       <span class="flex-child-icons">
       </span>
@@ -116,8 +104,8 @@
   </div>
   <li class="messages-sidebar-header rooms-sidebar-header">DIRECT MESSAGES</li>
   <li class="directChat ng-scope">
-    <a href="#" >
-      <span class="material-icons userStatus1" ng-class="'userStatus'+user.status">person_outline</span> RiskyRicky
+    <a >
+      <span class="material-icons userStatus1" >person_outline</span> RiskyRicky
     </a>
   </li>
   <div id="dvFootnote" class="ng-scope">
