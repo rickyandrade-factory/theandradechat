@@ -1,4 +1,3 @@
-
 import {Component, OnInit, ViewChild} from '@angular/core';
 import {MatPaginator} from '@angular/material/paginator';
 import {MatSort} from '@angular/material/sort';
@@ -23,6 +22,8 @@ export class AdminservicesComponent implements OnInit {
   mode: ProgressSpinnerMode = 'determinate';
   showSpinner= false;
 
+  services=[];
+  
   displayedColumns: string[] = ['name', 'description', 'url',  'plan', 'coupon', 'sort',  'checkout', 'alter'];
   dataSource= new MatTableDataSource<ServiceInterface>(this.serviceService.getServices());
 
@@ -43,11 +44,13 @@ export class AdminservicesComponent implements OnInit {
   ngOnInit() {
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
+
+   console.log(this.serviceService.getServices());
+
   }
 
   // onrefresh
   onRefresh(){
-    console.log('it isw')
     this.showSpinner= true;
     this.mode = 'indeterminate';
     setTimeout(() => {

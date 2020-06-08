@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl } from '@angular/forms';
+import { ServiceService } from './adminservices.service';
 @Component({
   template: `
   <div class="modal-content new_user_dialog chatroom_dialog">
@@ -10,12 +12,12 @@ import { Component } from '@angular/core';
          Add Service
       </h4>
    </div>
-   <form class="">
+   <form (ngSubmit)="onSubmitService()" [formGroup]="newService">
       <div class="modal-body wrap-div">
       <div class="row">
           <div class="col-xs-12">
               <mat-form-field>
-                <input matInput placeholder="Name *" value=""> 
+                <input matInput placeholder="Name *" value="" name="name" formControlName="name" > 
               </mat-form-field>
           </div>
       </div>    
@@ -29,10 +31,10 @@ import { Component } from '@angular/core';
       <div class="row">
             <div class="col-xs-12">
                 <mat-form-field>
-                    <input matInput placeholder="Amount" value="rss"  class="example-right-align">
+                    <input matInput placeholder="icon" value="rss"  class="example-right-align">
                     <span matPrefix><span class="fa fa-rss fa-fw"></span>&nbsp;</span>
                 </mat-form-field>
-                <span class="bottom_line">Enter the icon name you like from this library <a href="http://fontawesome.io/icons">http://fontawesome.io/icons</a></span>
+                <span class="bottom_line">Enter the icon name you like from this library <a target="_blank" href="http://fontawesome.io/icons">http://fontawesome.io/icons</a></span>
             </div>
       </div>  
       <div class="row">
@@ -85,6 +87,31 @@ import { Component } from '@angular/core';
   `
 }) 
 
-export class NewServicesComponent {
+export class NewServicesComponent implements OnInit {
     type= 'type1';
+    newService: FormGroup;
+
+    constructor(private adminServiceOfService: ServiceService){
+        
+    }
+    ngOnInit(){
+        this.newService= new FormGroup({
+            'name': new FormControl(""),
+            'description': new FormControl(null),
+            'url': new FormControl(null),
+            'plan': new FormControl(null),
+            'coupon': new FormControl(null),
+            'sort': new FormControl(null),
+        });
+
+    
+      
+
+    }
+
+    onSubmitService(){
+        
+    }
+
+
 }

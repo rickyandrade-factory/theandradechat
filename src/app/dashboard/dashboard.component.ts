@@ -45,6 +45,7 @@ export class DashboardComponent implements OnInit {
     this.socketService.initSocket();
     this.isAdmin = this.userService.userIsAdmin();
     console.log(`this.isAdmin: ${this.isAdmin}`);
+    this.document.body.classList.remove('black-theme');
 
     //for mat-drawer responsive
     this.screenWidth = window.innerWidth;
