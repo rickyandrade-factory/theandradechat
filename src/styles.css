@@ -1287,7 +1287,7 @@ profile-dialog .modal-footer{
 }
 /* chat */
 .right-sidenav .mat-drawer-inner-container {
-  background-color: #fff;
+  background-color: #f2f2f2;
   height: calc(100vh - 67px);
 }
 .container-all-page mat-drawer-content {
@@ -2189,7 +2189,7 @@ button.btn.btn-blue {
   border-right: none!important;
 }
 app-dashboard .mat-drawer.mat-drawer-side {
-  background-color: #fff!important;
+  background-color: #f2f2f2!important;
   background-image: none;
   border-right: 1px solid #1A83F5;
   height: 100vh;
@@ -2244,11 +2244,11 @@ app-dashboard .mat-drawer.mat-drawer-side {
   overflow: hidden!important;
 }
 .messages-sidebar-header, .rooms-sidebar-header, .sidebar .nav-sidebar .nav-item-header {
-  background-color: #fff;
+  background-color: #f2f2f2;
   color: #e26727!important;
   padding: 10px!important;
   font-family: Montserrat,sans-serif;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #e2e2e2;
 }
 #dvFootnote .btn-primary {
   background-color: #1A83F5!important;
@@ -2500,11 +2500,11 @@ preferences-dialog .modal-footer{
 .rooms-sidebar-header {
     font-weight: 400;
     font-size: 12px;
-    background-color: #fff;
+    background-color: #f2f2f2;
     padding-left: 10px;
     letter-spacing: 1.5px;
     font-weight: 600;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #e2e2e2;
 }
 .nav>li>a.flex-parent {
   letter-spacing: 0;
@@ -11110,7 +11110,7 @@ app-dashboard .mat-tab-labels {
 
 #team-wrapper {
   padding: 20px 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #e2e2e2;
 }
 
 #team-wrapper img.sidebar-avatar {
