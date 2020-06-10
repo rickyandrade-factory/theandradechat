@@ -6,16 +6,16 @@ import { ContactsInterface } from './admincontacts.interface';
 export class ContactsService {
 
     CONTACTS_DATA: ContactsInterface[] = [
-        { imgPath: '', 
-          fullname: ' aman singh', 
-          email: '', 
-          phoneNumber: '', 
-          subscription: '', 
-          type: '', 
-          deviceNumber: '', 
-          registered: '', 
-          lastActivity: '' 
-        },
+        // { imgPath: '', 
+        //   fullname: ' aman singh', 
+        //   email: '', 
+        //   phoneNumber: '', 
+        //   subscription: '', 
+        //   type: '', 
+        //   deviceNumber: '', 
+        //   registered: '', 
+        //   lastActivity: '' 
+        // },
     ];
 
     getContacts() {

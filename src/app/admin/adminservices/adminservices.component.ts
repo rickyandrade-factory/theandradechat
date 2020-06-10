@@ -10,6 +10,7 @@ import { NewServicesComponent } from './new-services.component';
 import {ProgressSpinnerMode} from '@angular/material/progress-spinner';
 import { ServiceService } from './adminservices.service';
 import {ServiceInterface} from './adminservices.interface'
+import { LocalStorageService } from 'angular-web-storage';
 
 
 @Component({
@@ -22,7 +23,7 @@ export class AdminservicesComponent implements OnInit {
   mode: ProgressSpinnerMode = 'determinate';
   showSpinner= false;
 
-  services=[];
+  ServicesDataSource = new MatTableDataSource([]);
   
   displayedColumns: string[] = ['name', 'description', 'url',  'plan', 'coupon', 'sort',  'checkout', 'alter'];
   dataSource= new MatTableDataSource<ServiceInterface>(this.serviceService.getServices());
@@ -38,15 +39,17 @@ export class AdminservicesComponent implements OnInit {
     this.fileNameDialogRef = this.dialog.open(NewServicesComponent);
   }
 
-  constructor(private dialog: MatDialog, private serviceService: ServiceService) {
+  constructor(private localStorage: LocalStorageService ,private dialog: MatDialog, private serviceService: ServiceService) {
   }
 
   ngOnInit() {
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
 
-   console.log(this.serviceService.getServices());
-
+    var parsedData = JSON.parse(this.localStorage.get('newService'));
+    this.ServicesDataSource = new MatTableDataSource(parsedData);
+   
+   
   }
 
   // onrefresh
