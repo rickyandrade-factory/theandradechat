@@ -140,16 +140,16 @@
                                 <h3 class="box-title">Latest Registrations</h3>
                             </div>
                             <div class="list-group">
-                                <!-- <div class="list-group-item">
+                                <div class="list-group-item" *ngFor="let contact of contacts">
                                     <div class="media">
                                         <div class="media-left">
-                                            <img class="img-circle img-sm" src="//cdn.echofin.co/avatars/5d053022.png">
+                                            <img class="img-circle img-sm" src="{{contact.imgPath}}">
                                         </div>
                                         <div class="media-body ng-binding">
-                                            <strong class="ng-binding">mohit-kumar</strong><br> 2019-07-25 16:01:17
+                                            <strong>{{contact.fullname}}</strong><br> {{contact.registered}}
                                         </div>
                                     </div>
-                                </div> -->
+                                </div>
                             </div>
                             <div class="box-footer">
                                 <a routerLink="../contacts" class="btn btn-sm btn-link pull-right">

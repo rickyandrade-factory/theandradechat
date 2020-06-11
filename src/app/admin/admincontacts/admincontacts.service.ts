@@ -6,16 +6,16 @@ import { ContactsInterface } from './admincontacts.interface';
 export class ContactsService {
 
     CONTACTS_DATA: ContactsInterface[] = [
-        // { imgPath: '', 
-        //   fullname: ' aman singh', 
+        // { imgPath: '//cdn.echofin.co/avatars/f02df689.png', 
+        //   fullname: 'aman singh', 
         //   email: '', 
         //   phoneNumber: '', 
         //   subscription: '', 
         //   type: '', 
         //   deviceNumber: '', 
-        //   registered: '', 
+        //   registered: ' 2020-04-11 10:15:11', 
         //   lastActivity: '' 
-        // },
+        // }
     ];
 
     getContacts() {

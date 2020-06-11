@@ -1,4 +1,5 @@
 import { Component, OnInit, Inject } from '@angular/core';
+import {ContactsService} from '../admincontacts/admincontacts.service'
 declare var angular: any;
 
 @Component({
@@ -9,11 +10,11 @@ declare var angular: any;
 export class AdmindashboardComponent implements OnInit {
 
   selected= 'option2';
-  
+  contacts:any;
   // constructor() { }
   screenWidth: number;
 
-  constructor() {
+  constructor(private contactsService: ContactsService) {
     // set screenWidth on page load
     this.screenWidth = window.innerWidth;
     window.onresize = () => {
@@ -23,6 +24,7 @@ export class AdmindashboardComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.contacts= this.contactsService.getContacts();
   }
 
 }
