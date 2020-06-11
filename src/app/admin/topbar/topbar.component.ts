@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material';
 import { LocalStorageService } from 'angular-web-storage';
 import { NewAvatarService } from '../adminsettings/new-avatar.service';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-topbar',
@@ -10,7 +11,7 @@ import { NewAvatarService } from '../adminsettings/new-avatar.service';
 })
 export class TopbarComponent implements OnInit {
 
-  constructor(private dialog: MatDialog) { }
+  constructor(private authService: AuthService ,private dialog: MatDialog) { }
 
   ngOnInit() {
   }
@@ -19,6 +20,10 @@ export class TopbarComponent implements OnInit {
     const fileNameDialogRef = this.dialog.open(ProfileDialog, {
       width: '600px',
     });
+  }
+
+  logout() {
+    this.authService.logout();
   }
 
 }
@@ -48,6 +53,7 @@ export class ProfileDialog implements OnInit {
       
     )
   }
+ 
   adminImgPath;
   preview(files) {
     if (files.length === 0)

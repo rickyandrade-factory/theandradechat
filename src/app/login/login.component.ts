@@ -1,10 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { MatInputModule } from '@angular/material/input';
 import { AuthService } from '../services/auth.service';
 import { User } from '../models';
 import { Router } from '@angular/router';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { LocalStorageService } from 'angular-web-storage';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-login',
@@ -24,7 +25,10 @@ export class LoginComponent implements OnInit {
     password: new FormControl("", Validators.required)
   });
 
-  constructor(private auth: AuthService, public user: User, public router: Router) { }
+  constructor(@Inject(DOCUMENT) private document: Document,private auth: AuthService, public user: User, public router: Router) { 
+    this.document.body.classList.remove('black-theme');
+    this.document.body.classList.remove('dark-theme');
+  }
 
   ngOnInit() {
     if (this.user.getLoginUserId()) {

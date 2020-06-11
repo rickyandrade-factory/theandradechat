@@ -480,7 +480,7 @@ p.teamName {
   display:none;
 }
 .admin-dashboard img.navbar-brand-logo {
-  height: 48px;
+  max-width: 130px;
   margin: 5px;
 }
 .admin-dashboard .logo-mini{
