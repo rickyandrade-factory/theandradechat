@@ -10,8 +10,7 @@
     <img class="sidebar-avatar usr_img" src="{{adminImgPath}}" *ngIf="adminImgPath" (click)="openteamavatar()">
     <div class="teamName" title="MarketMastersAcademy">
         <h5 class="ng-binding">MarketMastersAcademy</h5>
-        <span class="team-members ng-binding">b7e64405</span>
-        <mat-slide-toggle class="pull-right theme" [(ngModel)]="blackTheme" (click)="onBlackTheme()" color="warn">
+        <mat-slide-toggle class="pull-left theme" [(ngModel)]="blackTheme" (click)="onBlackTheme()" color="warn">
         </mat-slide-toggle>
     </div>
    
@@ -115,7 +114,7 @@
     </li>
     <li class="divider no-line"></li>
     <li>
-        <a class="flex-parent  video-link" href="#" target="_blank">
+        <a class="flex-parent  video-link">
             <i class="fa fa-youtube fa-fw"></i>
             <span>Video Tutorials</span>
         </a>

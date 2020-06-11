@@ -23,7 +23,7 @@ export class AdminservicesComponent implements OnInit {
   mode: ProgressSpinnerMode = 'determinate';
   showSpinner= false;
 
-  ServicesDataSource = new MatTableDataSource([]);
+  // ServicesDataSource = new MatTableDataSource([]);
   
   displayedColumns: string[] = ['name', 'description', 'url',  'plan', 'coupon', 'sort',  'checkout', 'alter'];
   dataSource= new MatTableDataSource<ServiceInterface>(this.serviceService.getServices());
@@ -46,8 +46,8 @@ export class AdminservicesComponent implements OnInit {
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
 
-    var parsedData = JSON.parse(this.localStorage.get('newService'));
-    this.ServicesDataSource = new MatTableDataSource(parsedData);
+    // var parsedData = JSON.parse(this.localStorage.get('newService'));
+    // this.ServicesDataSource = new MatTableDataSource(parsedData);
    
    
   }

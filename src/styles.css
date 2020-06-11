@@ -600,6 +600,8 @@ a.profile-menu {
   margin-bottom: -1px;
   background-color: #fff;
   border: 1px solid #ddd;
+  border-left: none;
+  border-right: none;
 }
 .admin-dashboard  .media:first-child {
   margin-top: 0;

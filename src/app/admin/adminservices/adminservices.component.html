@@ -15,7 +15,7 @@
     </div>
   </div>
   <div class="mat-elevation-z8 box box-default">
-    <table mat-table [dataSource]="ServicesDataSource" matSort [ngClass]="{'ActiveSpinner': showSpinner == true}">
+    <table mat-table [dataSource]="dataSource" matSort [ngClass]="{'ActiveSpinner': showSpinner == true}">
       <!-- ID Column -->
       <ng-container matColumnDef="name">
         <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
@@ -67,7 +67,7 @@
       <tr mat-row *matRowDef="let row; columns: displayedColumns;">
       </tr>
     </table>
-    <div class="empty_data" *ngIf="!ServicesDataSource.data.length">
+    <div class="empty_data" *ngIf="!dataSource.data.length">
       No data available
     </div>
     <mat-paginator [pageSizeOptions]="[14, 30, 50, 100]"></mat-paginator>

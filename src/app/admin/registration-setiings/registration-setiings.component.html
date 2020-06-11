@@ -14,11 +14,9 @@
                     </mat-list-item>
                     <mat-list-option disabled [checkboxPosition]="before" [selected]="true">
                         Email
-                        <mat-slide-toggle color="primary" [disabled]="true" [checked]="true"></mat-slide-toggle>
                     </mat-list-option>
                     <mat-list-option disabled [checkboxPosition]="before" [selected]="true">
                         Password
-                        <mat-slide-toggle color="primary" [disabled]="true" [checked]="true"></mat-slide-toggle>
                     </mat-list-option>
                     <mat-list-option [checkboxPosition]="before" *ngFor="let registrationField of RegistrationList">
                         {{registrationField}}
