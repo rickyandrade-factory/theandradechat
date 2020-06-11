@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material';
 import { LocalStorageService } from 'angular-web-storage';
 import { NewAvatarService } from '../adminsettings/new-avatar.service';
-import { AuthService } from 'src/app/services/auth.service';
+import { AuthService } from '../../services/auth.service';
+import { UserService } from '../../services/user.service';
 
 @Component({
   selector: 'app-topbar',
@@ -10,10 +11,11 @@ import { AuthService } from 'src/app/services/auth.service';
   styleUrls: ['./topbar.component.css']
 })
 export class TopbarComponent implements OnInit {
-
-  constructor(private authService: AuthService ,private dialog: MatDialog) { }
+  user: string;
+  constructor(private userService: UserService ,private authService: AuthService ,private dialog: MatDialog) { }
 
   ngOnInit() {
+    this.user= this.userService.getUser();
   }
 
   onProfile(){
@@ -35,22 +37,23 @@ export class TopbarComponent implements OnInit {
   styleUrls: ['./topbar.component.css']
 })
 export class ProfileDialog implements OnInit {
+  user: string;
  ELEMENT_DATA = [
-    {plan: '7 Day Trial', trial: '', CC: '', period: '2020-06-12', canceled: 'NO'},
+    // {plan: '7 Day Trial', trial: '', CC: '', period: '2020-06-12', canceled: 'NO'},
   ];
   
   displayedColumns: string[] = ['plan', 'trial', 'CC', 'period', 'canceled'];
   dataSource = this.ELEMENT_DATA;
 
-  constructor(private localStorage: LocalStorageService, private newAvatarService: NewAvatarService){
+  constructor(private userService: UserService ,private localStorage: LocalStorageService, private newAvatarService: NewAvatarService){
     this.adminImgPath= this.localStorage.get('admin_user_profile');
   }
   ngOnInit(){
+    this.user= this.userService.getUser();
     this.newAvatarService.newAvatar.subscribe(
       newPath => {
         this.adminImgPath= this.localStorage.get('admin_user_profile');
       }
-      
     )
   }
  
