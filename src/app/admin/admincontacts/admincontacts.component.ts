@@ -22,8 +22,8 @@ export class AdmincontactsComponent implements OnInit {
   showSpinner= false;
   searchActive= false;
   displayedColumns: string[] = ['img', 'fullname', 'email', 'phone', 'subscription', 'type',  'devices', 'registered', 'lastActivity', 'action'];
-  dataSource= new MatTableDataSource<ContactsInterface>(this.contactsService.getContacts());
-
+  // dataSource= new MatTableDataSource<ContactsInterface>(this.contactsService.getContacts());
+ dataSource=[];
 
   @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
   @ViewChild(MatSort, {static: true}) sort: MatSort;
@@ -40,17 +40,21 @@ export class AdmincontactsComponent implements OnInit {
       }
 
   ngOnInit() {
-    this.dataSource.paginator = this.paginator;
-    this.dataSource.sort = this.sort;
+    // this.dataSource.paginator = this.paginator;
+    // this.dataSource.sort = this.sort;
+
+    this.contactsService.getContacts().subscribe(
+      (data => this.dataSource= data)
+    )
   }
 
-  applyFilter(filterValue: string) {
-    this.dataSource.filter = filterValue.trim().toLowerCase();
+  // applyFilter(filterValue: string) {
+  //   this.dataSource.filter = filterValue.trim().toLowerCase();
 
-    if (this.dataSource.paginator) {
-      this.dataSource.paginator.firstPage();
-    }
-  }
+  //   if (this.dataSource.paginator) {
+  //     this.dataSource.paginator.firstPage();
+  //   }
+  // }
 
     // onrefresh
     onRefresh(){
