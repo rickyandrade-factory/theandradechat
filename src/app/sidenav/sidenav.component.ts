@@ -95,12 +95,12 @@ export class SidenavComponent implements OnInit {
 
     this.user = this.userService.getUser();
     this.rooms = this.userService.getRooms();
-    console.log(this.rooms);
-    console.log(this.user);
-    if (this.rooms.length > 0) {
+    if (this.rooms && this.rooms.length > 0) {
       this.roomId = this.rooms[0]._id;
       this.socketService.joinRoom(this.rooms[0]._id);
       this.selectedRoom.emit(this.rooms[0].title);
+    }else{
+      this.rooms = [];
     }
   }
 

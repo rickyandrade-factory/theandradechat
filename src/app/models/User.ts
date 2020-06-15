@@ -20,6 +20,7 @@ export class User {
   country: string;
 
   getLoginUser() {
+    console.log(localStorage.getItem(HttpService.localStorageUserName).toString());
     return localStorage.getItem(HttpService.localStorageUserName).toString();
   }
 
@@ -28,7 +29,7 @@ export class User {
     if (this.getLoginUser() === "undefined" || !this.getLoginUser()) {
       return false;
     } else {
-      return JSON.parse(this.getLoginUser())._id;
+      return JSON.parse(this.getLoginUser()).id;
     }
   }
 
@@ -61,8 +62,9 @@ export class User {
     return JSON.parse(this.getLoginUser()).userFirstname + ' ' + JSON.parse(this.getLoginUser()).userLastname;
   }
 
-  setLoginUser(user) {
-    localStorage.setItem(HttpService.localStorageUserName, JSON.stringify(user));
+  setLoginUser(response) {
+    localStorage.setItem(HttpService.localStorageUserName, JSON.stringify(response.data));
+    localStorage.setItem(HttpService.localStorageAccessToken, response.token);
   }
 
   get() {

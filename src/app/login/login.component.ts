@@ -43,6 +43,7 @@ export class LoginComponent implements OnInit {
       this.auth.loginUser(userData.email, userData.password).subscribe((data: any) => {
         this.isLoading = false;
         if (data.success) {
+          console.log("siuccess------------", data);
           this.auth.loginSuccess(data);
         } else {
           this.loginFailed(data);

@@ -24,6 +24,10 @@ export class AuthService {
     return this.user.getLoginUserId() ? true : false;
   }
 
+  public createUserAdmin(data) {
+    return this.http.createUserAdmin(data)
+  }
+
   public registerUser(data) {
     return this.http.registerUser(data).subscribe((data) => {
       console.log(data);
@@ -48,16 +52,20 @@ export class AuthService {
   }
 
   public loginUser(email, password) {
-    return this.http.getUserDetails({ email, password })
+    return this.http.getUserDetails({ email, password });
+  }
+
+  public getAllSystemUsers(){
+    return this.http.getAllSystemUsers();
   }
 
   public loginSuccess(user) {
     this.initlializeUser(user);
   }
 
-  public initlializeUser(user) {
-    this.user.setLoginUser(user.data);
-    this.user.setAllRooms(user.data.rooms);
+  public initlializeUser(response) {
+    this.user.setLoginUser(response);
+    // this.user.setAllRooms(user.data.rooms);
     this.afterLogin();
   }
 
@@ -65,6 +73,7 @@ export class AuthService {
     console.log("user.data-----");
     this.router.navigate(['/dashboard']);
   }
+
   public loginFailed() {
 
   }

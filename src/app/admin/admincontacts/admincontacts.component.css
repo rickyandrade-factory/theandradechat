@@ -31,3 +31,6 @@ td:last-child, th:last-child {
   min-width: 120px;
   width: 120px;
 }
+.adminClass {
+  font-weight: bold
+ }
