@@ -1,16 +1,17 @@
-import {Component, OnInit, ViewChild, Inject} from '@angular/core';
-import {MatPaginator} from '@angular/material/paginator';
-import {MatSort} from '@angular/material/sort';
-import {MatTableDataSource} from '@angular/material/table';
+import { Component, OnInit, ViewChild, Inject } from '@angular/core';
+import { MatPaginator } from '@angular/material/paginator';
+import { MatSort } from '@angular/material/sort';
+import { MatTableDataSource } from '@angular/material/table';
 
-import {MatDialog} from '@angular/material';
+import { MatDialog } from '@angular/material';
 import { NewContactComponent } from './new-contact.component';
 import { InviteContactComponent } from './invite-contact.component';
 
-import {ProgressSpinnerMode} from '@angular/material/progress-spinner';
-import {ContactsInterface} from './admincontacts.interface';
-import {ContactsService } from './admincontacts.service'
-
+import { ProgressSpinnerMode } from '@angular/material/progress-spinner';
+import { ContactsInterface } from './admincontacts.interface';
+import { ContactsService } from './admincontacts.service'
+import { HttpClient } from '@angular/common/http';
+import { map } from 'rxjs/operators';
 @Component({
   selector: 'app-admincontactss',
   templateUrl: './admincontacts.component.html',
@@ -19,14 +20,15 @@ import {ContactsService } from './admincontacts.service'
 export class AdmincontactsComponent implements OnInit {
 
   mode: ProgressSpinnerMode = 'determinate';
-  showSpinner= false;
-  searchActive= false;
-  displayedColumns: string[] = ['img', 'fullname', 'email', 'phone', 'subscription', 'type',  'devices', 'registered', 'lastActivity', 'action'];
+  isFetching = false;
+  showSpinner = false;
+  searchActive = false;
+  displayedColumns: string[] = ['img', 'fullname', 'email', 'phone', 'subscription', 'type', 'devices', 'registered', 'lastActivity', 'action'];
   // dataSource= new MatTableDataSource<ContactsInterface>(this.contactsService.getContacts());
- dataSource=[];
+  dataSource = [];
 
-  @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
-  @ViewChild(MatSort, {static: true}) sort: MatSort;
+  @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
+  @ViewChild(MatSort, { static: true }) sort: MatSort;
 
   openAddFileDialog() {
     const fileNameDialogRef = this.dialog.open(NewContactComponent);
@@ -35,17 +37,29 @@ export class AdmincontactsComponent implements OnInit {
   openInviteContactDialog() {
     const fileNameDialogRef1 = this.dialog.open(InviteContactComponent);
   }
-    constructor(private dialog: MatDialog, 
-      private contactsService: ContactsService) {
+  constructor(private dialog: MatDialog, private http: HttpClient,
+    private contactsService: ContactsService) {
+  }
+
+
+  onfetchContacts() {
+    this.contactsService.fetchPosts().subscribe(
+      (contacts) => {
+      this.isFetching = true,
+        this.dataSource = contacts
       }
+    ), (error) => {
+      console.log(error.message);
+    }
+  }
+
+
 
   ngOnInit() {
     // this.dataSource.paginator = this.paginator;
     // this.dataSource.sort = this.sort;
 
-    this.contactsService.getContacts().subscribe(
-      (data => this.dataSource= data)
-    )
+    this.onfetchContacts();
   }
 
   // applyFilter(filterValue: string) {
@@ -56,22 +70,29 @@ export class AdmincontactsComponent implements OnInit {
   //   }
   // }
 
-    // onrefresh
-    onRefresh(){
-      this.showSpinner= true;
-      this.mode = 'indeterminate';
-      setTimeout(() => {
-        this.mode = 'determinate';
-        this.showSpinner= false;
-      }, 1000);
-    }
+  onDelete(id: any) {
+    this.http.delete('https://durable-tangent-260506.firebaseio.com/data.json', id).subscribe(
+      () => console.log(id)
+    );
+  }
 
-    // filter
-    onActiveSearch(){
-      this.searchActive= !this.searchActive;
-    }
+  // onrefresh
+  onRefresh() {
+    this.showSpinner = true;
+    this.mode = 'indeterminate';
+    setTimeout(() => {
+      this.mode = 'determinate';
+      this.showSpinner = false;
+      this.onfetchContacts();
+    }, 1000);
+  }
 
-    
+  // filter
+  onActiveSearch() {
+    this.searchActive = !this.searchActive;
+  }
+
+
 }
 
 

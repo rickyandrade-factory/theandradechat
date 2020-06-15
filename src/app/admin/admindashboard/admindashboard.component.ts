@@ -24,7 +24,9 @@ export class AdmindashboardComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.contacts= this.contactsService.getContacts();
+    // this.contactsService.getContacts().subscribe(
+    //   (responseData) => this.contacts= responseData
+    // )
   }
 
 }

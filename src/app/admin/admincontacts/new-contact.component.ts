@@ -1,4 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
+import { ContactsService } from './admincontacts.service';
+import { ContactsInterface } from './admincontacts.interface';
+import { HttpClient } from '@angular/common/http';
+import { MatDialog } from '@angular/material';
 
 @Component({
   template: `
@@ -11,19 +16,19 @@ import { Component } from '@angular/core';
          Add Contact
       </h4>
    </div>
-   <form class="">
+   <form (ngSubmit)="onSubmitContacts(contacts)" #contacts="ngForm">
       <div class="modal-body wrap-div">
         <div class="row">
           <div class="col-xs-12">
             <mat-form-field>
-                <input matInput placeholder="Full Name">
+                <input matInput placeholder="Full Name" ngModel name="fullname" required>
             </mat-form-field>
           </div>
         </div>
         <div class="row">    
             <div class="col-sm-6">
                <mat-form-field>
-                  <input matInput placeholder="Email">
+                  <input matInput placeholder="Email" ngModel name="email" required>
                </mat-form-field>
             </div>
             <div class="col-sm-6">
@@ -42,7 +47,7 @@ import { Component } from '@angular/core';
                      <mat-option value="User">User</mat-option>
                   </mat-select>
                   <mat-hint>
-                     <a href="#" class="">
+                     <a class="">
                            <i class="fa fa-info-circle"></i>
                      </a>
                   </mat-hint>
@@ -71,13 +76,31 @@ import { Component } from '@angular/core';
       </div>
       <div class="modal-footer wrap-div">
          <button autofocus="" mat-dialog-close  class="btn btn-default pull-left" type="button" >Cancel</button>
-         <button class="btn btn-blue">Create</button>
+         <button type="submit"  class="btn btn-blue">Create</button>
       </div>
    </form>
 </div>
   `
 })
-export class NewContactComponent {
+export class NewContactComponent implements OnInit{
+
+   constructor(private contactsService: ContactsService, 
+      private dialogRef: MatDialog,
+      private http: HttpClient){
+
+   }
+
+   onSubmitContacts(contacts: NgForm){
+      const dataOfContacts: ContactsInterface[]= contacts.value;
+         this.http.post('https://durable-tangent-260506.firebaseio.com/data.json', dataOfContacts).subscribe(
+            (res) => {console.log(res),this.dialogRef.closeAll()}
+         )
+    }
+
+   ngOnInit(){
+
+   }
+
 
 }
 

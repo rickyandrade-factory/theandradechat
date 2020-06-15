@@ -1,24 +1,13 @@
 [
-    { 
-      "imgPath": "", 
-      "fullname": "", 
-      "email": "", 
-      "phoneNumber": "", 
-      "subscription": "", 
-      "type": "", 
-      "deviceNumber": "", 
-      "registered": "", 
-      "lastActivity": ""
-    },
-    { 
-        "imgPath": "", 
-        "fullname": "", 
-        "email": "", 
-        "phoneNumber": "", 
-        "subscription": "", 
-        "type": "", 
-        "deviceNumber": "", 
-        "registered": " ", 
-        "lastActivity": ""
-      }
+    // { 
+    //   "imgPath": "", 
+    //   "fullname": "", 
+    //   "email": "", 
+    //   "phoneNumber": "", 
+    //   "subscription": "", 
+    //   "type": "", 
+    //   "deviceNumber": "", 
+    //   "registered": "", 
+    //   "lastActivity": ""
+    // }
 ]

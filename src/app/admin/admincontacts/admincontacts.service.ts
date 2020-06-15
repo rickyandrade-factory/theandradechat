@@ -2,9 +2,8 @@ import { Injectable } from '@angular/core';
 import { ContactsInterface } from './admincontacts.interface';
 import { HttpClient, HttpResponse, HttpErrorResponse } from '@angular/common/http';
 import { Observable } from 'rxjs';
-
-// import 'rxjs/add/operator/catch';
-// import 'rxjs/add/observable/throw';
+import { NgForm } from '@angular/forms';
+import {map} from 'rxjs/operators'
 @Injectable({
     providedIn: 'root'
 })
@@ -27,14 +26,26 @@ export class ContactsService {
     constructor(private http: HttpClient){
     }
 
-    
+     fetchPosts(): Observable<ContactsInterface[]> {
+        return this.http
+          .get('https://durable-tangent-260506.firebaseio.com/data.json')
+          .pipe(
+            map(responseData => {
+              const postsArray = [];
+              for (const key in responseData) {
+                if (responseData.hasOwnProperty(key)) {
+                  postsArray.push({ ...responseData[key], id: key });
+                }
+              }
+              return postsArray;
+            })
+          )
+      }
 
-    getContacts(): Observable<ContactsInterface[]> {
-        return this.http.get<ContactsInterface[]>(this._url + '/data.json');
+
+    deleteContacts(id: any){
+       return this.http.delete('https://durable-tangent-260506.firebaseio.com/data.json', id);
     }
     
-    // errHandler(error: HttpErrorResponse){
-    //     return Observable.throw(error.message || "server error");
-    // }
 
 }
