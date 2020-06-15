@@ -24,8 +24,8 @@ export class AdmincontactsComponent implements OnInit {
   showSpinner = false;
   searchActive = false;
   displayedColumns: string[] = ['img', 'fullname', 'email', 'phone', 'subscription', 'type', 'devices', 'registered', 'lastActivity', 'action'];
-  // dataSource= new MatTableDataSource<ContactsInterface>(this.contactsService.getContacts());
-  dataSource = [];
+  //  dataSource= new MatTableDataSource<ContactsInterface>(this.contactsService.fetchContacts());
+ dataSource = [];
 
   @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
   @ViewChild(MatSort, { static: true }) sort: MatSort;
@@ -43,10 +43,11 @@ export class AdmincontactsComponent implements OnInit {
 
 
   onfetchContacts() {
-    this.contactsService.fetchPosts().subscribe(
+    this.contactsService.fetchContacts().subscribe(
       (contacts) => {
       this.isFetching = true,
         this.dataSource = contacts
+        console.log(contacts)
       }
     ), (error) => {
       console.log(error.message);

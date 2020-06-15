@@ -26,7 +26,7 @@ export class ContactsService {
     constructor(private http: HttpClient){
     }
 
-     fetchPosts(): Observable<ContactsInterface[]> {
+     fetchContacts(): Observable<ContactsInterface[]> {
         return this.http
           .get('https://durable-tangent-260506.firebaseio.com/data.json')
           .pipe(
