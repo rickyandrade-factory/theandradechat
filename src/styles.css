@@ -190,6 +190,9 @@ span.bottom_line {
 .mb-30{
   margin-bottom:30px;
 }
+.pb-0{
+  padding-bottom: 0!important;
+}
 iframe{
   border:none;
 }

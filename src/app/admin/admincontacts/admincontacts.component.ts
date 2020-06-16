@@ -11,6 +11,10 @@ import { ProgressSpinnerMode } from '@angular/material/progress-spinner';
 import { ContactsInterface } from './admincontacts.interface';
 import { ContactsService } from './admincontacts.service'
 import { AuthService } from '../../services/auth.service';
+import { UserService } from 'src/app/services/user.service';
+import { LocalStorageService } from 'angular-web-storage';
+import { NewAvatarService } from '../adminsettings/new-avatar.service';
+import { NgForm, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-admincontactss',
@@ -23,7 +27,16 @@ export class AdmincontactsComponent implements OnInit {
   showSpinner = false;
   searchActive = false;
   displayedColumns: string[] = ['img', 'fullname', 'email', 'phone', 'subscription', 'type', 'devices', 'registered', 'lastActivity', 'action'];
-  dataSource: MatTableDataSource<any[]>
+  // dataSource: MatTableDataSource<any[]>
+  dataSource = new MatTableDataSource([{
+    firstname: 'mohit kumar', email: 'email@gmail.com', phone_number: 8783823748
+  }, {
+    firstname: 'kuldeep kumar', email: 'email@gmail.com', phone_number: 8783823748
+  }, {
+    firstname: 'mohit kumar', email: 'email@gmail.com', phone_number: 8783823748
+  }, {
+    firstname: 'kuldeep kumar', email: 'email@gmail.com', phone_number: 8783823748
+  }]);
   dataSourceEmpty = true;
 
   @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
@@ -35,12 +48,24 @@ export class AdmincontactsComponent implements OnInit {
     const fileNameDialogRef = this.dialog.open(NewContactComponent);
   }
 
+  openEditDialog(){
+    const fileNameDialogRef = this.dialog.open(EditContactComponent, {
+      width: '600px',
+    });
+  }
+
+  openDeleteDialog(){
+    const fileNameDialogRef = this.dialog.open(DeleteContactComponent);
+  }
+
   openInviteContactDialog() {
     const fileNameDialogRef1 = this.dialog.open(InviteContactComponent);
   }
 
   ngOnInit() {
-    this.loadContacts();
+    //  this.loadContacts();
+    this.dataSource.paginator = this.paginator;
+    this.dataSource.sort = this.sort;
   }
 
   loadContacts() {
@@ -54,7 +79,7 @@ export class AdmincontactsComponent implements OnInit {
           this.dataSourceEmpty = false;
         }
         this.dataSource = new MatTableDataSource(response.data)
-      }else{
+      } else {
         this.showSpinner = false;
         this.mode = 'determinate';
       }
@@ -79,7 +104,59 @@ export class AdmincontactsComponent implements OnInit {
 
 
 
+//edit contact dialog
+@Component({
+  selector: 'edit-contact-dialog',
+  templateUrl: './edit-contact.dialog.html',
+  styleUrls: ['./admincontacts.component.css']
+})
+export class EditContactComponent implements OnInit {
+  user: string;
+
+ ELEMENT_DATA = [
+    // {plan: '7 Day Trial', trial: '', CC: '', period: '2020-06-12', canceled: 'NO'},
+  ];
+  contactForm:any=[];
+  displayedColumns: string[] = ['plan', 'trial', 'CC', 'period', 'canceled'];
+  dataSource = this.ELEMENT_DATA;
+
+  constructor(private userService: UserService ,private localStorage: LocalStorageService, private newAvatarService: NewAvatarService){
+    this.adminImgPath= this.localStorage.get('admin_user_profile');
+  }
+  ngOnInit(){
+    this.user= this.userService.getUser();
+    this.newAvatarService.newAvatar.subscribe(
+      newPath => {
+        this.adminImgPath= this.localStorage.get('admin_user_profile');
+      }
+    )
+  }
+
+ 
+  adminImgPath;
+  preview(files) {
+    if (files.length === 0)
+      return;
+    var reader = new FileReader();
+    reader.readAsDataURL(files[0]);
+    reader.onload = (_event) => {
+      this.adminImgPath = reader.result;
+      this.localStorage.set("admin_user_profile", this.adminImgPath);
+      this.newAvatarService.newAvatar.next(true);
+    };
+  }
+}
 
 
 
 
+
+//delete contact dialog
+@Component({
+  selector: 'delete-contact-dialog',
+  templateUrl: './delete-contact.dialog.html',
+  styleUrls: ['./admincontacts.component.css']
+})
+export class DeleteContactComponent {
+
+}

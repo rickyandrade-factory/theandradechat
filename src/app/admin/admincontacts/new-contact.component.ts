@@ -119,7 +119,8 @@ export class NewContactComponent {
       status: new FormControl(1),
    });
    
-   constructor(private auth: AuthService, private userService: UserService) { }
+   constructor(private auth: AuthService, private userService: UserService) { 
+   }
 
    createUser() {
       let userData = this.validateData();

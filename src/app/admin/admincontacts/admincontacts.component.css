@@ -34,3 +34,67 @@ td:last-child, th:last-child {
 .adminClass {
   font-weight: bold
  }
+ /* editContacts */
+.media-body-left {
+  float: left;
+  width: 85px;
+  vertical-align: top;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 85px;
+  display: flex;
+  align-items: center;
+}
+.media-body-left img{
+  border-radius: 50%;
+  width: 100%;
+}
+.media-body-right {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 10px;
+}
+.modal-header button{
+  color: #888;
+}   
+.profile_dialog mat-form-field{
+  width: 100%;
+}
+.profile_dialog .col-sm-12 {
+padding: 0 15px;
+}
+.profile_dialog .row{
+  margin: 0!important;
+  padding: 0!important;
+}
+.profile_dialog .col-sm-7 {
+  padding: 0 15px;
+}
+.profile_dialog .col-sm-5 {
+  padding: 0 15px;
+}
+.profile_dialog .col-sm-4 {
+  padding: 0 15px;
+}
+.media-body-right p.info {
+  font-size: 12px;
+  color: #888!important;
+  margin: 0;
+}
+.media-body-right h4 {
+  margin-top: 5px;
+  margin-bottom: 7px;
+}
+.media-body-right p{
+  margin-bottom: 7px;
+}
+.security .alert-info{
+  background: #1A83F5!important;
+  border: #1A83F5!important;
+}
+.security .alert-info p{
+  color: #fff!important;
+}
+table{
+  width: 100%;
+}
