@@ -57,7 +57,7 @@ import { DOCUMENT } from '@angular/common';
                   </mat-select>
                   <p style="margin:0px;" *ngIf="!isValid && errorMessageRole">{{errorMessageRole}}</p>
                   <mat-hint>
-                     <a href="#" class="">
+                     <a class="">
                            <i class="fa fa-info-circle"></i>
                      </a>
                   </mat-hint>
@@ -88,7 +88,7 @@ import { DOCUMENT } from '@angular/common';
       </div>
       <div class="modal-footer wrap-div">
          <button autofocus="" mat-dialog-close  class="btn btn-default pull-left" type="button" >Cancel</button>
-         <button class="btn btn-blue">Create</button>
+         <button type="submit"  class="btn btn-blue">Create</button>
       </div>
    </form>
 </div>

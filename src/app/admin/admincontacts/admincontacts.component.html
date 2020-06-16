@@ -23,7 +23,7 @@
       <button class="btn btn-default" (click)="onActiveSearch()">
         <span class="fa fa-search"></span> Search
       </button>
-      <button class="btn btn-default" ng-click="vm.LoadUsers()" (click)="onRefresh()">
+      <button class="btn btn-default" ng-click="vm.LoadUsers()" (click)="loadContacts()">
         <span class="fa fa-refresh fa-fw" ng-class="{'fa-spin':vm.loading}"></span>
       </button>
     </div>
@@ -78,8 +78,14 @@
       <ng-container matColumnDef="devices">
         <th mat-header-cell *matHeaderCellDef mat-sort-header> Mobile Devices</th>
         <td mat-cell *matCellDef="let row">
-          <span class="badge badge-ios">
-            <span class="fa fa-apple text-muted"></span>
+          <!-- <span class=" badge-ios"
+          [ngClass]="{'badge': row.deviceNumber.length}">
+            <span class="fa fa-apple text-muted" *ngIf="row.deviceNumber"></span>
+            <span class="text">{{row.deviceNumber}}</span>
+          </span> -->
+          <span class=" badge-ios"
+          >
+            <span class="fa fa-apple text-muted" *ngIf="row.deviceNumber"></span>
             <span class="text">{{row.deviceNumber}}</span>
           </span>
         </td>
@@ -98,8 +104,8 @@
       <ng-container matColumnDef="action">
         <th mat-header-cell *matHeaderCellDef mat-sort-header> </th>
         <td mat-cell *matCellDef="let row">
-          <div class="ui-grid-cell-contents">
-            <a mat-icon-button color="warn">
+          <div class="ui-grid-cell-contents" >
+            <a mat-icon-button color="warn" (click)="onDelete(0)">
               <i class="fa fa-trash fa-fw"></i>
             </a>
             <a mat-icon-button color="primary">
@@ -184,10 +190,9 @@
       <tr mat-row *matRowDef="let row; columns: displayedColumns;">
       </tr>
     </table>
-    <!-- <div class="empty_data" *ngIf="!dataSource.data.length">
+    <div class="empty_data" *ngIf="dataSourceEmpty">
       No data available
-    </div> -->
-    <div class="empty_data" *ngIf="dataSourceEmpty">No records found</div>
+    </div>
 
     <mat-paginator [pageSizeOptions]="[13, 25, 50, 100]"></mat-paginator>
     <mat-progress-spinner [mode]="mode">

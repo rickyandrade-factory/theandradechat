@@ -24,6 +24,11 @@ export class AuthService {
     return this.user.getLoginUserId() ? true : false;
   }
 
+  get isAdmin() {
+    console.log(this.user.getLoginUserRole(), "------");
+    return this.user.getLoginUserRole() == 1 ? true : false;
+  }
+
   public createUserAdmin(data) {
     return this.http.createUserAdmin(data)
   }

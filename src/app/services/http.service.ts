@@ -56,23 +56,18 @@ export class HttpService {
   }
 
   getAllSystemUsers() {
-    let headers = new HttpHeaders({
-      'Content-Type': 'application/json',
-    });
-    headers = headers.append('Authorization', 'Bearer ' + localStorage.getItem(HttpService.localStorageAccessToken));
-    let options = { headers: headers };
-    return this.http.post(this.getEndPoint('getAllSystemUsers', 'POST'), null, options);
+    return this.http.post(this.getEndPoint('getAllSystemUsers', 'POST'), null, this.buildOptions());
   }
 
   createUserAdmin(params) {
-    let headers = new HttpHeaders({
-      'Content-Type': 'application/json',
-    });
-    headers = headers.append('Authorization', 'Bearer ' + localStorage.getItem(HttpService.localStorageAccessToken));
-    let options = { headers: headers };
-    return this.http.post(this.getEndPoint('createUserAdmin', 'POST'), params, options);
+    return this.http.post(this.getEndPoint('createUserAdmin', 'POST'), params, this.buildOptions());
   }
 
+  buildOptions(){
+    let headers = new HttpHeaders({'Content-Type': 'application/json'});
+    headers = headers.append('Authorization', 'Bearer ' + localStorage.getItem(HttpService.localStorageAccessToken));
+    return { headers: headers };
+  }
   // tslint:disable-next-line: variable-name
   getEndPoint(string: string, method: string, queryParam: string = '') {
     if (method === 'GET') {

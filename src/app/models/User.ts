@@ -25,11 +25,18 @@ export class User {
   }
 
   getLoginUserId() {
-    // if (this.getLoginUser() && this.getLoginUser() != undefined) {
     if (this.getLoginUser() === "undefined" || !this.getLoginUser()) {
       return false;
     } else {
       return JSON.parse(this.getLoginUser()).id;
+    }
+  }
+
+  getLoginUserRole() {
+    if (this.getLoginUser() === "undefined" || !this.getLoginUser()) {
+      return false;
+    } else {
+      return JSON.parse(this.getLoginUser()).role_id;
     }
   }
 

@@ -40,12 +40,23 @@ export class AdmincontactsComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.loadContacts();
+  }
+
+  loadContacts() {
+    this.showSpinner = true;
+    this.mode = 'indeterminate';
     this.auth.getAllSystemUsers().subscribe((response: any) => {
       if (response.success) {
-        if(response.data.length > 0){
+        this.showSpinner = false;
+        this.mode = 'determinate';
+        if (response.data.length > 0) {
           this.dataSourceEmpty = false;
         }
         this.dataSource = new MatTableDataSource(response.data)
+      }else{
+        this.showSpinner = false;
+        this.mode = 'determinate';
       }
     });
   }
@@ -57,15 +68,6 @@ export class AdmincontactsComponent implements OnInit {
     }
   }
 
-  // onrefresh
-  onRefresh() {
-    this.showSpinner = true;
-    this.mode = 'indeterminate';
-    setTimeout(() => {
-      this.mode = 'determinate';
-      this.showSpinner = false;
-    }, 1000);
-  }
 
   // filter
   onActiveSearch() {
