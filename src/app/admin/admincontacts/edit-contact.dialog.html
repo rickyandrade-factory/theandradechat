@@ -1,0 +1,165 @@
+<div class="modal-content new_user_dialog" style="width: auto;">
+    <div class="modal-header">
+        <button mat-dialog-close class="close">
+            <span aria-hidden="true">×</span>
+        </button>
+        <div class="media-body-left" style="position: relative;">
+            <img src="//cdn.echofin.co/avatar/b7e64405.png?t=1551496349357" *ngIf="!adminImgPath" alt="">
+            <img style="width: 100%; height: 100%;" src="{{adminImgPath}}" *ngIf="adminImgPath">
+            <div class="hoving-avatar">
+                <input #file type="file" accept='image/*' (change)="preview(file.files)" />
+                <span style="color: #fff;">Change</span>
+            </div>
+        </div>
+    
+        <div class="media-body-right">
+            <h4 class="media-heading">{{user.username}}</h4>
+            <p>{{user.email}}</p>
+            <p class="info">
+                Last Login: | Last Message: -
+            </p>
+        </div>
+    </div>
+    <div class="modal-body wrap-div profile_dialog">
+        <mat-tab-group>
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    <i class="fa fa-cubes"></i>
+                    General
+                </ng-template>
+                <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <mat-form-field>
+                                <mat-label>Full Name</mat-label>
+                                <input matInput >
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <mat-form-field>
+                                <mat-label>Email</mat-label>
+                                <input matInput >
+                            </mat-form-field>
+                        </div>
+                        <div class="col-sm-5">
+                            <mat-form-field>
+                                <mat-select placeholder="Role">
+                                    <mat-option value="Admin">Admin</mat-option>
+                                    <mat-option value="Instructor">Instructor</mat-option>
+                                    <mat-option value="Moderator">Moderator</mat-option>
+                                    <mat-option value="User">User</mat-option>
+                                </mat-select>
+                                <mat-hint>
+                                    <a class="">
+                                        <i class="fa fa-info-circle"></i>
+                                    </a>
+                                </mat-hint>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <mat-form-field>
+                                <mat-label>Address</mat-label>
+                                <textarea matInput></textarea>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <mat-form-field>
+                                <mat-label>City</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                        </div>
+                        <div class="col-sm-4">
+                            <mat-form-field>
+                                <mat-label>Zip</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                        </div>
+                        <div class="col-sm-4">
+                            <mat-form-field>
+                                <mat-label>Country</mat-label>
+                                <mat-select>
+                                    <mat-option value="Afghanistan">Afghanistan</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="modal-footer wrap-div pb-0">
+                        <button type="submit" mat-dialog-close class="btn btn-blue">Save Details</button>
+                    </div>
+                </form>
+            </mat-tab>
+    
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    <i class="fa fa-unlock-alt"></i>
+                    Security
+                </ng-template>
+                <div class="p-10 security">
+                    <div class="alert alert-info text-center">
+                        <strong>Notice</strong>
+                        <p>Remember to notify your user for the password change</p>
+                    </div>
+                    <mat-form-field>
+                        <mat-label>Password</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                    <mat-form-field>
+                        <mat-label>Repeat Password</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                </div>
+                <div class="modal-footer wrap-div pb-0" >
+                    <button mat-dialog-close class="btn btn-blue">Change Password</button>
+                </div>
+            </mat-tab>
+    
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    <i class="fa fa-money"></i>
+                    Subscriptions
+                </ng-template>
+    
+                <table mat-table [dataSource]="dataSource">
+                    <!-- Plan Column -->
+                    <ng-container matColumnDef="plan">
+                        <th mat-header-cell *matHeaderCellDef> Plan </th>
+                        <td mat-cell *matCellDef="let element"> {{element.plan}} </td>
+                    </ng-container>
+    
+                    <!-- Trial Column -->
+                    <ng-container matColumnDef="trial">
+                        <th mat-header-cell *matHeaderCellDef> Trial </th>
+                        <td mat-cell *matCellDef="let element"> {{element.trial}} </td>
+                    </ng-container>
+    
+                    <!-- CC Column -->
+                    <ng-container matColumnDef="CC">
+                        <th mat-header-cell *matHeaderCellDef> CC </th>
+                        <td mat-cell *matCellDef="let element"> {{element.CC}} </td>
+                    </ng-container>
+    
+                    <!-- Period Column -->
+                    <ng-container matColumnDef="period">
+                        <th mat-header-cell *matHeaderCellDef> Period </th>
+                        <td mat-cell *matCellDef="let element"> {{element.period}} </td>
+                    </ng-container>
+    
+                    <!-- Canceled Column -->
+                    <ng-container matColumnDef="canceled">
+                        <th mat-header-cell *matHeaderCellDef> Canceled </th>
+                        <td mat-cell *matCellDef="let element"> {{element.canceled}} </td>
+                    </ng-container>
+    
+                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                </table>
+            </mat-tab>
+        </mat-tab-group>
+    </div>
+</div>
