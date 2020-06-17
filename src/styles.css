@@ -19,6 +19,9 @@ a{
 a:focus{
   outline: none!important;
  }
+ .mt-10{
+   margin-top: 10px;
+ }
  h2.mat-dialog-title {
   padding: 10px 15px;
   margin: 0;

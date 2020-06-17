@@ -67,6 +67,7 @@ import { RegistrationSetiingsComponent } from './admin/registration-setiings/reg
 import {ProfileDialog} from './admin/topbar/topbar.component';
 import { AdminComponent } from './admin/admin.component';
 import { TopbarComponent } from './admin/topbar/topbar.component';
+import { AuthAdminGuard } from './auth.admin.guard';
 @NgModule({
   declarations: [
     AppComponent,
@@ -151,7 +152,8 @@ import { TopbarComponent } from './admin/topbar/topbar.component';
     AppConfig,
     AppLocalConfig,
     User,
-    AuthGuard
+    AuthGuard,
+    AuthAdminGuard
   ],
   entryComponents: [ProfileDialog,InviteFriendDialog,DeleteContactComponent, NewSignalDialog,DataFlashDialog, MediaUploadDialog,ManageBrockersDialog, ZoomDialog,OtherChartDialog, FXCrossRatesDialog,LiveTVDialog,Coin360Dialog,FXHeatmapDialog, MarketHoursDialog, ChartsDialog, PreferencesDialog, InviteContactComponent,EditContactComponent, NewContactComponent, NewOfferComponent,
     lockeddialogComponent, NewBillingComponent, CustomwidgetComponent, NewCouponsComponent,

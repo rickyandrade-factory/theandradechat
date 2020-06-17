@@ -25,6 +25,7 @@ import { AdminsettingsComponent } from './admin/adminsettings/adminsettings.comp
 import { AuthGuard } from './auth.guard';
 import { RegistrationSetiingsComponent } from './admin/registration-setiings/registration-setiings.component';
 import { AdminComponent } from './admin/admin.component';
+import { AuthAdminGuard } from './auth.admin.guard';
 
 
 const routes: Routes = [
@@ -33,7 +34,7 @@ const routes: Routes = [
   { path: 'register', component: SignupComponent },
   { path: 'forgotpassword', component: ForgotpasswordComponent },
   { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard]},
-  { path: 'admin', component: AdminComponent, canActivate: [AuthGuard], 
+  { path: 'admin', component: AdminComponent, canActivate: [AuthGuard, AuthAdminGuard], 
     children:[
       {path: 'dashboard', component: AdmindashboardComponent, canActivate: [AuthGuard]},
       { path: 'contacts', component: AdmincontactsComponent, canActivate: [AuthGuard]},

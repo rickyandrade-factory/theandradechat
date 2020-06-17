@@ -105,10 +105,10 @@
         <th mat-header-cell *matHeaderCellDef mat-sort-header> </th>
         <td mat-cell *matCellDef="let row">
           <div class="ui-grid-cell-contents" >
-            <a mat-icon-button color="warn" (click)="openDeleteDialog()">
+            <a mat-icon-button color="warn" (click)="openDeleteDialog(row)">
               <i class="fa fa-trash fa-fw"></i>
             </a>
-            <a mat-icon-button color="primary" (click)="openEditDialog()">
+            <a mat-icon-button color="primary" (click)="openEditDialog(row)">
               <i class="fa fa-edit fa-fw"></i>
             </a>
           </div>

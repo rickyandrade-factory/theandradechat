@@ -28,7 +28,7 @@ export class User {
     if (this.getLoginUser() === "undefined" || !this.getLoginUser()) {
       return false;
     } else {
-      return JSON.parse(this.getLoginUser()).id;
+      return JSON.parse(this.getLoginUser())._id;
     }
   }
 
