@@ -193,6 +193,9 @@ span.bottom_line {
 .pb-0{
   padding-bottom: 0!important;
 }
+.pr-0{
+  padding-right: 0!important;
+}
 iframe{
   border:none;
 }
