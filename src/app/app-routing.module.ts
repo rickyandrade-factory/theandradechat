@@ -53,22 +53,7 @@ const routes: Routes = [
     ]
   },
 
-  // { path: 'admindashboard', component: AdmindashboardComponent, canActivate: [AuthGuard]},
-  // { path: 'admincontacts', component: AdmincontactsComponent, canActivate: [AuthGuard]},
-  // { path: 'adminsales', component: AdminsalesComponent, canActivate: [AuthGuard]},
-  // { path: 'adminoffers', component: AdminoffersComponent, canActivate: [AuthGuard]},
-  // { path: 'adminbilling', component: AdminbillingComponent, canActivate: [AuthGuard]},
    { path: 'onpoint-room', component: OnpointRoomComponent, canActivate: [AuthGuard]},
-  // { path: 'admincoupons', component: AdmincouponsComponent, canActivate: [AuthGuard]},
-  // { path: 'adminchatroom', component: AdminchatroomComponent, canActivate: [AuthGuard]},
-  // { path: 'adminservices', component: AdminservicesComponent, canActivate: [AuthGuard]},
-  // { path: 'adminapi', component: AdminapiComponent, canActivate: [AuthGuard]},
-  // { path: 'adminsettings', component: AdminsettingsComponent, canActivate: [AuthGuard]},
-  // { path: 'admin-registration-settings', component: RegistrationSetiingsComponent, canActivate: [AuthGuard]},
-  // { path: 'admincompliance', component: AdmincomplianceComponent, canActivate: [AuthGuard]},
-  // { path: 'adminwidget', component: AdminwidgetComponent, canActivate: [AuthGuard]},
-  // { path: 'adminmarketing', component: AdminmarketingComponent, canActivate: [AuthGuard]},
-  // { path: 'adminonlineactivity', component: AdminonlineativityComponent, canActivate: [AuthGuard]},
   {path: '**', redirectTo: '/dashboard'}
 ];
 
