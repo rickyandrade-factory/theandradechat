@@ -10,7 +10,6 @@ import {AdminWidgetService} from '../admin/adminwidget/adminwidget.service';
 import { LocalStorageService } from 'angular-web-storage';
 import { DOCUMENT } from '@angular/common';
 import { Router } from '@angular/router';
-import { AuthService } from './services/auth.service';
 
 @Component({
   selector: 'app-dashboard',
