@@ -1,4 +1,4 @@
-<div class="login-container" >
+<div class="login-container">
   <!-- <mat-slide-toggle [(ngModel)]="darkTheme" (click)="onDarkTheme()" color="warn">
   </mat-slide-toggle> -->
   <mat-drawer-container class="example-container" autosize
@@ -13,85 +13,86 @@
       </div>
     </mat-drawer>
     <div class="example-sidenav-content">
-      <div class="navbar navbar-fixed-top navbar-inverse navbar-static-top">
+      <div class="navbar navbar-fixed-top navbar-inverse navbar-static-top" style="display: flex;">
         <!-- <button class="hamburgerHeader hamburger hamburger-arrow-left" hamburger-drv="" mat-button
           (click)="drawer.toggle()">
           <span class="icon"></span>
         </button> -->
-        <button mat-icon-button color="warn" class="hamburgerHeader" (click)="drawer.toggle()">
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="roomHeader" style="float:none;">
+        <div style="flex: 1 auto;line-height: 66px;     flex: 1 auto;
+        line-height: 66px;
+        min-width: 250px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;">
+          <button mat-icon-button color="warn" class="hamburgerHeader" (click)="drawer.toggle()">
+            <i class="fa fa-bars"></i>
+          </button>
           <i class="roomHash fa fa-hashtag" aria-hidden="true"></i>
           <span class="roomTitle text-capitalize  ">{{roomTitle}}</span>
-          <i class="fa" ng-class="{'roomLock': room.n_type==2 , 'fa-unlock': room.n_type==2}" aria-hidden="true"></i>
+          <span class="roomTitle text-capitalize  ">Market master</span>
+        </div>
+        <div class="roomHeader" style="flex: 1 auto;">
           <div header-nav-trial="" class="nav-trial-container">
-            <button  (click)="onRedirectAdmin()" mat-icon-button mat-button *ngIf="isAdmin"
-              class="hidden-xs button_wrap dashboard-btn">
-              <span class="icon fa fa-tachometer"></span>
-              <a>DASHBOARD</a>
+            <button class=" button_wrap" (click)="drawer1.toggle()" mat-icon-button>
+              <span class="material-icons">
+                widgets
+              </span>
+              <a>WIDGETS</a>
+            </button>
+            <button class="hidden-xs  button_wrap" mat-icon-button (click)="drawer4.toggle()">
+              <span class="icon fa fa-address-book"></span>
+              <a>CONTACTS</a>
             </button>
             <!-- <button *ngIf="isAdmin" class="hidden-xs  rectangular-btn button_wrap " mat-button>
               <span class="material-icons">video_call</span>
               <a>BROADCAST</a>
             </button> -->
-            <button class="button_wrap" mat-icon-button (click)="openChartsDialog()" *ngIf="!chartsDisable">
-              <span class="material-icons">bar_chart</span>
-              <a (click)="openChartsDialog()">CHARTS</a>
+            <button class="button_wrap hidden-xs" mat-icon-button (click)="openDataFlashDialog()">
+              <span class="material-icons">
+                offline_bolt
+              </span>
+              <a>DATAFLASH</a>
             </button>
-
-            <button class="button_wrap" mat-icon-button>
+            <button class="button_wrap hidden-xs" mat-icon-button (click)="openFXCrossRatesDialog()">
+              <span class="icon fa fa-exchange"></span>
+              <a (click)="openFXCrossRatesDialog()">FX CROSS RATES</a>
+            </button>
+            <button class="button_wrap hidden-xs" mat-icon-button (click)="openOtherChartDialog()">
+              <span class="icon fa fa-area-chart"></span>
+              <a (click)="openOtherChartDialog()">CHARTS</a>
+            </button>
+            <button class="button_wrap hidden-xs" mat-icon-button (click)="openZoomDialog()">
+              <span class="material-icons">video_call</span>
+              <a (click)="openZoomDialog()">ZOOM</a>
+            </button>
+            <button class="button_wrap hidden-xs" mat-icon-button (click)="openLiveTVDialog()">
+              <span class="material-icons">tv</span>
+              <a (click)="openLiveTVDialog()">LIVETV</a>
+            </button>
+            <button class="button_wrap hidden-xs" mat-icon-button (click)="openCoin360Dialog()">
+              <span class="icon fa fa-bitcoin"></span>
+              <a (click)="openCoin360Dialog()">COIN360</a>
+            </button>
+            <button class="button_wrap hidden-xs" mat-icon-button (click)="openFXHeatmapDialog()">
+              <span class="icon fa fa-thermometer-full"></span>
+              <a (click)="openFXHeatmapDialog()">FX HEATMAP</a>
+            </button>
+            <button class="button_wrap hidden-xs" mat-icon-button>
               <span class="material-icons">alarm</span>
               <a (click)="openMarketHoursDialog()">MARKET HOURS</a>
             </button>
 
-            <button class="button_wrap" mat-icon-button (click)="openFXHeatmapDialog()">
-              <span class="icon fa fa-thermometer-full"></span>
-              <a (click)="openFXHeatmapDialog()">FX HEATMAP</a>
+            <button class="button_wrap hidden-xs" mat-icon-button (click)="openChartsDialog()" *ngIf="!chartsDisable">
+              <span class="material-icons">bar_chart</span>
+              <a (click)="openChartsDialog()">CHARTS</a>
+            </button>
+            <button (click)="onRedirectAdmin()" mat-icon-button mat-button *ngIf="isAdmin"
+              class="hidden-xs button_wrap dashboard-btn hidden-xs">
+              <span class="icon fa fa-tachometer"></span>
+              <a>DASHBOARD</a>
             </button>
 
-            <button class="button_wrap" mat-icon-button (click)="openCoin360Dialog()">
-              <span class="icon fa fa-bitcoin"></span>
-              <a (click)="openCoin360Dialog()">COIN360</a>
-            </button>
-
-            <button class="button_wrap" mat-icon-button (click)="openLiveTVDialog()">
-              <span class="material-icons">tv</span>
-              <a (click)="openLiveTVDialog()">LIVETV</a>
-            </button>
-
-            <button class="button_wrap" mat-icon-button (click)="openZoomDialog()">
-              <span class="material-icons">video_call</span>
-              <a (click)="openZoomDialog()">ZOOM</a>
-            </button>
-
-            <button class="button_wrap" mat-icon-button (click)="openOtherChartDialog()">
-              <span class="icon fa fa-area-chart"></span>
-              <a (click)="openOtherChartDialog()">CHARTS</a>
-            </button>
-
-            <button class="button_wrap" mat-icon-button (click)="openFXCrossRatesDialog()">
-              <span class="icon fa fa-exchange"></span>
-              <a (click)="openFXCrossRatesDialog()">FX CROSS RATES</a>
-            </button>
-
-            <button class="button_wrap" mat-icon-button (click)="openDataFlashDialog()">
-              <span class="material-icons">
-                offline_bolt
-                </span>
-              <a>DATAFLASH</a>
-            </button>
-            <button class="hidden-xs button_wrap pull-right" (click)="drawer1.toggle()" mat-icon-button>
-              <span class="material-icons">
-                widgets
-                </span>
-              <a>WIDGETS</a>
-            </button>
-
-            <button class="hidden-xs  button_wrap pull-right" mat-icon-button (click)="drawer4.toggle()">
-              <span class="icon fa fa-address-book"></span>
-              <a>CONTACTS</a>
-            </button>
+           
           </div>
         </div>
       </div>

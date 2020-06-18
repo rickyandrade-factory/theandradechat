@@ -4,9 +4,9 @@
     </button>
 </h2>
 <mat-divider></mat-divider>
-<div class="manage_Brocker_container">
-    <div class="row">
-        <div class="col-md-6">
+<mat-dialog-content class="manage_Brocker_container m-0 p-0">
+    <div class="row m-0">
+        <div class="col-md-6 col-xs-12">
 
             <div class="add_own_brocker" *ngIf="addOwn">
                 <h4>
@@ -48,7 +48,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-6" style="border-left:solid 1px #ddd; font-size:1.3em">
+        <div class="col-md-6 col-xs-12" style="border-left:solid 1px #ddd; font-size:1.3em">
             <div class="add_own_brocker">
                 <h4>
                     My Terminals
@@ -63,7 +63,7 @@
 
         </div>
     </div>
-</div>
+</mat-dialog-content>
 <div class="modal-footer p-10">
     <button mat-dialog-close class="btn btn-default">Cancel</button>
     <button [mat-dialog-close]="true" class="btn btn-success">Install</button>

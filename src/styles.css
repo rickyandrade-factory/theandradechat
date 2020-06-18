@@ -29,6 +29,9 @@ a:focus{
 .text-white{
   color:#fff;
 }
+.mat-tab-header-pagination{
+  background-color: #252525;
+}
 h2.iframe{
   padding: 5px 10px;
   font-size: 14px;
@@ -1196,7 +1199,7 @@ body.dark-theme .mat-menu-content li a {
 .dark-theme .rectangular-btn{
   border-left:none!important;
 }
-.dark-theme .mat-drawer.mat-drawer-side{
+.dark-theme .example-sidenav.sidebar {
   border-right: none!important;
   background-color: #000000!important;
 }
@@ -1299,7 +1302,7 @@ profile-dialog .modal-footer{
 /* chat */
 .right-sidenav .mat-drawer-inner-container {
   background-color: #f2f2f2;
-  height: calc(100vh - 67px);
+  overflow: hidden;
 }
 .container-all-page mat-drawer-content {
   position: static;
@@ -2078,7 +2081,7 @@ button.btn.btn-blue {
   color: #555;
   text-shadow: -1px -1px 0 #1b1b1b;
   font-weight: 700;
-  padding: 3rem 0;
+  padding: 2.2rem 0;
 }
 .sidepanel-item:nth-child(odd) {
   background-color: #f1f1f1!important;
@@ -2469,6 +2472,7 @@ preferences-dialog{
 }
 preferences-dialog .preference-container{
   padding: 0 15px;
+  overflow-x: hidden;
 }
 preferences-dialog h2{
   margin: 0!important;
@@ -4798,6 +4802,7 @@ table th[class*="col-"] {
   }
   .example-sidenav-content .navbar-fixed-top{
     position: fixed!important;
+    line-height: 60px;
   }
   .example-sidenav-content .container-all-page{
     position: fixed!important;
@@ -6691,11 +6696,21 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     border: 0;
     box-shadow: none;
   }
+  .invite_friend_container .media-body {
+    width: 100%;
+    float: left;
+}
+
+.invite_friend_container .media-right{
+  bottom: 5px!important;
+  padding: 0;
+}
   #team-wrapper .teamName strong{
     max-width: 130px!important;
   }
   #team-wrapper{
-    display: inline-block;
+    padding: 10px 0 5px 0!important;
+    display: block;
   }
   .sidebar-match{
     width:210px;
@@ -10561,10 +10576,7 @@ div#vidboxModal {
 }
 
 @media screen and (max-width: 500px) {
-    .roomHash {
-        float: left;
-        margin-top: 4px;
-    }
+
 
     .roomTitle {
         overflow: hidden;
@@ -11245,9 +11257,39 @@ span.cashtag_text:hover {
 
 
 @media screen and (max-width:767px){
+
+  app-sidenav {
+    width: 250px;
+    float: left;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: auto;
+}
+  .button_wrap{
+    width: 56px!important;
+    height: 56px!important;
+    margin: 3px 5px!important;
+}
+button.button_wrap > span span {
+  font-size: 14px!important;
+}
+.nav-trial-container a {
+  font-size: 8px!important;
+  width: 36px!important;
+  line-height: 10px!important;
+  top: -8px!important;
+}
+.hamburgerHeader{
+  margin-top: 10px!important;
+}
+#team-wrapper mat-slide-toggle{
+  display: block!important;
+  position: relative!important;
+  top: -10px!important;
+}
   .mat-drawer-inner-container {
     display: block;
-    overflow: inherit!important;
+    overflow: hidden!important;
   }
   .hamburger:before, .hamburger .icon, .hamburger:after{
     width:100%;
@@ -11268,12 +11310,12 @@ span.cashtag_text:hover {
   h1{
     font-size:1.6em;
   }
-  app-dashboard .right-sidenav{
-    width:320px!important; 
-  }
+  app-dashboard .right-sidenav {
+    width: 320px!important;
+    height: calc(100vh - 66px);
+}
   .roomHeader {
       float: left;
-      margin-top: 17px;
   }
   .nav-sidebar{
     height:auto;
@@ -11296,23 +11338,27 @@ span.cashtag_text:hover {
     margin:0;
   }
   .mobile-cross{
+    color: #ffffff;
+    display: block;
     position: absolute;
     top: 10px;
     right: 10px;
-    color: #b7b7b7;
-    display:block;
+    z-index: 9999999;
   }
   .mobile-cross span i{
-    font-size:20px;
+    font-size:14px;
   }
   .mobile-cross button.mat-button {
-    background-color: rgba(255,255,255,0.1);
-    padding: 5px 8px!important;
-    border: 1px solid #484848;
-    min-width: auto;
-    height: auto;
+    background-color: rgb(227, 108, 47);
+    padding: -5px 3px!important;
+    border: 1px solid #e37239;
     line-height: normal;
-    cursor:pointer;
+    border-radius: 50%;
+    height: 30px;
+    min-width: 30px!important;
+}
+.mobile-cross button.mat-button span{
+  display: inline-flex;
 }
 .admin-dashboard button.hamburgerHeader {
   position: relative;
@@ -11395,7 +11441,9 @@ app-dashboard .dropdown-toggle {
   margin-top: 0;
 }
 app-dashboard .sidebar-match{
- height:40px!important;
+  height: 50px!important;
+  padding-top: 10px;
+  display: block;
 }
 app-signup span.mat-checkbox-label {
   white-space: normal;
