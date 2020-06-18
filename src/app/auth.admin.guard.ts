@@ -15,7 +15,7 @@ export class AuthAdminGuard implements CanActivate {
   canActivate(
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-      if(!this.auth.isLoggedIn && this.auth.isAdmin){
+      if(!this.auth.isAdmin){
         this.route.navigate(["/dashboard"]);
         return false;
       }else{

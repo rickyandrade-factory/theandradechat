@@ -1,0 +1,23 @@
+<div class="modal-content new_user_dialog">
+   <div class="modal-header">
+      <h4 class="modal-title">
+         <button mat-dialog-close class="close">
+            <span aria-hidden="true">×</span>
+         </button>
+         Confirm disable
+      </h4>
+   </div>
+   <div class="modal-body text-center ">
+      <h2>
+         <span class="fa fa-fw fa-exclamation-triangle text-danger fa-3x"></span>
+         <br> Are you sure?
+      </h2>
+      <p class="ng-binding ">User
+         <strong>{{contact.firstname}}</strong> will be disabled from the team ie. will no be able to login. The username and email
+         will remain in use.</p>
+   </div>
+   <div class="modal-footer wrap-div">
+      <button autofocus="" mat-dialog-close class="btn btn-default pull-left" type="button">Cancel</button>
+      <button type="submit" class="btn btn-blue">Confirm Disable</button>
+   </div>
+</div>

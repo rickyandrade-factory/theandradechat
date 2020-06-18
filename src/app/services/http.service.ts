@@ -90,7 +90,7 @@ export class HttpService {
 
   getCommonEndPoints() {
     return {
-      loginUser: 'login',
+      loginUser: 'api/login',
       registerUser: 'register',
       createUserAdmin: 'admin/create-user',
       allRoomsList: 'api/rooms',

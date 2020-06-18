@@ -76,6 +76,14 @@ mat-checkbox{
  .avatarThumb{
    border: 1px solid #ddd;
  }
+ .add_own_brocker h4 a {
+  margin-top: 10px!important;
+}
+ @media screen and (max-width:767px){
+  .preference-container > .row{
+    display: block;
+  }
+ }
  /* manage_Brocker dialog */
  .manage_Brocker_container {
   padding: 0 15px;
@@ -90,7 +98,7 @@ mat-slide-toggle{
   top: -5px;
 }
 #team-wrapper{
-  padding:20px 0 0px 0;
+  padding:10px 0;
 }
 /* invite friend dialog */
 .media-right{

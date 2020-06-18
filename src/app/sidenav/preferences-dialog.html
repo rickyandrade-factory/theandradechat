@@ -3,9 +3,9 @@
         <span aria-hidden="true">×</span>
     </button>
 </h2>
-<div class="preference-container">
+<mat-dialog-content class="preference-container p-0 m-0">
     <div class="row">   
-        <div class="col-md-3 p-0">
+        <div class="col-md-3 col-xs-12" style="margin-right: 0;">
             <mat-nav-list class="p-0">
                 <a mat-list-item (click)="onProfile()" [ngClass]="{'active': profile == true}">
                     
@@ -25,10 +25,10 @@
                 </a>
             </mat-nav-list>
         </div>
-        <div class="col-md-9 p-0">
+        <div class="col-md-9 col-xs-12">
             <div class="content profile" *ngIf="profile">
                 <div class="row">
-                    <div class="col-sm-4 col-md-4 col-lg-4 text-center">
+                    <div class="col-sm-4 col-md-4 col-lg-4 col-xs-12 text-center">
                         <img class="avatarThumb"  src="assets/mini-logo.png" *ngIf="!imgURL">
                         <img class="avatarThumb" [src]="imgURL" *ngIf="imgURL">
                         <div class="upload_file">
@@ -40,7 +40,7 @@
                         <input class="btn btn-default btn-sm" style="margin-top: 5px;"
                             value="Default avatar">
                     </div>
-                    <div class="col-sm-7">
+                    <div class="col-sm-7 col-xs-12">
                         <div class="col-sm-12">
                             <mat-form-field>
                                 <mat-label>Username</mat-label>
@@ -505,7 +505,7 @@
             </div>
         </div>
     </div>
-</div>
+</mat-dialog-content>
 <div class="modal-footer">
     <button mat-dialog-close class="btn btn-default">Close</button>
     <button [mat-dialog-close]="true" routerLink="/" class="btn btn-success">Save</button>

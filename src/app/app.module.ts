@@ -34,7 +34,7 @@ import { AdmindashboardComponent } from './admin/admindashboard/admindashboard.c
 import { UnlockchatroomComponent, MediaUploadDialog, NewSignalDialog } from './unlockchatroom/unlockchatroom.component';
 import { UserPanelComponent } from './user-panel/user-panel.component';
 import { AdminSidebarComponent } from './admin/admin-sidebar/admin-sidebar.component';
-import { AdmincontactsComponent } from './admin/admincontacts/admincontacts.component';
+import { AdmincontactsComponent, EditContactComponent, DeleteContactComponent } from './admin/admincontacts/admincontacts.component';
 import { AdminsalesComponent } from './admin/adminsales/adminsales.component';
 import { NewContactComponent } from './admin/admincontacts/new-contact.component';
 import { NewBillingComponent } from './admin/adminbilling/new-billing.component';
@@ -66,7 +66,8 @@ import { AdminmarketingComponent } from './admin/adminmarketing/adminmarketing.c
 import { RegistrationSetiingsComponent } from './admin/registration-setiings/registration-setiings.component';
 import {ProfileDialog} from './admin/topbar/topbar.component';
 import { AdminComponent } from './admin/admin.component';
-import { TopbarComponent } from './admin/topbar/topbar.component'
+import { TopbarComponent } from './admin/topbar/topbar.component';
+import { AuthAdminGuard } from './auth.admin.guard';
 @NgModule({
   declarations: [
     AppComponent,
@@ -129,7 +130,9 @@ import { TopbarComponent } from './admin/topbar/topbar.component'
     InviteFriendDialog,
     ProfileDialog,
     AdminComponent,
-    TopbarComponent
+    TopbarComponent,
+    EditContactComponent,
+    DeleteContactComponent
   ],
   imports: [
     BrowserModule,
@@ -149,9 +152,10 @@ import { TopbarComponent } from './admin/topbar/topbar.component'
     AppConfig,
     AppLocalConfig,
     User,
-    AuthGuard
+    AuthGuard,
+    AuthAdminGuard
   ],
-  entryComponents: [ProfileDialog,InviteFriendDialog, NewSignalDialog,DataFlashDialog, MediaUploadDialog,ManageBrockersDialog, ZoomDialog,OtherChartDialog, FXCrossRatesDialog,LiveTVDialog,Coin360Dialog,FXHeatmapDialog, MarketHoursDialog, ChartsDialog, PreferencesDialog, InviteContactComponent, NewContactComponent, NewOfferComponent,
+  entryComponents: [ProfileDialog,InviteFriendDialog,DeleteContactComponent, NewSignalDialog,DataFlashDialog, MediaUploadDialog,ManageBrockersDialog, ZoomDialog,OtherChartDialog, FXCrossRatesDialog,LiveTVDialog,Coin360Dialog,FXHeatmapDialog, MarketHoursDialog, ChartsDialog, PreferencesDialog, InviteContactComponent,EditContactComponent, NewContactComponent, NewOfferComponent,
     lockeddialogComponent, NewBillingComponent, CustomwidgetComponent, NewCouponsComponent,
     NewChatroomComponent, NewServicesComponent, ConfiguredialogComponent, NewTeamAvatarDialog,
     CustomScriptComponent, DeleteChatroomComponent],
