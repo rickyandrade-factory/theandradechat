@@ -2681,7 +2681,7 @@ if (true) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<a ui-sref=\"app.main\" class=\"text-center\" routerLink=\"/\">\n    <span class=\"logo-mini\">\n        <img class=\"navbar-brand-logo\" src=\"assets/big-lion2-smaller.png\">\n        <img class=\"navbar-brand-logo-mini\" src=\"assets/mini-logo.png\">\n    </span>\n</a>\n<div id=\"team-wrapper\" header-company-sidebar=\"\"\n    style=\"position:static; min-width: 300px; padding: 10px;margin-bottom: 4px;border: none;\">\n    <img class=\"sidebar-avatar usr_img\" src=\"assets/mini-logo.png\" *ngIf=\"!adminImgPath\" (click)=\"openteamavatar()\">\n    <img class=\"sidebar-avatar usr_img\" src=\"{{adminImgPath}}\" *ngIf=\"adminImgPath\" (click)=\"openteamavatar()\">\n    <div class=\"teamName\" title=\"MarketMastersAcademy\">\n        <h5 class=\"ng-binding\">MarketMastersAcademy</h5>\n        <span class=\"team-members ng-binding\">b7e64405</span>\n        <mat-slide-toggle class=\"pull-right theme\" [(ngModel)]=\"blackTheme\" (click)=\"onBlackTheme()\" color=\"warn\">\n        </mat-slide-toggle>\n    </div>\n   \n</div>\n<ul class=\"nav nav-sidebar\">\n    <li>\n        <a routerLink=\"dashboard\" routerLinkActive=\"selectedRoom\" class=\"flex-parent dashboard-link\">\n            <i class=\"fa fa-dashboard fa-fw\"></i>\n            <span class=\"room-name ng-binding\">Dashboard</span>\n        </a>\n    </li>\n    <li>\n        <a routerLink=\"contacts\" routerLinkActive=\"selectedRoom\" class=\"flex-parent users-link\">\n            <i class=\"fa fa-users fa-fw\"></i>\n            <span class=\"ng-binding\">Contacts</span>\n        </a>\n    </li>\n    <li>\n        <a routerLink=\"sales\" routerLinkActive=\"selectedRoom\" class=\"flex-parent\">\n            <i class=\"fa fa-usd fa-fw\"></i>\n            <span>Sales</span>\n        </a>\n    </li>\n    <li>\n        <a routerLink=\"offers\" routerLinkActive=\"selectedRoom\" class=\"flex-parent\">\n            <i class=\"fa fa-percent fa-fw\"></i>\n            <span>Offers</span>\n        </a>\n    </li>\n    <li class=\"divider no-line\"></li>\n    <li>\n        <a routerLink=\"billing\" routerLinkActive=\"selectedRoom\" class=\"flex-parent billing-link \">\n            <i class=\"fa fa-credit-card fa-fw\"></i>\n            <span>Billing Plans</span>\n        </a>\n    </li>\n    <li>\n        <a routerLink=\"coupons\" routerLinkActive=\"selectedRoom\" class=\"flex-parent\">\n            <i class=\"fa fa-tags fa-fw\"></i>\n            <span>Coupons</span>\n        </a>\n    </li>\n    <li class=\"divider no-line\"></li>\n    <li>\n        <a routerLink=\"chatrooms\" routerLinkActive=\"selectedRoom\" class=\"flex-parent chatroom-link\">\n            <i class=\"fa fa-comments-o fa-fw\"></i>\n            <span>Chatrooms</span>\n        </a>\n    </li>\n    <li>\n        <a routerLink=\"services\" routerLinkActive=\"selectedRoom\" class=\"flex-parent\">\n            <i class=\"fa fa-files-o fa-fw\"></i>\n            <span>Services</span>\n        </a>\n    </li>\n    <li>\n        <a routerLink=\"widgets\" routerLinkActive=\"selectedRoom\" class=\"flex-parent  widget-link\">\n            <i class=\"fa fa-cubes fa-fw\"></i>\n            <span>Widgets</span>\n        </a>\n    </li>\n    <li>\n        <a routerLink=\"registration-settings\" routerLinkActive=\"selectedRoom\" class=\"flex-parent  widget-link\">\n            <i class=\"fa fa-cogs fa-fw\"></i>\n            <span>Registration Settings</span>\n        </a>\n    </li>\n    <li>\n        <a routerLink=\"marketing\" routerLinkActive=\"selectedRoom\" class=\"flex-parent  widget-link\">\n            <i class=\"fa fa-bullhorn fa-fw\"></i>\n            <span>Marketing</span>\n        </a>\n    </li>\n    <li class=\"divider no-line\"></li>\n    <li>\n        <a routerLink=\"onlineactivity\" routerLinkActive=\"selectedRoom\" class=\"flex-parent\">\n            <i class=\"fa fa-podcast fa-fw\"></i>\n            <span>Online Activity</span>\n        </a>\n    </li>\n    <li>\n        <a routerLink=\"compliance\" routerLinkActive=\"selectedRoom\" class=\"flex-parent\" href=\"#\">\n            <i class=\"fa fa-balance-scale fa-fw\"></i>\n            <span>Compliance</span>\n        </a>\n    </li>\n    <li class=\"divider no-line\"></li>\n    <li>\n        <a routerLink=\"api\" routerLinkActive=\"selectedRoom\" class=\"flex-parent\">\n            <i class=\"fa fa-code fa-fw\"></i>\n            <span>API\n                <small class=\"badge\" style=\"font-size: .6rem;\n                padding: 2px 4px;\n                margin: 0 0 0 5px; \n                background: #FFF;\n                border-radius: 3px;\n                color: #666;\n                line-height: 1rem;\">BETA</small>\n            </span>\n        </a>\n    </li>\n    <li class=\"divider no-line\"></li>\n    <li>\n        <a class=\"flex-parent  video-link\" href=\"#\" target=\"_blank\">\n            <i class=\"fa fa-youtube fa-fw\"></i>\n            <span>Video Tutorials</span>\n        </a>\n    </li>\n    <li>\n        <a class=\"flex-parent  tour-link\" onclick=\"guidedtour()\">\n            <i class=\"fa fa-graduation-cap fa-fw\"></i>\n            <span>Guided Tour</span>\n        </a>\n    </li>\n</ul>"
+module.exports = "<a class=\"text-center\" routerLink=\"/\">\n    <span class=\"logo-mini\">\n        <img class=\"navbar-brand-logo\" src=\"assets/circle-chat7.png\" style=\"max-width: 130px;\">\n    </span>\n</a>\n<div id=\"team-wrapper\" header-company-sidebar=\"\"\n    style=\"position:static; min-width: 300px; padding: 10px;margin-bottom: 4px;border: none;\">\n    <img class=\"sidebar-avatar usr_img\" src=\"assets/mini-logo.png\" *ngIf=\"!adminImgPath\" (click)=\"openteamavatar()\">\n    <img class=\"sidebar-avatar usr_img\" src=\"{{adminImgPath}}\" *ngIf=\"adminImgPath\" (click)=\"openteamavatar()\">\n    <div class=\"teamName\" title=\"MarketMastersAcademy\">\n        <h5 class=\"ng-binding\">MarketMastersAcademy</h5>\n        <mat-slide-toggle class=\"pull-left theme\" [(ngModel)]=\"blackTheme\" (click)=\"onBlackTheme()\" color=\"warn\">\n        </mat-slide-toggle>\n    </div>\n</div>\n<ul class=\"nav nav-sidebar\">\n    <li>\n        <a routerLink=\"dashboard\" routerLinkActive=\"selectedRoom\" class=\"flex-parent dashboard-link\">\n            <i class=\"fa fa-dashboard fa-fw\"></i>\n            <span class=\"room-name ng-binding\">Dashboard</span>\n        </a>\n    </li>\n    <li>\n        <a routerLink=\"contacts\" routerLinkActive=\"selectedRoom\" class=\"flex-parent users-link\">\n            <i class=\"fa fa-users fa-fw\"></i>\n            <span class=\"ng-binding\">Contacts</span>\n        </a>\n    </li>\n    <li>\n        <a routerLink=\"sales\" routerLinkActive=\"selectedRoom\" class=\"flex-parent\">\n            <i class=\"fa fa-usd fa-fw\"></i>\n            <span>Sales</span>\n        </a>\n    </li>\n    <li>\n        <a routerLink=\"offers\" routerLinkActive=\"selectedRoom\" class=\"flex-parent\">\n            <i class=\"fa fa-percent fa-fw\"></i>\n            <span>Offers</span>\n        </a>\n    </li>\n    <li class=\"divider no-line\"></li>\n    <li>\n        <a routerLink=\"billing\" routerLinkActive=\"selectedRoom\" class=\"flex-parent billing-link \">\n            <i class=\"fa fa-credit-card fa-fw\"></i>\n            <span>Billing Plans</span>\n        </a>\n    </li>\n    <li>\n        <a routerLink=\"coupons\" routerLinkActive=\"selectedRoom\" class=\"flex-parent\">\n            <i class=\"fa fa-tags fa-fw\"></i>\n            <span>Coupons</span>\n        </a>\n    </li>\n    <li class=\"divider no-line\"></li>\n    <li>\n        <a routerLink=\"chatrooms\" routerLinkActive=\"selectedRoom\" class=\"flex-parent chatroom-link\">\n            <i class=\"fa fa-comments-o fa-fw\"></i>\n            <span>Chatrooms</span>\n        </a>\n    </li>\n    <li>\n        <a routerLink=\"services\" routerLinkActive=\"selectedRoom\" class=\"flex-parent\">\n            <i class=\"fa fa-files-o fa-fw\"></i>\n            <span>Services</span>\n        </a>\n    </li>\n    <li>\n        <a routerLink=\"widgets\" routerLinkActive=\"selectedRoom\" class=\"flex-parent  widget-link\">\n            <i class=\"fa fa-cubes fa-fw\"></i>\n            <span>Widgets</span>\n        </a>\n    </li>\n    <li>\n        <a routerLink=\"registration-settings\" routerLinkActive=\"selectedRoom\" class=\"flex-parent  widget-link\">\n            <i class=\"fa fa-cogs fa-fw\"></i>\n            <span>Registration Settings</span>\n        </a>\n    </li>\n    <li>\n        <a routerLink=\"marketing\" routerLinkActive=\"selectedRoom\" class=\"flex-parent  widget-link\">\n            <i class=\"fa fa-bullhorn fa-fw\"></i>\n            <span>Marketing</span>\n        </a>\n    </li>\n    <li class=\"divider no-line\"></li>\n    <li>\n        <a routerLink=\"onlineactivity\" routerLinkActive=\"selectedRoom\" class=\"flex-parent\">\n            <i class=\"fa fa-podcast fa-fw\"></i>\n            <span>Online Activity</span>\n        </a>\n    </li>\n    <li>\n        <a routerLink=\"compliance\" routerLinkActive=\"selectedRoom\" class=\"flex-parent\" href=\"#\">\n            <i class=\"fa fa-balance-scale fa-fw\"></i>\n            <span>Compliance</span>\n        </a>\n    </li>\n    <li class=\"divider no-line\"></li>\n    <li>\n        <a routerLink=\"api\" routerLinkActive=\"selectedRoom\" class=\"flex-parent\">\n            <i class=\"fa fa-code fa-fw\"></i>\n            <span>API\n                <small class=\"badge\" style=\"font-size: .6rem;\n                padding: 2px 4px;\n                margin: 0 0 0 5px; \n                background: #FFF;\n                border-radius: 3px;\n                color: #666;\n                line-height: 1rem;\">BETA</small>\n            </span>\n        </a>\n    </li>\n    <li class=\"divider no-line\"></li>\n    <li>\n        <a class=\"flex-parent  video-link\">\n            <i class=\"fa fa-youtube fa-fw\"></i>\n            <span>Video Tutorials</span>\n        </a>\n    </li>\n    <li>\n        <a class=\"flex-parent  tour-link\" onclick=\"guidedtour()\">\n            <i class=\"fa fa-graduation-cap fa-fw\"></i>\n            <span>Guided Tour</span>\n        </a>\n    </li>\n</ul>"
 
 /***/ }),
 
@@ -2692,7 +2692,7 @@ module.exports = "<a ui-sref=\"app.main\" class=\"text-center\" routerLink=\"/\"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- <div class=\"login-container admin-dashboard\">\n    <mat-drawer-container class=\"example-container\" autosize>\n            <mat-drawer #drawer7 class=\"example-sidenav sidebar navbar-collapse\" opened mode=\"side\"\n                [opened]=\"screenWidth > 840\" [mode]=\"(screenWidth > 840) ? 'side' : 'over'\"\n                style=\"position:fixed; left:0;\">\n                <app-admin-sidebar></app-admin-sidebar>\n            </mat-drawer>\n                <div class=\"navbar navbar-fixed-top navbar-inverse navbar-static-top\" style=\"position:static;\">    \n                    <div class=\"example-sidenav-content\">\n                        <button class=\"hamburgerHeader hamburger hamburger-arrow-left sidebar-toggle\" hamburger-drv=\"\"\n                            (click)=\"drawer7.toggle();\">\n                            <span class=\"icon\"></span>\n                        </button>\n                    </div>\n                    <div class=\"roomHeader\">\n                        <i class=\"fa\" ng-class=\"{'roomLock': room.n_type==2 , 'fa-unlock': room.n_type==2}\"\n                            aria-hidden=\"true\"></i>\n                        <div header-nav-trial=\"\" class=\"nav-trial-container\">\n                            <div class=\"nav-trial-container-text ng-binding\"></div>\n                        </div>\n                    </div>\n                    <div class=\"navbar-right navbar-custom-menu\">\n                        <ul class=\"nav navbar-nav\">\n                            <li class=\"settings-menu\">\n                                <a [routerLink]=\"['/adminsettings']\" routerLinkActive=\"selectedRoom\">\n                                    <span class=\"fa fa-gears fa-fw\"></span>\n                                </a>\n                            </li>\n                            <li>\n                                <a [routerLink]=\"['/dashboard']\" target=\"_blank\" href=\"/\">\n                                    <span class=\"fa fa-comments fa-fw\"></span>\n                                </a>\n                            </li>\n                            <li>\n                                <a [matMenuTriggerFor]=\"notificationMenu\">\n                                    <span class=\"fa fa-envelope-o fa-fw\"></span>\n                                </a>\n                                <mat-menu #notificationMenu=\"matMenu\" class=\"notificationMenu\">\n                                    <h3 class=\"mat-h4\">Latest Changes</h3>\n                                    <mat-divider></mat-divider>\n                                    <button mat-menu-item>\n                                        <span>new</span>\n                                        <a><b>Echofin v2</b></a>\n                                        The new Echofin platform has been released. Get all the details here:\n                                        https://www.echofin.com/\n                                    </button>\n                                    <button mat-menu-item>\n                                        <span>new</span>\n                                        <a><b>Zoom widget integration</b></a>\n                                        A new widget has been added that allows your team members to watch your Zoom broadcast\n                                        within...\n                                    </button>\n                                    <button mat-menu-item>\n                                        <span>new</span>\n                                        <a><b>Dashboard\\Users</b></a>\n                                        Added a Subscriptions tab on the details panel.\n                                    </button>\n                                    <button mat-menu-item>\n                                        <span>new</span>\n                                        <a><b>Email</b></a>\n                                        All email billing receipts will now include a reply-to which can be set within the...\n                                    </button>\n                                    <button mat-menu-item>\n                                        <span>new</span>\n                                        <a><b>API</b></a>\n                                        The initial version of the Echofin API has been released. For more details please check\n                                        the API...\n                                    </button>\n                                </mat-menu>\n                            </li>\n                            <li class=\"dropdown\">\n                                <a>\n                                    <button mat-button [matMenuTriggerFor]=\"menu\">puneetsethi25@gmail.com\n                                        <span class=\"caret\"></span>\n                                    </button>\n                                    <mat-menu #menu=\"matMenu\" xPosition=\"before\">\n                                        <a class=\"profile-menu white\" href=\"#\">Profile</a>\n                            <li class=\"divider\"></li>\n                            <a class=\"profile-menu white\" href=\"#\">Sign Out</a>\n                            </mat-menu>\n                            </a>\n                            </li>\n                        </ul>\n                    </div>\n                </div>\n        <router-outlet></router-outlet>\n    </mat-drawer-container>\n</div> -->\n\n<mat-sidenav-container class=\"login-container admin-dashboard\">\n    <mat-sidenav #drawer7 mode=\"side\" opened class=\"example-sidenav\">\n        <app-admin-sidebar></app-admin-sidebar>\n    </mat-sidenav>\n    <mat-sidenav-content>\n        <div class=\"navbar navbar-fixed-top navbar-inverse navbar-static-top\" style=\"position:static;\">\n            <div class=\"example-sidenav-content\">\n                <button class=\"hamburgerHeader hamburger hamburger-arrow-left sidebar-toggle\" hamburger-drv=\"\"\n                    (click)=\"drawer7.toggle();\">\n                    <span class=\"icon\"></span>\n                </button>\n            </div>\n            <div class=\"roomHeader\">\n                <i class=\"fa\" ng-class=\"{'roomLock': room.n_type==2 , 'fa-unlock': room.n_type==2}\"\n                    aria-hidden=\"true\"></i>\n                <div header-nav-trial=\"\" class=\"nav-trial-container\">\n                    <div class=\"nav-trial-container-text ng-binding\"></div>\n                </div>\n            </div>\n            <app-topbar></app-topbar>\n        </div>\n        <router-outlet></router-outlet>\n    </mat-sidenav-content>\n</mat-sidenav-container>"
+module.exports = "<mat-sidenav-container class=\"login-container admin-dashboard\">\n    <mat-sidenav #drawer7 mode=\"side\" opened class=\"example-sidenav\">\n        <app-admin-sidebar></app-admin-sidebar>\n    </mat-sidenav>\n    <mat-sidenav-content>\n        <div class=\"navbar navbar-fixed-top navbar-inverse navbar-static-top\" style=\"position:static;\">\n            <div class=\"example-sidenav-content\">\n                <button class=\"hamburgerHeader hamburger hamburger-arrow-left sidebar-toggle\" hamburger-drv=\"\"\n                    (click)=\"drawer7.toggle();\">\n                    <span class=\"icon\"></span>\n                </button>\n            </div>\n            <div class=\"roomHeader\">\n                <i class=\"fa\" ng-class=\"{'roomLock': room.n_type==2 , 'fa-unlock': room.n_type==2}\"\n                    aria-hidden=\"true\"></i>\n                <div header-nav-trial=\"\" class=\"nav-trial-container\">\n                    <div class=\"nav-trial-container-text ng-binding\"></div>\n                </div>\n            </div>\n            <app-topbar></app-topbar>\n        </div>\n        <router-outlet></router-outlet>\n    </mat-sidenav-content>\n</mat-sidenav-container>"
 
 /***/ }),
 
@@ -2747,7 +2747,29 @@ module.exports = "<section class=\"content-header\">\n  <h1>\n    Compliance\n  
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<section class=\"content-header\">\n  <h1>\n    Contacts\n  </h1>\n</section>\n<section class=\"content admin-user\">\n  <div class=\"toolbox\">\n    <button class=\"btn btn-blue\" (click)=\"openAddFileDialog()\">\n      <span class=\"fa fa-plus\"></span> Add Contact\n    </button>\n    <button class=\"btn btn-default\" (click)=\"openInviteContactDialog()\">\n      <span class=\"fa fa-plus\"></span> Invite Contact\n    </button>\n    <button class=\"btn btn-default\" (click)=\"exporter.exportTable('xlsx')\">\n      <span class=\"fa fa-download \"></span> Export\n    </button>\n    <div class=\"pull-right\">\n      <button ng-click=\"vm.changeColumns()\" uib-popover-template=\"'myPopoverTemplate.html'\"\n        popover-placement=\"bottom-right\" popover-append-to-body=\"true\" type=\"button\" class=\"btn btn-default\">\n        <span class=\"fa fa-columns\"></span>\n        Columns\n      </button>\n      <button class=\"btn btn-default\" (click)=\"onActiveSearch()\">\n        <span class=\"fa fa-search\"></span> Search\n      </button>\n      <button class=\"btn btn-default\" ng-click=\"vm.LoadUsers()\" (click)=\"onRefresh()\">\n        <span class=\"fa fa-refresh fa-fw\" ng-class=\"{'fa-spin':vm.loading}\"></span>\n      </button>\n    </div>\n  </div>\n  \n  <div class=\"mat-elevation-z8 box box-default\" >\n    <table class=\"searchTable\" mat-table matTableExporter #exporter=\"matTableExporter\"\n      [ngClass]=\"{'ActiveSpinner': showSpinner == true}\" [dataSource]=\"dataSource\"  matSort>\n      <!-- ID Column -->\n      <ng-container matColumnDef=\"img\">\n        <th mat-header-cell *matHeaderCellDef mat-sort-header> </th>\n        <td mat-cell *matCellDef=\"let row\">\n          <div class=\"user_img\">\n            <img class=\"img-responsive table-avatar\" src=\"{{row.imgPath}}\">\n          </div>\n        </td>\n      </ng-container>\n      <!-- ID Column -->\n      <ng-container matColumnDef=\"fullname\">\n        <th mat-header-cell *matHeaderCellDef mat-sort-header>\n          Name\n        </th>\n        <td mat-cell *matCellDef=\"let row\">\n          {{row.fullname}} </td>\n      </ng-container>\n      <!-- Name Column -->\n      <ng-container matColumnDef=\"email\">\n        <th mat-header-cell *matHeaderCellDef mat-sort-header> Email\n        </th>\n        <td mat-cell *matCellDef=\"let row\">\n          {{row.email}} </td>\n      </ng-container>\n      <!-- Color Column -->\n      <ng-container matColumnDef=\"phone\">\n        <th mat-header-cell *matHeaderCellDef mat-sort-header> Phone Number\n        </th>\n        <td mat-cell *matCellDef=\"let row\"> {{row.phoneNumber}} </td>\n      </ng-container>\n      <!-- Color Column -->\n      <ng-container matColumnDef=\"subscription\">\n        <th mat-header-cell *matHeaderCellDef mat-sort-header> Subscription\n        </th>\n        <td mat-cell *matCellDef=\"let row\"> {{row.subscription}} </td>\n      </ng-container>\n      <!-- Color Column -->\n      <ng-container matColumnDef=\"type\">\n        <th mat-header-cell *matHeaderCellDef mat-sort-header> Type\n        </th>\n        <td mat-cell *matCellDef=\"let row\"> {{row.type}} </td>\n      </ng-container>\n      <!-- Color Column -->\n      <ng-container matColumnDef=\"devices\">\n        <th mat-header-cell *matHeaderCellDef mat-sort-header> Mobile Devices</th>\n        <td mat-cell *matCellDef=\"let row\">\n          <span class=\"badge badge-ios\">\n            <span class=\"fa fa-apple text-muted\"></span>\n            <span class=\"text\">{{row.deviceNumber}}</span>\n          </span>\n        </td>\n      </ng-container>\n      <!-- Color Column -->\n      <ng-container matColumnDef=\"registered\">\n        <th mat-header-cell *matHeaderCellDef mat-sort-header> Registered </th>\n        <td mat-cell *matCellDef=\"let row\"> {{row.registered}} </td>\n      </ng-container>\n      <!-- Color Column -->\n      <ng-container matColumnDef=\"lastActivity\">\n        <th mat-header-cell *matHeaderCellDef mat-sort-header> Last Activity </th>\n        <td mat-cell *matCellDef=\"let row\"> {{row.lastActivity}} </td>\n      </ng-container>\n      <!-- Color Column -->\n      <ng-container matColumnDef=\"action\">\n        <th mat-header-cell *matHeaderCellDef mat-sort-header> </th>\n        <td mat-cell *matCellDef=\"let row\">\n          <div class=\"ui-grid-cell-contents\">\n            <a mat-icon-button color=\"warn\">\n              <i class=\"fa fa-trash fa-fw\"></i>\n            </a>\n            <a mat-icon-button color=\"primary\">\n              <i class=\"fa fa-edit fa-fw\"></i>\n            </a>\n          </div>\n        </td>\n      </ng-container>\n\n      <!-- userimg search Column -->\n      <ng-container matColumnDef=\"userImgSearch\">\n        <th mat-header-cell *matHeaderCellDef> </th>\n      </ng-container>\n      <!-- username search Column -->\n      <ng-container matColumnDef=\"nameSearch\">\n        <th mat-header-cell *matHeaderCellDef>\n          <mat-form-field *ngIf=\"searchActive\">\n            <input matInput (keyup)=\"applyFilter($event.target.value)\" placeholder=\"Name\">\n          </mat-form-field>\n        </th>\n      </ng-container>\n      <!-- email search Column  -->\n      <ng-container matColumnDef=\"emailSearch\">\n        <th mat-header-cell *matHeaderCellDef>\n          <mat-form-field *ngIf=\"searchActive\">\n            <input matInput (keyup)=\"applyFilter($event.target.value)\" placeholder=\"Email\">\n          </mat-form-field>\n        </th>\n      </ng-container>\n      <!-- verified search Column -->\n      <ng-container matColumnDef=\"phoneSearch\">\n        <th mat-header-cell *matHeaderCellDef>\n          <mat-form-field *ngIf=\"searchActive\">\n            <input matInput (keyup)=\"applyFilter($event.target.value)\" placeholder=\"Phone Number\">\n          </mat-form-field>\n        </th>\n      </ng-container>\n      <!-- subscription search Column  -->\n      <ng-container matColumnDef=\"subscriptionSearch\">\n        <th mat-header-cell *matHeaderCellDef>\n          <mat-form-field *ngIf=\"searchActive\">\n            <input matInput (keyup)=\"applyFilter($event.target.value)\" placeholder=\"Subscription\">\n          </mat-form-field>\n        </th>\n      </ng-container>\n      <!--type search Column -->\n      <ng-container matColumnDef=\"typeSearch\">\n        <th mat-header-cell *matHeaderCellDef>\n          <mat-form-field *ngIf=\"searchActive\">\n            <mat-select (keyup)=\"applyFilter($event.target.value)\" placeholder=\"Select Type\">\n              <mat-option value=\"Admin\">Admin</mat-option>\n              <mat-option value=\"Instructor\">Instructor</mat-option>\n              <mat-option value=\"Moderator\">Moderator</mat-option>\n              <mat-option value=\"User\">User</mat-option>\n            </mat-select>\n          </mat-form-field>\n        </th>\n      </ng-container>\n      <!--empty search Column -->\n      <ng-container matColumnDef=\"empty1\">\n        <th mat-header-cell *matHeaderCellDef> </th>\n      </ng-container>\n      <!--empty search Column -->\n      <ng-container matColumnDef=\"empty2\">\n        <th mat-header-cell *matHeaderCellDef> </th>\n      </ng-container>\n      <!--empty search Column -->\n      <ng-container matColumnDef=\"empty3\">\n        <th mat-header-cell *matHeaderCellDef> </th>\n      </ng-container>\n      <!--empty search Column -->\n      <ng-container matColumnDef=\"empty4\">\n        <th mat-header-cell *matHeaderCellDef> </th>\n      </ng-container>\n\n      <tr mat-header-row *matHeaderRowDef=\"displayedColumns\" [ngClass]=\"{'activeSearchHeader': searchActive == true}\">\n      </tr>\n      <tr mat-header-row\n        *matHeaderRowDef=\"['userImgSearch','nameSearch', 'emailSearch', 'phoneSearch', 'subscriptionSearch', 'typeSearch','empty1','empty2','empty3','empty4']\"\n        [ngClass]=\"{'activeRow': searchActive == true}\" style=\"display: none;\">\n      </tr>\n      <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\">\n      </tr>\n    </table>\n    <div class=\"empty_data\" *ngIf=\"!dataSource.data.length\">\n      No data available\n    </div>\n    <mat-paginator [pageSizeOptions]=\"[13, 25, 50, 100]\"></mat-paginator>\n    <mat-progress-spinner [mode]=\"mode\">\n    </mat-progress-spinner>\n  </div>\n</section>"
+module.exports = "<section class=\"content-header\">\n  <h1>\n    Contacts\n  </h1>\n</section>\n<section class=\"content admin-user\">\n  <div class=\"toolbox\">\n    <button class=\"btn btn-blue\" (click)=\"openAddFileDialog()\">\n      <span class=\"fa fa-plus\"></span> Add Contact\n    </button>\n    <button class=\"btn btn-default\" (click)=\"openInviteContactDialog()\">\n      <span class=\"fa fa-plus\"></span> Invite Contact\n    </button>\n    <button class=\"btn btn-default\" (click)=\"exporter.exportTable('xlsx')\">\n      <span class=\"fa fa-download \"></span> Export\n    </button>\n    <div class=\"pull-right\">\n      <button ng-click=\"vm.changeColumns()\" uib-popover-template=\"'myPopoverTemplate.html'\"\n        popover-placement=\"bottom-right\" popover-append-to-body=\"true\" type=\"button\" class=\"btn btn-default\">\n        <span class=\"fa fa-columns\"></span>\n        Columns\n      </button>\n      <button class=\"btn btn-default\" (click)=\"onActiveSearch()\">\n        <span class=\"fa fa-search\"></span> Search\n      </button>\n      <button class=\"btn btn-default\" ng-click=\"vm.LoadUsers()\" (click)=\"loadContacts()\">\n        <span class=\"fa fa-refresh fa-fw\" ng-class=\"{'fa-spin':vm.loading}\"></span>\n      </button>\n    </div>\n  </div>\n  \n  <div class=\"mat-elevation-z8 box box-default\" >\n    <table class=\"searchTable\" mat-table matTableExporter #exporter=\"matTableExporter\"\n      [ngClass]=\"{'ActiveSpinner': showSpinner == true}\" [dataSource]=\"dataSource\"  matSort>\n      <!-- ID Column -->\n      <ng-container matColumnDef=\"img\">\n        <th mat-header-cell *matHeaderCellDef mat-sort-header> </th>\n        <td mat-cell *matCellDef=\"let row\">\n          <div class=\"user_img\">\n            <img class=\"img-responsive table-avatar\" src=\"{{row.imgPath}}\">\n          </div>\n        </td>\n      </ng-container>\n      <!-- ID Column -->\n      <ng-container matColumnDef=\"fullname\">\n        <th mat-header-cell *matHeaderCellDef mat-sort-header>\n          Name\n        </th>\n        <td mat-cell *matCellDef=\"let row\">\n          {{row.firstname}} {{row.lastname}}</td>\n      </ng-container>\n      <!-- Name Column -->\n      <ng-container matColumnDef=\"email\">\n        <th mat-header-cell *matHeaderCellDef mat-sort-header> Email\n        </th>\n        <td mat-cell *matCellDef=\"let row\">\n          {{row.email}} </td>\n      </ng-container>\n      <!-- Color Column -->\n      <ng-container matColumnDef=\"phone\">\n        <th mat-header-cell *matHeaderCellDef mat-sort-header> Phone Number\n        </th>\n        <td mat-cell *matCellDef=\"let row\"> {{row.phone_number}} </td>\n      </ng-container>\n      <!-- Color Column -->\n      <ng-container matColumnDef=\"subscription\">\n        <th mat-header-cell *matHeaderCellDef mat-sort-header> Subscription\n        </th>\n        <td mat-cell *matCellDef=\"let row\"> {{ row.subscription && row.subscription || 'N/A' }} </td>\n      </ng-container>\n      <!-- Color Column -->\n      <ng-container matColumnDef=\"type\">\n        <th mat-header-cell *matHeaderCellDef mat-sort-header> Type\n        </th>\n        <td mat-cell *matCellDef=\"let row\" [ngClass]=\"{'adminClass' : row.role_id == 1}\" > {{row.role_id === 1 ? \"Admin\" : \"User\"}} </td>\n      </ng-container>\n      <!-- Color Column -->\n      <ng-container matColumnDef=\"devices\">\n        <th mat-header-cell *matHeaderCellDef mat-sort-header> Mobile Devices</th>\n        <td mat-cell *matCellDef=\"let row\">\n          <!-- <span class=\" badge-ios\"\n          [ngClass]=\"{'badge': row.deviceNumber.length}\">\n            <span class=\"fa fa-apple text-muted\" *ngIf=\"row.deviceNumber\"></span>\n            <span class=\"text\">{{row.deviceNumber}}</span>\n          </span> -->\n          <span class=\" badge-ios\"\n          >\n            <span class=\"fa fa-apple text-muted\" *ngIf=\"row.deviceNumber\"></span>\n            <span class=\"text\">{{row.deviceNumber}}</span>\n          </span>\n        </td>\n      </ng-container>\n      <!-- Color Column -->\n      <ng-container matColumnDef=\"registered\">\n        <th mat-header-cell *matHeaderCellDef mat-sort-header> Registered </th>\n        <td mat-cell *matCellDef=\"let row\"> {{row.created_at | date: 'short'}} </td>\n      </ng-container>\n      <!-- Color Column -->\n      <ng-container matColumnDef=\"lastActivity\">\n        <th mat-header-cell *matHeaderCellDef mat-sort-header> Last Activity </th>\n        <td mat-cell *matCellDef=\"let row\"> {{row.updated_at | date: 'short'}} </td>\n      </ng-container>\n      <!-- Color Column -->\n      <ng-container matColumnDef=\"action\">\n        <th mat-header-cell *matHeaderCellDef mat-sort-header> </th>\n        <td mat-cell *matCellDef=\"let row\">\n          <div class=\"ui-grid-cell-contents\" >\n            <a mat-icon-button color=\"warn\" (click)=\"openDeleteDialog(row)\">\n              <i class=\"fa fa-trash fa-fw\"></i>\n            </a>\n            <a mat-icon-button color=\"primary\" (click)=\"openEditDialog(row)\">\n              <i class=\"fa fa-edit fa-fw\"></i>\n            </a>\n          </div>\n        </td>\n      </ng-container>\n\n      <!-- userimg search Column -->\n      <ng-container matColumnDef=\"userImgSearch\">\n        <th mat-header-cell *matHeaderCellDef> </th>\n      </ng-container>\n      <!-- username search Column -->\n      <ng-container matColumnDef=\"nameSearch\">\n        <th mat-header-cell *matHeaderCellDef>\n          <mat-form-field *ngIf=\"searchActive\">\n            <input matInput (keyup)=\"applyFilter($event.target.value)\" placeholder=\"Name\">\n          </mat-form-field>\n        </th>\n      </ng-container>\n      <!-- email search Column  -->\n      <ng-container matColumnDef=\"emailSearch\">\n        <th mat-header-cell *matHeaderCellDef>\n          <mat-form-field *ngIf=\"searchActive\">\n            <input matInput (keyup)=\"applyFilter($event.target.value)\" placeholder=\"Email\">\n          </mat-form-field>\n        </th>\n      </ng-container>\n      <!-- verified search Column -->\n      <ng-container matColumnDef=\"phoneSearch\">\n        <th mat-header-cell *matHeaderCellDef>\n          <mat-form-field *ngIf=\"searchActive\">\n            <input matInput (keyup)=\"applyFilter($event.target.value)\" placeholder=\"Phone Number\">\n          </mat-form-field>\n        </th>\n      </ng-container>\n      <!-- subscription search Column  -->\n      <ng-container matColumnDef=\"subscriptionSearch\">\n        <th mat-header-cell *matHeaderCellDef>\n          <mat-form-field *ngIf=\"searchActive\">\n            <input matInput (keyup)=\"applyFilter($event.target.value)\" placeholder=\"Subscription\">\n          </mat-form-field>\n        </th>\n      </ng-container>\n      <!--type search Column -->\n      <ng-container matColumnDef=\"typeSearch\">\n        <th mat-header-cell *matHeaderCellDef>\n          <mat-form-field *ngIf=\"searchActive\">\n            <mat-select (keyup)=\"applyFilter($event.target.value)\" placeholder=\"Select Type\">\n              <mat-option value=\"Admin\">Admin</mat-option>\n              <mat-option value=\"Instructor\">Instructor</mat-option>\n              <mat-option value=\"Moderator\">Moderator</mat-option>\n              <mat-option value=\"User\">User</mat-option>\n            </mat-select>\n          </mat-form-field>\n        </th>\n      </ng-container>\n      <!--empty search Column -->\n      <ng-container matColumnDef=\"empty1\">\n        <th mat-header-cell *matHeaderCellDef> </th>\n      </ng-container>\n      <!--empty search Column -->\n      <ng-container matColumnDef=\"empty2\">\n        <th mat-header-cell *matHeaderCellDef> </th>\n      </ng-container>\n      <!--empty search Column -->\n      <ng-container matColumnDef=\"empty3\">\n        <th mat-header-cell *matHeaderCellDef> </th>\n      </ng-container>\n      <!--empty search Column -->\n      <ng-container matColumnDef=\"empty4\">\n        <th mat-header-cell *matHeaderCellDef> </th>\n      </ng-container>\n\n      <tr mat-header-row *matHeaderRowDef=\"displayedColumns\" [ngClass]=\"{'activeSearchHeader': searchActive == true}\">\n      </tr>\n      <tr mat-header-row\n        *matHeaderRowDef=\"['userImgSearch','nameSearch', 'emailSearch', 'phoneSearch', 'subscriptionSearch', 'typeSearch','empty1','empty2','empty3','empty4']\"\n        [ngClass]=\"{'activeRow': searchActive == true}\" style=\"display: none;\">\n      </tr>\n      <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\">\n      </tr>\n    </table>\n    <div class=\"empty_data\" *ngIf=\"dataSourceEmpty\">\n      No data available\n    </div>\n\n    <mat-paginator [pageSizeOptions]=\"[3, 25, 50, 100]\"></mat-paginator>\n    <mat-progress-spinner [mode]=\"mode\">\n    </mat-progress-spinner>\n  </div>\n</section>"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/admin/admincontacts/delete-contact.dialog.html":
+/*!******************************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/admin/admincontacts/delete-contact.dialog.html ***!
+  \******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"modal-content new_user_dialog\">\n   <div class=\"modal-header\">\n      <h4 class=\"modal-title\">\n         <button mat-dialog-close class=\"close\">\n            <span aria-hidden=\"true\">×</span>\n         </button>\n         Confirm disable\n      </h4>\n   </div>\n   <div class=\"modal-body text-center \">\n      <h2>\n         <span class=\"fa fa-fw fa-exclamation-triangle text-danger fa-3x\"></span>\n         <br> Are you sure?\n      </h2>\n      <p class=\"ng-binding \">User\n         <strong>{{contact.firstname}}</strong> will be disabled from the team ie. will no be able to login. The username and email\n         will remain in use.</p>\n   </div>\n   <div class=\"modal-footer wrap-div\">\n      <button autofocus=\"\" mat-dialog-close class=\"btn btn-default pull-left\" type=\"button\">Cancel</button>\n      <button type=\"submit\" class=\"btn btn-blue\">Confirm Disable</button>\n   </div>\n</div>"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/admin/admincontacts/edit-contact.dialog.html":
+/*!****************************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/admin/admincontacts/edit-contact.dialog.html ***!
+  \****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"modal-content new_user_dialog\" style=\"width: auto;\">\n    <div class=\"modal-header\">\n        <button mat-dialog-close class=\"close\">\n            <span aria-hidden=\"true\">×</span>\n        </button>\n        <div class=\"media-body-left\" style=\"position: relative;\">\n            <img src=\"//cdn.echofin.co/avatar/b7e64405.png?t=1551496349357\" *ngIf=\"!adminImgPath\" alt=\"\">\n            <img style=\"width: 100%; height: 100%;\" src=\"{{adminImgPath}}\" *ngIf=\"adminImgPath\">\n            <div class=\"hoving-avatar\">\n                <input #file type=\"file\" accept='image/*' (change)=\"preview(file.files)\" />\n                <span style=\"color: #fff;\">Change</span>\n            </div>\n        </div>\n    \n        <div class=\"media-body-right\">\n            <h4 class=\"media-heading\">{{contact.firstname}}</h4>\n            <p>{{contact.email}}</p>\n            <p class=\"info\">\n                Last Login:{{contact.created_at | date:'short'}} | Last Message: - {{contact.updated_at | date: 'short'}}\n            </p>\n        </div>\n    </div>\n    <div class=\"modal-body wrap-div profile_dialog\">\n        <mat-tab-group>\n            <mat-tab>\n                <ng-template mat-tab-label>\n                    <i class=\"fa fa-cubes\"></i>\n                    General\n                </ng-template>\n                <form (ngSubmit)=\"onSubmit()\" [formGroup]=\"editContacts\" class=\"mt-10\">\n                    <div class=\"row\">\n                        <div class=\"col-sm-12\">\n                            <mat-form-field>\n                                <mat-label>Full Name</mat-label>\n                                <input matInput  name=\"name\" formControlName=\"name\">\n                            </mat-form-field>\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class=\"col-sm-7\">\n                            <mat-form-field>\n                                <mat-label>Email</mat-label>\n                                <input matInput  name=\"email\" formControlName=\"email\">\n                            </mat-form-field>\n                        </div>\n                        <div class=\"col-sm-5\">\n                            <mat-form-field>\n                                <mat-select placeholder=\"Role\"  name=\"role\" formControlName=\"role\">\n                                    <mat-option value=\"Admin\">Admin</mat-option>\n                                    <mat-option value=\"Instructor\">Instructor</mat-option>\n                                    <mat-option value=\"Moderator\">Moderator</mat-option>\n                                    <mat-option value=\"User\">User</mat-option>\n                                </mat-select>\n                                <mat-hint>\n                                    <a class=\"\">\n                                        <i class=\"fa fa-info-circle\"></i>\n                                    </a>\n                                </mat-hint>\n                            </mat-form-field>\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class=\"col-sm-12\">\n                            <mat-form-field>\n                                <mat-label>Address</mat-label>\n                                <textarea matInput name=\"address\" formControlName=\"address\"></textarea>\n                            </mat-form-field>\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class=\"col-sm-4\">\n                            <mat-form-field>\n                                <mat-label>City</mat-label>\n                                <input matInput>\n                            </mat-form-field>\n                        </div>\n                        <div class=\"col-sm-4\">\n                            <mat-form-field>\n                                <mat-label>Zip</mat-label>\n                                <input matInput>\n                            </mat-form-field>\n                        </div>\n                        <div class=\"col-sm-4\">\n                            <mat-form-field>\n                                <mat-label>Country</mat-label>\n                                <mat-select>\n                                    <mat-option value=\"Afghanistan\">Afghanistan</mat-option>\n                                </mat-select>\n                            </mat-form-field>\n                        </div>\n                    </div>\n                    <div class=\"modal-footer wrap-div pb-0 pr-0\">\n                        <button type=\"submit\" mat-dialog-close class=\"btn btn-blue\" (click)=\"onSaveDetails()\">Save Details</button>\n                    </div>\n                </form>\n            </mat-tab>\n    \n            <mat-tab>\n                <ng-template mat-tab-label>\n                    <i class=\"fa fa-unlock-alt\"></i>\n                    Security\n                </ng-template>\n                <div class=\"p-10 security\">\n                    <div class=\"alert alert-info text-center\">\n                        <strong>Notice</strong>\n                        <p>Remember to notify your user for the password change</p>\n                    </div>\n                    <mat-form-field>\n                        <mat-label>Password</mat-label>\n                        <input matInput>\n                    </mat-form-field>\n                    <mat-form-field>\n                        <mat-label>Repeat Password</mat-label>\n                        <input matInput>\n                    </mat-form-field>\n                </div>\n                <div class=\"modal-footer wrap-div pb-0 pr-0\" >\n                    <button mat-dialog-close class=\"btn btn-blue\">Change Password</button>\n                </div>\n            </mat-tab>\n    \n            <mat-tab>\n                <ng-template mat-tab-label>\n                    <i class=\"fa fa-money\"></i>\n                    Subscriptions\n                </ng-template>\n    \n                <table mat-table [dataSource]=\"dataSource\">\n                    <!-- Plan Column -->\n                    <ng-container matColumnDef=\"plan\">\n                        <th mat-header-cell *matHeaderCellDef> Plan </th>\n                        <td mat-cell *matCellDef=\"let element\"> {{element.plan}} </td>\n                    </ng-container>\n    \n                    <!-- Trial Column -->\n                    <ng-container matColumnDef=\"trial\">\n                        <th mat-header-cell *matHeaderCellDef> Trial </th>\n                        <td mat-cell *matCellDef=\"let element\"> {{element.trial}} </td>\n                    </ng-container>\n    \n                    <!-- CC Column -->\n                    <ng-container matColumnDef=\"CC\">\n                        <th mat-header-cell *matHeaderCellDef> CC </th>\n                        <td mat-cell *matCellDef=\"let element\"> {{element.CC}} </td>\n                    </ng-container>\n    \n                    <!-- Period Column -->\n                    <ng-container matColumnDef=\"period\">\n                        <th mat-header-cell *matHeaderCellDef> Period </th>\n                        <td mat-cell *matCellDef=\"let element\"> {{element.period}} </td>\n                    </ng-container>\n    \n                    <!-- Canceled Column -->\n                    <ng-container matColumnDef=\"canceled\">\n                        <th mat-header-cell *matHeaderCellDef> Canceled </th>\n                        <td mat-cell *matCellDef=\"let element\"> {{element.canceled}} </td>\n                    </ng-container>\n    \n                    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n                    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\n                </table>\n            </mat-tab>\n        </mat-tab-group>\n    </div>\n</div>\n"
 
 /***/ }),
 
@@ -2758,7 +2780,7 @@ module.exports = "<section class=\"content-header\">\n  <h1>\n    Contacts\n  </
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<section class=\"content-header\">\n  <h1>\n    Coupons\n  </h1>\n</section>\n<section class=\"content admin-user admin_payouts\">\n  <div class=\"toolbox\">\n    <button class=\"btn btn-blue\" (click)=\"openAddFileDialog()\">\n      <span class=\"fa fa-plus fa-fw\"></span> New Coupon\n    </button>\n    <div class=\"pull-right\">\n      <button class=\"btn btn-default\" (click)=\"onActiveSearch()\">\n        <span class=\"fa fa-search\"></span> Search\n      </button>\n      <button class=\"btn btn-default\" (click)=\"onRefresh()\">\n        <span class=\"fa fa-refresh fa-fw\"></span>\n      </button>\n    </div>\n  </div>\n  <div class=\"mat-elevation-z8 box box-default\">\n    <table class=\"searchTable\" mat-table [dataSource]=\"dataSource\" matSort\n      [ngClass]=\"{'ActiveSpinner': showSpinner == true}\">\n      <!-- ID Column -->\n      <ng-container matColumnDef=\"name\">\n        <th mat-header-cell *matHeaderCellDef mat-sort-header> Name\n        </th>\n        <td mat-cell *matCellDef=\"let row\"> {{row.name}} </td>\n      </ng-container>\n      <!-- Color Column -->\n      <ng-container matColumnDef=\"amount\">\n        <th mat-header-cell *matHeaderCellDef mat-sort-header> Amount\n        </th>\n        <td mat-cell *matCellDef=\"let row\"> {{row.amount}} </td>\n      </ng-container>\n      <!-- Color Column -->\n      <ng-container matColumnDef=\"currency\">\n        <th mat-header-cell *matHeaderCellDef mat-sort-header> Currency\n        </th>\n        <td mat-cell *matCellDef=\"let row\"> {{row.currency}} </td>\n      </ng-container>\n      <!-- Color Column -->\n      <ng-container matColumnDef=\"percentoff\">\n        <th mat-header-cell *matHeaderCellDef mat-sort-header> Percent Off\n        </th>\n        <td mat-cell *matCellDef=\"let row\"> {{row.percentoff}} </td>\n      </ng-container>\n      <!-- Color Column -->\n      <ng-container matColumnDef=\"alter\">\n        <th mat-header-cell *matHeaderCellDef mat-sort-header> </th>\n        <td mat-cell *matCellDef=\"let row\" [style.color]=\"row.color\">\n          <a mat-icon-button color=\"warn\">\n            <i class=\"fa fa-trash fa-fw\"></i>\n          </a>\n        </td>\n      </ng-container>\n      <!-- search columns starts here -->\n      <!-- name search Column -->\n      <ng-container matColumnDef=\"nameSearch\">\n        <th mat-header-cell *matHeaderCellDef>\n          <mat-form-field *ngIf=\"searchActive\">\n            <input matInput (keyup)=\"applyFilter($event.target.value)\" placeholder=\"Name\">\n          </mat-form-field>\n        </th>\n      </ng-container>\n      <!-- amount search Column -->\n      <ng-container matColumnDef=\"amountSearch\">\n        <th mat-header-cell *matHeaderCellDef>\n          <mat-form-field *ngIf=\"searchActive\">\n            <input matInput (keyup)=\"applyFilter($event.target.value)\" placeholder=\"Amount\">\n          </mat-form-field>\n        </th>\n      </ng-container>\n      <!-- currency search Column  -->\n      <ng-container matColumnDef=\"currencySearch\">\n        <th mat-header-cell *matHeaderCellDef>\n          <mat-form-field *ngIf=\"searchActive\">\n            <mat-select (keyup)=\"applyFilter($event.target.value)\" placeholder=\"Currency\">\n              <mat-option value=\"USD\">USD</mat-option>\n              <mat-option value=\"EUR\">EUR</mat-option>\n              <mat-option value=\"GBP\">GBP</mat-option>\n              <mat-option value=\"CAD\">CAD</mat-option>\n              <mat-option value=\"AUD\">AUD</mat-option>\n              <mat-option value=\"JPY\">JPY</mat-option>\n            </mat-select>\n          </mat-form-field>\n        </th>\n      </ng-container>\n      <!--percentoff search Column -->\n      <ng-container matColumnDef=\"percentoffSearch\">\n        <th mat-header-cell *matHeaderCellDef>\n          <mat-form-field *ngIf=\"searchActive\">\n            <input matInput (keyup)=\"applyFilter($event.target.value)\" placeholder=\"Percent Off \">\n          </mat-form-field>\n        </th>\n      </ng-container>\n      <!--empty search Column -->\n      <ng-container matColumnDef=\"empty1\">\n        <th mat-header-cell *matHeaderCellDef> </th>\n      </ng-container>\n\n      <tr mat-header-row *matHeaderRowDef=\"displayedColumns\" [ngClass]=\"{'activeSearchHeader': searchActive == true}\">\n      </tr>\n      <tr mat-header-row *matHeaderRowDef=\"['nameSearch', 'amountSearch', 'currencySearch','percentoffSearch','empty1']\"\n        [ngClass]=\"{'activeRow': searchActive == true}\" style=\"display: none;\">\n      </tr>\n      <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\">\n      </tr>\n    </table>\n    <div class=\"empty_data\" *ngIf=\"!dataSource.data.length\">\n      No data available\n    </div>\n    <mat-paginator [pageSizeOptions]=\"[14, 30, 50, 100]\"></mat-paginator>\n    <mat-progress-spinner [mode]=\"mode\">\n    </mat-progress-spinner>\n  </div>\n</section>"
+module.exports = "<section class=\"content-header\">\n  <h1>\n    Coupons\n  </h1>\n</section>\n<section class=\"content admin-user admin_payouts\">\n  <div class=\"toolbox\">\n    <button class=\"btn btn-blue\" (click)=\"openAddFileDialog()\">\n      <span class=\"fa fa-plus fa-fw\"></span> New Coupon\n    </button>\n    <div class=\"pull-right\">\n      <button class=\"btn btn-default\" (click)=\"onActiveSearch()\">\n        <span class=\"fa fa-search\"></span> Search\n      </button>\n      <button class=\"btn btn-default\" (click)=\"onRefresh()\">\n        <span class=\"fa fa-refresh fa-fw\"></span>\n      </button>\n    </div>\n  </div>\n  <div class=\"mat-elevation-z8 box box-default\">\n    <table class=\"searchTable\" mat-table [dataSource]=\"dataSource\" matSort\n      [ngClass]=\"{'ActiveSpinner': showSpinner == true}\">\n      <!-- ID Column -->\n      <ng-container matColumnDef=\"name\">\n        <th mat-header-cell *matHeaderCellDef mat-sort-header> Name\n        </th>\n        <td mat-cell *matCellDef=\"let row\"> {{row.name}} </td>\n      </ng-container>\n      <!-- Color Column -->\n      <ng-container matColumnDef=\"amount\">\n        <th mat-header-cell *matHeaderCellDef mat-sort-header> Amount\n        </th>\n        <td mat-cell *matCellDef=\"let row\"> {{row.amount}} </td>\n      </ng-container>\n      <!-- Color Column -->\n      <ng-container matColumnDef=\"currency\">\n        <th mat-header-cell *matHeaderCellDef mat-sort-header> Currency\n        </th>\n        <td mat-cell *matCellDef=\"let row\"> {{row.currency}} </td>\n      </ng-container>\n      <!-- Color Column -->\n      <ng-container matColumnDef=\"percentoff\">\n        <th mat-header-cell *matHeaderCellDef mat-sort-header> Percent Off\n        </th>\n        <td mat-cell *matCellDef=\"let row\"> {{row.percentoff}} </td>\n      </ng-container>\n      <!-- Color Column -->\n      <ng-container matColumnDef=\"alter\">\n        <th mat-header-cell *matHeaderCellDef mat-sort-header> </th>\n        <td mat-cell *matCellDef=\"let row\" [style.color]=\"row.color\">\n          <a mat-icon-button color=\"warn\">\n            <i class=\"fa fa-trash fa-fw\"></i>\n          </a>\n        </td>\n      </ng-container>\n      <!-- search columns starts here -->\n      <!-- name search Column -->\n      <ng-container matColumnDef=\"nameSearch\">\n        <th mat-header-cell *matHeaderCellDef>\n          <mat-form-field *ngIf=\"searchActive\">\n            <input matInput (keyup)=\"applyFilter($event.target.value)\" placeholder=\"Name\">\n          </mat-form-field>\n        </th>\n      </ng-container>\n      <!-- amount search Column -->\n      <ng-container matColumnDef=\"amountSearch\">\n        <th mat-header-cell *matHeaderCellDef>\n          <mat-form-field *ngIf=\"searchActive\">\n            <input matInput (keyup)=\"applyFilter($event.target.value)\" placeholder=\"Amount\">\n          </mat-form-field>\n        </th>\n      </ng-container>\n      <!-- currency search Column  -->\n      <ng-container matColumnDef=\"currencySearch\">\n        <th mat-header-cell *matHeaderCellDef>\n          <mat-form-field *ngIf=\"searchActive\">\n            <mat-select (keyup)=\"applyFilter($event.target.value)\" placeholder=\"Currency\">\n              <mat-option value=\"USD\">USD</mat-option>\n              <mat-option value=\"EUR\">EUR</mat-option>\n              <mat-option value=\"GBP\">GBP</mat-option>\n              <mat-option value=\"CAD\">CAD</mat-option>\n              <mat-option value=\"AUD\">AUD</mat-option>\n              <mat-option value=\"JPY\">JPY</mat-option>\n            </mat-select>\n          </mat-form-field>\n        </th>\n      </ng-container>\n      <!--percentoff search Column -->\n      <ng-container matColumnDef=\"percentoffSearch\">\n        <th mat-header-cell *matHeaderCellDef>\n          <mat-form-field *ngIf=\"searchActive\">\n            <input matInput (keyup)=\"applyFilter($event.target.value)\" placeholder=\"Percent Off \">\n          </mat-form-field>\n        </th>\n      </ng-container>\n      <!--empty search Column -->\n      <ng-container matColumnDef=\"empty1\">\n        <th mat-header-cell *matHeaderCellDef> </th>\n      </ng-container>\n\n      <tr mat-header-row *matHeaderRowDef=\"displayedColumns\" [ngClass]=\"{'activeSearchHeader': searchActive == true}\">\n      </tr>\n      <tr mat-header-row *matHeaderRowDef=\"['nameSearch', 'amountSearch', 'currencySearch','percentoffSearch','empty1']\"\n        [ngClass]=\"{'activeRow': searchActive == true}\" style=\"display: none;\">\n      </tr>\n      <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\">\n      </tr>\n    </table>\n    <div class=\"empty_data\" *ngIf=\"!dataSource.data.length\">\n      No data available\n    </div>\n    <mat-paginator [pageSizeOptions]=\"[14, 30, 50, 100]\"></mat-paginator>\n    <mat-progress-spinner [mode]=\"mode\">\n    </mat-progress-spinner>\n  </div>\n</section>\n"
 
 /***/ }),
 
@@ -2769,7 +2791,7 @@ module.exports = "<section class=\"content-header\">\n  <h1>\n    Coupons\n  </h
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n        <section class=\"content-header\">\n            <h1>\n                Dashboard\n                <button type=\"button\" class=\"btn btn-sm btn-link btn-no-shadow pull-right\" ng-click=\"vm.LoadAll()\">\n                    <span class=\"fa fa-refresh fa-fw\" ng-class=\"{'fa-spin':vm.loading}\"></span>\n                </button>\n            </h1>\n        </section>\n        <section class=\"content\">\n            <div class=\"row\">\n                <div class=\"col-md-4 col-lg-2 box-stats\">\n                    <div class=\"small-box\">\n                        <div class=\"icon\">\n                            <i class=\"fa fa-users fa-fw\"></i>\n                        </div>\n                        <div class=\"inner\">\n                            <h3 class=\"ng-binding ng-scope\" style=\"font-size: 55px; line-height: 77px; display: block;\">\n                                334</h3>\n                            <p>Total Registered</p>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"col-md-4 col-lg-2 box-stats\">\n                    <div class=\"small-box bg-green\">\n                        <div class=\"icon\">\n                            <i class=\"fa fa-user\"></i>\n                        </div>\n                        <div class=\"inner\">\n                            <h3 class=\"ng-binding ng-scope\" style=\"font-size: 55px; line-height: 77px; display: block;\">\n                                0\n                            </h3>\n                            <p>New this month</p>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"col-md-4 col-lg-2 box-stats\">\n                    <div class=\"small-box bg-yellow\">\n                        <div class=\"icon\">\n                            <i class=\"fa fa-fire\"></i>\n                        </div>\n                        <div class=\"inner\">\n                            <h3 class=\"ng-binding ng-scope\" style=\"font-size: 55px; line-height: 77px; display: block;\">\n                                320</h3>\n                            <p>Total PremiumNew</p>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"col-md-4 col-lg-2 box-stats\">\n                    <div class=\"small-box bg-teal\">\n                        <div class=\"icon\">\n                            <i class=\"fa fa-credit-card fa-fw\"></i>\n                        </div>\n                        <div class=\"inner\">\n                            <h3 class=\"ng-binding ng-scope\" style=\"font-size: 55px; line-height: 77px; display: block;\">\n                                $0</h3>\n                            <p>This Month Payments</p>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"col-md-4 col-lg-2 box-stats\">\n                    <div class=\"small-box bg-maroon\">\n                        <div class=\"icon\">\n                            <i class=\"fa fa-credit-card fa-fw\"></i>\n                        </div>\n                        <div class=\"inner\">\n                            <h3 class=\"ng-binding ng-scope\" style=\"font-size: 55px; line-height: 77px; display: block;\">\n                                $0</h3>\n                            <p>Today Payments</p>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"col-md-4 col-lg-2 box-stats\">\n                    <div class=\"small-box bg-purple\">\n                        <div class=\"icon\">\n                            <i class=\"fa fa-commenting\"></i>\n                        </div>\n                        <div class=\"inner\">\n                            <h3 class=\"ng-binding ng-scope\" style=\"font-size: 55px; line-height: 77px; display: block;\">\n                                98</h3>\n                            <p>Online Users</p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"row\">\n                <div class=\"col-md-8\" style=\"padding:0 15px;\">\n                    <div class=\"row\">\n                        <div class=\"col-md-12\">\n                            <div class=\"line-graph\" ng-controller=\"MyController\">\n                                <div class=\"box\">\n                                    <div class=\"box-header with-border\" style=\"padding-bottom: 0;\">\n                                        <h3 class=\"box-title\" style=\"line-height: 50px;\">\n                                            Registrations Overview\n                                        </h3>\n                                        <div class=\"box-tools pull-right\">\n                                            <button type=\"button\" class=\"btn btn-sm btn-link btn-no-shadow\">\n                                                <span ng-show=\"!vm._isLine\">\n                                                    <span class=\"text-muted\">\n                                                        <span class=\"fa fa-line-chart fa-fw\"></span>Line</span>/\n                                                    <strong>\n                                                        <span class=\"fa fa-bar-chart fa-fw\"></span>Bar</strong>\n                                                </span>\n                                                <span ng-show=\"vm._isLine\" class=\"ng-hide\">\n                                                    <strong>\n                                                        <span class=\"fa fa-line-chart fa-fw\"></span>Line</strong>/\n                                                    <span class=\"text-muted\">\n                                                        <span class=\"fa fa-bar-chart fa-fw\"></span>Bar</span>\n                                                </span>\n                                            </button>\n                                            <div class=\"dropdown-btn\">\n                                                <mat-form-field>\n                                                    <mat-select [(value)]=\"selected\">\n                                                        <mat-option value=\"option1\">Last 90 days</mat-option>\n                                                        <mat-option value=\"option2\">Last 60 days</mat-option>\n                                                        <mat-option value=\"option3\">Last 30 days</mat-option>\n                                                        <mat-option value=\"option1\">Last 15 days</mat-option>\n                                                        <mat-option value=\"option2\">Last 7 days</mat-option>\n                                                    </mat-select>\n                                                </mat-form-field>\n                                            </div>\n                                            <button type=\"button\" class=\"btn btn-sm btn-link btn-no-shadow\"\n                                                ng-click=\"vm.LoadRegistrations()\">\n                                                <span class=\"fa fa-refresh fa-fw\"\n                                                    ng-class=\"{'fa-spin':vm.loading_statistics_registrations}\"></span>\n                                            </button>\n                                        </div>\n                                    </div>\n                                    <canvas class=\"chart chart-line\" chart-data=\"data\" chart-labels=\"labels\"\n                                        chart-series=\"series\" chart-click=\"onClick\" height=\"200\"></canvas>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"col-md-4\" style=\"padding:0 15px;\">\n                    <div class=\"col-md-12 users-box\">\n                        <div class=\"box box-default \">\n                            <div class=\"box-header with-border\">\n                                <h3 class=\"box-title\">Latest Registrations</h3>\n                            </div>\n                            <div class=\"list-group\">\n                                <div class=\"list-group-item\">\n                                    <div class=\"media\">\n                                        <div class=\"media-left\">\n                                            <img class=\"img-circle img-sm\" src=\"//cdn.echofin.co/avatars/5d053022.png\">\n                                        </div>\n                                        <div class=\"media-body ng-binding\">\n                                            <strong class=\"ng-binding\">mohit-kumar</strong><br> 2019-07-25 16:01:17\n                                        </div>\n                                    </div>\n                                </div>\n                                <div class=\"list-group-item\">\n                                    <div class=\"media\">\n                                        <div class=\"media-left\">\n                                            <img class=\"img-circle img-sm\" src=\"//cdn.echofin.co/avatars/1b14b4b6.png\">\n                                        </div>\n                                        <div class=\"media-body ng-binding\">\n                                            <strong class=\"ng-binding\">puneetsethi25</strong><br> 2019-07-18 13:45:01\n                                        </div>\n                                    </div>\n                                </div>\n                                <div class=\"list-group-item\">\n                                    <div class=\"media\">\n                                        <div class=\"media-left\">\n                                            <img class=\"img-circle img-sm\" src=\"//cdn.echofin.co/avatars/f47c2751.png\">\n                                        </div>\n                                        <div class=\"media-body ng-binding\">\n                                            <strong class=\"ng-binding\">Domulo</strong><br> 2019-06-12 12:59:48\n                                        </div>\n                                    </div>\n                                </div>\n                                <div class=\"list-group-item\">\n                                    <div class=\"media\">\n                                        <div class=\"media-left\">\n                                            <img class=\"img-circle img-sm\" src=\"//cdn.echofin.co/avatars/39fad28a.png\">\n                                        </div>\n                                        <div class=\"media-body ng-binding\">\n                                            <strong class=\"ng-binding\">Ricky</strong><br> 2019-05-21 14:34:21\n                                        </div>\n                                    </div>\n                                </div>\n                                <div class=\"list-group-item\">\n                                    <div class=\"media\">\n                                        <div class=\"media-left\">\n                                            <img class=\"img-circle img-sm\" src=\"//cdn.echofin.co/avatars/73d68540.png\">\n                                        </div>\n                                        <div class=\"media-body ng-binding\">\n                                            <strong class=\"ng-binding\">sterrones</strong><br> 2019-05-21 11:13:52\n                                        </div>\n                                    </div>\n                                </div>\n                                <div class=\"list-group-item\">\n                                    <div class=\"media\">\n                                        <div class=\"media-left\">\n                                            <img class=\"img-circle img-sm\" src=\"//cdn.echofin.co/avatars/6ca0ba32.png\">\n                                        </div>\n                                        <div class=\"media-body ng-binding\">\n                                            <strong class=\"ng-binding\">elturco34</strong><br> 2019-05-07 15:34:11\n                                        </div>\n                                    </div>\n                                </div>\n                                <div class=\"list-group-item\">\n                                    <div class=\"media\">\n                                        <div class=\"media-left\">\n                                            <img class=\"img-circle img-sm\" src=\"//cdn.echofin.co/avatars/f29fd757.png\">\n                                        </div>\n                                        <div class=\"media-body\">\n                                            <strong class=\"ng-binding\">bkells06</strong><br> 2019-04-28 14:37:56\n                                        </div>\n                                    </div>\n                                </div>\n                                <div class=\"list-group-item\">\n                                    <div class=\"media\">\n                                        <div class=\"media-left\">\n                                            <img class=\"img-circle img-sm\" src=\"//cdn.echofin.co/avatars/d913dd34.png\">\n                                        </div>\n                                        <div class=\"media-body ng-binding\">\n                                            <strong class=\"ng-binding\">Joshkido13349</strong><br> 2019-04-23 08:05:54\n                                        </div>\n                                    </div>\n                                </div>\n                                <div class=\"list-group-item\">\n                                    <div class=\"media\">\n                                        <div class=\"media-left\">\n                                            <img class=\"img-circle img-sm\"\n                                                ng-src=\"//cdn.echofin.co/avatars/e4f49140.png\"\n                                                src=\"//cdn.echofin.co/avatars/e4f49140.png\">\n                                        </div>\n                                        <div class=\"media-body ng-binding\">\n                                            <strong class=\"ng-binding\">Milordjuste</strong><br> 2019-04-22 00:32:44\n                                        </div>\n                                    </div>\n                                </div>\n                                <div class=\"list-group-item\">\n                                    <div class=\"media\">\n                                        <div class=\"media-left\">\n                                            <img class=\"img-circle img-sm\" src=\"//cdn.echofin.co/avatars/11b139bd.png\">\n                                        </div>\n                                        <div class=\"media-body ng-binding\">\n                                            <strong class=\"ng-binding\">sebastienb23</strong><br> 2019-04-21 22:37:36\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                            <div class=\"box-footer\">\n                                <a routerLink=\"/admincontacts\" class=\"btn btn-sm btn-link pull-right\">\n                                    View All Users\n                                </a>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </section>"
+module.exports = "\n        <section class=\"content-header\">\n            <h1>\n                Dashboard\n                <button type=\"button\" class=\"btn btn-sm btn-link btn-no-shadow pull-right\" >\n                    <span class=\"fa fa-refresh fa-fw\" ></span>\n                </button>\n            </h1>\n        </section>\n        <section class=\"content\">\n            <div class=\"row\">\n                <div class=\"col-md-4 col-lg-2 box-stats\">\n                    <div class=\"small-box\">\n                        <div class=\"icon\">\n                            <i class=\"fa fa-users fa-fw\"></i>\n                        </div>\n                        <div class=\"inner\">\n                            <h3 class=\"ng-binding ng-scope\" style=\"font-size: 55px; line-height: 77px; display: block;\">\n                                0</h3>\n                            <p>Total Registered</p>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"col-md-4 col-lg-2 box-stats\">\n                    <div class=\"small-box bg-green\">\n                        <div class=\"icon\">\n                            <i class=\"fa fa-user\"></i>\n                        </div>\n                        <div class=\"inner\">\n                            <h3 class=\"ng-binding ng-scope\" style=\"font-size: 55px; line-height: 77px; display: block;\">\n                                0\n                            </h3>\n                            <p>New this month</p>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"col-md-4 col-lg-2 box-stats\">\n                    <div class=\"small-box bg-yellow\">\n                        <div class=\"icon\">\n                            <i class=\"fa fa-fire\"></i>\n                        </div>\n                        <div class=\"inner\">\n                            <h3 class=\"ng-binding ng-scope\" style=\"font-size: 55px; line-height: 77px; display: block;\">\n                                0</h3>\n                            <p>Total Premium</p>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"col-md-4 col-lg-2 box-stats\">\n                    <div class=\"small-box bg-teal\">\n                        <div class=\"icon\">\n                            <i class=\"fa fa-credit-card fa-fw\"></i>\n                        </div>\n                        <div class=\"inner\">\n                            <h3 class=\"ng-binding ng-scope\" style=\"font-size: 55px; line-height: 77px; display: block;\">\n                                $0</h3>\n                            <p>This Month Payments</p>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"col-md-4 col-lg-2 box-stats\">\n                    <div class=\"small-box bg-maroon\">\n                        <div class=\"icon\">\n                            <i class=\"fa fa-credit-card fa-fw\"></i>\n                        </div>\n                        <div class=\"inner\">\n                            <h3 class=\"ng-binding ng-scope\" style=\"font-size: 55px; line-height: 77px; display: block;\">\n                                $0</h3>\n                            <p>Today Payments</p>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"col-md-4 col-lg-2 box-stats\">\n                    <div class=\"small-box bg-purple\">\n                        <div class=\"icon\">\n                            <i class=\"fa fa-commenting\"></i>\n                        </div>\n                        <div class=\"inner\">\n                            <h3 class=\"ng-binding ng-scope\" style=\"font-size: 55px; line-height: 77px; display: block;\">\n                                0</h3>\n                            <p>Online Users</p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"row\">\n                <div class=\"col-md-8\" style=\"padding:0 15px;\">\n                    <div class=\"row\">\n                        <div class=\"col-md-12\">\n                            <div class=\"line-graph\" ng-controller=\"MyController\">\n                                <div class=\"box\">\n                                    <div class=\"box-header with-border\" style=\"padding-bottom: 0;\">\n                                        <h3 class=\"box-title\" style=\"line-height: 50px;\">\n                                            Registrations Overview\n                                        </h3>\n                                        <div class=\"box-tools pull-right\">\n                                            <button type=\"button\" class=\"btn btn-sm btn-link btn-no-shadow\">\n                                                <span ng-show=\"!vm._isLine\">\n                                                    <span class=\"text-muted\">\n                                                        <span class=\"fa fa-line-chart fa-fw\"></span>Line</span>/\n                                                    <strong>\n                                                        <span class=\"fa fa-bar-chart fa-fw\"></span>Bar</strong>\n                                                </span>\n                                                <span ng-show=\"vm._isLine\" class=\"ng-hide\">\n                                                    <strong>\n                                                        <span class=\"fa fa-line-chart fa-fw\"></span>Line</strong>/\n                                                    <span class=\"text-muted\">\n                                                        <span class=\"fa fa-bar-chart fa-fw\"></span>Bar</span>\n                                                </span>\n                                            </button>\n                                            <div class=\"dropdown-btn\">\n                                                <mat-form-field>\n                                                    <mat-select [(value)]=\"selected\">\n                                                        <mat-option value=\"option1\">Last 90 days</mat-option>\n                                                        <mat-option value=\"option2\">Last 60 days</mat-option>\n                                                        <mat-option value=\"option3\">Last 30 days</mat-option>\n                                                        <mat-option value=\"option1\">Last 15 days</mat-option>\n                                                        <mat-option value=\"option2\">Last 7 days</mat-option>\n                                                    </mat-select>\n                                                </mat-form-field>\n                                            </div>\n                                            <button type=\"button\" class=\"btn btn-sm btn-link btn-no-shadow\"\n                                                ng-click=\"vm.LoadRegistrations()\">\n                                                <span class=\"fa fa-refresh fa-fw\"\n                                                    ng-class=\"{'fa-spin':vm.loading_statistics_registrations}\"></span>\n                                            </button>\n                                        </div>\n                                    </div>\n                                    <canvas class=\"chart chart-line\" chart-data=\"data\" chart-labels=\"labels\"\n                                        chart-series=\"series\" chart-click=\"onClick\" height=\"200\"></canvas>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"col-md-4\" style=\"padding:0 15px;\">\n                    <div class=\"col-md-12 users-box\">\n                        <div class=\"box box-default \">\n                            <div class=\"box-header with-border\">\n                                <h3 class=\"box-title\">Latest Registrations</h3>\n                            </div>\n                            <div class=\"list-group\">\n                                <div class=\"list-group-item\" *ngFor=\"let contact of contacts\">\n                                    <div class=\"media\">\n                                        <div class=\"media-left\">\n                                            <img class=\"img-circle img-sm\" src=\"{{contact.imgPath}}\">\n                                        </div>\n                                        <div class=\"media-body ng-binding\">\n                                            <strong>{{contact.fullname}}</strong><br> {{contact.registered}}\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                            <div class=\"box-footer\">\n                                <a routerLink=\"../contacts\" class=\"btn btn-sm btn-link pull-right\">\n                                    View All Users\n                                </a>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </section>"
 
 /***/ }),
 
@@ -2780,7 +2802,7 @@ module.exports = "\n        <section class=\"content-header\">\n            <h1>
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<section class=\"admin-marketing \">\n    <button class=\"btn btn-blue pull-right new_marketing\">\n        <span class=\"fa fa-plus fa-fw\"></span>New Marketing\n    </button>\n</section>\n<section class=\"admin-marketing pt-70\">\n    <h1 class=\"pull-left\">\n        Marketing\n    </h1>\n    <mat-form-field class=\"searchbar_marketing pull-right\">\n        <input matInput placeholder=\"Search\">\n    </mat-form-field>\n</section>\n\n<section class=\"admin-marketing pos-rel\" style=\"clear: both;\">\n    <mat-tab-group animationDuration=\"0ms\">\n        <mat-tab>\n            <ng-template mat-tab-label>\n                All\n            </ng-template>\n            <div class=\"row\">\n                <div class=\"col-md-12 p-10\">\n                    <a mat-icon-button>\n                        <i class=\"fa fa-envelope\"></i>\n                    </a>\n                    <div class=\"name_and_desc\">\n                        <h3>Live Analysis</h3>\n                        <p>Sent May 05, 2020 01:44PM</p>\n                    </div>\n                    <div class=\"toolbar-spacer\"></div>\n                    <div class=\"stats\">\n                        <h3>20,017</h3>\n                        <p>Sends</p>\n                    </div>\n                    <div class=\"stats\">\n                        <h3>320,017</h3>\n                        <p>Sends</p>\n                    </div>\n                    <div class=\"stats\">\n                        <h3>1%</h3>\n                        <p>Clicked</p>\n                    </div>\n                </div>\n                <mat-divider class=\"wrap-div\"></mat-divider>\n                <div class=\"col-md-12 p-10\">\n                    <a mat-icon-button>\n                        <i class=\"fa fa-paper-plane\"></i>\n                    </a>\n                    <div class=\"name_and_desc\">\n                        <h3>Live Analysis</h3>\n                        <p>Sent May 05, 2020 01:44PM</p>\n                    </div>\n                    <div class=\"toolbar-spacer\"></div>\n                    <div class=\"stats\">\n                        <h3>20,017</h3>\n                        <p>Sends</p>\n                    </div>\n                    <div class=\"stats\">\n                        <h3>320,017</h3>\n                        <p>Sends</p>\n                    </div>\n                    <div class=\"stats\">\n                        <h3>1%</h3>\n                        <p>Clicked</p>\n                    </div>\n                </div>\n                <mat-divider class=\"wrap-div\"></mat-divider>\n                <div class=\"col-md-12 p-10\">\n                    <a mat-icon-button>\n                        <i class=\"fa fa-refresh\"></i>\n                    </a>\n                    <div class=\"name_and_desc\">\n                        <h3>UPSELL - On Point Crypto Signal</h3>\n                        <p>Sent May 05, 2020 01:44PM</p>\n                    </div>\n                    <div class=\"toolbar-spacer\"></div>\n                    <div class=\"stats\">\n                        <h3>20,017</h3>\n                        <p>Sends</p>\n                    </div>\n                    <div class=\"stats\">\n                        <h3>320,017</h3>\n                        <p>Sends</p>\n                    </div>\n                    <div class=\"stats\">\n                        <h3>1%</h3>\n                        <p>Clicked</p>\n                    </div>\n                </div>\n                <mat-divider class=\"wrap-div\"></mat-divider>\n                <div class=\"col-md-12 p-10\">\n                    <a mat-icon-button>\n                        <i class=\"fa fa-paper-plane\"></i>\n                    </a>\n                    <div class=\"name_and_desc\">\n                        <h3>Live Analysis</h3>\n                        <p>Sent May 05, 2020 01:44PM</p>\n                    </div>\n                    <div class=\"toolbar-spacer\"></div>\n                    <div class=\"stats\">\n                        <h3>20,017</h3>\n                        <p>Sends</p>\n                    </div>\n                    <div class=\"stats\">\n                        <h3>320,017</h3>\n                        <p>Sends</p>\n                    </div>\n                    <div class=\"stats\">\n                        <h3>1%</h3>\n                        <p>Clicked</p>\n                    </div>\n                </div>\n            </div>\n        </mat-tab>\n        <mat-tab>\n            <ng-template mat-tab-label>\n                Draft\n            </ng-template>\n            <div class=\"row\">\n                <div class=\"col-md-8\">\n                </div>\n                <div class=\"col-md-4\">\n                </div>\n            </div>\n        </mat-tab>\n        <mat-tab>\n            <ng-template mat-tab-label>\n                Scheduled\n            </ng-template>\n            <div class=\"row\">\n                <div class=\"col-md-8\">\n                </div>\n                <div class=\"col-md-4\">\n                </div>\n            </div>\n        </mat-tab>\n        <mat-tab>\n            <ng-template mat-tab-label>\n                Sent\n            </ng-template>\n            <div class=\"row\">\n                <div class=\"col-md-8\">\n                </div>\n                <div class=\"col-md-4\">\n                </div>\n            </div>\n        </mat-tab>\n        <mat-tab>\n            <ng-template mat-tab-label>\n                Sequence\n            </ng-template>\n            <div class=\"row\">\n                <div class=\"col-md-8\">\n                </div>\n                <div class=\"col-md-4\">\n                </div>\n            </div>\n        </mat-tab>\n    </mat-tab-group>\n</section>"
+module.exports = "<section class=\"admin-marketing \">\n    <button class=\"btn btn-blue pull-right new_marketing\">\n        <span class=\"fa fa-plus fa-fw\"></span>New Marketing\n    </button>\n</section>\n<section class=\"admin-marketing pt-70\">\n    <h1 class=\"pull-left\">\n        Marketing\n    </h1>\n    <mat-form-field class=\"searchbar_marketing pull-right\">\n        <input matInput placeholder=\"Search\">\n    </mat-form-field>\n</section>\n\n<section class=\"admin-marketing pos-rel\" style=\"clear: both;\">\n    <mat-tab-group animationDuration=\"0ms\">\n        <mat-tab>\n            <ng-template mat-tab-label>\n                All\n            </ng-template>\n            <div  class=\"empty_data\"> No data available </div>\n            <!-- <div class=\"row\">\n                <div class=\"col-md-12 p-10\">\n                    <a mat-icon-button>\n                        <i class=\"fa fa-envelope\"></i>\n                    </a>\n                    <div class=\"name_and_desc\">\n                        <h3>Live Analysis</h3>\n                        <p>Sent May 05, 2020 01:44PM</p>\n                    </div>\n                    <div class=\"toolbar-spacer\"></div>\n                    <div class=\"stats\">\n                        <h3>20,017</h3>\n                        <p>Sends</p>\n                    </div>\n                    <div class=\"stats\">\n                        <h3>320,017</h3>\n                        <p>Sends</p>\n                    </div>\n                    <div class=\"stats\">\n                        <h3>1%</h3>\n                        <p>Clicked</p>\n                    </div>\n                </div>\n                <mat-divider class=\"wrap-div\"></mat-divider>\n                <div class=\"col-md-12 p-10\">\n                    <a mat-icon-button>\n                        <i class=\"fa fa-paper-plane\"></i>\n                    </a>\n                    <div class=\"name_and_desc\">\n                        <h3>Live Analysis</h3>\n                        <p>Sent May 05, 2020 01:44PM</p>\n                    </div>\n                    <div class=\"toolbar-spacer\"></div>\n                    <div class=\"stats\">\n                        <h3>20,017</h3>\n                        <p>Sends</p>\n                    </div>\n                    <div class=\"stats\">\n                        <h3>320,017</h3>\n                        <p>Sends</p>\n                    </div>\n                    <div class=\"stats\">\n                        <h3>1%</h3>\n                        <p>Clicked</p>\n                    </div>\n                </div>\n                <mat-divider class=\"wrap-div\"></mat-divider>\n                <div class=\"col-md-12 p-10\">\n                    <a mat-icon-button>\n                        <i class=\"fa fa-refresh\"></i>\n                    </a>\n                    <div class=\"name_and_desc\">\n                        <h3>UPSELL - On Point Crypto Signal</h3>\n                        <p>Sent May 05, 2020 01:44PM</p>\n                    </div>\n                    <div class=\"toolbar-spacer\"></div>\n                    <div class=\"stats\">\n                        <h3>20,017</h3>\n                        <p>Sends</p>\n                    </div>\n                    <div class=\"stats\">\n                        <h3>320,017</h3>\n                        <p>Sends</p>\n                    </div>\n                    <div class=\"stats\">\n                        <h3>1%</h3>\n                        <p>Clicked</p>\n                    </div>\n                </div>\n                <mat-divider class=\"wrap-div\"></mat-divider>\n                <div class=\"col-md-12 p-10\">\n                    <a mat-icon-button>\n                        <i class=\"fa fa-paper-plane\"></i>\n                    </a>\n                    <div class=\"name_and_desc\">\n                        <h3>Live Analysis</h3>\n                        <p>Sent May 05, 2020 01:44PM</p>\n                    </div>\n                    <div class=\"toolbar-spacer\"></div>\n                    <div class=\"stats\">\n                        <h3>20,017</h3>\n                        <p>Sends</p>\n                    </div>\n                    <div class=\"stats\">\n                        <h3>320,017</h3>\n                        <p>Sends</p>\n                    </div>\n                    <div class=\"stats\">\n                        <h3>1%</h3>\n                        <p>Clicked</p>\n                    </div>\n                </div>\n            </div> -->\n        </mat-tab>\n        <mat-tab>\n            <ng-template mat-tab-label>\n                Draft\n            </ng-template>\n            <div class=\"row\">\n                <div  class=\"empty_data\"> No data available </div>\n                <!-- <div class=\"col-md-8\">\n                </div>\n                <div class=\"col-md-4\">\n                </div> -->\n            </div>\n        </mat-tab>\n        <mat-tab>\n            <ng-template mat-tab-label>\n                Scheduled\n            </ng-template>\n            <div class=\"row\">\n                <div  class=\"empty_data\"> No data available </div>\n                <!-- <div class=\"col-md-8\">\n                </div>\n                <div class=\"col-md-4\">\n                </div> -->\n            </div>\n        </mat-tab>\n        <mat-tab>\n            <ng-template mat-tab-label>\n                Sent\n            </ng-template>\n            <div class=\"row\">\n                <div  class=\"empty_data\"> No data available </div>\n                <!-- <div class=\"col-md-8\">\n                </div>\n                <div class=\"col-md-4\">\n                </div> -->\n            </div>\n        </mat-tab>\n        <mat-tab>\n            <ng-template mat-tab-label>\n                Sequence\n            </ng-template>\n            <div class=\"row\">\n                <div  class=\"empty_data\"> No data available </div>\n                <!-- <div class=\"col-md-8\">\n                </div>\n                <div class=\"col-md-4\">\n                </div> -->\n            </div>\n        </mat-tab>\n    </mat-tab-group>\n</section>"
 
 /***/ }),
 
@@ -2802,7 +2824,7 @@ module.exports = "\n    <section class=\"content-header\">\n      <h1>\n        
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<section class=\"content-header\">\n    <h1>Online Activity\n        <small>last 24 hours</small>\n    </h1>\n</section>\n<section class=\"content admin-payments\">\n    <div class=\"media\">\n        <div class=\"media-body\">\n            <div style=\"padding: 0 10px;\">\n                <div class=\"toolbox\" style=\"padding:10px 25px\">\n                    <button type=\"button\" class=\"btn btn-blue\" [matMenuTriggerFor]=\"groupsession\">\n                        <span class=\"fa fa-object-group fa-fw\"></span> Group:\n                        <span class=\"\">session</span>&nbsp;\n                        <span class=\"caret\"></span>\n                    </button>\n                    <mat-menu #groupsession=\"matMenu\">\n                        <button class=\"white\" mat-menu-item>Session</button>\n                        <button class=\"white\" mat-menu-item>Ip</button>\n                        <button class=\"white\" mat-menu-item>Device</button>\n                    </mat-menu>\n                    <button class=\"btn btn-default ng-scope\">\n                        <span class=\"fa fa-expand fa-fw\"></span> Expand All\n                    </button>\n                    <div class=\"pull-right\">\n                        <button class=\"btn btn-default\">\n                            <span class=\"fa fa-refresh fa-fw\"></span>\n                        </button>\n                    </div>\n                </div>\n            </div>\n            <div class=\"box box-default\" style=\"overflow: visible;\">\n                <div class=\"mat-elevation-z8\">\n                    <table>\n                        <thead>\n                            <th>\n                            </th>\n                            <th>User</th>\n                            <th>\n                                Active Sessions\n                            </th>\n                            <th>\n                                Sessions\n                            </th>\n                            <th>\n                                IPs\n                            </th>\n                            <th>\n                                Devices\n                            </th>\n                            <th></th>\n                        </thead>\n                        <tbody>\n                            <tr>\n                                <td>\n                                    <button class=\"btn btn-xs btn-link btn-no-shadow collapse_carret\">\n                                        <span class=\"fa fa-angle-right\"></span>\n                                    </button>\n                                </td>\n                                <td>\n                                    puneetsethi25\n                                    <div class=\"status-badge pull-right\">\n                                        <span class=\"label label-success\">online</span>\n                                    </div>\n                                </td>\n                                <td>\n                                    <div class=\"idle-badge\">\n                                        <span class=\"label label-success\">&nbsp;</span>\n                                    </div>\n                                </td>\n                                <td>\n                                    5 Sessions\n                                </td>\n                                <td>\n                                    3ips\n                                </td>\n                                <td>1 devices</td>\n                            </tr>\n                            <tr class=\"collapse_row\">\n                                <td colspan=\"6\">\n                                    <div class=\"\">\n                                        <dt class=\"session-row serial\">\n                                            <div class=\"idle-badge\">\n                                                <span class=\"label label-default \">&nbsp;</span>\n                                            </div>\n                                            <div class=\"popover_text\">\n                                                189476cc6e3c4e4e81395e8896d6f40e\n                                            </div>\n                                            <div class=\"popover_tooltop  right\" style=\"top: -120px; left: 165px;\">\n                                                <div class=\"arrow\"></div>\n                                                <div class=\"popover-inner\">\n                                                    <div class=\"popover-content\">\n                                                        <div class=\"\">\n                                                            <dl class=\"dl-horizontal dl-horizontal-sm text-left\">\n                                                                <dt>Session</dt>\n                                                                <dd class=\"serial \">\n                                                                    6bcac9ea0554445092c0c6b313ebb689</dd>\n                                                                <dt>Inserted</dt>\n                                                                <dd class=\"\">2019-09-04 15:48:33</dd>\n                                                                <dt>Updated</dt>\n                                                                <dd class=\"\">2019-09-04 15:59:29</dd>\n                                                                <dt>IP</dt>\n                                                                <dd class=\"serial \">122.173.178.62</dd>\n                                                                <dt>Unique ID</dt>\n                                                                <dd class=\"serial \">\n                                                                    9ced2f9ab62d466ef9f28a0d2ad52af0</dd>\n                                                                <dt>Device</dt>\n                                                                <dd class=\"serial \">\n                                                                    6a59b086035a6bd8aab55149752569f6</dd>\n                                                                <dt>OS</dt>\n                                                                <dd class=\"\">Linuxx86_64</dd>\n                                                                <dt>Browser</dt>\n                                                                <dd class=\"\">Chrome 66.0.3359.139</dd>\n                                                                <dt>User Agent</dt>\n                                                                <dd class=\"\">Mozilla/5.0 (X11; Linux x86_64)\n                                                                    AppleWebKit/537.36 (KHTML, like Gecko)\n                                                                    Chrome/66.0.3359.139 Safari/537.36</dd>\n                                                            </dl>\n                                                        </div>\n                                                    </div>\n                                                </div>\n                                            </div>\n                                        </dt>\n                                        <dd>\n                                            <mat-progress-bar mode=\"determinate\" value=\"40\"></mat-progress-bar>\n                                        </dd>\n                                    </div>\n                                </td>\n                            </tr>\n                        </tbody>\n                    </table>\n                    <!-- <table mat-table [dataSource]=\"dataSource\" matSort>\n                      \n                                   <ng-container matColumnDef=\"empty\">\n                                        <th mat-header-cell *matHeaderCellDef mat-sort-header></th>\n                                        <td mat-cell *matCellDef=\"let row\"> \n                                                <button class=\"btn btn-xs btn-link btn-no-shadow\">\n                                                    <span class=\"fa fa-angle-right\"></span>\n                                                </button>\n                                        </td>\n                                    </ng-container>                                     \n                   \n                                   <ng-container matColumnDef=\"user\">\n                                      <th mat-header-cell *matHeaderCellDef mat-sort-header> User</th>\n                                      <td mat-cell *matCellDef=\"let row\"> \n                                          <a>{{row.user}}</a>\n                                          <div class=\"status-badge pull-right\">\n                                                <span class=\"label label-success\" >online</span>\n                                            </div>\n                                      </td>\n                                    </ng-container> \n                  \n                                  <ng-container matColumnDef=\"activesessions\">\n                                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Active Sessions </th>\n                                    <td mat-cell *matCellDef=\"let row\"> \n                                            <div class=\"idle-badge\">\n                                                <span class=\"label label-success\">&nbsp;</span>\n                                            </div>    \n                                    </td>\n                                  </ng-container>\n  \n                                  <ng-container matColumnDef=\"sessions\">\n                                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Sessions </th>\n                                    <td mat-cell *matCellDef=\"let row\"> {{row.sessions}} </td>\n                                  </ng-container>\n                        \n                                  <ng-container matColumnDef=\"ip\">\n                                    <th mat-header-cell *matHeaderCellDef mat-sort-header> IPs </th>\n                                    <td mat-cell *matCellDef=\"let row\" > {{row.ip}} </td>\n                                  </ng-container>\n                       \n                                    <ng-container matColumnDef=\"devices\">\n                                      <th mat-header-cell *matHeaderCellDef mat-sort-header> Devices </th>\n                                      <td mat-cell *matCellDef=\"let row\" [style.color]=\"row.color\"> {{row.devices}} </td>\n                                    </ng-container>\n                                    \n                                  <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n                                  <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\">\n                                  </tr>\n                                </table>\n                                <mat-paginator [pageSizeOptions]=\"[14, 25, 50, 100]\"></mat-paginator> -->\n                </div>\n            </div>\n        </div>\n        <div class=\"media-right\">\n            <div class=\"box box-default pull-right\" style=\"width: 300px;\">\n                <div class=\"box-body\">\n                    <h2>Legend</h2>\n                    <div style=\"margin-bottom:4px\">\n                        <strong>Messaging Service Status</strong>\n                    </div>\n                    <div style=\"margin-bottom:4px\">\n                        <div class=\"status-badge\" style=\"float:left;margin-right:5px;\">\n                            <span class=\"label label-success\">online</span>\n                        </div> Connected to the messaging service and status is Online\n                    </div>\n                    <div style=\"margin-bottom:4px\">\n                        <div class=\"status-badge\" style=\"float:left;margin-right:5px;\">\n                            <span class=\"label label-warning\">busy</span>\n                        </div> Connected to the messaging service and set the status Away\n                    </div>\n                    <div style=\"margin-bottom:4px\">\n                        <div class=\"status-badge\" style=\"float:left;margin-right:5px;\">\n                            <span class=\"label label-danger\">away</span>\n                        </div>\n                        Connected to the messaging service and set the status Busy\n                    </div>\n                    <div style=\"margin-bottom:4px\">\n                        <div class=\"status-badge\" style=\"float:left;margin-right:5px;\">\n                            <span class=\"label label-default\">offline</span>\n                        </div>\n                        Not connected to the messaging service ie. the user is offline\n                    </div>\n                    <div style=\"margin-top:10px;margin-bottom:5px\">\n                        <strong>Session Service Status</strong>\n                    </div>\n                    <div style=\"margin-bottom:4px\">\n                        <div class=\"idle-badge\" style=\"float:left;margin-right:5px;\">\n                            <span class=\"label label-success\">&nbsp;</span>\n                        </div> Active on a session ie. typing, moving the mouse etc.\n                    </div>\n                    <div style=\"margin-bottom:4px\">\n                        <div class=\"idle-badge\" style=\"float:left;margin-right:5px;\">\n                            <span class=\"label label-warning\">&nbsp;</span>\n                        </div> Idle session ie. the browser is not focused, the mobile app is in the background\n                        or the browser has no activity\n                        for more than 5 minutes\n                    </div>\n                    <div style=\"margin-bottom:4px\">\n                        <div class=\"idle-badge\" style=\"float:left;margin-right:5px;\">\n                            <span class=\"label label-default\">&nbsp;</span>\n                        </div> Session has expired\n                    </div>\n                    <hr>\n                    <h2>Example</h2>\n                    <ul class=\"list-unstyled\">\n                        <li>\n                            <div class=\"status-badge\" style=\"float:left;margin-right:5px;\">\n                                <span class=\"label label-danger\">away</span>\n                            </div>\n                            <div class=\"idle-badge\" style=\"float:left;margin-right:5px;\">\n                                <span class=\"label label-success\">&nbsp;</span>\n                            </div>\n                            <div class=\"idle-badge\" style=\"float:left;margin-right:5px;\">\n                                <span class=\"label label-warning\">&nbsp;</span>\n                            </div>\n                            The user is connected to the messaging service and set their status to Away. The\n                            user has two active sessions. One is active and one is about to expire as it is\n                            already idle.\n                        </li>\n                    </ul>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>"
+module.exports = "<section class=\"content-header\">\n    <h1>Online Activity\n        <small>last 24 hours</small>\n    </h1>\n</section>\n<section class=\"content admin-payments\">\n    <div class=\"media\">\n        <div class=\"media-body\">\n            <div style=\"padding: 0 10px;\">\n                <div class=\"toolbox\" style=\"padding:10px 25px\">\n                    <button type=\"button\" class=\"btn btn-blue\" [matMenuTriggerFor]=\"groupsession\">\n                        <span class=\"fa fa-object-group fa-fw\"></span> Group:\n                        <span class=\"\">session</span>&nbsp;\n                        <span class=\"caret\"></span>\n                    </button>\n                    <mat-menu #groupsession=\"matMenu\">\n                        <button mat-menu-item>Session</button>\n                        <li class=\"divider\"></li>\n                        <button  mat-menu-item>Ip</button>\n                        <li class=\"divider\"></li>\n                        <button  mat-menu-item>Device</button>\n                    </mat-menu>\n                    <button class=\"btn btn-default ng-scope\">\n                        <span class=\"fa fa-expand fa-fw\"></span> Expand All\n                    </button>\n                    <div class=\"pull-right\">\n                        <button class=\"btn btn-default\">\n                            <span class=\"fa fa-refresh fa-fw\"></span>\n                        </button>\n                    </div>\n                </div>\n            </div>\n            <div class=\"box box-default\" style=\"overflow: visible;\">\n                <div class=\"mat-elevation-z8\">\n                    <table>\n                        <thead>\n                            <th>\n                            </th>\n                            <th>User</th>\n                            <th>\n                                Active Sessions\n                            </th>\n                            <th>\n                                Sessions\n                            </th>\n                            <th>\n                                IPs\n                            </th>\n                            <th>\n                                Devices\n                            </th>\n                            <th></th>\n                        </thead>\n                        <tbody>\n                            <tr>\n                                <td>\n                                    <button class=\"btn btn-xs btn-link btn-no-shadow collapse_carret\">\n                                        <span class=\"fa fa-angle-right\"></span>\n                                    </button>\n                                </td>\n                                <td>\n                                    puneetsethi25\n                                    <div class=\"status-badge pull-right\">\n                                        <span class=\"label label-success\">online</span>\n                                    </div>\n                                </td>\n                                <td>\n                                    <div class=\"idle-badge\">\n                                        <span class=\"label label-success\">&nbsp;</span>\n                                    </div>\n                                </td>\n                                <td>\n                                    5 Sessions\n                                </td>\n                                <td>\n                                    3ips\n                                </td>\n                                <td>1 devices</td>\n                            </tr>\n                            <tr class=\"collapse_row\">\n                                <td colspan=\"6\">\n                                    <div class=\"\">\n                                        <dt class=\"session-row serial\">\n                                            <div class=\"idle-badge\">\n                                                <span class=\"label label-default \">&nbsp;</span>\n                                            </div>\n                                            <div class=\"popover_text\">\n                                                189476cc6e3c4e4e81395e8896d6f40e\n                                            </div>\n                                            <div class=\"popover_tooltop  right\" style=\"top: -120px; left: 165px;\">\n                                                <div class=\"arrow\"></div>\n                                                <div class=\"popover-inner\">\n                                                    <div class=\"popover-content\">\n                                                        <div class=\"\">\n                                                            <dl class=\"dl-horizontal dl-horizontal-sm text-left\">\n                                                                <dt>Session</dt>\n                                                                <dd class=\"serial \">\n                                                                    6bcac9ea0554445092c0c6b313ebb689</dd>\n                                                                <dt>Inserted</dt>\n                                                                <dd class=\"\">2019-09-04 15:48:33</dd>\n                                                                <dt>Updated</dt>\n                                                                <dd class=\"\">2019-09-04 15:59:29</dd>\n                                                                <dt>IP</dt>\n                                                                <dd class=\"serial \">122.173.178.62</dd>\n                                                                <dt>Unique ID</dt>\n                                                                <dd class=\"serial \">\n                                                                    9ced2f9ab62d466ef9f28a0d2ad52af0</dd>\n                                                                <dt>Device</dt>\n                                                                <dd class=\"serial \">\n                                                                    6a59b086035a6bd8aab55149752569f6</dd>\n                                                                <dt>OS</dt>\n                                                                <dd class=\"\">Linuxx86_64</dd>\n                                                                <dt>Browser</dt>\n                                                                <dd class=\"\">Chrome 66.0.3359.139</dd>\n                                                                <dt>User Agent</dt>\n                                                                <dd class=\"\">Mozilla/5.0 (X11; Linux x86_64)\n                                                                    AppleWebKit/537.36 (KHTML, like Gecko)\n                                                                    Chrome/66.0.3359.139 Safari/537.36</dd>\n                                                            </dl>\n                                                        </div>\n                                                    </div>\n                                                </div>\n                                            </div>\n                                        </dt>\n                                        <dd>\n                                            <mat-progress-bar mode=\"determinate\" value=\"40\"></mat-progress-bar>\n                                        </dd>\n                                    </div>\n                                </td>\n                            </tr>\n                        </tbody>\n                    </table>\n                    <!-- <table mat-table [dataSource]=\"dataSource\" matSort>\n                      \n                                   <ng-container matColumnDef=\"empty\">\n                                        <th mat-header-cell *matHeaderCellDef mat-sort-header></th>\n                                        <td mat-cell *matCellDef=\"let row\"> \n                                                <button class=\"btn btn-xs btn-link btn-no-shadow\">\n                                                    <span class=\"fa fa-angle-right\"></span>\n                                                </button>\n                                        </td>\n                                    </ng-container>                                     \n                   \n                                   <ng-container matColumnDef=\"user\">\n                                      <th mat-header-cell *matHeaderCellDef mat-sort-header> User</th>\n                                      <td mat-cell *matCellDef=\"let row\"> \n                                          <a>{{row.user}}</a>\n                                          <div class=\"status-badge pull-right\">\n                                                <span class=\"label label-success\" >online</span>\n                                            </div>\n                                      </td>\n                                    </ng-container> \n                  \n                                  <ng-container matColumnDef=\"activesessions\">\n                                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Active Sessions </th>\n                                    <td mat-cell *matCellDef=\"let row\"> \n                                            <div class=\"idle-badge\">\n                                                <span class=\"label label-success\">&nbsp;</span>\n                                            </div>    \n                                    </td>\n                                  </ng-container>\n  \n                                  <ng-container matColumnDef=\"sessions\">\n                                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Sessions </th>\n                                    <td mat-cell *matCellDef=\"let row\"> {{row.sessions}} </td>\n                                  </ng-container>\n                        \n                                  <ng-container matColumnDef=\"ip\">\n                                    <th mat-header-cell *matHeaderCellDef mat-sort-header> IPs </th>\n                                    <td mat-cell *matCellDef=\"let row\" > {{row.ip}} </td>\n                                  </ng-container>\n                       \n                                    <ng-container matColumnDef=\"devices\">\n                                      <th mat-header-cell *matHeaderCellDef mat-sort-header> Devices </th>\n                                      <td mat-cell *matCellDef=\"let row\" [style.color]=\"row.color\"> {{row.devices}} </td>\n                                    </ng-container>\n                                    \n                                  <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n                                  <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\">\n                                  </tr>\n                                </table>\n                                <mat-paginator [pageSizeOptions]=\"[14, 25, 50, 100]\"></mat-paginator> -->\n                </div>\n            </div>\n        </div>\n        <div class=\"media-right\">\n            <div class=\"box box-default pull-right\" style=\"width: 300px;\">\n                <div class=\"box-body\">\n                    <h2>Legend</h2>\n                    <div style=\"margin-bottom:4px\">\n                        <strong>Messaging Service Status</strong>\n                    </div>\n                    <div style=\"margin-bottom:4px\">\n                        <div class=\"status-badge\" style=\"float:left;margin-right:5px;\">\n                            <span class=\"label label-success\">online</span>\n                        </div> Connected to the messaging service and status is Online\n                    </div>\n                    <div style=\"margin-bottom:4px\">\n                        <div class=\"status-badge\" style=\"float:left;margin-right:5px;\">\n                            <span class=\"label label-warning\">busy</span>\n                        </div> Connected to the messaging service and set the status Away\n                    </div>\n                    <div style=\"margin-bottom:4px\">\n                        <div class=\"status-badge\" style=\"float:left;margin-right:5px;\">\n                            <span class=\"label label-danger\">away</span>\n                        </div>\n                        Connected to the messaging service and set the status Busy\n                    </div>\n                    <div style=\"margin-bottom:4px\">\n                        <div class=\"status-badge\" style=\"float:left;margin-right:5px;\">\n                            <span class=\"label label-default\">offline</span>\n                        </div>\n                        Not connected to the messaging service ie. the user is offline\n                    </div>\n                    <div style=\"margin-top:10px;margin-bottom:5px\">\n                        <strong>Session Service Status</strong>\n                    </div>\n                    <div style=\"margin-bottom:4px\">\n                        <div class=\"idle-badge\" style=\"float:left;margin-right:5px;\">\n                            <span class=\"label label-success\">&nbsp;</span>\n                        </div> Active on a session ie. typing, moving the mouse etc.\n                    </div>\n                    <div style=\"margin-bottom:4px\">\n                        <div class=\"idle-badge\" style=\"float:left;margin-right:5px;\">\n                            <span class=\"label label-warning\">&nbsp;</span>\n                        </div> Idle session ie. the browser is not focused, the mobile app is in the background\n                        or the browser has no activity\n                        for more than 5 minutes\n                    </div>\n                    <div style=\"margin-bottom:4px\">\n                        <div class=\"idle-badge\" style=\"float:left;margin-right:5px;\">\n                            <span class=\"label label-default\">&nbsp;</span>\n                        </div> Session has expired\n                    </div>\n                    <hr>\n                    <h2>Example</h2>\n                    <ul class=\"list-unstyled\">\n                        <li>\n                            <div class=\"status-badge\" style=\"float:left;margin-right:5px;\">\n                                <span class=\"label label-danger\">away</span>\n                            </div>\n                            <div class=\"idle-badge\" style=\"float:left;margin-right:5px;\">\n                                <span class=\"label label-success\">&nbsp;</span>\n                            </div>\n                            <div class=\"idle-badge\" style=\"float:left;margin-right:5px;\">\n                                <span class=\"label label-warning\">&nbsp;</span>\n                            </div>\n                            The user is connected to the messaging service and set their status to Away. The\n                            user has two active sessions. One is active and one is about to expire as it is\n                            already idle.\n                        </li>\n                    </ul>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>"
 
 /***/ }),
 
@@ -2813,7 +2835,7 @@ module.exports = "<section class=\"content-header\">\n    <h1>Online Activity\n 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<section class=\"content-header\">\n    <h1>\n        Sales\n    </h1>\n</section>\n<section class=\"content admin-payments\">\n    <div class=\"media\">\n        <div class=\"col-md-8 col-lg-8 no-pad\">\n            <div style=\"padding: 0 15px;\">\n                <div class=\"toolbox\">\n                    <button class=\"btn btn-default\" (click)=\"salesExporter.exportTable('xlsx')\">\n                        <span class=\"fa fa-download \"></span> Export\n                    </button>\n                    <div class=\"pull-right\">\n                        <button class=\"btn btn-default\" (click)=\"onActiveSearch()\">\n                            <span class=\"fa fa-search\"></span> Search\n                        </button>\n                        <button class=\"btn btn-default\" (click)=\"onRefresh()\">\n                            <span class=\"fa fa-refresh fa-fw\"></span>\n                        </button>\n                    </div>\n                    <div class=\"clearfix\"></div>\n                </div>\n            </div>\n            <div class=\"box box-default\">\n\n                <div class=\"mat-elevation-z8\">\n                    <table class=\"searchTable\" mat-table matTableExporter #salesExporter=\"matTableExporter\"\n                        [hiddenColumns]=\"[0]\" [ngClass]=\"{'ActiveSpinner': showSpinner == true}\"\n                        [dataSource]=\"dataSource\" matSort>\n                        <!-- ID Column -->\n                        <ng-container matColumnDef=\"date\">\n                            <th mat-header-cell *matHeaderCellDef mat-sort-header> Date\n                            </th>\n                            <td mat-cell *matCellDef=\"let row\">\n                                {{row.date}}\n                            </td>\n                        </ng-container>\n\n                        <!-- ID Column -->\n                        <ng-container matColumnDef=\"fullname\">\n                            <th mat-header-cell *matHeaderCellDef mat-sort-header> Name\n                            </th>\n                            <td mat-cell *matCellDef=\"let row\"> {{row.fullname}} </td>\n                        </ng-container>\n\n                        <!-- Name Column -->\n                        <ng-container matColumnDef=\"email\">\n                            <th mat-header-cell *matHeaderCellDef mat-sort-header> Email\n                            </th>\n                            <td mat-cell *matCellDef=\"let row\"> {{row.email}} </td>\n                        </ng-container>\n\n                        <!-- Color Column -->\n                        <ng-container matColumnDef=\"plan\">\n                            <th mat-header-cell *matHeaderCellDef mat-sort-header> Plan\n                            </th>\n                            <td mat-cell *matCellDef=\"let row\"> {{row.plan}} </td>\n                        </ng-container>\n\n                        <!-- Color Column -->\n                        <ng-container matColumnDef=\"description\">\n                            <th mat-header-cell *matHeaderCellDef mat-sort-header> Description\n                            </th>\n                            <td mat-cell *matCellDef=\"let row\" [style.color]=\"row.color\"> {{row.description}}\n                            </td>\n                        </ng-container>\n\n                        <!-- Color Column -->\n                        <ng-container matColumnDef=\"amount\">\n                            <th mat-header-cell *matHeaderCellDef mat-sort-header> Amount </th>\n                            <td mat-cell *matCellDef=\"let row\"> {{row.amount}} </td>\n                        </ng-container>\n\n                        <!-- Color Column -->\n                        <ng-container matColumnDef=\"status\">\n                            <th mat-header-cell *matHeaderCellDef mat-sort-header>Status\n                            </th>\n                            <td mat-cell *matCellDef=\"let row\"> {{row.status}}\n                            </td>\n                        </ng-container>\n\n                        <!-- date search Column -->\n                        <ng-container matColumnDef=\"dateSearch\">\n                            <th mat-header-cell *matHeaderCellDef> </th>\n                        </ng-container>\n\n                        <!-- username search Column -->\n                        <ng-container matColumnDef=\"nameSearch\">\n                            <th mat-header-cell *matHeaderCellDef>\n                                <mat-form-field *ngIf=\"searchActive\">\n                                    <input matInput (keyup)=\"applyFilter($event.target.value)\" placeholder=\"Name\">\n                                </mat-form-field>\n                            </th>\n                        </ng-container>\n                        <!-- email search Column  -->\n                        <ng-container matColumnDef=\"emailSearch\">\n                            <th mat-header-cell *matHeaderCellDef>\n                                <mat-form-field *ngIf=\"searchActive\">\n                                    <input matInput (keyup)=\"applyFilter($event.target.value)\" placeholder=\"Email\">\n                                </mat-form-field>\n                            </th>\n                        </ng-container>\n                        <!-- plan search Column -->\n                        <ng-container matColumnDef=\"planSearch\">\n                            <th mat-header-cell *matHeaderCellDef>\n                                <mat-form-field *ngIf=\"searchActive\">\n                                    <input matInput (keyup)=\"applyFilter($event.target.value)\" placeholder=\"Plan\">\n                                </mat-form-field>\n                            </th>\n                        </ng-container>\n                        <!-- Description search Column  -->\n                        <ng-container matColumnDef=\"descriptionSearch\">\n                            <th mat-header-cell *matHeaderCellDef>\n                                <mat-form-field *ngIf=\"searchActive\">\n                                    <input matInput (keyup)=\"applyFilter($event.target.value)\"\n                                        placeholder=\"Description\">\n                                </mat-form-field>\n                            </th>\n                        </ng-container>\n                        <!--empty search Column -->\n                        <ng-container matColumnDef=\"empty1\">\n                            <th mat-header-cell *matHeaderCellDef> </th>\n                        </ng-container>\n                        <!-- status search Column  -->\n                        <ng-container matColumnDef=\"statusSearch\">\n                            <th mat-header-cell *matHeaderCellDef>\n                                <mat-form-field *ngIf=\"searchActive\">\n                                    <mat-select (keyup)=\"applyFilter($event.target.value)\" placeholder=\"Select Status\">\n                                        <mat-option value=\"FAILED\">FAILED</mat-option>\n                                        <mat-option value=\"SUCCEED\">SUCCEED</mat-option>\n                                    </mat-select>\n                                </mat-form-field>\n                            </th>\n                        </ng-container>\n\n\n                        <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"\n                            [ngClass]=\"{'activeSearchHeader': searchActive == true}\"></tr>\n                        <tr mat-header-row\n                            *matHeaderRowDef=\"['dateSearch','nameSearch', 'emailSearch','planSearch', 'descriptionSearch','empty1','statusSearch']\"\n                            [ngClass]=\"{'activeRow': searchActive == true}\" style=\"display: none;\">\n                        </tr>\n                        <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\">\n                        </tr>\n                    </table>\n                    <div class=\"empty_data\" *ngIf=\"!dataSource.data.length\">\n                        No data available\n                      </div>\n                    <mat-paginator [pageSizeOptions]=\"[10, 25, 50, 100]\"></mat-paginator>\n\n                    <mat-progress-spinner *ngIf=\"showSpinner\" [mode]=\"mode\">\n                    </mat-progress-spinner>\n                </div>\n            </div>\n        </div>\n        <div class=\"col-md-4 col-lg-4\">\n            <div style=\"width: 100%;\">\n                <div class=\"box box-default\">\n                    <div class=\"box-header with-border\">\n                        <h3 class=\"box-title ng-binding\">Payments Projection for August 2019</h3>\n                    </div>\n                    <div class=\"box-body\">\n                        <div class=\"well text-center\" style=\"margin:0;\">\n                            <strong>This calendar is in test mode</strong>\n                            <br>Amounts might be inaccurate\n                        </div>\n                    </div>\n                    <div style=\"overflow-x:auto;overflow-y:hidden; width:100%\" class=\"\">\n                        <div class=\"\">\n                            <table style=\"margin:0\" class=\"table\">\n                                <tbody>\n                                    <tr>\n                                        <th class=\"text-center\" style=\"width:14.28571%\">MON</th>\n                                        <th class=\"text-center\" style=\"width:14.28571%\">TUE</th>\n                                        <th class=\"text-center\" style=\"width:14.28571%\">WED</th>\n                                        <th class=\"text-center\" style=\"width:14.28571%\">THU</th>\n                                        <th class=\"text-center\" style=\"width:14.28571%\">FRI</th>\n                                        <th class=\"text-center\" style=\"width:14.28571%\">SAT</th>\n                                        <th class=\"text-center\" style=\"width:14.28571%\">SUN</th>\n                                    </tr>\n                                    <tr>\n                                        <td>&nbsp;</td>\n                                        <td>&nbsp;</td>\n                                        <td>&nbsp;</td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">1</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">2</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">3</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">4</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                    </tr>\n                                    <tr>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">5</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">6</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">7</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">8</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">9</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">10</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">11</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                    </tr>\n                                    <tr>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">12</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">13</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">14</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">15</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">16</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">17</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">18</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                    </tr>\n                                    <tr>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">19</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">20</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">21</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">22</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">23</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">24</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">25</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                    </tr>\n                                    <tr>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">26</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right today\"\n                                            style=\"background-color:undefined\"><span\n                                                class=\"paymentCalendarDate\">27</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">28</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">29</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">30</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">31</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td>&nbsp;</td>\n                                    </tr>\n                                </tbody>\n                            </table>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"box box-default\" style=\"border-top-color:#00a2c8;\">\n                    <div class=\"box-header with-border\">\n                        <h3 class=\"box-title\">Monthly Payments</h3>\n                    </div>\n                    <table class=\"table\">\n                        <thead>\n                            <tr>\n                                <th>&nbsp;</th>\n                                <th style=\"width:100px;\">&nbsp;</th>\n                            </tr>\n                        </thead>\n                        <tbody>\n                            <tr class=\"\">\n                                <th style=\"font-family:monospace\" class=\"ng-binding\">2019-03</th>\n                                <td class=\"text-right ng-binding\" style=\"font-family:monospace\">154.00</td>\n                            </tr>\n                            <tr class=\"\">\n                                <th style=\"font-family:monospace\" class=\"ng-binding\">2019-01</th>\n                                <td class=\"text-right ng-binding\" style=\"font-family:monospace\">134.00</td>\n                            </tr>\n                            <tr class=\"\">\n                                <th style=\"font-family:monospace\" class=\"ng-binding\">2018-12</th>\n                                <td class=\"text-right ng-binding\" style=\"font-family:monospace\">134.00</td>\n                            </tr>\n                            <tr class=\"\">\n                                <th style=\"font-family:monospace\" class=\"ng-binding\">2018-11</th>\n                                <td class=\"text-right ng-binding\" style=\"font-family:monospace\">134.00</td>\n                            </tr>\n                            <tr class=\"\">\n                                <th style=\"font-family:monospace\" class=\"ng-binding\">2018-10</th>\n                                <td class=\"text-right ng-binding\" style=\"font-family:monospace\">196.00</td>\n                            </tr>\n                            <tr class=\"\">\n                                <th style=\"font-family:monospace\" class=\"ng-binding\">2018-08</th>\n                                <td class=\"text-right ng-binding\" style=\"font-family:monospace\">521.00</td>\n                            </tr>\n                            <tr class=\"\">\n                                <th style=\"font-family:monospace\" class=\"ng-binding\">2018-05</th>\n                                <td class=\"text-right ng-binding\" style=\"font-family:monospace\">1,079.00</td>\n                            </tr>\n                            <tr class=\"\">\n                                <th style=\"font-family:monospace\" class=\"ng-binding\">2018-04</th>\n                                <td class=\"text-right ng-binding\" style=\"font-family:monospace\">2,076.00</td>\n                            </tr>\n                        </tbody>\n                        <tfoot>\n                            <tr>\n                                <th class=\"text-right\">Total</th>\n                                <td class=\"text-right ng-\n                                      inding\" style=\"font-family:monospace\">18,746.00</td>\n                            </tr>\n                        </tfoot>\n                    </table>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>"
+module.exports = "<section class=\"content-header\">\n    <h1>\n        Sales\n    </h1>\n</section>\n<section class=\"content admin-payments\">\n    <div class=\"media\">\n        <div class=\"col-md-8 col-lg-8 no-pad\">\n            <div style=\"padding: 0 15px;\">\n                <div class=\"toolbox\">\n                    <button class=\"btn btn-default\" (click)=\"salesExporter.exportTable('xlsx')\">\n                        <span class=\"fa fa-download \"></span> Export\n                    </button>\n                    <div class=\"pull-right\">\n                        <button class=\"btn btn-default\" (click)=\"onActiveSearch()\">\n                            <span class=\"fa fa-search\"></span> Search\n                        </button>\n                        <button class=\"btn btn-default\" (click)=\"onRefresh()\">\n                            <span class=\"fa fa-refresh fa-fw\"></span>\n                        </button>\n                    </div>\n                    <div class=\"clearfix\"></div>\n                </div>\n            </div>\n            <div class=\"box box-default\">\n\n                <div class=\"mat-elevation-z8\">\n                    <table class=\"searchTable\" mat-table matTableExporter #salesExporter=\"matTableExporter\"\n                        [hiddenColumns]=\"[0]\" [ngClass]=\"{'ActiveSpinner': showSpinner == true}\"\n                        [dataSource]=\"dataSource\" matSort>\n                        <!-- ID Column -->\n                        <ng-container matColumnDef=\"date\">\n                            <th mat-header-cell *matHeaderCellDef mat-sort-header> Date\n                            </th>\n                            <td mat-cell *matCellDef=\"let row\">\n                                {{row.date}}\n                            </td>\n                        </ng-container>\n\n                        <!-- ID Column -->\n                        <ng-container matColumnDef=\"fullname\">\n                            <th mat-header-cell *matHeaderCellDef mat-sort-header> Name\n                            </th>\n                            <td mat-cell *matCellDef=\"let row\"> {{row.fullname}} </td>\n                        </ng-container>\n\n                        <!-- Name Column -->\n                        <ng-container matColumnDef=\"email\">\n                            <th mat-header-cell *matHeaderCellDef mat-sort-header> Email\n                            </th>\n                            <td mat-cell *matCellDef=\"let row\"> {{row.email}} </td>\n                        </ng-container>\n\n                        <!-- Color Column -->\n                        <ng-container matColumnDef=\"plan\">\n                            <th mat-header-cell *matHeaderCellDef mat-sort-header> Plan\n                            </th>\n                            <td mat-cell *matCellDef=\"let row\"> {{row.plan}} </td>\n                        </ng-container>\n\n                        <!-- Color Column -->\n                        <ng-container matColumnDef=\"description\">\n                            <th mat-header-cell *matHeaderCellDef mat-sort-header> Description\n                            </th>\n                            <td mat-cell *matCellDef=\"let row\" [style.color]=\"row.color\"> {{row.description}}\n                            </td>\n                        </ng-container>\n\n                        <!-- Color Column -->\n                        <ng-container matColumnDef=\"amount\">\n                            <th mat-header-cell *matHeaderCellDef mat-sort-header> Amount </th>\n                            <td mat-cell *matCellDef=\"let row\"> {{row.amount}} </td>\n                        </ng-container>\n\n                        <!-- Color Column -->\n                        <ng-container matColumnDef=\"status\">\n                            <th mat-header-cell *matHeaderCellDef mat-sort-header>Status\n                            </th>\n                            <td mat-cell *matCellDef=\"let row\"> {{row.status}}\n                            </td>\n                        </ng-container>\n\n                        <!-- date search Column -->\n                        <ng-container matColumnDef=\"dateSearch\">\n                            <th mat-header-cell *matHeaderCellDef> </th>\n                        </ng-container>\n\n                        <!-- username search Column -->\n                        <ng-container matColumnDef=\"nameSearch\">\n                            <th mat-header-cell *matHeaderCellDef>\n                                <mat-form-field *ngIf=\"searchActive\">\n                                    <input matInput (keyup)=\"applyFilter($event.target.value)\" placeholder=\"Name\">\n                                </mat-form-field>\n                            </th>\n                        </ng-container>\n                        <!-- email search Column  -->\n                        <ng-container matColumnDef=\"emailSearch\">\n                            <th mat-header-cell *matHeaderCellDef>\n                                <mat-form-field *ngIf=\"searchActive\">\n                                    <input matInput (keyup)=\"applyFilter($event.target.value)\" placeholder=\"Email\">\n                                </mat-form-field>\n                            </th>\n                        </ng-container>\n                        <!-- plan search Column -->\n                        <ng-container matColumnDef=\"planSearch\">\n                            <th mat-header-cell *matHeaderCellDef>\n                                <mat-form-field *ngIf=\"searchActive\">\n                                    <input matInput (keyup)=\"applyFilter($event.target.value)\" placeholder=\"Plan\">\n                                </mat-form-field>\n                            </th>\n                        </ng-container>\n                        <!-- Description search Column  -->\n                        <ng-container matColumnDef=\"descriptionSearch\">\n                            <th mat-header-cell *matHeaderCellDef>\n                                <mat-form-field *ngIf=\"searchActive\">\n                                    <input matInput (keyup)=\"applyFilter($event.target.value)\"\n                                        placeholder=\"Description\">\n                                </mat-form-field>\n                            </th>\n                        </ng-container>\n                        <!--empty search Column -->\n                        <ng-container matColumnDef=\"empty1\">\n                            <th mat-header-cell *matHeaderCellDef> </th>\n                        </ng-container>\n                        <!-- status search Column  -->\n                        <ng-container matColumnDef=\"statusSearch\">\n                            <th mat-header-cell *matHeaderCellDef>\n                                <mat-form-field *ngIf=\"searchActive\">\n                                    <mat-select (keyup)=\"applyFilter($event.target.value)\" placeholder=\"Select Status\">\n                                        <mat-option value=\"FAILED\">FAILED</mat-option>\n                                        <mat-option value=\"SUCCEED\">SUCCEED</mat-option>\n                                    </mat-select>\n                                </mat-form-field>\n                            </th>   \n                        </ng-container>\n\n\n                        <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"\n                            [ngClass]=\"{'activeSearchHeader': searchActive == true}\"></tr>\n                        <tr mat-header-row\n                            *matHeaderRowDef=\"['dateSearch','nameSearch', 'emailSearch','planSearch', 'descriptionSearch','empty1','statusSearch']\"\n                            [ngClass]=\"{'activeRow': searchActive == true}\" style=\"display: none;\">\n                        </tr>\n                        <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\">\n                        </tr>\n                    </table>\n                    <div class=\"empty_data\" *ngIf=\"!dataSource.data.length\">\n                        No data available\n                      </div>\n                    <mat-paginator [pageSizeOptions]=\"[10, 25, 50, 100]\"></mat-paginator>\n\n                    <mat-progress-spinner *ngIf=\"showSpinner\" [mode]=\"mode\">\n                    </mat-progress-spinner>\n                </div>\n            </div>\n        </div>\n        <div class=\"col-md-4 col-lg-4\">\n            <div style=\"width: 100%;\">\n                <div class=\"box box-default\">\n                    <div class=\"box-header with-border\">\n                        <h3 class=\"box-title ng-binding\">Payments Projection for August 2019</h3>\n                    </div>\n                    <div class=\"box-body\">\n                        <div class=\"well text-center\" style=\"margin:0;\">\n                            <strong>This calendar is in test mode</strong>\n                            <br>Amounts might be inaccurate\n                        </div>\n                    </div>\n                    <div style=\"overflow-x:auto;overflow-y:hidden; width:100%\" class=\"\">\n                        <div class=\"\">\n                            <table style=\"margin:0\" class=\"table\">\n                                <tbody>\n                                    <tr>\n                                        <th class=\"text-center\" style=\"width:14.28571%\">MON</th>\n                                        <th class=\"text-center\" style=\"width:14.28571%\">TUE</th>\n                                        <th class=\"text-center\" style=\"width:14.28571%\">WED</th>\n                                        <th class=\"text-center\" style=\"width:14.28571%\">THU</th>\n                                        <th class=\"text-center\" style=\"width:14.28571%\">FRI</th>\n                                        <th class=\"text-center\" style=\"width:14.28571%\">SAT</th>\n                                        <th class=\"text-center\" style=\"width:14.28571%\">SUN</th>\n                                    </tr>\n                                    <tr>\n                                        <td>&nbsp;</td>\n                                        <td>&nbsp;</td>\n                                        <td>&nbsp;</td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">1</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">2</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">3</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">4</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                    </tr>\n                                    <tr>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">5</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">6</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">7</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">8</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">9</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">10</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">11</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                    </tr>\n                                    <tr>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">12</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">13</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">14</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">15</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">16</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">17</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">18</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                    </tr>\n                                    <tr>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">19</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">20</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">21</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">22</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">23</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">24</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">25</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                    </tr>\n                                    <tr>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">26</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right today\"\n                                            style=\"background-color:undefined\"><span\n                                                class=\"paymentCalendarDate\">27</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">28</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">29</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">30</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td class=\"paymentCalendarTd text-right \" style=\"background-color:undefined\">\n                                            <span class=\"paymentCalendarDate\">31</span><span\n                                                class=\"paymentCalendarAmount\">0</span></td>\n                                        <td>&nbsp;</td>\n                                    </tr>\n                                </tbody>\n                            </table>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"box box-default\" style=\"border-top-color:#00a2c8;\">\n                    <div class=\"box-header with-border\">\n                        <h3 class=\"box-title\">Monthly Payments</h3>\n                    </div>\n                    <table class=\"table\">\n                        <thead>\n                            <tr>\n                                <th>&nbsp;</th>\n                                <th style=\"width:100px;\">&nbsp;</th>\n                            </tr>\n                        </thead>\n                        <!-- <tbody>\n                            <tr class=\"\">\n                                <th style=\"font-family:monospace\">2019-03</th>\n                                <td class=\"text-right \" style=\"font-family:monospace\">154.00</td>\n                            </tr>\n                        </tbody> -->\n                        <tfoot>\n                            <tr>\n                                <th class=\"text-right\">Total</th>\n                                <td class=\"text-right \" style=\"font-family:monospace\">0.00</td>\n                            </tr>\n                        </tfoot>\n                    </table>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>"
 
 /***/ }),
 
@@ -2824,7 +2846,7 @@ module.exports = "<section class=\"content-header\">\n    <h1>\n        Sales\n 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<section class=\"content-header\">\n  <h1>\n    Services<small>Embedded external web pages ie. video play lists, blogs, news sites etc</small>\n  </h1>\n</section>\n<section class=\"content admin-user admin_payouts\">\n  <div class=\"toolbox\">\n    <button class=\"btn btn-blue\" (click)=\"openAddFileDialog()\">\n      <span class=\"fa fa-plus fa-fw\"></span> New Service\n    </button>\n    <div class=\"pull-right\">\n      <button class=\"btn btn-default\" (click)=\"onRefresh()\">\n        <span class=\"fa fa-refresh fa-fw\"></span>\n      </button>\n    </div>\n  </div>\n  <div class=\"mat-elevation-z8 box box-default\">\n    <table mat-table [dataSource]=\"ServicesDataSource\" matSort [ngClass]=\"{'ActiveSpinner': showSpinner == true}\">\n      <!-- ID Column -->\n      <ng-container matColumnDef=\"name\">\n        <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>\n        <td mat-cell *matCellDef=\"let row\"> {{row.name}} </td>\n      </ng-container>\n      <ng-container matColumnDef=\"description\">\n        <th mat-header-cell *matHeaderCellDef mat-sort-header> Description </th>\n        <td mat-cell *matCellDef=\"let row\"> {{row.description}} </td>\n      </ng-container>\n      <!-- Color Column -->\n      <ng-container matColumnDef=\"url\">\n        <th mat-header-cell *matHeaderCellDef mat-sort-header> Url </th>\n        <td mat-cell *matCellDef=\"let row\"> {{row.url}} </td>\n      </ng-container>\n      <!-- Color Column -->\n      <ng-container matColumnDef=\"plan\">\n        <th mat-header-cell *matHeaderCellDef mat-sort-header> Plan </th>\n        <td mat-cell *matCellDef=\"let row\"> {{row.plan}} </td>\n      </ng-container>\n      <!-- Color Column -->\n      <ng-container matColumnDef=\"coupon\">\n        <th mat-header-cell *matHeaderCellDef mat-sort-header> Coupon </th>\n        <td mat-cell *matCellDef=\"let row\"> {{row.coupon}} </td>\n      </ng-container>\n      <!-- Color Column -->\n      <ng-container matColumnDef=\"sort\">\n        <th mat-header-cell *matHeaderCellDef mat-sort-header>Sort</th>\n        <td mat-cell *matCellDef=\"let row\"> {{row.sort}} </td>\n      </ng-container>\n      <!-- Color Column -->\n      <ng-container matColumnDef=\"checkout\">\n        <th mat-header-cell *matHeaderCellDef mat-sort-header>Checkout</th>\n        <td mat-cell *matCellDef=\"let row\">\n          <a mat-icon-button color=\"accent\">\n            <i class=\"fa fa-cart-plus\"></i>\n          </a>\n        </td>\n      </ng-container>\n      <!-- Color Column -->\n      <ng-container matColumnDef=\"alter\">\n        <th mat-header-cell *matHeaderCellDef mat-sort-header> </th>\n        <td mat-cell *matCellDef=\"let row\">\n          <a mat-icon-button color=\"warn\">\n            <i class=\"fa fa-trash fa-fw\"></i>\n          </a>\n        </td>\n      </ng-container>\n      <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n      <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\">\n      </tr>\n    </table>\n    <div class=\"empty_data\" *ngIf=\"!ServicesDataSource.data.length\">\n      No data available\n    </div>\n    <mat-paginator [pageSizeOptions]=\"[14, 30, 50, 100]\"></mat-paginator>\n    <mat-progress-spinner [mode]=\"mode\">\n    </mat-progress-spinner>\n  </div>\n</section>"
+module.exports = "<section class=\"content-header\">\n  <h1>\n    Services<small>Embedded external web pages ie. video play lists, blogs, news sites etc</small>\n  </h1>\n</section>\n<section class=\"content admin-user admin_payouts\">\n  <div class=\"toolbox\">\n    <button class=\"btn btn-blue\" (click)=\"openAddFileDialog()\">\n      <span class=\"fa fa-plus fa-fw\"></span> New Service\n    </button>\n    <div class=\"pull-right\">\n      <button class=\"btn btn-default\" (click)=\"onRefresh()\">\n        <span class=\"fa fa-refresh fa-fw\"></span>\n      </button>\n    </div>\n  </div>\n  <div class=\"mat-elevation-z8 box box-default\">\n    <table mat-table [dataSource]=\"dataSource\" matSort [ngClass]=\"{'ActiveSpinner': showSpinner == true}\">\n      <!-- ID Column -->\n      <ng-container matColumnDef=\"name\">\n        <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>\n        <td mat-cell *matCellDef=\"let row\"> {{row.name}} </td>\n      </ng-container>\n      <ng-container matColumnDef=\"description\">\n        <th mat-header-cell *matHeaderCellDef mat-sort-header> Description </th>\n        <td mat-cell *matCellDef=\"let row\"> {{row.description}} </td>\n      </ng-container>\n      <!-- Color Column -->\n      <ng-container matColumnDef=\"url\">\n        <th mat-header-cell *matHeaderCellDef mat-sort-header> Url </th>\n        <td mat-cell *matCellDef=\"let row\"> {{row.url}} </td>\n      </ng-container>\n      <!-- Color Column -->\n      <ng-container matColumnDef=\"plan\">\n        <th mat-header-cell *matHeaderCellDef mat-sort-header> Plan </th>\n        <td mat-cell *matCellDef=\"let row\"> {{row.plan}} </td>\n      </ng-container>\n      <!-- Color Column -->\n      <ng-container matColumnDef=\"coupon\">\n        <th mat-header-cell *matHeaderCellDef mat-sort-header> Coupon </th>\n        <td mat-cell *matCellDef=\"let row\"> {{row.coupon}} </td>\n      </ng-container>\n      <!-- Color Column -->\n      <ng-container matColumnDef=\"sort\">\n        <th mat-header-cell *matHeaderCellDef mat-sort-header>Sort</th>\n        <td mat-cell *matCellDef=\"let row\"> {{row.sort}} </td>\n      </ng-container>\n      <!-- Color Column -->\n      <ng-container matColumnDef=\"checkout\">\n        <th mat-header-cell *matHeaderCellDef mat-sort-header>Checkout</th>\n        <td mat-cell *matCellDef=\"let row\">\n          <a mat-icon-button color=\"accent\">\n            <i class=\"fa fa-cart-plus\"></i>\n          </a>\n        </td>\n      </ng-container>\n      <!-- Color Column -->\n      <ng-container matColumnDef=\"alter\">\n        <th mat-header-cell *matHeaderCellDef mat-sort-header> </th>\n        <td mat-cell *matCellDef=\"let row\">\n          <a mat-icon-button color=\"warn\">\n            <i class=\"fa fa-trash fa-fw\"></i>\n          </a>\n        </td>\n      </ng-container>\n      <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n      <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\">\n      </tr>\n    </table>\n    <div class=\"empty_data\" *ngIf=\"!dataSource.data.length\">\n      No data available\n    </div>\n    <mat-paginator [pageSizeOptions]=\"[14, 30, 50, 100]\"></mat-paginator>\n    <mat-progress-spinner [mode]=\"mode\">\n    </mat-progress-spinner>\n  </div>\n</section>"
 
 /***/ }),
 
@@ -2868,7 +2890,7 @@ module.exports = "\n        <section class=\"content-header admin-widget\">\n   
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<section class=\"content-header admin-widget\">\n    <h1>\n        Registration Field Settings\n    </h1>\n</section>\n<section class=\"content admin-widget\">\n    <div class=\"box box-default\">\n        <div class=\"box-body wrap-div\">\n            <div class=\"col-md-12\">\n                <mat-selection-list #registrationField color=\"primary\" class=\"p-0\">\n                    <mat-list-item>\n                        <b>Fields to Show</b>\n                        <span><b>* Required</b></span>\n                    </mat-list-item>\n                    <mat-list-option disabled [checkboxPosition]=\"before\" [selected]=\"true\">\n                        Email\n                        <mat-slide-toggle color=\"primary\" [disabled]=\"true\" [checked]=\"true\"></mat-slide-toggle>\n                    </mat-list-option>\n                    <mat-list-option disabled [checkboxPosition]=\"before\" [selected]=\"true\">\n                        Password\n                        <mat-slide-toggle color=\"primary\" [disabled]=\"true\" [checked]=\"true\"></mat-slide-toggle>\n                    </mat-list-option>\n                    <mat-list-option [checkboxPosition]=\"before\" *ngFor=\"let registrationField of RegistrationList\">\n                        {{registrationField}}\n                        <mat-slide-toggle color=\"primary\"></mat-slide-toggle>\n                    </mat-list-option>\n                </mat-selection-list>\n            </div>\n        </div>\n    </div>\n    <button class=\"btn btn-blue pull-right\">\n        Save\n    </button>\n</section>"
+module.exports = "<section class=\"content-header admin-widget\">\n    <h1>\n        Registration Field Settings\n    </h1>\n</section>\n<section class=\"content admin-widget\">\n    <div class=\"box box-default\">\n        <div class=\"box-body wrap-div\">\n            <div class=\"col-md-12\">\n                <mat-selection-list #registrationField color=\"primary\" class=\"p-0\">\n                    <mat-list-item>\n                        <b>Fields to Show</b>\n                        <span><b>* Required</b></span>\n                    </mat-list-item>\n                    <mat-list-option disabled [checkboxPosition]=\"before\" [selected]=\"true\">\n                        Email\n                    </mat-list-option>\n                    <mat-list-option disabled [checkboxPosition]=\"before\" [selected]=\"true\">\n                        Password\n                    </mat-list-option>\n                    <mat-list-option [checkboxPosition]=\"before\" *ngFor=\"let registrationField of RegistrationList\">\n                        {{registrationField}}\n                        <mat-slide-toggle color=\"primary\"></mat-slide-toggle>\n                    </mat-list-option>\n                </mat-selection-list>\n            </div>\n        </div>\n    </div>\n    <button class=\"btn btn-blue pull-right\">\n        Save\n    </button>\n</section>"
 
 /***/ }),
 
@@ -2879,7 +2901,7 @@ module.exports = "<section class=\"content-header admin-widget\">\n    <h1>\n   
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"modal-header\">\n    <button mat-dialog-close class=\"close\">\n        <span aria-hidden=\"true\">×</span>\n    </button>\n    <div class=\"media-body-left\" style=\"position: relative;\">\n        <img src=\"//cdn.echofin.co/avatar/b7e64405.png?t=1551496349357\" *ngIf=\"!adminImgPath\" alt=\"\">\n        <img style=\"width: 100%; height: 100%;\" src=\"{{adminImgPath}}\" *ngIf=\"adminImgPath\">\n        <div class=\"hoving-avatar\">\n            <input #file type=\"file\" accept='image/*' (change)=\"preview(file.files)\" />\n            <span style=\"color: #fff;\">Change</span>\n        </div>\n    </div>\n\n    <div class=\"media-body-right\">\n        <h4 class=\"media-heading\">Testechofin</h4>\n        <p>Test123456@gmail.com</p>\n        <p class=\"info\">\n            Last Login: 5/27/20 9:02 AM | Last Message: -\n        </p>\n    </div>\n</div>\n<div class=\"modal-body wrap-div profile_dialog\">\n    <mat-tab-group>\n        <mat-tab>\n            <ng-template mat-tab-label>\n                <i class=\"fa fa-cubes\"></i>\n                General\n            </ng-template>\n            <div class=\"row\">\n                <div class=\"col-sm-12\">\n                    <mat-form-field>\n                        <mat-label>Full Name</mat-label>\n                        <input matInput>\n                    </mat-form-field>\n                </div>\n            </div>\n            <div class=\"row\">\n                <div class=\"col-sm-12\">\n                    <mat-form-field>\n                        <mat-label>Email</mat-label>\n                        <input matInput>\n                    </mat-form-field>\n                </div>\n            </div>\n            <div class=\"row\">\n                <div class=\"col-sm-7\">\n                    <mat-form-field>\n                        <mat-label>Email</mat-label>\n                        <input matInput>\n                    </mat-form-field>\n                </div>\n                <div class=\"col-sm-5\">\n                    <mat-form-field>\n                        <mat-select placeholder=\"Role\">\n                            <mat-option value=\"Admin\">Admin</mat-option>\n                            <mat-option value=\"Instructor\">Instructor</mat-option>\n                            <mat-option value=\"Moderator\">Moderator</mat-option>\n                            <mat-option value=\"User\">User</mat-option>\n                        </mat-select>\n                        <mat-hint>\n                            <a class=\"\">\n                                <i class=\"fa fa-info-circle\"></i>\n                            </a>\n                        </mat-hint>\n                    </mat-form-field>\n                </div>\n            </div>\n            <div class=\"row\">\n                <div class=\"col-sm-12\">\n                    <mat-form-field>\n                        <mat-label>Address</mat-label>\n                        <textarea matInput></textarea>\n                    </mat-form-field>\n                </div>\n            </div>\n            <div class=\"row\">\n                <div class=\"col-sm-4\">\n                    <mat-form-field>\n                        <mat-label>City</mat-label>\n                        <input matInput>\n                    </mat-form-field>\n                </div>\n                <div class=\"col-sm-4\">\n                    <mat-form-field>\n                        <mat-label>Zip</mat-label>\n                        <input matInput>\n                    </mat-form-field>\n                </div>\n                <div class=\"col-sm-4\">\n                    <mat-form-field>\n                        <mat-label>Country</mat-label>\n                        <mat-select>\n                            <mat-option value=\"Afghanistan\">Afghanistan</mat-option>\n                        </mat-select>\n                    </mat-form-field>\n                </div>\n            </div>\n            <div class=\"modal-footer wrap-div\">\n                <button mat-dialog-close class=\"btn btn-blue\">Save Details</button>\n            </div>\n        </mat-tab>\n\n        <mat-tab>\n            <ng-template mat-tab-label>\n                <i class=\"fa fa-unlock-alt\"></i>\n                Security\n            </ng-template>\n            <div class=\"p-10 security\">\n                <div class=\"alert alert-info text-center\">\n                    <strong>Notice</strong>\n                    <p>Remember to notify your user for the password change</p>\n                </div>\n                <mat-form-field>\n                    <mat-label>Password</mat-label>\n                    <input matInput>\n                </mat-form-field>\n                <mat-form-field>\n                    <mat-label>Repeat Password</mat-label>\n                    <input matInput>\n                </mat-form-field>\n            </div>\n            <div class=\"modal-footer wrap-div\">\n                <button mat-dialog-close class=\"btn btn-blue\">Change Password</button>\n            </div>\n        </mat-tab>\n\n        <mat-tab>\n            <ng-template mat-tab-label>\n                <i class=\"fa fa-money\"></i>\n                Subscriptions\n            </ng-template>\n\n            <table mat-table [dataSource]=\"dataSource\">\n                <!-- Plan Column -->\n                <ng-container matColumnDef=\"plan\">\n                    <th mat-header-cell *matHeaderCellDef> Plan </th>\n                    <td mat-cell *matCellDef=\"let element\"> {{element.plan}} </td>\n                </ng-container>\n\n                <!-- Trial Column -->\n                <ng-container matColumnDef=\"trial\">\n                    <th mat-header-cell *matHeaderCellDef> Trial </th>\n                    <td mat-cell *matCellDef=\"let element\"> {{element.trial}} </td>\n                </ng-container>\n\n                <!-- CC Column -->\n                <ng-container matColumnDef=\"CC\">\n                    <th mat-header-cell *matHeaderCellDef> CC </th>\n                    <td mat-cell *matCellDef=\"let element\"> {{element.CC}} </td>\n                </ng-container>\n\n                <!-- Period Column -->\n                <ng-container matColumnDef=\"period\">\n                    <th mat-header-cell *matHeaderCellDef> Period </th>\n                    <td mat-cell *matCellDef=\"let element\"> {{element.period}} </td>\n                </ng-container>\n\n                <!-- Canceled Column -->\n                <ng-container matColumnDef=\"canceled\">\n                    <th mat-header-cell *matHeaderCellDef> Canceled </th>\n                    <td mat-cell *matCellDef=\"let element\"> {{element.canceled}} </td>\n                </ng-container>\n\n                <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n                <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\n            </table>\n        </mat-tab>\n    </mat-tab-group>\n</div>"
+module.exports = "<div class=\"modal-header\">\n    <button mat-dialog-close class=\"close\">\n        <span aria-hidden=\"true\">×</span>\n    </button>\n    <div class=\"media-body-left\" style=\"position: relative;\">\n        <img src=\"//cdn.echofin.co/avatar/b7e64405.png?t=1551496349357\" *ngIf=\"!adminImgPath\" alt=\"\">\n        <img style=\"width: 100%; height: 100%;\" src=\"{{adminImgPath}}\" *ngIf=\"adminImgPath\">\n        <div class=\"hoving-avatar\">\n            <input #file type=\"file\" accept='image/*' (change)=\"preview(file.files)\" />\n            <span style=\"color: #fff;\">Change</span>\n        </div>\n    </div>\n\n    <div class=\"media-body-right\">\n        <h4 class=\"media-heading\">{{user.username}}</h4>\n        <p>{{user.email}}</p>\n        <p class=\"info\">\n            Last Login:  | Last Message: -\n        </p>\n    </div>\n</div>\n<div class=\"modal-body wrap-div profile_dialog\">\n    <mat-tab-group>\n        <mat-tab>\n            <ng-template mat-tab-label>\n                <i class=\"fa fa-cubes\"></i>\n                General\n            </ng-template>\n            <div class=\"row\">\n                <div class=\"col-sm-12\">\n                    <mat-form-field>\n                        <mat-label>Full Name</mat-label>\n                        <input matInput>\n                    </mat-form-field>\n                </div>\n            </div>\n            <div class=\"row\">\n                <div class=\"col-sm-7\">\n                    <mat-form-field>\n                        <mat-label>Email</mat-label>\n                        <input matInput>\n                    </mat-form-field>\n                </div>\n                <div class=\"col-sm-5\">\n                    <mat-form-field>\n                        <mat-select placeholder=\"Role\">\n                            <mat-option value=\"Admin\">Admin</mat-option>\n                            <mat-option value=\"Instructor\">Instructor</mat-option>\n                            <mat-option value=\"Moderator\">Moderator</mat-option>\n                            <mat-option value=\"User\">User</mat-option>\n                        </mat-select>\n                        <mat-hint>\n                            <a class=\"\">\n                                <i class=\"fa fa-info-circle\"></i>\n                            </a>\n                        </mat-hint>\n                    </mat-form-field>\n                </div>\n            </div>\n            <div class=\"row\">\n                <div class=\"col-sm-12\">\n                    <mat-form-field>\n                        <mat-label>Address</mat-label>\n                        <textarea matInput></textarea>\n                    </mat-form-field>\n                </div>\n            </div>\n            <div class=\"row\">\n                <div class=\"col-sm-4\">\n                    <mat-form-field>\n                        <mat-label>City</mat-label>\n                        <input matInput>\n                    </mat-form-field>\n                </div>\n                <div class=\"col-sm-4\">\n                    <mat-form-field>\n                        <mat-label>Zip</mat-label>\n                        <input matInput>\n                    </mat-form-field>\n                </div>\n                <div class=\"col-sm-4\">\n                    <mat-form-field>\n                        <mat-label>Country</mat-label>\n                        <mat-select>\n                            <mat-option value=\"Afghanistan\">Afghanistan</mat-option>\n                        </mat-select>\n                    </mat-form-field>\n                </div>\n            </div>\n            <div class=\"modal-footer wrap-div\">\n                <button mat-dialog-close class=\"btn btn-blue\">Save Details</button>\n            </div>\n        </mat-tab>\n\n        <mat-tab>\n            <ng-template mat-tab-label>\n                <i class=\"fa fa-unlock-alt\"></i>\n                Security\n            </ng-template>\n            <div class=\"p-10 security\">\n                <div class=\"alert alert-info text-center\">\n                    <strong>Notice</strong>\n                    <p>Remember to notify your user for the password change</p>\n                </div>\n                <mat-form-field>\n                    <mat-label>Password</mat-label>\n                    <input matInput>\n                </mat-form-field>\n                <mat-form-field>\n                    <mat-label>Repeat Password</mat-label>\n                    <input matInput>\n                </mat-form-field>\n            </div>\n            <div class=\"modal-footer wrap-div\">\n                <button mat-dialog-close class=\"btn btn-blue\">Change Password</button>\n            </div>\n        </mat-tab>\n\n        <mat-tab>\n            <ng-template mat-tab-label>\n                <i class=\"fa fa-money\"></i>\n                Subscriptions\n            </ng-template>\n\n            <table mat-table [dataSource]=\"dataSource\">\n                <!-- Plan Column -->\n                <ng-container matColumnDef=\"plan\">\n                    <th mat-header-cell *matHeaderCellDef> Plan </th>\n                    <td mat-cell *matCellDef=\"let element\"> {{element.plan}} </td>\n                </ng-container>\n\n                <!-- Trial Column -->\n                <ng-container matColumnDef=\"trial\">\n                    <th mat-header-cell *matHeaderCellDef> Trial </th>\n                    <td mat-cell *matCellDef=\"let element\"> {{element.trial}} </td>\n                </ng-container>\n\n                <!-- CC Column -->\n                <ng-container matColumnDef=\"CC\">\n                    <th mat-header-cell *matHeaderCellDef> CC </th>\n                    <td mat-cell *matCellDef=\"let element\"> {{element.CC}} </td>\n                </ng-container>\n\n                <!-- Period Column -->\n                <ng-container matColumnDef=\"period\">\n                    <th mat-header-cell *matHeaderCellDef> Period </th>\n                    <td mat-cell *matCellDef=\"let element\"> {{element.period}} </td>\n                </ng-container>\n\n                <!-- Canceled Column -->\n                <ng-container matColumnDef=\"canceled\">\n                    <th mat-header-cell *matHeaderCellDef> Canceled </th>\n                    <td mat-cell *matCellDef=\"let element\"> {{element.canceled}} </td>\n                </ng-container>\n\n                <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n                <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\n            </table>\n        </mat-tab>\n    </mat-tab-group>\n</div>"
 
 /***/ }),
 
@@ -2890,7 +2912,7 @@ module.exports = "<div class=\"modal-header\">\n    <button mat-dialog-close cla
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"navbar-right navbar-custom-menu\">\n    <ul class=\"nav navbar-nav\">\n        <li class=\"settings-menu\">\n            <a routerLink=\"settings\" routerLinkActive=\"selectedRoom\">\n                <span class=\"fa fa-gears fa-fw\"></span>\n            </a>\n        </li>\n        <li>\n            <a [routerLink]=\"['/dashboard']\" target=\"_blank\" href=\"/\">\n                <span class=\"fa fa-comments fa-fw\"></span>\n            </a>\n        </li>\n        <li>\n            <a [matMenuTriggerFor]=\"notificationMenu\">\n                <span class=\"fa fa-envelope-o fa-fw\"></span>\n            </a>\n            <mat-menu #notificationMenu=\"matMenu\" class=\"notificationMenu\">\n                <h3 class=\"mat-h4\">Latest Changes</h3>\n                <mat-divider></mat-divider>\n                <button mat-menu-item>\n                    <span>new</span>\n                    <a><b>Echofin v2</b></a>\n                    The new Echofin platform has been released. Get all the details here:\n                    https://www.echofin.com/\n                </button>\n                <button mat-menu-item>\n                    <span>new</span>\n                    <a><b>Zoom widget integration</b></a>\n                    A new widget has been added that allows your team members to watch your Zoom broadcast\n                    within...\n                </button>\n                <button mat-menu-item>\n                    <span>new</span>\n                    <a><b>Dashboard\\Users</b></a>\n                    Added a Subscriptions tab on the details panel.\n                </button>\n                <button mat-menu-item>\n                    <span>new</span>\n                    <a><b>Email</b></a>\n                    All email billing receipts will now include a reply-to which can be set within the...\n                </button>\n                <button mat-menu-item>\n                    <span>new</span>\n                    <a><b>API</b></a>\n                    The initial version of the Echofin API has been released. For more details please check\n                    the API...\n                </button>\n            </mat-menu>\n        </li>\n        <li class=\"dropdown\">\n            <a>\n                <button mat-button [matMenuTriggerFor]=\"menu\">puneetsethi25@gmail.com\n                    <span class=\"caret\"></span>\n                </button>\n                <mat-menu #menu=\"matMenu\" xPosition=\"before\">\n                    <a class=\"profile-menu\" (click)=\"onProfile()\">Profile</a>\n        <li class=\"divider\"></li>\n        <a class=\"profile-menu\" href=\"#\">Sign Out</a>\n        </mat-menu>\n        </a>\n        </li>\n    </ul>\n</div>"
+module.exports = "<div class=\"navbar-right navbar-custom-menu\">\n    <ul class=\"nav navbar-nav\">\n        <li class=\"settings-menu\">\n            <a routerLink=\"settings\" routerLinkActive=\"selectedRoom\">\n                <span class=\"fa fa-gears fa-fw\"></span>\n            </a>\n        </li>\n        <li>\n            <a [routerLink]=\"['/dashboard']\" target=\"_blank\" href=\"/\">\n                <span class=\"fa fa-comments fa-fw\"></span>\n            </a>\n        </li>\n        <li>\n            <a [matMenuTriggerFor]=\"notificationMenu\">\n                <span class=\"fa fa-envelope-o fa-fw\"></span>\n            </a>\n            <mat-menu #notificationMenu=\"matMenu\" class=\"notificationMenu\">\n                <h3 class=\"mat-h4\">Latest Changes</h3>\n                <mat-divider></mat-divider>\n                <button mat-menu-item>\n                    No changes were found\n                </button>\n                <!-- <button mat-menu-item>\n                    <span>new</span>\n                    <a><b>Echofin v2</b></a>\n                    The new Echofin platform has been released. Get all the details here:\n                    https://www.echofin.com/\n                </button>\n                <button mat-menu-item>\n                    <span>new</span>\n                    <a><b>Zoom widget integration</b></a>\n                    A new widget has been added that allows your team members to watch your Zoom broadcast\n                    within...\n                </button>\n                <button mat-menu-item>\n                    <span>new</span>\n                    <a><b>Dashboard\\Users</b></a>\n                    Added a Subscriptions tab on the details panel.\n                </button>\n                <button mat-menu-item>\n                    <span>new</span>\n                    <a><b>Email</b></a>\n                    All email billing receipts will now include a reply-to which can be set within the...\n                </button>\n                <button mat-menu-item>\n                    <span>new</span>\n                    <a><b>API</b></a>\n                    The initial version of the Echofin API has been released. For more details please check\n                    the API...\n                </button> -->\n            </mat-menu>\n        </li>\n        <li class=\"dropdown\">\n            <a>\n                <button mat-button [matMenuTriggerFor]=\"menu\">\n                   {{user.username}}\n                    <span class=\"caret\"></span>\n                </button>\n                <mat-menu #menu=\"matMenu\" xPosition=\"before\">\n                    <a class=\"profile-menu\" (click)=\"onProfile()\">Profile</a>\n        <li class=\"divider\"></li>\n        <a class=\"profile-menu\" (click)=\"logout()\">Sign Out</a>\n        </mat-menu>\n        </a>\n        </li>\n    </ul>\n</div>"
 
 /***/ }),
 
@@ -2945,7 +2967,7 @@ module.exports = "<h2 mat-dialog-title class=\"iframe\" cdkDrag cdkDragRootEleme
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"login-container\" >\n  <!-- <mat-slide-toggle [(ngModel)]=\"darkTheme\" (click)=\"onDarkTheme()\" color=\"warn\">\n  </mat-slide-toggle> -->\n  <mat-drawer-container class=\"example-container\" autosize\n    style=\"float:right; width:100%; overflow:hidden!important; height:100vh; z-index:auto;\">\n    <mat-drawer #drawer class=\"example-sidenav sidebar navbar-collapse\" [opened]=\"screenWidth > 840\"\n      [mode]=\"(screenWidth > 840) ? 'side' : 'over'\">\n      <app-sidenav (selectedRoom)=\"setRoomTitle($event)\"></app-sidenav>\n      <div class=\"example-sidenav-content mobile-cross\">\n        <button class=\"\" hamburger-drv=\"\" mat-button (click)=\"drawer.toggle()\">\n          <i class=\"fa fa-close\"></i>\n        </button>\n      </div>\n    </mat-drawer>\n    <div class=\"example-sidenav-content\">\n      <div class=\"navbar navbar-fixed-top navbar-inverse navbar-static-top\">\n        <!-- <button class=\"hamburgerHeader hamburger hamburger-arrow-left\" hamburger-drv=\"\" mat-button\n          (click)=\"drawer.toggle()\">\n          <span class=\"icon\"></span>\n        </button> -->\n        <button mat-icon-button color=\"warn\" class=\"hamburgerHeader\" (click)=\"drawer.toggle()\">\n          <i class=\"fa fa-bars\"></i>\n        </button>\n        <div class=\"roomHeader\" style=\"float:none;\">\n          <i class=\"roomHash fa fa-hashtag\" aria-hidden=\"true\"></i>\n          <span class=\"roomTitle text-capitalize  \">{{roomTitle}}</span>\n          <i class=\"fa\" ng-class=\"{'roomLock': room.n_type==2 , 'fa-unlock': room.n_type==2}\" aria-hidden=\"true\"></i>\n          <div header-nav-trial=\"\" class=\"nav-trial-container\">\n            <button  (click)=\"onRedirectAdmin()\" mat-icon-button mat-button *ngIf=\"isAdmin\"\n              class=\"hidden-xs button_wrap dashboard-btn\">\n              <span class=\"icon fa fa-tachometer\"></span>\n              <a>DASHBOARD</a>\n            </button>\n            <!-- <button *ngIf=\"isAdmin\" class=\"hidden-xs  rectangular-btn button_wrap \" mat-button>\n              <span class=\"material-icons\">video_call</span>\n              <a>BROADCAST</a>\n            </button> -->\n            <button class=\"button_wrap\" mat-icon-button (click)=\"openChartsDialog()\" *ngIf=\"!chartsDisable\">\n              <span class=\"material-icons\">bar_chart</span>\n              <a (click)=\"openChartsDialog()\">CHARTS</a>\n            </button>\n\n            <button class=\"button_wrap\" mat-icon-button>\n              <span class=\"material-icons\">alarm</span>\n              <a (click)=\"openMarketHoursDialog()\">MARKET HOURS</a>\n            </button>\n\n            <button class=\"button_wrap\" mat-icon-button (click)=\"openFXHeatmapDialog()\">\n              <span class=\"icon fa fa-thermometer-full\"></span>\n              <a (click)=\"openFXHeatmapDialog()\">FX HEATMAP</a>\n            </button>\n\n            <button class=\"button_wrap\" mat-icon-button (click)=\"openCoin360Dialog()\">\n              <span class=\"icon fa fa-bitcoin\"></span>\n              <a (click)=\"openCoin360Dialog()\">COIN360</a>\n            </button>\n\n            <button class=\"button_wrap\" mat-icon-button (click)=\"openLiveTVDialog()\">\n              <span class=\"material-icons\">tv</span>\n              <a (click)=\"openLiveTVDialog()\">LIVETV</a>\n            </button>\n\n            <button class=\"button_wrap\" mat-icon-button (click)=\"openZoomDialog()\">\n              <span class=\"material-icons\">video_call</span>\n              <a (click)=\"openZoomDialog()\">ZOOM</a>\n            </button>\n\n            <button class=\"button_wrap\" mat-icon-button (click)=\"openOtherChartDialog()\">\n              <span class=\"icon fa fa-area-chart\"></span>\n              <a (click)=\"openOtherChartDialog()\">CHARTS</a>\n            </button>\n\n            <button class=\"button_wrap\" mat-icon-button (click)=\"openFXCrossRatesDialog()\">\n              <span class=\"icon fa fa-exchange\"></span>\n              <a (click)=\"openFXCrossRatesDialog()\">FX CROSS RATES</a>\n            </button>\n\n            <button class=\"button_wrap\" mat-icon-button (click)=\"openDataFlashDialog()\">\n              <span class=\"material-icons\">\n                offline_bolt\n                </span>\n              <a>DATAFLASH</a>\n            </button>\n            <button class=\"hidden-xs button_wrap pull-right\" (click)=\"drawer1.toggle()\" mat-icon-button>\n              <span class=\"material-icons\">\n                widgets\n                </span>\n              <a>WIDGETS</a>\n            </button>\n\n            <button class=\"hidden-xs  button_wrap pull-right\" mat-icon-button (click)=\"drawer4.toggle()\">\n              <span class=\"icon fa fa-address-book\"></span>\n              <a>CONTACTS</a>\n            </button>\n          </div>\n        </div>\n      </div>\n\n      <mat-drawer-container class=\"example-container container-all-page\" autosize>\n        <mat-drawer #drawer1 class=\"example-sidenav sidebar navbar-collapse widget-sidenav right-sidenav\" mode=\"side\"\n          position=\"end\" [opened]=\"screenWidth > 840\" [mode]=\"(screenWidth > 840) ? 'side' : 'over'\">\n          <app-chatarea></app-chatarea>\n        </mat-drawer>\n        <div class=\"example-sidenav-content\">\n          <mat-drawer-container class=\"example-container\" autosize>\n            <app-profile-sidebar></app-profile-sidebar>\n            <mat-drawer #drawer4 class=\"example-sidenav admin_and_users\" mode=\"side\" position=\"end\">\n              <app-user-panel></app-user-panel>\n            </mat-drawer>\n            <div class=\"example-sidenav-content\">\n              <div class=\"page-data\">\n                <app-unlockchatroom></app-unlockchatroom>\n              </div>\n            </div>\n          </mat-drawer-container>\n          <div class=\"leftnav\">\n            <!-- <button *ngIf=\"isAdmin\" mat-button class=\"hidden-xs header-button dashboard \">\n              <a routerLink=\"/admindashboard\">\n                <span class=\"icon fa fa-desktop\"></span><br>\n                <span class=\"label\">DASHBOARD</span>\n              </a>\n            </button>\n            <button *ngIf=\"isAdmin\" class=\"hidden-xs header-button broadcast\" mat-button>\n                <span class=\"icon fa fa-video-camera\"></span><br>\n                <span class=\"label\">BROADCAST</span>\n            </button>\n            <button class=\"hidden-xs header-button\" (click)=\"openChartsDialog()\" mat-button>\n              <span class=\"icon fa fa-bar-chart\"></span><br>\n              <span class=\"label \">CHARTS</span>\n            </button>\n            <button class=\"hidden-xs header-button\" (click)=\"openMarketHoursDialog()\" mat-button>\n              <span class=\"icon fa fa-clock-o\"></span><br>\n              <span class=\"label \">MARKET HOURS</span>\n            </button> <button class=\"hidden-xs header-button\" (click)=\"openFXHeatmapDialog()\" mat-button>\n              <span class=\"icon fa fa-thermometer-full\"></span><br>\n              <span class=\"label \">FX HEATMAP</span>\n            </button>\n            <button class=\"hidden-xs header-button\" (click)=\"openCoin360Dialog()\" mat-button>\n              <span class=\"icon fa fa-bitcoin\"></span><br>\n              <span class=\"label \">COIN360</span>\n            </button>\n            <button class=\"hidden-xs header-button\" (click)=\"openLiveTVDialog()\" mat-button>\n              <span class=\"icon fa fa-tv\"></span><br>\n              <span class=\"label \">LIVETV</span>\n            </button>\n            <button class=\"hidden-xs header-button\" (click)=\"openZoomDialog()\" mat-button>\n              <span class=\"icon fa fa-video-camera\"></span><br>\n              <span class=\"label \">ZOOM</span>\n            </button>\n            <button class=\"hidden-xs header-button\" (click)=\"openOtherChartDialog()\" mat-button>\n              <span class=\"icon fa fa-area-chart\"></span><br>\n              <span class=\"label \">CHARTS</span>\n            </button>\n            <button class=\"hidden-xs header-button\" (click)=\"openFXCrossRatesDialog()\" mat-button>\n              <span class=\"icon fa fa-exchange\"></span><br>\n              <span class=\"label \">FX CROSS RATES</span>\n            </button>\n            <button class=\"hidden-xs header-button\" mat-button>\n              <span class=\"icon fa fa-bolt\"></span><br>\n              <span class=\"label \">DATAFLASH</span>\n            </button> -->\n            <!-- <button class=\"hidden-xs header-button \" mat-button (click)=\"drawer4.toggle()\">\n              <span class=\"icon fa fa-address-book-o\"></span><br>\n              <span class=\"label \">DIRECTORY</span>\n            </button>\n            <div class=\"example-sidenav-content widget-btn side-tp \">\n              <button class=\"hamburgerHeader header-button hamburger hamburger-arrow-left\" mat-button\n                (click)=\"drawer1.toggle()\">\n                <span class=\"icon material-icons\">apps</span><br>\n                <span class=\"label \">WIDGETS</span>\n              </button>\n            </div> -->\n          </div>\n        </div>\n      </mat-drawer-container>\n    </div>\n  </mat-drawer-container>\n</div>"
+module.exports = "<div class=\"login-container\">\n  <!-- <mat-slide-toggle [(ngModel)]=\"darkTheme\" (click)=\"onDarkTheme()\" color=\"warn\">\n  </mat-slide-toggle> -->\n  <mat-drawer-container class=\"example-container\" autosize\n    style=\"float:right; width:100%; overflow:hidden!important; height:100vh; z-index:auto;\">\n    <mat-drawer #drawer class=\"example-sidenav sidebar navbar-collapse\" [opened]=\"screenWidth > 840\"\n      [mode]=\"(screenWidth > 840) ? 'side' : 'over'\">\n      <app-sidenav (selectedRoom)=\"setRoomTitle($event)\"></app-sidenav>\n      <div class=\"example-sidenav-content mobile-cross\">\n        <button class=\"\" hamburger-drv=\"\" mat-button (click)=\"drawer.toggle()\">\n          <i class=\"fa fa-close\"></i>\n        </button>\n      </div>\n    </mat-drawer>\n    <div class=\"example-sidenav-content\">\n      <div class=\"navbar navbar-fixed-top navbar-inverse navbar-static-top\" style=\"display: flex;\">\n        <!-- <button class=\"hamburgerHeader hamburger hamburger-arrow-left\" hamburger-drv=\"\" mat-button\n          (click)=\"drawer.toggle()\">\n          <span class=\"icon\"></span>\n        </button> -->\n        <div style=\"flex: 1 auto;line-height: 66px;     flex: 1 auto;\n        line-height: 66px;\n        min-width: 250px;\n        white-space: nowrap;\n        overflow: hidden;\n        text-overflow: ellipsis;\">\n          <button mat-icon-button color=\"warn\" class=\"hamburgerHeader\" (click)=\"drawer.toggle()\">\n            <i class=\"fa fa-bars\"></i>\n          </button>\n          <i class=\"roomHash fa fa-hashtag\" aria-hidden=\"true\"></i>\n          <span class=\"roomTitle text-capitalize  \">{{roomTitle}}</span>\n          <span class=\"roomTitle text-capitalize  \">Market master</span>\n        </div>\n        <div class=\"roomHeader\" style=\"flex: 1 auto;\">\n          <div header-nav-trial=\"\" class=\"nav-trial-container\">\n            <button class=\" button_wrap\" (click)=\"drawer1.toggle()\" mat-icon-button>\n              <span class=\"material-icons\">\n                widgets\n              </span>\n              <a>WIDGETS</a>\n            </button>\n            <button class=\"hidden-xs  button_wrap\" mat-icon-button (click)=\"drawer4.toggle()\">\n              <span class=\"icon fa fa-address-book\"></span>\n              <a>CONTACTS</a>\n            </button>\n            <!-- <button *ngIf=\"isAdmin\" class=\"hidden-xs  rectangular-btn button_wrap \" mat-button>\n              <span class=\"material-icons\">video_call</span>\n              <a>BROADCAST</a>\n            </button> -->\n            <button class=\"button_wrap hidden-xs\" mat-icon-button (click)=\"openDataFlashDialog()\">\n              <span class=\"material-icons\">\n                offline_bolt\n              </span>\n              <a>DATAFLASH</a>\n            </button>\n            <button class=\"button_wrap hidden-xs\" mat-icon-button (click)=\"openFXCrossRatesDialog()\">\n              <span class=\"icon fa fa-exchange\"></span>\n              <a (click)=\"openFXCrossRatesDialog()\">FX CROSS RATES</a>\n            </button>\n            <button class=\"button_wrap hidden-xs\" mat-icon-button (click)=\"openOtherChartDialog()\">\n              <span class=\"icon fa fa-area-chart\"></span>\n              <a (click)=\"openOtherChartDialog()\">CHARTS</a>\n            </button>\n            <button class=\"button_wrap hidden-xs\" mat-icon-button (click)=\"openZoomDialog()\">\n              <span class=\"material-icons\">video_call</span>\n              <a (click)=\"openZoomDialog()\">ZOOM</a>\n            </button>\n            <button class=\"button_wrap hidden-xs\" mat-icon-button (click)=\"openLiveTVDialog()\">\n              <span class=\"material-icons\">tv</span>\n              <a (click)=\"openLiveTVDialog()\">LIVETV</a>\n            </button>\n            <button class=\"button_wrap hidden-xs\" mat-icon-button (click)=\"openCoin360Dialog()\">\n              <span class=\"icon fa fa-bitcoin\"></span>\n              <a (click)=\"openCoin360Dialog()\">COIN360</a>\n            </button>\n            <button class=\"button_wrap hidden-xs\" mat-icon-button (click)=\"openFXHeatmapDialog()\">\n              <span class=\"icon fa fa-thermometer-full\"></span>\n              <a (click)=\"openFXHeatmapDialog()\">FX HEATMAP</a>\n            </button>\n            <button class=\"button_wrap hidden-xs\" mat-icon-button>\n              <span class=\"material-icons\">alarm</span>\n              <a (click)=\"openMarketHoursDialog()\">MARKET HOURS</a>\n            </button>\n\n            <button class=\"button_wrap hidden-xs\" mat-icon-button (click)=\"openChartsDialog()\" *ngIf=\"!chartsDisable\">\n              <span class=\"material-icons\">bar_chart</span>\n              <a (click)=\"openChartsDialog()\">CHARTS</a>\n            </button>\n            <button (click)=\"onRedirectAdmin()\" mat-icon-button mat-button *ngIf=\"isAdmin\"\n              class=\"hidden-xs button_wrap dashboard-btn hidden-xs\">\n              <span class=\"icon fa fa-tachometer\"></span>\n              <a>DASHBOARD</a>\n            </button>\n\n           \n          </div>\n        </div>\n      </div>\n\n      <mat-drawer-container class=\"example-container container-all-page\" autosize>\n        <mat-drawer #drawer1 class=\"example-sidenav sidebar navbar-collapse widget-sidenav right-sidenav\" mode=\"side\"\n          position=\"end\" [opened]=\"screenWidth > 840\" [mode]=\"(screenWidth > 840) ? 'side' : 'over'\">\n          <app-chatarea></app-chatarea>\n        </mat-drawer>\n        <div class=\"example-sidenav-content\">\n          <mat-drawer-container class=\"example-container\" autosize>\n            <app-profile-sidebar></app-profile-sidebar>\n            <mat-drawer #drawer4 class=\"example-sidenav admin_and_users\" mode=\"side\" position=\"end\">\n              <app-user-panel></app-user-panel>\n            </mat-drawer>\n            <div class=\"example-sidenav-content\">\n              <div class=\"page-data\">\n                <app-unlockchatroom></app-unlockchatroom>\n              </div>\n            </div>\n          </mat-drawer-container>\n          <div class=\"leftnav\">\n            <!-- <button *ngIf=\"isAdmin\" mat-button class=\"hidden-xs header-button dashboard \">\n              <a routerLink=\"/admindashboard\">\n                <span class=\"icon fa fa-desktop\"></span><br>\n                <span class=\"label\">DASHBOARD</span>\n              </a>\n            </button>\n            <button *ngIf=\"isAdmin\" class=\"hidden-xs header-button broadcast\" mat-button>\n                <span class=\"icon fa fa-video-camera\"></span><br>\n                <span class=\"label\">BROADCAST</span>\n            </button>\n            <button class=\"hidden-xs header-button\" (click)=\"openChartsDialog()\" mat-button>\n              <span class=\"icon fa fa-bar-chart\"></span><br>\n              <span class=\"label \">CHARTS</span>\n            </button>\n            <button class=\"hidden-xs header-button\" (click)=\"openMarketHoursDialog()\" mat-button>\n              <span class=\"icon fa fa-clock-o\"></span><br>\n              <span class=\"label \">MARKET HOURS</span>\n            </button> <button class=\"hidden-xs header-button\" (click)=\"openFXHeatmapDialog()\" mat-button>\n              <span class=\"icon fa fa-thermometer-full\"></span><br>\n              <span class=\"label \">FX HEATMAP</span>\n            </button>\n            <button class=\"hidden-xs header-button\" (click)=\"openCoin360Dialog()\" mat-button>\n              <span class=\"icon fa fa-bitcoin\"></span><br>\n              <span class=\"label \">COIN360</span>\n            </button>\n            <button class=\"hidden-xs header-button\" (click)=\"openLiveTVDialog()\" mat-button>\n              <span class=\"icon fa fa-tv\"></span><br>\n              <span class=\"label \">LIVETV</span>\n            </button>\n            <button class=\"hidden-xs header-button\" (click)=\"openZoomDialog()\" mat-button>\n              <span class=\"icon fa fa-video-camera\"></span><br>\n              <span class=\"label \">ZOOM</span>\n            </button>\n            <button class=\"hidden-xs header-button\" (click)=\"openOtherChartDialog()\" mat-button>\n              <span class=\"icon fa fa-area-chart\"></span><br>\n              <span class=\"label \">CHARTS</span>\n            </button>\n            <button class=\"hidden-xs header-button\" (click)=\"openFXCrossRatesDialog()\" mat-button>\n              <span class=\"icon fa fa-exchange\"></span><br>\n              <span class=\"label \">FX CROSS RATES</span>\n            </button>\n            <button class=\"hidden-xs header-button\" mat-button>\n              <span class=\"icon fa fa-bolt\"></span><br>\n              <span class=\"label \">DATAFLASH</span>\n            </button> -->\n            <!-- <button class=\"hidden-xs header-button \" mat-button (click)=\"drawer4.toggle()\">\n              <span class=\"icon fa fa-address-book-o\"></span><br>\n              <span class=\"label \">DIRECTORY</span>\n            </button>\n            <div class=\"example-sidenav-content widget-btn side-tp \">\n              <button class=\"hamburgerHeader header-button hamburger hamburger-arrow-left\" mat-button\n                (click)=\"drawer1.toggle()\">\n                <span class=\"icon material-icons\">apps</span><br>\n                <span class=\"label \">WIDGETS</span>\n              </button>\n            </div> -->\n          </div>\n        </div>\n      </mat-drawer-container>\n    </div>\n  </mat-drawer-container>\n</div>"
 
 /***/ }),
 
@@ -3132,7 +3154,7 @@ module.exports = "<h2 mat-dialog-title>Invite your friends\n    <button mat-dial
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h2 mat-dialog-title>Manage Brokers\n    <button mat-dialog-close class=\"close\">\n        <span aria-hidden=\"true\">×</span>\n    </button>\n</h2>\n<mat-divider></mat-divider>\n<div class=\"manage_Brocker_container\">\n    <div class=\"row\">\n        <div class=\"col-md-6\">\n\n            <div class=\"add_own_brocker\" *ngIf=\"addOwn\">\n                <h4>\n                    Search for brokers\n                    <a mat-button class=\"btn btn-link pull-right\" (click)=\"onClickOwn()\" style=\"margin-top:-7px\">or add your own</a>\n                </h4>\n                <mat-divider></mat-divider>\n                <mat-form-field>\n                    <mat-label>Search</mat-label>\n                    <input matInput>\n                </mat-form-field>\n                <div class=\"list-group\" style=\"height:280px;overflow-y:auto\">\n                    <div class=\"empty-msg text-center\">\n                        find your broker's<br>web trading terminal using<br>the search bar above\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"add_own_brocker\" *ngIf=\"addFromList\">\n                <h4>\n                    Add your own broker\n                    <a mat-button class=\"btn btn-link pull-right\" (click)=\"onClickList()\" style=\"margin-top:-7px\">or add from list</a>\n                </h4>\n                <mat-divider></mat-divider>\n                <mat-form-field>\n                    <mat-label>Broker Title</mat-label>\n                    <input matInput>\n                </mat-form-field>\n\n                <mat-form-field>\n                    <mat-label>Web Trading Terminal Link</mat-label>\n                    <input matInput>\n                    <span matPrefix>https://&nbsp;</span>\n                </mat-form-field>\n                <div class=\"text-right\">\n                    <button class=\"btn btn-primary btn-sm\">\n                        <span class=\"fa fa-plus fa-fw\"></span> Add\n                    </button>\n                </div>\n            </div>\n        </div>\n        <div class=\"col-md-6\" style=\"border-left:solid 1px #ddd; font-size:1.3em\">\n            <div class=\"add_own_brocker\">\n                <h4>\n                    My Terminals\n                </h4>\n                <mat-divider></mat-divider>\n                <div class=\"list-group\" style=\"height:350px;overflow-y:auto\">\n                    <div class=\"empty-msg text-center\">\n                        you have no brokers<br>in your list yet\n                    </div>\n                </div>\n            </div>\n\n        </div>\n    </div>\n</div>\n<div class=\"modal-footer p-10\">\n    <button mat-dialog-close class=\"btn btn-default\">Cancel</button>\n    <button [mat-dialog-close]=\"true\" class=\"btn btn-success\">Install</button>\n</div>"
+module.exports = "<h2 mat-dialog-title>Manage Brokers\n    <button mat-dialog-close class=\"close\">\n        <span aria-hidden=\"true\">×</span>\n    </button>\n</h2>\n<mat-divider></mat-divider>\n<mat-dialog-content class=\"manage_Brocker_container m-0 p-0\">\n    <div class=\"row m-0\">\n        <div class=\"col-md-6 col-xs-12\">\n\n            <div class=\"add_own_brocker\" *ngIf=\"addOwn\">\n                <h4>\n                    Search for brokers\n                    <a mat-button class=\"btn btn-link pull-right\" (click)=\"onClickOwn()\" style=\"margin-top:-7px\">or add your own</a>\n                </h4>\n                <mat-divider></mat-divider>\n                <mat-form-field>\n                    <mat-label>Search</mat-label>\n                    <input matInput>\n                </mat-form-field>\n                <div class=\"list-group\" style=\"height:280px;overflow-y:auto\">\n                    <div class=\"empty-msg text-center\">\n                        find your broker's<br>web trading terminal using<br>the search bar above\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"add_own_brocker\" *ngIf=\"addFromList\">\n                <h4>\n                    Add your own broker\n                    <a mat-button class=\"btn btn-link pull-right\" (click)=\"onClickList()\" style=\"margin-top:-7px\">or add from list</a>\n                </h4>\n                <mat-divider></mat-divider>\n                <mat-form-field>\n                    <mat-label>Broker Title</mat-label>\n                    <input matInput>\n                </mat-form-field>\n\n                <mat-form-field>\n                    <mat-label>Web Trading Terminal Link</mat-label>\n                    <input matInput>\n                    <span matPrefix>https://&nbsp;</span>\n                </mat-form-field>\n                <div class=\"text-right\">\n                    <button class=\"btn btn-primary btn-sm\">\n                        <span class=\"fa fa-plus fa-fw\"></span> Add\n                    </button>\n                </div>\n            </div>\n        </div>\n        <div class=\"col-md-6 col-xs-12\" style=\"border-left:solid 1px #ddd; font-size:1.3em\">\n            <div class=\"add_own_brocker\">\n                <h4>\n                    My Terminals\n                </h4>\n                <mat-divider></mat-divider>\n                <div class=\"list-group\" style=\"height:350px;overflow-y:auto\">\n                    <div class=\"empty-msg text-center\">\n                        you have no brokers<br>in your list yet\n                    </div>\n                </div>\n            </div>\n\n        </div>\n    </div>\n</mat-dialog-content>\n<div class=\"modal-footer p-10\">\n    <button mat-dialog-close class=\"btn btn-default\">Cancel</button>\n    <button [mat-dialog-close]=\"true\" class=\"btn btn-success\">Install</button>\n</div>"
 
 /***/ }),
 
@@ -3143,7 +3165,7 @@ module.exports = "<h2 mat-dialog-title>Manage Brokers\n    <button mat-dialog-cl
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h2 mat-dialog-title>Preferences\n    <button mat-dialog-close class=\"close\">\n        <span aria-hidden=\"true\">×</span>\n    </button>\n</h2>\n<div class=\"preference-container\">\n    <div class=\"row\">   \n        <div class=\"col-md-3 p-0\">\n            <mat-nav-list class=\"p-0\">\n                <a mat-list-item (click)=\"onProfile()\" [ngClass]=\"{'active': profile == true}\">\n                    \n                    <span matLine><i class=\"fa fa-user-circle fa-fw\"></i> Profile</span>\n                </a>\n                <a mat-list-item (click)=\"onNotification()\" [ngClass]=\"{'active': notification == true}\">\n                    <span matLine><i class=\"fa fa-bell-o fa-fw\"></i> Notifications</span>\n                </a>\n                <a mat-list-item (click)=\"onBlockMute()\" [ngClass]=\"{'active': blockMute == true}\">\n                    <span matLine><i class=\"fa fa-comment-o fa-fw\"></i> Block/Mute</span>\n                </a>\n                <a mat-list-item (click)=\"onBilling()\" [ngClass]=\"{'active': billing == true}\">\n                    <span matLine><i class=\"fa fa-credit-card fa-fw\"></i> Billing</span>\n                </a>\n                <a mat-list-item (click)=\"onAdvanced()\" [ngClass]=\"{'active': advanced == true}\">\n                    <span matLine><i class=\"fa fa-gears fa-fw\"></i> Advanced</span>\n                </a>\n            </mat-nav-list>\n        </div>\n        <div class=\"col-md-9 p-0\">\n            <div class=\"content profile\" *ngIf=\"profile\">\n                <div class=\"row\">\n                    <div class=\"col-sm-4 col-md-4 col-lg-4 text-center\">\n                        <img class=\"avatarThumb\"  src=\"assets/mini-logo.png\" *ngIf=\"!imgURL\">\n                        <img class=\"avatarThumb\" [src]=\"imgURL\" *ngIf=\"imgURL\">\n                        <div class=\"upload_file\">\n                            <input #file type=\"file\" accept='image/*' (change)=\"preview(file.files)\" />\n                            <button class=\"btn btn-success btn-sm\" style=\"margin-top: 5px;\">\n                                Upload avatar\n                            </button>\n                        </div>\n                        <input class=\"btn btn-default btn-sm\" style=\"margin-top: 5px;\"\n                            value=\"Default avatar\">\n                    </div>\n                    <div class=\"col-sm-7\">\n                        <div class=\"col-sm-12\">\n                            <mat-form-field>\n                                <mat-label>Username</mat-label>\n                                <input matInput>\n                            </mat-form-field>\n                        </div>\n                        <div class=\"col-sm-12\">\n                            <mat-form-field>\n                                <mat-label>Full Name</mat-label>\n                                <input matInput>\n                            </mat-form-field>\n                        </div>\n                        <div class=\"col-sm-12\">\n                            <mat-form-field>\n                                <mat-label>Timezone:</mat-label>\n                                <mat-select>\n                                    <mat-option value=\"option\">GMT</mat-option>\n                                </mat-select>\n                            </mat-form-field>\n                        </div>\n                        <div class=\"col-sm-12\">\n                            <mat-form-field>\n                                <mat-label>Date format:</mat-label>\n                                <mat-select>\n                                    <mat-option value=\"option\">mm/dd</mat-option>\n                                    <mat-option value=\"option\">dd/mm</mat-option>\n                                </mat-select>\n                            </mat-form-field>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"content\" *ngIf=\"notification\">\n                <div ng-show=\"activeMenu==2\" class=\"panel-settings panel-settings-notifications\">\n                    <div class=\"form-group\">\n                        <label>Desktop and Mobile Notifications</label>\n                    </div>\n                    <p>Receive notifcations from:</p>\n                    <mat-checkbox >All Rooms</mat-checkbox>\n                    <mat-divider></mat-divider>\n                    <div class=\"rooms-overflow\">\n                        <mat-checkbox>Traders Lounge</mat-checkbox>\n                        <mat-checkbox>On Point FX Signals 🇺🇸 (USA)</mat-checkbox>\n                        <mat-checkbox>Suggestions/Bug Reports</mat-checkbox>\n                        <mat-checkbox>Market Analysis</mat-checkbox>\n                        <mat-checkbox>Private Forex Mentoring</mat-checkbox>\n                        <mat-checkbox>7 Day Intense Private Training</mat-checkbox>\n                        <mat-checkbox>Official Partners</mat-checkbox>\n                        <mat-checkbox>The Golden Circle</mat-checkbox>\n                        <mat-checkbox>Präzise FX Signals 🇩🇪 (GER)</mat-checkbox>\n                        <mat-checkbox>Website Testing A/B</mat-checkbox>\n                        <mat-checkbox>chat dev</mat-checkbox>\n                    </div>\n                    <mat-divider></mat-divider>\n                    <mat-checkbox>Direct messages</mat-checkbox>\n                    <mat-checkbox>Mentions</mat-checkbox>\n                    <mat-checkbox>Admins, Instructors and Moderators</mat-checkbox>\n                </div>\n            </div>\n            <div class=\"content\" *ngIf=\"blockMute\">\n                <div ng-show=\"activeMenu==4\" class=\"panel-settings panel-settings-blockandmute\">\n                    <div class=\"blockandmute-title\">\n                        <label>Blocks</label>\n                    </div>\n                    <div class=\"blockandmute-body\">\n                        <div class=\"text-center\">\n                            <span class=\"fa fa-inbox fa-4x\"></span>\n                            <br>\n                            <span>You have not blocked any user</span>\n                        </div>\n                    </div>\n\n                    <div class=\"blockandmute-title\">\n                        <label>Mutes</label>\n                    </div>\n                    <div class=\"blockandmute-body\">\n                        <div class=\"text-center\">\n                            <span class=\"fa fa-inbox fa-4x\"></span>\n                            <br>\n                            <span>You have not muted any user</span>\n                        </div>\n                    </div>\n\n                    <div>\n                        <div class=\"blockandmute-title\">\n                            <label>Bans</label>\n                        </div>\n                        <div class=\"blockandmute-body\">\n                            <div class=\"label label-primary \">\n                                JustinGoldsmith\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Andiaishoo7\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                robertoscott\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                james1979\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                ARamirez7\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                eagleeyes94\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Eren68\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Eldi123\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Ryanchaney\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                thisvinceguy\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Rafacapozzi\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                ajeoluwatoromo\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                kevinmijares\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Jeanluis\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                BJ318\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                jeanluis1\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Will_10\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                robertoascott\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Donniek23\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Sheko\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Marcus760\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                King_Alfie19\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                SnblJuan\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                victorjsb\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                thecarter\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Flakox1\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                MarcosRuiz\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Forex101\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                jeanluis11\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Nav1234\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Will_15\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Atlboss7\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Tadukas\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Howellj5\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                campbecj13\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Nate\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                TGT2\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Donnbe2020\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                rtallen04\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Marqus241\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Fred163\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                MannyDeolMusic\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Marvb11\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                slickrick\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Shabazz\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                jaybush89\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                EthynBlair\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Castacio10\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Trent10\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                dc5cm\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Shaunda87\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Kiiy\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                jondiaz\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                JosueMesidor\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                papabing\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                JamarqusJ\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                France\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                trevorxmartin\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                DainBauman\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"content\" *ngIf=\"billing\">\n                <div class=\"form-group\">\n                    <label>Billing\n                    </label>\n                </div>\n                <p class=\"empty-msg\">\n                    You don't have any billing plans\n                </p>\n            </div>\n            <div class=\"content\" *ngIf=\"advanced\">\n                <div class=\"form-group\">\n                    <label>Direct Messages\n                    </label>\n                </div>\n                <mat-checkbox>Accept Direct Messages from free users</mat-checkbox>\n            </div>\n        </div>\n    </div>\n</div>\n<div class=\"modal-footer\">\n    <button mat-dialog-close class=\"btn btn-default\">Close</button>\n    <button [mat-dialog-close]=\"true\" routerLink=\"/\" class=\"btn btn-success\">Save</button>\n</div>"
+module.exports = "<h2 mat-dialog-title>Preferences\n    <button mat-dialog-close class=\"close\">\n        <span aria-hidden=\"true\">×</span>\n    </button>\n</h2>\n<mat-dialog-content class=\"preference-container p-0 m-0\">\n    <div class=\"row\">   \n        <div class=\"col-md-3 col-xs-12\" style=\"margin-right: 0;\">\n            <mat-nav-list class=\"p-0\">\n                <a mat-list-item (click)=\"onProfile()\" [ngClass]=\"{'active': profile == true}\">\n                    \n                    <span matLine><i class=\"fa fa-user-circle fa-fw\"></i> Profile</span>\n                </a>\n                <a mat-list-item (click)=\"onNotification()\" [ngClass]=\"{'active': notification == true}\">\n                    <span matLine><i class=\"fa fa-bell-o fa-fw\"></i> Notifications</span>\n                </a>\n                <a mat-list-item (click)=\"onBlockMute()\" [ngClass]=\"{'active': blockMute == true}\">\n                    <span matLine><i class=\"fa fa-comment-o fa-fw\"></i> Block/Mute</span>\n                </a>\n                <a mat-list-item (click)=\"onBilling()\" [ngClass]=\"{'active': billing == true}\">\n                    <span matLine><i class=\"fa fa-credit-card fa-fw\"></i> Billing</span>\n                </a>\n                <a mat-list-item (click)=\"onAdvanced()\" [ngClass]=\"{'active': advanced == true}\">\n                    <span matLine><i class=\"fa fa-gears fa-fw\"></i> Advanced</span>\n                </a>\n            </mat-nav-list>\n        </div>\n        <div class=\"col-md-9 col-xs-12\">\n            <div class=\"content profile\" *ngIf=\"profile\">\n                <div class=\"row\">\n                    <div class=\"col-sm-4 col-md-4 col-lg-4 col-xs-12 text-center\">\n                        <img class=\"avatarThumb\"  src=\"assets/mini-logo.png\" *ngIf=\"!imgURL\">\n                        <img class=\"avatarThumb\" [src]=\"imgURL\" *ngIf=\"imgURL\">\n                        <div class=\"upload_file\">\n                            <input #file type=\"file\" accept='image/*' (change)=\"preview(file.files)\" />\n                            <button class=\"btn btn-success btn-sm\" style=\"margin-top: 5px;\">\n                                Upload avatar\n                            </button>\n                        </div>\n                        <input class=\"btn btn-default btn-sm\" style=\"margin-top: 5px;\"\n                            value=\"Default avatar\">\n                    </div>\n                    <div class=\"col-sm-7 col-xs-12\">\n                        <div class=\"col-sm-12\">\n                            <mat-form-field>\n                                <mat-label>Username</mat-label>\n                                <input matInput>\n                            </mat-form-field>\n                        </div>\n                        <div class=\"col-sm-12\">\n                            <mat-form-field>\n                                <mat-label>Full Name</mat-label>\n                                <input matInput>\n                            </mat-form-field>\n                        </div>\n                        <div class=\"col-sm-12\">\n                            <mat-form-field>\n                                <mat-label>Timezone:</mat-label>\n                                <mat-select>\n                                    <mat-option value=\"option\">GMT</mat-option>\n                                </mat-select>\n                            </mat-form-field>\n                        </div>\n                        <div class=\"col-sm-12\">\n                            <mat-form-field>\n                                <mat-label>Date format:</mat-label>\n                                <mat-select>\n                                    <mat-option value=\"option\">mm/dd</mat-option>\n                                    <mat-option value=\"option\">dd/mm</mat-option>\n                                </mat-select>\n                            </mat-form-field>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"content\" *ngIf=\"notification\">\n                <div ng-show=\"activeMenu==2\" class=\"panel-settings panel-settings-notifications\">\n                    <div class=\"form-group\">\n                        <label>Desktop and Mobile Notifications</label>\n                    </div>\n                    <p>Receive notifcations from:</p>\n                    <mat-checkbox >All Rooms</mat-checkbox>\n                    <mat-divider></mat-divider>\n                    <div class=\"rooms-overflow\">\n                        <mat-checkbox>Traders Lounge</mat-checkbox>\n                        <mat-checkbox>On Point FX Signals 🇺🇸 (USA)</mat-checkbox>\n                        <mat-checkbox>Suggestions/Bug Reports</mat-checkbox>\n                        <mat-checkbox>Market Analysis</mat-checkbox>\n                        <mat-checkbox>Private Forex Mentoring</mat-checkbox>\n                        <mat-checkbox>7 Day Intense Private Training</mat-checkbox>\n                        <mat-checkbox>Official Partners</mat-checkbox>\n                        <mat-checkbox>The Golden Circle</mat-checkbox>\n                        <mat-checkbox>Präzise FX Signals 🇩🇪 (GER)</mat-checkbox>\n                        <mat-checkbox>Website Testing A/B</mat-checkbox>\n                        <mat-checkbox>chat dev</mat-checkbox>\n                    </div>\n                    <mat-divider></mat-divider>\n                    <mat-checkbox>Direct messages</mat-checkbox>\n                    <mat-checkbox>Mentions</mat-checkbox>\n                    <mat-checkbox>Admins, Instructors and Moderators</mat-checkbox>\n                </div>\n            </div>\n            <div class=\"content\" *ngIf=\"blockMute\">\n                <div ng-show=\"activeMenu==4\" class=\"panel-settings panel-settings-blockandmute\">\n                    <div class=\"blockandmute-title\">\n                        <label>Blocks</label>\n                    </div>\n                    <div class=\"blockandmute-body\">\n                        <div class=\"text-center\">\n                            <span class=\"fa fa-inbox fa-4x\"></span>\n                            <br>\n                            <span>You have not blocked any user</span>\n                        </div>\n                    </div>\n\n                    <div class=\"blockandmute-title\">\n                        <label>Mutes</label>\n                    </div>\n                    <div class=\"blockandmute-body\">\n                        <div class=\"text-center\">\n                            <span class=\"fa fa-inbox fa-4x\"></span>\n                            <br>\n                            <span>You have not muted any user</span>\n                        </div>\n                    </div>\n\n                    <div>\n                        <div class=\"blockandmute-title\">\n                            <label>Bans</label>\n                        </div>\n                        <div class=\"blockandmute-body\">\n                            <div class=\"label label-primary \">\n                                JustinGoldsmith\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Andiaishoo7\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                robertoscott\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                james1979\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                ARamirez7\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                eagleeyes94\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Eren68\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Eldi123\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Ryanchaney\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                thisvinceguy\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Rafacapozzi\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                ajeoluwatoromo\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                kevinmijares\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Jeanluis\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                BJ318\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                jeanluis1\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Will_10\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                robertoascott\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Donniek23\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Sheko\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Marcus760\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                King_Alfie19\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                SnblJuan\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                victorjsb\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                thecarter\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Flakox1\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                MarcosRuiz\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Forex101\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                jeanluis11\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Nav1234\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Will_15\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Atlboss7\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Tadukas\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Howellj5\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                campbecj13\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Nate\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                TGT2\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Donnbe2020\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                rtallen04\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Marqus241\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Fred163\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                MannyDeolMusic\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Marvb11\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                slickrick\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Shabazz\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                jaybush89\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                EthynBlair\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Castacio10\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Trent10\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                dc5cm\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Shaunda87\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                Kiiy\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                jondiaz\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                JosueMesidor\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                papabing\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                JamarqusJ\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                France\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                trevorxmartin\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                            <div class=\"label label-primary \">\n                                DainBauman\n                                <button class=\"btn btn-link btn-xs\">\n                                    <span class=\"fa fa-times fa-fw\"></span>\n                                </button>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"content\" *ngIf=\"billing\">\n                <div class=\"form-group\">\n                    <label>Billing\n                    </label>\n                </div>\n                <p class=\"empty-msg\">\n                    You don't have any billing plans\n                </p>\n            </div>\n            <div class=\"content\" *ngIf=\"advanced\">\n                <div class=\"form-group\">\n                    <label>Direct Messages\n                    </label>\n                </div>\n                <mat-checkbox>Accept Direct Messages from free users</mat-checkbox>\n            </div>\n        </div>\n    </div>\n</mat-dialog-content>\n<div class=\"modal-footer\">\n    <button mat-dialog-close class=\"btn btn-default\">Close</button>\n    <button [mat-dialog-close]=\"true\" routerLink=\"/\" class=\"btn btn-success\">Save</button>\n</div>"
 
 /***/ }),
 
@@ -3154,7 +3176,7 @@ module.exports = "<h2 mat-dialog-title>Preferences\n    <button mat-dialog-close
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"team-wrapper\" header-company-sidebar=\"\" style=\"position:static;\">\n  <img class=\"sidebar-avatar\" src=\"assets/mini-logo.png\" *ngIf=\"!adminImgPath\">\n  <img class=\"sidebar-avatar\" src=\"{{adminImgPath}}\" *ngIf=\"adminImgPath\">\n  <p class=\"teamName\" title=\"MarketMastersAcademy\">\n    <strong class=\"ng-binding\">MarketMastersAcademy</strong>\n  </p>\n  <mat-slide-toggle  class=\"theme\" [(ngModel)]=\"darkTheme\" (click)=\"onDarkTheme()\" color=\"warn\">\n  </mat-slide-toggle>\n</div>\n<div class=\"topLeft sidebar-match\">\n  <div class=\"dropdown\">\n    <button class=\"dropdown-toggle\" data-toggle=\"dropdown\" [matMenuTriggerFor]=\"appMenu\">\n      <span class=\"glyphicon glyphicon-one-fine-dot sidebar-status-dot userStatus1\" [ngClass]=\"{'userStatus3': status === 'away', 'userStatus4':status === 'busy' }\"\n\n        ></span>\n      <img class=\"sidebar-avatar usr_img\" *ngIf=\"!imgURL\" src=\"assets/mini-logo.png\">\n      <img class=\"sidebar-avatar usr_img\" *ngIf=\"imgURL\" [src]=\"imgURL\">\n      <strong class=\"text-capitalize sidebar-username ng-binding\">{{user.firstname}} {{user.lastname}}</strong>\n      <span class=\"fa fa-angle-down\"></span>\n    </button>\n    <!-- dropdown for user online status -->\n    <mat-menu #appMenu=\"matMenu\">\n      <li mat-menu-item ><a  (click)=\"status = 'online'\"><span\n            class=\"glyphicon glyphicon-one-fine-dot userStatus1\" style=\"padding:0 !important\"></span> Online</a></li>\n      <li mat-menu-item ><a  (click)=\"status = 'away'\"><span\n            class=\"glyphicon glyphicon-one-fine-dot userStatus3\" style=\"padding:0 !important\"></span> Away</a></li>\n      <li mat-menu-item >\n        <a  (click)=\"status = 'busy'\"><span class=\"glyphicon glyphicon-one-fine-dot userStatus4\" style=\"padding:0 !important\"></span> Busy</a>\n      </li>\n      <li mat-menu-item role=\"separator\" class=\"divider\"></li>\n      <li mat-menu-item><a (click)=\"openPreferencesDialog()\">Preferences</a></li>\n      <li mat-menu-item ng-show=\"isAdmin\" class=\"ng-hide\"><a target=\"_blank\" href=\"/dashboard/\">Dashboard</a></li>\n      <li ng-if=\"isFootnoteVisible\">\n        <a href=\"#\">Download App\n          <span class=\"fa fa-windows fa-fw\"></span>\n        </a>\n      </li>\n      <li mat-menu-item role=\"separator\" class=\"divider\"></li>\n      <li mat-menu-item (click)=\"logout()\"><a>Logout</a></li>\n    </mat-menu>\n  </div>\n</div>\n<!-- list -->\n<ul class=\"nav nav-sidebar\">\n  <li class=\"rooms-sidebar-header\">ROOMS</li>\n\n  <li class=\" rooms_list\" *ngFor=\"let room of rooms; let index= index\">\n    <!-- (click)=\"room.status == 'private' ? openAddFileDialog(room) : selectRoom(room)\" -->\n    <a (click)=\"clickRoom(room)\" class=\"flex-parent locked\" [class.active]=\"index == 0\" style=\"cursor: pointer\">\n      <span class=\"flex-child\">\n        <i class=\"roomIcon fa fa-fw fa-hashtag\" aria-hidden=\"true\"></i>\n        <span class=\"text-capitalize room-name\">{{room.title}}</span>\n      </span>\n      <span class=\"flex-child-icons\">\n        <i style=\"font-size:12px;\" [ngClass]=\"room.status === 'private' ? 'fa-lock' : 'fa-globe'\"\n          class=\"roomIcon fa fa-fw\" aria-hidden=\"true\"></i>\n        <i style=\"font-size:12px;\" class=\"roomIcon fa fa-eye\" aria-hidden=\"true\"></i>\n      </span>\n    </a>\n  </li>\n  <li *ngIf=\"rooms.length == 0\">\n    <a class=\"flex-parent locked\" style=\"cursor: pointer\">\n      <span class=\"flex-child\">\n        <i class=\"roomIcon fa fa-fw fa-hashtag\" aria-hidden=\"true\"></i>\n        <span class=\"text-capitalize room-name ng-binding\">No Room available</span>\n      </span>\n    </a>\n  </li>\n  <li class=\"rooms-sidebar-header\" >SERVICES</li>\n  <li>\n    <a style=\"cursor:pointer\" class=\"service-item flex-parent\">\n      <span class=\"flex-child\">\n        <i class=\"roomIcon fa fa-fw fa-rss\" aria-hidden=\"true\"></i>\n        <span class=\"room-name ng-binding\" style=\"max-width: 157px;\">Market Mastermind</span>\n      </span>\n      <span class=\"flex-child-icons\">\n      </span>\n      <span class=\"flex-child-actions\">\n      </span>\n    </a>\n  </li>\n  <li class=\"ng-scope\">\n    <a ng-click=\"changeRoom(chatRoom);\" style=\"cursor:pointer\" class=\"service-item flex-parent\">\n      <span class=\"flex-child\">\n        <i class=\"roomIcon fa fa-fw fa-video-camera\" aria-hidden=\"true\"></i>\n        <span class=\"room-name ng-binding\" style=\"max-width: 157px;\">7 Day Intense Forex Training</span>\n      </span>\n      <span class=\"flex-child-icons\">\n      </span>\n      <span class=\"flex-child-actions\">\n      </span>\n    </a>\n  </li>\n  <div selected=\"roomName\" >\n    <li class=\"nav-item-header rooms-sidebar-header\">\n      WEBTRADER\n      <button class=\"btn btn-link pull-right\" style=\"padding:0;\" (click)=\"onManageBrockerDialog()\">\n        <i class=\"roomIcon fa fa-fw fa-plus\" aria-hidden=\"true\"></i>\n      </button>\n    </li>\n    <li ng-if=\"!myBrokers.length\" class=\"nav-item-empty\">\n      No brokers were added\n    </li>\n  </div>\n  <li class=\"messages-sidebar-header rooms-sidebar-header\">DIRECT MESSAGES</li>\n  <li class=\"directChat ng-scope\">\n    <a >\n      <span class=\"material-icons userStatus1\" >person_outline</span> RiskyRicky\n    </a>\n  </li>\n  <div id=\"dvFootnote\" class=\"ng-scope\">\n    <div class=\"footer-invite\"><a target=\"\" class=\"btn btn-primary btn-sm\" (click)=\"onInviteFriendDialog()\">Invite\n        your friends</a></div>\n  </div>\n</ul>"
+module.exports = "<div id=\"team-wrapper\" header-company-sidebar=\"\" style=\"position:static;\">\n  <img class=\"sidebar-avatar\" src=\"assets/mini-logo.png\" *ngIf=\"!adminImgPath\">\n  <img class=\"sidebar-avatar\" src=\"{{adminImgPath}}\" *ngIf=\"adminImgPath\">\n  <p class=\"teamName\" title=\"MarketMastersAcademy\">\n    <strong class=\"ng-binding\">MarketMastersAcademy</strong>\n  </p>\n  <mat-slide-toggle  class=\"theme\" [(ngModel)]=\"darkTheme\" (click)=\"onDarkTheme()\" color=\"warn\">\n  </mat-slide-toggle>\n</div>\n<div class=\"topLeft sidebar-match\">\n  <div class=\"dropdown\">\n    <button class=\"dropdown-toggle\" data-toggle=\"dropdown\" [matMenuTriggerFor]=\"appMenu\">\n      <span class=\"glyphicon glyphicon-one-fine-dot sidebar-status-dot userStatus1\" [ngClass]=\"{'userStatus3': status === 'away', 'userStatus4':status === 'busy' }\"\n\n        ></span>\n      <img class=\"sidebar-avatar usr_img\" *ngIf=\"!imgURL\" src=\"assets/mini-logo.png\">\n      <img class=\"sidebar-avatar usr_img\" *ngIf=\"imgURL\" [src]=\"imgURL\">\n      <strong class=\"text-capitalize sidebar-username ng-binding\">{{user.firstname}} {{user.lastname}}</strong>\n      <span class=\"fa fa-angle-down\"></span>\n    </button>\n    <!-- dropdown for user online status -->\n    <mat-menu #appMenu=\"matMenu\">\n      <li mat-menu-item ><a  (click)=\"status = 'online'\"><span\n            class=\"glyphicon glyphicon-one-fine-dot userStatus1\" style=\"padding:0 !important\"></span> Online</a></li>\n      <li mat-menu-item ><a  (click)=\"status = 'away'\"><span\n            class=\"glyphicon glyphicon-one-fine-dot userStatus3\" style=\"padding:0 !important\"></span> Away</a></li>\n      <li mat-menu-item >\n        <a  (click)=\"status = 'busy'\"><span class=\"glyphicon glyphicon-one-fine-dot userStatus4\" style=\"padding:0 !important\"></span> Busy</a>\n      </li>\n      <li mat-menu-item role=\"separator\" class=\"divider\"></li>\n      <li mat-menu-item><a (click)=\"openPreferencesDialog()\">Preferences</a></li>\n      <li mat-menu-item ng-show=\"isAdmin\" class=\"ng-hide\"><a target=\"_blank\" href=\"/dashboard/\">Dashboard</a></li>\n      <li ng-if=\"isFootnoteVisible\">\n        <a href=\"#\">Download App\n          <span class=\"fa fa-windows fa-fw\"></span>\n        </a>\n      </li>\n      <li mat-menu-item role=\"separator\" class=\"divider\"></li>\n      <li mat-menu-item (click)=\"logout()\"><a>Logout</a></li>\n    </mat-menu>\n  </div>\n</div>\n<!-- list -->\n<ul class=\"nav nav-sidebar\">\n  <li class=\"rooms-sidebar-header\">ROOMS</li>\n\n  <li class=\" rooms_list\" *ngFor=\"let room of rooms; let index= index\">\n    <!-- (click)=\"room.status == 'private' ? openAddFileDialog(room) : selectRoom(room)\" -->\n    <a (click)=\"clickRoom(room)\" class=\"flex-parent locked\" [class.active]=\"index == 0\" style=\"cursor: pointer\">\n      <span class=\"flex-child\">\n        <i class=\"roomIcon fa fa-fw fa-hashtag\" aria-hidden=\"true\"></i>\n        <span class=\"text-capitalize room-name\">{{room.title}}</span>\n      </span>\n      <span class=\"flex-child-icons\">\n        <i style=\"font-size:12px;\" [ngClass]=\"room.status === 'private' ? 'fa-lock' : 'fa-globe'\"\n          class=\"roomIcon fa fa-fw\" aria-hidden=\"true\"></i>\n        <i style=\"font-size:12px;\" class=\"roomIcon fa fa-eye\" aria-hidden=\"true\"></i>\n      </span>\n    </a>\n  </li>\n  <li *ngIf=\"rooms.length == 0\">\n    <a class=\"flex-parent locked\" style=\"cursor: pointer\">\n      <span class=\"flex-child\">\n        <i class=\"roomIcon fa fa-fw fa-hashtag\" aria-hidden=\"true\"></i>\n        <span class=\"text-capitalize room-name ng-binding\">No Room available</span>\n      </span>\n    </a>\n  </li>\n  <li class=\"rooms-sidebar-header\" >SERVICES</li>\n  <li class=\"nav-item-empty\">\n    No Services were added\n  </li>\n  <!-- <li>\n    <a style=\"cursor:pointer\" class=\"service-item flex-parent\">\n      <span class=\"flex-child\">\n        <i class=\"roomIcon fa fa-fw fa-rss\" aria-hidden=\"true\"></i>\n        <span class=\"room-name ng-binding\" style=\"max-width: 157px;\">Market Mastermind</span>\n      </span>\n      <span class=\"flex-child-icons\">\n      </span>\n      <span class=\"flex-child-actions\">\n      </span>\n    </a>\n  </li> -->\n  <div selected=\"roomName\" >\n    <li class=\"nav-item-header rooms-sidebar-header\">\n      WEBTRADER\n      <button class=\"btn btn-link pull-right\" style=\"padding:0;\" (click)=\"onManageBrockerDialog()\">\n        <i class=\"roomIcon fa fa-fw fa-plus\" aria-hidden=\"true\"></i>\n      </button>\n    </li>\n    <li ng-if=\"!myBrokers.length\" class=\"nav-item-empty\">\n      No brokers were added\n    </li>\n  </div>\n  <!-- <li class=\"messages-sidebar-header rooms-sidebar-header\">DIRECT MESSAGES</li>\n  <li class=\"directChat ng-scope\">\n    <a >\n      <span class=\"material-icons userStatus1\" >person_outline</span> RiskyRicky\n    </a>\n  </li> -->\n  <div id=\"dvFootnote\" class=\"ng-scope\">\n    <div class=\"footer-invite\"><a target=\"\" class=\"btn btn-primary btn-sm\" (click)=\"onInviteFriendDialog()\">Invite\n        your friends</a></div>\n  </div>\n</ul>"
 
 /***/ }),
 
@@ -3213,12 +3235,12 @@ module.exports = " <mat-tab-group>\n       <mat-tab>\n          <ng-template mat
 
 /***/ }),
 
-/***/ "./node_modules/zone.js/dist/zone.js":
-/*!*******************************************!*\
-  !*** ./node_modules/zone.js/dist/zone.js ***!
-  \*******************************************/
+/***/ "./node_modules/zone.js/dist/zone-evergreen.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/zone.js/dist/zone-evergreen.js ***!
+  \*****************************************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
 /**
 * @license
@@ -3227,11 +3249,6 @@ module.exports = " <mat-tab-group>\n       <mat-tab>\n          <ng-template mat
 * Use of this source code is governed by an MIT-style license that can be
 * found in the LICENSE file at https://angular.io/license
 */
-(function (global, factory) {
-	 true ? factory() :
-	undefined;
-}(this, (function () { 'use strict';
-
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -3239,8 +3256,8 @@ module.exports = " <mat-tab-group>\n       <mat-tab>\n          <ng-template mat
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
-var Zone$1 = (function (global) {
-    var performance = global['performance'];
+const Zone$1 = (function (global) {
+    const performance = global['performance'];
     function mark(name) {
         performance && performance['mark'] && performance['mark'](name);
     }
@@ -3248,7 +3265,7 @@ var Zone$1 = (function (global) {
         performance && performance['measure'] && performance['measure'](name, label);
     }
     mark('Zone');
-    var checkDuplicate = global[('__zone_symbol__forceDuplicateZoneCheck')] === true;
+    const checkDuplicate = global[('__zone_symbol__forceDuplicateZoneCheck')] === true;
     if (global['Zone']) {
         // if global['Zone'] already exists (maybe zone.js was already loaded or
         // some other lib also registered a global object named Zone), we may need
@@ -3266,15 +3283,15 @@ var Zone$1 = (function (global) {
             return global['Zone'];
         }
     }
-    var Zone = /** @class */ (function () {
-        function Zone(parent, zoneSpec) {
+    class Zone {
+        constructor(parent, zoneSpec) {
             this._parent = parent;
             this._name = zoneSpec ? zoneSpec.name || 'unnamed' : '<root>';
             this._properties = zoneSpec && zoneSpec.properties || {};
             this._zoneDelegate =
                 new ZoneDelegate(this, this._parent && this._parent._zoneDelegate, zoneSpec);
         }
-        Zone.assertZonePatched = function () {
+        static assertZonePatched() {
             if (global['Promise'] !== patches['ZoneAwarePromise']) {
                 throw new Error('Zone.js has detected that ZoneAwarePromise `(window|global).Promise` ' +
                     'has been overwritten.\n' +
@@ -3282,66 +3299,46 @@ var Zone$1 = (function (global) {
                     'after Zone.js (Polyfilling Promise api is not necessary when zone.js is loaded. ' +
                     'If you must load one, do so before loading zone.js.)');
             }
-        };
-        Object.defineProperty(Zone, "root", {
-            get: function () {
-                var zone = Zone.current;
-                while (zone.parent) {
-                    zone = zone.parent;
-                }
-                return zone;
-            },
-            enumerable: true,
-            configurable: true
-        });
-        Object.defineProperty(Zone, "current", {
-            get: function () {
-                return _currentZoneFrame.zone;
-            },
-            enumerable: true,
-            configurable: true
-        });
-        Object.defineProperty(Zone, "currentTask", {
-            get: function () {
-                return _currentTask;
-            },
-            enumerable: true,
-            configurable: true
-        });
-        Zone.__load_patch = function (name, fn) {
+        }
+        static get root() {
+            let zone = Zone.current;
+            while (zone.parent) {
+                zone = zone.parent;
+            }
+            return zone;
+        }
+        static get current() {
+            return _currentZoneFrame.zone;
+        }
+        static get currentTask() {
+            return _currentTask;
+        }
+        static __load_patch(name, fn) {
             if (patches.hasOwnProperty(name)) {
                 if (checkDuplicate) {
                     throw Error('Already loaded patch: ' + name);
                 }
             }
             else if (!global['__Zone_disable_' + name]) {
-                var perfName = 'Zone:' + name;
+                const perfName = 'Zone:' + name;
                 mark(perfName);
                 patches[name] = fn(global, Zone, _api);
                 performanceMeasure(perfName, perfName);
             }
-        };
-        Object.defineProperty(Zone.prototype, "parent", {
-            get: function () {
-                return this._parent;
-            },
-            enumerable: true,
-            configurable: true
-        });
-        Object.defineProperty(Zone.prototype, "name", {
-            get: function () {
-                return this._name;
-            },
-            enumerable: true,
-            configurable: true
-        });
-        Zone.prototype.get = function (key) {
-            var zone = this.getZoneWith(key);
+        }
+        get parent() {
+            return this._parent;
+        }
+        get name() {
+            return this._name;
+        }
+        get(key) {
+            const zone = this.getZoneWith(key);
             if (zone)
                 return zone._properties[key];
-        };
-        Zone.prototype.getZoneWith = function (key) {
-            var current = this;
+        }
+        getZoneWith(key) {
+            let current = this;
             while (current) {
                 if (current._properties.hasOwnProperty(key)) {
                     return current;
@@ -3349,23 +3346,23 @@ var Zone$1 = (function (global) {
                 current = current._parent;
             }
             return null;
-        };
-        Zone.prototype.fork = function (zoneSpec) {
+        }
+        fork(zoneSpec) {
             if (!zoneSpec)
                 throw new Error('ZoneSpec required!');
             return this._zoneDelegate.fork(this, zoneSpec);
-        };
-        Zone.prototype.wrap = function (callback, source) {
+        }
+        wrap(callback, source) {
             if (typeof callback !== 'function') {
                 throw new Error('Expecting function got: ' + callback);
             }
-            var _callback = this._zoneDelegate.intercept(this, callback, source);
-            var zone = this;
+            const _callback = this._zoneDelegate.intercept(this, callback, source);
+            const zone = this;
             return function () {
                 return zone.runGuarded(_callback, this, arguments, source);
             };
-        };
-        Zone.prototype.run = function (callback, applyThis, applyArgs, source) {
+        }
+        run(callback, applyThis, applyArgs, source) {
             _currentZoneFrame = { parent: _currentZoneFrame, zone: this };
             try {
                 return this._zoneDelegate.invoke(this, callback, applyThis, applyArgs, source);
@@ -3373,9 +3370,8 @@ var Zone$1 = (function (global) {
             finally {
                 _currentZoneFrame = _currentZoneFrame.parent;
             }
-        };
-        Zone.prototype.runGuarded = function (callback, applyThis, applyArgs, source) {
-            if (applyThis === void 0) { applyThis = null; }
+        }
+        runGuarded(callback, applyThis = null, applyArgs, source) {
             _currentZoneFrame = { parent: _currentZoneFrame, zone: this };
             try {
                 try {
@@ -3390,8 +3386,8 @@ var Zone$1 = (function (global) {
             finally {
                 _currentZoneFrame = _currentZoneFrame.parent;
             }
-        };
-        Zone.prototype.runTask = function (task, applyThis, applyArgs) {
+        }
+        runTask(task, applyThis, applyArgs) {
             if (task.zone != this) {
                 throw new Error('A task can only be run in the zone of creation! (Creation: ' +
                     (task.zone || NO_ZONE).name + '; Execution: ' + this.name + ')');
@@ -3402,10 +3398,10 @@ var Zone$1 = (function (global) {
             if (task.state === notScheduled && (task.type === eventTask || task.type === macroTask)) {
                 return;
             }
-            var reEntryGuard = task.state != running;
+            const reEntryGuard = task.state != running;
             reEntryGuard && task._transitionTo(running, scheduled);
             task.runCount++;
-            var previousTask = _currentTask;
+            const previousTask = _currentTask;
             _currentTask = task;
             _currentZoneFrame = { parent: _currentZoneFrame, zone: this };
             try {
@@ -3438,21 +3434,21 @@ var Zone$1 = (function (global) {
                 _currentZoneFrame = _currentZoneFrame.parent;
                 _currentTask = previousTask;
             }
-        };
-        Zone.prototype.scheduleTask = function (task) {
+        }
+        scheduleTask(task) {
             if (task.zone && task.zone !== this) {
                 // check if the task was rescheduled, the newZone
                 // should not be the children of the original zone
-                var newZone = this;
+                let newZone = this;
                 while (newZone) {
                     if (newZone === task.zone) {
-                        throw Error("can not reschedule task to " + this.name + " which is descendants of the original zone " + task.zone.name);
+                        throw Error(`can not reschedule task to ${this.name} which is descendants of the original zone ${task.zone.name}`);
                     }
                     newZone = newZone.parent;
                 }
             }
             task._transitionTo(scheduling, notScheduled);
-            var zoneDelegates = [];
+            const zoneDelegates = [];
             task._zoneDelegates = zoneDelegates;
             task._zone = this;
             try {
@@ -3474,17 +3470,17 @@ var Zone$1 = (function (global) {
                 task._transitionTo(scheduled, scheduling);
             }
             return task;
-        };
-        Zone.prototype.scheduleMicroTask = function (source, callback, data, customSchedule) {
+        }
+        scheduleMicroTask(source, callback, data, customSchedule) {
             return this.scheduleTask(new ZoneTask(microTask, source, callback, data, customSchedule, undefined));
-        };
-        Zone.prototype.scheduleMacroTask = function (source, callback, data, customSchedule, customCancel) {
+        }
+        scheduleMacroTask(source, callback, data, customSchedule, customCancel) {
             return this.scheduleTask(new ZoneTask(macroTask, source, callback, data, customSchedule, customCancel));
-        };
-        Zone.prototype.scheduleEventTask = function (source, callback, data, customSchedule, customCancel) {
+        }
+        scheduleEventTask(source, callback, data, customSchedule, customCancel) {
             return this.scheduleTask(new ZoneTask(eventTask, source, callback, data, customSchedule, customCancel));
-        };
-        Zone.prototype.cancelTask = function (task) {
+        }
+        cancelTask(task) {
             if (task.zone != this)
                 throw new Error('A task can only be cancelled in the zone of creation! (Creation: ' +
                     (task.zone || NO_ZONE).name + '; Execution: ' + this.name + ')');
@@ -3502,32 +3498,27 @@ var Zone$1 = (function (global) {
             task._transitionTo(notScheduled, canceling);
             task.runCount = 0;
             return task;
-        };
-        Zone.prototype._updateTaskCount = function (task, count) {
-            var zoneDelegates = task._zoneDelegates;
+        }
+        _updateTaskCount(task, count) {
+            const zoneDelegates = task._zoneDelegates;
             if (count == -1) {
                 task._zoneDelegates = null;
             }
-            for (var i = 0; i < zoneDelegates.length; i++) {
+            for (let i = 0; i < zoneDelegates.length; i++) {
                 zoneDelegates[i]._updateTaskCount(task.type, count);
             }
-        };
-        Zone.__symbol__ = __symbol__;
-        return Zone;
-    }());
-    var DELEGATE_ZS = {
+        }
+    }
+    Zone.__symbol__ = __symbol__;
+    const DELEGATE_ZS = {
         name: '',
-        onHasTask: function (delegate, _, target, hasTaskState) { return delegate.hasTask(target, hasTaskState); },
-        onScheduleTask: function (delegate, _, target, task) {
-            return delegate.scheduleTask(target, task);
-        },
-        onInvokeTask: function (delegate, _, target, task, applyThis, applyArgs) {
-            return delegate.invokeTask(target, task, applyThis, applyArgs);
-        },
-        onCancelTask: function (delegate, _, target, task) { return delegate.cancelTask(target, task); }
+        onHasTask: (delegate, _, target, hasTaskState) => delegate.hasTask(target, hasTaskState),
+        onScheduleTask: (delegate, _, target, task) => delegate.scheduleTask(target, task),
+        onInvokeTask: (delegate, _, target, task, applyThis, applyArgs) => delegate.invokeTask(target, task, applyThis, applyArgs),
+        onCancelTask: (delegate, _, target, task) => delegate.cancelTask(target, task)
     };
-    var ZoneDelegate = /** @class */ (function () {
-        function ZoneDelegate(zone, parentDelegate, zoneSpec) {
+    class ZoneDelegate {
+        constructor(zone, parentDelegate, zoneSpec) {
             this._taskCounts = { 'microTask': 0, 'macroTask': 0, 'eventTask': 0 };
             this.zone = zone;
             this._parentDelegate = parentDelegate;
@@ -3572,8 +3563,8 @@ var Zone$1 = (function (global) {
             this._hasTaskDlgt = null;
             this._hasTaskDlgtOwner = null;
             this._hasTaskCurrZone = null;
-            var zoneSpecHasTask = zoneSpec && zoneSpec.onHasTask;
-            var parentHasTask = parentDelegate && parentDelegate._hasTaskZS;
+            const zoneSpecHasTask = zoneSpec && zoneSpec.onHasTask;
+            const parentHasTask = parentDelegate && parentDelegate._hasTaskZS;
             if (zoneSpecHasTask || parentHasTask) {
                 // If we need to report hasTask, than this ZS needs to do ref counting on tasks. In such
                 // a case all task related interceptors must go through this ZD. We can't short circuit it.
@@ -3598,26 +3589,26 @@ var Zone$1 = (function (global) {
                 }
             }
         }
-        ZoneDelegate.prototype.fork = function (targetZone, zoneSpec) {
+        fork(targetZone, zoneSpec) {
             return this._forkZS ? this._forkZS.onFork(this._forkDlgt, this.zone, targetZone, zoneSpec) :
                 new Zone(targetZone, zoneSpec);
-        };
-        ZoneDelegate.prototype.intercept = function (targetZone, callback, source) {
+        }
+        intercept(targetZone, callback, source) {
             return this._interceptZS ?
                 this._interceptZS.onIntercept(this._interceptDlgt, this._interceptCurrZone, targetZone, callback, source) :
                 callback;
-        };
-        ZoneDelegate.prototype.invoke = function (targetZone, callback, applyThis, applyArgs, source) {
+        }
+        invoke(targetZone, callback, applyThis, applyArgs, source) {
             return this._invokeZS ? this._invokeZS.onInvoke(this._invokeDlgt, this._invokeCurrZone, targetZone, callback, applyThis, applyArgs, source) :
                 callback.apply(applyThis, applyArgs);
-        };
-        ZoneDelegate.prototype.handleError = function (targetZone, error) {
+        }
+        handleError(targetZone, error) {
             return this._handleErrorZS ?
                 this._handleErrorZS.onHandleError(this._handleErrorDlgt, this._handleErrorCurrZone, targetZone, error) :
                 true;
-        };
-        ZoneDelegate.prototype.scheduleTask = function (targetZone, task) {
-            var returnTask = task;
+        }
+        scheduleTask(targetZone, task) {
+            let returnTask = task;
             if (this._scheduleTaskZS) {
                 if (this._hasTaskZS) {
                     returnTask._zoneDelegates.push(this._hasTaskDlgtOwner);
@@ -3638,13 +3629,13 @@ var Zone$1 = (function (global) {
                 }
             }
             return returnTask;
-        };
-        ZoneDelegate.prototype.invokeTask = function (targetZone, task, applyThis, applyArgs) {
+        }
+        invokeTask(targetZone, task, applyThis, applyArgs) {
             return this._invokeTaskZS ? this._invokeTaskZS.onInvokeTask(this._invokeTaskDlgt, this._invokeTaskCurrZone, targetZone, task, applyThis, applyArgs) :
                 task.callback.apply(applyThis, applyArgs);
-        };
-        ZoneDelegate.prototype.cancelTask = function (targetZone, task) {
-            var value;
+        }
+        cancelTask(targetZone, task) {
+            let value;
             if (this._cancelTaskZS) {
                 value = this._cancelTaskZS.onCancelTask(this._cancelTaskDlgt, this._cancelTaskCurrZone, targetZone, task);
             }
@@ -3655,8 +3646,8 @@ var Zone$1 = (function (global) {
                 value = task.cancelFn(task);
             }
             return value;
-        };
-        ZoneDelegate.prototype.hasTask = function (targetZone, isEmpty) {
+        }
+        hasTask(targetZone, isEmpty) {
             // hasTask should not throw error so other ZoneDelegate
             // can still trigger hasTask callback
             try {
@@ -3666,16 +3657,16 @@ var Zone$1 = (function (global) {
             catch (err) {
                 this.handleError(targetZone, err);
             }
-        };
-        ZoneDelegate.prototype._updateTaskCount = function (type, count) {
-            var counts = this._taskCounts;
-            var prev = counts[type];
-            var next = counts[type] = prev + count;
+        }
+        _updateTaskCount(type, count) {
+            const counts = this._taskCounts;
+            const prev = counts[type];
+            const next = counts[type] = prev + count;
             if (next < 0) {
                 throw new Error('More tasks executed then were scheduled.');
             }
             if (prev == 0 || next == 0) {
-                var isEmpty = {
+                const isEmpty = {
                     microTask: counts['microTask'] > 0,
                     macroTask: counts['macroTask'] > 0,
                     eventTask: counts['eventTask'] > 0,
@@ -3683,11 +3674,10 @@ var Zone$1 = (function (global) {
                 };
                 this.hasTask(this.zone, isEmpty);
             }
-        };
-        return ZoneDelegate;
-    }());
-    var ZoneTask = /** @class */ (function () {
-        function ZoneTask(type, source, callback, options, scheduleFn, cancelFn) {
+        }
+    }
+    class ZoneTask {
+        constructor(type, source, callback, options, scheduleFn, cancelFn) {
             this._zone = null;
             this.runCount = 0;
             this._zoneDelegates = null;
@@ -3698,7 +3688,7 @@ var Zone$1 = (function (global) {
             this.scheduleFn = scheduleFn;
             this.cancelFn = cancelFn;
             this.callback = callback;
-            var self = this;
+            const self = this;
             // TODO: @JiaLiPassion options should have interface
             if (type === eventTask && options && options.useG) {
                 this.invoke = ZoneTask.invokeTask;
@@ -3709,7 +3699,7 @@ var Zone$1 = (function (global) {
                 };
             }
         }
-        ZoneTask.invokeTask = function (task, target, args) {
+        static invokeTask(task, target, args) {
             if (!task) {
                 task = this;
             }
@@ -3724,25 +3714,17 @@ var Zone$1 = (function (global) {
                 }
                 _numberOfNestedTaskFrames--;
             }
-        };
-        Object.defineProperty(ZoneTask.prototype, "zone", {
-            get: function () {
-                return this._zone;
-            },
-            enumerable: true,
-            configurable: true
-        });
-        Object.defineProperty(ZoneTask.prototype, "state", {
-            get: function () {
-                return this._state;
-            },
-            enumerable: true,
-            configurable: true
-        });
-        ZoneTask.prototype.cancelScheduleRequest = function () {
+        }
+        get zone() {
+            return this._zone;
+        }
+        get state() {
+            return this._state;
+        }
+        cancelScheduleRequest() {
             this._transitionTo(notScheduled, scheduling);
-        };
-        ZoneTask.prototype._transitionTo = function (toState, fromState1, fromState2) {
+        }
+        _transitionTo(toState, fromState1, fromState2) {
             if (this._state === fromState1 || this._state === fromState2) {
                 this._state = toState;
                 if (toState == notScheduled) {
@@ -3750,20 +3732,20 @@ var Zone$1 = (function (global) {
                 }
             }
             else {
-                throw new Error(this.type + " '" + this.source + "': can not transition to '" + toState + "', expecting state '" + fromState1 + "'" + (fromState2 ? ' or \'' + fromState2 + '\'' : '') + ", was '" + this._state + "'.");
+                throw new Error(`${this.type} '${this.source}': can not transition to '${toState}', expecting state '${fromState1}'${fromState2 ? ' or \'' + fromState2 + '\'' : ''}, was '${this._state}'.`);
             }
-        };
-        ZoneTask.prototype.toString = function () {
+        }
+        toString() {
             if (this.data && typeof this.data.handleId !== 'undefined') {
                 return this.data.handleId.toString();
             }
             else {
                 return Object.prototype.toString.call(this);
             }
-        };
+        }
         // add toJSON method to prevent cyclic error when
         // call JSON.stringify(zoneTask)
-        ZoneTask.prototype.toJSON = function () {
+        toJSON() {
             return {
                 type: this.type,
                 state: this.state,
@@ -3771,20 +3753,19 @@ var Zone$1 = (function (global) {
                 zone: this.zone.name,
                 runCount: this.runCount
             };
-        };
-        return ZoneTask;
-    }());
+        }
+    }
     //////////////////////////////////////////////////////
     //////////////////////////////////////////////////////
     ///  MICROTASK QUEUE
     //////////////////////////////////////////////////////
     //////////////////////////////////////////////////////
-    var symbolSetTimeout = __symbol__('setTimeout');
-    var symbolPromise = __symbol__('Promise');
-    var symbolThen = __symbol__('then');
-    var _microTaskQueue = [];
-    var _isDrainingMicrotaskQueue = false;
-    var nativeMicroTaskQueuePromise;
+    const symbolSetTimeout = __symbol__('setTimeout');
+    const symbolPromise = __symbol__('Promise');
+    const symbolThen = __symbol__('then');
+    let _microTaskQueue = [];
+    let _isDrainingMicrotaskQueue = false;
+    let nativeMicroTaskQueuePromise;
     function scheduleMicroTask(task) {
         // if we are not running in any task, and there has not been anything scheduled
         // we must bootstrap the initial task creation by manually scheduling the drain
@@ -3796,7 +3777,7 @@ var Zone$1 = (function (global) {
                 }
             }
             if (nativeMicroTaskQueuePromise) {
-                var nativeThen = nativeMicroTaskQueuePromise[symbolThen];
+                let nativeThen = nativeMicroTaskQueuePromise[symbolThen];
                 if (!nativeThen) {
                     // native Promise is not patchable, we need to use `then` directly
                     // issue 1078
@@ -3814,10 +3795,10 @@ var Zone$1 = (function (global) {
         if (!_isDrainingMicrotaskQueue) {
             _isDrainingMicrotaskQueue = true;
             while (_microTaskQueue.length) {
-                var queue = _microTaskQueue;
+                const queue = _microTaskQueue;
                 _microTaskQueue = [];
-                for (var i = 0; i < queue.length; i++) {
-                    var task = queue[i];
+                for (let i = 0; i < queue.length; i++) {
+                    const task = queue[i];
                     try {
                         task.zone.runTask(task, null, null);
                     }
@@ -3835,24 +3816,24 @@ var Zone$1 = (function (global) {
     ///  BOOTSTRAP
     //////////////////////////////////////////////////////
     //////////////////////////////////////////////////////
-    var NO_ZONE = { name: 'NO ZONE' };
-    var notScheduled = 'notScheduled', scheduling = 'scheduling', scheduled = 'scheduled', running = 'running', canceling = 'canceling', unknown = 'unknown';
-    var microTask = 'microTask', macroTask = 'macroTask', eventTask = 'eventTask';
-    var patches = {};
-    var _api = {
+    const NO_ZONE = { name: 'NO ZONE' };
+    const notScheduled = 'notScheduled', scheduling = 'scheduling', scheduled = 'scheduled', running = 'running', canceling = 'canceling', unknown = 'unknown';
+    const microTask = 'microTask', macroTask = 'macroTask', eventTask = 'eventTask';
+    const patches = {};
+    const _api = {
         symbol: __symbol__,
-        currentZoneFrame: function () { return _currentZoneFrame; },
+        currentZoneFrame: () => _currentZoneFrame,
         onUnhandledError: noop,
         microtaskDrainDone: noop,
         scheduleMicroTask: scheduleMicroTask,
-        showUncaughtError: function () { return !Zone[__symbol__('ignoreConsoleErrorUncaughtError')]; },
-        patchEventTarget: function () { return []; },
+        showUncaughtError: () => !Zone[__symbol__('ignoreConsoleErrorUncaughtError')],
+        patchEventTarget: () => [],
         patchOnProperties: noop,
-        patchMethod: function () { return noop; },
-        bindArguments: function () { return []; },
-        patchThen: function () { return noop; },
-        patchMacroTask: function () { return noop; },
-        setNativePromise: function (NativePromise) {
+        patchMethod: () => noop,
+        bindArguments: () => [],
+        patchThen: () => noop,
+        patchMacroTask: () => noop,
+        setNativePromise: (NativePromise) => {
             // sometimes NativePromise.resolve static function
             // is not ready yet, (such as core-js/es6.promise)
             // so we need to check here.
@@ -3860,23 +3841,23 @@ var Zone$1 = (function (global) {
                 nativeMicroTaskQueuePromise = NativePromise.resolve(0);
             }
         },
-        patchEventPrototype: function () { return noop; },
-        isIEOrEdge: function () { return false; },
-        getGlobalObjects: function () { return undefined; },
-        ObjectDefineProperty: function () { return noop; },
-        ObjectGetOwnPropertyDescriptor: function () { return undefined; },
-        ObjectCreate: function () { return undefined; },
-        ArraySlice: function () { return []; },
-        patchClass: function () { return noop; },
-        wrapWithCurrentZone: function () { return noop; },
-        filterProperties: function () { return []; },
-        attachOriginToPatched: function () { return noop; },
-        _redefineProperty: function () { return noop; },
-        patchCallbacks: function () { return noop; }
+        patchEventPrototype: () => noop,
+        isIEOrEdge: () => false,
+        getGlobalObjects: () => undefined,
+        ObjectDefineProperty: () => noop,
+        ObjectGetOwnPropertyDescriptor: () => undefined,
+        ObjectCreate: () => undefined,
+        ArraySlice: () => [],
+        patchClass: () => noop,
+        wrapWithCurrentZone: () => noop,
+        filterProperties: () => [],
+        attachOriginToPatched: () => noop,
+        _redefineProperty: () => noop,
+        patchCallbacks: () => noop
     };
-    var _currentZoneFrame = { parent: null, zone: new Zone(null, null) };
-    var _currentTask = null;
-    var _numberOfNestedTaskFrames = 0;
+    let _currentZoneFrame = { parent: null, zone: new Zone(null, null) };
+    let _currentTask = null;
+    let _numberOfNestedTaskFrames = 0;
     function noop() { }
     function __symbol__(name) {
         return '__zone_symbol__' + name;
@@ -3885,16 +3866,6 @@ var Zone$1 = (function (global) {
     return global['Zone'] = Zone;
 })(typeof window !== 'undefined' && window || typeof self !== 'undefined' && self || global);
 
-var __values = (undefined && undefined.__values) || function (o) {
-    var m = typeof Symbol === "function" && o[Symbol.iterator], i = 0;
-    if (m) return m.call(o);
-    return {
-        next: function () {
-            if (o && i >= o.length) o = void 0;
-            return { value: o && o[i++], done: !o };
-        }
-    };
-};
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -3902,24 +3873,24 @@ var __values = (undefined && undefined.__values) || function (o) {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
-Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
-    var ObjectGetOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
-    var ObjectDefineProperty = Object.defineProperty;
+Zone.__load_patch('ZoneAwarePromise', (global, Zone, api) => {
+    const ObjectGetOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
+    const ObjectDefineProperty = Object.defineProperty;
     function readableObjectToString(obj) {
         if (obj && obj.toString === Object.prototype.toString) {
-            var className = obj.constructor && obj.constructor.name;
+            const className = obj.constructor && obj.constructor.name;
             return (className ? className : '') + ': ' + JSON.stringify(obj);
         }
         return obj ? obj.toString() : Object.prototype.toString.call(obj);
     }
-    var __symbol__ = api.symbol;
-    var _uncaughtPromiseErrors = [];
-    var symbolPromise = __symbol__('Promise');
-    var symbolThen = __symbol__('then');
-    var creationTrace = '__creationTrace__';
-    api.onUnhandledError = function (e) {
+    const __symbol__ = api.symbol;
+    const _uncaughtPromiseErrors = [];
+    const symbolPromise = __symbol__('Promise');
+    const symbolThen = __symbol__('then');
+    const creationTrace = '__creationTrace__';
+    api.onUnhandledError = (e) => {
         if (api.showUncaughtError()) {
-            var rejection = e && e.rejection;
+            const rejection = e && e.rejection;
             if (rejection) {
                 console.error('Unhandled Promise rejection:', rejection instanceof Error ? rejection.message : rejection, '; Zone:', e.zone.name, '; Task:', e.task && e.task.source, '; Value:', rejection, rejection instanceof Error ? rejection.stack : undefined);
             }
@@ -3928,29 +3899,26 @@ Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
             }
         }
     };
-    api.microtaskDrainDone = function () {
+    api.microtaskDrainDone = () => {
         while (_uncaughtPromiseErrors.length) {
-            var _loop_1 = function () {
-                var uncaughtPromiseError = _uncaughtPromiseErrors.shift();
+            while (_uncaughtPromiseErrors.length) {
+                const uncaughtPromiseError = _uncaughtPromiseErrors.shift();
                 try {
-                    uncaughtPromiseError.zone.runGuarded(function () {
+                    uncaughtPromiseError.zone.runGuarded(() => {
                         throw uncaughtPromiseError;
                     });
                 }
                 catch (error) {
                     handleUnhandledRejection(error);
                 }
-            };
-            while (_uncaughtPromiseErrors.length) {
-                _loop_1();
             }
         }
     };
-    var UNHANDLED_PROMISE_REJECTION_HANDLER_SYMBOL = __symbol__('unhandledPromiseRejectionHandler');
+    const UNHANDLED_PROMISE_REJECTION_HANDLER_SYMBOL = __symbol__('unhandledPromiseRejectionHandler');
     function handleUnhandledRejection(e) {
         api.onUnhandledError(e);
         try {
-            var handler = Zone[UNHANDLED_PROMISE_REJECTION_HANDLER_SYMBOL];
+            const handler = Zone[UNHANDLED_PROMISE_REJECTION_HANDLER_SYMBOL];
             if (handler && typeof handler === 'function') {
                 handler.call(this, e);
             }
@@ -3967,18 +3935,18 @@ Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
     function forwardRejection(rejection) {
         return ZoneAwarePromise.reject(rejection);
     }
-    var symbolState = __symbol__('state');
-    var symbolValue = __symbol__('value');
-    var symbolFinally = __symbol__('finally');
-    var symbolParentPromiseValue = __symbol__('parentPromiseValue');
-    var symbolParentPromiseState = __symbol__('parentPromiseState');
-    var source = 'Promise.then';
-    var UNRESOLVED = null;
-    var RESOLVED = true;
-    var REJECTED = false;
-    var REJECTED_NO_CATCH = 0;
+    const symbolState = __symbol__('state');
+    const symbolValue = __symbol__('value');
+    const symbolFinally = __symbol__('finally');
+    const symbolParentPromiseValue = __symbol__('parentPromiseValue');
+    const symbolParentPromiseState = __symbol__('parentPromiseState');
+    const source = 'Promise.then';
+    const UNRESOLVED = null;
+    const RESOLVED = true;
+    const REJECTED = false;
+    const REJECTED_NO_CATCH = 0;
     function makeResolver(promise, state) {
-        return function (v) {
+        return (v) => {
             try {
                 resolvePromise(promise, state, v);
             }
@@ -3988,8 +3956,8 @@ Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
             // Do not return value or you will break the Promise spec.
         };
     }
-    var once = function () {
-        var wasCalled = false;
+    const once = function () {
+        let wasCalled = false;
         return function wrapper(wrappedFunction) {
             return function () {
                 if (wasCalled) {
@@ -4000,24 +3968,24 @@ Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
             };
         };
     };
-    var TYPE_ERROR = 'Promise resolved with itself';
-    var CURRENT_TASK_TRACE_SYMBOL = __symbol__('currentTaskTrace');
+    const TYPE_ERROR = 'Promise resolved with itself';
+    const CURRENT_TASK_TRACE_SYMBOL = __symbol__('currentTaskTrace');
     // Promise Resolution
     function resolvePromise(promise, state, value) {
-        var onceWrapper = once();
+        const onceWrapper = once();
         if (promise === value) {
             throw new TypeError(TYPE_ERROR);
         }
         if (promise[symbolState] === UNRESOLVED) {
             // should only get value.then once based on promise spec.
-            var then = null;
+            let then = null;
             try {
                 if (typeof value === 'object' || typeof value === 'function') {
                     then = value && value.then;
                 }
             }
             catch (err) {
-                onceWrapper(function () {
+                onceWrapper(() => {
                     resolvePromise(promise, false, err);
                 })();
                 return promise;
@@ -4034,14 +4002,14 @@ Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
                     then.call(value, onceWrapper(makeResolver(promise, state)), onceWrapper(makeResolver(promise, false)));
                 }
                 catch (err) {
-                    onceWrapper(function () {
+                    onceWrapper(() => {
                         resolvePromise(promise, false, err);
                     })();
                 }
             }
             else {
                 promise[symbolState] = state;
-                var queue = promise[symbolValue];
+                const queue = promise[symbolValue];
                 promise[symbolValue] = value;
                 if (promise[symbolFinally] === symbolFinally) {
                     // the promise is generated by Promise.prototype.finally
@@ -4056,14 +4024,14 @@ Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
                 // do some additional work such as render longStackTrace
                 if (state === REJECTED && value instanceof Error) {
                     // check if longStackTraceZone is here
-                    var trace = Zone.currentTask && Zone.currentTask.data &&
+                    const trace = Zone.currentTask && Zone.currentTask.data &&
                         Zone.currentTask.data[creationTrace];
                     if (trace) {
                         // only keep the long stack trace into error when in longStackTraceZone
                         ObjectDefineProperty(value, CURRENT_TASK_TRACE_SYMBOL, { configurable: true, enumerable: false, writable: true, value: trace });
                     }
                 }
-                for (var i = 0; i < queue.length;) {
+                for (let i = 0; i < queue.length;) {
                     scheduleResolveOrReject(promise, queue[i++], queue[i++], queue[i++], queue[i++]);
                 }
                 if (queue.length == 0 && state == REJECTED) {
@@ -4074,12 +4042,12 @@ Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
                             (value && value.stack ? '\n' + value.stack : ''));
                     }
                     catch (err) {
-                        var error_1 = err;
-                        error_1.rejection = value;
-                        error_1.promise = promise;
-                        error_1.zone = Zone.current;
-                        error_1.task = Zone.currentTask;
-                        _uncaughtPromiseErrors.push(error_1);
+                        const error = err;
+                        error.rejection = value;
+                        error.promise = promise;
+                        error.zone = Zone.current;
+                        error.task = Zone.currentTask;
+                        _uncaughtPromiseErrors.push(error);
                         api.scheduleMicroTask(); // to make sure that it is running
                     }
                 }
@@ -4088,7 +4056,7 @@ Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
         // Resolving an already resolved promise is a noop.
         return promise;
     }
-    var REJECTION_HANDLED_HANDLER = __symbol__('rejectionHandledHandler');
+    const REJECTION_HANDLED_HANDLER = __symbol__('rejectionHandledHandler');
     function clearRejectedNoCatch(promise) {
         if (promise[symbolState] === REJECTED_NO_CATCH) {
             // if the promise is rejected no catch status
@@ -4097,7 +4065,7 @@ Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
             // windows.rejectionhandled eventHandler or nodejs rejectionHandled
             // eventHandler
             try {
-                var handler = Zone[REJECTION_HANDLED_HANDLER];
+                const handler = Zone[REJECTION_HANDLED_HANDLER];
                 if (handler && typeof handler === 'function') {
                     handler.call(this, { rejection: promise[symbolValue], promise: promise });
                 }
@@ -4105,7 +4073,7 @@ Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
             catch (err) {
             }
             promise[symbolState] = REJECTED;
-            for (var i = 0; i < _uncaughtPromiseErrors.length; i++) {
+            for (let i = 0; i < _uncaughtPromiseErrors.length; i++) {
                 if (promise === _uncaughtPromiseErrors[i].promise) {
                     _uncaughtPromiseErrors.splice(i, 1);
                 }
@@ -4114,21 +4082,21 @@ Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
     }
     function scheduleResolveOrReject(promise, zone, chainPromise, onFulfilled, onRejected) {
         clearRejectedNoCatch(promise);
-        var promiseState = promise[symbolState];
-        var delegate = promiseState ?
+        const promiseState = promise[symbolState];
+        const delegate = promiseState ?
             (typeof onFulfilled === 'function') ? onFulfilled : forwardResolution :
             (typeof onRejected === 'function') ? onRejected : forwardRejection;
-        zone.scheduleMicroTask(source, function () {
+        zone.scheduleMicroTask(source, () => {
             try {
-                var parentPromiseValue = promise[symbolValue];
-                var isFinallyPromise = chainPromise && symbolFinally === chainPromise[symbolFinally];
+                const parentPromiseValue = promise[symbolValue];
+                const isFinallyPromise = chainPromise && symbolFinally === chainPromise[symbolFinally];
                 if (isFinallyPromise) {
                     // if the promise is generated from finally call, keep parent promise's state and value
                     chainPromise[symbolParentPromiseValue] = parentPromiseValue;
                     chainPromise[symbolParentPromiseState] = promiseState;
                 }
                 // should not pass value to finally callback
-                var value = zone.run(delegate, undefined, isFinallyPromise && delegate !== forwardRejection && delegate !== forwardResolution ?
+                const value = zone.run(delegate, undefined, isFinallyPromise && delegate !== forwardRejection && delegate !== forwardResolution ?
                     [] :
                     [parentPromiseValue]);
                 resolvePromise(chainPromise, true, value);
@@ -4139,10 +4107,10 @@ Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
             }
         }, chainPromise);
     }
-    var ZONE_AWARE_PROMISE_TO_STRING = 'function ZoneAwarePromise() { [native code] }';
-    var ZoneAwarePromise = /** @class */ (function () {
-        function ZoneAwarePromise(executor) {
-            var promise = this;
+    const ZONE_AWARE_PROMISE_TO_STRING = 'function ZoneAwarePromise() { [native code] }';
+    class ZoneAwarePromise {
+        constructor(executor) {
+            const promise = this;
             if (!(promise instanceof ZoneAwarePromise)) {
                 throw new Error('Must be an instanceof Promise.');
             }
@@ -4155,20 +4123,19 @@ Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
                 resolvePromise(promise, false, error);
             }
         }
-        ZoneAwarePromise.toString = function () {
+        static toString() {
             return ZONE_AWARE_PROMISE_TO_STRING;
-        };
-        ZoneAwarePromise.resolve = function (value) {
+        }
+        static resolve(value) {
             return resolvePromise(new this(null), RESOLVED, value);
-        };
-        ZoneAwarePromise.reject = function (error) {
+        }
+        static reject(error) {
             return resolvePromise(new this(null), REJECTED, error);
-        };
-        ZoneAwarePromise.race = function (values) {
-            var e_1, _a;
-            var resolve;
-            var reject;
-            var promise = new this(function (res, rej) {
+        }
+        static race(values) {
+            let resolve;
+            let reject;
+            let promise = new this((res, rej) => {
                 resolve = res;
                 reject = rej;
             });
@@ -4178,42 +4145,31 @@ Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
             function onReject(error) {
                 reject(error);
             }
-            try {
-                for (var values_1 = __values(values), values_1_1 = values_1.next(); !values_1_1.done; values_1_1 = values_1.next()) {
-                    var value = values_1_1.value;
-                    if (!isThenable(value)) {
-                        value = this.resolve(value);
-                    }
-                    value.then(onResolve, onReject);
+            for (let value of values) {
+                if (!isThenable(value)) {
+                    value = this.resolve(value);
                 }
-            }
-            catch (e_1_1) { e_1 = { error: e_1_1 }; }
-            finally {
-                try {
-                    if (values_1_1 && !values_1_1.done && (_a = values_1.return)) _a.call(values_1);
-                }
-                finally { if (e_1) throw e_1.error; }
+                value.then(onResolve, onReject);
             }
             return promise;
-        };
-        ZoneAwarePromise.all = function (values) {
-            var e_2, _a;
-            var resolve;
-            var reject;
-            var promise = new this(function (res, rej) {
+        }
+        static all(values) {
+            let resolve;
+            let reject;
+            let promise = new this((res, rej) => {
                 resolve = res;
                 reject = rej;
             });
             // Start at 2 to prevent prematurely resolving if .then is called immediately.
-            var unresolvedCount = 2;
-            var valueIndex = 0;
-            var resolvedValues = [];
-            var _loop_2 = function (value) {
+            let unresolvedCount = 2;
+            let valueIndex = 0;
+            const resolvedValues = [];
+            for (let value of values) {
                 if (!isThenable(value)) {
-                    value = this_1.resolve(value);
+                    value = this.resolve(value);
                 }
-                var curValueIndex = valueIndex;
-                value.then(function (value) {
+                const curValueIndex = valueIndex;
+                value.then((value) => {
                     resolvedValues[curValueIndex] = value;
                     unresolvedCount--;
                     if (unresolvedCount === 0) {
@@ -4222,20 +4178,6 @@ Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
                 }, reject);
                 unresolvedCount++;
                 valueIndex++;
-            };
-            var this_1 = this;
-            try {
-                for (var values_2 = __values(values), values_2_1 = values_2.next(); !values_2_1.done; values_2_1 = values_2.next()) {
-                    var value = values_2_1.value;
-                    _loop_2(value);
-                }
-            }
-            catch (e_2_1) { e_2 = { error: e_2_1 }; }
-            finally {
-                try {
-                    if (values_2_1 && !values_2_1.done && (_a = values_2.return)) _a.call(values_2);
-                }
-                finally { if (e_2) throw e_2.error; }
             }
             // Make the unresolvedCount zero-based again.
             unresolvedCount -= 2;
@@ -4243,17 +4185,13 @@ Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
                 resolve(resolvedValues);
             }
             return promise;
-        };
-        Object.defineProperty(ZoneAwarePromise.prototype, Symbol.toStringTag, {
-            get: function () {
-                return 'Promise';
-            },
-            enumerable: true,
-            configurable: true
-        });
-        ZoneAwarePromise.prototype.then = function (onFulfilled, onRejected) {
-            var chainPromise = new this.constructor(null);
-            var zone = Zone.current;
+        }
+        get [Symbol.toStringTag]() {
+            return 'Promise';
+        }
+        then(onFulfilled, onRejected) {
+            const chainPromise = new this.constructor(null);
+            const zone = Zone.current;
             if (this[symbolState] == UNRESOLVED) {
                 this[symbolValue].push(zone, chainPromise, onFulfilled, onRejected);
             }
@@ -4261,14 +4199,14 @@ Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
                 scheduleResolveOrReject(this, zone, chainPromise, onFulfilled, onRejected);
             }
             return chainPromise;
-        };
-        ZoneAwarePromise.prototype.catch = function (onRejected) {
+        }
+        catch(onRejected) {
             return this.then(null, onRejected);
-        };
-        ZoneAwarePromise.prototype.finally = function (onFinally) {
-            var chainPromise = new this.constructor(null);
+        }
+        finally(onFinally) {
+            const chainPromise = new this.constructor(null);
             chainPromise[symbolFinally] = symbolFinally;
-            var zone = Zone.current;
+            const zone = Zone.current;
             if (this[symbolState] == UNRESOLVED) {
                 this[symbolValue].push(zone, chainPromise, onFinally, onFinally);
             }
@@ -4276,18 +4214,17 @@ Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
                 scheduleResolveOrReject(this, zone, chainPromise, onFinally, onFinally);
             }
             return chainPromise;
-        };
-        return ZoneAwarePromise;
-    }());
+        }
+    }
     // Protect against aggressive optimizers dropping seemingly unused properties.
     // E.g. Closure Compiler in advanced mode.
     ZoneAwarePromise['resolve'] = ZoneAwarePromise.resolve;
     ZoneAwarePromise['reject'] = ZoneAwarePromise.reject;
     ZoneAwarePromise['race'] = ZoneAwarePromise.race;
     ZoneAwarePromise['all'] = ZoneAwarePromise.all;
-    var NativePromise = global[symbolPromise] = global['Promise'];
-    var ZONE_AWARE_PROMISE = Zone.__symbol__('ZoneAwarePromise');
-    var desc = ObjectGetOwnPropertyDescriptor(global, 'Promise');
+    const NativePromise = global[symbolPromise] = global['Promise'];
+    const ZONE_AWARE_PROMISE = Zone.__symbol__('ZoneAwarePromise');
+    let desc = ObjectGetOwnPropertyDescriptor(global, 'Promise');
     if (!desc || desc.configurable) {
         desc && delete desc.writable;
         desc && delete desc.value;
@@ -4323,22 +4260,21 @@ Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
         ObjectDefineProperty(global, 'Promise', desc);
     }
     global['Promise'] = ZoneAwarePromise;
-    var symbolThenPatched = __symbol__('thenPatched');
+    const symbolThenPatched = __symbol__('thenPatched');
     function patchThen(Ctor) {
-        var proto = Ctor.prototype;
-        var prop = ObjectGetOwnPropertyDescriptor(proto, 'then');
+        const proto = Ctor.prototype;
+        const prop = ObjectGetOwnPropertyDescriptor(proto, 'then');
         if (prop && (prop.writable === false || !prop.configurable)) {
             // check Ctor.prototype.then propertyDescriptor is writable or not
             // in meteor env, writable is false, we should ignore such case
             return;
         }
-        var originalThen = proto.then;
+        const originalThen = proto.then;
         // Keep a reference to the original method.
         proto[symbolThen] = originalThen;
         Ctor.prototype.then = function (onResolve, onReject) {
-            var _this = this;
-            var wrapped = new ZoneAwarePromise(function (resolve, reject) {
-                originalThen.call(_this, resolve, reject);
+            const wrapped = new ZoneAwarePromise((resolve, reject) => {
+                originalThen.call(this, resolve, reject);
             });
             return wrapped.then(onResolve, onReject);
         };
@@ -4347,11 +4283,11 @@ Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
     api.patchThen = patchThen;
     function zoneify(fn) {
         return function () {
-            var resultPromise = fn.apply(this, arguments);
+            let resultPromise = fn.apply(this, arguments);
             if (resultPromise instanceof ZoneAwarePromise) {
                 return resultPromise;
             }
-            var ctor = resultPromise.constructor;
+            let ctor = resultPromise.constructor;
             if (!ctor[symbolThenPatched]) {
                 patchThen(ctor);
             }
@@ -4360,10 +4296,10 @@ Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
     }
     if (NativePromise) {
         patchThen(NativePromise);
-        var fetch_1 = global['fetch'];
-        if (typeof fetch_1 == 'function') {
-            global[api.symbol('fetch')] = fetch_1;
-            global['fetch'] = zoneify(fetch_1);
+        const fetch = global['fetch'];
+        if (typeof fetch == 'function') {
+            global[api.symbol('fetch')] = fetch;
+            global['fetch'] = zoneify(fetch);
         }
     }
     // This is not part of public API, but it is useful for tests, so we expose it.
@@ -4385,43 +4321,43 @@ Zone.__load_patch('ZoneAwarePromise', function (global, Zone, api) {
  */
 // issue #989, to reduce bundle size, use short name
 /** Object.getOwnPropertyDescriptor */
-var ObjectGetOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
+const ObjectGetOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
 /** Object.defineProperty */
-var ObjectDefineProperty = Object.defineProperty;
+const ObjectDefineProperty = Object.defineProperty;
 /** Object.getPrototypeOf */
-var ObjectGetPrototypeOf = Object.getPrototypeOf;
+const ObjectGetPrototypeOf = Object.getPrototypeOf;
 /** Object.create */
-var ObjectCreate = Object.create;
+const ObjectCreate = Object.create;
 /** Array.prototype.slice */
-var ArraySlice = Array.prototype.slice;
+const ArraySlice = Array.prototype.slice;
 /** addEventListener string const */
-var ADD_EVENT_LISTENER_STR = 'addEventListener';
+const ADD_EVENT_LISTENER_STR = 'addEventListener';
 /** removeEventListener string const */
-var REMOVE_EVENT_LISTENER_STR = 'removeEventListener';
+const REMOVE_EVENT_LISTENER_STR = 'removeEventListener';
 /** zoneSymbol addEventListener */
-var ZONE_SYMBOL_ADD_EVENT_LISTENER = Zone.__symbol__(ADD_EVENT_LISTENER_STR);
+const ZONE_SYMBOL_ADD_EVENT_LISTENER = Zone.__symbol__(ADD_EVENT_LISTENER_STR);
 /** zoneSymbol removeEventListener */
-var ZONE_SYMBOL_REMOVE_EVENT_LISTENER = Zone.__symbol__(REMOVE_EVENT_LISTENER_STR);
+const ZONE_SYMBOL_REMOVE_EVENT_LISTENER = Zone.__symbol__(REMOVE_EVENT_LISTENER_STR);
 /** true string const */
-var TRUE_STR = 'true';
+const TRUE_STR = 'true';
 /** false string const */
-var FALSE_STR = 'false';
+const FALSE_STR = 'false';
 /** __zone_symbol__ string const */
-var ZONE_SYMBOL_PREFIX = '__zone_symbol__';
+const ZONE_SYMBOL_PREFIX = '__zone_symbol__';
 function wrapWithCurrentZone(callback, source) {
     return Zone.current.wrap(callback, source);
 }
 function scheduleMacroTaskWithCurrentZone(source, callback, data, customSchedule, customCancel) {
     return Zone.current.scheduleMacroTask(source, callback, data, customSchedule, customCancel);
 }
-var zoneSymbol = Zone.__symbol__;
-var isWindowExists = typeof window !== 'undefined';
-var internalWindow = isWindowExists ? window : undefined;
-var _global = isWindowExists && internalWindow || typeof self === 'object' && self || global;
-var REMOVE_ATTRIBUTE = 'removeAttribute';
-var NULL_ON_PROP_VALUE = [null];
+const zoneSymbol = Zone.__symbol__;
+const isWindowExists = typeof window !== 'undefined';
+const internalWindow = isWindowExists ? window : undefined;
+const _global = isWindowExists && internalWindow || typeof self === 'object' && self || global;
+const REMOVE_ATTRIBUTE = 'removeAttribute';
+const NULL_ON_PROP_VALUE = [null];
 function bindArguments(args, source) {
-    for (var i = args.length - 1; i >= 0; i--) {
+    for (let i = args.length - 1; i >= 0; i--) {
         if (typeof args[i] === 'function') {
             args[i] = wrapWithCurrentZone(args[i], source + '_' + i);
         }
@@ -4429,26 +4365,23 @@ function bindArguments(args, source) {
     return args;
 }
 function patchPrototype(prototype, fnNames) {
-    var source = prototype.constructor['name'];
-    var _loop_1 = function (i) {
-        var name_1 = fnNames[i];
-        var delegate = prototype[name_1];
+    const source = prototype.constructor['name'];
+    for (let i = 0; i < fnNames.length; i++) {
+        const name = fnNames[i];
+        const delegate = prototype[name];
         if (delegate) {
-            var prototypeDesc = ObjectGetOwnPropertyDescriptor(prototype, name_1);
+            const prototypeDesc = ObjectGetOwnPropertyDescriptor(prototype, name);
             if (!isPropertyWritable(prototypeDesc)) {
-                return "continue";
+                continue;
             }
-            prototype[name_1] = (function (delegate) {
-                var patched = function () {
-                    return delegate.apply(this, bindArguments(arguments, source + '.' + name_1));
+            prototype[name] = ((delegate) => {
+                const patched = function () {
+                    return delegate.apply(this, bindArguments(arguments, source + '.' + name));
                 };
                 attachOriginToPatched(patched, delegate);
                 return patched;
             })(delegate);
         }
-    };
-    for (var i = 0; i < fnNames.length; i++) {
-        _loop_1(i);
     }
 }
 function isPropertyWritable(propertyDesc) {
@@ -4460,38 +4393,38 @@ function isPropertyWritable(propertyDesc) {
     }
     return !(typeof propertyDesc.get === 'function' && typeof propertyDesc.set === 'undefined');
 }
-var isWebWorker = (typeof WorkerGlobalScope !== 'undefined' && self instanceof WorkerGlobalScope);
+const isWebWorker = (typeof WorkerGlobalScope !== 'undefined' && self instanceof WorkerGlobalScope);
 // Make sure to access `process` through `_global` so that WebPack does not accidentally browserify
 // this code.
-var isNode = (!('nw' in _global) && typeof _global.process !== 'undefined' &&
+const isNode = (!('nw' in _global) && typeof _global.process !== 'undefined' &&
     {}.toString.call(_global.process) === '[object process]');
-var isBrowser = !isNode && !isWebWorker && !!(isWindowExists && internalWindow['HTMLElement']);
+const isBrowser = !isNode && !isWebWorker && !!(isWindowExists && internalWindow['HTMLElement']);
 // we are in electron of nw, so we are both browser and nodejs
 // Make sure to access `process` through `_global` so that WebPack does not accidentally browserify
 // this code.
-var isMix = typeof _global.process !== 'undefined' &&
+const isMix = typeof _global.process !== 'undefined' &&
     {}.toString.call(_global.process) === '[object process]' && !isWebWorker &&
     !!(isWindowExists && internalWindow['HTMLElement']);
-var zoneSymbolEventNames = {};
-var wrapFn = function (event) {
+const zoneSymbolEventNames = {};
+const wrapFn = function (event) {
     // https://github.com/angular/zone.js/issues/911, in IE, sometimes
     // event will be undefined, so we need to use window.event
     event = event || _global.event;
     if (!event) {
         return;
     }
-    var eventNameSymbol = zoneSymbolEventNames[event.type];
+    let eventNameSymbol = zoneSymbolEventNames[event.type];
     if (!eventNameSymbol) {
         eventNameSymbol = zoneSymbolEventNames[event.type] = zoneSymbol('ON_PROPERTY' + event.type);
     }
-    var target = this || event.target || _global;
-    var listener = target[eventNameSymbol];
-    var result;
+    const target = this || event.target || _global;
+    const listener = target[eventNameSymbol];
+    let result;
     if (isBrowser && target === internalWindow && event.type === 'error') {
         // window.onerror have different signiture
         // https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onerror#window.onerror
         // and onerror callback will prevent default when callback return true
-        var errorEvent = event;
+        const errorEvent = event;
         result = listener &&
             listener.call(this, errorEvent.message, errorEvent.filename, errorEvent.lineno, errorEvent.colno, errorEvent.error);
         if (result === true) {
@@ -4507,10 +4440,10 @@ var wrapFn = function (event) {
     return result;
 };
 function patchProperty(obj, prop, prototype) {
-    var desc = ObjectGetOwnPropertyDescriptor(obj, prop);
+    let desc = ObjectGetOwnPropertyDescriptor(obj, prop);
     if (!desc && prototype) {
         // when patch window object, use prototype to check prop exist or not
-        var prototypeDesc = ObjectGetOwnPropertyDescriptor(prototype, prop);
+        const prototypeDesc = ObjectGetOwnPropertyDescriptor(prototype, prop);
         if (prototypeDesc) {
             desc = { enumerable: true, configurable: true };
         }
@@ -4520,7 +4453,7 @@ function patchProperty(obj, prop, prototype) {
     if (!desc || !desc.configurable) {
         return;
     }
-    var onPropPatchedSymbol = zoneSymbol('on' + prop + 'patched');
+    const onPropPatchedSymbol = zoneSymbol('on' + prop + 'patched');
     if (obj.hasOwnProperty(onPropPatchedSymbol) && obj[onPropPatchedSymbol]) {
         return;
     }
@@ -4531,25 +4464,25 @@ function patchProperty(obj, prop, prototype) {
     // getter or setter has been specified
     delete desc.writable;
     delete desc.value;
-    var originalDescGet = desc.get;
-    var originalDescSet = desc.set;
+    const originalDescGet = desc.get;
+    const originalDescSet = desc.set;
     // substr(2) cuz 'onclick' -> 'click', etc
-    var eventName = prop.substr(2);
-    var eventNameSymbol = zoneSymbolEventNames[eventName];
+    const eventName = prop.substr(2);
+    let eventNameSymbol = zoneSymbolEventNames[eventName];
     if (!eventNameSymbol) {
         eventNameSymbol = zoneSymbolEventNames[eventName] = zoneSymbol('ON_PROPERTY' + eventName);
     }
     desc.set = function (newValue) {
         // in some of windows's onproperty callback, this is undefined
         // so we need to check it
-        var target = this;
+        let target = this;
         if (!target && obj === _global) {
             target = _global;
         }
         if (!target) {
             return;
         }
-        var previousValue = target[eventNameSymbol];
+        let previousValue = target[eventNameSymbol];
         if (previousValue) {
             target.removeEventListener(eventName, wrapFn);
         }
@@ -4571,14 +4504,14 @@ function patchProperty(obj, prop, prototype) {
     desc.get = function () {
         // in some of windows's onproperty callback, this is undefined
         // so we need to check it
-        var target = this;
+        let target = this;
         if (!target && obj === _global) {
             target = _global;
         }
         if (!target) {
             return null;
         }
-        var listener = target[eventNameSymbol];
+        const listener = target[eventNameSymbol];
         if (listener) {
             return listener;
         }
@@ -4589,7 +4522,7 @@ function patchProperty(obj, prop, prototype) {
             // the onclick will be evaluated when first time event was triggered or
             // the property is accessed, https://github.com/angular/zone.js/issues/525
             // so we should use original native get to retrieve the handler
-            var value = originalDescGet && originalDescGet.call(this);
+            let value = originalDescGet && originalDescGet.call(this);
             if (value) {
                 desc.set.call(this, value);
                 if (typeof target[REMOVE_ATTRIBUTE] === 'function') {
@@ -4605,32 +4538,32 @@ function patchProperty(obj, prop, prototype) {
 }
 function patchOnProperties(obj, properties, prototype) {
     if (properties) {
-        for (var i = 0; i < properties.length; i++) {
+        for (let i = 0; i < properties.length; i++) {
             patchProperty(obj, 'on' + properties[i], prototype);
         }
     }
     else {
-        var onProperties = [];
-        for (var prop in obj) {
+        const onProperties = [];
+        for (const prop in obj) {
             if (prop.substr(0, 2) == 'on') {
                 onProperties.push(prop);
             }
         }
-        for (var j = 0; j < onProperties.length; j++) {
+        for (let j = 0; j < onProperties.length; j++) {
             patchProperty(obj, onProperties[j], prototype);
         }
     }
 }
-var originalInstanceKey = zoneSymbol('originalInstance');
+const originalInstanceKey = zoneSymbol('originalInstance');
 // wrap some native API on `window`
 function patchClass(className) {
-    var OriginalClass = _global[className];
+    const OriginalClass = _global[className];
     if (!OriginalClass)
         return;
     // keep original class in global
     _global[zoneSymbol(className)] = OriginalClass;
     _global[className] = function () {
-        var a = bindArguments(arguments, className);
+        const a = bindArguments(arguments, className);
         switch (a.length) {
             case 0:
                 this[originalInstanceKey] = new OriginalClass();
@@ -4653,8 +4586,8 @@ function patchClass(className) {
     };
     // attach original delegate to patched function
     attachOriginToPatched(_global[className], OriginalClass);
-    var instance = new OriginalClass(function () { });
-    var prop;
+    const instance = new OriginalClass(function () { });
+    let prop;
     for (prop in instance) {
         // https://bugs.webkit.org/show_bug.cgi?id=44721
         if (className === 'XMLHttpRequest' && prop === 'responseBlob')
@@ -4696,9 +4629,9 @@ function copySymbolProperties(src, dest) {
     if (typeof Object.getOwnPropertySymbols !== 'function') {
         return;
     }
-    var symbols = Object.getOwnPropertySymbols(src);
-    symbols.forEach(function (symbol) {
-        var desc = Object.getOwnPropertyDescriptor(src, symbol);
+    const symbols = Object.getOwnPropertySymbols(src);
+    symbols.forEach((symbol) => {
+        const desc = Object.getOwnPropertyDescriptor(src, symbol);
         Object.defineProperty(dest, symbol, {
             get: function () {
                 return src[symbol];
@@ -4715,10 +4648,10 @@ function copySymbolProperties(src, dest) {
         });
     });
 }
-var shouldCopySymbolProperties = false;
+let shouldCopySymbolProperties = false;
 
 function patchMethod(target, name, patchFn) {
-    var proto = target;
+    let proto = target;
     while (proto && !proto.hasOwnProperty(name)) {
         proto = ObjectGetPrototypeOf(proto);
     }
@@ -4726,17 +4659,17 @@ function patchMethod(target, name, patchFn) {
         // somehow we did not find it, but we can see it. This happens on IE for Window properties.
         proto = target;
     }
-    var delegateName = zoneSymbol(name);
-    var delegate = null;
+    const delegateName = zoneSymbol(name);
+    let delegate = null;
     if (proto && !(delegate = proto[delegateName])) {
         delegate = proto[delegateName] = proto[name];
         // check whether proto[name] is writable
         // some property is readonly in safari, such as HtmlCanvasElement.prototype.toBlob
-        var desc = proto && ObjectGetOwnPropertyDescriptor(proto, name);
+        const desc = proto && ObjectGetOwnPropertyDescriptor(proto, name);
         if (isPropertyWritable(desc)) {
-            var patchDelegate_1 = patchFn(delegate, delegateName, name);
+            const patchDelegate = patchFn(delegate, delegateName, name);
             proto[name] = function () {
-                return patchDelegate_1(this, arguments);
+                return patchDelegate(this, arguments);
             };
             attachOriginToPatched(proto[name], delegate);
             if (shouldCopySymbolProperties) {
@@ -4748,17 +4681,17 @@ function patchMethod(target, name, patchFn) {
 }
 // TODO: @JiaLiPassion, support cancel task later if necessary
 function patchMacroTask(obj, funcName, metaCreator) {
-    var setNative = null;
+    let setNative = null;
     function scheduleTask(task) {
-        var data = task.data;
+        const data = task.data;
         data.args[data.cbIdx] = function () {
             task.invoke.apply(this, arguments);
         };
         setNative.apply(data.target, data.args);
         return task;
     }
-    setNative = patchMethod(obj, funcName, function (delegate) { return function (self, args) {
-        var meta = metaCreator(self, args);
+    setNative = patchMethod(obj, funcName, (delegate) => function (self, args) {
+        const meta = metaCreator(self, args);
         if (meta.cbIdx >= 0 && typeof args[meta.cbIdx] === 'function') {
             return scheduleMacroTaskWithCurrentZone(meta.name, args[meta.cbIdx], meta, scheduleTask);
         }
@@ -4766,17 +4699,17 @@ function patchMacroTask(obj, funcName, metaCreator) {
             // cause an error by calling it directly.
             return delegate.apply(self, args);
         }
-    }; });
+    });
 }
 
 function attachOriginToPatched(patched, original) {
     patched[zoneSymbol('OriginalDelegate')] = original;
 }
-var isDetectedIEOrEdge = false;
-var ieOrEdge = false;
+let isDetectedIEOrEdge = false;
+let ieOrEdge = false;
 function isIE() {
     try {
-        var ua = internalWindow.navigator.userAgent;
+        const ua = internalWindow.navigator.userAgent;
         if (ua.indexOf('MSIE ') !== -1 || ua.indexOf('Trident/') !== -1) {
             return true;
         }
@@ -4791,7 +4724,7 @@ function isIEOrEdge() {
     }
     isDetectedIEOrEdge = true;
     try {
-        var ua = internalWindow.navigator.userAgent;
+        const ua = internalWindow.navigator.userAgent;
         if (ua.indexOf('MSIE ') !== -1 || ua.indexOf('Trident/') !== -1 || ua.indexOf('Edge/') !== -1) {
             ieOrEdge = true;
         }
@@ -4810,15 +4743,15 @@ function isIEOrEdge() {
  */
 // override Function.prototype.toString to make zone.js patched function
 // look like native function
-Zone.__load_patch('toString', function (global) {
+Zone.__load_patch('toString', (global) => {
     // patch Func.prototype.toString to let them look like native
-    var originalFunctionToString = Function.prototype.toString;
-    var ORIGINAL_DELEGATE_SYMBOL = zoneSymbol('OriginalDelegate');
-    var PROMISE_SYMBOL = zoneSymbol('Promise');
-    var ERROR_SYMBOL = zoneSymbol('Error');
-    var newFunctionToString = function toString() {
+    const originalFunctionToString = Function.prototype.toString;
+    const ORIGINAL_DELEGATE_SYMBOL = zoneSymbol('OriginalDelegate');
+    const PROMISE_SYMBOL = zoneSymbol('Promise');
+    const ERROR_SYMBOL = zoneSymbol('Error');
+    const newFunctionToString = function toString() {
         if (typeof this === 'function') {
-            var originalDelegate = this[ORIGINAL_DELEGATE_SYMBOL];
+            const originalDelegate = this[ORIGINAL_DELEGATE_SYMBOL];
             if (originalDelegate) {
                 if (typeof originalDelegate === 'function') {
                     return originalFunctionToString.call(originalDelegate);
@@ -4828,13 +4761,13 @@ Zone.__load_patch('toString', function (global) {
                 }
             }
             if (this === Promise) {
-                var nativePromise = global[PROMISE_SYMBOL];
+                const nativePromise = global[PROMISE_SYMBOL];
                 if (nativePromise) {
                     return originalFunctionToString.call(nativePromise);
                 }
             }
             if (this === Error) {
-                var nativeError = global[ERROR_SYMBOL];
+                const nativeError = global[ERROR_SYMBOL];
                 if (nativeError) {
                     return originalFunctionToString.call(nativeError);
                 }
@@ -4845,8 +4778,8 @@ Zone.__load_patch('toString', function (global) {
     newFunctionToString[ORIGINAL_DELEGATE_SYMBOL] = originalFunctionToString;
     Function.prototype.toString = newFunctionToString;
     // patch Object.prototype.toString to let them look like native
-    var originalObjectToString = Object.prototype.toString;
-    var PROMISE_OBJECT_TO_STRING = '[object Promise]';
+    const originalObjectToString = Object.prototype.toString;
+    const PROMISE_OBJECT_TO_STRING = '[object Promise]';
     Object.prototype.toString = function () {
         if (this instanceof Promise) {
             return PROMISE_OBJECT_TO_STRING;
@@ -4866,10 +4799,10 @@ Zone.__load_patch('toString', function (global) {
  * @fileoverview
  * @suppress {missingRequire}
  */
-var passiveSupported = false;
+let passiveSupported = false;
 if (typeof window !== 'undefined') {
     try {
-        var options = Object.defineProperty({}, 'passive', {
+        const options = Object.defineProperty({}, 'passive', {
             get: function () {
                 passiveSupported = true;
             }
@@ -4882,47 +4815,47 @@ if (typeof window !== 'undefined') {
     }
 }
 // an identifier to tell ZoneTask do not create a new invoke closure
-var OPTIMIZED_ZONE_EVENT_TASK_DATA = {
+const OPTIMIZED_ZONE_EVENT_TASK_DATA = {
     useG: true
 };
-var zoneSymbolEventNames$1 = {};
-var globalSources = {};
-var EVENT_NAME_SYMBOL_REGX = /^__zone_symbol__(\w+)(true|false)$/;
-var IMMEDIATE_PROPAGATION_SYMBOL = ('__zone_symbol__propagationStopped');
+const zoneSymbolEventNames$1 = {};
+const globalSources = {};
+const EVENT_NAME_SYMBOL_REGX = /^__zone_symbol__(\w+)(true|false)$/;
+const IMMEDIATE_PROPAGATION_SYMBOL = ('__zone_symbol__propagationStopped');
 function patchEventTarget(_global, apis, patchOptions) {
-    var ADD_EVENT_LISTENER = (patchOptions && patchOptions.add) || ADD_EVENT_LISTENER_STR;
-    var REMOVE_EVENT_LISTENER = (patchOptions && patchOptions.rm) || REMOVE_EVENT_LISTENER_STR;
-    var LISTENERS_EVENT_LISTENER = (patchOptions && patchOptions.listeners) || 'eventListeners';
-    var REMOVE_ALL_LISTENERS_EVENT_LISTENER = (patchOptions && patchOptions.rmAll) || 'removeAllListeners';
-    var zoneSymbolAddEventListener = zoneSymbol(ADD_EVENT_LISTENER);
-    var ADD_EVENT_LISTENER_SOURCE = '.' + ADD_EVENT_LISTENER + ':';
-    var PREPEND_EVENT_LISTENER = 'prependListener';
-    var PREPEND_EVENT_LISTENER_SOURCE = '.' + PREPEND_EVENT_LISTENER + ':';
-    var invokeTask = function (task, target, event) {
+    const ADD_EVENT_LISTENER = (patchOptions && patchOptions.add) || ADD_EVENT_LISTENER_STR;
+    const REMOVE_EVENT_LISTENER = (patchOptions && patchOptions.rm) || REMOVE_EVENT_LISTENER_STR;
+    const LISTENERS_EVENT_LISTENER = (patchOptions && patchOptions.listeners) || 'eventListeners';
+    const REMOVE_ALL_LISTENERS_EVENT_LISTENER = (patchOptions && patchOptions.rmAll) || 'removeAllListeners';
+    const zoneSymbolAddEventListener = zoneSymbol(ADD_EVENT_LISTENER);
+    const ADD_EVENT_LISTENER_SOURCE = '.' + ADD_EVENT_LISTENER + ':';
+    const PREPEND_EVENT_LISTENER = 'prependListener';
+    const PREPEND_EVENT_LISTENER_SOURCE = '.' + PREPEND_EVENT_LISTENER + ':';
+    const invokeTask = function (task, target, event) {
         // for better performance, check isRemoved which is set
         // by removeEventListener
         if (task.isRemoved) {
             return;
         }
-        var delegate = task.callback;
+        const delegate = task.callback;
         if (typeof delegate === 'object' && delegate.handleEvent) {
             // create the bind version of handleEvent when invoke
-            task.callback = function (event) { return delegate.handleEvent(event); };
+            task.callback = (event) => delegate.handleEvent(event);
             task.originalDelegate = delegate;
         }
         // invoke static task.invoke
         task.invoke(task, target, [event]);
-        var options = task.options;
+        const options = task.options;
         if (options && typeof options === 'object' && options.once) {
             // if options.once is true, after invoke once remove listener here
             // only browser need to do this, nodejs eventEmitter will cal removeListener
             // inside EventEmitter.once
-            var delegate_1 = task.originalDelegate ? task.originalDelegate : task.callback;
-            target[REMOVE_EVENT_LISTENER].call(target, event.type, delegate_1, options);
+            const delegate = task.originalDelegate ? task.originalDelegate : task.callback;
+            target[REMOVE_EVENT_LISTENER].call(target, event.type, delegate, options);
         }
     };
     // global shared zoneAwareCallback to handle all event callback with capture = false
-    var globalZoneAwareCallback = function (event) {
+    const globalZoneAwareCallback = function (event) {
         // https://github.com/angular/zone.js/issues/911, in IE, sometimes
         // event will be undefined, so we need to use window.event
         event = event || _global.event;
@@ -4931,8 +4864,8 @@ function patchEventTarget(_global, apis, patchOptions) {
         }
         // event.target is needed for Samsung TV and SourceBuffer
         // || global is needed https://github.com/angular/zone.js/issues/190
-        var target = this || event.target || _global;
-        var tasks = target[zoneSymbolEventNames$1[event.type][FALSE_STR]];
+        const target = this || event.target || _global;
+        const tasks = target[zoneSymbolEventNames$1[event.type][FALSE_STR]];
         if (tasks) {
             // invoke all tasks which attached to current target with given event.type and capture = false
             // for performance concern, if task.length === 1, just invoke
@@ -4943,8 +4876,8 @@ function patchEventTarget(_global, apis, patchOptions) {
                 // https://github.com/angular/zone.js/issues/836
                 // copy the tasks array before invoke, to avoid
                 // the callback will remove itself or other listener
-                var copyTasks = tasks.slice();
-                for (var i = 0; i < copyTasks.length; i++) {
+                const copyTasks = tasks.slice();
+                for (let i = 0; i < copyTasks.length; i++) {
                     if (event && event[IMMEDIATE_PROPAGATION_SYMBOL] === true) {
                         break;
                     }
@@ -4954,7 +4887,7 @@ function patchEventTarget(_global, apis, patchOptions) {
         }
     };
     // global shared zoneAwareCallback to handle all event callback with capture = true
-    var globalZoneAwareCaptureCallback = function (event) {
+    const globalZoneAwareCaptureCallback = function (event) {
         // https://github.com/angular/zone.js/issues/911, in IE, sometimes
         // event will be undefined, so we need to use window.event
         event = event || _global.event;
@@ -4963,8 +4896,8 @@ function patchEventTarget(_global, apis, patchOptions) {
         }
         // event.target is needed for Samsung TV and SourceBuffer
         // || global is needed https://github.com/angular/zone.js/issues/190
-        var target = this || event.target || _global;
-        var tasks = target[zoneSymbolEventNames$1[event.type][TRUE_STR]];
+        const target = this || event.target || _global;
+        const tasks = target[zoneSymbolEventNames$1[event.type][TRUE_STR]];
         if (tasks) {
             // invoke all tasks which attached to current target with given event.type and capture = false
             // for performance concern, if task.length === 1, just invoke
@@ -4975,8 +4908,8 @@ function patchEventTarget(_global, apis, patchOptions) {
                 // https://github.com/angular/zone.js/issues/836
                 // copy the tasks array before invoke, to avoid
                 // the callback will remove itself or other listener
-                var copyTasks = tasks.slice();
-                for (var i = 0; i < copyTasks.length; i++) {
+                const copyTasks = tasks.slice();
+                for (let i = 0; i < copyTasks.length; i++) {
                     if (event && event[IMMEDIATE_PROPAGATION_SYMBOL] === true) {
                         break;
                     }
@@ -4989,20 +4922,20 @@ function patchEventTarget(_global, apis, patchOptions) {
         if (!obj) {
             return false;
         }
-        var useGlobalCallback = true;
+        let useGlobalCallback = true;
         if (patchOptions && patchOptions.useG !== undefined) {
             useGlobalCallback = patchOptions.useG;
         }
-        var validateHandler = patchOptions && patchOptions.vh;
-        var checkDuplicate = true;
+        const validateHandler = patchOptions && patchOptions.vh;
+        let checkDuplicate = true;
         if (patchOptions && patchOptions.chkDup !== undefined) {
             checkDuplicate = patchOptions.chkDup;
         }
-        var returnTarget = false;
+        let returnTarget = false;
         if (patchOptions && patchOptions.rt !== undefined) {
             returnTarget = patchOptions.rt;
         }
-        var proto = obj;
+        let proto = obj;
         while (proto && !proto.hasOwnProperty(ADD_EVENT_LISTENER)) {
             proto = ObjectGetPrototypeOf(proto);
         }
@@ -5016,18 +4949,18 @@ function patchEventTarget(_global, apis, patchOptions) {
         if (proto[zoneSymbolAddEventListener]) {
             return false;
         }
-        var eventNameToString = patchOptions && patchOptions.eventNameToString;
+        const eventNameToString = patchOptions && patchOptions.eventNameToString;
         // a shared global taskData to pass data for scheduleEventTask
         // so we do not need to create a new object just for pass some data
-        var taskData = {};
-        var nativeAddEventListener = proto[zoneSymbolAddEventListener] = proto[ADD_EVENT_LISTENER];
-        var nativeRemoveEventListener = proto[zoneSymbol(REMOVE_EVENT_LISTENER)] =
+        const taskData = {};
+        const nativeAddEventListener = proto[zoneSymbolAddEventListener] = proto[ADD_EVENT_LISTENER];
+        const nativeRemoveEventListener = proto[zoneSymbol(REMOVE_EVENT_LISTENER)] =
             proto[REMOVE_EVENT_LISTENER];
-        var nativeListeners = proto[zoneSymbol(LISTENERS_EVENT_LISTENER)] =
+        const nativeListeners = proto[zoneSymbol(LISTENERS_EVENT_LISTENER)] =
             proto[LISTENERS_EVENT_LISTENER];
-        var nativeRemoveAllListeners = proto[zoneSymbol(REMOVE_ALL_LISTENERS_EVENT_LISTENER)] =
+        const nativeRemoveAllListeners = proto[zoneSymbol(REMOVE_ALL_LISTENERS_EVENT_LISTENER)] =
             proto[REMOVE_ALL_LISTENERS_EVENT_LISTENER];
-        var nativePrependEventListener;
+        let nativePrependEventListener;
         if (patchOptions && patchOptions.prepend) {
             nativePrependEventListener = proto[zoneSymbol(patchOptions.prepend)] =
                 proto[patchOptions.prepend];
@@ -5043,7 +4976,7 @@ function patchEventTarget(_global, apis, patchOptions) {
                 taskData.options = task.options;
             }
         }
-        var customScheduleGlobal = function (task) {
+        const customScheduleGlobal = function (task) {
             // if there is already a task for the eventName + capture,
             // just return, because we use the shared globalZoneAwareCallback here.
             if (taskData.isExisting) {
@@ -5052,20 +4985,20 @@ function patchEventTarget(_global, apis, patchOptions) {
             checkIsPassive(task);
             return nativeAddEventListener.call(taskData.target, taskData.eventName, taskData.capture ? globalZoneAwareCaptureCallback : globalZoneAwareCallback, taskData.options);
         };
-        var customCancelGlobal = function (task) {
+        const customCancelGlobal = function (task) {
             // if task is not marked as isRemoved, this call is directly
             // from Zone.prototype.cancelTask, we should remove the task
             // from tasksList of target first
             if (!task.isRemoved) {
-                var symbolEventNames = zoneSymbolEventNames$1[task.eventName];
-                var symbolEventName = void 0;
+                const symbolEventNames = zoneSymbolEventNames$1[task.eventName];
+                let symbolEventName;
                 if (symbolEventNames) {
                     symbolEventName = symbolEventNames[task.capture ? TRUE_STR : FALSE_STR];
                 }
-                var existingTasks = symbolEventName && task.target[symbolEventName];
+                const existingTasks = symbolEventName && task.target[symbolEventName];
                 if (existingTasks) {
-                    for (var i = 0; i < existingTasks.length; i++) {
-                        var existingTask = existingTasks[i];
+                    for (let i = 0; i < existingTasks.length; i++) {
+                        const existingTask = existingTasks[i];
                         if (existingTask === task) {
                             existingTasks.splice(i, 1);
                             // set isRemoved to data for faster invokeTask check
@@ -5089,32 +5022,30 @@ function patchEventTarget(_global, apis, patchOptions) {
             }
             return nativeRemoveEventListener.call(task.target, task.eventName, task.capture ? globalZoneAwareCaptureCallback : globalZoneAwareCallback, task.options);
         };
-        var customScheduleNonGlobal = function (task) {
+        const customScheduleNonGlobal = function (task) {
             checkIsPassive(task);
             return nativeAddEventListener.call(taskData.target, taskData.eventName, task.invoke, taskData.options);
         };
-        var customSchedulePrepend = function (task) {
+        const customSchedulePrepend = function (task) {
             return nativePrependEventListener.call(taskData.target, taskData.eventName, task.invoke, taskData.options);
         };
-        var customCancelNonGlobal = function (task) {
+        const customCancelNonGlobal = function (task) {
             return nativeRemoveEventListener.call(task.target, task.eventName, task.invoke, task.options);
         };
-        var customSchedule = useGlobalCallback ? customScheduleGlobal : customScheduleNonGlobal;
-        var customCancel = useGlobalCallback ? customCancelGlobal : customCancelNonGlobal;
-        var compareTaskCallbackVsDelegate = function (task, delegate) {
-            var typeOfDelegate = typeof delegate;
+        const customSchedule = useGlobalCallback ? customScheduleGlobal : customScheduleNonGlobal;
+        const customCancel = useGlobalCallback ? customCancelGlobal : customCancelNonGlobal;
+        const compareTaskCallbackVsDelegate = function (task, delegate) {
+            const typeOfDelegate = typeof delegate;
             return (typeOfDelegate === 'function' && task.callback === delegate) ||
                 (typeOfDelegate === 'object' && task.originalDelegate === delegate);
         };
-        var compare = (patchOptions && patchOptions.diff) ? patchOptions.diff : compareTaskCallbackVsDelegate;
-        var blackListedEvents = Zone[Zone.__symbol__('BLACK_LISTED_EVENTS')];
-        var makeAddListener = function (nativeListener, addSource, customScheduleFn, customCancelFn, returnTarget, prepend) {
-            if (returnTarget === void 0) { returnTarget = false; }
-            if (prepend === void 0) { prepend = false; }
+        const compare = (patchOptions && patchOptions.diff) ? patchOptions.diff : compareTaskCallbackVsDelegate;
+        const blackListedEvents = Zone[Zone.__symbol__('BLACK_LISTED_EVENTS')];
+        const makeAddListener = function (nativeListener, addSource, customScheduleFn, customCancelFn, returnTarget = false, prepend = false) {
             return function () {
-                var target = this || _global;
-                var eventName = arguments[0];
-                var delegate = arguments[1];
+                const target = this || _global;
+                const eventName = arguments[0];
+                let delegate = arguments[1];
                 if (!delegate) {
                     return nativeListener.apply(this, arguments);
                 }
@@ -5125,7 +5056,7 @@ function patchEventTarget(_global, apis, patchOptions) {
                 // don't create the bind delegate function for handleEvent
                 // case here to improve addEventListener performance
                 // we will create the bind delegate when invoke
-                var isHandleEvent = false;
+                let isHandleEvent = false;
                 if (typeof delegate !== 'function') {
                     if (!delegate.handleEvent) {
                         return nativeListener.apply(this, arguments);
@@ -5135,17 +5066,17 @@ function patchEventTarget(_global, apis, patchOptions) {
                 if (validateHandler && !validateHandler(nativeListener, delegate, target, arguments)) {
                     return;
                 }
-                var options = arguments[2];
+                const options = arguments[2];
                 if (blackListedEvents) {
                     // check black list
-                    for (var i = 0; i < blackListedEvents.length; i++) {
+                    for (let i = 0; i < blackListedEvents.length; i++) {
                         if (eventName === blackListedEvents[i]) {
                             return nativeListener.apply(this, arguments);
                         }
                     }
                 }
-                var capture;
-                var once = false;
+                let capture;
+                let once = false;
                 if (options === undefined) {
                     capture = false;
                 }
@@ -5159,15 +5090,15 @@ function patchEventTarget(_global, apis, patchOptions) {
                     capture = options ? !!options.capture : false;
                     once = options ? !!options.once : false;
                 }
-                var zone = Zone.current;
-                var symbolEventNames = zoneSymbolEventNames$1[eventName];
-                var symbolEventName;
+                const zone = Zone.current;
+                const symbolEventNames = zoneSymbolEventNames$1[eventName];
+                let symbolEventName;
                 if (!symbolEventNames) {
                     // the code is duplicate, but I just want to get some better performance
-                    var falseEventName = (eventNameToString ? eventNameToString(eventName) : eventName) + FALSE_STR;
-                    var trueEventName = (eventNameToString ? eventNameToString(eventName) : eventName) + TRUE_STR;
-                    var symbol = ZONE_SYMBOL_PREFIX + falseEventName;
-                    var symbolCapture = ZONE_SYMBOL_PREFIX + trueEventName;
+                    const falseEventName = (eventNameToString ? eventNameToString(eventName) : eventName) + FALSE_STR;
+                    const trueEventName = (eventNameToString ? eventNameToString(eventName) : eventName) + TRUE_STR;
+                    const symbol = ZONE_SYMBOL_PREFIX + falseEventName;
+                    const symbolCapture = ZONE_SYMBOL_PREFIX + trueEventName;
                     zoneSymbolEventNames$1[eventName] = {};
                     zoneSymbolEventNames$1[eventName][FALSE_STR] = symbol;
                     zoneSymbolEventNames$1[eventName][TRUE_STR] = symbolCapture;
@@ -5176,13 +5107,13 @@ function patchEventTarget(_global, apis, patchOptions) {
                 else {
                     symbolEventName = symbolEventNames[capture ? TRUE_STR : FALSE_STR];
                 }
-                var existingTasks = target[symbolEventName];
-                var isExisting = false;
+                let existingTasks = target[symbolEventName];
+                let isExisting = false;
                 if (existingTasks) {
                     // already have task registered
                     isExisting = true;
                     if (checkDuplicate) {
-                        for (var i = 0; i < existingTasks.length; i++) {
+                        for (let i = 0; i < existingTasks.length; i++) {
                             if (compare(existingTasks[i], delegate)) {
                                 // same callback, same capture, same event name, just return
                                 return;
@@ -5193,9 +5124,9 @@ function patchEventTarget(_global, apis, patchOptions) {
                 else {
                     existingTasks = target[symbolEventName] = [];
                 }
-                var source;
-                var constructorName = target.constructor['name'];
-                var targetSource = globalSources[constructorName];
+                let source;
+                const constructorName = target.constructor['name'];
+                const targetSource = globalSources[constructorName];
                 if (targetSource) {
                     source = targetSource[eventName];
                 }
@@ -5216,12 +5147,12 @@ function patchEventTarget(_global, apis, patchOptions) {
                 taskData.capture = capture;
                 taskData.eventName = eventName;
                 taskData.isExisting = isExisting;
-                var data = useGlobalCallback ? OPTIMIZED_ZONE_EVENT_TASK_DATA : undefined;
+                const data = useGlobalCallback ? OPTIMIZED_ZONE_EVENT_TASK_DATA : undefined;
                 // keep taskData into data to allow onScheduleEventTask to access the task information
                 if (data) {
                     data.taskData = taskData;
                 }
-                var task = zone.scheduleEventTask(source, delegate, data, customScheduleFn, customCancelFn);
+                const task = zone.scheduleEventTask(source, delegate, data, customScheduleFn, customCancelFn);
                 // should clear taskData.target to avoid memory leak
                 // issue, https://github.com/angular/angular/issues/20442
                 taskData.target = null;
@@ -5262,10 +5193,10 @@ function patchEventTarget(_global, apis, patchOptions) {
             proto[PREPEND_EVENT_LISTENER] = makeAddListener(nativePrependEventListener, PREPEND_EVENT_LISTENER_SOURCE, customSchedulePrepend, customCancel, returnTarget, true);
         }
         proto[REMOVE_EVENT_LISTENER] = function () {
-            var target = this || _global;
-            var eventName = arguments[0];
-            var options = arguments[2];
-            var capture;
+            const target = this || _global;
+            const eventName = arguments[0];
+            const options = arguments[2];
+            let capture;
             if (options === undefined) {
                 capture = false;
             }
@@ -5278,7 +5209,7 @@ function patchEventTarget(_global, apis, patchOptions) {
             else {
                 capture = options ? !!options.capture : false;
             }
-            var delegate = arguments[1];
+            const delegate = arguments[1];
             if (!delegate) {
                 return nativeRemoveEventListener.apply(this, arguments);
             }
@@ -5286,15 +5217,15 @@ function patchEventTarget(_global, apis, patchOptions) {
                 !validateHandler(nativeRemoveEventListener, delegate, target, arguments)) {
                 return;
             }
-            var symbolEventNames = zoneSymbolEventNames$1[eventName];
-            var symbolEventName;
+            const symbolEventNames = zoneSymbolEventNames$1[eventName];
+            let symbolEventName;
             if (symbolEventNames) {
                 symbolEventName = symbolEventNames[capture ? TRUE_STR : FALSE_STR];
             }
-            var existingTasks = symbolEventName && target[symbolEventName];
+            const existingTasks = symbolEventName && target[symbolEventName];
             if (existingTasks) {
-                for (var i = 0; i < existingTasks.length; i++) {
-                    var existingTask = existingTasks[i];
+                for (let i = 0; i < existingTasks.length; i++) {
+                    const existingTask = existingTasks[i];
                     if (compare(existingTask, delegate)) {
                         existingTasks.splice(i, 1);
                         // set isRemoved to data for faster invokeTask check
@@ -5320,26 +5251,26 @@ function patchEventTarget(_global, apis, patchOptions) {
             return nativeRemoveEventListener.apply(this, arguments);
         };
         proto[LISTENERS_EVENT_LISTENER] = function () {
-            var target = this || _global;
-            var eventName = arguments[0];
-            var listeners = [];
-            var tasks = findEventTasks(target, eventNameToString ? eventNameToString(eventName) : eventName);
-            for (var i = 0; i < tasks.length; i++) {
-                var task = tasks[i];
-                var delegate = task.originalDelegate ? task.originalDelegate : task.callback;
+            const target = this || _global;
+            const eventName = arguments[0];
+            const listeners = [];
+            const tasks = findEventTasks(target, eventNameToString ? eventNameToString(eventName) : eventName);
+            for (let i = 0; i < tasks.length; i++) {
+                const task = tasks[i];
+                let delegate = task.originalDelegate ? task.originalDelegate : task.callback;
                 listeners.push(delegate);
             }
             return listeners;
         };
         proto[REMOVE_ALL_LISTENERS_EVENT_LISTENER] = function () {
-            var target = this || _global;
-            var eventName = arguments[0];
+            const target = this || _global;
+            const eventName = arguments[0];
             if (!eventName) {
-                var keys = Object.keys(target);
-                for (var i = 0; i < keys.length; i++) {
-                    var prop = keys[i];
-                    var match = EVENT_NAME_SYMBOL_REGX.exec(prop);
-                    var evtName = match && match[1];
+                const keys = Object.keys(target);
+                for (let i = 0; i < keys.length; i++) {
+                    const prop = keys[i];
+                    const match = EVENT_NAME_SYMBOL_REGX.exec(prop);
+                    let evtName = match && match[1];
                     // in nodejs EventEmitter, removeListener event is
                     // used for monitoring the removeListener call,
                     // so just keep removeListener eventListener until
@@ -5352,25 +5283,25 @@ function patchEventTarget(_global, apis, patchOptions) {
                 this[REMOVE_ALL_LISTENERS_EVENT_LISTENER].call(this, 'removeListener');
             }
             else {
-                var symbolEventNames = zoneSymbolEventNames$1[eventName];
+                const symbolEventNames = zoneSymbolEventNames$1[eventName];
                 if (symbolEventNames) {
-                    var symbolEventName = symbolEventNames[FALSE_STR];
-                    var symbolCaptureEventName = symbolEventNames[TRUE_STR];
-                    var tasks = target[symbolEventName];
-                    var captureTasks = target[symbolCaptureEventName];
+                    const symbolEventName = symbolEventNames[FALSE_STR];
+                    const symbolCaptureEventName = symbolEventNames[TRUE_STR];
+                    const tasks = target[symbolEventName];
+                    const captureTasks = target[symbolCaptureEventName];
                     if (tasks) {
-                        var removeTasks = tasks.slice();
-                        for (var i = 0; i < removeTasks.length; i++) {
-                            var task = removeTasks[i];
-                            var delegate = task.originalDelegate ? task.originalDelegate : task.callback;
+                        const removeTasks = tasks.slice();
+                        for (let i = 0; i < removeTasks.length; i++) {
+                            const task = removeTasks[i];
+                            let delegate = task.originalDelegate ? task.originalDelegate : task.callback;
                             this[REMOVE_EVENT_LISTENER].call(this, eventName, delegate, task.options);
                         }
                     }
                     if (captureTasks) {
-                        var removeTasks = captureTasks.slice();
-                        for (var i = 0; i < removeTasks.length; i++) {
-                            var task = removeTasks[i];
-                            var delegate = task.originalDelegate ? task.originalDelegate : task.callback;
+                        const removeTasks = captureTasks.slice();
+                        for (let i = 0; i < removeTasks.length; i++) {
+                            const task = removeTasks[i];
+                            let delegate = task.originalDelegate ? task.originalDelegate : task.callback;
                             this[REMOVE_EVENT_LISTENER].call(this, eventName, delegate, task.options);
                         }
                     }
@@ -5391,21 +5322,21 @@ function patchEventTarget(_global, apis, patchOptions) {
         }
         return true;
     }
-    var results = [];
-    for (var i = 0; i < apis.length; i++) {
+    let results = [];
+    for (let i = 0; i < apis.length; i++) {
         results[i] = patchEventTargetMethods(apis[i], patchOptions);
     }
     return results;
 }
 function findEventTasks(target, eventName) {
-    var foundTasks = [];
-    for (var prop in target) {
-        var match = EVENT_NAME_SYMBOL_REGX.exec(prop);
-        var evtName = match && match[1];
+    const foundTasks = [];
+    for (let prop in target) {
+        const match = EVENT_NAME_SYMBOL_REGX.exec(prop);
+        let evtName = match && match[1];
         if (evtName && (!eventName || evtName === eventName)) {
-            var tasks = target[prop];
+            const tasks = target[prop];
             if (tasks) {
-                for (var i = 0; i < tasks.length; i++) {
+                for (let i = 0; i < tasks.length; i++) {
                     foundTasks.push(tasks[i]);
                 }
             }
@@ -5414,15 +5345,15 @@ function findEventTasks(target, eventName) {
     return foundTasks;
 }
 function patchEventPrototype(global, api) {
-    var Event = global['Event'];
+    const Event = global['Event'];
     if (Event && Event.prototype) {
-        api.patchMethod(Event.prototype, 'stopImmediatePropagation', function (delegate) { return function (self, args) {
+        api.patchMethod(Event.prototype, 'stopImmediatePropagation', (delegate) => function (self, args) {
             self[IMMEDIATE_PROPAGATION_SYMBOL] = true;
             // we need to call the native stopImmediatePropagation
             // in case in some hybrid application, some part of
             // application will be controlled by zone, some are not
             delegate && delegate.apply(self, args);
-        }; });
+        });
     }
 }
 
@@ -5434,18 +5365,18 @@ function patchEventPrototype(global, api) {
  * found in the LICENSE file at https://angular.io/license
  */
 function patchCallbacks(api, target, targetName, method, callbacks) {
-    var symbol = Zone.__symbol__(method);
+    const symbol = Zone.__symbol__(method);
     if (target[symbol]) {
         return;
     }
-    var nativeDelegate = target[symbol] = target[method];
+    const nativeDelegate = target[symbol] = target[method];
     target[method] = function (name, opts, options) {
         if (opts && opts.prototype) {
             callbacks.forEach(function (callback) {
-                var source = targetName + "." + method + "::" + callback;
-                var prototype = opts.prototype;
+                const source = `${targetName}.${method}::` + callback;
+                const prototype = opts.prototype;
                 if (prototype.hasOwnProperty(callback)) {
-                    var descriptor = api.ObjectGetOwnPropertyDescriptor(prototype, callback);
+                    const descriptor = api.ObjectGetOwnPropertyDescriptor(prototype, callback);
                     if (descriptor && descriptor.value) {
                         descriptor.value = api.wrapWithCurrentZone(descriptor.value, source);
                         api._redefineProperty(opts.prototype, callback, descriptor);
@@ -5475,18 +5406,18 @@ function patchCallbacks(api, target, targetName, method, callbacks) {
  * This is necessary for Chrome and Chrome mobile, to enable
  * things like redefining `createdCallback` on an element.
  */
-var zoneSymbol$1 = Zone.__symbol__;
-var _defineProperty = Object[zoneSymbol$1('defineProperty')] = Object.defineProperty;
-var _getOwnPropertyDescriptor = Object[zoneSymbol$1('getOwnPropertyDescriptor')] =
+const zoneSymbol$1 = Zone.__symbol__;
+const _defineProperty = Object[zoneSymbol$1('defineProperty')] = Object.defineProperty;
+const _getOwnPropertyDescriptor = Object[zoneSymbol$1('getOwnPropertyDescriptor')] =
     Object.getOwnPropertyDescriptor;
-var _create = Object.create;
-var unconfigurablesKey = zoneSymbol$1('unconfigurables');
+const _create = Object.create;
+const unconfigurablesKey = zoneSymbol$1('unconfigurables');
 function propertyPatch() {
     Object.defineProperty = function (obj, prop, desc) {
         if (isUnconfigurable(obj, prop)) {
             throw new TypeError('Cannot assign to read only property \'' + prop + '\' of ' + obj);
         }
-        var originalConfigurableFlag = desc.configurable;
+        const originalConfigurableFlag = desc.configurable;
         if (prop !== 'prototype') {
             desc = rewriteDescriptor(obj, prop, desc);
         }
@@ -5507,7 +5438,7 @@ function propertyPatch() {
         return _create(obj, proto);
     };
     Object.getOwnPropertyDescriptor = function (obj, prop) {
-        var desc = _getOwnPropertyDescriptor(obj, prop);
+        const desc = _getOwnPropertyDescriptor(obj, prop);
         if (desc && isUnconfigurable(obj, prop)) {
             desc.configurable = false;
         }
@@ -5515,7 +5446,7 @@ function propertyPatch() {
     };
 }
 function _redefineProperty(obj, prop, desc) {
-    var originalConfigurableFlag = desc.configurable;
+    const originalConfigurableFlag = desc.configurable;
     desc = rewriteDescriptor(obj, prop, desc);
     return _tryDefineProperty(obj, prop, desc, originalConfigurableFlag);
 }
@@ -5556,14 +5487,14 @@ function _tryDefineProperty(obj, prop, desc, originalConfigurableFlag) {
                 return _defineProperty(obj, prop, desc);
             }
             catch (error) {
-                var descJson = null;
+                let descJson = null;
                 try {
                     descJson = JSON.stringify(desc);
                 }
                 catch (error) {
                     descJson = desc.toString();
                 }
-                console.log("Attempting to configure '" + prop + "' with descriptor '" + descJson + "' on object '" + obj + "' and got error, giving up: " + error);
+                console.log(`Attempting to configure '${prop}' with descriptor '${descJson}' on object '${obj}' and got error, giving up: ${error}`);
             }
         }
         else {
@@ -5583,7 +5514,7 @@ function _tryDefineProperty(obj, prop, desc, originalConfigurableFlag) {
  * @fileoverview
  * @suppress {globalThis}
  */
-var globalEventHandlersEventNames = [
+const globalEventHandlersEventNames = [
     'abort',
     'animationcancel',
     'animationend',
@@ -5681,13 +5612,13 @@ var globalEventHandlersEventNames = [
     'waiting',
     'wheel'
 ];
-var documentEventNames = [
+const documentEventNames = [
     'afterscriptexecute', 'beforescriptexecute', 'DOMContentLoaded', 'freeze', 'fullscreenchange',
     'mozfullscreenchange', 'webkitfullscreenchange', 'msfullscreenchange', 'fullscreenerror',
     'mozfullscreenerror', 'webkitfullscreenerror', 'msfullscreenerror', 'readystatechange',
     'visibilitychange', 'resume'
 ];
-var windowEventNames = [
+const windowEventNames = [
     'absolutedeviceorientation',
     'afterinput',
     'afterprint',
@@ -5719,13 +5650,13 @@ var windowEventNames = [
     'vrdisplaydisconnected',
     'vrdisplaypresentchange'
 ];
-var htmlElementEventNames = [
+const htmlElementEventNames = [
     'beforecopy', 'beforecut', 'beforepaste', 'copy', 'cut', 'paste', 'dragstart', 'loadend',
     'animationstart', 'search', 'transitionrun', 'transitionstart', 'webkitanimationend',
     'webkitanimationiteration', 'webkitanimationstart', 'webkittransitionend'
 ];
-var mediaElementEventNames = ['encrypted', 'waitingforkey', 'msneedkey', 'mozinterruptbegin', 'mozinterruptend'];
-var ieElementEventNames = [
+const mediaElementEventNames = ['encrypted', 'waitingforkey', 'msneedkey', 'mozinterruptbegin', 'mozinterruptend'];
+const ieElementEventNames = [
     'activate',
     'afterupdate',
     'ariarequest',
@@ -5782,30 +5713,30 @@ var ieElementEventNames = [
     'stop',
     'storagecommit'
 ];
-var webglEventNames = ['webglcontextrestored', 'webglcontextlost', 'webglcontextcreationerror'];
-var formEventNames = ['autocomplete', 'autocompleteerror'];
-var detailEventNames = ['toggle'];
-var frameEventNames = ['load'];
-var frameSetEventNames = ['blur', 'error', 'focus', 'load', 'resize', 'scroll', 'messageerror'];
-var marqueeEventNames = ['bounce', 'finish', 'start'];
-var XMLHttpRequestEventNames = [
+const webglEventNames = ['webglcontextrestored', 'webglcontextlost', 'webglcontextcreationerror'];
+const formEventNames = ['autocomplete', 'autocompleteerror'];
+const detailEventNames = ['toggle'];
+const frameEventNames = ['load'];
+const frameSetEventNames = ['blur', 'error', 'focus', 'load', 'resize', 'scroll', 'messageerror'];
+const marqueeEventNames = ['bounce', 'finish', 'start'];
+const XMLHttpRequestEventNames = [
     'loadstart', 'progress', 'abort', 'error', 'load', 'progress', 'timeout', 'loadend',
     'readystatechange'
 ];
-var IDBIndexEventNames = ['upgradeneeded', 'complete', 'abort', 'success', 'error', 'blocked', 'versionchange', 'close'];
-var websocketEventNames = ['close', 'error', 'open', 'message'];
-var workerEventNames = ['error', 'message'];
-var eventNames = globalEventHandlersEventNames.concat(webglEventNames, formEventNames, detailEventNames, documentEventNames, windowEventNames, htmlElementEventNames, ieElementEventNames);
+const IDBIndexEventNames = ['upgradeneeded', 'complete', 'abort', 'success', 'error', 'blocked', 'versionchange', 'close'];
+const websocketEventNames = ['close', 'error', 'open', 'message'];
+const workerEventNames = ['error', 'message'];
+const eventNames = globalEventHandlersEventNames.concat(webglEventNames, formEventNames, detailEventNames, documentEventNames, windowEventNames, htmlElementEventNames, ieElementEventNames);
 function filterProperties(target, onProperties, ignoreProperties) {
     if (!ignoreProperties || ignoreProperties.length === 0) {
         return onProperties;
     }
-    var tip = ignoreProperties.filter(function (ip) { return ip.target === target; });
+    const tip = ignoreProperties.filter(ip => ip.target === target);
     if (!tip || tip.length === 0) {
         return onProperties;
     }
-    var targetIgnoreProperties = tip[0].ignoreProperties;
-    return onProperties.filter(function (op) { return targetIgnoreProperties.indexOf(op) === -1; });
+    const targetIgnoreProperties = tip[0].ignoreProperties;
+    return onProperties.filter(op => targetIgnoreProperties.indexOf(op) === -1);
 }
 function patchFilteredProperties(target, onProperties, ignoreProperties, prototype) {
     // check whether target is available, sometimes target will be undefined
@@ -5813,7 +5744,7 @@ function patchFilteredProperties(target, onProperties, ignoreProperties, prototy
     if (!target) {
         return;
     }
-    var filteredProperties = filterProperties(target, onProperties, ignoreProperties);
+    const filteredProperties = filterProperties(target, onProperties, ignoreProperties);
     patchOnProperties(target, filteredProperties, prototype);
 }
 function propertyDescriptorPatch(api, _global) {
@@ -5824,12 +5755,12 @@ function propertyDescriptorPatch(api, _global) {
         // events are already been patched by legacy patch.
         return;
     }
-    var supportsWebSocket = typeof WebSocket !== 'undefined';
-    var ignoreProperties = _global['__Zone_ignore_on_properties'];
+    const supportsWebSocket = typeof WebSocket !== 'undefined';
+    const ignoreProperties = _global['__Zone_ignore_on_properties'];
     // for browsers that we can patch the descriptor:  Chrome & Firefox
     if (isBrowser) {
-        var internalWindow = window;
-        var ignoreErrorProperties = isIE ? [{ target: internalWindow, ignoreProperties: ['error'] }] : [];
+        const internalWindow = window;
+        const ignoreErrorProperties = isIE ? [{ target: internalWindow, ignoreProperties: ['error'] }] : [];
         // in IE/Edge, onProp not exist in window object, but in WindowPrototype
         // so we need to pass WindowPrototype to check onProp exist or not
         patchFilteredProperties(internalWindow, eventNames.concat(['messageerror']), ignoreProperties ? ignoreProperties.concat(ignoreErrorProperties) : ignoreProperties, ObjectGetPrototypeOf(internalWindow));
@@ -5844,21 +5775,21 @@ function propertyDescriptorPatch(api, _global) {
         patchFilteredProperties(HTMLBodyElement.prototype, windowEventNames.concat(frameSetEventNames), ignoreProperties);
         patchFilteredProperties(HTMLFrameElement.prototype, frameEventNames, ignoreProperties);
         patchFilteredProperties(HTMLIFrameElement.prototype, frameEventNames, ignoreProperties);
-        var HTMLMarqueeElement_1 = internalWindow['HTMLMarqueeElement'];
-        if (HTMLMarqueeElement_1) {
-            patchFilteredProperties(HTMLMarqueeElement_1.prototype, marqueeEventNames, ignoreProperties);
+        const HTMLMarqueeElement = internalWindow['HTMLMarqueeElement'];
+        if (HTMLMarqueeElement) {
+            patchFilteredProperties(HTMLMarqueeElement.prototype, marqueeEventNames, ignoreProperties);
         }
-        var Worker_1 = internalWindow['Worker'];
-        if (Worker_1) {
-            patchFilteredProperties(Worker_1.prototype, workerEventNames, ignoreProperties);
+        const Worker = internalWindow['Worker'];
+        if (Worker) {
+            patchFilteredProperties(Worker.prototype, workerEventNames, ignoreProperties);
         }
     }
-    var XMLHttpRequest = _global['XMLHttpRequest'];
+    const XMLHttpRequest = _global['XMLHttpRequest'];
     if (XMLHttpRequest) {
         // XMLHttpRequest is not available in ServiceWorker, so we need to check here
         patchFilteredProperties(XMLHttpRequest.prototype, XMLHttpRequestEventNames, ignoreProperties);
     }
-    var XMLHttpRequestEventTarget = _global['XMLHttpRequestEventTarget'];
+    const XMLHttpRequestEventTarget = _global['XMLHttpRequestEventTarget'];
     if (XMLHttpRequestEventTarget) {
         patchFilteredProperties(XMLHttpRequestEventTarget && XMLHttpRequestEventTarget.prototype, XMLHttpRequestEventNames, ignoreProperties);
     }
@@ -5882,7 +5813,7 @@ function propertyDescriptorPatch(api, _global) {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
-Zone.__load_patch('util', function (global, Zone, api) {
+Zone.__load_patch('util', (global, Zone, api) => {
     api.patchOnProperties = patchOnProperties;
     api.patchMethod = patchMethod;
     api.bindArguments = bindArguments;
@@ -5893,8 +5824,8 @@ Zone.__load_patch('util', function (global, Zone, api) {
     // the name consistent with angular repo.
     // The  `__zone_symbol__BLACK_LISTED_EVENTS` is deprecated, but it is still be supported for
     // backwards compatibility.
-    var SYMBOL_BLACK_LISTED_EVENTS = Zone.__symbol__('BLACK_LISTED_EVENTS');
-    var SYMBOL_UNPATCHED_EVENTS = Zone.__symbol__('UNPATCHED_EVENTS');
+    const SYMBOL_BLACK_LISTED_EVENTS = Zone.__symbol__('BLACK_LISTED_EVENTS');
+    const SYMBOL_UNPATCHED_EVENTS = Zone.__symbol__('UNPATCHED_EVENTS');
     if (global[SYMBOL_UNPATCHED_EVENTS]) {
         global[SYMBOL_BLACK_LISTED_EVENTS] = global[SYMBOL_UNPATCHED_EVENTS];
     }
@@ -5915,19 +5846,19 @@ Zone.__load_patch('util', function (global, Zone, api) {
     api.attachOriginToPatched = attachOriginToPatched;
     api._redefineProperty = _redefineProperty;
     api.patchCallbacks = patchCallbacks;
-    api.getGlobalObjects = function () { return ({
-        globalSources: globalSources,
+    api.getGlobalObjects = () => ({
+        globalSources,
         zoneSymbolEventNames: zoneSymbolEventNames$1,
-        eventNames: eventNames,
-        isBrowser: isBrowser,
-        isMix: isMix,
-        isNode: isNode,
-        TRUE_STR: TRUE_STR,
-        FALSE_STR: FALSE_STR,
-        ZONE_SYMBOL_PREFIX: ZONE_SYMBOL_PREFIX,
-        ADD_EVENT_LISTENER_STR: ADD_EVENT_LISTENER_STR,
-        REMOVE_EVENT_LISTENER_STR: REMOVE_EVENT_LISTENER_STR
-    }); };
+        eventNames,
+        isBrowser,
+        isMix,
+        isNode,
+        TRUE_STR,
+        FALSE_STR,
+        ZONE_SYMBOL_PREFIX,
+        ADD_EVENT_LISTENER_STR,
+        REMOVE_EVENT_LISTENER_STR
+    });
 });
 
 /**
@@ -5945,347 +5876,19 @@ Zone.__load_patch('util', function (global, Zone, api) {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
-function eventTargetLegacyPatch(_global, api) {
-    var _a = api.getGlobalObjects(), eventNames = _a.eventNames, globalSources = _a.globalSources, zoneSymbolEventNames = _a.zoneSymbolEventNames, TRUE_STR = _a.TRUE_STR, FALSE_STR = _a.FALSE_STR, ZONE_SYMBOL_PREFIX = _a.ZONE_SYMBOL_PREFIX;
-    var WTF_ISSUE_555 = 'Anchor,Area,Audio,BR,Base,BaseFont,Body,Button,Canvas,Content,DList,Directory,Div,Embed,FieldSet,Font,Form,Frame,FrameSet,HR,Head,Heading,Html,IFrame,Image,Input,Keygen,LI,Label,Legend,Link,Map,Marquee,Media,Menu,Meta,Meter,Mod,OList,Object,OptGroup,Option,Output,Paragraph,Pre,Progress,Quote,Script,Select,Source,Span,Style,TableCaption,TableCell,TableCol,Table,TableRow,TableSection,TextArea,Title,Track,UList,Unknown,Video';
-    var NO_EVENT_TARGET = 'ApplicationCache,EventSource,FileReader,InputMethodContext,MediaController,MessagePort,Node,Performance,SVGElementInstance,SharedWorker,TextTrack,TextTrackCue,TextTrackList,WebKitNamedFlow,Window,Worker,WorkerGlobalScope,XMLHttpRequest,XMLHttpRequestEventTarget,XMLHttpRequestUpload,IDBRequest,IDBOpenDBRequest,IDBDatabase,IDBTransaction,IDBCursor,DBIndex,WebSocket'
-        .split(',');
-    var EVENT_TARGET = 'EventTarget';
-    var apis = [];
-    var isWtf = _global['wtf'];
-    var WTF_ISSUE_555_ARRAY = WTF_ISSUE_555.split(',');
-    if (isWtf) {
-        // Workaround for: https://github.com/google/tracing-framework/issues/555
-        apis = WTF_ISSUE_555_ARRAY.map(function (v) { return 'HTML' + v + 'Element'; }).concat(NO_EVENT_TARGET);
-    }
-    else if (_global[EVENT_TARGET]) {
-        apis.push(EVENT_TARGET);
-    }
-    else {
-        // Note: EventTarget is not available in all browsers,
-        // if it's not available, we instead patch the APIs in the IDL that inherit from EventTarget
-        apis = NO_EVENT_TARGET;
-    }
-    var isDisableIECheck = _global['__Zone_disable_IE_check'] || false;
-    var isEnableCrossContextCheck = _global['__Zone_enable_cross_context_check'] || false;
-    var ieOrEdge = api.isIEOrEdge();
-    var ADD_EVENT_LISTENER_SOURCE = '.addEventListener:';
-    var FUNCTION_WRAPPER = '[object FunctionWrapper]';
-    var BROWSER_TOOLS = 'function __BROWSERTOOLS_CONSOLE_SAFEFUNC() { [native code] }';
-    //  predefine all __zone_symbol__ + eventName + true/false string
-    for (var i = 0; i < eventNames.length; i++) {
-        var eventName = eventNames[i];
-        var falseEventName = eventName + FALSE_STR;
-        var trueEventName = eventName + TRUE_STR;
-        var symbol = ZONE_SYMBOL_PREFIX + falseEventName;
-        var symbolCapture = ZONE_SYMBOL_PREFIX + trueEventName;
-        zoneSymbolEventNames[eventName] = {};
-        zoneSymbolEventNames[eventName][FALSE_STR] = symbol;
-        zoneSymbolEventNames[eventName][TRUE_STR] = symbolCapture;
-    }
-    //  predefine all task.source string
-    for (var i = 0; i < WTF_ISSUE_555.length; i++) {
-        var target = WTF_ISSUE_555_ARRAY[i];
-        var targets = globalSources[target] = {};
-        for (var j = 0; j < eventNames.length; j++) {
-            var eventName = eventNames[j];
-            targets[eventName] = target + ADD_EVENT_LISTENER_SOURCE + eventName;
-        }
-    }
-    var checkIEAndCrossContext = function (nativeDelegate, delegate, target, args) {
-        if (!isDisableIECheck && ieOrEdge) {
-            if (isEnableCrossContextCheck) {
-                try {
-                    var testString = delegate.toString();
-                    if ((testString === FUNCTION_WRAPPER || testString == BROWSER_TOOLS)) {
-                        nativeDelegate.apply(target, args);
-                        return false;
-                    }
-                }
-                catch (error) {
-                    nativeDelegate.apply(target, args);
-                    return false;
-                }
-            }
-            else {
-                var testString = delegate.toString();
-                if ((testString === FUNCTION_WRAPPER || testString == BROWSER_TOOLS)) {
-                    nativeDelegate.apply(target, args);
-                    return false;
-                }
-            }
-        }
-        else if (isEnableCrossContextCheck) {
-            try {
-                delegate.toString();
-            }
-            catch (error) {
-                nativeDelegate.apply(target, args);
-                return false;
-            }
-        }
-        return true;
-    };
-    var apiTypes = [];
-    for (var i = 0; i < apis.length; i++) {
-        var type = _global[apis[i]];
-        apiTypes.push(type && type.prototype);
-    }
-    // vh is validateHandler to check event handler
-    // is valid or not(for security check)
-    api.patchEventTarget(_global, apiTypes, { vh: checkIEAndCrossContext });
-    Zone[api.symbol('patchEventTarget')] = !!_global[EVENT_TARGET];
-    return true;
-}
-
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-// we have to patch the instance since the proto is non-configurable
-function apply(api, _global) {
-    var _a = api.getGlobalObjects(), ADD_EVENT_LISTENER_STR = _a.ADD_EVENT_LISTENER_STR, REMOVE_EVENT_LISTENER_STR = _a.REMOVE_EVENT_LISTENER_STR;
-    var WS = _global.WebSocket;
-    // On Safari window.EventTarget doesn't exist so need to patch WS add/removeEventListener
-    // On older Chrome, no need since EventTarget was already patched
-    if (!_global.EventTarget) {
-        api.patchEventTarget(_global, [WS.prototype]);
-    }
-    _global.WebSocket = function (x, y) {
-        var socket = arguments.length > 1 ? new WS(x, y) : new WS(x);
-        var proxySocket;
-        var proxySocketProto;
-        // Safari 7.0 has non-configurable own 'onmessage' and friends properties on the socket instance
-        var onmessageDesc = api.ObjectGetOwnPropertyDescriptor(socket, 'onmessage');
-        if (onmessageDesc && onmessageDesc.configurable === false) {
-            proxySocket = api.ObjectCreate(socket);
-            // socket have own property descriptor 'onopen', 'onmessage', 'onclose', 'onerror'
-            // but proxySocket not, so we will keep socket as prototype and pass it to
-            // patchOnProperties method
-            proxySocketProto = socket;
-            [ADD_EVENT_LISTENER_STR, REMOVE_EVENT_LISTENER_STR, 'send', 'close'].forEach(function (propName) {
-                proxySocket[propName] = function () {
-                    var args = api.ArraySlice.call(arguments);
-                    if (propName === ADD_EVENT_LISTENER_STR || propName === REMOVE_EVENT_LISTENER_STR) {
-                        var eventName = args.length > 0 ? args[0] : undefined;
-                        if (eventName) {
-                            var propertySymbol = Zone.__symbol__('ON_PROPERTY' + eventName);
-                            socket[propertySymbol] = proxySocket[propertySymbol];
-                        }
-                    }
-                    return socket[propName].apply(socket, args);
-                };
-            });
-        }
-        else {
-            // we can patch the real socket
-            proxySocket = socket;
-        }
-        api.patchOnProperties(proxySocket, ['close', 'error', 'message', 'open'], proxySocketProto);
-        return proxySocket;
-    };
-    var globalWebSocket = _global['WebSocket'];
-    for (var prop in WS) {
-        globalWebSocket[prop] = WS[prop];
-    }
-}
-
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * @fileoverview
- * @suppress {globalThis}
- */
-function propertyDescriptorLegacyPatch(api, _global) {
-    var _a = api.getGlobalObjects(), isNode = _a.isNode, isMix = _a.isMix;
-    if (isNode && !isMix) {
-        return;
-    }
-    if (!canPatchViaPropertyDescriptor(api, _global)) {
-        var supportsWebSocket = typeof WebSocket !== 'undefined';
-        // Safari, Android browsers (Jelly Bean)
-        patchViaCapturingAllTheEvents(api);
-        api.patchClass('XMLHttpRequest');
-        if (supportsWebSocket) {
-            apply(api, _global);
-        }
-        Zone[api.symbol('patchEvents')] = true;
-    }
-}
-function canPatchViaPropertyDescriptor(api, _global) {
-    var _a = api.getGlobalObjects(), isBrowser = _a.isBrowser, isMix = _a.isMix;
-    if ((isBrowser || isMix) &&
-        !api.ObjectGetOwnPropertyDescriptor(HTMLElement.prototype, 'onclick') &&
-        typeof Element !== 'undefined') {
-        // WebKit https://bugs.webkit.org/show_bug.cgi?id=134364
-        // IDL interface attributes are not configurable
-        var desc = api.ObjectGetOwnPropertyDescriptor(Element.prototype, 'onclick');
-        if (desc && !desc.configurable)
-            return false;
-        // try to use onclick to detect whether we can patch via propertyDescriptor
-        // because XMLHttpRequest is not available in service worker
-        if (desc) {
-            api.ObjectDefineProperty(Element.prototype, 'onclick', {
-                enumerable: true,
-                configurable: true,
-                get: function () {
-                    return true;
-                }
-            });
-            var div = document.createElement('div');
-            var result = !!div.onclick;
-            api.ObjectDefineProperty(Element.prototype, 'onclick', desc);
-            return result;
-        }
-    }
-    var XMLHttpRequest = _global['XMLHttpRequest'];
-    if (!XMLHttpRequest) {
-        // XMLHttpRequest is not available in service worker
-        return false;
-    }
-    var ON_READY_STATE_CHANGE = 'onreadystatechange';
-    var XMLHttpRequestPrototype = XMLHttpRequest.prototype;
-    var xhrDesc = api.ObjectGetOwnPropertyDescriptor(XMLHttpRequestPrototype, ON_READY_STATE_CHANGE);
-    // add enumerable and configurable here because in opera
-    // by default XMLHttpRequest.prototype.onreadystatechange is undefined
-    // without adding enumerable and configurable will cause onreadystatechange
-    // non-configurable
-    // and if XMLHttpRequest.prototype.onreadystatechange is undefined,
-    // we should set a real desc instead a fake one
-    if (xhrDesc) {
-        api.ObjectDefineProperty(XMLHttpRequestPrototype, ON_READY_STATE_CHANGE, {
-            enumerable: true,
-            configurable: true,
-            get: function () {
-                return true;
-            }
-        });
-        var req = new XMLHttpRequest();
-        var result = !!req.onreadystatechange;
-        // restore original desc
-        api.ObjectDefineProperty(XMLHttpRequestPrototype, ON_READY_STATE_CHANGE, xhrDesc || {});
-        return result;
-    }
-    else {
-        var SYMBOL_FAKE_ONREADYSTATECHANGE_1 = api.symbol('fake');
-        api.ObjectDefineProperty(XMLHttpRequestPrototype, ON_READY_STATE_CHANGE, {
-            enumerable: true,
-            configurable: true,
-            get: function () {
-                return this[SYMBOL_FAKE_ONREADYSTATECHANGE_1];
-            },
-            set: function (value) {
-                this[SYMBOL_FAKE_ONREADYSTATECHANGE_1] = value;
-            }
-        });
-        var req = new XMLHttpRequest();
-        var detectFunc = function () { };
-        req.onreadystatechange = detectFunc;
-        var result = req[SYMBOL_FAKE_ONREADYSTATECHANGE_1] === detectFunc;
-        req.onreadystatechange = null;
-        return result;
-    }
-}
-// Whenever any eventListener fires, we check the eventListener target and all parents
-// for `onwhatever` properties and replace them with zone-bound functions
-// - Chrome (for now)
-function patchViaCapturingAllTheEvents(api) {
-    var eventNames = api.getGlobalObjects().eventNames;
-    var unboundKey = api.symbol('unbound');
-    var _loop_1 = function (i) {
-        var property = eventNames[i];
-        var onproperty = 'on' + property;
-        self.addEventListener(property, function (event) {
-            var elt = event.target, bound, source;
-            if (elt) {
-                source = elt.constructor['name'] + '.' + onproperty;
-            }
-            else {
-                source = 'unknown.' + onproperty;
-            }
-            while (elt) {
-                if (elt[onproperty] && !elt[onproperty][unboundKey]) {
-                    bound = api.wrapWithCurrentZone(elt[onproperty], source);
-                    bound[unboundKey] = elt[onproperty];
-                    elt[onproperty] = bound;
-                }
-                elt = elt.parentElement;
-            }
-        }, true);
-    };
-    for (var i = 0; i < eventNames.length; i++) {
-        _loop_1(i);
-    }
-}
-
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-function registerElementPatch(_global, api) {
-    var _a = api.getGlobalObjects(), isBrowser = _a.isBrowser, isMix = _a.isMix;
-    if ((!isBrowser && !isMix) || !('registerElement' in _global.document)) {
-        return;
-    }
-    var callbacks = ['createdCallback', 'attachedCallback', 'detachedCallback', 'attributeChangedCallback'];
-    api.patchCallbacks(api, document, 'Document', 'registerElement', callbacks);
-}
-
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
 /**
  * @fileoverview
  * @suppress {missingRequire}
  */
-(function (_global) {
-    _global['__zone_symbol__legacyPatch'] = function () {
-        var Zone = _global['Zone'];
-        Zone.__load_patch('registerElement', function (global, Zone, api) {
-            registerElementPatch(global, api);
-        });
-        Zone.__load_patch('EventTargetLegacy', function (global, Zone, api) {
-            eventTargetLegacyPatch(global, api);
-            propertyDescriptorLegacyPatch(api, global);
-        });
-    };
-})(typeof window !== 'undefined' && window || typeof self !== 'undefined' && self || global);
-
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * @fileoverview
- * @suppress {missingRequire}
- */
-var taskSymbol = zoneSymbol('zoneTask');
+const taskSymbol = zoneSymbol('zoneTask');
 function patchTimer(window, setName, cancelName, nameSuffix) {
-    var setNative = null;
-    var clearNative = null;
+    let setNative = null;
+    let clearNative = null;
     setName += nameSuffix;
     cancelName += nameSuffix;
-    var tasksByHandleId = {};
+    const tasksByHandleId = {};
     function scheduleTask(task) {
-        var data = task.data;
+        const data = task.data;
         function timer() {
             try {
                 task.invoke.apply(this, arguments);
@@ -6316,20 +5919,20 @@ function patchTimer(window, setName, cancelName, nameSuffix) {
         return clearNative(task.data.handleId);
     }
     setNative =
-        patchMethod(window, setName, function (delegate) { return function (self, args) {
+        patchMethod(window, setName, (delegate) => function (self, args) {
             if (typeof args[0] === 'function') {
-                var options = {
+                const options = {
                     isPeriodic: nameSuffix === 'Interval',
                     delay: (nameSuffix === 'Timeout' || nameSuffix === 'Interval') ? args[1] || 0 :
                         undefined,
                     args: args
                 };
-                var task = scheduleMacroTaskWithCurrentZone(setName, args[0], options, scheduleTask, clearTask);
+                const task = scheduleMacroTaskWithCurrentZone(setName, args[0], options, scheduleTask, clearTask);
                 if (!task) {
                     return task;
                 }
                 // Node.js must additionally support the ref and unref functions.
-                var handle = task.data.handleId;
+                const handle = task.data.handleId;
                 if (typeof handle === 'number') {
                     // for non nodejs env, we save handleId: task
                     // mapping in local cache for clearTimeout
@@ -6356,11 +5959,11 @@ function patchTimer(window, setName, cancelName, nameSuffix) {
                 // cause an error by calling it directly.
                 return delegate.apply(window, args);
             }
-        }; });
+        });
     clearNative =
-        patchMethod(window, cancelName, function (delegate) { return function (self, args) {
-            var id = args[0];
-            var task;
+        patchMethod(window, cancelName, (delegate) => function (self, args) {
+            const id = args[0];
+            let task;
             if (typeof id === 'number') {
                 // non nodejs env.
                 task = tasksByHandleId[id];
@@ -6390,7 +5993,7 @@ function patchTimer(window, setName, cancelName, nameSuffix) {
                 // cause an error by calling it directly.
                 delegate.apply(window, args);
             }
-        }; });
+        });
 }
 
 /**
@@ -6401,11 +6004,11 @@ function patchTimer(window, setName, cancelName, nameSuffix) {
  * found in the LICENSE file at https://angular.io/license
  */
 function patchCustomElements(_global, api) {
-    var _a = api.getGlobalObjects(), isBrowser = _a.isBrowser, isMix = _a.isMix;
+    const { isBrowser, isMix } = api.getGlobalObjects();
     if ((!isBrowser && !isMix) || !_global['customElements'] || !('customElements' in _global)) {
         return;
     }
-    var callbacks = ['connectedCallback', 'disconnectedCallback', 'adoptedCallback', 'attributeChangedCallback'];
+    const callbacks = ['connectedCallback', 'disconnectedCallback', 'adoptedCallback', 'attributeChangedCallback'];
     api.patchCallbacks(api, _global.customElements, 'customElements', 'define', callbacks);
 }
 
@@ -6421,26 +6024,26 @@ function eventTargetPatch(_global, api) {
         // EventTarget is already patched.
         return;
     }
-    var _a = api.getGlobalObjects(), eventNames = _a.eventNames, zoneSymbolEventNames = _a.zoneSymbolEventNames, TRUE_STR = _a.TRUE_STR, FALSE_STR = _a.FALSE_STR, ZONE_SYMBOL_PREFIX = _a.ZONE_SYMBOL_PREFIX;
+    const { eventNames, zoneSymbolEventNames, TRUE_STR, FALSE_STR, ZONE_SYMBOL_PREFIX } = api.getGlobalObjects();
     //  predefine all __zone_symbol__ + eventName + true/false string
-    for (var i = 0; i < eventNames.length; i++) {
-        var eventName = eventNames[i];
-        var falseEventName = eventName + FALSE_STR;
-        var trueEventName = eventName + TRUE_STR;
-        var symbol = ZONE_SYMBOL_PREFIX + falseEventName;
-        var symbolCapture = ZONE_SYMBOL_PREFIX + trueEventName;
+    for (let i = 0; i < eventNames.length; i++) {
+        const eventName = eventNames[i];
+        const falseEventName = eventName + FALSE_STR;
+        const trueEventName = eventName + TRUE_STR;
+        const symbol = ZONE_SYMBOL_PREFIX + falseEventName;
+        const symbolCapture = ZONE_SYMBOL_PREFIX + trueEventName;
         zoneSymbolEventNames[eventName] = {};
         zoneSymbolEventNames[eventName][FALSE_STR] = symbol;
         zoneSymbolEventNames[eventName][TRUE_STR] = symbolCapture;
     }
-    var EVENT_TARGET = _global['EventTarget'];
+    const EVENT_TARGET = _global['EventTarget'];
     if (!EVENT_TARGET || !EVENT_TARGET.prototype) {
         return;
     }
     api.patchEventTarget(_global, [EVENT_TARGET && EVENT_TARGET.prototype]);
     return true;
 }
-function patchEvent$1(global, api) {
+function patchEvent(global, api) {
     api.patchEventPrototype(global, api);
 }
 
@@ -6455,40 +6058,40 @@ function patchEvent$1(global, api) {
  * @fileoverview
  * @suppress {missingRequire}
  */
-Zone.__load_patch('legacy', function (global) {
-    var legacyPatch = global[Zone.__symbol__('legacyPatch')];
+Zone.__load_patch('legacy', (global) => {
+    const legacyPatch = global[Zone.__symbol__('legacyPatch')];
     if (legacyPatch) {
         legacyPatch();
     }
 });
-Zone.__load_patch('timers', function (global) {
-    var set = 'set';
-    var clear = 'clear';
+Zone.__load_patch('timers', (global) => {
+    const set = 'set';
+    const clear = 'clear';
     patchTimer(global, set, clear, 'Timeout');
     patchTimer(global, set, clear, 'Interval');
     patchTimer(global, set, clear, 'Immediate');
 });
-Zone.__load_patch('requestAnimationFrame', function (global) {
+Zone.__load_patch('requestAnimationFrame', (global) => {
     patchTimer(global, 'request', 'cancel', 'AnimationFrame');
     patchTimer(global, 'mozRequest', 'mozCancel', 'AnimationFrame');
     patchTimer(global, 'webkitRequest', 'webkitCancel', 'AnimationFrame');
 });
-Zone.__load_patch('blocking', function (global, Zone) {
-    var blockingMethods = ['alert', 'prompt', 'confirm'];
-    for (var i = 0; i < blockingMethods.length; i++) {
-        var name_1 = blockingMethods[i];
-        patchMethod(global, name_1, function (delegate, symbol, name) {
+Zone.__load_patch('blocking', (global, Zone) => {
+    const blockingMethods = ['alert', 'prompt', 'confirm'];
+    for (let i = 0; i < blockingMethods.length; i++) {
+        const name = blockingMethods[i];
+        patchMethod(global, name, (delegate, symbol, name) => {
             return function (s, args) {
                 return Zone.current.run(delegate, global, args, name);
             };
         });
     }
 });
-Zone.__load_patch('EventTarget', function (global, Zone, api) {
-    patchEvent$1(global, api);
+Zone.__load_patch('EventTarget', (global, Zone, api) => {
+    patchEvent(global, api);
     eventTargetPatch(global, api);
     // patch XMLHttpRequestEventTarget's addEventListener/removeEventListener
-    var XMLHttpRequestEventTarget = global['XMLHttpRequestEventTarget'];
+    const XMLHttpRequestEventTarget = global['XMLHttpRequestEventTarget'];
     if (XMLHttpRequestEventTarget && XMLHttpRequestEventTarget.prototype) {
         api.patchEventTarget(global, [XMLHttpRequestEventTarget.prototype]);
     }
@@ -6497,51 +6100,51 @@ Zone.__load_patch('EventTarget', function (global, Zone, api) {
     patchClass('IntersectionObserver');
     patchClass('FileReader');
 });
-Zone.__load_patch('on_property', function (global, Zone, api) {
+Zone.__load_patch('on_property', (global, Zone, api) => {
     propertyDescriptorPatch(api, global);
     propertyPatch();
 });
-Zone.__load_patch('customElements', function (global, Zone, api) {
+Zone.__load_patch('customElements', (global, Zone, api) => {
     patchCustomElements(global, api);
 });
-Zone.__load_patch('XHR', function (global, Zone) {
+Zone.__load_patch('XHR', (global, Zone) => {
     // Treat XMLHttpRequest as a macrotask.
     patchXHR(global);
-    var XHR_TASK = zoneSymbol('xhrTask');
-    var XHR_SYNC = zoneSymbol('xhrSync');
-    var XHR_LISTENER = zoneSymbol('xhrListener');
-    var XHR_SCHEDULED = zoneSymbol('xhrScheduled');
-    var XHR_URL = zoneSymbol('xhrURL');
-    var XHR_ERROR_BEFORE_SCHEDULED = zoneSymbol('xhrErrorBeforeScheduled');
+    const XHR_TASK = zoneSymbol('xhrTask');
+    const XHR_SYNC = zoneSymbol('xhrSync');
+    const XHR_LISTENER = zoneSymbol('xhrListener');
+    const XHR_SCHEDULED = zoneSymbol('xhrScheduled');
+    const XHR_URL = zoneSymbol('xhrURL');
+    const XHR_ERROR_BEFORE_SCHEDULED = zoneSymbol('xhrErrorBeforeScheduled');
     function patchXHR(window) {
-        var XMLHttpRequest = window['XMLHttpRequest'];
+        const XMLHttpRequest = window['XMLHttpRequest'];
         if (!XMLHttpRequest) {
             // XMLHttpRequest is not available in service worker
             return;
         }
-        var XMLHttpRequestPrototype = XMLHttpRequest.prototype;
+        const XMLHttpRequestPrototype = XMLHttpRequest.prototype;
         function findPendingTask(target) {
             return target[XHR_TASK];
         }
-        var oriAddListener = XMLHttpRequestPrototype[ZONE_SYMBOL_ADD_EVENT_LISTENER];
-        var oriRemoveListener = XMLHttpRequestPrototype[ZONE_SYMBOL_REMOVE_EVENT_LISTENER];
+        let oriAddListener = XMLHttpRequestPrototype[ZONE_SYMBOL_ADD_EVENT_LISTENER];
+        let oriRemoveListener = XMLHttpRequestPrototype[ZONE_SYMBOL_REMOVE_EVENT_LISTENER];
         if (!oriAddListener) {
-            var XMLHttpRequestEventTarget_1 = window['XMLHttpRequestEventTarget'];
-            if (XMLHttpRequestEventTarget_1) {
-                var XMLHttpRequestEventTargetPrototype = XMLHttpRequestEventTarget_1.prototype;
+            const XMLHttpRequestEventTarget = window['XMLHttpRequestEventTarget'];
+            if (XMLHttpRequestEventTarget) {
+                const XMLHttpRequestEventTargetPrototype = XMLHttpRequestEventTarget.prototype;
                 oriAddListener = XMLHttpRequestEventTargetPrototype[ZONE_SYMBOL_ADD_EVENT_LISTENER];
                 oriRemoveListener = XMLHttpRequestEventTargetPrototype[ZONE_SYMBOL_REMOVE_EVENT_LISTENER];
             }
         }
-        var READY_STATE_CHANGE = 'readystatechange';
-        var SCHEDULED = 'scheduled';
+        const READY_STATE_CHANGE = 'readystatechange';
+        const SCHEDULED = 'scheduled';
         function scheduleTask(task) {
-            var data = task.data;
-            var target = data.target;
+            const data = task.data;
+            const target = data.target;
             target[XHR_SCHEDULED] = false;
             target[XHR_ERROR_BEFORE_SCHEDULED] = false;
             // remove existing event listener
-            var listener = target[XHR_LISTENER];
+            const listener = target[XHR_LISTENER];
             if (!oriAddListener) {
                 oriAddListener = target[ZONE_SYMBOL_ADD_EVENT_LISTENER];
                 oriRemoveListener = target[ZONE_SYMBOL_REMOVE_EVENT_LISTENER];
@@ -6549,7 +6152,7 @@ Zone.__load_patch('XHR', function (global, Zone) {
             if (listener) {
                 oriRemoveListener.call(target, READY_STATE_CHANGE, listener);
             }
-            var newListener = target[XHR_LISTENER] = function () {
+            const newListener = target[XHR_LISTENER] = () => {
                 if (target.readyState === target.DONE) {
                     // sometimes on some browsers XMLHttpRequest will fire onreadystatechange with
                     // readyState=4 multiple times, so we need to check task state here
@@ -6557,20 +6160,20 @@ Zone.__load_patch('XHR', function (global, Zone) {
                         // check whether the xhr has registered onload listener
                         // if that is the case, the task should invoke after all
                         // onload listeners finish.
-                        var loadTasks = target['__zone_symbol__loadfalse'];
+                        const loadTasks = target['__zone_symbol__loadfalse'];
                         if (loadTasks && loadTasks.length > 0) {
-                            var oriInvoke_1 = task.invoke;
+                            const oriInvoke = task.invoke;
                             task.invoke = function () {
                                 // need to load the tasks again, because in other
                                 // load listener, they may remove themselves
-                                var loadTasks = target['__zone_symbol__loadfalse'];
-                                for (var i = 0; i < loadTasks.length; i++) {
+                                const loadTasks = target['__zone_symbol__loadfalse'];
+                                for (let i = 0; i < loadTasks.length; i++) {
                                     if (loadTasks[i] === task) {
                                         loadTasks.splice(i, 1);
                                     }
                                 }
                                 if (!data.aborted && task.state === SCHEDULED) {
-                                    oriInvoke_1.call(task);
+                                    oriInvoke.call(task);
                                 }
                             };
                             loadTasks.push(task);
@@ -6586,7 +6189,7 @@ Zone.__load_patch('XHR', function (global, Zone) {
                 }
             };
             oriAddListener.call(target, READY_STATE_CHANGE, newListener);
-            var storedTask = target[XHR_TASK];
+            const storedTask = target[XHR_TASK];
             if (!storedTask) {
                 target[XHR_TASK] = task;
             }
@@ -6596,21 +6199,21 @@ Zone.__load_patch('XHR', function (global, Zone) {
         }
         function placeholderCallback() { }
         function clearTask(task) {
-            var data = task.data;
+            const data = task.data;
             // Note - ideally, we would call data.target.removeEventListener here, but it's too late
             // to prevent it from firing. So instead, we store info for the event listener.
             data.aborted = true;
             return abortNative.apply(data.target, data.args);
         }
-        var openNative = patchMethod(XMLHttpRequestPrototype, 'open', function () { return function (self, args) {
+        const openNative = patchMethod(XMLHttpRequestPrototype, 'open', () => function (self, args) {
             self[XHR_SYNC] = args[2] == false;
             self[XHR_URL] = args[1];
             return openNative.apply(self, args);
-        }; });
-        var XMLHTTPREQUEST_SOURCE = 'XMLHttpRequest.send';
-        var fetchTaskAborting = zoneSymbol('fetchTaskAborting');
-        var fetchTaskScheduling = zoneSymbol('fetchTaskScheduling');
-        var sendNative = patchMethod(XMLHttpRequestPrototype, 'send', function () { return function (self, args) {
+        });
+        const XMLHTTPREQUEST_SOURCE = 'XMLHttpRequest.send';
+        const fetchTaskAborting = zoneSymbol('fetchTaskAborting');
+        const fetchTaskScheduling = zoneSymbol('fetchTaskScheduling');
+        const sendNative = patchMethod(XMLHttpRequestPrototype, 'send', () => function (self, args) {
             if (Zone.current[fetchTaskScheduling] === true) {
                 // a fetch is scheduling, so we are using xhr to polyfill fetch
                 // and because we already schedule macroTask for fetch, we should
@@ -6622,8 +6225,8 @@ Zone.__load_patch('XHR', function (global, Zone) {
                 return sendNative.apply(self, args);
             }
             else {
-                var options = { target: self, url: self[XHR_URL], isPeriodic: false, args: args, aborted: false };
-                var task = scheduleMacroTaskWithCurrentZone(XMLHTTPREQUEST_SOURCE, placeholderCallback, options, scheduleTask, clearTask);
+                const options = { target: self, url: self[XHR_URL], isPeriodic: false, args: args, aborted: false };
+                const task = scheduleMacroTaskWithCurrentZone(XMLHTTPREQUEST_SOURCE, placeholderCallback, options, scheduleTask, clearTask);
                 if (self && self[XHR_ERROR_BEFORE_SCHEDULED] === true && !options.aborted &&
                     task.state === SCHEDULED) {
                     // xhr request throw error when send
@@ -6632,9 +6235,9 @@ Zone.__load_patch('XHR', function (global, Zone) {
                     task.invoke();
                 }
             }
-        }; });
-        var abortNative = patchMethod(XMLHttpRequestPrototype, 'abort', function () { return function (self, args) {
-            var task = findPendingTask(self);
+        });
+        const abortNative = patchMethod(XMLHttpRequestPrototype, 'abort', () => function (self, args) {
+            const task = findPendingTask(self);
             if (task && typeof task.type == 'string') {
                 // If the XHR has already completed, do nothing.
                 // If the XHR has already been aborted, do nothing.
@@ -6652,26 +6255,26 @@ Zone.__load_patch('XHR', function (global, Zone) {
             // Otherwise, we are trying to abort an XHR which has not yet been sent, so there is no
             // task
             // to cancel. Do nothing.
-        }; });
+        });
     }
 });
-Zone.__load_patch('geolocation', function (global) {
+Zone.__load_patch('geolocation', (global) => {
     /// GEO_LOCATION
     if (global['navigator'] && global['navigator'].geolocation) {
         patchPrototype(global['navigator'].geolocation, ['getCurrentPosition', 'watchPosition']);
     }
 });
-Zone.__load_patch('PromiseRejectionEvent', function (global, Zone) {
+Zone.__load_patch('PromiseRejectionEvent', (global, Zone) => {
     // handle unhandled promise rejection
     function findPromiseRejectionHandler(evtName) {
         return function (e) {
-            var eventTasks = findEventTasks(global, evtName);
-            eventTasks.forEach(function (eventTask) {
+            const eventTasks = findEventTasks(global, evtName);
+            eventTasks.forEach(eventTask => {
                 // windows has added unhandledrejection event listener
                 // trigger the event listener
-                var PromiseRejectionEvent = global['PromiseRejectionEvent'];
+                const PromiseRejectionEvent = global['PromiseRejectionEvent'];
                 if (PromiseRejectionEvent) {
-                    var evt = new PromiseRejectionEvent(evtName, { promise: e.promise, reason: e.rejection });
+                    const evt = new PromiseRejectionEvent(evtName, { promise: e.promise, reason: e.rejection });
                     eventTask.invoke(evt);
                 }
             });
@@ -6692,8 +6295,6 @@ Zone.__load_patch('PromiseRejectionEvent', function (global, Zone) {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
-
-})));
 
 
 /***/ }),
@@ -6720,12 +6321,12 @@ module.exports = "a.selectedRoom {\n  color: #fff!important;\n  border-left: sol
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminSidebarComponent", function() { return AdminSidebarComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var angular_web_storage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! angular-web-storage */ "./node_modules/angular-web-storage/fesm5/angular-web-storage.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var angular_web_storage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! angular-web-storage */ "./node_modules/angular-web-storage/fesm2015/angular-web-storage.js");
 /* harmony import */ var _adminsettings_new_avatar_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../adminsettings/new-avatar.service */ "./src/app/admin/adminsettings/new-avatar.service.ts");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
 /* harmony import */ var _adminsettings_adminsettings_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../adminsettings/adminsettings.component */ "./src/app/admin/adminsettings/adminsettings.component.ts");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
 
 
 
@@ -6733,15 +6334,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var AdminSidebarComponent = /** @class */ (function () {
-    function AdminSidebarComponent(localStorage, dialog, newAvatarService, document) {
+let AdminSidebarComponent = class AdminSidebarComponent {
+    constructor(localStorage, dialog, newAvatarService, document) {
         this.localStorage = localStorage;
         this.dialog = dialog;
         this.newAvatarService = newAvatarService;
         this.document = document;
         this.adminImgPath = this.localStorage.get('admin_user_profile');
     }
-    AdminSidebarComponent.prototype.onBlackTheme = function () {
+    onBlackTheme() {
         if (this.blackTheme == true) {
             this.localStorage.set("Admintheme", false);
             this.document.body.classList.remove('black-theme');
@@ -6750,12 +6351,11 @@ var AdminSidebarComponent = /** @class */ (function () {
             this.localStorage.set("Admintheme", true);
             this.document.body.classList.add('black-theme');
         }
-    };
-    AdminSidebarComponent.prototype.openteamavatar = function () {
-        var fileNameDialogRef = this.dialog.open(_adminsettings_adminsettings_component__WEBPACK_IMPORTED_MODULE_5__["NewTeamAvatarDialog"]);
-    };
-    AdminSidebarComponent.prototype.ngOnInit = function () {
-        var _this = this;
+    }
+    openteamavatar() {
+        const fileNameDialogRef = this.dialog.open(_adminsettings_adminsettings_component__WEBPACK_IMPORTED_MODULE_5__["NewTeamAvatarDialog"]);
+    }
+    ngOnInit() {
         this.blackTheme = this.localStorage.get('Admintheme');
         if (this.blackTheme == true) {
             this.document.body.classList.add('black-theme');
@@ -6763,26 +6363,25 @@ var AdminSidebarComponent = /** @class */ (function () {
         else {
             this.document.body.classList.remove('black-theme');
         }
-        this.newAvatarService.newAvatar.subscribe(function (data) {
-            _this.adminImgPath = _this.localStorage.get('admin_user_profile');
+        this.newAvatarService.newAvatar.subscribe(data => {
+            this.adminImgPath = this.localStorage.get('admin_user_profile');
         });
-    };
-    AdminSidebarComponent.ctorParameters = function () { return [
-        { type: angular_web_storage__WEBPACK_IMPORTED_MODULE_2__["LocalStorageService"] },
-        { type: _angular_material__WEBPACK_IMPORTED_MODULE_4__["MatDialog"] },
-        { type: _adminsettings_new_avatar_service__WEBPACK_IMPORTED_MODULE_3__["NewAvatarService"] },
-        { type: Document, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [_angular_common__WEBPACK_IMPORTED_MODULE_6__["DOCUMENT"],] }] }
-    ]; };
-    AdminSidebarComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-admin-sidebar',
-            template: __webpack_require__(/*! raw-loader!./admin-sidebar.component.html */ "./node_modules/raw-loader/index.js!./src/app/admin/admin-sidebar/admin-sidebar.component.html"),
-            styles: [__webpack_require__(/*! ./admin-sidebar.component.css */ "./src/app/admin/admin-sidebar/admin-sidebar.component.css")]
-        }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](3, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_angular_common__WEBPACK_IMPORTED_MODULE_6__["DOCUMENT"]))
-    ], AdminSidebarComponent);
-    return AdminSidebarComponent;
-}());
+    }
+};
+AdminSidebarComponent.ctorParameters = () => [
+    { type: angular_web_storage__WEBPACK_IMPORTED_MODULE_2__["LocalStorageService"] },
+    { type: _angular_material__WEBPACK_IMPORTED_MODULE_4__["MatDialog"] },
+    { type: _adminsettings_new_avatar_service__WEBPACK_IMPORTED_MODULE_3__["NewAvatarService"] },
+    { type: Document, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [_angular_common__WEBPACK_IMPORTED_MODULE_6__["DOCUMENT"],] }] }
+];
+AdminSidebarComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-admin-sidebar',
+        template: __webpack_require__(/*! raw-loader!./admin-sidebar.component.html */ "./node_modules/raw-loader/index.js!./src/app/admin/admin-sidebar/admin-sidebar.component.html"),
+        styles: [__webpack_require__(/*! ./admin-sidebar.component.css */ "./src/app/admin/admin-sidebar/admin-sidebar.component.css")]
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](3, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_angular_common__WEBPACK_IMPORTED_MODULE_6__["DOCUMENT"]))
+], AdminSidebarComponent);
 
 
 
@@ -6810,23 +6409,21 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminComponent", function() { return AdminComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 
 
-var AdminComponent = /** @class */ (function () {
-    function AdminComponent() {
+let AdminComponent = class AdminComponent {
+    constructor() { }
+    ngOnInit() {
     }
-    AdminComponent.prototype.ngOnInit = function () {
-    };
-    AdminComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-admin',
-            template: __webpack_require__(/*! raw-loader!./admin.component.html */ "./node_modules/raw-loader/index.js!./src/app/admin/admin.component.html"),
-            styles: [__webpack_require__(/*! ./admin.component.css */ "./src/app/admin/admin.component.css")]
-        })
-    ], AdminComponent);
-    return AdminComponent;
-}());
+};
+AdminComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-admin',
+        template: __webpack_require__(/*! raw-loader!./admin.component.html */ "./node_modules/raw-loader/index.js!./src/app/admin/admin.component.html"),
+        styles: [__webpack_require__(/*! ./admin.component.css */ "./src/app/admin/admin.component.css")]
+    })
+], AdminComponent);
 
 
 
@@ -6854,91 +6451,90 @@ module.exports = ".box .empty {\n    padding: 0;\n    background: #fff;\n    bor
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminapiComponent", function() { return AdminapiComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_material_paginator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material/paginator */ "./node_modules/@angular/material/esm5/paginator.es5.js");
-/* harmony import */ var _angular_material_sort__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material/sort */ "./node_modules/@angular/material/esm5/sort.es5.js");
-/* harmony import */ var _angular_material_table__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material/table */ "./node_modules/@angular/material/esm5/table.es5.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_material_paginator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material/paginator */ "./node_modules/@angular/material/esm2015/paginator.js");
+/* harmony import */ var _angular_material_sort__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material/sort */ "./node_modules/@angular/material/esm2015/sort.js");
+/* harmony import */ var _angular_material_table__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material/table */ "./node_modules/@angular/material/esm2015/table.js");
 
 
 
 
 
 /** Constants used to fill up our data base. */
-var COLORS = [
+const COLORS = [
     '-- never --', '-- never --', '-- never --', '-- never --', '-- never --', '-- never --', '-- never --', '-- never --', '-- never --', '-- never --',
     '-- never --', '-- never --', '-- never --', '-- never --', '-- never --'
 ];
-var NAMES = [
+const NAMES = [
     'Maia', 'Asher', 'Olivia', 'Atticus', 'Amelia', 'Jack', 'Charlotte', 'Theodore', 'Isla', 'Oliver',
     'Isabella', 'Jasper', 'Cora', 'Levi', 'Violet', 'Arthur', 'Mia', 'Thomas', 'Elizabeth'
 ];
-var DESCRIPTION = [
+const DESCRIPTION = [
     'MMA +1-916-836-4569', 'MMA +1-916-836-4569', 'MMA +1-916-836-4569', 'MMA +1-916-836-4569', 'MMA +1-916-836-4569', 'MMA +1-916-836-4569', 'MMA +1-916-836-4569', 'MMA +1-916-836-4569',
     'MMA +1-916-836-4569', 'MMA +1-916-836-4569', 'MMA +1-916-836-4569', 'MMA +1-916-836-4569', 'MMA +1-916-836-4569', 'MMA +1-916-836-4569', 'MMA +1-916-836-4569', 'MMA +1-916-836-4569'
 ];
-var STATUS = [
+const STATUS = [
     'FAILED', 'FAILED', 'FAILED', 'SUCCEED', 'FAILED', 'SUCCEED', 'FAILED', 'FAILED', 'FAILED', 'SUCCEED', 'FAILED', 'SUCCEED', 'FAILED', 'FAILED', 'FAILED', 'SUCCEED', 'FAILED', 'SUCCEED',
     'FAILED', 'FAILED', 'FAILED', 'SUCCEED', 'FAILED', 'SUCCEED', 'FAILED', 'FAILED', 'FAILED', 'SUCCEED', 'FAILED', 'SUCCEED', 'FAILED', 'FAILED', 'FAILED', 'SUCCEED', 'FAILED', 'SUCCEED'
 ];
-var DATE = [
+const DATE = [
     '2019-05-05 00:54:18', '2019-05-05 00:54:18', '2019-05-05 00:54:18', '2019-05-05 00:54:18', '2019-05-05 00:54:18', '2019-05-05 00:54:18', '2019-05-05 00:54:18', '2019-05-05 00:54:18', '2019-05-05 00:54:18',
     '2019-05-05 00:54:18', '2019-05-05 00:54:18', '2019-05-05 00:54:18', '2019-05-05 00:54:18', '2019-05-05 00:54:18'
 ];
-var AMOUNT = [
+const AMOUNT = [
     '88.00', '24.00', '65.00', '89.00', '43.00', '54.00', '88.00', '23.00', '88.00', '24.00', '65.00', '89.00', '43.00', '54.00', '88.00', '23.00', '88.00', '24.00', '65.00', '89.00', '43.00', '54.00', '88.00', '23.00',
     '88.00', '24.00', '65.00', '89.00', '43.00', '54.00', '88.00', '23.00', '88.00', '24.00', '65.00', '89.00', '43.00', '54.00', '88.00', '23.00'
 ];
-var USERNAME = [
+const USERNAME = [
     '_sdMaia23', '_Ashesr12', 'Olivisa_1', '123Atticus', '324Amelia', 'J34ack', '2121Charlotte', '54232', '.Isla', 'Oliver',
     'Isabella', '_Jasper', 'Cora', 'Levi', '.Violet', 'Arthur', 'Mia', 'Thomas', '.12Elizabeth'
 ];
-var EMAIL = [
+const EMAIL = [
     'its.ronaldo1@gmail.com', 'emmanuel.wediko@gmail.com', 'robertbaconfitness@yahoo.com', 'tremonrobinson32@gmail.com', 'tremonrobinson32@gmail.com', 'robertbaconfitness@yahoo.com',
     'tremonrobinson32@gmail.com', 'rtgbrt34@yahoo.com', 'tremonrobinson32@gmail.com', 'robertbaconfitness@yahoo.com', 'its.ronaldo1@gmail.com',
     'robertbaconfitness@yahoo.com', 'its.ronaldo1@gmail.com', 'Levi', 'tremonrobinson32@gmail.com', 'rtgbrt34@yahoo.com',
     'its.ronaldo1@gmail.com	', 'rtgbrt34@yahoo.com	', 'its.ronaldo1@gmail.com'
 ];
-var PLAN = [
+const PLAN = [
     'OPFX $77/mo 7 Day Trial', 'OPFX $77/mo 7 Day Trial', 'OPFX $77/mo 7 Day Trial', 'OPFX $77/mo 7 Day Trial', 'OPFX $77/mo 7 Day Trial', 'OPFX $77/mo 7 Day Trial', 'OPFX $77/mo 7 Day Trial', 'OPFX $77/mo 7 Day Trial', 'OPFX $77/mo 7 Day Trial',
     'OPFX $77/mo 7 Day Trial', 'OPFX $77/mo 7 Day Trial', 'OPFX $77/mo 7 Day Trial', 'OPFX $77/mo 7 Day Trial', 'OPFX $77/mo 7 Day Trial', 'OPFX $77/mo 7 Day Trial'
 ];
-var AdminapiComponent = /** @class */ (function () {
-    function AdminapiComponent() {
+let AdminapiComponent = class AdminapiComponent {
+    constructor() {
         this.displayedColumns = ['date', 'username', 'email', 'plan', 'description', 'amount', 'status'];
         // Create 100 users
-        var users = Array.from({ length: 100 }, function (_, k) { return createNewUser(k + 1); });
+        const users = Array.from({ length: 100 }, (_, k) => createNewUser(k + 1));
         // Assign the data to the data source for the table to render
         this.dataSource = new _angular_material_table__WEBPACK_IMPORTED_MODULE_4__["MatTableDataSource"](users);
     }
-    AdminapiComponent.prototype.ngOnInit = function () {
+    ngOnInit() {
         this.dataSource.paginator = this.paginator;
         this.dataSource.sort = this.sort;
-    };
-    AdminapiComponent.prototype.applyFilter = function (filterValue) {
+    }
+    applyFilter(filterValue) {
         this.dataSource.filter = filterValue.trim().toLowerCase();
         if (this.dataSource.paginator) {
             this.dataSource.paginator.firstPage();
         }
-    };
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_angular_material_paginator__WEBPACK_IMPORTED_MODULE_2__["MatPaginator"], { static: true })
-    ], AdminapiComponent.prototype, "paginator", void 0);
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_angular_material_sort__WEBPACK_IMPORTED_MODULE_3__["MatSort"], { static: true })
-    ], AdminapiComponent.prototype, "sort", void 0);
-    AdminapiComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-adminapi',
-            template: __webpack_require__(/*! raw-loader!./adminapi.component.html */ "./node_modules/raw-loader/index.js!./src/app/admin/adminapi/adminapi.component.html"),
-            styles: [__webpack_require__(/*! ./adminapi.component.css */ "./src/app/admin/adminapi/adminapi.component.css")]
-        })
-    ], AdminapiComponent);
-    return AdminapiComponent;
-}());
+    }
+};
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_angular_material_paginator__WEBPACK_IMPORTED_MODULE_2__["MatPaginator"], { static: true })
+], AdminapiComponent.prototype, "paginator", void 0);
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_angular_material_sort__WEBPACK_IMPORTED_MODULE_3__["MatSort"], { static: true })
+], AdminapiComponent.prototype, "sort", void 0);
+AdminapiComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-adminapi',
+        template: __webpack_require__(/*! raw-loader!./adminapi.component.html */ "./node_modules/raw-loader/index.js!./src/app/admin/adminapi/adminapi.component.html"),
+        styles: [__webpack_require__(/*! ./adminapi.component.css */ "./src/app/admin/adminapi/adminapi.component.css")]
+    })
+], AdminapiComponent);
 
 /** Builds and returns a new User. */
 function createNewUser(id) {
-    var name = NAMES[Math.round(Math.random() * (NAMES.length - 1))] + ' ' +
+    const name = NAMES[Math.round(Math.random() * (NAMES.length - 1))] + ' ' +
         NAMES[Math.round(Math.random() * (NAMES.length - 1))].charAt(0) + '.';
     return {
         name: name,
@@ -6979,11 +6575,11 @@ module.exports = "table {\n  width: 100%;\n}\n\n.mat-form-field {\n  font-size: 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminbillingComponent", function() { return AdminbillingComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_material_paginator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material/paginator */ "./node_modules/@angular/material/esm5/paginator.es5.js");
-/* harmony import */ var _angular_material_sort__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material/sort */ "./node_modules/@angular/material/esm5/sort.es5.js");
-/* harmony import */ var _angular_material_table__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material/table */ "./node_modules/@angular/material/esm5/table.es5.js");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_material_paginator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material/paginator */ "./node_modules/@angular/material/esm2015/paginator.js");
+/* harmony import */ var _angular_material_sort__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material/sort */ "./node_modules/@angular/material/esm2015/sort.js");
+/* harmony import */ var _angular_material_table__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material/table */ "./node_modules/@angular/material/esm2015/table.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
 /* harmony import */ var _new_billing_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./new-billing.component */ "./src/app/admin/adminbilling/new-billing.component.ts");
 /* harmony import */ var _adminbilling_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./adminbilling.service */ "./src/app/admin/adminbilling/adminbilling.service.ts");
 
@@ -6994,8 +6590,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var AdminbillingComponent = /** @class */ (function () {
-    function AdminbillingComponent(dialog, billingService) {
+let AdminbillingComponent = class AdminbillingComponent {
+    constructor(dialog, billingService) {
         this.dialog = dialog;
         this.billingService = billingService;
         this.mode = 'determinate';
@@ -7004,53 +6600,51 @@ var AdminbillingComponent = /** @class */ (function () {
         this.displayedColumns = ['name', 'description', 'onoff', 'currency', 'price', 'cycle', 'term', 'alter'];
         this.dataSource = new _angular_material_table__WEBPACK_IMPORTED_MODULE_4__["MatTableDataSource"](this.billingService.getBillings());
     }
-    AdminbillingComponent.prototype.openAddFileDialog = function () {
-        var fileNameDialogRef = this.dialog.open(_new_billing_component__WEBPACK_IMPORTED_MODULE_6__["NewBillingComponent"]);
-    };
-    AdminbillingComponent.prototype.ngOnInit = function () {
+    openAddFileDialog() {
+        const fileNameDialogRef = this.dialog.open(_new_billing_component__WEBPACK_IMPORTED_MODULE_6__["NewBillingComponent"]);
+    }
+    ngOnInit() {
         this.dataSource.paginator = this.paginator;
         this.dataSource.sort = this.sort;
-    };
+    }
     // onrefresh
-    AdminbillingComponent.prototype.onRefresh = function () {
-        var _this = this;
+    onRefresh() {
         console.log('it isw');
         this.showSpinner = true;
         this.mode = 'indeterminate';
-        setTimeout(function () {
-            _this.mode = 'determinate';
-            _this.showSpinner = false;
+        setTimeout(() => {
+            this.mode = 'determinate';
+            this.showSpinner = false;
         }, 1000);
-    };
+    }
     // filter
-    AdminbillingComponent.prototype.onActiveSearch = function () {
+    onActiveSearch() {
         this.searchActive = !this.searchActive;
-    };
-    AdminbillingComponent.prototype.applyFilter = function (filterValue) {
+    }
+    applyFilter(filterValue) {
         this.dataSource.filter = filterValue.trim().toLowerCase();
         if (this.dataSource.paginator) {
             this.dataSource.paginator.firstPage();
         }
-    };
-    AdminbillingComponent.ctorParameters = function () { return [
-        { type: _angular_material__WEBPACK_IMPORTED_MODULE_5__["MatDialog"] },
-        { type: _adminbilling_service__WEBPACK_IMPORTED_MODULE_7__["BillingService"] }
-    ]; };
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_angular_material_paginator__WEBPACK_IMPORTED_MODULE_2__["MatPaginator"], { static: true })
-    ], AdminbillingComponent.prototype, "paginator", void 0);
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_angular_material_sort__WEBPACK_IMPORTED_MODULE_3__["MatSort"], { static: true })
-    ], AdminbillingComponent.prototype, "sort", void 0);
-    AdminbillingComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-adminbilling',
-            template: __webpack_require__(/*! raw-loader!./adminbilling.component.html */ "./node_modules/raw-loader/index.js!./src/app/admin/adminbilling/adminbilling.component.html"),
-            styles: [__webpack_require__(/*! ./adminbilling.component.css */ "./src/app/admin/adminbilling/adminbilling.component.css")]
-        })
-    ], AdminbillingComponent);
-    return AdminbillingComponent;
-}());
+    }
+};
+AdminbillingComponent.ctorParameters = () => [
+    { type: _angular_material__WEBPACK_IMPORTED_MODULE_5__["MatDialog"] },
+    { type: _adminbilling_service__WEBPACK_IMPORTED_MODULE_7__["BillingService"] }
+];
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_angular_material_paginator__WEBPACK_IMPORTED_MODULE_2__["MatPaginator"], { static: true })
+], AdminbillingComponent.prototype, "paginator", void 0);
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_angular_material_sort__WEBPACK_IMPORTED_MODULE_3__["MatSort"], { static: true })
+], AdminbillingComponent.prototype, "sort", void 0);
+AdminbillingComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-adminbilling',
+        template: __webpack_require__(/*! raw-loader!./adminbilling.component.html */ "./node_modules/raw-loader/index.js!./src/app/admin/adminbilling/adminbilling.component.html"),
+        styles: [__webpack_require__(/*! ./adminbilling.component.css */ "./src/app/admin/adminbilling/adminbilling.component.css")]
+    })
+], AdminbillingComponent);
 
 
 
@@ -7067,25 +6661,24 @@ var AdminbillingComponent = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BillingService", function() { return BillingService; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 
 
-var BillingService = /** @class */ (function () {
-    function BillingService() {
+let BillingService = class BillingService {
+    constructor() {
         this.BILLINGS_DATA = [
         // {name: 'On-Point FX Signals 7-Day FREE 7', description: 'Access our 7-Day INTENSIVE Private Forex Training resources', oneOff: 'NO', currency: 'USD', price: '643', cycle: 21, term: 'Forever'}
         ];
     }
-    BillingService.prototype.getBillings = function () {
+    getBillings() {
         return this.BILLINGS_DATA.slice();
-    };
-    BillingService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
-            providedIn: 'root'
-        })
-    ], BillingService);
-    return BillingService;
-}());
+    }
+};
+BillingService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], BillingService);
 
 
 
@@ -7102,20 +6695,129 @@ var BillingService = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NewBillingComponent", function() { return NewBillingComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 
 
-var NewBillingComponent = /** @class */ (function () {
-    function NewBillingComponent() {
+let NewBillingComponent = class NewBillingComponent {
+    constructor() {
         this.currency = 'empty';
     }
-    NewBillingComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            template: "\n  <div class=\"modal-content new_user_dialog biling_dialog\">\n   <div class=\"modal-header\">\n      <h4 class=\"modal-title\">\n      <button  mat-dialog-close  class=\"close\">\n            <span aria-hidden=\"true\">\u00D7</span>\n      </button> \n         Add Billing\n      </h4>\n   </div>\n   <form class=\"\">\n      <div class=\"modal-body wrap-div\">\n      <div class=\"row\">\n          <div class=\"col-xs-12\">\n              <mat-form-field>\n                <input matInput placeholder=\"Name *\" value=\"\"> \n              </mat-form-field>\n          </div>\n      </div>    \n      <div class=\"row\">\n          <div class=\"col-xs-12\">\n              <mat-form-field class=\"example-full-width\">\n                  <textarea matInput placeholder=\"Description *\" ></textarea>\n              </mat-form-field>\n          </div>\n      </div>\n      <div class=\"row\">\n          <div class=\"col-xs-12\">\n            <mat-form-field class=\"example-full-width\" >\n              <textarea matInput placeholder=\"Statement Description *\" value=\"\" ></textarea>\n            </mat-form-field>\n          </div>\n      </div>\n      <div class=\"row\">\n          <div class=\"col-sm-3\">\n               <mat-form-field>\n                  <input matInput placeholder=\"Price *\" value=\"\"> \n               </mat-form-field>\n            </div>\n            <div class=\"col-sm-3\">\n                  <mat-form-field>\n                  <mat-label></mat-label>\n                  <mat-select [(value)]=\"currency\">\n                    <mat-option value=\"empty\"></mat-option>\n                    <mat-option value=\"usd\">USD</mat-option>\n                    <mat-option value=\"eur\">EUR</mat-option>\n                    <mat-option value=\"gbp\">GBP</mat-option>\n                    <mat-option value=\"cad\">CAD</mat-option>\n                    <mat-option value=\"aud\">AUD</mat-option>\n                    <mat-option value=\"jpy\">JPY</mat-option>\n                  </mat-select>\n                </mat-form-field>\n            </div>\n            <div class=\"col-sm-6\">\n                  <span style=\"font-size: 14px;\n                  position: relative; top: -3px; color: #757575;\">One-Off Payment</span>\n                 <mat-checkbox> is one-off</mat-checkbox>\n            </div>\n        </div>\n        <div class=\"row\">\n          <div class=\"col-sm-3\">\n                <mat-form-field>\n                  <input matInput placeholder=\"Bill every\" value=\"\"> \n                </mat-form-field>\n            </div>\n            <div class=\"col-sm-3\">\n                  <mat-form-field>\n                  <mat-label></mat-label>\n                  <mat-select [(value)]=\"currency\">\n                    <mat-option value=\"empty\"></mat-option>\n                    <mat-option value=\"day\">Day</mat-option>\n                    <mat-option value=\"month\">Month</mat-option>\n                    <mat-option value=\"year\">Year</mat-option>\n                  </mat-select>\n                </mat-form-field>\n            </div>\n            <div class=\"col-sm-6\">\n                <mat-form-field>\n                  <mat-label>Trial</mat-label>\n                  <mat-select [(value)]=\"currency\">\n                    <mat-option value=\"empty\"></mat-option>\n                    <mat-option value=\"day\">No-trial</mat-option>\n                    <mat-option value=\"month\">Trial- Credit Card Required</mat-option>\n                    <mat-option value=\"year\">Trial- Credit Card Not Required</mat-option>\n                  </mat-select>\n                </mat-form-field>\n            </div>\n        </div> \n        <div class=\"row\">\n            <div class=\"col-xs-12\" style=\"font-size:12px;\">\n              <p>When the user subscribes on this plan then active the following plan:</p>\n            </div>\n            <div class=\"col-sm-6\">\n                <mat-form-field>\n                    <input matInput placeholder=\"Sub-Plan *\" value=\"\"> \n                </mat-form-field>\n            </div>\n            <div class=\"col-sm-6\">\n                <mat-form-field>\n                    <input matInput placeholder=\"Sub-Coupon *\" value=\"--Without Default Couple\" disable=\"\"> \n                </mat-form-field>\n            </div>\n        </div>\n      </div>\n      <div class=\"modal-footer wrap-div\">\n         <button mat-dialog-close class=\"btn btn-default pull-left\" type=\"button\">Cancel</button>\n         <button class=\"btn btn-blue\">Save</button>\n      </div>\n   </form>\n</div>\n  "
-        })
-    ], NewBillingComponent);
-    return NewBillingComponent;
-}());
+};
+NewBillingComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        template: `
+  <div class="modal-content new_user_dialog biling_dialog">
+   <div class="modal-header">
+      <h4 class="modal-title">
+      <button  mat-dialog-close  class="close">
+            <span aria-hidden="true">×</span>
+      </button> 
+         Add Billing
+      </h4>
+   </div>
+   <form class="">
+      <div class="modal-body wrap-div">
+      <div class="row">
+          <div class="col-xs-12">
+              <mat-form-field>
+                <input matInput placeholder="Name *" value=""> 
+              </mat-form-field>
+          </div>
+      </div>    
+      <div class="row">
+          <div class="col-xs-12">
+              <mat-form-field class="example-full-width">
+                  <textarea matInput placeholder="Description *" ></textarea>
+              </mat-form-field>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-xs-12">
+            <mat-form-field class="example-full-width" >
+              <textarea matInput placeholder="Statement Description *" value="" ></textarea>
+            </mat-form-field>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-sm-3">
+               <mat-form-field>
+                  <input matInput placeholder="Price *" value=""> 
+               </mat-form-field>
+            </div>
+            <div class="col-sm-3">
+                  <mat-form-field>
+                  <mat-label></mat-label>
+                  <mat-select [(value)]="currency">
+                    <mat-option value="empty"></mat-option>
+                    <mat-option value="usd">USD</mat-option>
+                    <mat-option value="eur">EUR</mat-option>
+                    <mat-option value="gbp">GBP</mat-option>
+                    <mat-option value="cad">CAD</mat-option>
+                    <mat-option value="aud">AUD</mat-option>
+                    <mat-option value="jpy">JPY</mat-option>
+                  </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="col-sm-6">
+                  <span style="font-size: 14px;
+                  position: relative; top: -3px; color: #757575;">One-Off Payment</span>
+                 <mat-checkbox> is one-off</mat-checkbox>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+                <mat-form-field>
+                  <input matInput placeholder="Bill every" value=""> 
+                </mat-form-field>
+            </div>
+            <div class="col-sm-3">
+                  <mat-form-field>
+                  <mat-label></mat-label>
+                  <mat-select [(value)]="currency">
+                    <mat-option value="empty"></mat-option>
+                    <mat-option value="day">Day</mat-option>
+                    <mat-option value="month">Month</mat-option>
+                    <mat-option value="year">Year</mat-option>
+                  </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="col-sm-6">
+                <mat-form-field>
+                  <mat-label>Trial</mat-label>
+                  <mat-select [(value)]="currency">
+                    <mat-option value="empty"></mat-option>
+                    <mat-option value="day">No-trial</mat-option>
+                    <mat-option value="month">Trial- Credit Card Required</mat-option>
+                    <mat-option value="year">Trial- Credit Card Not Required</mat-option>
+                  </mat-select>
+                </mat-form-field>
+            </div>
+        </div> 
+        <div class="row">
+            <div class="col-xs-12" style="font-size:12px;">
+              <p>When the user subscribes on this plan then active the following plan:</p>
+            </div>
+            <div class="col-sm-6">
+                <mat-form-field>
+                    <input matInput placeholder="Sub-Plan *" value=""> 
+                </mat-form-field>
+            </div>
+            <div class="col-sm-6">
+                <mat-form-field>
+                    <input matInput placeholder="Sub-Coupon *" value="--Without Default Couple" disable=""> 
+                </mat-form-field>
+            </div>
+        </div>
+      </div>
+      <div class="modal-footer wrap-div">
+         <button mat-dialog-close class="btn btn-default pull-left" type="button">Cancel</button>
+         <button class="btn btn-blue">Save</button>
+      </div>
+   </form>
+</div>
+  `
+    })
+], NewBillingComponent);
 
 
 
@@ -7143,11 +6845,11 @@ module.exports = "table {\n    width: 100%;\n  }\n  \n  .mat-form-field {\n    f
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminchatroomComponent", function() { return AdminchatroomComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_material_paginator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material/paginator */ "./node_modules/@angular/material/esm5/paginator.es5.js");
-/* harmony import */ var _angular_material_sort__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material/sort */ "./node_modules/@angular/material/esm5/sort.es5.js");
-/* harmony import */ var _angular_material_table__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material/table */ "./node_modules/@angular/material/esm5/table.es5.js");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_material_paginator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material/paginator */ "./node_modules/@angular/material/esm2015/paginator.js");
+/* harmony import */ var _angular_material_sort__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material/sort */ "./node_modules/@angular/material/esm2015/sort.js");
+/* harmony import */ var _angular_material_table__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material/table */ "./node_modules/@angular/material/esm2015/table.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
 /* harmony import */ var _new_cahtroom_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./new-cahtroom.component */ "./src/app/admin/adminchatroom/new-cahtroom.component.ts");
 /* harmony import */ var _deletechatroom_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./deletechatroom.component */ "./src/app/admin/adminchatroom/deletechatroom.component.ts");
 /* harmony import */ var _services_auth_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../services/auth.service */ "./src/app/services/auth.service.ts");
@@ -7162,8 +6864,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var AdminchatroomComponent = /** @class */ (function () {
-    function AdminchatroomComponent(dialog, auth, chatRoomService) {
+let AdminchatroomComponent = class AdminchatroomComponent {
+    constructor(dialog, auth, chatRoomService) {
         this.dialog = dialog;
         this.auth = auth;
         this.chatRoomService = chatRoomService;
@@ -7174,21 +6876,21 @@ var AdminchatroomComponent = /** @class */ (function () {
         this.dataSource = new _angular_material_table__WEBPACK_IMPORTED_MODULE_4__["MatTableDataSource"](this.chatRoomService.getChatRooms());
         this.version = _angular_material__WEBPACK_IMPORTED_MODULE_5__["VERSION"];
     }
-    AdminchatroomComponent.prototype.openAddFileDialog = function () {
+    openAddFileDialog() {
         this.createRoomDialogRef = this.dialog.open(_new_cahtroom_component__WEBPACK_IMPORTED_MODULE_6__["NewChatroomComponent"]);
-        this.createRoomDialogRef.afterClosed().subscribe(function (result) {
+        this.createRoomDialogRef.afterClosed().subscribe(result => {
             console.log('The dialog was closed', result);
         });
-    };
-    AdminchatroomComponent.prototype.deleteRoom = function (room) {
+    }
+    deleteRoom(room) {
         this.deleteRoomDialogRef = this.dialog.open(_deletechatroom_component__WEBPACK_IMPORTED_MODULE_7__["DeleteChatroomComponent"], {
             data: room
         });
-    };
-    AdminchatroomComponent.prototype.editRoom = function (room) {
+    }
+    editRoom(room) {
         this.editRoomDialogRef = this.dialog.open(_new_cahtroom_component__WEBPACK_IMPORTED_MODULE_6__["NewChatroomComponent"]);
-    };
-    AdminchatroomComponent.prototype.getCoupons = function (coupon) {
+    }
+    getCoupons(coupon) {
         console.log(coupon);
         if (coupon && coupon.length > 0) {
             return JSON.stringify(coupon);
@@ -7196,57 +6898,54 @@ var AdminchatroomComponent = /** @class */ (function () {
         else {
             return 'N/A';
         }
-    };
-    AdminchatroomComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        this.auth.getRoomsList().subscribe(function (response) {
+    }
+    ngOnInit() {
+        this.auth.getRoomsList().subscribe((response) => {
             if (response.hasOwnProperty("success") && response.hasOwnProperty("data")) {
-                _this.rooms = response.data;
+                this.rooms = response.data;
             }
             else {
-                _this.rooms = [];
+                this.rooms = [];
             }
         });
         this.dataSource.paginator = this.paginator;
         this.dataSource.sort = this.sort;
-    };
+    }
     // onrefresh
-    AdminchatroomComponent.prototype.onRefresh = function () {
-        var _this = this;
+    onRefresh() {
         console.log('it isw');
         this.showSpinner = true;
         this.mode = 'indeterminate';
-        setTimeout(function () {
-            _this.mode = 'determinate';
-            _this.showSpinner = false;
+        setTimeout(() => {
+            this.mode = 'determinate';
+            this.showSpinner = false;
         }, 1000);
-    };
-    AdminchatroomComponent.prototype.applyFilter = function (filterValue) {
+    }
+    applyFilter(filterValue) {
         this.dataSource.filter = filterValue.trim().toLowerCase();
         if (this.dataSource.paginator) {
             this.dataSource.paginator.firstPage();
         }
-    };
-    AdminchatroomComponent.ctorParameters = function () { return [
-        { type: _angular_material__WEBPACK_IMPORTED_MODULE_5__["MatDialog"] },
-        { type: _services_auth_service__WEBPACK_IMPORTED_MODULE_8__["AuthService"] },
-        { type: _adminchatroom_service__WEBPACK_IMPORTED_MODULE_9__["ChatRoomService"] }
-    ]; };
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_angular_material_paginator__WEBPACK_IMPORTED_MODULE_2__["MatPaginator"], { static: true })
-    ], AdminchatroomComponent.prototype, "paginator", void 0);
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_angular_material_sort__WEBPACK_IMPORTED_MODULE_3__["MatSort"], { static: true })
-    ], AdminchatroomComponent.prototype, "sort", void 0);
-    AdminchatroomComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-adminchatroom',
-            template: __webpack_require__(/*! raw-loader!./adminchatroom.component.html */ "./node_modules/raw-loader/index.js!./src/app/admin/adminchatroom/adminchatroom.component.html"),
-            styles: [__webpack_require__(/*! ./adminchatroom.component.css */ "./src/app/admin/adminchatroom/adminchatroom.component.css")]
-        })
-    ], AdminchatroomComponent);
-    return AdminchatroomComponent;
-}());
+    }
+};
+AdminchatroomComponent.ctorParameters = () => [
+    { type: _angular_material__WEBPACK_IMPORTED_MODULE_5__["MatDialog"] },
+    { type: _services_auth_service__WEBPACK_IMPORTED_MODULE_8__["AuthService"] },
+    { type: _adminchatroom_service__WEBPACK_IMPORTED_MODULE_9__["ChatRoomService"] }
+];
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_angular_material_paginator__WEBPACK_IMPORTED_MODULE_2__["MatPaginator"], { static: true })
+], AdminchatroomComponent.prototype, "paginator", void 0);
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_angular_material_sort__WEBPACK_IMPORTED_MODULE_3__["MatSort"], { static: true })
+], AdminchatroomComponent.prototype, "sort", void 0);
+AdminchatroomComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-adminchatroom',
+        template: __webpack_require__(/*! raw-loader!./adminchatroom.component.html */ "./node_modules/raw-loader/index.js!./src/app/admin/adminchatroom/adminchatroom.component.html"),
+        styles: [__webpack_require__(/*! ./adminchatroom.component.css */ "./src/app/admin/adminchatroom/adminchatroom.component.css")]
+    })
+], AdminchatroomComponent);
 
 
 
@@ -7263,25 +6962,24 @@ var AdminchatroomComponent = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ChatRoomService", function() { return ChatRoomService; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 
 
-var ChatRoomService = /** @class */ (function () {
-    function ChatRoomService() {
+let ChatRoomService = class ChatRoomService {
+    constructor() {
         this.ROOMS_DATA = [
             { name: 'market-masters', description: 'desc', type: 'public', plan: 'usd', coupon: 'N/A', sort: '' }
         ];
     }
-    ChatRoomService.prototype.getChatRooms = function () {
+    getChatRooms() {
         return this.ROOMS_DATA.slice();
-    };
-    ChatRoomService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
-            providedIn: 'root'
-        })
-    ], ChatRoomService);
-    return ChatRoomService;
-}());
+    }
+};
+ChatRoomService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], ChatRoomService);
 
 
 
@@ -7298,43 +6996,66 @@ var ChatRoomService = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DeleteChatroomComponent", function() { return DeleteChatroomComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _services_auth_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../services/auth.service */ "./src/app/services/auth.service.ts");
-/* harmony import */ var _angular_material_dialog__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material/dialog */ "./node_modules/@angular/material/esm5/dialog.es5.js");
+/* harmony import */ var _angular_material_dialog__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material/dialog */ "./node_modules/@angular/material/esm2015/dialog.js");
 
 
 
 
 
-var DeleteChatroomComponent = /** @class */ (function () {
-    function DeleteChatroomComponent(data, dialogRef, auth) {
+let DeleteChatroomComponent = class DeleteChatroomComponent {
+    constructor(data, dialogRef, auth) {
         this.data = data;
         this.dialogRef = dialogRef;
         this.auth = auth;
         console.log(this.data);
         this.room = this.data;
     }
-    DeleteChatroomComponent.prototype.ngOnInit = function () { };
-    DeleteChatroomComponent.prototype.deleteChatRoom = function () {
+    ngOnInit() { }
+    deleteChatRoom() {
         console.log(this.data);
         this.auth.deleteChatRoom(this.data._id);
-    };
-    DeleteChatroomComponent.prototype.closeDialog = function () {
+    }
+    closeDialog() {
         this.dialogRef.closeAll();
-    };
-    DeleteChatroomComponent.ctorParameters = function () { return [
-        { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [_angular_material_dialog__WEBPACK_IMPORTED_MODULE_3__["MAT_DIALOG_DATA"],] }] },
-        { type: _angular_material_dialog__WEBPACK_IMPORTED_MODULE_3__["MatDialog"] },
-        { type: _services_auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"] }
-    ]; };
-    DeleteChatroomComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            template: "\n  <div class=\"modal-content new_user_dialog chatroom_dialog\">\n   <div class=\"modal-header\">\n      <h4 class=\"modal-title\">\n      <button  mat-dialog-close  class=\"close\">\n          <span aria-hidden=\"true\">\u00D7</span>\n      </button> \n         # {{room.title}}\n      </h4>\n   </div>\n   <div class=\"modal-body wrap-div\">\n      <div class=\"row\">\n          <div class=\"col-xs-12\">\n              <p>Are your sure you want to delete Room : <b>{{room.title}}</b></p>\n              <p>Once you delete the room, it cannot be recovered and you will loose all the data in the room, including messages, photos, links and other media content.</p>\n              <p>Are you sure?</p>\n          </div>\n      </div>\n   </div>\n    <div class=\"modal-footer wrap-div\">\n        <button mat-dialog-close  class=\"btn btn-default pull-left\" type=\"button\" (click)=\"closeDialog()\">Cancel</button>\n        <button (click)=\"deleteChatRoom()\" class=\"btn btn-blue\">Confirm Delete</button>\n    </div>\n</div>\n  "
-        }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](0, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_angular_material_dialog__WEBPACK_IMPORTED_MODULE_3__["MAT_DIALOG_DATA"]))
-    ], DeleteChatroomComponent);
-    return DeleteChatroomComponent;
-}());
+    }
+};
+DeleteChatroomComponent.ctorParameters = () => [
+    { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [_angular_material_dialog__WEBPACK_IMPORTED_MODULE_3__["MAT_DIALOG_DATA"],] }] },
+    { type: _angular_material_dialog__WEBPACK_IMPORTED_MODULE_3__["MatDialog"] },
+    { type: _services_auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"] }
+];
+DeleteChatroomComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        template: `
+  <div class="modal-content new_user_dialog chatroom_dialog">
+   <div class="modal-header">
+      <h4 class="modal-title">
+      <button  mat-dialog-close  class="close">
+          <span aria-hidden="true">×</span>
+      </button> 
+         # {{room.title}}
+      </h4>
+   </div>
+   <div class="modal-body wrap-div">
+      <div class="row">
+          <div class="col-xs-12">
+              <p>Are your sure you want to delete Room : <b>{{room.title}}</b></p>
+              <p>Once you delete the room, it cannot be recovered and you will loose all the data in the room, including messages, photos, links and other media content.</p>
+              <p>Are you sure?</p>
+          </div>
+      </div>
+   </div>
+    <div class="modal-footer wrap-div">
+        <button mat-dialog-close  class="btn btn-default pull-left" type="button" (click)="closeDialog()">Cancel</button>
+        <button (click)="deleteChatRoom()" class="btn btn-blue">Confirm Delete</button>
+    </div>
+</div>
+  `
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](0, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_angular_material_dialog__WEBPACK_IMPORTED_MODULE_3__["MAT_DIALOG_DATA"]))
+], DeleteChatroomComponent);
 
 
 
@@ -7351,17 +7072,17 @@ var DeleteChatroomComponent = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NewChatroomComponent", function() { return NewChatroomComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
 /* harmony import */ var _services_auth_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../services/auth.service */ "./src/app/services/auth.service.ts");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
 
 
 
 
 
-var NewChatroomComponent = /** @class */ (function () {
-    function NewChatroomComponent(auth, dialogRef) {
+let NewChatroomComponent = class NewChatroomComponent {
+    constructor(auth, dialogRef) {
         this.auth = auth;
         this.dialogRef = dialogRef;
         this.status = 'type1';
@@ -7374,31 +7095,30 @@ var NewChatroomComponent = /** @class */ (function () {
             post_access: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]("")
         });
     }
-    NewChatroomComponent.prototype.createChatRoom = function () {
-        var _this = this;
+    createChatRoom() {
         console.log(this.newChatRoom.value);
-        var chatRoomData = this.validate();
+        let chatRoomData = this.validate();
         if (chatRoomData) {
-            this.auth.createNewRoom(this.newChatRoom.value).subscribe(function (data) {
+            this.auth.createNewRoom(this.newChatRoom.value).subscribe((data) => {
                 if (data && data.hasOwnProperty('success')) {
                     console.log("room created", data);
-                    _this.dialogRef.closeAll();
+                    this.dialogRef.closeAll();
                     location.reload();
                 }
                 else {
-                    _this.dialogRef.closeAll();
+                    this.dialogRef.closeAll();
                 }
             });
         }
         else {
             console.log("validation failed...", this.errorMessage);
         }
-    };
-    NewChatroomComponent.prototype.closeDialog = function () {
+    }
+    closeDialog() {
         this.dialogRef.closeAll();
-    };
-    NewChatroomComponent.prototype.validate = function () {
-        var data = this.newChatRoom.value;
+    }
+    validate() {
+        let data = this.newChatRoom.value;
         if (!data.title) {
             this.errorMessage = { message: "Please enter a valid room title" };
             return false;
@@ -7416,18 +7136,81 @@ var NewChatroomComponent = /** @class */ (function () {
             return false;
         }
         return true;
-    };
-    NewChatroomComponent.ctorParameters = function () { return [
-        { type: _services_auth_service__WEBPACK_IMPORTED_MODULE_3__["AuthService"] },
-        { type: _angular_material__WEBPACK_IMPORTED_MODULE_4__["MatDialog"] }
-    ]; };
-    NewChatroomComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            template: "\n  <div class=\"modal-content new_user_dialog chatroom_dialog\">\n   <div class=\"modal-header\">\n      <h4 class=\"modal-title\">\n         <button type=\"button\" class=\"close\" aria-label=\"Close\">\n         <span aria-hidden=\"true\" (click)=\"closeDialog()\">\u00D7</span>\n         </button>\n         # New Chatroom\n      </h4>\n   </div>\n   <form [formGroup]= \"newChatRoom\" (ngSubmit)=\"createChatRoom()\">\n      <div class=\"modal-body wrap-div\">\n      <div class=\"row\">\n          <div class=\"col-xs-12\">\n              <mat-form-field>\n                <input matInput placeholder=\"Name\" value=\"\" formControlName=\"title\" name=\"title\" style=\"cursor: text;\" required>\n              </mat-form-field>\n          </div>\n      </div>\n      <div class=\"row\">\n          <div class=\"col-xs-12\">\n              <mat-form-field>\n                <input matInput placeholder=\"Descriptions\" value=\"\" formControlName=\"description\" name=\"description\" style=\"cursor: text;\" required>\n              </mat-form-field>\n          </div>\n      </div>\n      <div class=\"row\">\n            <div class=\"col-xs-12\">\n                <mat-form-field>\n                    <mat-label>Type</mat-label>\n                    <mat-select [(value)]=\"status\" formControlName=\"status\">\n                        <mat-option value=\"public\">Public - The room is accessible to everybody</mat-option>\n                        <mat-option value=\"premium\">Premium - The room is associated with at least one billing plan</mat-option>\n                        <mat-option value=\"private\">Private - Only selected users have access</mat-option>\n                    </mat-select>\n                </mat-form-field>\n            </div>\n        </div>\n        <div class=\"row\">\n            <div class=\"col-xs-12\">\n            <h5>Options</h5>\n                    <mat-checkbox formControlName=\"is_visible\" >The room is visible -</mat-checkbox>\n                        <span class=\"text-muted\">\n                            <i>The room is displayed on the left sidebar</i>\n                        </span>\n            </div>\n        </div>\n        <div class=\"row\">\n            <div class=\"col-xs-12\">\n            <h5>Who is able to post messages:</h5>\n                <mat-radio-group aria-label=\"Select an option\" formControlName=\"post_access\">\n                    <mat-radio-button class=\"wrap-div \" value=\"1\">everyone</mat-radio-button>\n                    <mat-radio-button class=\"wrap-div\" value=\"2\"> only admins/moderators/instructors</mat-radio-button>\n                    <mat-radio-button class=\"wrap-div\" value=\"3\"> only admins/moderators/instructors and premium users</mat-radio-button>\n                </mat-radio-group>\n            </div>\n        </div>\n      </div>\n      <div class=\"modal-footer wrap-div\">\n         <button autofocus=\"\" class=\"btn btn-default pull-left\" type=\"button\" (click)=\"closeDialog()\">Cancel</button>\n         <button class=\"btn btn-blue\">Create</button>\n      </div>\n   </form>\n</div>\n  "
-        })
-    ], NewChatroomComponent);
-    return NewChatroomComponent;
-}());
+    }
+};
+NewChatroomComponent.ctorParameters = () => [
+    { type: _services_auth_service__WEBPACK_IMPORTED_MODULE_3__["AuthService"] },
+    { type: _angular_material__WEBPACK_IMPORTED_MODULE_4__["MatDialog"] }
+];
+NewChatroomComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        template: `
+  <div class="modal-content new_user_dialog chatroom_dialog">
+   <div class="modal-header">
+      <h4 class="modal-title">
+         <button type="button" class="close" aria-label="Close">
+         <span aria-hidden="true" (click)="closeDialog()">×</span>
+         </button>
+         # New Chatroom
+      </h4>
+   </div>
+   <form [formGroup]= "newChatRoom" (ngSubmit)="createChatRoom()">
+      <div class="modal-body wrap-div">
+      <div class="row">
+          <div class="col-xs-12">
+              <mat-form-field>
+                <input matInput placeholder="Name" value="" formControlName="title" name="title" style="cursor: text;" required>
+              </mat-form-field>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-xs-12">
+              <mat-form-field>
+                <input matInput placeholder="Descriptions" value="" formControlName="description" name="description" style="cursor: text;" required>
+              </mat-form-field>
+          </div>
+      </div>
+      <div class="row">
+            <div class="col-xs-12">
+                <mat-form-field>
+                    <mat-label>Type</mat-label>
+                    <mat-select [(value)]="status" formControlName="status">
+                        <mat-option value="public">Public - The room is accessible to everybody</mat-option>
+                        <mat-option value="premium">Premium - The room is associated with at least one billing plan</mat-option>
+                        <mat-option value="private">Private - Only selected users have access</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+            <h5>Options</h5>
+                    <mat-checkbox formControlName="is_visible" >The room is visible -</mat-checkbox>
+                        <span class="text-muted">
+                            <i>The room is displayed on the left sidebar</i>
+                        </span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+            <h5>Who is able to post messages:</h5>
+                <mat-radio-group aria-label="Select an option" formControlName="post_access">
+                    <mat-radio-button class="wrap-div " value="1">everyone</mat-radio-button>
+                    <mat-radio-button class="wrap-div" value="2"> only admins/moderators/instructors</mat-radio-button>
+                    <mat-radio-button class="wrap-div" value="3"> only admins/moderators/instructors and premium users</mat-radio-button>
+                </mat-radio-group>
+            </div>
+        </div>
+      </div>
+      <div class="modal-footer wrap-div">
+         <button autofocus="" class="btn btn-default pull-left" type="button" (click)="closeDialog()">Cancel</button>
+         <button class="btn btn-blue">Create</button>
+      </div>
+   </form>
+</div>
+  `
+    })
+], NewChatroomComponent);
 
 
 
@@ -7455,10 +7238,10 @@ module.exports = "table {\n    width: 100%;\n  }\n  \n  .mat-form-field {\n    f
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdmincomplianceComponent", function() { return AdmincomplianceComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_material_paginator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material/paginator */ "./node_modules/@angular/material/esm5/paginator.es5.js");
-/* harmony import */ var _angular_material_sort__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material/sort */ "./node_modules/@angular/material/esm5/sort.es5.js");
-/* harmony import */ var _angular_material_table__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material/table */ "./node_modules/@angular/material/esm5/table.es5.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_material_paginator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material/paginator */ "./node_modules/@angular/material/esm2015/paginator.js");
+/* harmony import */ var _angular_material_sort__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material/sort */ "./node_modules/@angular/material/esm2015/sort.js");
+/* harmony import */ var _angular_material_table__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material/table */ "./node_modules/@angular/material/esm2015/table.js");
 /* harmony import */ var _admincompliance_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./admincompliance.service */ "./src/app/admin/admincompliance/admincompliance.service.ts");
 
 
@@ -7466,52 +7249,50 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var AdmincomplianceComponent = /** @class */ (function () {
-    function AdmincomplianceComponent(complianceService) {
+let AdmincomplianceComponent = class AdmincomplianceComponent {
+    constructor(complianceService) {
         this.complianceService = complianceService;
         this.mode = 'determinate';
         this.showSpinner = false;
         this.displayedColumns = ['date', 'user', 'ip', 'report'];
         this.dataSource = new _angular_material_table__WEBPACK_IMPORTED_MODULE_4__["MatTableDataSource"](this.complianceService.getCompliances());
     }
-    AdmincomplianceComponent.prototype.ngOnInit = function () {
+    ngOnInit() {
         this.dataSource.paginator = this.paginator;
         this.dataSource.sort = this.sort;
-    };
+    }
     // onrefresh
-    AdmincomplianceComponent.prototype.onRefresh = function () {
-        var _this = this;
+    onRefresh() {
         this.showSpinner = true;
         this.mode = 'indeterminate';
-        setTimeout(function () {
-            _this.mode = 'determinate';
-            _this.showSpinner = false;
+        setTimeout(() => {
+            this.mode = 'determinate';
+            this.showSpinner = false;
         }, 1000);
-    };
-    AdmincomplianceComponent.prototype.applyFilter = function (filterValue) {
+    }
+    applyFilter(filterValue) {
         this.dataSource.filter = filterValue.trim().toLowerCase();
         if (this.dataSource.paginator) {
             this.dataSource.paginator.firstPage();
         }
-    };
-    AdmincomplianceComponent.ctorParameters = function () { return [
-        { type: _admincompliance_service__WEBPACK_IMPORTED_MODULE_5__["ComplianceService"] }
-    ]; };
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_angular_material_paginator__WEBPACK_IMPORTED_MODULE_2__["MatPaginator"], { static: true })
-    ], AdmincomplianceComponent.prototype, "paginator", void 0);
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_angular_material_sort__WEBPACK_IMPORTED_MODULE_3__["MatSort"], { static: true })
-    ], AdmincomplianceComponent.prototype, "sort", void 0);
-    AdmincomplianceComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-admincompliance',
-            template: __webpack_require__(/*! raw-loader!./admincompliance.component.html */ "./node_modules/raw-loader/index.js!./src/app/admin/admincompliance/admincompliance.component.html"),
-            styles: [__webpack_require__(/*! ./admincompliance.component.css */ "./src/app/admin/admincompliance/admincompliance.component.css")]
-        })
-    ], AdmincomplianceComponent);
-    return AdmincomplianceComponent;
-}());
+    }
+};
+AdmincomplianceComponent.ctorParameters = () => [
+    { type: _admincompliance_service__WEBPACK_IMPORTED_MODULE_5__["ComplianceService"] }
+];
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_angular_material_paginator__WEBPACK_IMPORTED_MODULE_2__["MatPaginator"], { static: true })
+], AdmincomplianceComponent.prototype, "paginator", void 0);
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_angular_material_sort__WEBPACK_IMPORTED_MODULE_3__["MatSort"], { static: true })
+], AdmincomplianceComponent.prototype, "sort", void 0);
+AdmincomplianceComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-admincompliance',
+        template: __webpack_require__(/*! raw-loader!./admincompliance.component.html */ "./node_modules/raw-loader/index.js!./src/app/admin/admincompliance/admincompliance.component.html"),
+        styles: [__webpack_require__(/*! ./admincompliance.component.css */ "./src/app/admin/admincompliance/admincompliance.component.css")]
+    })
+], AdmincomplianceComponent);
 
 
 
@@ -7528,11 +7309,11 @@ var AdmincomplianceComponent = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ComplianceService", function() { return ComplianceService; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 
 
-var ComplianceService = /** @class */ (function () {
-    function ComplianceService() {
+let ComplianceService = class ComplianceService {
+    constructor() {
         this.COMPLIANCE_DATA = [
         // {
         //     date: '',
@@ -7542,16 +7323,15 @@ var ComplianceService = /** @class */ (function () {
         // }
         ];
     }
-    ComplianceService.prototype.getCompliances = function () {
+    getCompliances() {
         return this.COMPLIANCE_DATA.slice();
-    };
-    ComplianceService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
-            providedIn: 'root'
-        })
-    ], ComplianceService);
-    return ComplianceService;
-}());
+    }
+};
+ComplianceService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], ComplianceService);
 
 
 
@@ -7564,7 +7344,7 @@ var ComplianceService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "table {\n  width: 100%;\n}\n\n.mat-form-field {\n  font-size: 14px;\n  width: 100%;\n}\n\nth{\n  font-weight: bold;\n}\n\nth, td {\n  width: 220px;\n}\n\nth:nth-child(1), tr td:nth-child(1) {\n  width: 50px;\n  max-width: 50px;\n  min-width: 50px;\n}\n\nth.mat-column-position, td.mat-column-position {\n  padding-left: 8px;\n}\n\ntd, th {\n  border-right: 1px solid #e0e0e0;\n  padding: 5px 10px!important;\n}\n\ntd:last-child, th:last-child {\n  text-align: right;\n  min-width: 120px;\n  width: 120px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYWRtaW4vYWRtaW5jb250YWN0cy9hZG1pbmNvbnRhY3RzLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxXQUFXO0FBQ2I7O0FBRUE7RUFDRSxlQUFlO0VBQ2YsV0FBVztBQUNiOztBQUNBO0VBQ0UsaUJBQWlCO0FBQ25COztBQUVBO0VBQ0UsWUFBWTtBQUNkOztBQUNBO0VBQ0UsV0FBVztFQUNYLGVBQWU7RUFDZixlQUFlO0FBQ2pCOztBQUNBO0VBQ0UsaUJBQWlCO0FBQ25COztBQUVBO0VBQ0UsK0JBQStCO0VBQy9CLDJCQUEyQjtBQUM3Qjs7QUFDQTtFQUNFLGlCQUFpQjtFQUNqQixnQkFBZ0I7RUFDaEIsWUFBWTtBQUNkIiwiZmlsZSI6InNyYy9hcHAvYWRtaW4vYWRtaW5jb250YWN0cy9hZG1pbmNvbnRhY3RzLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJ0YWJsZSB7XG4gIHdpZHRoOiAxMDAlO1xufVxuXG4ubWF0LWZvcm0tZmllbGQge1xuICBmb250LXNpemU6IDE0cHg7XG4gIHdpZHRoOiAxMDAlO1xufVxudGh7XG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xufVxuXG50aCwgdGQge1xuICB3aWR0aDogMjIwcHg7XG59XG50aDpudGgtY2hpbGQoMSksIHRyIHRkOm50aC1jaGlsZCgxKSB7XG4gIHdpZHRoOiA1MHB4O1xuICBtYXgtd2lkdGg6IDUwcHg7XG4gIG1pbi13aWR0aDogNTBweDtcbn1cbnRoLm1hdC1jb2x1bW4tcG9zaXRpb24sIHRkLm1hdC1jb2x1bW4tcG9zaXRpb24ge1xuICBwYWRkaW5nLWxlZnQ6IDhweDtcbn1cblxudGQsIHRoIHtcbiAgYm9yZGVyLXJpZ2h0OiAxcHggc29saWQgI2UwZTBlMDtcbiAgcGFkZGluZzogNXB4IDEwcHghaW1wb3J0YW50O1xufVxudGQ6bGFzdC1jaGlsZCwgdGg6bGFzdC1jaGlsZCB7XG4gIHRleHQtYWxpZ246IHJpZ2h0O1xuICBtaW4td2lkdGg6IDEyMHB4O1xuICB3aWR0aDogMTIwcHg7XG59Il19 */"
+module.exports = "table {\n  width: 100%;\n}\n\n.mat-form-field {\n  font-size: 14px;\n  width: 100%;\n}\n\nth{\n  font-weight: bold;\n}\n\nth, td {\n  width: 220px;\n}\n\nth:nth-child(1), tr td:nth-child(1) {\n  width: 50px;\n  max-width: 50px;\n  min-width: 50px;\n}\n\nth.mat-column-position, td.mat-column-position {\n  padding-left: 8px;\n}\n\ntd, th {\n  border-right: 1px solid #e0e0e0;\n  padding: 5px 10px!important;\n}\n\ntd:last-child, th:last-child {\n  text-align: right;\n  min-width: 120px;\n  width: 120px;\n}\n\n.adminClass {\n  font-weight: bold\n }\n\n/* editContacts */\n\n.media-body-left {\n  float: left;\n  width: 85px;\n  vertical-align: top;\n  border-radius: 50%;\n  overflow: hidden;\n  height: 85px;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n}\n\n.media-body-left img{\n  border-radius: 50%;\n  width: 100%;\n}\n\n.media-body-right {\n  display: inline-block;\n  vertical-align: top;\n  margin-left: 10px;\n}\n\n.modal-header button{\n  color: #888;\n}\n\n.profile_dialog mat-form-field{\n  width: 100%;\n}\n\n.profile_dialog .col-sm-12 {\npadding: 0 15px;\n}\n\n.profile_dialog .row{\n  margin: 0!important;\n  padding: 0!important;\n}\n\n.profile_dialog .col-sm-7 {\n  padding: 0 15px;\n}\n\n.profile_dialog .col-sm-5 {\n  padding: 0 15px;\n}\n\n.profile_dialog .col-sm-4 {\n  padding: 0 15px;\n}\n\n.media-body-right p.info {\n  font-size: 12px;\n  color: #888!important;\n  margin: 0;\n}\n\n.media-body-right h4 {\n  margin-top: 5px;\n  margin-bottom: 7px;\n}\n\n.media-body-right p{\n  margin-bottom: 7px;\n}\n\n.security .alert-info{\n  background: #1A83F5!important;\n  border: #1A83F5!important;\n}\n\n.security .alert-info p{\n  color: #fff!important;\n}\n\ntable{\n  width: 100%;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYWRtaW4vYWRtaW5jb250YWN0cy9hZG1pbmNvbnRhY3RzLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxXQUFXO0FBQ2I7O0FBRUE7RUFDRSxlQUFlO0VBQ2YsV0FBVztBQUNiOztBQUNBO0VBQ0UsaUJBQWlCO0FBQ25COztBQUVBO0VBQ0UsWUFBWTtBQUNkOztBQUNBO0VBQ0UsV0FBVztFQUNYLGVBQWU7RUFDZixlQUFlO0FBQ2pCOztBQUNBO0VBQ0UsaUJBQWlCO0FBQ25COztBQUVBO0VBQ0UsK0JBQStCO0VBQy9CLDJCQUEyQjtBQUM3Qjs7QUFDQTtFQUNFLGlCQUFpQjtFQUNqQixnQkFBZ0I7RUFDaEIsWUFBWTtBQUNkOztBQUNBO0VBQ0U7Q0FDRDs7QUFDQSxpQkFBaUI7O0FBQ2xCO0VBQ0UsV0FBVztFQUNYLFdBQVc7RUFDWCxtQkFBbUI7RUFDbkIsa0JBQWtCO0VBQ2xCLGdCQUFnQjtFQUNoQixZQUFZO0VBQ1osb0JBQWE7RUFBYixhQUFhO0VBQ2IseUJBQW1CO1VBQW5CLG1CQUFtQjtBQUNyQjs7QUFDQTtFQUNFLGtCQUFrQjtFQUNsQixXQUFXO0FBQ2I7O0FBQ0E7RUFDRSxxQkFBcUI7RUFDckIsbUJBQW1CO0VBQ25CLGlCQUFpQjtBQUNuQjs7QUFDQTtFQUNFLFdBQVc7QUFDYjs7QUFDQTtFQUNFLFdBQVc7QUFDYjs7QUFDQTtBQUNBLGVBQWU7QUFDZjs7QUFDQTtFQUNFLG1CQUFtQjtFQUNuQixvQkFBb0I7QUFDdEI7O0FBQ0E7RUFDRSxlQUFlO0FBQ2pCOztBQUNBO0VBQ0UsZUFBZTtBQUNqQjs7QUFDQTtFQUNFLGVBQWU7QUFDakI7O0FBQ0E7RUFDRSxlQUFlO0VBQ2YscUJBQXFCO0VBQ3JCLFNBQVM7QUFDWDs7QUFDQTtFQUNFLGVBQWU7RUFDZixrQkFBa0I7QUFDcEI7O0FBQ0E7RUFDRSxrQkFBa0I7QUFDcEI7O0FBQ0E7RUFDRSw2QkFBNkI7RUFDN0IseUJBQXlCO0FBQzNCOztBQUNBO0VBQ0UscUJBQXFCO0FBQ3ZCOztBQUNBO0VBQ0UsV0FBVztBQUNiIiwiZmlsZSI6InNyYy9hcHAvYWRtaW4vYWRtaW5jb250YWN0cy9hZG1pbmNvbnRhY3RzLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJ0YWJsZSB7XG4gIHdpZHRoOiAxMDAlO1xufVxuXG4ubWF0LWZvcm0tZmllbGQge1xuICBmb250LXNpemU6IDE0cHg7XG4gIHdpZHRoOiAxMDAlO1xufVxudGh7XG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xufVxuXG50aCwgdGQge1xuICB3aWR0aDogMjIwcHg7XG59XG50aDpudGgtY2hpbGQoMSksIHRyIHRkOm50aC1jaGlsZCgxKSB7XG4gIHdpZHRoOiA1MHB4O1xuICBtYXgtd2lkdGg6IDUwcHg7XG4gIG1pbi13aWR0aDogNTBweDtcbn1cbnRoLm1hdC1jb2x1bW4tcG9zaXRpb24sIHRkLm1hdC1jb2x1bW4tcG9zaXRpb24ge1xuICBwYWRkaW5nLWxlZnQ6IDhweDtcbn1cblxudGQsIHRoIHtcbiAgYm9yZGVyLXJpZ2h0OiAxcHggc29saWQgI2UwZTBlMDtcbiAgcGFkZGluZzogNXB4IDEwcHghaW1wb3J0YW50O1xufVxudGQ6bGFzdC1jaGlsZCwgdGg6bGFzdC1jaGlsZCB7XG4gIHRleHQtYWxpZ246IHJpZ2h0O1xuICBtaW4td2lkdGg6IDEyMHB4O1xuICB3aWR0aDogMTIwcHg7XG59XG4uYWRtaW5DbGFzcyB7XG4gIGZvbnQtd2VpZ2h0OiBib2xkXG4gfVxuIC8qIGVkaXRDb250YWN0cyAqL1xuLm1lZGlhLWJvZHktbGVmdCB7XG4gIGZsb2F0OiBsZWZ0O1xuICB3aWR0aDogODVweDtcbiAgdmVydGljYWwtYWxpZ246IHRvcDtcbiAgYm9yZGVyLXJhZGl1czogNTAlO1xuICBvdmVyZmxvdzogaGlkZGVuO1xuICBoZWlnaHQ6IDg1cHg7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4ubWVkaWEtYm9keS1sZWZ0IGltZ3tcbiAgYm9yZGVyLXJhZGl1czogNTAlO1xuICB3aWR0aDogMTAwJTtcbn1cbi5tZWRpYS1ib2R5LXJpZ2h0IHtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB2ZXJ0aWNhbC1hbGlnbjogdG9wO1xuICBtYXJnaW4tbGVmdDogMTBweDtcbn1cbi5tb2RhbC1oZWFkZXIgYnV0dG9ue1xuICBjb2xvcjogIzg4ODtcbn0gICBcbi5wcm9maWxlX2RpYWxvZyBtYXQtZm9ybS1maWVsZHtcbiAgd2lkdGg6IDEwMCU7XG59XG4ucHJvZmlsZV9kaWFsb2cgLmNvbC1zbS0xMiB7XG5wYWRkaW5nOiAwIDE1cHg7XG59XG4ucHJvZmlsZV9kaWFsb2cgLnJvd3tcbiAgbWFyZ2luOiAwIWltcG9ydGFudDtcbiAgcGFkZGluZzogMCFpbXBvcnRhbnQ7XG59XG4ucHJvZmlsZV9kaWFsb2cgLmNvbC1zbS03IHtcbiAgcGFkZGluZzogMCAxNXB4O1xufVxuLnByb2ZpbGVfZGlhbG9nIC5jb2wtc20tNSB7XG4gIHBhZGRpbmc6IDAgMTVweDtcbn1cbi5wcm9maWxlX2RpYWxvZyAuY29sLXNtLTQge1xuICBwYWRkaW5nOiAwIDE1cHg7XG59XG4ubWVkaWEtYm9keS1yaWdodCBwLmluZm8ge1xuICBmb250LXNpemU6IDEycHg7XG4gIGNvbG9yOiAjODg4IWltcG9ydGFudDtcbiAgbWFyZ2luOiAwO1xufVxuLm1lZGlhLWJvZHktcmlnaHQgaDQge1xuICBtYXJnaW4tdG9wOiA1cHg7XG4gIG1hcmdpbi1ib3R0b206IDdweDtcbn1cbi5tZWRpYS1ib2R5LXJpZ2h0IHB7XG4gIG1hcmdpbi1ib3R0b206IDdweDtcbn1cbi5zZWN1cml0eSAuYWxlcnQtaW5mb3tcbiAgYmFja2dyb3VuZDogIzFBODNGNSFpbXBvcnRhbnQ7XG4gIGJvcmRlcjogIzFBODNGNSFpbXBvcnRhbnQ7XG59XG4uc2VjdXJpdHkgLmFsZXJ0LWluZm8gcHtcbiAgY29sb3I6ICNmZmYhaW1wb3J0YW50O1xufVxudGFibGV7XG4gIHdpZHRoOiAxMDAlO1xufSJdfQ== */"
 
 /***/ }),
 
@@ -7572,21 +7352,28 @@ module.exports = "table {\n  width: 100%;\n}\n\n.mat-form-field {\n  font-size: 
 /*!****************************************************************!*\
   !*** ./src/app/admin/admincontacts/admincontacts.component.ts ***!
   \****************************************************************/
-/*! exports provided: AdmincontactsComponent */
+/*! exports provided: AdmincontactsComponent, EditContactComponent, DeleteContactComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdmincontactsComponent", function() { return AdmincontactsComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EditContactComponent", function() { return EditContactComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DeleteContactComponent", function() { return DeleteContactComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_material_paginator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material/paginator */ "./node_modules/@angular/material/esm5/paginator.es5.js");
-/* harmony import */ var _angular_material_sort__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material/sort */ "./node_modules/@angular/material/esm5/sort.es5.js");
-/* harmony import */ var _angular_material_table__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material/table */ "./node_modules/@angular/material/esm5/table.es5.js");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_material_paginator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material/paginator */ "./node_modules/@angular/material/esm2015/paginator.js");
+/* harmony import */ var _angular_material_sort__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material/sort */ "./node_modules/@angular/material/esm2015/sort.js");
+/* harmony import */ var _angular_material_table__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material/table */ "./node_modules/@angular/material/esm2015/table.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
 /* harmony import */ var _new_contact_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./new-contact.component */ "./src/app/admin/admincontacts/new-contact.component.ts");
 /* harmony import */ var _invite_contact_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./invite-contact.component */ "./src/app/admin/admincontacts/invite-contact.component.ts");
 /* harmony import */ var _admincontacts_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./admincontacts.service */ "./src/app/admin/admincontacts/admincontacts.service.ts");
+/* harmony import */ var _services_auth_service__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../services/auth.service */ "./src/app/services/auth.service.ts");
+/* harmony import */ var src_app_services_user_service__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! src/app/services/user.service */ "./src/app/services/user.service.ts");
+/* harmony import */ var angular_web_storage__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! angular-web-storage */ "./node_modules/angular-web-storage/fesm2015/angular-web-storage.js");
+/* harmony import */ var _adminsettings_new_avatar_service__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../adminsettings/new-avatar.service */ "./src/app/admin/adminsettings/new-avatar.service.ts");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
 
 
 
@@ -7596,65 +7383,173 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var AdmincontactsComponent = /** @class */ (function () {
-    function AdmincontactsComponent(dialog, contactsService) {
+
+
+
+
+
+let AdmincontactsComponent = class AdmincontactsComponent {
+    constructor(dialog, contactsService, auth) {
         this.dialog = dialog;
         this.contactsService = contactsService;
+        this.auth = auth;
         this.mode = 'determinate';
         this.showSpinner = false;
         this.searchActive = false;
         this.displayedColumns = ['img', 'fullname', 'email', 'phone', 'subscription', 'type', 'devices', 'registered', 'lastActivity', 'action'];
-        this.dataSource = new _angular_material_table__WEBPACK_IMPORTED_MODULE_4__["MatTableDataSource"](this.contactsService.getContacts());
+        // dataSource: MatTableDataSource<any[]>
+        this.dataSource = new _angular_material_table__WEBPACK_IMPORTED_MODULE_4__["MatTableDataSource"]([
+        // {firstname: 'mohit kumar', email: 'mohit@gmail.com', phone_number: 8783823748, created_at: '2020-04-11 10:15:11', updated_at:'2020-06-17 10:53:34'},
+        // {firstname: 'kuldeep spall', email: 'spallkuldeep@gmail.com', phone_number: 8783823748, created_at: '2020-04-11 10:15:11', updated_at:'2020-06-17 10:53:34'},
+        // {firstname: 'johan smith', email: 'smith@gmail.com', phone_number: 8783823748, created_at: '2020-04-11 10:15:11', updated_at:'2020-06-17 10:53:34'},
+        // {firstname: 'thomas jordan', email: 'thomas121@gmail.com', phone_number: 8783823748, created_at: '2020-04-11 10:15:11', updated_at:'2020-06-17 10:53:34'}
+        ]);
+        this.dataSourceEmpty = true;
     }
-    AdmincontactsComponent.prototype.openAddFileDialog = function () {
-        var fileNameDialogRef = this.dialog.open(_new_contact_component__WEBPACK_IMPORTED_MODULE_6__["NewContactComponent"]);
-    };
-    AdmincontactsComponent.prototype.openInviteContactDialog = function () {
-        var fileNameDialogRef1 = this.dialog.open(_invite_contact_component__WEBPACK_IMPORTED_MODULE_7__["InviteContactComponent"]);
-    };
-    AdmincontactsComponent.prototype.ngOnInit = function () {
+    openAddFileDialog() {
+        const fileNameDialogRef = this.dialog.open(_new_contact_component__WEBPACK_IMPORTED_MODULE_6__["NewContactComponent"]);
+    }
+    openEditDialog(contact) {
+        const fileNameDialogRef = this.dialog.open(EditContactComponent, {
+            width: '600px',
+            data: contact
+        });
+    }
+    openDeleteDialog(contact) {
+        const fileNameDialogRef = this.dialog.open(DeleteContactComponent, {
+            data: contact
+        });
+    }
+    openInviteContactDialog() {
+        const fileNameDialogRef1 = this.dialog.open(_invite_contact_component__WEBPACK_IMPORTED_MODULE_7__["InviteContactComponent"]);
+    }
+    ngOnInit() {
+        this.loadContacts();
         this.dataSource.paginator = this.paginator;
         this.dataSource.sort = this.sort;
-    };
-    AdmincontactsComponent.prototype.applyFilter = function (filterValue) {
+    }
+    loadContacts() {
+        this.showSpinner = true;
+        this.mode = 'indeterminate';
+        this.auth.getAllSystemUsers().subscribe((response) => {
+            if (response.success) {
+                this.showSpinner = false;
+                this.mode = 'determinate';
+                if (response.data.length > 0) {
+                    this.dataSourceEmpty = false;
+                }
+                this.dataSource = new _angular_material_table__WEBPACK_IMPORTED_MODULE_4__["MatTableDataSource"](response.data);
+            }
+            else {
+                this.showSpinner = false;
+                this.mode = 'determinate';
+            }
+        });
+    }
+    // ALTER TABLE users ADD COLUMN created_date NOT NULL DEFAULT 'foo';
+    applyFilter(filterValue) {
         this.dataSource.filter = filterValue.trim().toLowerCase();
         if (this.dataSource.paginator) {
             this.dataSource.paginator.firstPage();
         }
-    };
-    // onrefresh
-    AdmincontactsComponent.prototype.onRefresh = function () {
-        var _this = this;
-        this.showSpinner = true;
-        this.mode = 'indeterminate';
-        setTimeout(function () {
-            _this.mode = 'determinate';
-            _this.showSpinner = false;
-        }, 1000);
-    };
+    }
     // filter
-    AdmincontactsComponent.prototype.onActiveSearch = function () {
+    onActiveSearch() {
         this.searchActive = !this.searchActive;
-    };
-    AdmincontactsComponent.ctorParameters = function () { return [
-        { type: _angular_material__WEBPACK_IMPORTED_MODULE_5__["MatDialog"] },
-        { type: _admincontacts_service__WEBPACK_IMPORTED_MODULE_8__["ContactsService"] }
-    ]; };
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_angular_material_paginator__WEBPACK_IMPORTED_MODULE_2__["MatPaginator"], { static: true })
-    ], AdmincontactsComponent.prototype, "paginator", void 0);
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_angular_material_sort__WEBPACK_IMPORTED_MODULE_3__["MatSort"], { static: true })
-    ], AdmincontactsComponent.prototype, "sort", void 0);
-    AdmincontactsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-admincontactss',
-            template: __webpack_require__(/*! raw-loader!./admincontacts.component.html */ "./node_modules/raw-loader/index.js!./src/app/admin/admincontacts/admincontacts.component.html"),
-            styles: [__webpack_require__(/*! ./admincontacts.component.css */ "./src/app/admin/admincontacts/admincontacts.component.css")]
-        })
-    ], AdmincontactsComponent);
-    return AdmincontactsComponent;
-}());
+    }
+};
+AdmincontactsComponent.ctorParameters = () => [
+    { type: _angular_material__WEBPACK_IMPORTED_MODULE_5__["MatDialog"] },
+    { type: _admincontacts_service__WEBPACK_IMPORTED_MODULE_8__["ContactsService"] },
+    { type: _services_auth_service__WEBPACK_IMPORTED_MODULE_9__["AuthService"] }
+];
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_angular_material_paginator__WEBPACK_IMPORTED_MODULE_2__["MatPaginator"], { static: true })
+], AdmincontactsComponent.prototype, "paginator", void 0);
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_angular_material_sort__WEBPACK_IMPORTED_MODULE_3__["MatSort"], { static: true })
+], AdmincontactsComponent.prototype, "sort", void 0);
+AdmincontactsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-admincontactss',
+        template: __webpack_require__(/*! raw-loader!./admincontacts.component.html */ "./node_modules/raw-loader/index.js!./src/app/admin/admincontacts/admincontacts.component.html"),
+        styles: [__webpack_require__(/*! ./admincontacts.component.css */ "./src/app/admin/admincontacts/admincontacts.component.css")]
+    })
+], AdmincontactsComponent);
+
+//edit contact dialog
+let EditContactComponent = class EditContactComponent {
+    constructor(userService, data, localStorage, newAvatarService) {
+        this.userService = userService;
+        this.data = data;
+        this.localStorage = localStorage;
+        this.newAvatarService = newAvatarService;
+        this.editContacts = new _angular_forms__WEBPACK_IMPORTED_MODULE_13__["FormGroup"]({
+            name: new _angular_forms__WEBPACK_IMPORTED_MODULE_13__["FormControl"](this.data.firstname),
+            email: new _angular_forms__WEBPACK_IMPORTED_MODULE_13__["FormControl"](this.data.email),
+            address: new _angular_forms__WEBPACK_IMPORTED_MODULE_13__["FormControl"](null),
+            role: new _angular_forms__WEBPACK_IMPORTED_MODULE_13__["FormControl"](this.data.role_id === 1 ? "Admin" : "User")
+        });
+        this.ELEMENT_DATA = [
+        // {plan: '7 Day Trial', trial: '', CC: '', period: '2020-06-12', canceled: 'NO'},
+        ];
+        this.contactForm = [];
+        this.displayedColumns = ['plan', 'trial', 'CC', 'period', 'canceled'];
+        this.dataSource = this.ELEMENT_DATA;
+        this.adminImgPath = this.localStorage.get('admin_user_profile');
+        this.contact = this.data;
+    }
+    ngOnInit() {
+        this.user = this.userService.getUser();
+        this.newAvatarService.newAvatar.subscribe(newPath => {
+            this.adminImgPath = this.localStorage.get('admin_user_profile');
+        });
+    }
+    preview(files) {
+        if (files.length === 0)
+            return;
+        var reader = new FileReader();
+        reader.readAsDataURL(files[0]);
+        reader.onload = (_event) => {
+            this.adminImgPath = reader.result;
+            this.localStorage.set("admin_user_profile", this.adminImgPath);
+            this.newAvatarService.newAvatar.next(true);
+        };
+    }
+};
+EditContactComponent.ctorParameters = () => [
+    { type: src_app_services_user_service__WEBPACK_IMPORTED_MODULE_10__["UserService"] },
+    { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [_angular_material__WEBPACK_IMPORTED_MODULE_5__["MAT_DIALOG_DATA"],] }] },
+    { type: angular_web_storage__WEBPACK_IMPORTED_MODULE_11__["LocalStorageService"] },
+    { type: _adminsettings_new_avatar_service__WEBPACK_IMPORTED_MODULE_12__["NewAvatarService"] }
+];
+EditContactComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'edit-contact-dialog',
+        template: __webpack_require__(/*! raw-loader!./edit-contact.dialog.html */ "./node_modules/raw-loader/index.js!./src/app/admin/admincontacts/edit-contact.dialog.html"),
+        styles: [__webpack_require__(/*! ./admincontacts.component.css */ "./src/app/admin/admincontacts/admincontacts.component.css")]
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](1, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_angular_material__WEBPACK_IMPORTED_MODULE_5__["MAT_DIALOG_DATA"]))
+], EditContactComponent);
+
+//delete contact dialog
+let DeleteContactComponent = class DeleteContactComponent {
+    constructor(data) {
+        this.data = data;
+        this.contact = this.data;
+    }
+};
+DeleteContactComponent.ctorParameters = () => [
+    { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [_angular_material__WEBPACK_IMPORTED_MODULE_5__["MAT_DIALOG_DATA"],] }] }
+];
+DeleteContactComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'delete-contact-dialog',
+        template: __webpack_require__(/*! raw-loader!./delete-contact.dialog.html */ "./node_modules/raw-loader/index.js!./src/app/admin/admincontacts/delete-contact.dialog.html"),
+        styles: [__webpack_require__(/*! ./admincontacts.component.css */ "./src/app/admin/admincontacts/admincontacts.component.css")]
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](0, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_angular_material__WEBPACK_IMPORTED_MODULE_5__["MAT_DIALOG_DATA"]))
+], DeleteContactComponent);
 
 
 
@@ -7671,34 +7566,47 @@ var AdmincontactsComponent = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContactsService", function() { return ContactsService; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _services_http_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../services/http.service */ "./src/app/services/http.service.ts");
+/* harmony import */ var _services_auth_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../services/auth.service */ "./src/app/services/auth.service.ts");
 
 
-var ContactsService = /** @class */ (function () {
-    function ContactsService() {
-        this.CONTACTS_DATA = [
-        // { imgPath: '', 
-        //   fullname: ' aman singh', 
-        //   email: '', 
-        //   phoneNumber: '', 
-        //   subscription: '', 
-        //   type: '', 
-        //   deviceNumber: '', 
-        //   registered: '', 
-        //   lastActivity: '' 
-        // },
-        ];
+
+
+// import 'rxjs/add/operator/catch';
+// import 'rxjs/add/observable/throw';
+let ContactsService = class ContactsService {
+    // CONTACTS_DATA: ContactsInterface[] = [
+    //     { imgPath: '//cdn.echofin.co/avatars/f02df689.png', 
+    //       fullname: 'aman singh', 
+    //       email: '', 
+    //       phoneNumber: '', 
+    //       subscription: '', 
+    //       type: '', 
+    //       deviceNumber: '', 
+    //       registered: ' 2020-04-11 10:15:11', 
+    //       lastActivity: '' 
+    //     }
+    // ];
+    constructor(http, auth) {
+        this.http = http;
+        this.auth = auth;
+        this._url = "../../assets/data";
     }
-    ContactsService.prototype.getContacts = function () {
-        return this.CONTACTS_DATA.slice();
-    };
-    ContactsService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
-            providedIn: 'root'
-        })
-    ], ContactsService);
-    return ContactsService;
-}());
+    getContacts() {
+        // return this.auth.getAllSystemUsers();
+        // return this.http.get<ContactsInterface[]>(this._url + '/data.json');
+    }
+};
+ContactsService.ctorParameters = () => [
+    { type: _services_http_service__WEBPACK_IMPORTED_MODULE_2__["HttpService"] },
+    { type: _services_auth_service__WEBPACK_IMPORTED_MODULE_3__["AuthService"] }
+];
+ContactsService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], ContactsService);
 
 
 
@@ -7715,19 +7623,43 @@ var ContactsService = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InviteContactComponent", function() { return InviteContactComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 
 
-var InviteContactComponent = /** @class */ (function () {
-    function InviteContactComponent() {
-    }
-    InviteContactComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            template: "\n  <div class=\"modal-content new_user_dialog\">\n   <div class=\"modal-header\">\n      <h4 class=\"modal-title\">\n         <button  mat-dialog-close  class=\"close\">\n             <span aria-hidden=\"true\">\u00D7</span>\n         </button>\n         Invite Contact\n      </h4>\n   </div>\n   <form class=\"\">\n      <div class=\"modal-body wrap-div\">\n        <div class=\"row\">\n          <div class=\"col-xs-12\">\n            <mat-form-field  >\n               <mat-label>Emails</mat-label>\n               <textarea matInput placeholder=\"users emails comma seperated\" style=\"height:100px;\"></textarea>\n            </mat-form-field>\n          </div>\n        </div>\n      </div>\n      <div class=\"modal-footer wrap-div\">\n         <button autofocus=\"\" mat-dialog-close  class=\"btn btn-default pull-left\" type=\"button\" >Cancel</button>\n         <button class=\"btn btn-blue\">Invite</button>\n      </div>\n   </form>\n</div>\n  "
-        })
-    ], InviteContactComponent);
-    return InviteContactComponent;
-}());
+let InviteContactComponent = class InviteContactComponent {
+};
+InviteContactComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        template: `
+  <div class="modal-content new_user_dialog">
+   <div class="modal-header">
+      <h4 class="modal-title">
+         <button  mat-dialog-close  class="close">
+             <span aria-hidden="true">×</span>
+         </button>
+         Invite Contact
+      </h4>
+   </div>
+   <form class="">
+      <div class="modal-body wrap-div">
+        <div class="row">
+          <div class="col-xs-12">
+            <mat-form-field  >
+               <mat-label>Emails</mat-label>
+               <textarea matInput placeholder="users emails comma seperated" style="height:100px;"></textarea>
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer wrap-div">
+         <button autofocus="" mat-dialog-close  class="btn btn-default pull-left" type="button" >Cancel</button>
+         <button class="btn btn-blue">Invite</button>
+      </div>
+   </form>
+</div>
+  `
+    })
+], InviteContactComponent);
 
 
 
@@ -7744,19 +7676,219 @@ var InviteContactComponent = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NewContactComponent", function() { return NewContactComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _services_auth_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../services/auth.service */ "./src/app/services/auth.service.ts");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var _services_user_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../services/user.service */ "./src/app/services/user.service.ts");
 
 
-var NewContactComponent = /** @class */ (function () {
-    function NewContactComponent() {
+
+
+
+let NewContactComponent = class NewContactComponent {
+    constructor(auth, userService) {
+        this.auth = auth;
+        this.userService = userService;
+        this.isLoading = false;
+        this.isValid = true;
+        this.newUserData = new _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormGroup"]({
+            fullname: new _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].required),
+            email: new _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].required),
+            username: new _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].required),
+            role: new _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].required),
+            password: new _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].required),
+            repeat_password: new _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].required),
+            send_mail: new _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormControl"](""),
+            agency_id: new _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormControl"](this.userService.getUser().agency_id),
+            status: new _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormControl"](1),
+        });
     }
-    NewContactComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            template: "\n  <div class=\"modal-content new_user_dialog\">\n   <div class=\"modal-header\">\n      <h4 class=\"modal-title\">\n         <button  mat-dialog-close  class=\"close\">\n             <span aria-hidden=\"true\">\u00D7</span>\n         </button>\n         Add Contact\n      </h4>\n   </div>\n   <form class=\"\">\n      <div class=\"modal-body wrap-div\">\n        <div class=\"row\">\n          <div class=\"col-xs-12\">\n            <mat-form-field>\n                <input matInput placeholder=\"Full Name\">\n            </mat-form-field>\n          </div>\n        </div>\n        <div class=\"row\">    \n            <div class=\"col-sm-6\">\n               <mat-form-field>\n                  <input matInput placeholder=\"Email\">\n               </mat-form-field>\n            </div>\n            <div class=\"col-sm-6\">\n               <mat-form-field>\n                  <input matInput placeholder=\"Username\">\n               </mat-form-field>\n            </div>\n         </div>\n         <div class=\"row\">\n            <div class=\"col-sm-6\">\n               <mat-form-field>\n                  <mat-select placeholder=\"Role\">\n                     <mat-option value=\"Admin\">Admin</mat-option>\n                     <mat-option value=\"Instructor\">Instructor</mat-option>\n                     <mat-option value=\"Moderator\">Moderator</mat-option>\n                     <mat-option value=\"User\">User</mat-option>\n                  </mat-select>\n                  <mat-hint>\n                     <a href=\"#\" class=\"\">\n                           <i class=\"fa fa-info-circle\"></i>\n                     </a>\n                  </mat-hint>\n               </mat-form-field>\n            </div>\n            <div class=\"col-sm-6\">\n                  <mat-form-field>\n                      <input matInput placeholder=\"Password\">\n                  </mat-form-field>\n            </div>\n         </div>\n         <div class=\"row\">\n            <div class=\"col-sm-6\">\n                  <mat-form-field>\n                      <input matInput placeholder=\"Repeat Password\">\n                  </mat-form-field>\n            </div>\n            <div class=\"col-sm-6\">\n               <div class=\"checkbox\">\n                  <label>\n                  <input type=\"checkbox\" class=\"\"> Send a welcome email\n                  </label>\n               </div>\n            </div> \n         </div>\n      </div>\n      <div class=\"modal-footer wrap-div\">\n         <button autofocus=\"\" mat-dialog-close  class=\"btn btn-default pull-left\" type=\"button\" >Cancel</button>\n         <button class=\"btn btn-blue\">Create</button>\n      </div>\n   </form>\n</div>\n  "
-        })
-    ], NewContactComponent);
-    return NewContactComponent;
-}());
+    createUser() {
+        let userData = this.validateData();
+        if (userData) {
+            this.isLoading = true;
+            console.log(userData);
+            this.auth.createUserAdmin(userData).subscribe((data) => {
+                console.log(data);
+                if (data && data.hasOwnProperty('success')) {
+                    location.reload();
+                }
+                else {
+                    console.log("registration failed----");
+                }
+            });
+        }
+        else {
+            console.log("registration failed----");
+        }
+    }
+    validateEmail(email) {
+        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(String(email).toLowerCase());
+    }
+    validateData() {
+        let userData = this.newUserData.value;
+        var procesData = { email: "", password: "", firstname: "", lastname: "", username: "", role_id: "", agency_id: "", status: "" };
+        if (this.validateEmail(userData.email)) {
+            procesData.email = userData.email;
+            this.errorMessageEmail = false;
+        }
+        else {
+            this.isValid = false;
+            this.errorMessageEmail = "Please enter a valid email";
+            return false;
+        }
+        if (userData.fullname) {
+            var name = userData.fullname.trim().split(' ');
+            if (name.length > 1) {
+                var name = userData.fullname.trim().split(' ');
+                procesData.firstname = name[0];
+                name.shift();
+                procesData.lastname = name.join(' ');
+            }
+            else {
+                this.isValid = false;
+                this.errorMessageFullname = "Please enter in format \"FirstName LastName\"";
+                return false;
+            }
+            this.errorMessageFullname = false;
+        }
+        else {
+            this.isValid = false;
+            this.errorMessageFullname = "Fullname is required";
+            return false;
+        }
+        if (userData.password) {
+            this.errorMessagePassword = false;
+            procesData.password = userData.password;
+        }
+        else {
+            this.isValid = false;
+            this.errorMessagePassword = "Password is required";
+            return false;
+        }
+        if (userData.repeat_password !== userData.password) {
+            console.log("Password does not Match");
+            this.isValid = false;
+            this.errorMessageRepeatPassword = "Password does not Match";
+            return false;
+        }
+        if (userData.role) {
+            this.errorMessageRole = false;
+            procesData.role_id = userData.role;
+        }
+        else {
+            this.isValid = false;
+            this.errorMessageRole = "Please Select a Role";
+            return false;
+        }
+        if (userData.username) {
+            this.errorMessageUsername = false;
+            procesData.username = userData.username;
+        }
+        else {
+            this.isValid = false;
+            this.errorMessageUsername = "Please Choose a Username";
+            return false;
+        }
+        // procesData.send_mail = userData.send_mail;
+        procesData.agency_id = userData.agency_id;
+        procesData.status = userData.status;
+        return procesData;
+    }
+};
+NewContactComponent.ctorParameters = () => [
+    { type: _services_auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"] },
+    { type: _services_user_service__WEBPACK_IMPORTED_MODULE_4__["UserService"] }
+];
+NewContactComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        template: `
+  <div class="modal-content new_user_dialog">
+   <div class="modal-header">
+      <h4 class="modal-title">
+         <button  mat-dialog-close  class="close">
+             <span aria-hidden="true">×</span>
+         </button>
+         Add Contact
+      </h4>
+   </div>
+   <form [formGroup]="newUserData" (ngSubmit)="createUser()">
+      <div class="modal-body wrap-div">
+         <div *ngIf="isLoading" class="loading-indicator">
+            <mat-spinner style="margin:0 auto;" mode="indeterminate"></mat-spinner>
+         </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <mat-form-field>
+                <input matInput formControlName="fullname" name="fullname" placeholder="Full Name">
+                <p style="margin:0px;" *ngIf="!isValid && errorMessageFullname">{{errorMessageFullname}}</p>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="row">    
+            <div class="col-sm-6">
+               <mat-form-field>
+                  <input matInput formControlName="email" name="email" placeholder="Email">
+                  <p style="margin:0px;" *ngIf="!isValid && errorMessageEmail">{{errorMessageEmail}}</p>
+               </mat-form-field>
+            </div>
+            <div class="col-sm-6">
+               <mat-form-field>
+                  <input matInput formControlName="username" name="username" placeholder="Username">
+                  <p style="margin:0px;" *ngIf="!isValid && errorMessageUsername">{{errorMessageUsername}}</p>
+               </mat-form-field>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-sm-6">
+               <mat-form-field>
+                  <mat-select formControlName="role" name="role" placeholder="Role">
+                     <mat-option value="1">Admin</mat-option>
+                     <mat-option value="3">Instructor</mat-option>
+                     <mat-option value="4">Moderator</mat-option>
+                     <mat-option value="2">User</mat-option>
+                  </mat-select>
+                  <p style="margin:0px;" *ngIf="!isValid && errorMessageRole">{{errorMessageRole}}</p>
+                  <mat-hint>
+                     <a class="">
+                           <i class="fa fa-info-circle"></i>
+                     </a>
+                  </mat-hint>
+               </mat-form-field>
+            </div>
+            <div class="col-sm-6">
+                  <mat-form-field>
+                      <input matInput formControlName="password" name="password" placeholder="Password">
+                      <p style="margin:0px;" *ngIf="!isValid && errorMessagePassword">{{errorMessagePassword}}</p>
+                  </mat-form-field>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-sm-6">
+                  <mat-form-field>
+                      <input matInput formControlName="repeat_password" name="repeat_password" placeholder="Repeat Password">
+                      <p style="margin:0px;" *ngIf="!isValid && errorMessageRepeatPassword">{{errorMessageRepeatPassword}}</p>
+                  </mat-form-field>
+            </div>
+            <div class="col-sm-6">
+               <div class="checkbox">
+                  <label>
+                  <input type="checkbox" formControlName="send_mail" name="send_mail" class=""> Send a welcome email
+                  </label>
+               </div>
+            </div> 
+         </div>
+      </div>
+      <div class="modal-footer wrap-div">
+         <button autofocus="" mat-dialog-close  class="btn btn-default pull-left" type="button" >Cancel</button>
+         <button type="submit"  class="btn btn-blue">Create</button>
+      </div>
+   </form>
+</div>
+  `
+    })
+], NewContactComponent);
 
 
 
@@ -7784,11 +7916,11 @@ module.exports = "table {\n    width: 100%;\n  }\n  \n  .mat-form-field {\n    f
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdmincouponsComponent", function() { return AdmincouponsComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_material_paginator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material/paginator */ "./node_modules/@angular/material/esm5/paginator.es5.js");
-/* harmony import */ var _angular_material_sort__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material/sort */ "./node_modules/@angular/material/esm5/sort.es5.js");
-/* harmony import */ var _angular_material_table__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material/table */ "./node_modules/@angular/material/esm5/table.es5.js");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_material_paginator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material/paginator */ "./node_modules/@angular/material/esm2015/paginator.js");
+/* harmony import */ var _angular_material_sort__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material/sort */ "./node_modules/@angular/material/esm2015/sort.js");
+/* harmony import */ var _angular_material_table__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material/table */ "./node_modules/@angular/material/esm2015/table.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
 /* harmony import */ var _new_coupons_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./new-coupons.component */ "./src/app/admin/admincoupons/new-coupons.component.ts");
 /* harmony import */ var _admincoupons_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./admincoupons.service */ "./src/app/admin/admincoupons/admincoupons.service.ts");
 
@@ -7799,8 +7931,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var AdmincouponsComponent = /** @class */ (function () {
-    function AdmincouponsComponent(couponService, dialog) {
+let AdmincouponsComponent = class AdmincouponsComponent {
+    constructor(couponService, dialog) {
         this.couponService = couponService;
         this.dialog = dialog;
         this.mode = 'determinate';
@@ -7809,53 +7941,51 @@ var AdmincouponsComponent = /** @class */ (function () {
         this.displayedColumns = ['name', 'amount', 'currency', 'percentoff', 'alter'];
         this.dataSource = new _angular_material_table__WEBPACK_IMPORTED_MODULE_4__["MatTableDataSource"](this.couponService.getCoupons());
     }
-    AdmincouponsComponent.prototype.openAddFileDialog = function () {
-        var fileNameDialogRef = this.dialog.open(_new_coupons_component__WEBPACK_IMPORTED_MODULE_6__["NewCouponsComponent"]);
-    };
-    AdmincouponsComponent.prototype.ngOnInit = function () {
+    openAddFileDialog() {
+        const fileNameDialogRef = this.dialog.open(_new_coupons_component__WEBPACK_IMPORTED_MODULE_6__["NewCouponsComponent"]);
+    }
+    ngOnInit() {
         this.dataSource.paginator = this.paginator;
         this.dataSource.sort = this.sort;
-    };
+    }
     // onrefresh
-    AdmincouponsComponent.prototype.onRefresh = function () {
-        var _this = this;
+    onRefresh() {
         console.log('it isw');
         this.showSpinner = true;
         this.mode = 'indeterminate';
-        setTimeout(function () {
-            _this.mode = 'determinate';
-            _this.showSpinner = false;
+        setTimeout(() => {
+            this.mode = 'determinate';
+            this.showSpinner = false;
         }, 1000);
-    };
+    }
     // filter
-    AdmincouponsComponent.prototype.onActiveSearch = function () {
+    onActiveSearch() {
         this.searchActive = !this.searchActive;
-    };
-    AdmincouponsComponent.prototype.applyFilter = function (filterValue) {
+    }
+    applyFilter(filterValue) {
         this.dataSource.filter = filterValue.trim().toLowerCase();
         if (this.dataSource.paginator) {
             this.dataSource.paginator.firstPage();
         }
-    };
-    AdmincouponsComponent.ctorParameters = function () { return [
-        { type: _admincoupons_service__WEBPACK_IMPORTED_MODULE_7__["CouponService"] },
-        { type: _angular_material__WEBPACK_IMPORTED_MODULE_5__["MatDialog"] }
-    ]; };
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_angular_material_paginator__WEBPACK_IMPORTED_MODULE_2__["MatPaginator"], { static: true })
-    ], AdmincouponsComponent.prototype, "paginator", void 0);
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_angular_material_sort__WEBPACK_IMPORTED_MODULE_3__["MatSort"], { static: true })
-    ], AdmincouponsComponent.prototype, "sort", void 0);
-    AdmincouponsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-admincoupons',
-            template: __webpack_require__(/*! raw-loader!./admincoupons.component.html */ "./node_modules/raw-loader/index.js!./src/app/admin/admincoupons/admincoupons.component.html"),
-            styles: [__webpack_require__(/*! ./admincoupons.component.css */ "./src/app/admin/admincoupons/admincoupons.component.css")]
-        })
-    ], AdmincouponsComponent);
-    return AdmincouponsComponent;
-}());
+    }
+};
+AdmincouponsComponent.ctorParameters = () => [
+    { type: _admincoupons_service__WEBPACK_IMPORTED_MODULE_7__["CouponService"] },
+    { type: _angular_material__WEBPACK_IMPORTED_MODULE_5__["MatDialog"] }
+];
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_angular_material_paginator__WEBPACK_IMPORTED_MODULE_2__["MatPaginator"], { static: true })
+], AdmincouponsComponent.prototype, "paginator", void 0);
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_angular_material_sort__WEBPACK_IMPORTED_MODULE_3__["MatSort"], { static: true })
+], AdmincouponsComponent.prototype, "sort", void 0);
+AdmincouponsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-admincoupons',
+        template: __webpack_require__(/*! raw-loader!./admincoupons.component.html */ "./node_modules/raw-loader/index.js!./src/app/admin/admincoupons/admincoupons.component.html"),
+        styles: [__webpack_require__(/*! ./admincoupons.component.css */ "./src/app/admin/admincoupons/admincoupons.component.css")]
+    })
+], AdmincouponsComponent);
 
 
 
@@ -7872,25 +8002,24 @@ var AdmincouponsComponent = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CouponService", function() { return CouponService; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 
 
-var CouponService = /** @class */ (function () {
-    function CouponService() {
+let CouponService = class CouponService {
+    constructor() {
         this.COUPONS_DATA = [
         // {name: 'On-Point FX Signals 7-Day FREE O', amount: 23, currency: 'USD', percentOff: '100%'}    
         ];
     }
-    CouponService.prototype.getCoupons = function () {
+    getCoupons() {
         return this.COUPONS_DATA.slice();
-    };
-    CouponService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
-            providedIn: 'root'
-        })
-    ], CouponService);
-    return CouponService;
-}());
+    }
+};
+CouponService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], CouponService);
 
 
 
@@ -7907,21 +8036,79 @@ var CouponService = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NewCouponsComponent", function() { return NewCouponsComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 
 
-var NewCouponsComponent = /** @class */ (function () {
-    function NewCouponsComponent() {
+let NewCouponsComponent = class NewCouponsComponent {
+    constructor() {
         this.duration = 'once';
         this.discounttype = "";
     }
-    NewCouponsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            template: "\n  <div class=\"modal-content new_user_dialog biling_dialog\">\n   <div class=\"modal-header\">\n      <h4 class=\"modal-title\">\n      <button  mat-dialog-close  class=\"close\">\n            <span aria-hidden=\"true\">\u00D7</span>\n        </button> \n         Add Coupon\n      </h4>\n   </div>\n   <form class=\"\">\n      <div class=\"modal-body wrap-div\">\n      <div class=\"row\">\n          <div class=\"col-xs-12\">\n              <mat-form-field>\n                <input matInput placeholder=\"Name *\" value=\"\">\n              </mat-form-field>\n          </div>\n      </div>\n        <div class=\"row\">\n            <div class=\"col-sm-6\">\n                <mat-form-field>\n                    <mat-label>Discount Type</mat-label>\n                    <mat-select [(value)]=\"discounttype\">\n                    <mat-option value=\"Percentage\">Percentage (%)</mat-option>\n                    <mat-option value=\"Value\">Value</mat-option>\n                    </mat-select>\n                </mat-form-field>\n            </div>\n            <div class=\"col-sm-6\">\n                <mat-form-field>\n                    <input matInput placeholder=\"Percent Off\" value=\"\" >\n                </mat-form-field>\n            </div>\n        </div>\n        <div class=\"row\">\n            <div class=\"col-sm-6\">\n                <mat-form-field>\n                    <mat-label>Duration</mat-label>\n                    <mat-select [(value)]=\"duration\">\n                    <mat-option value=\"once\">once</mat-option>\n                    <mat-option value=\"forever\">Forever</mat-option>\n                    <mat-option value=\"Repeating\">Repeating</mat-option>\n                    </mat-select>\n                </mat-form-field>\n            </div>\n            <div class=\"col-sm-6\">\n                <mat-form-field>\n                    <input matInput placeholder=\"Months\" value=\"\" >\n                </mat-form-field>\n            </div>\n        </div>\n      </div>\n      <div class=\"modal-footer wrap-div\">\n         <button mat-dialog-close class=\"btn btn-default pull-left\" type=\"button\">Cancel</button>\n         <button class=\"btn btn-blue\">Save</button>\n      </div>\n   </form>\n</div>\n  "
-        })
-    ], NewCouponsComponent);
-    return NewCouponsComponent;
-}());
+};
+NewCouponsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        template: `
+  <div class="modal-content new_user_dialog biling_dialog">
+   <div class="modal-header">
+      <h4 class="modal-title">
+      <button  mat-dialog-close  class="close">
+            <span aria-hidden="true">×</span>
+        </button> 
+         Add Coupon
+      </h4>
+   </div>
+   <form class="">
+      <div class="modal-body wrap-div">
+      <div class="row">
+          <div class="col-xs-12">
+              <mat-form-field>
+                <input matInput placeholder="Name *" value="">
+              </mat-form-field>
+          </div>
+      </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <mat-form-field>
+                    <mat-label>Discount Type</mat-label>
+                    <mat-select [(value)]="discounttype">
+                    <mat-option value="Percentage">Percentage (%)</mat-option>
+                    <mat-option value="Value">Value</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="col-sm-6">
+                <mat-form-field>
+                    <input matInput placeholder="Percent Off" value="" >
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <mat-form-field>
+                    <mat-label>Duration</mat-label>
+                    <mat-select [(value)]="duration">
+                    <mat-option value="once">once</mat-option>
+                    <mat-option value="forever">Forever</mat-option>
+                    <mat-option value="Repeating">Repeating</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="col-sm-6">
+                <mat-form-field>
+                    <input matInput placeholder="Months" value="" >
+                </mat-form-field>
+            </div>
+        </div>
+      </div>
+      <div class="modal-footer wrap-div">
+         <button mat-dialog-close class="btn btn-default pull-left" type="button">Cancel</button>
+         <button class="btn btn-blue">Save</button>
+      </div>
+   </form>
+</div>
+  `
+    })
+], NewCouponsComponent);
 
 
 
@@ -7949,31 +8136,38 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdmindashboardComponent", function() { return AdmindashboardComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _admincontacts_admincontacts_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../admincontacts/admincontacts.service */ "./src/app/admin/admincontacts/admincontacts.service.ts");
 
 
-var AdmindashboardComponent = /** @class */ (function () {
-    function AdmindashboardComponent() {
-        var _this = this;
+
+let AdmindashboardComponent = class AdmindashboardComponent {
+    constructor(contactsService) {
+        this.contactsService = contactsService;
         this.selected = 'option2';
         // set screenWidth on page load
         this.screenWidth = window.innerWidth;
-        window.onresize = function () {
+        window.onresize = () => {
             // set screenWidth on screen size change
-            _this.screenWidth = window.innerWidth;
+            this.screenWidth = window.innerWidth;
         };
     }
-    AdmindashboardComponent.prototype.ngOnInit = function () {
-    };
-    AdmindashboardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-admindashboard',
-            template: __webpack_require__(/*! raw-loader!./admindashboard.component.html */ "./node_modules/raw-loader/index.js!./src/app/admin/admindashboard/admindashboard.component.html"),
-            styles: [__webpack_require__(/*! ./admindashboard.component.css */ "./src/app/admin/admindashboard/admindashboard.component.css")]
-        })
-    ], AdmindashboardComponent);
-    return AdmindashboardComponent;
-}());
+    ngOnInit() {
+        // this.contactsService.getContacts().subscribe(
+        //   (responseData) => this.contacts= responseData
+        // )
+    }
+};
+AdmindashboardComponent.ctorParameters = () => [
+    { type: _admincontacts_admincontacts_service__WEBPACK_IMPORTED_MODULE_2__["ContactsService"] }
+];
+AdmindashboardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-admindashboard',
+        template: __webpack_require__(/*! raw-loader!./admindashboard.component.html */ "./node_modules/raw-loader/index.js!./src/app/admin/admindashboard/admindashboard.component.html"),
+        styles: [__webpack_require__(/*! ./admindashboard.component.css */ "./src/app/admin/admindashboard/admindashboard.component.css")]
+    })
+], AdmindashboardComponent);
 
 angular.module('app', ['chart.js']);
 angular.module('app')
@@ -8024,23 +8218,21 @@ module.exports = "\nsection.admin-marketing {\n    max-width: 860px;\n    margin
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminmarketingComponent", function() { return AdminmarketingComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 
 
-var AdminmarketingComponent = /** @class */ (function () {
-    function AdminmarketingComponent() {
+let AdminmarketingComponent = class AdminmarketingComponent {
+    constructor() { }
+    ngOnInit() {
     }
-    AdminmarketingComponent.prototype.ngOnInit = function () {
-    };
-    AdminmarketingComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-adminmarketing',
-            template: __webpack_require__(/*! raw-loader!./adminmarketing.component.html */ "./node_modules/raw-loader/index.js!./src/app/admin/adminmarketing/adminmarketing.component.html"),
-            styles: [__webpack_require__(/*! ./adminmarketing.component.css */ "./src/app/admin/adminmarketing/adminmarketing.component.css")]
-        })
-    ], AdminmarketingComponent);
-    return AdminmarketingComponent;
-}());
+};
+AdminmarketingComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-adminmarketing',
+        template: __webpack_require__(/*! raw-loader!./adminmarketing.component.html */ "./node_modules/raw-loader/index.js!./src/app/admin/adminmarketing/adminmarketing.component.html"),
+        styles: [__webpack_require__(/*! ./adminmarketing.component.css */ "./src/app/admin/adminmarketing/adminmarketing.component.css")]
+    })
+], AdminmarketingComponent);
 
 
 
@@ -8068,11 +8260,11 @@ module.exports = "table {\n  width: 100%;\n}\n\n.mat-form-field {\n  font-size: 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminoffersComponent", function() { return AdminoffersComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_material_paginator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material/paginator */ "./node_modules/@angular/material/esm5/paginator.es5.js");
-/* harmony import */ var _angular_material_sort__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material/sort */ "./node_modules/@angular/material/esm5/sort.es5.js");
-/* harmony import */ var _angular_material_table__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material/table */ "./node_modules/@angular/material/esm5/table.es5.js");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_material_paginator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material/paginator */ "./node_modules/@angular/material/esm2015/paginator.js");
+/* harmony import */ var _angular_material_sort__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material/sort */ "./node_modules/@angular/material/esm2015/sort.js");
+/* harmony import */ var _angular_material_table__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material/table */ "./node_modules/@angular/material/esm2015/table.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
 /* harmony import */ var _new_offer_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./new-offer.component */ "./src/app/admin/adminoffers/new-offer.component.ts");
 /* harmony import */ var _adminoffers_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./adminoffers.service */ "./src/app/admin/adminoffers/adminoffers.service.ts");
 
@@ -8083,8 +8275,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var AdminoffersComponent = /** @class */ (function () {
-    function AdminoffersComponent(dialog, offersService) {
+let AdminoffersComponent = class AdminoffersComponent {
+    constructor(dialog, offersService) {
         this.dialog = dialog;
         this.offersService = offersService;
         this.mode = 'determinate';
@@ -8094,53 +8286,51 @@ var AdminoffersComponent = /** @class */ (function () {
         this.searchActive = false;
         this.version = _angular_material__WEBPACK_IMPORTED_MODULE_5__["VERSION"];
     }
-    AdminoffersComponent.prototype.openAddFileDialog = function () {
+    openAddFileDialog() {
         this.fileNameDialogRef = this.dialog.open(_new_offer_component__WEBPACK_IMPORTED_MODULE_6__["NewOfferComponent"]);
-    };
+    }
     // onrefresh
-    AdminoffersComponent.prototype.onRefresh = function () {
-        var _this = this;
+    onRefresh() {
         console.log('it isw');
         this.showSpinner = true;
         this.mode = 'indeterminate';
-        setTimeout(function () {
-            _this.mode = 'determinate';
-            _this.showSpinner = false;
+        setTimeout(() => {
+            this.mode = 'determinate';
+            this.showSpinner = false;
         }, 1000);
-    };
+    }
     // filter
-    AdminoffersComponent.prototype.onActiveSearch = function () {
+    onActiveSearch() {
         this.searchActive = !this.searchActive;
-    };
-    AdminoffersComponent.prototype.ngOnInit = function () {
+    }
+    ngOnInit() {
         this.dataSource.paginator = this.paginator;
         this.dataSource.sort = this.sort;
-    };
-    AdminoffersComponent.prototype.applyFilter = function (filterValue) {
+    }
+    applyFilter(filterValue) {
         this.dataSource.filter = filterValue.trim().toLowerCase();
         if (this.dataSource.paginator) {
             this.dataSource.paginator.firstPage();
         }
-    };
-    AdminoffersComponent.ctorParameters = function () { return [
-        { type: _angular_material__WEBPACK_IMPORTED_MODULE_5__["MatDialog"] },
-        { type: _adminoffers_service__WEBPACK_IMPORTED_MODULE_7__["OffersService"] }
-    ]; };
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_angular_material_paginator__WEBPACK_IMPORTED_MODULE_2__["MatPaginator"], { static: true })
-    ], AdminoffersComponent.prototype, "paginator", void 0);
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_angular_material_sort__WEBPACK_IMPORTED_MODULE_3__["MatSort"], { static: true })
-    ], AdminoffersComponent.prototype, "sort", void 0);
-    AdminoffersComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-adminoffers',
-            template: __webpack_require__(/*! raw-loader!./adminoffers.component.html */ "./node_modules/raw-loader/index.js!./src/app/admin/adminoffers/adminoffers.component.html"),
-            styles: [__webpack_require__(/*! ./adminoffers.component.css */ "./src/app/admin/adminoffers/adminoffers.component.css")]
-        })
-    ], AdminoffersComponent);
-    return AdminoffersComponent;
-}());
+    }
+};
+AdminoffersComponent.ctorParameters = () => [
+    { type: _angular_material__WEBPACK_IMPORTED_MODULE_5__["MatDialog"] },
+    { type: _adminoffers_service__WEBPACK_IMPORTED_MODULE_7__["OffersService"] }
+];
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_angular_material_paginator__WEBPACK_IMPORTED_MODULE_2__["MatPaginator"], { static: true })
+], AdminoffersComponent.prototype, "paginator", void 0);
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_angular_material_sort__WEBPACK_IMPORTED_MODULE_3__["MatSort"], { static: true })
+], AdminoffersComponent.prototype, "sort", void 0);
+AdminoffersComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-adminoffers',
+        template: __webpack_require__(/*! raw-loader!./adminoffers.component.html */ "./node_modules/raw-loader/index.js!./src/app/admin/adminoffers/adminoffers.component.html"),
+        styles: [__webpack_require__(/*! ./adminoffers.component.css */ "./src/app/admin/adminoffers/adminoffers.component.css")]
+    })
+], AdminoffersComponent);
 
 
 
@@ -8157,25 +8347,24 @@ var AdminoffersComponent = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OffersService", function() { return OffersService; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 
 
-var OffersService = /** @class */ (function () {
-    function OffersService() {
+let OffersService = class OffersService {
+    constructor() {
         this.OFFERS_DATA = [
         // {username: 'wayne' ,    email: 'wayne@gmail.com', plan: 'OPFX $77/mo 7 Day Trial',  startTrial: '', endTrial: '', noCC: 'NO', start: '2020-05-12', end: '2020-06-12', canceled: 'NO'}
         ];
     }
-    OffersService.prototype.getOffers = function () {
+    getOffers() {
         return this.OFFERS_DATA.slice();
-    };
-    OffersService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
-            providedIn: 'root'
-        })
-    ], OffersService);
-    return OffersService;
-}());
+    }
+};
+OffersService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], OffersService);
 
 
 
@@ -8192,19 +8381,72 @@ var OffersService = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NewOfferComponent", function() { return NewOfferComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 
 
-var NewOfferComponent = /** @class */ (function () {
-    function NewOfferComponent() {
-    }
-    NewOfferComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            template: "\n  <div class=\"modal-content new_subs new_user_dialog\">\n   <div class=\"modal-header\">\n      <h4 class=\"modal-title\">\n      <button  mat-dialog-close  class=\"close\">\n            <span aria-hidden=\"true\">\u00D7</span>\n      </button> \n         Add New Offer\n      </h4>\n   </div>\n   <form class=\"\">\n      <div class=\"modal-body wrap-div\">\n        <div class=\"row\">\n          <div class=\"col-xs-12\">\n            <mat-form-field>\n            <mat-label>User</mat-label>\n                <input matInput placeholder=\"Select Or Search\">\n            </mat-form-field>\n          </div>\n        </div>\n\n        <div class=\"row\">\n          <div class=\"col-xs-12\">\n            <mat-form-field>\n               <mat-label>Chatroom</mat-label>\n               <mat-select placeholder=\"Select\">\n                  <mat-option value=\"option1\">On Point FX Signals \uD83C\uDDFA\uD83C\uDDF8 (USA)</mat-option>\n                  <mat-option value=\"option1\">1-on-1 Training</mat-option>\n                  <mat-option value=\"option1\">Market Analysis</mat-option>\n                  <mat-option value=\"option1\">The Golden Circle</mat-option>\n                  <mat-option value=\"option1\">Pr\u00E4zise FX Signals \uD83C\uDDE9\uD83C\uDDEA (GER)</mat-option>\n                  <mat-option value=\"option1\">chat dev</mat-option>\n                  <mat-option>7 Day Intense Private Training</mat-option>\n                  <mat-option>Website Testing A/B</mat-option>\n               </mat-select>\n            </mat-form-field>\n          </div>\n        </div>\n\n        <div class=\"row\">\n          <div class=\"col-xs-12\">\n            <mat-form-field>\n               <mat-label>Billing</mat-label>\n               <mat-select placeholder=\"Select\">\n                  <mat-option value=\"Select\">Select</mat-option>\n               </mat-select>\n            </mat-form-field>\n          </div>\n        </div>\n      </div>\n      <div class=\"modal-footer wrap-div\">\n         <button mat-dialog-close class=\"btn btn-default pull-left\" type=\"button\">Cancel</button>\n         <button class=\"btn btn-blue\">Save</button>\n      </div>\n   </form>\n</div>\n  "
-        })
-    ], NewOfferComponent);
-    return NewOfferComponent;
-}());
+let NewOfferComponent = class NewOfferComponent {
+};
+NewOfferComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        template: `
+  <div class="modal-content new_subs new_user_dialog">
+   <div class="modal-header">
+      <h4 class="modal-title">
+      <button  mat-dialog-close  class="close">
+            <span aria-hidden="true">×</span>
+      </button> 
+         Add New Offer
+      </h4>
+   </div>
+   <form class="">
+      <div class="modal-body wrap-div">
+        <div class="row">
+          <div class="col-xs-12">
+            <mat-form-field>
+            <mat-label>User</mat-label>
+                <input matInput placeholder="Select Or Search">
+            </mat-form-field>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <mat-form-field>
+               <mat-label>Chatroom</mat-label>
+               <mat-select placeholder="Select">
+                  <mat-option value="option1">On Point FX Signals 🇺🇸 (USA)</mat-option>
+                  <mat-option value="option1">1-on-1 Training</mat-option>
+                  <mat-option value="option1">Market Analysis</mat-option>
+                  <mat-option value="option1">The Golden Circle</mat-option>
+                  <mat-option value="option1">Präzise FX Signals 🇩🇪 (GER)</mat-option>
+                  <mat-option value="option1">chat dev</mat-option>
+                  <mat-option>7 Day Intense Private Training</mat-option>
+                  <mat-option>Website Testing A/B</mat-option>
+               </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <mat-form-field>
+               <mat-label>Billing</mat-label>
+               <mat-select placeholder="Select">
+                  <mat-option value="Select">Select</mat-option>
+               </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer wrap-div">
+         <button mat-dialog-close class="btn btn-default pull-left" type="button">Cancel</button>
+         <button class="btn btn-blue">Save</button>
+      </div>
+   </form>
+</div>
+  `
+    })
+], NewOfferComponent);
 
 
 
@@ -8232,53 +8474,53 @@ module.exports = ".media-body table {\n    width: 100%;\n  }\n  \n  .media-body 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminonlineativityComponent", function() { return AdminonlineativityComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_material_paginator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material/paginator */ "./node_modules/@angular/material/esm5/paginator.es5.js");
-/* harmony import */ var _angular_material_sort__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material/sort */ "./node_modules/@angular/material/esm5/sort.es5.js");
-/* harmony import */ var _angular_material_table__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material/table */ "./node_modules/@angular/material/esm5/table.es5.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_material_paginator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material/paginator */ "./node_modules/@angular/material/esm2015/paginator.js");
+/* harmony import */ var _angular_material_sort__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material/sort */ "./node_modules/@angular/material/esm2015/sort.js");
+/* harmony import */ var _angular_material_table__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material/table */ "./node_modules/@angular/material/esm2015/table.js");
 
 
 
 
 
 /** Constants used to fill up our data base. */
-var COLORS = [
+const COLORS = [
     '-- never --', '-- never --', '-- never --', '-- never --', '-- never --', '-- never --', '-- never --', '-- never --', '-- never --', '-- never --',
     '-- never --', '-- never --', '-- never --', '-- never --', '-- never --'
 ];
-var NAMES = [
+const NAMES = [
     'Maia', 'Asher', 'Olivia', 'Atticus', 'Amelia', 'Jack', 'Charlotte', 'Theodore', 'Isla', 'Oliver',
     'Isabella', 'Jasper', 'Cora', 'Levi', 'Violet', 'Arthur', 'Mia', 'Thomas', 'Elizabeth'
 ];
-var DEVICES = [
+const DEVICES = [
     '1 Devices', '2 Devices', '1 Devices', '2 Devices', '1 Devices', '1 Devices', '1 Devices', '1 Devices', '1 Devices',
     '1 Devices', '2 Devices', '1 Devices', '2 Devices', '1 Devices', '1 Devices',
 ];
-var USER = [
+const USER = [
     'puneetsethi25', 'puneetsethi25', ' kuldeepspall231', 'puneetsethi25', 'tarunjangra3223', 'puneetsethi25', 'kuldeepspall231',
     'tarunjangra3223', 'puneetsethi25', 'kuldeepspall231', 'puneetsethi25', 'mohitkumar23', 'puneetsethi25', 'tarunjangra3223',
 ];
-var SESSIONS = [
+const SESSIONS = [
     '1 sessions', '1 sessions', '2 sessions', '4 sessions', '3 sessions', '5 sessions', '2 sessions', '2 sessions',
     '2 sessions', '5 sessions', '5 sessions', '5 sessions', '5 sessions', '5 sessions', '5 sessions', '5 sessions',
 ];
-var IP = [
+const IP = [
     '2 ips', '1 ips', '3 ips', '2 ips', '3 ips', '3 ips', '3 ips', '3 ips', '3 ips', '3 ips', '3 ips', '3 ips', '3 ips',
     '3 ips', '3 ips', '3 ips', '3 ips', '3 ips', '3 ips', '2 ips', '3 ips',
 ];
-var AdminonlineativityComponent = /** @class */ (function () {
-    function AdminonlineativityComponent() {
+let AdminonlineativityComponent = class AdminonlineativityComponent {
+    constructor() {
         this.displayedColumns = ['empty', 'user', 'activesessions', 'sessions', 'ip', 'devices'];
         // Create 100 users
-        var users = Array.from({ length: 100 }, function (_, k) { return createNewUser(k + 1); });
+        const users = Array.from({ length: 100 }, (_, k) => createNewUser(k + 1));
         // Assign the data to the data source for the table to render
         this.dataSource = new _angular_material_table__WEBPACK_IMPORTED_MODULE_4__["MatTableDataSource"](users);
     }
-    AdminonlineativityComponent.prototype.ngOnInit = function () {
+    ngOnInit() {
         this.dataSource.paginator = this.paginator;
         this.dataSource.sort = this.sort;
-    };
-    AdminonlineativityComponent.prototype.ngAfterViewInit = function () {
+    }
+    ngAfterViewInit() {
         $('.collapse_carret').click(function () {
             $('.collapse_carret .fa-angle-right').toggleClass('fa-angle-down');
             $('.collapse_row').toggle(500);
@@ -8286,32 +8528,31 @@ var AdminonlineativityComponent = /** @class */ (function () {
         $('.popover_text').click(function () {
             $('.popover_tooltop').toggle(100);
         });
-    };
-    AdminonlineativityComponent.prototype.applyFilter = function (filterValue) {
+    }
+    applyFilter(filterValue) {
         this.dataSource.filter = filterValue.trim().toLowerCase();
         if (this.dataSource.paginator) {
             this.dataSource.paginator.firstPage();
         }
-    };
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_angular_material_paginator__WEBPACK_IMPORTED_MODULE_2__["MatPaginator"], { static: true })
-    ], AdminonlineativityComponent.prototype, "paginator", void 0);
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_angular_material_sort__WEBPACK_IMPORTED_MODULE_3__["MatSort"], { static: true })
-    ], AdminonlineativityComponent.prototype, "sort", void 0);
-    AdminonlineativityComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-adminonlineativity',
-            template: __webpack_require__(/*! raw-loader!./adminonlineativity.component.html */ "./node_modules/raw-loader/index.js!./src/app/admin/adminonlineativity/adminonlineativity.component.html"),
-            styles: [__webpack_require__(/*! ./adminonlineativity.component.css */ "./src/app/admin/adminonlineativity/adminonlineativity.component.css")]
-        })
-    ], AdminonlineativityComponent);
-    return AdminonlineativityComponent;
-}());
+    }
+};
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_angular_material_paginator__WEBPACK_IMPORTED_MODULE_2__["MatPaginator"], { static: true })
+], AdminonlineativityComponent.prototype, "paginator", void 0);
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_angular_material_sort__WEBPACK_IMPORTED_MODULE_3__["MatSort"], { static: true })
+], AdminonlineativityComponent.prototype, "sort", void 0);
+AdminonlineativityComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-adminonlineativity',
+        template: __webpack_require__(/*! raw-loader!./adminonlineativity.component.html */ "./node_modules/raw-loader/index.js!./src/app/admin/adminonlineativity/adminonlineativity.component.html"),
+        styles: [__webpack_require__(/*! ./adminonlineativity.component.css */ "./src/app/admin/adminonlineativity/adminonlineativity.component.css")]
+    })
+], AdminonlineativityComponent);
 
 /** Builds and returns a new User. */
 function createNewUser(id) {
-    var name = NAMES[Math.round(Math.random() * (NAMES.length - 1))] + ' ' +
+    const name = NAMES[Math.round(Math.random() * (NAMES.length - 1))] + ' ' +
         NAMES[Math.round(Math.random() * (NAMES.length - 1))].charAt(0) + '.';
     return {
         name: name,
@@ -8349,10 +8590,10 @@ module.exports = "table {\n  width: 100%;\n}\n\n.mat-form-field {\n  font-size: 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminsalesComponent", function() { return AdminsalesComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_material_paginator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material/paginator */ "./node_modules/@angular/material/esm5/paginator.es5.js");
-/* harmony import */ var _angular_material_sort__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material/sort */ "./node_modules/@angular/material/esm5/sort.es5.js");
-/* harmony import */ var _angular_material_table__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material/table */ "./node_modules/@angular/material/esm5/table.es5.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_material_paginator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material/paginator */ "./node_modules/@angular/material/esm2015/paginator.js");
+/* harmony import */ var _angular_material_sort__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material/sort */ "./node_modules/@angular/material/esm2015/sort.js");
+/* harmony import */ var _angular_material_table__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material/table */ "./node_modules/@angular/material/esm2015/table.js");
 /* harmony import */ var _adminsales_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./adminsales.service */ "./src/app/admin/adminsales/adminsales.service.ts");
 
 
@@ -8360,8 +8601,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var AdminsalesComponent = /** @class */ (function () {
-    function AdminsalesComponent(salesService) {
+let AdminsalesComponent = class AdminsalesComponent {
+    constructor(salesService) {
         this.salesService = salesService;
         this.mode = 'determinate';
         this.showSpinner = false;
@@ -8369,48 +8610,46 @@ var AdminsalesComponent = /** @class */ (function () {
         this.dataSource = new _angular_material_table__WEBPACK_IMPORTED_MODULE_4__["MatTableDataSource"](this.salesService.getSalesData());
         this.searchActive = false;
     }
-    AdminsalesComponent.prototype.ngOnInit = function () {
+    ngOnInit() {
         this.dataSource.paginator = this.paginator;
         this.dataSource.sort = this.sort;
-    };
-    AdminsalesComponent.prototype.applyFilter = function (filterValue) {
+    }
+    applyFilter(filterValue) {
         this.dataSource.filter = filterValue.trim().toLowerCase();
         if (this.dataSource.paginator) {
             this.dataSource.paginator.firstPage();
         }
-    };
+    }
     // onrefresh
-    AdminsalesComponent.prototype.onRefresh = function () {
-        var _this = this;
+    onRefresh() {
         this.showSpinner = true;
         this.mode = 'indeterminate';
-        setTimeout(function () {
-            _this.mode = 'determinate';
-            _this.showSpinner = false;
+        setTimeout(() => {
+            this.mode = 'determinate';
+            this.showSpinner = false;
         }, 1000);
-    };
+    }
     // filter
-    AdminsalesComponent.prototype.onActiveSearch = function () {
+    onActiveSearch() {
         this.searchActive = !this.searchActive;
-    };
-    AdminsalesComponent.ctorParameters = function () { return [
-        { type: _adminsales_service__WEBPACK_IMPORTED_MODULE_5__["SalesService"] }
-    ]; };
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_angular_material_paginator__WEBPACK_IMPORTED_MODULE_2__["MatPaginator"], { static: true })
-    ], AdminsalesComponent.prototype, "paginator", void 0);
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_angular_material_sort__WEBPACK_IMPORTED_MODULE_3__["MatSort"], { static: true })
-    ], AdminsalesComponent.prototype, "sort", void 0);
-    AdminsalesComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-adminsales',
-            template: __webpack_require__(/*! raw-loader!./adminsales.component.html */ "./node_modules/raw-loader/index.js!./src/app/admin/adminsales/adminsales.component.html"),
-            styles: [__webpack_require__(/*! ./adminsales.component.css */ "./src/app/admin/adminsales/adminsales.component.css")]
-        })
-    ], AdminsalesComponent);
-    return AdminsalesComponent;
-}());
+    }
+};
+AdminsalesComponent.ctorParameters = () => [
+    { type: _adminsales_service__WEBPACK_IMPORTED_MODULE_5__["SalesService"] }
+];
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_angular_material_paginator__WEBPACK_IMPORTED_MODULE_2__["MatPaginator"], { static: true })
+], AdminsalesComponent.prototype, "paginator", void 0);
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_angular_material_sort__WEBPACK_IMPORTED_MODULE_3__["MatSort"], { static: true })
+], AdminsalesComponent.prototype, "sort", void 0);
+AdminsalesComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-adminsales',
+        template: __webpack_require__(/*! raw-loader!./adminsales.component.html */ "./node_modules/raw-loader/index.js!./src/app/admin/adminsales/adminsales.component.html"),
+        styles: [__webpack_require__(/*! ./adminsales.component.css */ "./src/app/admin/adminsales/adminsales.component.css")]
+    })
+], AdminsalesComponent);
 
 
 
@@ -8427,25 +8666,24 @@ var AdminsalesComponent = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SalesService", function() { return SalesService; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 
 
-var SalesService = /** @class */ (function () {
-    function SalesService() {
+let SalesService = class SalesService {
+    constructor() {
         this.SALES_DATA = [
         //  {date: '2020-05-04', fullname: 'wayne' , email: 'wayne@gmail.com', plan: 'OPFX $77/mo 7 Day Trial', description: 'MMA +1-916-836-4569', amount: 87978, status:'Succeed'}
         ];
     }
-    SalesService.prototype.getSalesData = function () {
+    getSalesData() {
         return this.SALES_DATA.slice();
-    };
-    SalesService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
-            providedIn: 'root'
-        })
-    ], SalesService);
-    return SalesService;
-}());
+    }
+};
+SalesService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], SalesService);
 
 
 
@@ -8473,14 +8711,14 @@ module.exports = "table {\n    width: 100%;\n  }\n  \n  .mat-form-field {\n    f
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminservicesComponent", function() { return AdminservicesComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_material_paginator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material/paginator */ "./node_modules/@angular/material/esm5/paginator.es5.js");
-/* harmony import */ var _angular_material_sort__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material/sort */ "./node_modules/@angular/material/esm5/sort.es5.js");
-/* harmony import */ var _angular_material_table__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material/table */ "./node_modules/@angular/material/esm5/table.es5.js");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_material_paginator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material/paginator */ "./node_modules/@angular/material/esm2015/paginator.js");
+/* harmony import */ var _angular_material_sort__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material/sort */ "./node_modules/@angular/material/esm2015/sort.js");
+/* harmony import */ var _angular_material_table__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material/table */ "./node_modules/@angular/material/esm2015/table.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
 /* harmony import */ var _new_services_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./new-services.component */ "./src/app/admin/adminservices/new-services.component.ts");
 /* harmony import */ var _adminservices_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./adminservices.service */ "./src/app/admin/adminservices/adminservices.service.ts");
-/* harmony import */ var angular_web_storage__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! angular-web-storage */ "./node_modules/angular-web-storage/fesm5/angular-web-storage.js");
+/* harmony import */ var angular_web_storage__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! angular-web-storage */ "./node_modules/angular-web-storage/fesm2015/angular-web-storage.js");
 
 
 
@@ -8490,63 +8728,61 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var AdminservicesComponent = /** @class */ (function () {
-    function AdminservicesComponent(localStorage, dialog, serviceService) {
+let AdminservicesComponent = class AdminservicesComponent {
+    constructor(localStorage, dialog, serviceService) {
         this.localStorage = localStorage;
         this.dialog = dialog;
         this.serviceService = serviceService;
         this.mode = 'determinate';
         this.showSpinner = false;
-        this.ServicesDataSource = new _angular_material_table__WEBPACK_IMPORTED_MODULE_4__["MatTableDataSource"]([]);
+        // ServicesDataSource = new MatTableDataSource([]);
         this.displayedColumns = ['name', 'description', 'url', 'plan', 'coupon', 'sort', 'checkout', 'alter'];
         this.dataSource = new _angular_material_table__WEBPACK_IMPORTED_MODULE_4__["MatTableDataSource"](this.serviceService.getServices());
         this.version = _angular_material__WEBPACK_IMPORTED_MODULE_5__["VERSION"];
     }
-    AdminservicesComponent.prototype.openAddFileDialog = function () {
+    openAddFileDialog() {
         this.fileNameDialogRef = this.dialog.open(_new_services_component__WEBPACK_IMPORTED_MODULE_6__["NewServicesComponent"]);
-    };
-    AdminservicesComponent.prototype.ngOnInit = function () {
+    }
+    ngOnInit() {
         this.dataSource.paginator = this.paginator;
         this.dataSource.sort = this.sort;
-        var parsedData = JSON.parse(this.localStorage.get('newService'));
-        this.ServicesDataSource = new _angular_material_table__WEBPACK_IMPORTED_MODULE_4__["MatTableDataSource"](parsedData);
-    };
+        // var parsedData = JSON.parse(this.localStorage.get('newService'));
+        // this.ServicesDataSource = new MatTableDataSource(parsedData);
+    }
     // onrefresh
-    AdminservicesComponent.prototype.onRefresh = function () {
-        var _this = this;
+    onRefresh() {
         this.showSpinner = true;
         this.mode = 'indeterminate';
-        setTimeout(function () {
-            _this.mode = 'determinate';
-            _this.showSpinner = false;
+        setTimeout(() => {
+            this.mode = 'determinate';
+            this.showSpinner = false;
         }, 1000);
-    };
-    AdminservicesComponent.prototype.applyFilter = function (filterValue) {
+    }
+    applyFilter(filterValue) {
         this.dataSource.filter = filterValue.trim().toLowerCase();
         if (this.dataSource.paginator) {
             this.dataSource.paginator.firstPage();
         }
-    };
-    AdminservicesComponent.ctorParameters = function () { return [
-        { type: angular_web_storage__WEBPACK_IMPORTED_MODULE_8__["LocalStorageService"] },
-        { type: _angular_material__WEBPACK_IMPORTED_MODULE_5__["MatDialog"] },
-        { type: _adminservices_service__WEBPACK_IMPORTED_MODULE_7__["ServiceService"] }
-    ]; };
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_angular_material_paginator__WEBPACK_IMPORTED_MODULE_2__["MatPaginator"], { static: true })
-    ], AdminservicesComponent.prototype, "paginator", void 0);
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_angular_material_sort__WEBPACK_IMPORTED_MODULE_3__["MatSort"], { static: true })
-    ], AdminservicesComponent.prototype, "sort", void 0);
-    AdminservicesComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-adminservices',
-            template: __webpack_require__(/*! raw-loader!./adminservices.component.html */ "./node_modules/raw-loader/index.js!./src/app/admin/adminservices/adminservices.component.html"),
-            styles: [__webpack_require__(/*! ./adminservices.component.css */ "./src/app/admin/adminservices/adminservices.component.css")]
-        })
-    ], AdminservicesComponent);
-    return AdminservicesComponent;
-}());
+    }
+};
+AdminservicesComponent.ctorParameters = () => [
+    { type: angular_web_storage__WEBPACK_IMPORTED_MODULE_8__["LocalStorageService"] },
+    { type: _angular_material__WEBPACK_IMPORTED_MODULE_5__["MatDialog"] },
+    { type: _adminservices_service__WEBPACK_IMPORTED_MODULE_7__["ServiceService"] }
+];
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_angular_material_paginator__WEBPACK_IMPORTED_MODULE_2__["MatPaginator"], { static: true })
+], AdminservicesComponent.prototype, "paginator", void 0);
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])(_angular_material_sort__WEBPACK_IMPORTED_MODULE_3__["MatSort"], { static: true })
+], AdminservicesComponent.prototype, "sort", void 0);
+AdminservicesComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-adminservices',
+        template: __webpack_require__(/*! raw-loader!./adminservices.component.html */ "./node_modules/raw-loader/index.js!./src/app/admin/adminservices/adminservices.component.html"),
+        styles: [__webpack_require__(/*! ./adminservices.component.css */ "./src/app/admin/adminservices/adminservices.component.css")]
+    })
+], AdminservicesComponent);
 
 
 
@@ -8563,25 +8799,24 @@ var AdminservicesComponent = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ServiceService", function() { return ServiceService; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 
 
-var ServiceService = /** @class */ (function () {
-    function ServiceService() {
+let ServiceService = class ServiceService {
+    constructor() {
         this.SERVICES_DATA = [
         //{name: 'On Point FX Signals O', description: 'Access our 7-Day INTENSIVE Private Forex Training resources', url: 'www.mmagoldencircle.com/market-mastermind-1', plan:'USD', coupon: '',sort: '', }
         ];
     }
-    ServiceService.prototype.getServices = function () {
+    getServices() {
         return this.SERVICES_DATA.slice();
-    };
-    ServiceService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
-            providedIn: 'root'
-        })
-    ], ServiceService);
-    return ServiceService;
-}());
+    }
+};
+ServiceService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], ServiceService);
 
 
 
@@ -8598,15 +8833,15 @@ var ServiceService = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NewServicesComponent", function() { return NewServicesComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _adminservices_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./adminservices.service */ "./src/app/admin/adminservices/adminservices.service.ts");
-/* harmony import */ var angular_web_storage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! angular-web-storage */ "./node_modules/angular-web-storage/fesm5/angular-web-storage.js");
+/* harmony import */ var angular_web_storage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! angular-web-storage */ "./node_modules/angular-web-storage/fesm2015/angular-web-storage.js");
 
 
 
 
-var NewServicesComponent = /** @class */ (function () {
-    function NewServicesComponent(localstorage, adminServiceOfService) {
+let NewServicesComponent = class NewServicesComponent {
+    constructor(localstorage, adminServiceOfService) {
         this.localstorage = localstorage;
         this.adminServiceOfService = adminServiceOfService;
         this.type = 'type1';
@@ -8619,12 +8854,12 @@ var NewServicesComponent = /** @class */ (function () {
             sort: ''
         };
     }
-    NewServicesComponent.prototype.ngOnInit = function () {
+    ngOnInit() {
         console.log(this.adminServiceOfService);
-    };
-    NewServicesComponent.prototype.onSubmit = function () {
+    }
+    onSubmit() {
         this.adminServiceOfService.SERVICES_DATA.push(this.newService);
-        var storageService = this.adminServiceOfService.SERVICES_DATA;
+        const storageService = this.adminServiceOfService.SERVICES_DATA;
         this.localstorage.set('newService', JSON.stringify(storageService));
         console.log(this.adminServiceOfService);
         this.newService = {
@@ -8635,18 +8870,99 @@ var NewServicesComponent = /** @class */ (function () {
             coupon: '',
             sort: ''
         };
-    };
-    NewServicesComponent.ctorParameters = function () { return [
-        { type: angular_web_storage__WEBPACK_IMPORTED_MODULE_3__["LocalStorageService"] },
-        { type: _adminservices_service__WEBPACK_IMPORTED_MODULE_2__["ServiceService"] }
-    ]; };
-    NewServicesComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            template: "\n  <div class=\"modal-content new_user_dialog chatroom_dialog\">\n   <div class=\"modal-header\">\n      <h4 class=\"modal-title\">\n      <button  mat-dialog-close  class=\"close\">\n            <span aria-hidden=\"true\">\u00D7</span>\n        </button> \n         Add Service\n      </h4>\n   </div>\n   <form >\n      <div class=\"modal-body wrap-div\">\n      <div class=\"row\">\n          <div class=\"col-xs-12\">\n              <mat-form-field>\n                <input matInput placeholder=\"Name *\" value=\"\" name=\"name\" [(ngModel)]=\"newService.name\" > \n              </mat-form-field>\n          </div>\n      </div>    \n      <div class=\"row\">\n          <div class=\"col-xs-12\">\n              <mat-form-field>\n                <input matInput placeholder=\"Description *\" value=\"\" name=\"description\" [(ngModel)]=\"newService.description\"> \n              </mat-form-field>\n          </div>\n      </div>  \n      <div class=\"row\">\n            <div class=\"col-xs-12\">\n                <mat-form-field>\n                    <input matInput placeholder=\"icon\" value=\"rss\"  class=\"example-right-align\" >\n                    <span matPrefix><span class=\"fa fa-rss fa-fw\"></span>&nbsp;</span>\n                </mat-form-field>\n                <span class=\"bottom_line\">Enter the icon name you like from this library <a target=\"_blank\" href=\"http://fontawesome.io/icons\">http://fontawesome.io/icons</a></span>\n            </div>\n      </div>  \n      <div class=\"row\">\n            <div class=\"col-xs-12\">\n                <mat-form-field>\n                    <input matInput placeholder=\"\" value=\"\"  name=\"url\" class=\"example-right-align\" [(ngModel)]=\"newService.url\">\n                    <span matPrefix>https://&nbsp;</span>\n                </mat-form-field>\n            </div>\n      </div>  \n      <div class=\"row\">\n            <div class=\"col-xs-12\">\n                <mat-form-field>\n                    <input matInput placeholder=\"Params\" value=\"\" name=\"params\" > \n                </mat-form-field>\n            </div>\n        </div>  \n      <div class=\"row\">\n            <div class=\"col-xs-12\">\n                <mat-form-field>\n                    <mat-label>Type</mat-label>\n                    <mat-select [(value)]=\"type\" >\n                        <mat-option value=\"type1\">Public - The page is accessible to everybody</mat-option>\n                        <mat-option value=\"type2\">Premium - The page is associated with at least one billing plan</mat-option>\n                    </mat-select>\n                </mat-form-field>\n            </div>\n        </div>\n        <div class=\"row\">\n            <div class=\"col-xs-12\">\n            <h5>Options</h5>\n                    <mat-checkbox> Open the page in a new web browser window -</mat-checkbox> \n                        <span class=\"text-muted\">\n                            <i>Select this when the page does not allow iframe or it is HTTP</i>\n                        </span><br>\n\n                        <mat-checkbox>The page is visible -</mat-checkbox> \n                        <span class=\"text-muted\">\n                            <i>The page is displayed on the left sidebar</i>\n                        </span>\n            </div>\n        </div>\n      </div>\n      <div class=\"modal-footer wrap-div\">\n         <button mat-dialog-close  class=\"btn btn-default pull-left\" type=\"button\" >Cancel</button>\n         <button class=\"btn btn-blue\" (click)=\"onSubmit()\">Create</button>\n      </div>\n   </form>\n</div>\n  "
-        })
-    ], NewServicesComponent);
-    return NewServicesComponent;
-}());
+    }
+};
+NewServicesComponent.ctorParameters = () => [
+    { type: angular_web_storage__WEBPACK_IMPORTED_MODULE_3__["LocalStorageService"] },
+    { type: _adminservices_service__WEBPACK_IMPORTED_MODULE_2__["ServiceService"] }
+];
+NewServicesComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        template: `
+  <div class="modal-content new_user_dialog chatroom_dialog">
+   <div class="modal-header">
+      <h4 class="modal-title">
+      <button  mat-dialog-close  class="close">
+            <span aria-hidden="true">×</span>
+        </button> 
+         Add Service
+      </h4>
+   </div>
+   <form >
+      <div class="modal-body wrap-div">
+      <div class="row">
+          <div class="col-xs-12">
+              <mat-form-field>
+                <input matInput placeholder="Name *" value="" name="name" [(ngModel)]="newService.name" > 
+              </mat-form-field>
+          </div>
+      </div>    
+      <div class="row">
+          <div class="col-xs-12">
+              <mat-form-field>
+                <input matInput placeholder="Description *" value="" name="description" [(ngModel)]="newService.description"> 
+              </mat-form-field>
+          </div>
+      </div>  
+      <div class="row">
+            <div class="col-xs-12">
+                <mat-form-field>
+                    <input matInput placeholder="icon" value="rss"  class="example-right-align" >
+                    <span matPrefix><span class="fa fa-rss fa-fw"></span>&nbsp;</span>
+                </mat-form-field>
+                <span class="bottom_line">Enter the icon name you like from this library <a target="_blank" href="http://fontawesome.io/icons">http://fontawesome.io/icons</a></span>
+            </div>
+      </div>  
+      <div class="row">
+            <div class="col-xs-12">
+                <mat-form-field>
+                    <input matInput placeholder="" value=""  name="url" class="example-right-align" [(ngModel)]="newService.url">
+                    <span matPrefix>https://&nbsp;</span>
+                </mat-form-field>
+            </div>
+      </div>  
+      <div class="row">
+            <div class="col-xs-12">
+                <mat-form-field>
+                    <input matInput placeholder="Params" value="" name="params" > 
+                </mat-form-field>
+            </div>
+        </div>  
+      <div class="row">
+            <div class="col-xs-12">
+                <mat-form-field>
+                    <mat-label>Type</mat-label>
+                    <mat-select [(value)]="type" >
+                        <mat-option value="type1">Public - The page is accessible to everybody</mat-option>
+                        <mat-option value="type2">Premium - The page is associated with at least one billing plan</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+            <h5>Options</h5>
+                    <mat-checkbox> Open the page in a new web browser window -</mat-checkbox> 
+                        <span class="text-muted">
+                            <i>Select this when the page does not allow iframe or it is HTTP</i>
+                        </span><br>
+
+                        <mat-checkbox>The page is visible -</mat-checkbox> 
+                        <span class="text-muted">
+                            <i>The page is displayed on the left sidebar</i>
+                        </span>
+            </div>
+        </div>
+      </div>
+      <div class="modal-footer wrap-div">
+         <button mat-dialog-close  class="btn btn-default pull-left" type="button" >Cancel</button>
+         <button class="btn btn-blue" (click)="onSubmit()">Create</button>
+      </div>
+   </form>
+</div>
+  `
+    })
+], NewServicesComponent);
 
 
 
@@ -8675,10 +8991,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminsettingsComponent", function() { return AdminsettingsComponent; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NewTeamAvatarDialog", function() { return NewTeamAvatarDialog; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
 /* harmony import */ var _custom_script_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./custom-script.component */ "./src/app/admin/adminsettings/custom-script.component.ts");
-/* harmony import */ var angular_web_storage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! angular-web-storage */ "./node_modules/angular-web-storage/fesm5/angular-web-storage.js");
+/* harmony import */ var angular_web_storage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! angular-web-storage */ "./node_modules/angular-web-storage/fesm2015/angular-web-storage.js");
 /* harmony import */ var _new_avatar_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./new-avatar.service */ "./src/app/admin/adminsettings/new-avatar.service.ts");
 
 
@@ -8686,76 +9002,72 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var AdminsettingsComponent = /** @class */ (function () {
-    function AdminsettingsComponent(dialog, localStorage, newAvatarService) {
+let AdminsettingsComponent = class AdminsettingsComponent {
+    constructor(dialog, localStorage, newAvatarService) {
         this.dialog = dialog;
         this.localStorage = localStorage;
         this.newAvatarService = newAvatarService;
         this.adminImgPath = this.localStorage.get('admin_user_profile');
     }
-    AdminsettingsComponent.prototype.openteamavatar = function () {
-        var fileNameDialogRef = this.dialog.open(NewTeamAvatarDialog);
-    };
-    AdminsettingsComponent.prototype.openscript = function () {
-        var fileNameDialogRef = this.dialog.open(_custom_script_component__WEBPACK_IMPORTED_MODULE_3__["CustomScriptComponent"]);
-    };
-    AdminsettingsComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        this.newAvatarService.newAvatar.subscribe(function () {
-            _this.adminImgPath = _this.localStorage.get('admin_user_profile');
+    openteamavatar() {
+        const fileNameDialogRef = this.dialog.open(NewTeamAvatarDialog);
+    }
+    openscript() {
+        const fileNameDialogRef = this.dialog.open(_custom_script_component__WEBPACK_IMPORTED_MODULE_3__["CustomScriptComponent"]);
+    }
+    ngOnInit() {
+        this.newAvatarService.newAvatar.subscribe(() => {
+            this.adminImgPath = this.localStorage.get('admin_user_profile');
         });
-    };
-    AdminsettingsComponent.ctorParameters = function () { return [
-        { type: _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialog"] },
-        { type: angular_web_storage__WEBPACK_IMPORTED_MODULE_4__["LocalStorageService"] },
-        { type: _new_avatar_service__WEBPACK_IMPORTED_MODULE_5__["NewAvatarService"] }
-    ]; };
-    AdminsettingsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-adminsettings',
-            template: __webpack_require__(/*! raw-loader!./adminsettings.component.html */ "./node_modules/raw-loader/index.js!./src/app/admin/adminsettings/adminsettings.component.html"),
-            styles: [__webpack_require__(/*! ./adminsettings.component.css */ "./src/app/admin/adminsettings/adminsettings.component.css")]
-        })
-    ], AdminsettingsComponent);
-    return AdminsettingsComponent;
-}());
+    }
+};
+AdminsettingsComponent.ctorParameters = () => [
+    { type: _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialog"] },
+    { type: angular_web_storage__WEBPACK_IMPORTED_MODULE_4__["LocalStorageService"] },
+    { type: _new_avatar_service__WEBPACK_IMPORTED_MODULE_5__["NewAvatarService"] }
+];
+AdminsettingsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-adminsettings',
+        template: __webpack_require__(/*! raw-loader!./adminsettings.component.html */ "./node_modules/raw-loader/index.js!./src/app/admin/adminsettings/adminsettings.component.html"),
+        styles: [__webpack_require__(/*! ./adminsettings.component.css */ "./src/app/admin/adminsettings/adminsettings.component.css")]
+    })
+], AdminsettingsComponent);
 
 // new avatar dialog
-var NewTeamAvatarDialog = /** @class */ (function () {
-    function NewTeamAvatarDialog(localStorage, newAvatarService) {
+let NewTeamAvatarDialog = class NewTeamAvatarDialog {
+    constructor(localStorage, newAvatarService) {
         this.localStorage = localStorage;
         this.newAvatarService = newAvatarService;
         this.adminImgPath = this.localStorage.get('admin_user_profile');
     }
-    NewTeamAvatarDialog.prototype.ngOnInit = function () {
-    };
-    NewTeamAvatarDialog.prototype.preview = function (files) {
-        var _this = this;
+    ngOnInit() {
+    }
+    preview(files) {
         if (files.length === 0)
             return;
         var reader = new FileReader();
         reader.readAsDataURL(files[0]);
-        reader.onload = function (_event) {
-            _this.adminImgPath = reader.result;
-            _this.localStorage.set("admin_user_profile", _this.adminImgPath);
+        reader.onload = (_event) => {
+            this.adminImgPath = reader.result;
+            this.localStorage.set("admin_user_profile", this.adminImgPath);
         };
-    };
-    NewTeamAvatarDialog.prototype.onUpload = function () {
+    }
+    onUpload() {
         this.newAvatarService.newAvatar.next(true);
-    };
-    NewTeamAvatarDialog.ctorParameters = function () { return [
-        { type: angular_web_storage__WEBPACK_IMPORTED_MODULE_4__["LocalStorageService"] },
-        { type: _new_avatar_service__WEBPACK_IMPORTED_MODULE_5__["NewAvatarService"] }
-    ]; };
-    NewTeamAvatarDialog = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'new-teamavatar',
-            template: __webpack_require__(/*! raw-loader!./new-teamavatar.dialog.html */ "./node_modules/raw-loader/index.js!./src/app/admin/adminsettings/new-teamavatar.dialog.html"),
-            styles: [__webpack_require__(/*! ./adminsettings.component.css */ "./src/app/admin/adminsettings/adminsettings.component.css")]
-        })
-    ], NewTeamAvatarDialog);
-    return NewTeamAvatarDialog;
-}());
+    }
+};
+NewTeamAvatarDialog.ctorParameters = () => [
+    { type: angular_web_storage__WEBPACK_IMPORTED_MODULE_4__["LocalStorageService"] },
+    { type: _new_avatar_service__WEBPACK_IMPORTED_MODULE_5__["NewAvatarService"] }
+];
+NewTeamAvatarDialog = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'new-teamavatar',
+        template: __webpack_require__(/*! raw-loader!./new-teamavatar.dialog.html */ "./node_modules/raw-loader/index.js!./src/app/admin/adminsettings/new-teamavatar.dialog.html"),
+        styles: [__webpack_require__(/*! ./adminsettings.component.css */ "./src/app/admin/adminsettings/adminsettings.component.css")]
+    })
+], NewTeamAvatarDialog);
 
 
 
@@ -8772,19 +9084,49 @@ var NewTeamAvatarDialog = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CustomScriptComponent", function() { return CustomScriptComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 
 
-var CustomScriptComponent = /** @class */ (function () {
-    function CustomScriptComponent() {
-    }
-    CustomScriptComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            template: "\n  <div class=\"modal-content new_subs new_user_dialog new-teamavatar\">\n   <div class=\"modal-header\">\n      <h4 class=\"modal-title\">\n        <button  mat-dialog-close  class=\"close\">\n            <span aria-hidden=\"true\">\u00D7</span>\n        </button> \n         Custom Scripts\n      </h4>\n   </div>\n    <div class=\"modal-body wrap-div\">\n            <p>General Script</p>\n            <p class=\"p_12\">This script is loaded at the bottom of the page in the chat app</p>\n            <form class=\"example-form\">\n                <textarea type=\"text\" rows=\"7\" class=\"inputText\" placeholder=\n\"<script>\n    console.log(&quot;ADMIN SCRIPT LOADED&quot;);\n</script>\" style=\"width:100%; margin-bottom:20px;\"></textarea>  \n\n<p>Finished Payment Script</p>\n<p class=\"p_12\">This script is loaded when the user submit the payment form or wizard</p>\n    <textarea type=\"text\" rows=\"7\" class=\"inputText\" placeholder=\n\"<script>\n    console.log(&quot;ADMIN PAYMENT SCRIPT LOADED&quot;);\n</script>\" \nstyle=\"width:100%;\"></textarea>  \n            </form>\n    </div>        \n    <div class=\"modal-footer wrap-div\">\n    <button mat-dialog-close class=\"btn btn-default pull-left\" type=\"button\">Cancel</button>\n        <button class=\"btn btn-blue\">Upload</button>\n    </div>\n</div>\n  "
-        })
-    ], CustomScriptComponent);
-    return CustomScriptComponent;
-}());
+let CustomScriptComponent = class CustomScriptComponent {
+};
+CustomScriptComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        template: `
+  <div class="modal-content new_subs new_user_dialog new-teamavatar">
+   <div class="modal-header">
+      <h4 class="modal-title">
+        <button  mat-dialog-close  class="close">
+            <span aria-hidden="true">×</span>
+        </button> 
+         Custom Scripts
+      </h4>
+   </div>
+    <div class="modal-body wrap-div">
+            <p>General Script</p>
+            <p class="p_12">This script is loaded at the bottom of the page in the chat app</p>
+            <form class="example-form">
+                <textarea type="text" rows="7" class="inputText" placeholder=
+"<script>
+    console.log(&quot;ADMIN SCRIPT LOADED&quot;);
+</script>" style="width:100%; margin-bottom:20px;"></textarea>  
+
+<p>Finished Payment Script</p>
+<p class="p_12">This script is loaded when the user submit the payment form or wizard</p>
+    <textarea type="text" rows="7" class="inputText" placeholder=
+"<script>
+    console.log(&quot;ADMIN PAYMENT SCRIPT LOADED&quot;);
+</script>" 
+style="width:100%;"></textarea>  
+            </form>
+    </div>        
+    <div class="modal-footer wrap-div">
+    <button mat-dialog-close class="btn btn-default pull-left" type="button">Cancel</button>
+        <button class="btn btn-blue">Upload</button>
+    </div>
+</div>
+  `
+    })
+], CustomScriptComponent);
 
 
 
@@ -8801,22 +9143,21 @@ var CustomScriptComponent = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NewAvatarService", function() { return NewAvatarService; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
 
 
 
-var NewAvatarService = /** @class */ (function () {
-    function NewAvatarService() {
+let NewAvatarService = class NewAvatarService {
+    constructor() {
         this.newAvatar = new rxjs__WEBPACK_IMPORTED_MODULE_2__["Subject"]();
     }
-    NewAvatarService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
-            providedIn: 'root'
-        })
-    ], NewAvatarService);
-    return NewAvatarService;
-}());
+};
+NewAvatarService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], NewAvatarService);
 
 
 
@@ -8844,12 +9185,12 @@ module.exports = ".is-new {\n    background: #1e88e5;\n    border-radius: 0 3px 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminwidgetComponent", function() { return AdminwidgetComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
 /* harmony import */ var _customwidget_dialog_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./customwidget-dialog.component */ "./src/app/admin/adminwidget/customwidget-dialog.component.ts");
 /* harmony import */ var _configure_dialog_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./configure-dialog.component */ "./src/app/admin/adminwidget/configure-dialog.component.ts");
 /* harmony import */ var _adminwidget_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./adminwidget.service */ "./src/app/admin/adminwidget/adminwidget.service.ts");
-/* harmony import */ var angular_web_storage__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! angular-web-storage */ "./node_modules/angular-web-storage/fesm5/angular-web-storage.js");
+/* harmony import */ var angular_web_storage__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! angular-web-storage */ "./node_modules/angular-web-storage/fesm2015/angular-web-storage.js");
 
 
 
@@ -8857,8 +9198,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var AdminwidgetComponent = /** @class */ (function () {
-    function AdminwidgetComponent(dialog, adminwidgetService, localStorage) {
+let AdminwidgetComponent = class AdminwidgetComponent {
+    constructor(dialog, adminwidgetService, localStorage) {
         this.dialog = dialog;
         this.adminwidgetService = adminwidgetService;
         this.localStorage = localStorage;
@@ -8866,28 +9207,27 @@ var AdminwidgetComponent = /** @class */ (function () {
         this.topBarWidgets = this.adminwidgetService.topbar;
         this.widgetStatus = this.localStorage.get('widget');
     }
-    AdminwidgetComponent.prototype.openAddFileDialog = function () {
+    openAddFileDialog() {
         this.fileNameDialogRef = this.dialog.open(_customwidget_dialog_component__WEBPACK_IMPORTED_MODULE_3__["CustomwidgetComponent"]);
-    };
-    AdminwidgetComponent.prototype.openConfigureDialog = function () {
+    }
+    openConfigureDialog() {
         this.fileNameDialogRef = this.dialog.open(_configure_dialog_component__WEBPACK_IMPORTED_MODULE_4__["ConfiguredialogComponent"]);
-    };
-    AdminwidgetComponent.prototype.ngOnInit = function () {
-    };
-    AdminwidgetComponent.ctorParameters = function () { return [
-        { type: _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialog"] },
-        { type: _adminwidget_service__WEBPACK_IMPORTED_MODULE_5__["AdminWidgetService"] },
-        { type: angular_web_storage__WEBPACK_IMPORTED_MODULE_6__["LocalStorageService"] }
-    ]; };
-    AdminwidgetComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-adminwidget',
-            template: __webpack_require__(/*! raw-loader!./adminwidget.component.html */ "./node_modules/raw-loader/index.js!./src/app/admin/adminwidget/adminwidget.component.html"),
-            styles: [__webpack_require__(/*! ./adminwidget.component.css */ "./src/app/admin/adminwidget/adminwidget.component.css")]
-        })
-    ], AdminwidgetComponent);
-    return AdminwidgetComponent;
-}());
+    }
+    ngOnInit() {
+    }
+};
+AdminwidgetComponent.ctorParameters = () => [
+    { type: _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialog"] },
+    { type: _adminwidget_service__WEBPACK_IMPORTED_MODULE_5__["AdminWidgetService"] },
+    { type: angular_web_storage__WEBPACK_IMPORTED_MODULE_6__["LocalStorageService"] }
+];
+AdminwidgetComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-adminwidget',
+        template: __webpack_require__(/*! raw-loader!./adminwidget.component.html */ "./node_modules/raw-loader/index.js!./src/app/admin/adminwidget/adminwidget.component.html"),
+        styles: [__webpack_require__(/*! ./adminwidget.component.css */ "./src/app/admin/adminwidget/adminwidget.component.css")]
+    })
+], AdminwidgetComponent);
 
 
 
@@ -8904,22 +9244,21 @@ var AdminwidgetComponent = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminWidgetService", function() { return AdminWidgetService; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 
 
-var AdminWidgetService = /** @class */ (function () {
-    function AdminWidgetService() {
+let AdminWidgetService = class AdminWidgetService {
+    constructor() {
         this.topbar = [
             { name: 'Charts', img: 'https://cdn.echofin.co/widgets/echofin.commodities.jpg', description: 'TradingView' }
         ];
     }
-    AdminWidgetService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
-            providedIn: 'root'
-        })
-    ], AdminWidgetService);
-    return AdminWidgetService;
-}());
+};
+AdminWidgetService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], AdminWidgetService);
 
 
 
@@ -8936,41 +9275,73 @@ var AdminWidgetService = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ConfiguredialogComponent", function() { return ConfiguredialogComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _adminwidget_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./adminwidget.service */ "./src/app/admin/adminwidget/adminwidget.service.ts");
-/* harmony import */ var angular_web_storage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! angular-web-storage */ "./node_modules/angular-web-storage/fesm5/angular-web-storage.js");
+/* harmony import */ var angular_web_storage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! angular-web-storage */ "./node_modules/angular-web-storage/fesm2015/angular-web-storage.js");
 
 
 
 
-var ConfiguredialogComponent = /** @class */ (function () {
-    function ConfiguredialogComponent(adminWidgetService, localStorage) {
+let ConfiguredialogComponent = class ConfiguredialogComponent {
+    constructor(adminWidgetService, localStorage) {
         this.adminWidgetService = adminWidgetService;
         this.localStorage = localStorage;
         this.position = 'right-bar';
         this.widget = this.localStorage.get('widget');
     }
-    ConfiguredialogComponent.prototype.onDisabledWidget = function () {
+    onDisabledWidget() {
         this.adminWidgetService.widget = true;
         this.widget = !this.widget;
         this.localStorage.set('widget', this.adminWidgetService.widget);
-    };
-    ConfiguredialogComponent.prototype.onEnableWidget = function () {
+    }
+    onEnableWidget() {
         this.adminWidgetService.widget = false;
         this.widget = !this.widget;
         this.localStorage.set('widget', this.adminWidgetService.widget);
-    };
-    ConfiguredialogComponent.ctorParameters = function () { return [
-        { type: _adminwidget_service__WEBPACK_IMPORTED_MODULE_2__["AdminWidgetService"] },
-        { type: angular_web_storage__WEBPACK_IMPORTED_MODULE_3__["LocalStorageService"] }
-    ]; };
-    ConfiguredialogComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            template: "\n  <div class=\"modal-content new_user_dialog custom_widget\">\n   <div class=\"modal-header\">\n      <h4 class=\"modal-title\">\n      <button  mat-dialog-close  class=\"close\">\n          <span aria-hidden=\"true\">\u00D7</span>\n      </button> \n         Configure Widget\n      </h4>\n   </div>\n   <div class=\"modal-body wrap-div\">\n        <div class=\"row\">\n            <div class=\"col-sm-6 col-sm-offset-3\">\n                <div class=\"text-primary text-center\">\n                    <h4>This is a third party widget</h4>\n                    <p>This widget is preconfigured by a third party. You may only disabled it and/or uninstall it.</p>\n                </div>\n            </div>\n        </div>  \n   </div>\n\n   <div class=\"modal-footer wrap-div text-center\">\n      <button class=\"btn btn-md btn-warning\" (click)=\"onDisabledWidget()\" *ngIf=\"!widget\">\n            <span class=\"fa fa-times fa-fw\"></span> disable\n        </button>\n        <button class=\"btn btn-md btn-warning\" (click)=\"onEnableWidget()\" *ngIf=\"widget\">\n            <span class=\"fa fa-check fa-fw\"></span> Enable\n        </button>\n      <button class=\"btn btn-md btn-danger\">\n            <span class=\"fa fa-trash-o fa-fw\"></span> uninstall\n        </button>\n    </div>\n</div>\n  "
-        })
-    ], ConfiguredialogComponent);
-    return ConfiguredialogComponent;
-}());
+    }
+};
+ConfiguredialogComponent.ctorParameters = () => [
+    { type: _adminwidget_service__WEBPACK_IMPORTED_MODULE_2__["AdminWidgetService"] },
+    { type: angular_web_storage__WEBPACK_IMPORTED_MODULE_3__["LocalStorageService"] }
+];
+ConfiguredialogComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        template: `
+  <div class="modal-content new_user_dialog custom_widget">
+   <div class="modal-header">
+      <h4 class="modal-title">
+      <button  mat-dialog-close  class="close">
+          <span aria-hidden="true">×</span>
+      </button> 
+         Configure Widget
+      </h4>
+   </div>
+   <div class="modal-body wrap-div">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <div class="text-primary text-center">
+                    <h4>This is a third party widget</h4>
+                    <p>This widget is preconfigured by a third party. You may only disabled it and/or uninstall it.</p>
+                </div>
+            </div>
+        </div>  
+   </div>
+
+   <div class="modal-footer wrap-div text-center">
+      <button class="btn btn-md btn-warning" (click)="onDisabledWidget()" *ngIf="!widget">
+            <span class="fa fa-times fa-fw"></span> disable
+        </button>
+        <button class="btn btn-md btn-warning" (click)="onEnableWidget()" *ngIf="widget">
+            <span class="fa fa-check fa-fw"></span> Enable
+        </button>
+      <button class="btn btn-md btn-danger">
+            <span class="fa fa-trash-o fa-fw"></span> uninstall
+        </button>
+    </div>
+</div>
+  `
+    })
+], ConfiguredialogComponent);
 
 
 
@@ -8987,20 +9358,512 @@ var ConfiguredialogComponent = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CustomwidgetComponent", function() { return CustomwidgetComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 
 
-var CustomwidgetComponent = /** @class */ (function () {
-    function CustomwidgetComponent() {
+let CustomwidgetComponent = class CustomwidgetComponent {
+    constructor() {
         this.position = 'right-bar';
     }
-    CustomwidgetComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            template: "\n  <div class=\"modal-content new_user_dialog custom_widget\">\n   <div class=\"modal-header\">\n      <h4 class=\"modal-title\">\n      <button  mat-dialog-close  class=\"close\">\n          <span aria-hidden=\"true\">\u00D7</span>\n      </button> \n         Configure Widget\n      </h4>\n   </div>\n   <div class=\"modal-body wrap-div\">\n      <mat-tab-group>\n            <mat-tab>\n              <ng-template mat-tab-label>\n                  <i class=\"fa fa-bars\" aria-hidden=\"true\"></i>\n                Details\n              </ng-template>\n              <div class=\"row\">\n                  <div class=\"col-xs-12\">\n                    <mat-form-field>\n                        <input matInput placeholder=\"Title *\">\n                    </mat-form-field>\n                  </div>\n                </div>\n                <div class=\"row\">\n                      <div class=\"col-xs-12\">\n                          <mat-form-field>\n                              <input matInput placeholder=\"Url *\" value=\"\"  class=\"example-right-align\">\n                              <span matPrefix>https:// &nbsp;</span>\n                          </mat-form-field>\n                      </div>\n                </div>  \n                <div class=\"row\">\n                    <div class=\"col-xs-12\">\n                    <mat-form-field>\n                        <mat-label>Position *</mat-label>\n                        <mat-select [(value)]=\"position\">\n                            <mat-option value=\"right-bar\">Right-bar</mat-option>\n                            <mat-option value=\"top-bar\">Top-bar</mat-option>\n                        </mat-select>\n                    </mat-form-field>\n                    </div>\n                </div>  \n                <div class=\"row\">\n                    <div class=\"col-sm-6\">\n                      <div class=\"checkbox\">\n                        <label>\n                        <input type=\"checkbox\" class=\"\">  Enabled widget to users\n                        </label>\n                      </div>\n                    </div>  \n                </div>\n            </mat-tab>\n            <mat-tab >\n              <ng-template mat-tab-label>\n              <i class=\"fa fa-credit-card\" aria-hidden=\"true\"></i>\n                Billing\n              </ng-template>\n              <div class=\"row\">\n                  <div class=\"col-sm-6\">\n                    <div class=\"checkbox\">\n                      <label>\n                      <input type=\"checkbox\" class=\"\"> Enable billing plans\n                      </label>\n                    </div>\n                  </div>\n              </div>\n              <div class=\"row\">\n                  <div class=\"col-xs-12\">\n                   <p>Anyone who has paid for any of the plans should receive the premium widget version</p>\n                  </div>\n                  <div class=\"col-sm-6\">\n                      <div class=\"checkbox checkbox-form\">\n                        <label>\n                        <input type=\"checkbox\" class=\"\">On Point FX Signals\n                        </label>\n                      </div>\n                  </div>\n                  <div class=\"col-sm-6\">\n                      <div class=\"checkbox checkbox-form\">\n                        <label>\n                         <input type=\"checkbox\" class=\"\">On-Point FX Signals 7-Day FREE Trial\n                        </label>\n                      </div>\n                  </div>\n              </div>\n              <div class=\"row\">\n                  <div class=\"col-sm-6\">\n                      <div class=\"checkbox checkbox-form\">\n                        <label>\n                        <input type=\"checkbox\" class=\"\"> Private Forex Mentoring\n                        </label>\n                      </div>\n                  </div>\n                  <div class=\"col-sm-6\">\n                      <div class=\"checkbox checkbox-form\">\n                        <label>\n                        <input type=\"checkbox\" class=\"\"> 7-Day INTENSIVE Private Forex Training\n                        </label>\n                      </div>\n                  </div>\n              </div>\n              <div class=\"row\">\n                  <div class=\"col-sm-6\">\n                      <div class=\"checkbox checkbox-form\">\n                        <label>\n                        <input type=\"checkbox\" class=\"\"> On Point FX Signals (Telegram)\n                        </label>\n                      </div>\n                  </div>\n                  <div class=\"col-sm-6\">\n                      <div class=\"checkbox checkbox-form\">\n                        <label>\n                        <input type=\"checkbox\" class=\"\">  On Point FX Signals 7-Days FREE and then $57/mo\n                        </label>\n                      </div>\n                  </div>\n              </div>\n              <div class=\"row\">\n                  <div class=\"col-sm-6\">\n                      <div class=\"checkbox checkbox-form\">\n                        <label>\n                           <input type=\"checkbox\" class=\"\">  $0 test\n                        </label>\n                      </div>\n                  </div>\n                  <div class=\"col-sm-6\">\n                      <div class=\"checkbox checkbox-form\">\n                        <label>\n                          <input type=\"checkbox\" class=\"\">  FX Signals $57 Early-bird Special\n                        </label>\n                      </div>\n                  </div>\n              </div>\n              <div class=\"row\">\n                  <div class=\"col-sm-6\">\n                      <div class=\"checkbox checkbox-form\">\n                        <label>\n                        <input type=\"checkbox\" class=\"\">   Market Masters FX Signals Transfer Form\n                        </label>\n                      </div>\n                  </div>\n                  <div class=\"col-sm-6\">\n                      <div class=\"checkbox checkbox-form\">\n                        <label>\n                        <input type=\"checkbox\" class=\"\">Market Masters VIP Forex Signals Transfer Form\n                        </label>\n                      </div>\n                  </div>\n              </div>\n              <div class=\"row\">\n                  <div class=\"col-sm-6\">\n                      <div class=\"checkbox checkbox-form\">\n                        <label>\n                        <input type=\"checkbox\" class=\"\">On Point FX Signals $97/mo\n                        </label>\n                      </div>\n                  </div>\n                  <div class=\"col-sm-6\">\n                      <div class=\"checkbox checkbox-form\">\n                        <label>\n                        <input type=\"checkbox\" class=\"\"> No Credit Card Test\n                        </label>\n                      </div>\n                  </div>\n              </div>\n              <div class=\"row\">\n                  <div class=\"col-sm-6\">\n                      <div class=\"checkbox checkbox-form\">\n                        <label>\n                         <input type=\"checkbox\" class=\"\"> MMA On Point FX Signals\n                        </label>\n                      </div>\n                  </div>\n                  <div class=\"col-sm-6\">\n                      <div class=\"checkbox checkbox-form\">\n                        <label>\n                          <input type=\"checkbox\" class=\"\">MMA OPFX Julio Vasquez\n                        </label>\n                      </div>\n                  </div>\n              </div>\n              <div class=\"row\">\n                  <div class=\"col-sm-6\">\n                      <div class=\"checkbox checkbox-form\">\n                        <label>\n                        <input type=\"checkbox\" class=\"\"> Exclusive 1-on-1 Training\n                        </label>\n                      </div>\n                  </div>\n                  <div class=\"col-sm-6\">\n                      <div class=\"checkbox checkbox-form\">\n                        <label>\n                        <input type=\"checkbox\" class=\"\"> MMA Signals Transfer\n                        </label>\n                      </div>\n                  </div>\n              </div>\n              <div class=\"row\">\n                  <div class=\"col-sm-6\">\n                      <div class=\"checkbox checkbox-form\">\n                        <label>\n                           <input type=\"checkbox\" class=\"\">7-Day Intense Forex Training (3 Month Plan)\n                        </label>\n                      </div>\n                  </div>\n                  <div class=\"col-sm-6\">\n                      <div class=\"checkbox checkbox-form\">\n                        <label>\n                        <input type=\"checkbox\" class=\"\"> OPFX $77/mo 7 Day Trial\n                        </label>\n                      </div>\n                  </div>\n              </div>\n              <div class=\"row\">\n                  <div class=\"col-sm-6\">\n                      <div class=\"checkbox checkbox-form\">\n                        <label>\n                        <input type=\"checkbox\" class=\"\">  OPFX $77/mo No Trial\n                        </label>\n                      </div>\n                  </div>\n                  <div class=\"col-sm-6\">\n                      <div class=\"checkbox checkbox-form\">\n                        <label>\n                        <input type=\"checkbox\" class=\"\">  OPFX $77/mo 7 Day Trial (No CC Required)\n                        </label>\n                      </div>\n                  </div>\n              </div>\n              <div class=\"row\">\n                  <div class=\"col-sm-6\">\n                      <div class=\"checkbox checkbox-form\">\n                        <label>\n                        <input type=\"checkbox\" class=\"\">   OPFX Recurly\n                        </label>\n                      </div>\n                  </div>\n                  <div class=\"col-sm-6\">\n                      <div class=\"checkbox checkbox-form\">\n                        <label>\n                        <input type=\"checkbox\" class=\"\">  7-Day Training Recurly\n                        </label>\n                      </div>\n                  </div>\n              </div>\n              <div class=\"row\">\n                  <div class=\"col-sm-6\">\n                      <div class=\"checkbox checkbox-form\">\n                        <label>\n                        <input type=\"checkbox\" class=\"\">    7-Day Training Deal Recurly\n                        </label>\n                      </div>\n                  </div>\n                  <div class=\"col-sm-6\">\n                      <div class=\"checkbox checkbox-form\">\n                        <label>\n                        <input type=\"checkbox\" class=\"\">  OPFX PP\n                        </label>\n                      </div>\n                  </div>\n              </div>\n              <div class=\"row\">\n                  <div class=\"col-sm-6\">\n                      <div class=\"checkbox checkbox-form\">\n                        <label>\n                        <input type=\"checkbox\" class=\"\">    7-Day Training PP\n                        </label>\n                      </div>\n                  </div>\n                  <div class=\"col-sm-6\">\n                      <div class=\"checkbox checkbox-form\">\n                        <label>\n                          <input type=\"checkbox\" class=\"\">7-Day Training Deal PP\n                        </label>\n                      </div>\n                  </div>\n              </div>\n              <div class=\"row\">\n                  <div class=\"col-sm-6\">\n                      <div class=\"checkbox checkbox-form\">\n                        <label>\n                        <input type=\"checkbox\" class=\"\">OPFX $77/mo 7 Day Trial (No CC Required)*\n                        </label>\n                      </div>\n                  </div>\n                  <div class=\"col-sm-6\">\n                      <div class=\"checkbox checkbox-form\">\n                        <label>\n                        <input type=\"checkbox\" class=\"\">Marcos OPFS FREE TRIAL (NO CC)\n                        </label>\n                      </div>\n                  </div>\n              </div>\n              <div class=\"row\">\n                  <div class=\"col-sm-6\">\n                      <div class=\"checkbox checkbox-form\">\n                        <label>\n                          <input type=\"checkbox\" class=\"\">Isaac OPFS FREE TRIAL (NO CC)\n                        </label>\n                      </div>\n                  </div>\n                  <div class=\"col-sm-6\">\n                      <div class=\"checkbox checkbox-form\">\n                        <label>\n                        <input type=\"checkbox\" class=\"\">  Allen OPFS FREE TRIAL (NO CC)\n                        </label>\n                      </div>\n                  </div>\n              </div>\n              <div class=\"row\">\n                  <div class=\"col-sm-6\">\n                      <div class=\"checkbox checkbox-form\">\n                        <label>\n                        <input type=\"checkbox\" class=\"\">    Market Mastermind (Deal)\n                        </label>\n                      </div>\n                  </div>\n                  <div class=\"col-sm-6\">\n                      <div class=\"checkbox checkbox-form\">\n                        <label>\n                        <input type=\"checkbox\" class=\"\">Privte Mentorship\n                        </label>\n                      </div>\n                  </div>\n              </div>\n              <div class=\"row\">\n                  <div class=\"col-sm-6\">\n                      <div class=\"checkbox checkbox-form\">\n                        <label>\n                          <input type=\"checkbox\" class=\"\">Prazise FX Signals\n                        </label>\n                      </div>\n                  </div>\n                  <div class=\"col-sm-6\">\n                      <div class=\"checkbox checkbox-form\">\n                        <label>\n                        <input type=\"checkbox\" class=\"\">Website Testing A/B\n                        </label>\n                      </div>\n                  </div>\n              </div>\n              <div class=\"row\">\n                  <div class=\"col-sm-6\">\n                      <div class=\"checkbox checkbox-form\">\n                        <label>\n                        <input type=\"checkbox\" class=\"\"> Chat Development\n                        </label>\n                      </div>\n                  </div>\n              </div>\n              <p>* The Primary plan appears in the in-chat billing form</p>\n              <div class=\"row\">\n                  <div class=\"col-xs-12\">\n                    <p>Apply the following coupon in the Primary plan</p>\n                    <mat-form-field>\n                        <mat-label>Position *</mat-label>\n                        <mat-select [(value)]=\"position\">\n                            <mat-option value=\"right-bar\">Right-bar</mat-option>\n                            <mat-option value=\"top-bar\">Top-bar</mat-option>\n                        </mat-select>\n                    </mat-form-field>\n                  </div>\n              </div>\n              <div class=\"row\">\n                  <div class=\"col-xs-12\">\n                      <div class=\"checkbox\">\n                        <label>\n                          <input type=\"checkbox\" class=\"\">  Widget has a different URL for premium users                        \n                        </label>\n                      </div>\n                  </div>\n              </div>\n              <div class=\"row\">\n                  <div class=\"col-xs-12\">\n                      <div class=\"checkbox\">\n                        <label>\n                          <input type=\"checkbox\" class=\"\">  Custom upgrade-banner message                        \n                        </label>\n                      </div>\n                  </div>\n              </div>\n            </mat-tab>\n            <mat-tab>\n              <ng-template mat-tab-label>\n                <i class=\"fa fa-ellipsis-v fa-fw\" aria-hidden=\"true\"></i>\n                Advanced\n              </ng-template>\n              <div class=\"row\">\n                  <div class=\"col-xs-12\">\n                      <div class=\"checkbox\">\n                        <label>\n                        <input type=\"checkbox\" class=\"\">   Enable Advanced Mode                       \n                        </label>\n                      </div>\n                  </div>\n              </div>\n              <div class=\"alert bg-green\">\n                    <strong>Documentation</strong>\n                    <br>\n                    <p>You may find the full documentation on implementing the widget functions and callback at\n                        <a href=\"#\">widgets documentation</a>\n                    </p>\n              </div> \n              <div class=\"alert alert-default\">\n                  Widget credentials will be generated upon saving\n              </div>\n              <hr>\n              <div>\n                  <p>System user's properties to pass in the frame url</p>\n              </div>\n              <div class=\"col-sm-3\">\n                      <mat-checkbox> Username</mat-checkbox>\n              </div>\n              <div class=\"col-sm-3\">\n                      <mat-checkbox>  Email</mat-checkbox>\n              </div>\n              <div class=\"col-sm-3\">\n                        <mat-checkbox>  Team Name</mat-checkbox>\n              </div>\n              <div class=\"col-sm-3\">\n                      <mat-checkbox> Billing</mat-checkbox>\n              </div>\n              <p>Custom properties to pass in the frame url</p>\n              <div class=\"row\">\n                  <div class=\"col-sm-4\">\n                        <mat-form-field>\n                            <input matInput placeholder=\"key *\">\n                        </mat-form-field>\n                  </div>\n                  <div class=\"col-sm-8\">\n                        <mat-form-field>\n                            <input matInput placeholder=\"value\">\n                        </mat-form-field>\n                  </div>\n              </div>\n              <div class=\"row\">\n                  <div class=\"col-sm-4\">\n                        <mat-form-field>\n                            <input matInput placeholder=\"key *\">\n                        </mat-form-field>\n                  </div>\n                  <div class=\"col-sm-8\">\n                        <mat-form-field>\n                            <input matInput placeholder=\"value\">\n                        </mat-form-field>\n                  </div>\n              </div>\n              <div class=\"row\">\n                  <div class=\"col-sm-4\">\n                        <mat-form-field>\n                            <input matInput placeholder=\"key *\">\n                        </mat-form-field>\n                  </div>\n                  <div class=\"col-sm-8\">\n                        <mat-form-field>\n                            <input matInput placeholder=\"value\">\n                        </mat-form-field>\n                  </div>\n              </div>\n              <div class=\"row\">\n                  <div class=\"col-sm-4\">\n                        <mat-form-field>\n                            <input matInput placeholder=\"key *\">\n                        </mat-form-field>\n                  </div>\n                  <div class=\"col-sm-8\">\n                        <mat-form-field>\n                            <input matInput placeholder=\"value\">\n                        </mat-form-field>\n                  </div>\n              </div>\n              <div class=\"row\">\n              <div class=\"col-xs-12\">\n                      <div class=\"checkbox\">\n                        <label>\n                          <input type=\"checkbox\" class=\"\"> Enable callback functions     \n                        </label>\n                      </div>\n                  </div>\n              </div>\n              \n              \n\n            </mat-tab>\n          </mat-tab-group>\n   </div>\n\n   <div class=\"modal-footer wrap-div\">\n      <button mat-dialog-close  class=\"btn btn-default pull-left\" type=\"button\">Cancel</button>\n      <button class=\"btn btn-blue\">Create</button>\n    </div>\n</div>\n  "
-        })
-    ], CustomwidgetComponent);
-    return CustomwidgetComponent;
-}());
+};
+CustomwidgetComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        template: `
+  <div class="modal-content new_user_dialog custom_widget">
+   <div class="modal-header">
+      <h4 class="modal-title">
+      <button  mat-dialog-close  class="close">
+          <span aria-hidden="true">×</span>
+      </button> 
+         Configure Widget
+      </h4>
+   </div>
+   <div class="modal-body wrap-div">
+      <mat-tab-group>
+            <mat-tab>
+              <ng-template mat-tab-label>
+                  <i class="fa fa-bars" aria-hidden="true"></i>
+                Details
+              </ng-template>
+              <div class="row">
+                  <div class="col-xs-12">
+                    <mat-form-field>
+                        <input matInput placeholder="Title *">
+                    </mat-form-field>
+                  </div>
+                </div>
+                <div class="row">
+                      <div class="col-xs-12">
+                          <mat-form-field>
+                              <input matInput placeholder="Url *" value=""  class="example-right-align">
+                              <span matPrefix>https:// &nbsp;</span>
+                          </mat-form-field>
+                      </div>
+                </div>  
+                <div class="row">
+                    <div class="col-xs-12">
+                    <mat-form-field>
+                        <mat-label>Position *</mat-label>
+                        <mat-select [(value)]="position">
+                            <mat-option value="right-bar">Right-bar</mat-option>
+                            <mat-option value="top-bar">Top-bar</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    </div>
+                </div>  
+                <div class="row">
+                    <div class="col-sm-6">
+                      <div class="checkbox">
+                        <label>
+                        <input type="checkbox" class="">  Enabled widget to users
+                        </label>
+                      </div>
+                    </div>  
+                </div>
+            </mat-tab>
+            <mat-tab >
+              <ng-template mat-tab-label>
+              <i class="fa fa-credit-card" aria-hidden="true"></i>
+                Billing
+              </ng-template>
+              <div class="row">
+                  <div class="col-sm-6">
+                    <div class="checkbox">
+                      <label>
+                      <input type="checkbox" class=""> Enable billing plans
+                      </label>
+                    </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-xs-12">
+                   <p>Anyone who has paid for any of the plans should receive the premium widget version</p>
+                  </div>
+                  <div class="col-sm-6">
+                      <div class="checkbox checkbox-form">
+                        <label>
+                        <input type="checkbox" class="">On Point FX Signals
+                        </label>
+                      </div>
+                  </div>
+                  <div class="col-sm-6">
+                      <div class="checkbox checkbox-form">
+                        <label>
+                         <input type="checkbox" class="">On-Point FX Signals 7-Day FREE Trial
+                        </label>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-6">
+                      <div class="checkbox checkbox-form">
+                        <label>
+                        <input type="checkbox" class=""> Private Forex Mentoring
+                        </label>
+                      </div>
+                  </div>
+                  <div class="col-sm-6">
+                      <div class="checkbox checkbox-form">
+                        <label>
+                        <input type="checkbox" class=""> 7-Day INTENSIVE Private Forex Training
+                        </label>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-6">
+                      <div class="checkbox checkbox-form">
+                        <label>
+                        <input type="checkbox" class=""> On Point FX Signals (Telegram)
+                        </label>
+                      </div>
+                  </div>
+                  <div class="col-sm-6">
+                      <div class="checkbox checkbox-form">
+                        <label>
+                        <input type="checkbox" class="">  On Point FX Signals 7-Days FREE and then $57/mo
+                        </label>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-6">
+                      <div class="checkbox checkbox-form">
+                        <label>
+                           <input type="checkbox" class="">  $0 test
+                        </label>
+                      </div>
+                  </div>
+                  <div class="col-sm-6">
+                      <div class="checkbox checkbox-form">
+                        <label>
+                          <input type="checkbox" class="">  FX Signals $57 Early-bird Special
+                        </label>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-6">
+                      <div class="checkbox checkbox-form">
+                        <label>
+                        <input type="checkbox" class="">   Market Masters FX Signals Transfer Form
+                        </label>
+                      </div>
+                  </div>
+                  <div class="col-sm-6">
+                      <div class="checkbox checkbox-form">
+                        <label>
+                        <input type="checkbox" class="">Market Masters VIP Forex Signals Transfer Form
+                        </label>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-6">
+                      <div class="checkbox checkbox-form">
+                        <label>
+                        <input type="checkbox" class="">On Point FX Signals $97/mo
+                        </label>
+                      </div>
+                  </div>
+                  <div class="col-sm-6">
+                      <div class="checkbox checkbox-form">
+                        <label>
+                        <input type="checkbox" class=""> No Credit Card Test
+                        </label>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-6">
+                      <div class="checkbox checkbox-form">
+                        <label>
+                         <input type="checkbox" class=""> MMA On Point FX Signals
+                        </label>
+                      </div>
+                  </div>
+                  <div class="col-sm-6">
+                      <div class="checkbox checkbox-form">
+                        <label>
+                          <input type="checkbox" class="">MMA OPFX Julio Vasquez
+                        </label>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-6">
+                      <div class="checkbox checkbox-form">
+                        <label>
+                        <input type="checkbox" class=""> Exclusive 1-on-1 Training
+                        </label>
+                      </div>
+                  </div>
+                  <div class="col-sm-6">
+                      <div class="checkbox checkbox-form">
+                        <label>
+                        <input type="checkbox" class=""> MMA Signals Transfer
+                        </label>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-6">
+                      <div class="checkbox checkbox-form">
+                        <label>
+                           <input type="checkbox" class="">7-Day Intense Forex Training (3 Month Plan)
+                        </label>
+                      </div>
+                  </div>
+                  <div class="col-sm-6">
+                      <div class="checkbox checkbox-form">
+                        <label>
+                        <input type="checkbox" class=""> OPFX $77/mo 7 Day Trial
+                        </label>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-6">
+                      <div class="checkbox checkbox-form">
+                        <label>
+                        <input type="checkbox" class="">  OPFX $77/mo No Trial
+                        </label>
+                      </div>
+                  </div>
+                  <div class="col-sm-6">
+                      <div class="checkbox checkbox-form">
+                        <label>
+                        <input type="checkbox" class="">  OPFX $77/mo 7 Day Trial (No CC Required)
+                        </label>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-6">
+                      <div class="checkbox checkbox-form">
+                        <label>
+                        <input type="checkbox" class="">   OPFX Recurly
+                        </label>
+                      </div>
+                  </div>
+                  <div class="col-sm-6">
+                      <div class="checkbox checkbox-form">
+                        <label>
+                        <input type="checkbox" class="">  7-Day Training Recurly
+                        </label>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-6">
+                      <div class="checkbox checkbox-form">
+                        <label>
+                        <input type="checkbox" class="">    7-Day Training Deal Recurly
+                        </label>
+                      </div>
+                  </div>
+                  <div class="col-sm-6">
+                      <div class="checkbox checkbox-form">
+                        <label>
+                        <input type="checkbox" class="">  OPFX PP
+                        </label>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-6">
+                      <div class="checkbox checkbox-form">
+                        <label>
+                        <input type="checkbox" class="">    7-Day Training PP
+                        </label>
+                      </div>
+                  </div>
+                  <div class="col-sm-6">
+                      <div class="checkbox checkbox-form">
+                        <label>
+                          <input type="checkbox" class="">7-Day Training Deal PP
+                        </label>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-6">
+                      <div class="checkbox checkbox-form">
+                        <label>
+                        <input type="checkbox" class="">OPFX $77/mo 7 Day Trial (No CC Required)*
+                        </label>
+                      </div>
+                  </div>
+                  <div class="col-sm-6">
+                      <div class="checkbox checkbox-form">
+                        <label>
+                        <input type="checkbox" class="">Marcos OPFS FREE TRIAL (NO CC)
+                        </label>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-6">
+                      <div class="checkbox checkbox-form">
+                        <label>
+                          <input type="checkbox" class="">Isaac OPFS FREE TRIAL (NO CC)
+                        </label>
+                      </div>
+                  </div>
+                  <div class="col-sm-6">
+                      <div class="checkbox checkbox-form">
+                        <label>
+                        <input type="checkbox" class="">  Allen OPFS FREE TRIAL (NO CC)
+                        </label>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-6">
+                      <div class="checkbox checkbox-form">
+                        <label>
+                        <input type="checkbox" class="">    Market Mastermind (Deal)
+                        </label>
+                      </div>
+                  </div>
+                  <div class="col-sm-6">
+                      <div class="checkbox checkbox-form">
+                        <label>
+                        <input type="checkbox" class="">Privte Mentorship
+                        </label>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-6">
+                      <div class="checkbox checkbox-form">
+                        <label>
+                          <input type="checkbox" class="">Prazise FX Signals
+                        </label>
+                      </div>
+                  </div>
+                  <div class="col-sm-6">
+                      <div class="checkbox checkbox-form">
+                        <label>
+                        <input type="checkbox" class="">Website Testing A/B
+                        </label>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-6">
+                      <div class="checkbox checkbox-form">
+                        <label>
+                        <input type="checkbox" class=""> Chat Development
+                        </label>
+                      </div>
+                  </div>
+              </div>
+              <p>* The Primary plan appears in the in-chat billing form</p>
+              <div class="row">
+                  <div class="col-xs-12">
+                    <p>Apply the following coupon in the Primary plan</p>
+                    <mat-form-field>
+                        <mat-label>Position *</mat-label>
+                        <mat-select [(value)]="position">
+                            <mat-option value="right-bar">Right-bar</mat-option>
+                            <mat-option value="top-bar">Top-bar</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-xs-12">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" class="">  Widget has a different URL for premium users                        
+                        </label>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-xs-12">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" class="">  Custom upgrade-banner message                        
+                        </label>
+                      </div>
+                  </div>
+              </div>
+            </mat-tab>
+            <mat-tab>
+              <ng-template mat-tab-label>
+                <i class="fa fa-ellipsis-v fa-fw" aria-hidden="true"></i>
+                Advanced
+              </ng-template>
+              <div class="row">
+                  <div class="col-xs-12">
+                      <div class="checkbox">
+                        <label>
+                        <input type="checkbox" class="">   Enable Advanced Mode                       
+                        </label>
+                      </div>
+                  </div>
+              </div>
+              <div class="alert bg-green">
+                    <strong>Documentation</strong>
+                    <br>
+                    <p>You may find the full documentation on implementing the widget functions and callback at
+                        <a href="#">widgets documentation</a>
+                    </p>
+              </div> 
+              <div class="alert alert-default">
+                  Widget credentials will be generated upon saving
+              </div>
+              <hr>
+              <div>
+                  <p>System user's properties to pass in the frame url</p>
+              </div>
+              <div class="col-sm-3">
+                      <mat-checkbox> Username</mat-checkbox>
+              </div>
+              <div class="col-sm-3">
+                      <mat-checkbox>  Email</mat-checkbox>
+              </div>
+              <div class="col-sm-3">
+                        <mat-checkbox>  Team Name</mat-checkbox>
+              </div>
+              <div class="col-sm-3">
+                      <mat-checkbox> Billing</mat-checkbox>
+              </div>
+              <p>Custom properties to pass in the frame url</p>
+              <div class="row">
+                  <div class="col-sm-4">
+                        <mat-form-field>
+                            <input matInput placeholder="key *">
+                        </mat-form-field>
+                  </div>
+                  <div class="col-sm-8">
+                        <mat-form-field>
+                            <input matInput placeholder="value">
+                        </mat-form-field>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-4">
+                        <mat-form-field>
+                            <input matInput placeholder="key *">
+                        </mat-form-field>
+                  </div>
+                  <div class="col-sm-8">
+                        <mat-form-field>
+                            <input matInput placeholder="value">
+                        </mat-form-field>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-4">
+                        <mat-form-field>
+                            <input matInput placeholder="key *">
+                        </mat-form-field>
+                  </div>
+                  <div class="col-sm-8">
+                        <mat-form-field>
+                            <input matInput placeholder="value">
+                        </mat-form-field>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-4">
+                        <mat-form-field>
+                            <input matInput placeholder="key *">
+                        </mat-form-field>
+                  </div>
+                  <div class="col-sm-8">
+                        <mat-form-field>
+                            <input matInput placeholder="value">
+                        </mat-form-field>
+                  </div>
+              </div>
+              <div class="row">
+              <div class="col-xs-12">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" class=""> Enable callback functions     
+                        </label>
+                      </div>
+                  </div>
+              </div>
+              
+              
+
+            </mat-tab>
+          </mat-tab-group>
+   </div>
+
+   <div class="modal-footer wrap-div">
+      <button mat-dialog-close  class="btn btn-default pull-left" type="button">Cancel</button>
+      <button class="btn btn-blue">Create</button>
+    </div>
+</div>
+  `
+    })
+], CustomwidgetComponent);
 
 
 
@@ -9028,24 +9891,23 @@ module.exports = "section.admin-widget {\n    max-width: 860px;\n    margin: 0 a
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RegistrationSetiingsComponent", function() { return RegistrationSetiingsComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 
 
-var RegistrationSetiingsComponent = /** @class */ (function () {
-    function RegistrationSetiingsComponent() {
+let RegistrationSetiingsComponent = class RegistrationSetiingsComponent {
+    constructor() {
         this.RegistrationList = ['Phone Number', 'Country', 'State', 'City', 'Date Of Birth'];
     }
-    RegistrationSetiingsComponent.prototype.ngOnInit = function () {
-    };
-    RegistrationSetiingsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-registration-setiings',
-            template: __webpack_require__(/*! raw-loader!./registration-setiings.component.html */ "./node_modules/raw-loader/index.js!./src/app/admin/registration-setiings/registration-setiings.component.html"),
-            styles: [__webpack_require__(/*! ./registration-setiings.component.css */ "./src/app/admin/registration-setiings/registration-setiings.component.css")]
-        })
-    ], RegistrationSetiingsComponent);
-    return RegistrationSetiingsComponent;
-}());
+    ngOnInit() {
+    }
+};
+RegistrationSetiingsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-registration-setiings',
+        template: __webpack_require__(/*! raw-loader!./registration-setiings.component.html */ "./node_modules/raw-loader/index.js!./src/app/admin/registration-setiings/registration-setiings.component.html"),
+        styles: [__webpack_require__(/*! ./registration-setiings.component.css */ "./src/app/admin/registration-setiings/registration-setiings.component.css")]
+    })
+], RegistrationSetiingsComponent);
 
 
 
@@ -9074,82 +9936,93 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TopbarComponent", function() { return TopbarComponent; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProfileDialog", function() { return ProfileDialog; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
-/* harmony import */ var angular_web_storage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! angular-web-storage */ "./node_modules/angular-web-storage/fesm5/angular-web-storage.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
+/* harmony import */ var angular_web_storage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! angular-web-storage */ "./node_modules/angular-web-storage/fesm2015/angular-web-storage.js");
 /* harmony import */ var _adminsettings_new_avatar_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../adminsettings/new-avatar.service */ "./src/app/admin/adminsettings/new-avatar.service.ts");
+/* harmony import */ var _services_auth_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../services/auth.service */ "./src/app/services/auth.service.ts");
+/* harmony import */ var _services_user_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../services/user.service */ "./src/app/services/user.service.ts");
 
 
 
 
 
-var TopbarComponent = /** @class */ (function () {
-    function TopbarComponent(dialog) {
+
+
+let TopbarComponent = class TopbarComponent {
+    constructor(userService, authService, dialog) {
+        this.userService = userService;
+        this.authService = authService;
         this.dialog = dialog;
     }
-    TopbarComponent.prototype.ngOnInit = function () {
-    };
-    TopbarComponent.prototype.onProfile = function () {
-        var fileNameDialogRef = this.dialog.open(ProfileDialog, {
+    ngOnInit() {
+        this.user = this.userService.getUser();
+    }
+    onProfile() {
+        const fileNameDialogRef = this.dialog.open(ProfileDialog, {
             width: '600px',
         });
-    };
-    TopbarComponent.ctorParameters = function () { return [
-        { type: _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialog"] }
-    ]; };
-    TopbarComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-topbar',
-            template: __webpack_require__(/*! raw-loader!./topbar.component.html */ "./node_modules/raw-loader/index.js!./src/app/admin/topbar/topbar.component.html"),
-            styles: [__webpack_require__(/*! ./topbar.component.css */ "./src/app/admin/topbar/topbar.component.css")]
-        })
-    ], TopbarComponent);
-    return TopbarComponent;
-}());
+    }
+    logout() {
+        this.authService.logout();
+    }
+};
+TopbarComponent.ctorParameters = () => [
+    { type: _services_user_service__WEBPACK_IMPORTED_MODULE_6__["UserService"] },
+    { type: _services_auth_service__WEBPACK_IMPORTED_MODULE_5__["AuthService"] },
+    { type: _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialog"] }
+];
+TopbarComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-topbar',
+        template: __webpack_require__(/*! raw-loader!./topbar.component.html */ "./node_modules/raw-loader/index.js!./src/app/admin/topbar/topbar.component.html"),
+        styles: [__webpack_require__(/*! ./topbar.component.css */ "./src/app/admin/topbar/topbar.component.css")]
+    })
+], TopbarComponent);
 
 // profile dialog
-var ProfileDialog = /** @class */ (function () {
-    function ProfileDialog(localStorage, newAvatarService) {
+let ProfileDialog = class ProfileDialog {
+    constructor(userService, localStorage, newAvatarService) {
+        this.userService = userService;
         this.localStorage = localStorage;
         this.newAvatarService = newAvatarService;
         this.ELEMENT_DATA = [
-            { plan: '7 Day Trial', trial: '', CC: '', period: '2020-06-12', canceled: 'NO' },
+        // {plan: '7 Day Trial', trial: '', CC: '', period: '2020-06-12', canceled: 'NO'},
         ];
         this.displayedColumns = ['plan', 'trial', 'CC', 'period', 'canceled'];
         this.dataSource = this.ELEMENT_DATA;
         this.adminImgPath = this.localStorage.get('admin_user_profile');
     }
-    ProfileDialog.prototype.ngOnInit = function () {
-        var _this = this;
-        this.newAvatarService.newAvatar.subscribe(function (newPath) {
-            _this.adminImgPath = _this.localStorage.get('admin_user_profile');
+    ngOnInit() {
+        this.user = this.userService.getUser();
+        this.newAvatarService.newAvatar.subscribe(newPath => {
+            this.adminImgPath = this.localStorage.get('admin_user_profile');
         });
-    };
-    ProfileDialog.prototype.preview = function (files) {
-        var _this = this;
+    }
+    preview(files) {
         if (files.length === 0)
             return;
         var reader = new FileReader();
         reader.readAsDataURL(files[0]);
-        reader.onload = function (_event) {
-            _this.adminImgPath = reader.result;
-            _this.localStorage.set("admin_user_profile", _this.adminImgPath);
-            _this.newAvatarService.newAvatar.next(true);
+        reader.onload = (_event) => {
+            this.adminImgPath = reader.result;
+            this.localStorage.set("admin_user_profile", this.adminImgPath);
+            this.newAvatarService.newAvatar.next(true);
         };
-    };
-    ProfileDialog.ctorParameters = function () { return [
-        { type: angular_web_storage__WEBPACK_IMPORTED_MODULE_3__["LocalStorageService"] },
-        { type: _adminsettings_new_avatar_service__WEBPACK_IMPORTED_MODULE_4__["NewAvatarService"] }
-    ]; };
-    ProfileDialog = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'profile-dialog',
-            template: __webpack_require__(/*! raw-loader!./profile.dialog.html */ "./node_modules/raw-loader/index.js!./src/app/admin/topbar/profile.dialog.html"),
-            styles: [__webpack_require__(/*! ./topbar.component.css */ "./src/app/admin/topbar/topbar.component.css")]
-        })
-    ], ProfileDialog);
-    return ProfileDialog;
-}());
+    }
+};
+ProfileDialog.ctorParameters = () => [
+    { type: _services_user_service__WEBPACK_IMPORTED_MODULE_6__["UserService"] },
+    { type: angular_web_storage__WEBPACK_IMPORTED_MODULE_3__["LocalStorageService"] },
+    { type: _adminsettings_new_avatar_service__WEBPACK_IMPORTED_MODULE_4__["NewAvatarService"] }
+];
+ProfileDialog = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'profile-dialog',
+        template: __webpack_require__(/*! raw-loader!./profile.dialog.html */ "./node_modules/raw-loader/index.js!./src/app/admin/topbar/profile.dialog.html"),
+        styles: [__webpack_require__(/*! ./topbar.component.css */ "./src/app/admin/topbar/topbar.component.css")]
+    })
+], ProfileDialog);
 
 
 
@@ -9166,8 +10039,8 @@ var ProfileDialog = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppRoutingModule", function() { return AppRoutingModule; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
 /* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
 /* harmony import */ var _signup_signup_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./signup/signup.component */ "./src/app/signup/signup.component.ts");
 /* harmony import */ var _forgotpassword_forgotpassword_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./forgotpassword/forgotpassword.component */ "./src/app/forgotpassword/forgotpassword.component.ts");
@@ -9190,6 +10063,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _auth_guard__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./auth.guard */ "./src/app/auth.guard.ts");
 /* harmony import */ var _admin_registration_setiings_registration_setiings_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./admin/registration-setiings/registration-setiings.component */ "./src/app/admin/registration-setiings/registration-setiings.component.ts");
 /* harmony import */ var _admin_admin_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./admin/admin.component */ "./src/app/admin/admin.component.ts");
+/* harmony import */ var _auth_admin_guard__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./auth.admin.guard */ "./src/app/auth.admin.guard.ts");
 
 
 
@@ -9215,60 +10089,43 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var routes = [
+
+const routes = [
     { path: '', component: _login_login_component__WEBPACK_IMPORTED_MODULE_3__["LoginComponent"] },
     { path: 'login', component: _login_login_component__WEBPACK_IMPORTED_MODULE_3__["LoginComponent"] },
     { path: 'register', component: _signup_signup_component__WEBPACK_IMPORTED_MODULE_4__["SignupComponent"] },
     { path: 'forgotpassword', component: _forgotpassword_forgotpassword_component__WEBPACK_IMPORTED_MODULE_5__["ForgotpasswordComponent"] },
     { path: 'dashboard', component: _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_6__["DashboardComponent"], canActivate: [_auth_guard__WEBPACK_IMPORTED_MODULE_22__["AuthGuard"]] },
-    { path: 'admin', component: _admin_admin_component__WEBPACK_IMPORTED_MODULE_24__["AdminComponent"], canActivate: [_auth_guard__WEBPACK_IMPORTED_MODULE_22__["AuthGuard"]],
+    { path: 'admin', component: _admin_admin_component__WEBPACK_IMPORTED_MODULE_24__["AdminComponent"], canActivate: [_auth_admin_guard__WEBPACK_IMPORTED_MODULE_25__["AuthAdminGuard"]],
         children: [
-            { path: 'dashboard', component: _admin_admindashboard_admindashboard_component__WEBPACK_IMPORTED_MODULE_7__["AdmindashboardComponent"], canActivate: [_auth_guard__WEBPACK_IMPORTED_MODULE_22__["AuthGuard"]] },
-            { path: 'contacts', component: _admin_admincontacts_admincontacts_component__WEBPACK_IMPORTED_MODULE_8__["AdmincontactsComponent"], canActivate: [_auth_guard__WEBPACK_IMPORTED_MODULE_22__["AuthGuard"]] },
-            { path: 'sales', component: _admin_adminsales_adminsales_component__WEBPACK_IMPORTED_MODULE_9__["AdminsalesComponent"], canActivate: [_auth_guard__WEBPACK_IMPORTED_MODULE_22__["AuthGuard"]] },
-            { path: 'offers', component: _admin_adminoffers_adminoffers_component__WEBPACK_IMPORTED_MODULE_10__["AdminoffersComponent"], canActivate: [_auth_guard__WEBPACK_IMPORTED_MODULE_22__["AuthGuard"]] },
-            { path: 'billing', component: _admin_adminbilling_adminbilling_component__WEBPACK_IMPORTED_MODULE_11__["AdminbillingComponent"], canActivate: [_auth_guard__WEBPACK_IMPORTED_MODULE_22__["AuthGuard"]] },
-            { path: 'coupons', component: _admin_admincoupons_admincoupons_component__WEBPACK_IMPORTED_MODULE_13__["AdmincouponsComponent"], canActivate: [_auth_guard__WEBPACK_IMPORTED_MODULE_22__["AuthGuard"]] },
-            { path: 'chatrooms', component: _admin_adminchatroom_adminchatroom_component__WEBPACK_IMPORTED_MODULE_14__["AdminchatroomComponent"], canActivate: [_auth_guard__WEBPACK_IMPORTED_MODULE_22__["AuthGuard"]] },
-            { path: 'services', component: _admin_adminservices_adminservices_component__WEBPACK_IMPORTED_MODULE_15__["AdminservicesComponent"], canActivate: [_auth_guard__WEBPACK_IMPORTED_MODULE_22__["AuthGuard"]] },
-            { path: 'api', component: _admin_adminapi_adminapi_component__WEBPACK_IMPORTED_MODULE_16__["AdminapiComponent"], canActivate: [_auth_guard__WEBPACK_IMPORTED_MODULE_22__["AuthGuard"]] },
-            { path: 'settings', component: _admin_adminsettings_adminsettings_component__WEBPACK_IMPORTED_MODULE_21__["AdminsettingsComponent"], canActivate: [_auth_guard__WEBPACK_IMPORTED_MODULE_22__["AuthGuard"]] },
-            { path: 'registration-settings', component: _admin_registration_setiings_registration_setiings_component__WEBPACK_IMPORTED_MODULE_23__["RegistrationSetiingsComponent"], canActivate: [_auth_guard__WEBPACK_IMPORTED_MODULE_22__["AuthGuard"]] },
-            { path: 'compliance', component: _admin_admincompliance_admincompliance_component__WEBPACK_IMPORTED_MODULE_17__["AdmincomplianceComponent"], canActivate: [_auth_guard__WEBPACK_IMPORTED_MODULE_22__["AuthGuard"]] },
-            { path: 'widgets', component: _admin_adminwidget_adminwidget_component__WEBPACK_IMPORTED_MODULE_18__["AdminwidgetComponent"], canActivate: [_auth_guard__WEBPACK_IMPORTED_MODULE_22__["AuthGuard"]] },
-            { path: 'marketing', component: _admin_adminmarketing_adminmarketing_component__WEBPACK_IMPORTED_MODULE_19__["AdminmarketingComponent"], canActivate: [_auth_guard__WEBPACK_IMPORTED_MODULE_22__["AuthGuard"]] },
-            { path: 'onlineactivity', component: _admin_adminonlineativity_adminonlineativity_component__WEBPACK_IMPORTED_MODULE_20__["AdminonlineativityComponent"], canActivate: [_auth_guard__WEBPACK_IMPORTED_MODULE_22__["AuthGuard"]] },
+            { path: 'dashboard', component: _admin_admindashboard_admindashboard_component__WEBPACK_IMPORTED_MODULE_7__["AdmindashboardComponent"], canActivate: [_auth_admin_guard__WEBPACK_IMPORTED_MODULE_25__["AuthAdminGuard"]] },
+            { path: 'contacts', component: _admin_admincontacts_admincontacts_component__WEBPACK_IMPORTED_MODULE_8__["AdmincontactsComponent"], canActivate: [_auth_admin_guard__WEBPACK_IMPORTED_MODULE_25__["AuthAdminGuard"]] },
+            { path: 'sales', component: _admin_adminsales_adminsales_component__WEBPACK_IMPORTED_MODULE_9__["AdminsalesComponent"], canActivate: [_auth_admin_guard__WEBPACK_IMPORTED_MODULE_25__["AuthAdminGuard"]] },
+            { path: 'offers', component: _admin_adminoffers_adminoffers_component__WEBPACK_IMPORTED_MODULE_10__["AdminoffersComponent"], canActivate: [_auth_admin_guard__WEBPACK_IMPORTED_MODULE_25__["AuthAdminGuard"]] },
+            { path: 'billing', component: _admin_adminbilling_adminbilling_component__WEBPACK_IMPORTED_MODULE_11__["AdminbillingComponent"], canActivate: [_auth_admin_guard__WEBPACK_IMPORTED_MODULE_25__["AuthAdminGuard"]] },
+            { path: 'coupons', component: _admin_admincoupons_admincoupons_component__WEBPACK_IMPORTED_MODULE_13__["AdmincouponsComponent"], canActivate: [_auth_admin_guard__WEBPACK_IMPORTED_MODULE_25__["AuthAdminGuard"]] },
+            { path: 'chatrooms', component: _admin_adminchatroom_adminchatroom_component__WEBPACK_IMPORTED_MODULE_14__["AdminchatroomComponent"], canActivate: [_auth_admin_guard__WEBPACK_IMPORTED_MODULE_25__["AuthAdminGuard"]] },
+            { path: 'services', component: _admin_adminservices_adminservices_component__WEBPACK_IMPORTED_MODULE_15__["AdminservicesComponent"], canActivate: [_auth_admin_guard__WEBPACK_IMPORTED_MODULE_25__["AuthAdminGuard"]] },
+            { path: 'api', component: _admin_adminapi_adminapi_component__WEBPACK_IMPORTED_MODULE_16__["AdminapiComponent"], canActivate: [_auth_admin_guard__WEBPACK_IMPORTED_MODULE_25__["AuthAdminGuard"]] },
+            { path: 'settings', component: _admin_adminsettings_adminsettings_component__WEBPACK_IMPORTED_MODULE_21__["AdminsettingsComponent"], canActivate: [_auth_admin_guard__WEBPACK_IMPORTED_MODULE_25__["AuthAdminGuard"]] },
+            { path: 'registration-settings', component: _admin_registration_setiings_registration_setiings_component__WEBPACK_IMPORTED_MODULE_23__["RegistrationSetiingsComponent"], canActivate: [_auth_admin_guard__WEBPACK_IMPORTED_MODULE_25__["AuthAdminGuard"]] },
+            { path: 'compliance', component: _admin_admincompliance_admincompliance_component__WEBPACK_IMPORTED_MODULE_17__["AdmincomplianceComponent"], canActivate: [_auth_admin_guard__WEBPACK_IMPORTED_MODULE_25__["AuthAdminGuard"]] },
+            { path: 'widgets', component: _admin_adminwidget_adminwidget_component__WEBPACK_IMPORTED_MODULE_18__["AdminwidgetComponent"], canActivate: [_auth_admin_guard__WEBPACK_IMPORTED_MODULE_25__["AuthAdminGuard"]] },
+            { path: 'marketing', component: _admin_adminmarketing_adminmarketing_component__WEBPACK_IMPORTED_MODULE_19__["AdminmarketingComponent"], canActivate: [_auth_admin_guard__WEBPACK_IMPORTED_MODULE_25__["AuthAdminGuard"]] },
+            { path: 'onlineactivity', component: _admin_adminonlineativity_adminonlineativity_component__WEBPACK_IMPORTED_MODULE_20__["AdminonlineativityComponent"], canActivate: [_auth_admin_guard__WEBPACK_IMPORTED_MODULE_25__["AuthAdminGuard"]] },
         ]
     },
-    // { path: 'admindashboard', component: AdmindashboardComponent, canActivate: [AuthGuard]},
-    // { path: 'admincontacts', component: AdmincontactsComponent, canActivate: [AuthGuard]},
-    // { path: 'adminsales', component: AdminsalesComponent, canActivate: [AuthGuard]},
-    // { path: 'adminoffers', component: AdminoffersComponent, canActivate: [AuthGuard]},
-    // { path: 'adminbilling', component: AdminbillingComponent, canActivate: [AuthGuard]},
     { path: 'onpoint-room', component: _onpoint_room_onpoint_room_component__WEBPACK_IMPORTED_MODULE_12__["OnpointRoomComponent"], canActivate: [_auth_guard__WEBPACK_IMPORTED_MODULE_22__["AuthGuard"]] },
-    // { path: 'admincoupons', component: AdmincouponsComponent, canActivate: [AuthGuard]},
-    // { path: 'adminchatroom', component: AdminchatroomComponent, canActivate: [AuthGuard]},
-    // { path: 'adminservices', component: AdminservicesComponent, canActivate: [AuthGuard]},
-    // { path: 'adminapi', component: AdminapiComponent, canActivate: [AuthGuard]},
-    // { path: 'adminsettings', component: AdminsettingsComponent, canActivate: [AuthGuard]},
-    // { path: 'admin-registration-settings', component: RegistrationSetiingsComponent, canActivate: [AuthGuard]},
-    // { path: 'admincompliance', component: AdmincomplianceComponent, canActivate: [AuthGuard]},
-    // { path: 'adminwidget', component: AdminwidgetComponent, canActivate: [AuthGuard]},
-    // { path: 'adminmarketing', component: AdminmarketingComponent, canActivate: [AuthGuard]},
-    // { path: 'adminonlineactivity', component: AdminonlineativityComponent, canActivate: [AuthGuard]},
     { path: '**', redirectTo: '/dashboard' }
 ];
-var AppRoutingModule = /** @class */ (function () {
-    function AppRoutingModule() {
-    }
-    AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
-            imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(routes)],
-            exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]]
-        })
-    ], AppRoutingModule);
-    return AppRoutingModule;
-}());
+let AppRoutingModule = class AppRoutingModule {
+};
+AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+        imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(routes)],
+        exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]]
+    })
+], AppRoutingModule);
 
 
 
@@ -9296,22 +10153,21 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 
 
-var AppComponent = /** @class */ (function () {
-    function AppComponent() {
+let AppComponent = class AppComponent {
+    constructor() {
         this.title = 'andrade-app';
     }
-    AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-root',
-            template: __webpack_require__(/*! raw-loader!./app.component.html */ "./node_modules/raw-loader/index.js!./src/app/app.component.html"),
-            styles: [__webpack_require__(/*! ./app.component.css */ "./src/app/app.component.css")]
-        })
-    ], AppComponent);
-    return AppComponent;
-}());
+};
+AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-root',
+        template: __webpack_require__(/*! raw-loader!./app.component.html */ "./node_modules/raw-loader/index.js!./src/app/app.component.html"),
+        styles: [__webpack_require__(/*! ./app.component.css */ "./src/app/app.component.css")]
+    })
+], AppComponent);
 
 
 
@@ -9328,13 +10184,13 @@ var AppComponent = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppConfig", function() { return AppConfig; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _app_local_config__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app.local.config */ "./src/app/app.local.config.ts");
 
 
 
-var AppConfig = /** @class */ (function () {
-    function AppConfig() {
+let AppConfig = class AppConfig {
+    constructor() {
         this.config = {
             name: 'MarketMaster Academy',
             title: 'Communication App with Admin Panel & Dashboard App with Angular 8.0 support',
@@ -9344,14 +10200,13 @@ var AppConfig = /** @class */ (function () {
             debug: true,
         };
     }
-    AppConfig.prototype.getConfig = function () {
+    getConfig() {
         return Object.assign(this.config, new _app_local_config__WEBPACK_IMPORTED_MODULE_2__["AppLocalConfig"]().getConfig());
-    };
-    AppConfig = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()
-    ], AppConfig);
-    return AppConfig;
-}());
+    }
+};
+AppConfig = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()
+], AppConfig);
 
 
 
@@ -9368,30 +10223,29 @@ var AppConfig = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppLocalConfig", function() { return AppLocalConfig; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 
 
-var AppLocalConfig = /** @class */ (function () {
-    function AppLocalConfig() {
+let AppLocalConfig = class AppLocalConfig {
+    constructor() {
         this.config = {
-            apiUrl: 'http://dev.api.ricky.24x7.cloud/',
+            apiUrl: 'http://dev.api.ricky.24x7.cloud/api/v1/',
             nodeServerUrl: 'http://dev.api.ricky.24x7.cloud/',
-            // apiUrl: 'http://localhost:3000/',
-            // nodeServerUrl: 'http://localhost:3000/',
+            // apiUrl: 'http://localhost:3007/api/v1/',
+            // nodeServerUrl: 'http://localhost:3007/api/v1/',
             name: 'MarketMaster Academy',
             title: 'Communication App with Admin Panel & Dashboard App with Angular 8.0 support',
             version: '1.0.0',
             debug: true,
         };
     }
-    AppLocalConfig.prototype.getConfig = function () {
+    getConfig() {
         return this.config;
-    };
-    AppLocalConfig = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()
-    ], AppLocalConfig);
-    return AppLocalConfig;
-}());
+    }
+};
+AppLocalConfig = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()
+], AppLocalConfig);
 
 
 
@@ -9409,12 +10263,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppModule", function() { return AppModule; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _polyfills__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../polyfills */ "./src/polyfills.ts");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
-/* harmony import */ var _angular_material_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material/core */ "./node_modules/@angular/material/esm5/core.es5.js");
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
-/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var _angular_material_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material/core */ "./node_modules/@angular/material/esm2015/core.js");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm2015/platform-browser.js");
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm2015/animations.js");
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
 /* harmony import */ var _material_module__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./material.module */ "./src/app/material.module.ts");
@@ -9422,7 +10276,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _signup_signup_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./signup/signup.component */ "./src/app/signup/signup.component.ts");
 /* harmony import */ var _forgotpassword_forgotpassword_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./forgotpassword/forgotpassword.component */ "./src/app/forgotpassword/forgotpassword.component.ts");
 /* harmony import */ var _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./dashboard/dashboard.component */ "./src/app/dashboard/dashboard.component.ts");
-/* harmony import */ var angular_web_storage__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! angular-web-storage */ "./node_modules/angular-web-storage/fesm5/angular-web-storage.js");
+/* harmony import */ var angular_web_storage__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! angular-web-storage */ "./node_modules/angular-web-storage/fesm2015/angular-web-storage.js");
 /* harmony import */ var _services_auth_service__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./services/auth.service */ "./src/app/services/auth.service.ts");
 /* harmony import */ var _services_http_service__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./services/http.service */ "./src/app/services/http.service.ts");
 /* harmony import */ var _app_config__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./app.config */ "./src/app/app.config.ts");
@@ -9465,11 +10319,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _admin_adminsettings_adminsettings_component__WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(/*! ./admin/adminsettings/adminsettings.component */ "./src/app/admin/adminsettings/adminsettings.component.ts");
 /* harmony import */ var _admin_adminsettings_custom_script_component__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(/*! ./admin/adminsettings/custom-script.component */ "./src/app/admin/adminsettings/custom-script.component.ts");
 /* harmony import */ var _admin_admincontacts_invite_contact_component__WEBPACK_IMPORTED_MODULE_57__ = __webpack_require__(/*! ./admin/admincontacts/invite-contact.component */ "./src/app/admin/admincontacts/invite-contact.component.ts");
-/* harmony import */ var mat_table_exporter__WEBPACK_IMPORTED_MODULE_58__ = __webpack_require__(/*! mat-table-exporter */ "./node_modules/mat-table-exporter/fesm5/mat-table-exporter.js");
+/* harmony import */ var mat_table_exporter__WEBPACK_IMPORTED_MODULE_58__ = __webpack_require__(/*! mat-table-exporter */ "./node_modules/mat-table-exporter/fesm2015/mat-table-exporter.js");
 /* harmony import */ var _admin_adminmarketing_adminmarketing_component__WEBPACK_IMPORTED_MODULE_59__ = __webpack_require__(/*! ./admin/adminmarketing/adminmarketing.component */ "./src/app/admin/adminmarketing/adminmarketing.component.ts");
 /* harmony import */ var _admin_registration_setiings_registration_setiings_component__WEBPACK_IMPORTED_MODULE_60__ = __webpack_require__(/*! ./admin/registration-setiings/registration-setiings.component */ "./src/app/admin/registration-setiings/registration-setiings.component.ts");
 /* harmony import */ var _admin_topbar_topbar_component__WEBPACK_IMPORTED_MODULE_61__ = __webpack_require__(/*! ./admin/topbar/topbar.component */ "./src/app/admin/topbar/topbar.component.ts");
 /* harmony import */ var _admin_admin_component__WEBPACK_IMPORTED_MODULE_62__ = __webpack_require__(/*! ./admin/admin.component */ "./src/app/admin/admin.component.ts");
+/* harmony import */ var _auth_admin_guard__WEBPACK_IMPORTED_MODULE_63__ = __webpack_require__(/*! ./auth.admin.guard */ "./src/app/auth.admin.guard.ts");
 
 
 
@@ -9535,103 +10390,151 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var AppModule = /** @class */ (function () {
-    function AppModule() {
+
+let AppModule = class AppModule {
+};
+AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["NgModule"])({
+        declarations: [
+            _app_component__WEBPACK_IMPORTED_MODULE_9__["AppComponent"],
+            _login_login_component__WEBPACK_IMPORTED_MODULE_11__["LoginComponent"],
+            _signup_signup_component__WEBPACK_IMPORTED_MODULE_12__["SignupComponent"],
+            _forgotpassword_forgotpassword_component__WEBPACK_IMPORTED_MODULE_13__["ForgotpasswordComponent"],
+            _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["DashboardComponent"],
+            _error_error_component__WEBPACK_IMPORTED_MODULE_20__["ErrorComponent"],
+            _sidenav_sidenav_component__WEBPACK_IMPORTED_MODULE_22__["SidenavComponent"],
+            _rightarea_rightarea_component__WEBPACK_IMPORTED_MODULE_23__["RightareaComponent"],
+            _chatarea_chatarea_component__WEBPACK_IMPORTED_MODULE_24__["ChatareaComponent"],
+            _lockedchatroom_lockedchatroom_component__WEBPACK_IMPORTED_MODULE_26__["LockedchatroomComponent"],
+            _directchatroom_directchatroom_component__WEBPACK_IMPORTED_MODULE_27__["DirectchatroomComponent"],
+            _admin_admindashboard_admindashboard_component__WEBPACK_IMPORTED_MODULE_28__["AdmindashboardComponent"],
+            _unlockchatroom_unlockchatroom_component__WEBPACK_IMPORTED_MODULE_29__["UnlockchatroomComponent"],
+            _user_panel_user_panel_component__WEBPACK_IMPORTED_MODULE_30__["UserPanelComponent"],
+            _admin_admin_sidebar_admin_sidebar_component__WEBPACK_IMPORTED_MODULE_31__["AdminSidebarComponent"],
+            _admin_admincontacts_admincontacts_component__WEBPACK_IMPORTED_MODULE_32__["AdmincontactsComponent"],
+            _admin_adminsales_adminsales_component__WEBPACK_IMPORTED_MODULE_33__["AdminsalesComponent"],
+            _admin_adminoffers_new_offer_component__WEBPACK_IMPORTED_MODULE_36__["NewOfferComponent"],
+            _admin_adminoffers_adminoffers_component__WEBPACK_IMPORTED_MODULE_37__["AdminoffersComponent"],
+            _profile_sidebar_profile_sidebar_component__WEBPACK_IMPORTED_MODULE_38__["ProfileSidebarComponent"],
+            _onpoint_room_onpoint_room_component__WEBPACK_IMPORTED_MODULE_39__["OnpointRoomComponent"],
+            _sidenav_locked_dialog_component__WEBPACK_IMPORTED_MODULE_40__["lockeddialogComponent"],
+            _admin_adminbilling_adminbilling_component__WEBPACK_IMPORTED_MODULE_41__["AdminbillingComponent"],
+            _admin_adminbilling_new_billing_component__WEBPACK_IMPORTED_MODULE_35__["NewBillingComponent"],
+            _admin_admincoupons_admincoupons_component__WEBPACK_IMPORTED_MODULE_42__["AdmincouponsComponent"],
+            _admin_admincoupons_new_coupons_component__WEBPACK_IMPORTED_MODULE_43__["NewCouponsComponent"],
+            _admin_adminchatroom_adminchatroom_component__WEBPACK_IMPORTED_MODULE_44__["AdminchatroomComponent"],
+            _admin_adminchatroom_new_cahtroom_component__WEBPACK_IMPORTED_MODULE_45__["NewChatroomComponent"],
+            _admin_adminservices_adminservices_component__WEBPACK_IMPORTED_MODULE_47__["AdminservicesComponent"],
+            _admin_adminservices_new_services_component__WEBPACK_IMPORTED_MODULE_48__["NewServicesComponent"],
+            _admin_adminapi_adminapi_component__WEBPACK_IMPORTED_MODULE_49__["AdminapiComponent"],
+            _admin_admincompliance_admincompliance_component__WEBPACK_IMPORTED_MODULE_50__["AdmincomplianceComponent"],
+            _admin_adminwidget_adminwidget_component__WEBPACK_IMPORTED_MODULE_51__["AdminwidgetComponent"],
+            _admin_adminwidget_customwidget_dialog_component__WEBPACK_IMPORTED_MODULE_52__["CustomwidgetComponent"],
+            _admin_adminwidget_configure_dialog_component__WEBPACK_IMPORTED_MODULE_53__["ConfiguredialogComponent"],
+            _admin_adminonlineativity_adminonlineativity_component__WEBPACK_IMPORTED_MODULE_54__["AdminonlineativityComponent"],
+            _admin_adminsettings_adminsettings_component__WEBPACK_IMPORTED_MODULE_55__["AdminsettingsComponent"],
+            _admin_adminsettings_adminsettings_component__WEBPACK_IMPORTED_MODULE_55__["NewTeamAvatarDialog"],
+            _admin_adminsettings_custom_script_component__WEBPACK_IMPORTED_MODULE_56__["CustomScriptComponent"],
+            _admin_adminchatroom_deletechatroom_component__WEBPACK_IMPORTED_MODULE_46__["DeleteChatroomComponent"],
+            _admin_admincontacts_new_contact_component__WEBPACK_IMPORTED_MODULE_34__["NewContactComponent"],
+            _admin_admincontacts_invite_contact_component__WEBPACK_IMPORTED_MODULE_57__["InviteContactComponent"],
+            _admin_adminmarketing_adminmarketing_component__WEBPACK_IMPORTED_MODULE_59__["AdminmarketingComponent"],
+            _sidenav_sidenav_component__WEBPACK_IMPORTED_MODULE_22__["PreferencesDialog"],
+            _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["ChartsDialog"],
+            _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["MarketHoursDialog"],
+            _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["FXHeatmapDialog"],
+            _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["Coin360Dialog"],
+            _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["LiveTVDialog"],
+            _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["FXCrossRatesDialog"],
+            _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["OtherChartDialog"],
+            _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["ZoomDialog"],
+            _sidenav_sidenav_component__WEBPACK_IMPORTED_MODULE_22__["ManageBrockersDialog"],
+            _unlockchatroom_unlockchatroom_component__WEBPACK_IMPORTED_MODULE_29__["MediaUploadDialog"],
+            _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["DataFlashDialog"],
+            _unlockchatroom_unlockchatroom_component__WEBPACK_IMPORTED_MODULE_29__["NewSignalDialog"],
+            _admin_registration_setiings_registration_setiings_component__WEBPACK_IMPORTED_MODULE_60__["RegistrationSetiingsComponent"],
+            _sidenav_sidenav_component__WEBPACK_IMPORTED_MODULE_22__["InviteFriendDialog"],
+            _admin_topbar_topbar_component__WEBPACK_IMPORTED_MODULE_61__["ProfileDialog"],
+            _admin_admin_component__WEBPACK_IMPORTED_MODULE_62__["AdminComponent"],
+            _admin_topbar_topbar_component__WEBPACK_IMPORTED_MODULE_61__["TopbarComponent"],
+            _admin_admincontacts_admincontacts_component__WEBPACK_IMPORTED_MODULE_32__["EditContactComponent"],
+            _admin_admincontacts_admincontacts_component__WEBPACK_IMPORTED_MODULE_32__["DeleteContactComponent"]
+        ],
+        imports: [
+            _angular_platform_browser__WEBPACK_IMPORTED_MODULE_6__["BrowserModule"],
+            _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_7__["BrowserAnimationsModule"],
+            angular_web_storage__WEBPACK_IMPORTED_MODULE_15__["AngularWebStorageModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"],
+            _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"],
+            _material_module__WEBPACK_IMPORTED_MODULE_10__["MaterialModule"],
+            _angular_material_core__WEBPACK_IMPORTED_MODULE_5__["MatNativeDateModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_4__["ReactiveFormsModule"],
+            _app_routing_module__WEBPACK_IMPORTED_MODULE_8__["AppRoutingModule"],
+            mat_table_exporter__WEBPACK_IMPORTED_MODULE_58__["MatTableExporterModule"]
+        ],
+        providers: [
+            _services_auth_service__WEBPACK_IMPORTED_MODULE_16__["AuthService"],
+            _services_http_service__WEBPACK_IMPORTED_MODULE_17__["HttpService"],
+            _app_config__WEBPACK_IMPORTED_MODULE_18__["AppConfig"],
+            _app_local_config__WEBPACK_IMPORTED_MODULE_19__["AppLocalConfig"],
+            _models_index__WEBPACK_IMPORTED_MODULE_21__["User"],
+            _auth_guard__WEBPACK_IMPORTED_MODULE_25__["AuthGuard"],
+            _auth_admin_guard__WEBPACK_IMPORTED_MODULE_63__["AuthAdminGuard"]
+        ],
+        entryComponents: [_admin_topbar_topbar_component__WEBPACK_IMPORTED_MODULE_61__["ProfileDialog"], _sidenav_sidenav_component__WEBPACK_IMPORTED_MODULE_22__["InviteFriendDialog"], _admin_admincontacts_admincontacts_component__WEBPACK_IMPORTED_MODULE_32__["DeleteContactComponent"], _unlockchatroom_unlockchatroom_component__WEBPACK_IMPORTED_MODULE_29__["NewSignalDialog"], _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["DataFlashDialog"], _unlockchatroom_unlockchatroom_component__WEBPACK_IMPORTED_MODULE_29__["MediaUploadDialog"], _sidenav_sidenav_component__WEBPACK_IMPORTED_MODULE_22__["ManageBrockersDialog"], _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["ZoomDialog"], _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["OtherChartDialog"], _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["FXCrossRatesDialog"], _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["LiveTVDialog"], _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["Coin360Dialog"], _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["FXHeatmapDialog"], _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["MarketHoursDialog"], _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["ChartsDialog"], _sidenav_sidenav_component__WEBPACK_IMPORTED_MODULE_22__["PreferencesDialog"], _admin_admincontacts_invite_contact_component__WEBPACK_IMPORTED_MODULE_57__["InviteContactComponent"], _admin_admincontacts_admincontacts_component__WEBPACK_IMPORTED_MODULE_32__["EditContactComponent"], _admin_admincontacts_new_contact_component__WEBPACK_IMPORTED_MODULE_34__["NewContactComponent"], _admin_adminoffers_new_offer_component__WEBPACK_IMPORTED_MODULE_36__["NewOfferComponent"],
+            _sidenav_locked_dialog_component__WEBPACK_IMPORTED_MODULE_40__["lockeddialogComponent"], _admin_adminbilling_new_billing_component__WEBPACK_IMPORTED_MODULE_35__["NewBillingComponent"], _admin_adminwidget_customwidget_dialog_component__WEBPACK_IMPORTED_MODULE_52__["CustomwidgetComponent"], _admin_admincoupons_new_coupons_component__WEBPACK_IMPORTED_MODULE_43__["NewCouponsComponent"],
+            _admin_adminchatroom_new_cahtroom_component__WEBPACK_IMPORTED_MODULE_45__["NewChatroomComponent"], _admin_adminservices_new_services_component__WEBPACK_IMPORTED_MODULE_48__["NewServicesComponent"], _admin_adminwidget_configure_dialog_component__WEBPACK_IMPORTED_MODULE_53__["ConfiguredialogComponent"], _admin_adminsettings_adminsettings_component__WEBPACK_IMPORTED_MODULE_55__["NewTeamAvatarDialog"],
+            _admin_adminsettings_custom_script_component__WEBPACK_IMPORTED_MODULE_56__["CustomScriptComponent"], _admin_adminchatroom_deletechatroom_component__WEBPACK_IMPORTED_MODULE_46__["DeleteChatroomComponent"]],
+        bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_9__["AppComponent"]]
+    })
+], AppModule);
+
+
+
+/***/ }),
+
+/***/ "./src/app/auth.admin.guard.ts":
+/*!*************************************!*\
+  !*** ./src/app/auth.admin.guard.ts ***!
+  \*************************************/
+/*! exports provided: AuthAdminGuard */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AuthAdminGuard", function() { return AuthAdminGuard; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _services_auth_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./services/auth.service */ "./src/app/services/auth.service.ts");
+
+
+
+
+let AuthAdminGuard = class AuthAdminGuard {
+    constructor(auth, route) {
+        this.auth = auth;
+        this.route = route;
     }
-    AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["NgModule"])({
-            declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_9__["AppComponent"],
-                _login_login_component__WEBPACK_IMPORTED_MODULE_11__["LoginComponent"],
-                _signup_signup_component__WEBPACK_IMPORTED_MODULE_12__["SignupComponent"],
-                _forgotpassword_forgotpassword_component__WEBPACK_IMPORTED_MODULE_13__["ForgotpasswordComponent"],
-                _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["DashboardComponent"],
-                _error_error_component__WEBPACK_IMPORTED_MODULE_20__["ErrorComponent"],
-                _sidenav_sidenav_component__WEBPACK_IMPORTED_MODULE_22__["SidenavComponent"],
-                _rightarea_rightarea_component__WEBPACK_IMPORTED_MODULE_23__["RightareaComponent"],
-                _chatarea_chatarea_component__WEBPACK_IMPORTED_MODULE_24__["ChatareaComponent"],
-                _lockedchatroom_lockedchatroom_component__WEBPACK_IMPORTED_MODULE_26__["LockedchatroomComponent"],
-                _directchatroom_directchatroom_component__WEBPACK_IMPORTED_MODULE_27__["DirectchatroomComponent"],
-                _admin_admindashboard_admindashboard_component__WEBPACK_IMPORTED_MODULE_28__["AdmindashboardComponent"],
-                _unlockchatroom_unlockchatroom_component__WEBPACK_IMPORTED_MODULE_29__["UnlockchatroomComponent"],
-                _user_panel_user_panel_component__WEBPACK_IMPORTED_MODULE_30__["UserPanelComponent"],
-                _admin_admin_sidebar_admin_sidebar_component__WEBPACK_IMPORTED_MODULE_31__["AdminSidebarComponent"],
-                _admin_admincontacts_admincontacts_component__WEBPACK_IMPORTED_MODULE_32__["AdmincontactsComponent"],
-                _admin_adminsales_adminsales_component__WEBPACK_IMPORTED_MODULE_33__["AdminsalesComponent"],
-                _admin_adminoffers_new_offer_component__WEBPACK_IMPORTED_MODULE_36__["NewOfferComponent"],
-                _admin_adminoffers_adminoffers_component__WEBPACK_IMPORTED_MODULE_37__["AdminoffersComponent"],
-                _profile_sidebar_profile_sidebar_component__WEBPACK_IMPORTED_MODULE_38__["ProfileSidebarComponent"],
-                _onpoint_room_onpoint_room_component__WEBPACK_IMPORTED_MODULE_39__["OnpointRoomComponent"],
-                _sidenav_locked_dialog_component__WEBPACK_IMPORTED_MODULE_40__["lockeddialogComponent"],
-                _admin_adminbilling_adminbilling_component__WEBPACK_IMPORTED_MODULE_41__["AdminbillingComponent"],
-                _admin_adminbilling_new_billing_component__WEBPACK_IMPORTED_MODULE_35__["NewBillingComponent"],
-                _admin_admincoupons_admincoupons_component__WEBPACK_IMPORTED_MODULE_42__["AdmincouponsComponent"],
-                _admin_admincoupons_new_coupons_component__WEBPACK_IMPORTED_MODULE_43__["NewCouponsComponent"],
-                _admin_adminchatroom_adminchatroom_component__WEBPACK_IMPORTED_MODULE_44__["AdminchatroomComponent"],
-                _admin_adminchatroom_new_cahtroom_component__WEBPACK_IMPORTED_MODULE_45__["NewChatroomComponent"],
-                _admin_adminservices_adminservices_component__WEBPACK_IMPORTED_MODULE_47__["AdminservicesComponent"],
-                _admin_adminservices_new_services_component__WEBPACK_IMPORTED_MODULE_48__["NewServicesComponent"],
-                _admin_adminapi_adminapi_component__WEBPACK_IMPORTED_MODULE_49__["AdminapiComponent"],
-                _admin_admincompliance_admincompliance_component__WEBPACK_IMPORTED_MODULE_50__["AdmincomplianceComponent"],
-                _admin_adminwidget_adminwidget_component__WEBPACK_IMPORTED_MODULE_51__["AdminwidgetComponent"],
-                _admin_adminwidget_customwidget_dialog_component__WEBPACK_IMPORTED_MODULE_52__["CustomwidgetComponent"],
-                _admin_adminwidget_configure_dialog_component__WEBPACK_IMPORTED_MODULE_53__["ConfiguredialogComponent"],
-                _admin_adminonlineativity_adminonlineativity_component__WEBPACK_IMPORTED_MODULE_54__["AdminonlineativityComponent"],
-                _admin_adminsettings_adminsettings_component__WEBPACK_IMPORTED_MODULE_55__["AdminsettingsComponent"],
-                _admin_adminsettings_adminsettings_component__WEBPACK_IMPORTED_MODULE_55__["NewTeamAvatarDialog"],
-                _admin_adminsettings_custom_script_component__WEBPACK_IMPORTED_MODULE_56__["CustomScriptComponent"],
-                _admin_adminchatroom_deletechatroom_component__WEBPACK_IMPORTED_MODULE_46__["DeleteChatroomComponent"],
-                _admin_admincontacts_new_contact_component__WEBPACK_IMPORTED_MODULE_34__["NewContactComponent"],
-                _admin_admincontacts_invite_contact_component__WEBPACK_IMPORTED_MODULE_57__["InviteContactComponent"],
-                _admin_adminmarketing_adminmarketing_component__WEBPACK_IMPORTED_MODULE_59__["AdminmarketingComponent"],
-                _sidenav_sidenav_component__WEBPACK_IMPORTED_MODULE_22__["PreferencesDialog"],
-                _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["ChartsDialog"],
-                _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["MarketHoursDialog"],
-                _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["FXHeatmapDialog"],
-                _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["Coin360Dialog"],
-                _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["LiveTVDialog"],
-                _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["FXCrossRatesDialog"],
-                _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["OtherChartDialog"],
-                _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["ZoomDialog"],
-                _sidenav_sidenav_component__WEBPACK_IMPORTED_MODULE_22__["ManageBrockersDialog"],
-                _unlockchatroom_unlockchatroom_component__WEBPACK_IMPORTED_MODULE_29__["MediaUploadDialog"],
-                _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["DataFlashDialog"],
-                _unlockchatroom_unlockchatroom_component__WEBPACK_IMPORTED_MODULE_29__["NewSignalDialog"],
-                _admin_registration_setiings_registration_setiings_component__WEBPACK_IMPORTED_MODULE_60__["RegistrationSetiingsComponent"],
-                _sidenav_sidenav_component__WEBPACK_IMPORTED_MODULE_22__["InviteFriendDialog"],
-                _admin_topbar_topbar_component__WEBPACK_IMPORTED_MODULE_61__["ProfileDialog"],
-                _admin_admin_component__WEBPACK_IMPORTED_MODULE_62__["AdminComponent"],
-                _admin_topbar_topbar_component__WEBPACK_IMPORTED_MODULE_61__["TopbarComponent"]
-            ],
-            imports: [
-                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_6__["BrowserModule"],
-                _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_7__["BrowserAnimationsModule"],
-                angular_web_storage__WEBPACK_IMPORTED_MODULE_15__["AngularWebStorageModule"],
-                _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"],
-                _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"],
-                _material_module__WEBPACK_IMPORTED_MODULE_10__["MaterialModule"],
-                _angular_material_core__WEBPACK_IMPORTED_MODULE_5__["MatNativeDateModule"],
-                _angular_forms__WEBPACK_IMPORTED_MODULE_4__["ReactiveFormsModule"],
-                _app_routing_module__WEBPACK_IMPORTED_MODULE_8__["AppRoutingModule"],
-                mat_table_exporter__WEBPACK_IMPORTED_MODULE_58__["MatTableExporterModule"]
-            ],
-            providers: [
-                _services_auth_service__WEBPACK_IMPORTED_MODULE_16__["AuthService"],
-                _services_http_service__WEBPACK_IMPORTED_MODULE_17__["HttpService"],
-                _app_config__WEBPACK_IMPORTED_MODULE_18__["AppConfig"],
-                _app_local_config__WEBPACK_IMPORTED_MODULE_19__["AppLocalConfig"],
-                _models_index__WEBPACK_IMPORTED_MODULE_21__["User"],
-                _auth_guard__WEBPACK_IMPORTED_MODULE_25__["AuthGuard"]
-            ],
-            entryComponents: [_admin_topbar_topbar_component__WEBPACK_IMPORTED_MODULE_61__["ProfileDialog"], _sidenav_sidenav_component__WEBPACK_IMPORTED_MODULE_22__["InviteFriendDialog"], _unlockchatroom_unlockchatroom_component__WEBPACK_IMPORTED_MODULE_29__["NewSignalDialog"], _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["DataFlashDialog"], _unlockchatroom_unlockchatroom_component__WEBPACK_IMPORTED_MODULE_29__["MediaUploadDialog"], _sidenav_sidenav_component__WEBPACK_IMPORTED_MODULE_22__["ManageBrockersDialog"], _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["ZoomDialog"], _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["OtherChartDialog"], _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["FXCrossRatesDialog"], _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["LiveTVDialog"], _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["Coin360Dialog"], _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["FXHeatmapDialog"], _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["MarketHoursDialog"], _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["ChartsDialog"], _sidenav_sidenav_component__WEBPACK_IMPORTED_MODULE_22__["PreferencesDialog"], _admin_admincontacts_invite_contact_component__WEBPACK_IMPORTED_MODULE_57__["InviteContactComponent"], _admin_admincontacts_new_contact_component__WEBPACK_IMPORTED_MODULE_34__["NewContactComponent"], _admin_adminoffers_new_offer_component__WEBPACK_IMPORTED_MODULE_36__["NewOfferComponent"],
-                _sidenav_locked_dialog_component__WEBPACK_IMPORTED_MODULE_40__["lockeddialogComponent"], _admin_adminbilling_new_billing_component__WEBPACK_IMPORTED_MODULE_35__["NewBillingComponent"], _admin_adminwidget_customwidget_dialog_component__WEBPACK_IMPORTED_MODULE_52__["CustomwidgetComponent"], _admin_admincoupons_new_coupons_component__WEBPACK_IMPORTED_MODULE_43__["NewCouponsComponent"],
-                _admin_adminchatroom_new_cahtroom_component__WEBPACK_IMPORTED_MODULE_45__["NewChatroomComponent"], _admin_adminservices_new_services_component__WEBPACK_IMPORTED_MODULE_48__["NewServicesComponent"], _admin_adminwidget_configure_dialog_component__WEBPACK_IMPORTED_MODULE_53__["ConfiguredialogComponent"], _admin_adminsettings_adminsettings_component__WEBPACK_IMPORTED_MODULE_55__["NewTeamAvatarDialog"],
-                _admin_adminsettings_custom_script_component__WEBPACK_IMPORTED_MODULE_56__["CustomScriptComponent"], _admin_adminchatroom_deletechatroom_component__WEBPACK_IMPORTED_MODULE_46__["DeleteChatroomComponent"]],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_9__["AppComponent"]]
-        })
-    ], AppModule);
-    return AppModule;
-}());
+    canActivate(next, state) {
+        if (!this.auth.isAdmin) {
+            this.route.navigate(["/dashboard"]);
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+};
+AuthAdminGuard.ctorParameters = () => [
+    { type: _services_auth_service__WEBPACK_IMPORTED_MODULE_3__["AuthService"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] }
+];
+AuthAdminGuard = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], AuthAdminGuard);
 
 
 
@@ -9648,19 +10551,19 @@ var AppModule = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AuthGuard", function() { return AuthGuard; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
 /* harmony import */ var _services_auth_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./services/auth.service */ "./src/app/services/auth.service.ts");
 
 
 
 
-var AuthGuard = /** @class */ (function () {
-    function AuthGuard(auth, route) {
+let AuthGuard = class AuthGuard {
+    constructor(auth, route) {
         this.auth = auth;
         this.route = route;
     }
-    AuthGuard.prototype.canActivate = function (next, state) {
+    canActivate(next, state) {
         if (!this.auth.isLoggedIn) {
             this.route.navigate(["/login"]);
             return false;
@@ -9668,18 +10571,17 @@ var AuthGuard = /** @class */ (function () {
         else {
             return true;
         }
-    };
-    AuthGuard.ctorParameters = function () { return [
-        { type: _services_auth_service__WEBPACK_IMPORTED_MODULE_3__["AuthService"] },
-        { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] }
-    ]; };
-    AuthGuard = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
-            providedIn: 'root'
-        })
-    ], AuthGuard);
-    return AuthGuard;
-}());
+    }
+};
+AuthGuard.ctorParameters = () => [
+    { type: _services_auth_service__WEBPACK_IMPORTED_MODULE_3__["AuthService"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] }
+];
+AuthGuard = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], AuthGuard);
 
 
 
@@ -9707,44 +10609,42 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ChatareaComponent", function() { return ChatareaComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _services_widget_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/widget.service */ "./src/app/services/widget.service.ts");
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm2015/platform-browser.js");
 
 
 
 
-var ChatareaComponent = /** @class */ (function () {
-    function ChatareaComponent(ws, sanitizer) {
-        var _this = this;
+let ChatareaComponent = class ChatareaComponent {
+    constructor(ws, sanitizer) {
         this.ws = ws;
         this.sanitizer = sanitizer;
         this.widgets = [];
         this.iframeSrc = [];
         this.screenWidth = window.innerWidth;
-        window.onresize = function () {
-            _this.screenWidth = window.innerWidth;
+        window.onresize = () => {
+            this.screenWidth = window.innerWidth;
         };
         this.widgets = this.ws.getWidgets();
-        this.widgets.forEach(function (wid) {
-            _this.iframeSrc.push(sanitizer.bypassSecurityTrustResourceUrl(wid.link));
+        this.widgets.forEach(wid => {
+            this.iframeSrc.push(sanitizer.bypassSecurityTrustResourceUrl(wid.link));
         });
     }
-    ChatareaComponent.prototype.ngOnInit = function () {
-    };
-    ChatareaComponent.ctorParameters = function () { return [
-        { type: _services_widget_service__WEBPACK_IMPORTED_MODULE_2__["WidgetService"] },
-        { type: _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["DomSanitizer"] }
-    ]; };
-    ChatareaComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-chatarea',
-            template: __webpack_require__(/*! raw-loader!./chatarea.component.html */ "./node_modules/raw-loader/index.js!./src/app/chatarea/chatarea.component.html"),
-            styles: [__webpack_require__(/*! ./chatarea.component.css */ "./src/app/chatarea/chatarea.component.css")]
-        })
-    ], ChatareaComponent);
-    return ChatareaComponent;
-}());
+    ngOnInit() {
+    }
+};
+ChatareaComponent.ctorParameters = () => [
+    { type: _services_widget_service__WEBPACK_IMPORTED_MODULE_2__["WidgetService"] },
+    { type: _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["DomSanitizer"] }
+];
+ChatareaComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-chatarea',
+        template: __webpack_require__(/*! raw-loader!./chatarea.component.html */ "./node_modules/raw-loader/index.js!./src/app/chatarea/chatarea.component.html"),
+        styles: [__webpack_require__(/*! ./chatarea.component.css */ "./src/app/chatarea/chatarea.component.css")]
+    })
+], ChatareaComponent);
 
 
 
@@ -9757,7 +10657,7 @@ var ChatareaComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/* top bar */\n.nav-trial-container{\n  line-height: 30px;\n}\n.nav-trial-container a{\n  display: block;\n  font-size: 10px;\n  line-height: 12px;\n  font-weight: 700;\n  color: #e26727;\n  position: relative;\n  top: -5px;\n  cursor: pointer;\n  width: 70px;\n  white-space: normal;\n  text-decoration: none;\n}\n.button_wrap{\n  float: left;\n  color: #e26727;\n  width: 74px;\n  height: 74px;\n  text-align: center;\n  position: relative;\n  margin: 0 5px;\n  background-color: antiquewhite;\n}\n.rectangular-btn{\n  padding: 0 0px;\n  width: 80px;\n  background: rgba(226, 103, 39, 0.8)!important;\n  color: #fff;\n  border-radius: 0;\n  margin: 0;\n  border-left: 1px solid #eee;\n}\n.rectangular-btn::after{\n  display: none;\n}\n.rectangular-btn a{\n  color: #fff;\n}\n.dashboard-btn{\n  background: #e26727!important;\n}\n.hamburgerHeader {\n  color: #e26727;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZGFzaGJvYXJkL2Rhc2hib2FyZC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLFlBQVk7QUFDWjtFQUNFLGlCQUFpQjtBQUNuQjtBQUNBO0VBQ0UsY0FBYztFQUNkLGVBQWU7RUFDZixpQkFBaUI7RUFDakIsZ0JBQWdCO0VBQ2hCLGNBQWM7RUFDZCxrQkFBa0I7RUFDbEIsU0FBUztFQUNULGVBQWU7RUFDZixXQUFXO0VBQ1gsbUJBQW1CO0VBQ25CLHFCQUFxQjtBQUN2QjtBQUNBO0VBQ0UsV0FBVztFQUNYLGNBQWM7RUFDZCxXQUFXO0VBQ1gsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixrQkFBa0I7RUFDbEIsYUFBYTtFQUNiLDhCQUE4QjtBQUNoQztBQUNBO0VBQ0UsY0FBYztFQUNkLFdBQVc7RUFDWCw2Q0FBNkM7RUFDN0MsV0FBVztFQUNYLGdCQUFnQjtFQUNoQixTQUFTO0VBQ1QsMkJBQTJCO0FBQzdCO0FBQ0E7RUFDRSxhQUFhO0FBQ2Y7QUFDQTtFQUNFLFdBQVc7QUFDYjtBQUNBO0VBQ0UsNkJBQTZCO0FBQy9CO0FBQ0E7RUFDRSxjQUFjO0FBQ2hCIiwiZmlsZSI6InNyYy9hcHAvZGFzaGJvYXJkL2Rhc2hib2FyZC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLyogdG9wIGJhciAqL1xuLm5hdi10cmlhbC1jb250YWluZXJ7XG4gIGxpbmUtaGVpZ2h0OiAzMHB4O1xufVxuLm5hdi10cmlhbC1jb250YWluZXIgYXtcbiAgZGlzcGxheTogYmxvY2s7XG4gIGZvbnQtc2l6ZTogMTBweDtcbiAgbGluZS1oZWlnaHQ6IDEycHg7XG4gIGZvbnQtd2VpZ2h0OiA3MDA7XG4gIGNvbG9yOiAjZTI2NzI3O1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIHRvcDogLTVweDtcbiAgY3Vyc29yOiBwb2ludGVyO1xuICB3aWR0aDogNzBweDtcbiAgd2hpdGUtc3BhY2U6IG5vcm1hbDtcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xufVxuLmJ1dHRvbl93cmFwe1xuICBmbG9hdDogbGVmdDtcbiAgY29sb3I6ICNlMjY3Mjc7XG4gIHdpZHRoOiA3NHB4O1xuICBoZWlnaHQ6IDc0cHg7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBtYXJnaW46IDAgNXB4O1xuICBiYWNrZ3JvdW5kLWNvbG9yOiBhbnRpcXVld2hpdGU7XG59XG4ucmVjdGFuZ3VsYXItYnRue1xuICBwYWRkaW5nOiAwIDBweDtcbiAgd2lkdGg6IDgwcHg7XG4gIGJhY2tncm91bmQ6IHJnYmEoMjI2LCAxMDMsIDM5LCAwLjgpIWltcG9ydGFudDtcbiAgY29sb3I6ICNmZmY7XG4gIGJvcmRlci1yYWRpdXM6IDA7XG4gIG1hcmdpbjogMDtcbiAgYm9yZGVyLWxlZnQ6IDFweCBzb2xpZCAjZWVlO1xufVxuLnJlY3Rhbmd1bGFyLWJ0bjo6YWZ0ZXJ7XG4gIGRpc3BsYXk6IG5vbmU7XG59XG4ucmVjdGFuZ3VsYXItYnRuIGF7XG4gIGNvbG9yOiAjZmZmO1xufVxuLmRhc2hib2FyZC1idG57XG4gIGJhY2tncm91bmQ6ICNlMjY3MjchaW1wb3J0YW50O1xufVxuLmhhbWJ1cmdlckhlYWRlciB7XG4gIGNvbG9yOiAjZTI2NzI3O1xufSJdfQ== */"
+module.exports = "/* top bar */\n.nav-trial-container{\n  line-height: 30px;\n}\n.nav-trial-container a{\n  display: block;\n  font-size: 10px;\n  line-height: 12px;\n  font-weight: 700;\n  color: #e26727;\n  position: relative;\n  top: -5px;\n  cursor: pointer;\n  width: 70px;\n  white-space: normal;\n  text-decoration: none;\n}\n.button_wrap{\n  float: right;\n  color: #e26727;\n  width: 74px;\n  height: 74px;\n  text-align: center;\n  position: relative;\n  margin: 0 5px;\n  background-color: antiquewhite;\n}\n.rectangular-btn{\n  padding: 0 0px;\n  width: 80px;\n  background: rgba(226, 103, 39, 0.8)!important;\n  color: #fff;\n  border-radius: 0;\n  margin: 0;\n  border-left: 1px solid #eee;\n}\n.rectangular-btn::after{\n  display: none;\n}\n.rectangular-btn a{\n  color: #fff;\n}\n.dashboard-btn{\n  background: #e26727!important;\n}\n.hamburgerHeader {\n  color: #e26727;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZGFzaGJvYXJkL2Rhc2hib2FyZC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLFlBQVk7QUFDWjtFQUNFLGlCQUFpQjtBQUNuQjtBQUNBO0VBQ0UsY0FBYztFQUNkLGVBQWU7RUFDZixpQkFBaUI7RUFDakIsZ0JBQWdCO0VBQ2hCLGNBQWM7RUFDZCxrQkFBa0I7RUFDbEIsU0FBUztFQUNULGVBQWU7RUFDZixXQUFXO0VBQ1gsbUJBQW1CO0VBQ25CLHFCQUFxQjtBQUN2QjtBQUNBO0VBQ0UsWUFBWTtFQUNaLGNBQWM7RUFDZCxXQUFXO0VBQ1gsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixrQkFBa0I7RUFDbEIsYUFBYTtFQUNiLDhCQUE4QjtBQUNoQztBQUNBO0VBQ0UsY0FBYztFQUNkLFdBQVc7RUFDWCw2Q0FBNkM7RUFDN0MsV0FBVztFQUNYLGdCQUFnQjtFQUNoQixTQUFTO0VBQ1QsMkJBQTJCO0FBQzdCO0FBQ0E7RUFDRSxhQUFhO0FBQ2Y7QUFDQTtFQUNFLFdBQVc7QUFDYjtBQUNBO0VBQ0UsNkJBQTZCO0FBQy9CO0FBQ0E7RUFDRSxjQUFjO0FBQ2hCIiwiZmlsZSI6InNyYy9hcHAvZGFzaGJvYXJkL2Rhc2hib2FyZC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLyogdG9wIGJhciAqL1xuLm5hdi10cmlhbC1jb250YWluZXJ7XG4gIGxpbmUtaGVpZ2h0OiAzMHB4O1xufVxuLm5hdi10cmlhbC1jb250YWluZXIgYXtcbiAgZGlzcGxheTogYmxvY2s7XG4gIGZvbnQtc2l6ZTogMTBweDtcbiAgbGluZS1oZWlnaHQ6IDEycHg7XG4gIGZvbnQtd2VpZ2h0OiA3MDA7XG4gIGNvbG9yOiAjZTI2NzI3O1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIHRvcDogLTVweDtcbiAgY3Vyc29yOiBwb2ludGVyO1xuICB3aWR0aDogNzBweDtcbiAgd2hpdGUtc3BhY2U6IG5vcm1hbDtcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xufVxuLmJ1dHRvbl93cmFwe1xuICBmbG9hdDogcmlnaHQ7XG4gIGNvbG9yOiAjZTI2NzI3O1xuICB3aWR0aDogNzRweDtcbiAgaGVpZ2h0OiA3NHB4O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgbWFyZ2luOiAwIDVweDtcbiAgYmFja2dyb3VuZC1jb2xvcjogYW50aXF1ZXdoaXRlO1xufVxuLnJlY3Rhbmd1bGFyLWJ0bntcbiAgcGFkZGluZzogMCAwcHg7XG4gIHdpZHRoOiA4MHB4O1xuICBiYWNrZ3JvdW5kOiByZ2JhKDIyNiwgMTAzLCAzOSwgMC44KSFpbXBvcnRhbnQ7XG4gIGNvbG9yOiAjZmZmO1xuICBib3JkZXItcmFkaXVzOiAwO1xuICBtYXJnaW46IDA7XG4gIGJvcmRlci1sZWZ0OiAxcHggc29saWQgI2VlZTtcbn1cbi5yZWN0YW5ndWxhci1idG46OmFmdGVye1xuICBkaXNwbGF5OiBub25lO1xufVxuLnJlY3Rhbmd1bGFyLWJ0biBhe1xuICBjb2xvcjogI2ZmZjtcbn1cbi5kYXNoYm9hcmQtYnRue1xuICBiYWNrZ3JvdW5kOiAjZTI2NzI3IWltcG9ydGFudDtcbn1cbi5oYW1idXJnZXJIZWFkZXIge1xuICBjb2xvcjogI2UyNjcyNztcbn0iXX0= */"
 
 /***/ }),
 
@@ -9781,15 +10681,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ZoomDialog", function() { return ZoomDialog; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DataFlashDialog", function() { return DataFlashDialog; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _services_user_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/user.service */ "./src/app/services/user.service.ts");
-/* harmony import */ var _services_socket_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../services/socket.service */ "./src/app/services/socket.service.ts");
-/* harmony import */ var _models__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../models */ "./src/app/models/index.ts");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
-/* harmony import */ var _admin_adminwidget_adminwidget_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../admin/adminwidget/adminwidget.service */ "./src/app/admin/adminwidget/adminwidget.service.ts");
-/* harmony import */ var angular_web_storage__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! angular-web-storage */ "./node_modules/angular-web-storage/fesm5/angular-web-storage.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _services_auth_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/auth.service */ "./src/app/services/auth.service.ts");
+/* harmony import */ var _services_user_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../services/user.service */ "./src/app/services/user.service.ts");
+/* harmony import */ var _services_socket_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../services/socket.service */ "./src/app/services/socket.service.ts");
+/* harmony import */ var _models__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../models */ "./src/app/models/index.ts");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
+/* harmony import */ var _admin_adminwidget_adminwidget_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../admin/adminwidget/adminwidget.service */ "./src/app/admin/adminwidget/adminwidget.service.ts");
+/* harmony import */ var angular_web_storage__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! angular-web-storage */ "./node_modules/angular-web-storage/fesm2015/angular-web-storage.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
 
 
 
@@ -9800,11 +10701,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var DashboardComponent = /** @class */ (function () {
-    function DashboardComponent(document, router, socketService, user, userService, dialog, adminWidgetService, localStorage) {
-        var _this = this;
+
+let DashboardComponent = class DashboardComponent {
+    constructor(document, router, auth, socketService, user, userService, dialog, adminWidgetService, localStorage) {
         this.document = document;
         this.router = router;
+        this.auth = auth;
         this.socketService = socketService;
         this.user = user;
         this.dialog = dialog;
@@ -9815,189 +10717,161 @@ var DashboardComponent = /** @class */ (function () {
         this.chartsDisable = this.localStorage.get('widget');
         this.userService = userService;
         this.socketService.initSocket();
-        this.isAdmin = this.userService.userIsAdmin();
-        console.log("this.isAdmin: " + this.isAdmin);
+        this.isAdmin = this.auth.isAdmin;
+        console.log(`this.isAdmin: ${this.auth.isAdmin}`);
         this.document.body.classList.remove('black-theme');
         //for mat-drawer responsive
         this.screenWidth = window.innerWidth;
-        window.onresize = function () {
-            _this.screenWidth = window.innerWidth;
+        window.onresize = () => {
+            this.screenWidth = window.innerWidth;
         };
     }
-    DashboardComponent.prototype.ngOnInit = function () {
-    };
-    DashboardComponent.prototype.onRedirectAdmin = function () {
+    ngOnInit() { }
+    onRedirectAdmin() {
         this.router.navigate(['admin/dashboard']);
         this.document.body.classList.remove('dark-theme');
-    };
-    DashboardComponent.prototype.openChartsDialog = function () {
-        var dialog = this.dialog.open(ChartsDialog);
-    };
-    DashboardComponent.prototype.openMarketHoursDialog = function () {
-        var dialog = this.dialog.open(MarketHoursDialog);
-    };
-    DashboardComponent.prototype.openFXHeatmapDialog = function () {
-        var dialog = this.dialog.open(FXHeatmapDialog);
-    };
-    DashboardComponent.prototype.openCoin360Dialog = function () {
-        var dialog = this.dialog.open(Coin360Dialog);
-    };
-    DashboardComponent.prototype.openLiveTVDialog = function () {
-        var dialog = this.dialog.open(LiveTVDialog);
-    };
-    DashboardComponent.prototype.openFXCrossRatesDialog = function () {
-        var dialog = this.dialog.open(FXCrossRatesDialog);
-    };
-    DashboardComponent.prototype.openOtherChartDialog = function () {
-        var dialog = this.dialog.open(OtherChartDialog);
-    };
-    DashboardComponent.prototype.openZoomDialog = function () {
-        var dialog = this.dialog.open(ZoomDialog);
-    };
-    DashboardComponent.prototype.openDataFlashDialog = function () {
-        var dialog = this.dialog.open(DataFlashDialog);
-    };
-    DashboardComponent.prototype.setRoomTitle = function (roomTitle) {
-        console.log("roomTitle: " + roomTitle);
+    }
+    openChartsDialog() {
+        const dialog = this.dialog.open(ChartsDialog);
+    }
+    openMarketHoursDialog() {
+        const dialog = this.dialog.open(MarketHoursDialog);
+    }
+    openFXHeatmapDialog() {
+        const dialog = this.dialog.open(FXHeatmapDialog);
+    }
+    openCoin360Dialog() {
+        const dialog = this.dialog.open(Coin360Dialog);
+    }
+    openLiveTVDialog() {
+        const dialog = this.dialog.open(LiveTVDialog);
+    }
+    openFXCrossRatesDialog() {
+        const dialog = this.dialog.open(FXCrossRatesDialog);
+    }
+    openOtherChartDialog() {
+        const dialog = this.dialog.open(OtherChartDialog);
+    }
+    openZoomDialog() {
+        const dialog = this.dialog.open(ZoomDialog);
+    }
+    openDataFlashDialog() {
+        const dialog = this.dialog.open(DataFlashDialog);
+    }
+    setRoomTitle(roomTitle) {
+        console.log(`roomTitle: ${roomTitle}`);
         this.roomTitle = roomTitle;
-    };
-    DashboardComponent.ctorParameters = function () { return [
-        { type: Document, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [_angular_common__WEBPACK_IMPORTED_MODULE_8__["DOCUMENT"],] }] },
-        { type: _angular_router__WEBPACK_IMPORTED_MODULE_9__["Router"] },
-        { type: _services_socket_service__WEBPACK_IMPORTED_MODULE_3__["SocketService"] },
-        { type: _models__WEBPACK_IMPORTED_MODULE_4__["User"] },
-        { type: _services_user_service__WEBPACK_IMPORTED_MODULE_2__["UserService"] },
-        { type: _angular_material__WEBPACK_IMPORTED_MODULE_5__["MatDialog"] },
-        { type: _admin_adminwidget_adminwidget_service__WEBPACK_IMPORTED_MODULE_6__["AdminWidgetService"] },
-        { type: angular_web_storage__WEBPACK_IMPORTED_MODULE_7__["LocalStorageService"] }
-    ]; };
-    DashboardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-dashboard',
-            template: __webpack_require__(/*! raw-loader!./dashboard.component.html */ "./node_modules/raw-loader/index.js!./src/app/dashboard/dashboard.component.html"),
-            styles: [__webpack_require__(/*! ./dashboard.component.css */ "./src/app/dashboard/dashboard.component.css")]
-        }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](0, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_angular_common__WEBPACK_IMPORTED_MODULE_8__["DOCUMENT"]))
-    ], DashboardComponent);
-    return DashboardComponent;
-}());
+    }
+};
+DashboardComponent.ctorParameters = () => [
+    { type: Document, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [_angular_common__WEBPACK_IMPORTED_MODULE_9__["DOCUMENT"],] }] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_10__["Router"] },
+    { type: _services_auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"] },
+    { type: _services_socket_service__WEBPACK_IMPORTED_MODULE_4__["SocketService"] },
+    { type: _models__WEBPACK_IMPORTED_MODULE_5__["User"] },
+    { type: _services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"] },
+    { type: _angular_material__WEBPACK_IMPORTED_MODULE_6__["MatDialog"] },
+    { type: _admin_adminwidget_adminwidget_service__WEBPACK_IMPORTED_MODULE_7__["AdminWidgetService"] },
+    { type: angular_web_storage__WEBPACK_IMPORTED_MODULE_8__["LocalStorageService"] }
+];
+DashboardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-dashboard',
+        template: __webpack_require__(/*! raw-loader!./dashboard.component.html */ "./node_modules/raw-loader/index.js!./src/app/dashboard/dashboard.component.html"),
+        styles: [__webpack_require__(/*! ./dashboard.component.css */ "./src/app/dashboard/dashboard.component.css")]
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](0, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_angular_common__WEBPACK_IMPORTED_MODULE_9__["DOCUMENT"]))
+], DashboardComponent);
 
 // charts Dialog
-var ChartsDialog = /** @class */ (function () {
-    function ChartsDialog() {
-    }
-    ChartsDialog = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'charts-dialog',
-            template: __webpack_require__(/*! raw-loader!./charts-dialog.html */ "./node_modules/raw-loader/index.js!./src/app/dashboard/charts-dialog.html"),
-        })
-    ], ChartsDialog);
-    return ChartsDialog;
-}());
+let ChartsDialog = class ChartsDialog {
+};
+ChartsDialog = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'charts-dialog',
+        template: __webpack_require__(/*! raw-loader!./charts-dialog.html */ "./node_modules/raw-loader/index.js!./src/app/dashboard/charts-dialog.html"),
+    })
+], ChartsDialog);
 
 // Market Hours Dialog
-var MarketHoursDialog = /** @class */ (function () {
-    function MarketHoursDialog() {
-    }
-    MarketHoursDialog = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'market-hours-dialog',
-            template: __webpack_require__(/*! raw-loader!./market-hours-dialog.html */ "./node_modules/raw-loader/index.js!./src/app/dashboard/market-hours-dialog.html"),
-        })
-    ], MarketHoursDialog);
-    return MarketHoursDialog;
-}());
+let MarketHoursDialog = class MarketHoursDialog {
+};
+MarketHoursDialog = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'market-hours-dialog',
+        template: __webpack_require__(/*! raw-loader!./market-hours-dialog.html */ "./node_modules/raw-loader/index.js!./src/app/dashboard/market-hours-dialog.html"),
+    })
+], MarketHoursDialog);
 
 // FX Heatmap Dialog
-var FXHeatmapDialog = /** @class */ (function () {
-    function FXHeatmapDialog() {
-    }
-    FXHeatmapDialog = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'fx-heatmap-dialog',
-            template: __webpack_require__(/*! raw-loader!./fx-heatmap-dialog.html */ "./node_modules/raw-loader/index.js!./src/app/dashboard/fx-heatmap-dialog.html"),
-        })
-    ], FXHeatmapDialog);
-    return FXHeatmapDialog;
-}());
+let FXHeatmapDialog = class FXHeatmapDialog {
+};
+FXHeatmapDialog = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'fx-heatmap-dialog',
+        template: __webpack_require__(/*! raw-loader!./fx-heatmap-dialog.html */ "./node_modules/raw-loader/index.js!./src/app/dashboard/fx-heatmap-dialog.html"),
+    })
+], FXHeatmapDialog);
 
 // COIN360 Dialog
-var Coin360Dialog = /** @class */ (function () {
-    function Coin360Dialog() {
-    }
-    Coin360Dialog = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'coin-360-dialog',
-            template: __webpack_require__(/*! raw-loader!./coin-360-dialog.html */ "./node_modules/raw-loader/index.js!./src/app/dashboard/coin-360-dialog.html"),
-        })
-    ], Coin360Dialog);
-    return Coin360Dialog;
-}());
+let Coin360Dialog = class Coin360Dialog {
+};
+Coin360Dialog = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'coin-360-dialog',
+        template: __webpack_require__(/*! raw-loader!./coin-360-dialog.html */ "./node_modules/raw-loader/index.js!./src/app/dashboard/coin-360-dialog.html"),
+    })
+], Coin360Dialog);
 
 // LIVE TV Dialog
-var LiveTVDialog = /** @class */ (function () {
-    function LiveTVDialog() {
-    }
-    LiveTVDialog = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'live-tv-dialog',
-            template: __webpack_require__(/*! raw-loader!./live-tv-dialog.html */ "./node_modules/raw-loader/index.js!./src/app/dashboard/live-tv-dialog.html"),
-        })
-    ], LiveTVDialog);
-    return LiveTVDialog;
-}());
+let LiveTVDialog = class LiveTVDialog {
+};
+LiveTVDialog = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'live-tv-dialog',
+        template: __webpack_require__(/*! raw-loader!./live-tv-dialog.html */ "./node_modules/raw-loader/index.js!./src/app/dashboard/live-tv-dialog.html"),
+    })
+], LiveTVDialog);
 
 // FX Cross Rates Dialog 
-var FXCrossRatesDialog = /** @class */ (function () {
-    function FXCrossRatesDialog() {
-    }
-    FXCrossRatesDialog = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'fx-cross-rates-dialog',
-            template: __webpack_require__(/*! raw-loader!./fx-cross-rates-dialog.html */ "./node_modules/raw-loader/index.js!./src/app/dashboard/fx-cross-rates-dialog.html"),
-        })
-    ], FXCrossRatesDialog);
-    return FXCrossRatesDialog;
-}());
+let FXCrossRatesDialog = class FXCrossRatesDialog {
+};
+FXCrossRatesDialog = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'fx-cross-rates-dialog',
+        template: __webpack_require__(/*! raw-loader!./fx-cross-rates-dialog.html */ "./node_modules/raw-loader/index.js!./src/app/dashboard/fx-cross-rates-dialog.html"),
+    })
+], FXCrossRatesDialog);
 
 // Other Chart Dialog
-var OtherChartDialog = /** @class */ (function () {
-    function OtherChartDialog() {
-    }
-    OtherChartDialog = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'other-chart-dialog',
-            template: __webpack_require__(/*! raw-loader!./other-chart-dialog.html */ "./node_modules/raw-loader/index.js!./src/app/dashboard/other-chart-dialog.html"),
-        })
-    ], OtherChartDialog);
-    return OtherChartDialog;
-}());
+let OtherChartDialog = class OtherChartDialog {
+};
+OtherChartDialog = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'other-chart-dialog',
+        template: __webpack_require__(/*! raw-loader!./other-chart-dialog.html */ "./node_modules/raw-loader/index.js!./src/app/dashboard/other-chart-dialog.html"),
+    })
+], OtherChartDialog);
 
 // zoom Dialog
-var ZoomDialog = /** @class */ (function () {
-    function ZoomDialog() {
-    }
-    ZoomDialog = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'zoom-dialog',
-            template: __webpack_require__(/*! raw-loader!./zoom-dialog.html */ "./node_modules/raw-loader/index.js!./src/app/dashboard/zoom-dialog.html"),
-        })
-    ], ZoomDialog);
-    return ZoomDialog;
-}());
+let ZoomDialog = class ZoomDialog {
+};
+ZoomDialog = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'zoom-dialog',
+        template: __webpack_require__(/*! raw-loader!./zoom-dialog.html */ "./node_modules/raw-loader/index.js!./src/app/dashboard/zoom-dialog.html"),
+    })
+], ZoomDialog);
 
 // data flash Dialog
-var DataFlashDialog = /** @class */ (function () {
-    function DataFlashDialog() {
-    }
-    DataFlashDialog = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'data-flash-dialog',
-            template: __webpack_require__(/*! raw-loader!./data-flash-dialog.html */ "./node_modules/raw-loader/index.js!./src/app/dashboard/data-flash-dialog.html"),
-        })
-    ], DataFlashDialog);
-    return DataFlashDialog;
-}());
+let DataFlashDialog = class DataFlashDialog {
+};
+DataFlashDialog = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'data-flash-dialog',
+        template: __webpack_require__(/*! raw-loader!./data-flash-dialog.html */ "./node_modules/raw-loader/index.js!./src/app/dashboard/data-flash-dialog.html"),
+    })
+], DataFlashDialog);
 
 
 
@@ -10025,23 +10899,21 @@ module.exports = ".fa-comments-o:before {\n  content: \"\\f0e6\";\n}\n/*# source
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DirectchatroomComponent", function() { return DirectchatroomComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 
 
-var DirectchatroomComponent = /** @class */ (function () {
-    function DirectchatroomComponent() {
+let DirectchatroomComponent = class DirectchatroomComponent {
+    constructor() { }
+    ngOnInit() {
     }
-    DirectchatroomComponent.prototype.ngOnInit = function () {
-    };
-    DirectchatroomComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-directchatroom',
-            template: __webpack_require__(/*! raw-loader!./directchatroom.component.html */ "./node_modules/raw-loader/index.js!./src/app/directchatroom/directchatroom.component.html"),
-            styles: [__webpack_require__(/*! ./directchatroom.component.css */ "./src/app/directchatroom/directchatroom.component.css")]
-        })
-    ], DirectchatroomComponent);
-    return DirectchatroomComponent;
-}());
+};
+DirectchatroomComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-directchatroom',
+        template: __webpack_require__(/*! raw-loader!./directchatroom.component.html */ "./node_modules/raw-loader/index.js!./src/app/directchatroom/directchatroom.component.html"),
+        styles: [__webpack_require__(/*! ./directchatroom.component.css */ "./src/app/directchatroom/directchatroom.component.css")]
+    })
+], DirectchatroomComponent);
 
 
 
@@ -10069,36 +10941,35 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ErrorComponent", function() { return ErrorComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
 
 
 
-var ErrorComponent = /** @class */ (function () {
-    function ErrorComponent(router) {
+let ErrorComponent = class ErrorComponent {
+    constructor(router) {
         this.router = router;
     }
-    ErrorComponent.prototype.searchResult = function () {
+    searchResult() {
         this.router.navigate(['/app', 'dashboard']);
-    };
-    ErrorComponent.ctorParameters = function () { return [
-        { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] }
-    ]; };
-    ErrorComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            // tslint:disable-next-line: component-selector
-            selector: 'error',
-            template: __webpack_require__(/*! raw-loader!./error.component.html */ "./node_modules/raw-loader/index.js!./src/app/error/error.component.html"),
-            encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewEncapsulation"].None,
-            // tslint:disable-next-line: no-host-metadata-property
-            host: {
-                class: 'error-page app'
-            },
-            styles: [__webpack_require__(/*! ./error.component.css */ "./src/app/error/error.component.css")]
-        })
-    ], ErrorComponent);
-    return ErrorComponent;
-}());
+    }
+};
+ErrorComponent.ctorParameters = () => [
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] }
+];
+ErrorComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        // tslint:disable-next-line: component-selector
+        selector: 'error',
+        template: __webpack_require__(/*! raw-loader!./error.component.html */ "./node_modules/raw-loader/index.js!./src/app/error/error.component.html"),
+        encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewEncapsulation"].None,
+        // tslint:disable-next-line: no-host-metadata-property
+        host: {
+            class: 'error-page app'
+        },
+        styles: [__webpack_require__(/*! ./error.component.css */ "./src/app/error/error.component.css")]
+    })
+], ErrorComponent);
 
 
 
@@ -10126,23 +10997,21 @@ module.exports = ".login-container{\n  height: 100vh;\n  width: 100%;\n  backgro
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ForgotpasswordComponent", function() { return ForgotpasswordComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 
 
-var ForgotpasswordComponent = /** @class */ (function () {
-    function ForgotpasswordComponent() {
+let ForgotpasswordComponent = class ForgotpasswordComponent {
+    constructor() { }
+    ngOnInit() {
     }
-    ForgotpasswordComponent.prototype.ngOnInit = function () {
-    };
-    ForgotpasswordComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-forgotpassword',
-            template: __webpack_require__(/*! raw-loader!./forgotpassword.component.html */ "./node_modules/raw-loader/index.js!./src/app/forgotpassword/forgotpassword.component.html"),
-            styles: [__webpack_require__(/*! ./forgotpassword.component.css */ "./src/app/forgotpassword/forgotpassword.component.css")]
-        })
-    ], ForgotpasswordComponent);
-    return ForgotpasswordComponent;
-}());
+};
+ForgotpasswordComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-forgotpassword',
+        template: __webpack_require__(/*! raw-loader!./forgotpassword.component.html */ "./node_modules/raw-loader/index.js!./src/app/forgotpassword/forgotpassword.component.html"),
+        styles: [__webpack_require__(/*! ./forgotpassword.component.css */ "./src/app/forgotpassword/forgotpassword.component.css")]
+    })
+], ForgotpasswordComponent);
 
 
 
@@ -10170,23 +11039,21 @@ module.exports = ".btn-primary {\n  background-color: #00a2c8!important;\n  bord
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LockedchatroomComponent", function() { return LockedchatroomComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 
 
-var LockedchatroomComponent = /** @class */ (function () {
-    function LockedchatroomComponent() {
+let LockedchatroomComponent = class LockedchatroomComponent {
+    constructor() { }
+    ngOnInit() {
     }
-    LockedchatroomComponent.prototype.ngOnInit = function () {
-    };
-    LockedchatroomComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-lockedchatroom',
-            template: __webpack_require__(/*! raw-loader!./lockedchatroom.component.html */ "./node_modules/raw-loader/index.js!./src/app/lockedchatroom/lockedchatroom.component.html"),
-            styles: [__webpack_require__(/*! ./lockedchatroom.component.css */ "./src/app/lockedchatroom/lockedchatroom.component.css")]
-        })
-    ], LockedchatroomComponent);
-    return LockedchatroomComponent;
-}());
+};
+LockedchatroomComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-lockedchatroom',
+        template: __webpack_require__(/*! raw-loader!./lockedchatroom.component.html */ "./node_modules/raw-loader/index.js!./src/app/lockedchatroom/lockedchatroom.component.html"),
+        styles: [__webpack_require__(/*! ./lockedchatroom.component.css */ "./src/app/lockedchatroom/lockedchatroom.component.css")]
+    })
+], LockedchatroomComponent);
 
 
 
@@ -10214,19 +11081,22 @@ module.exports = "  .login-container{\n    height: 100vh;\n    width: 100%;\n   
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginComponent", function() { return LoginComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _services_auth_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/auth.service */ "./src/app/services/auth.service.ts");
 /* harmony import */ var _models__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../models */ "./src/app/models/index.ts");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
 
 
 
 
 
 
-var LoginComponent = /** @class */ (function () {
-    function LoginComponent(auth, user, router) {
+
+let LoginComponent = class LoginComponent {
+    constructor(document, auth, user, router) {
+        this.document = document;
         this.auth = auth;
         this.user = user;
         this.router = router;
@@ -10237,41 +11107,43 @@ var LoginComponent = /** @class */ (function () {
             email: new _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_5__["Validators"].required),
             password: new _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormControl"]("", _angular_forms__WEBPACK_IMPORTED_MODULE_5__["Validators"].required)
         });
+        this.document.body.classList.remove('black-theme');
+        this.document.body.classList.remove('dark-theme');
     }
-    LoginComponent.prototype.ngOnInit = function () {
+    ngOnInit() {
         if (this.user.getLoginUserId()) {
             this.router.navigate(['/dashboard']);
         }
-    };
-    LoginComponent.prototype.loginUser = function () {
-        var _this = this;
-        var userData = this.validateData();
+    }
+    loginUser() {
+        let userData = this.validateData();
         if (userData) {
             this.isLoading = true;
-            this.auth.loginUser(userData.email, userData.password).subscribe(function (data) {
-                _this.isLoading = false;
+            this.auth.loginUser(userData.email, userData.password).subscribe((data) => {
+                this.isLoading = false;
                 if (data.success) {
-                    _this.auth.loginSuccess(data);
+                    console.log("siuccess------------", data);
+                    this.auth.loginSuccess(data);
                 }
                 else {
-                    _this.loginFailed(data);
+                    this.loginFailed(data);
                 }
             });
         }
         else {
             console.log(this.errorMessageLogin);
         }
-    };
-    LoginComponent.prototype.loginFailed = function (data) {
+    }
+    loginFailed(data) {
         this.incorrectLogin = true;
         this.errorMessageLogin = data.error;
-    };
-    LoginComponent.prototype.validateEmail = function (email) {
+    }
+    validateEmail(email) {
         var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return re.test(String(email).toLowerCase());
-    };
-    LoginComponent.prototype.validateData = function () {
-        var userData = this.loginUseData.value;
+    }
+    validateData() {
+        let userData = this.loginUseData.value;
         var procesData = { email: "", password: "" };
         if (this.validateEmail(userData.email)) {
             procesData.email = userData.email;
@@ -10292,21 +11164,22 @@ var LoginComponent = /** @class */ (function () {
             return false;
         }
         return procesData;
-    };
-    LoginComponent.ctorParameters = function () { return [
-        { type: _services_auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"] },
-        { type: _models__WEBPACK_IMPORTED_MODULE_3__["User"] },
-        { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"] }
-    ]; };
-    LoginComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-login',
-            template: __webpack_require__(/*! raw-loader!./login.component.html */ "./node_modules/raw-loader/index.js!./src/app/login/login.component.html"),
-            styles: [__webpack_require__(/*! ./login.component.css */ "./src/app/login/login.component.css")]
-        })
-    ], LoginComponent);
-    return LoginComponent;
-}());
+    }
+};
+LoginComponent.ctorParameters = () => [
+    { type: Document, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [_angular_common__WEBPACK_IMPORTED_MODULE_6__["DOCUMENT"],] }] },
+    { type: _services_auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"] },
+    { type: _models__WEBPACK_IMPORTED_MODULE_3__["User"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"] }
+];
+LoginComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-login',
+        template: __webpack_require__(/*! raw-loader!./login.component.html */ "./node_modules/raw-loader/index.js!./src/app/login/login.component.html"),
+        styles: [__webpack_require__(/*! ./login.component.css */ "./src/app/login/login.component.css")]
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](0, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_angular_common__WEBPACK_IMPORTED_MODULE_6__["DOCUMENT"]))
+], LoginComponent);
 
 
 
@@ -10323,49 +11196,49 @@ var LoginComponent = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MaterialModule", function() { return MaterialModule; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/cdk/a11y */ "./node_modules/@angular/cdk/esm5/a11y.es5.js");
-/* harmony import */ var _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/cdk/drag-drop */ "./node_modules/@angular/cdk/esm5/drag-drop.es5.js");
-/* harmony import */ var _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/cdk/portal */ "./node_modules/@angular/cdk/esm5/portal.es5.js");
-/* harmony import */ var _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/cdk/scrolling */ "./node_modules/@angular/cdk/esm5/scrolling.es5.js");
-/* harmony import */ var _angular_cdk_stepper__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/cdk/stepper */ "./node_modules/@angular/cdk/esm5/stepper.es5.js");
-/* harmony import */ var _angular_cdk_table__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/cdk/table */ "./node_modules/@angular/cdk/esm5/table.es5.js");
-/* harmony import */ var _angular_cdk_tree__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/cdk/tree */ "./node_modules/@angular/cdk/esm5/tree.es5.js");
-/* harmony import */ var _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/cdk/bidi */ "./node_modules/@angular/cdk/esm5/bidi.es5.js");
-/* harmony import */ var _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/material/autocomplete */ "./node_modules/@angular/material/esm5/autocomplete.es5.js");
-/* harmony import */ var _angular_material_badge__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/material/badge */ "./node_modules/@angular/material/esm5/badge.es5.js");
-/* harmony import */ var _angular_material_bottom_sheet__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/material/bottom-sheet */ "./node_modules/@angular/material/esm5/bottom-sheet.es5.js");
-/* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/material/button */ "./node_modules/@angular/material/esm5/button.es5.js");
-/* harmony import */ var _angular_material_button_toggle__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/material/button-toggle */ "./node_modules/@angular/material/esm5/button-toggle.es5.js");
-/* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/material/card */ "./node_modules/@angular/material/esm5/card.es5.js");
-/* harmony import */ var _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/material/checkbox */ "./node_modules/@angular/material/esm5/checkbox.es5.js");
-/* harmony import */ var _angular_material_chips__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @angular/material/chips */ "./node_modules/@angular/material/esm5/chips.es5.js");
-/* harmony import */ var _angular_material_stepper__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @angular/material/stepper */ "./node_modules/@angular/material/esm5/stepper.es5.js");
-/* harmony import */ var _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @angular/material/datepicker */ "./node_modules/@angular/material/esm5/datepicker.es5.js");
-/* harmony import */ var _angular_material_dialog__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @angular/material/dialog */ "./node_modules/@angular/material/esm5/dialog.es5.js");
-/* harmony import */ var _angular_material_divider__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @angular/material/divider */ "./node_modules/@angular/material/esm5/divider.es5.js");
-/* harmony import */ var _angular_material_expansion__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! @angular/material/expansion */ "./node_modules/@angular/material/esm5/expansion.es5.js");
-/* harmony import */ var _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! @angular/material/grid-list */ "./node_modules/@angular/material/esm5/grid-list.es5.js");
-/* harmony import */ var _angular_material_icon__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! @angular/material/icon */ "./node_modules/@angular/material/esm5/icon.es5.js");
-/* harmony import */ var _angular_material_input__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! @angular/material/input */ "./node_modules/@angular/material/esm5/input.es5.js");
-/* harmony import */ var _angular_material_list__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! @angular/material/list */ "./node_modules/@angular/material/esm5/list.es5.js");
-/* harmony import */ var _angular_material_menu__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! @angular/material/menu */ "./node_modules/@angular/material/esm5/menu.es5.js");
-/* harmony import */ var _angular_material_core__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! @angular/material/core */ "./node_modules/@angular/material/esm5/core.es5.js");
-/* harmony import */ var _angular_material_paginator__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! @angular/material/paginator */ "./node_modules/@angular/material/esm5/paginator.es5.js");
-/* harmony import */ var _angular_material_progress_bar__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! @angular/material/progress-bar */ "./node_modules/@angular/material/esm5/progress-bar.es5.js");
-/* harmony import */ var _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! @angular/material/progress-spinner */ "./node_modules/@angular/material/esm5/progress-spinner.es5.js");
-/* harmony import */ var _angular_material_radio__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! @angular/material/radio */ "./node_modules/@angular/material/esm5/radio.es5.js");
-/* harmony import */ var _angular_material_select__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! @angular/material/select */ "./node_modules/@angular/material/esm5/select.es5.js");
-/* harmony import */ var _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! @angular/material/sidenav */ "./node_modules/@angular/material/esm5/sidenav.es5.js");
-/* harmony import */ var _angular_material_slider__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! @angular/material/slider */ "./node_modules/@angular/material/esm5/slider.es5.js");
-/* harmony import */ var _angular_material_slide_toggle__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! @angular/material/slide-toggle */ "./node_modules/@angular/material/esm5/slide-toggle.es5.js");
-/* harmony import */ var _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! @angular/material/snack-bar */ "./node_modules/@angular/material/esm5/snack-bar.es5.js");
-/* harmony import */ var _angular_material_sort__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! @angular/material/sort */ "./node_modules/@angular/material/esm5/sort.es5.js");
-/* harmony import */ var _angular_material_table__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! @angular/material/table */ "./node_modules/@angular/material/esm5/table.es5.js");
-/* harmony import */ var _angular_material_tabs__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! @angular/material/tabs */ "./node_modules/@angular/material/esm5/tabs.es5.js");
-/* harmony import */ var _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! @angular/material/toolbar */ "./node_modules/@angular/material/esm5/toolbar.es5.js");
-/* harmony import */ var _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! @angular/material/tooltip */ "./node_modules/@angular/material/esm5/tooltip.es5.js");
-/* harmony import */ var _angular_material_tree__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! @angular/material/tree */ "./node_modules/@angular/material/esm5/tree.es5.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/cdk/a11y */ "./node_modules/@angular/cdk/esm2015/a11y.js");
+/* harmony import */ var _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/cdk/drag-drop */ "./node_modules/@angular/cdk/esm2015/drag-drop.js");
+/* harmony import */ var _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/cdk/portal */ "./node_modules/@angular/cdk/esm2015/portal.js");
+/* harmony import */ var _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/cdk/scrolling */ "./node_modules/@angular/cdk/esm2015/scrolling.js");
+/* harmony import */ var _angular_cdk_stepper__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/cdk/stepper */ "./node_modules/@angular/cdk/esm2015/stepper.js");
+/* harmony import */ var _angular_cdk_table__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/cdk/table */ "./node_modules/@angular/cdk/esm2015/table.js");
+/* harmony import */ var _angular_cdk_tree__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/cdk/tree */ "./node_modules/@angular/cdk/esm2015/tree.js");
+/* harmony import */ var _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/cdk/bidi */ "./node_modules/@angular/cdk/esm2015/bidi.js");
+/* harmony import */ var _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/material/autocomplete */ "./node_modules/@angular/material/esm2015/autocomplete.js");
+/* harmony import */ var _angular_material_badge__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/material/badge */ "./node_modules/@angular/material/esm2015/badge.js");
+/* harmony import */ var _angular_material_bottom_sheet__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/material/bottom-sheet */ "./node_modules/@angular/material/esm2015/bottom-sheet.js");
+/* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/material/button */ "./node_modules/@angular/material/esm2015/button.js");
+/* harmony import */ var _angular_material_button_toggle__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/material/button-toggle */ "./node_modules/@angular/material/esm2015/button-toggle.js");
+/* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/material/card */ "./node_modules/@angular/material/esm2015/card.js");
+/* harmony import */ var _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/material/checkbox */ "./node_modules/@angular/material/esm2015/checkbox.js");
+/* harmony import */ var _angular_material_chips__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @angular/material/chips */ "./node_modules/@angular/material/esm2015/chips.js");
+/* harmony import */ var _angular_material_stepper__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @angular/material/stepper */ "./node_modules/@angular/material/esm2015/stepper.js");
+/* harmony import */ var _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @angular/material/datepicker */ "./node_modules/@angular/material/esm2015/datepicker.js");
+/* harmony import */ var _angular_material_dialog__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @angular/material/dialog */ "./node_modules/@angular/material/esm2015/dialog.js");
+/* harmony import */ var _angular_material_divider__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @angular/material/divider */ "./node_modules/@angular/material/esm2015/divider.js");
+/* harmony import */ var _angular_material_expansion__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! @angular/material/expansion */ "./node_modules/@angular/material/esm2015/expansion.js");
+/* harmony import */ var _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! @angular/material/grid-list */ "./node_modules/@angular/material/esm2015/grid-list.js");
+/* harmony import */ var _angular_material_icon__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! @angular/material/icon */ "./node_modules/@angular/material/esm2015/icon.js");
+/* harmony import */ var _angular_material_input__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! @angular/material/input */ "./node_modules/@angular/material/esm2015/input.js");
+/* harmony import */ var _angular_material_list__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! @angular/material/list */ "./node_modules/@angular/material/esm2015/list.js");
+/* harmony import */ var _angular_material_menu__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! @angular/material/menu */ "./node_modules/@angular/material/esm2015/menu.js");
+/* harmony import */ var _angular_material_core__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! @angular/material/core */ "./node_modules/@angular/material/esm2015/core.js");
+/* harmony import */ var _angular_material_paginator__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! @angular/material/paginator */ "./node_modules/@angular/material/esm2015/paginator.js");
+/* harmony import */ var _angular_material_progress_bar__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! @angular/material/progress-bar */ "./node_modules/@angular/material/esm2015/progress-bar.js");
+/* harmony import */ var _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! @angular/material/progress-spinner */ "./node_modules/@angular/material/esm2015/progress-spinner.js");
+/* harmony import */ var _angular_material_radio__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! @angular/material/radio */ "./node_modules/@angular/material/esm2015/radio.js");
+/* harmony import */ var _angular_material_select__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! @angular/material/select */ "./node_modules/@angular/material/esm2015/select.js");
+/* harmony import */ var _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! @angular/material/sidenav */ "./node_modules/@angular/material/esm2015/sidenav.js");
+/* harmony import */ var _angular_material_slider__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! @angular/material/slider */ "./node_modules/@angular/material/esm2015/slider.js");
+/* harmony import */ var _angular_material_slide_toggle__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! @angular/material/slide-toggle */ "./node_modules/@angular/material/esm2015/slide-toggle.js");
+/* harmony import */ var _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! @angular/material/snack-bar */ "./node_modules/@angular/material/esm2015/snack-bar.js");
+/* harmony import */ var _angular_material_sort__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! @angular/material/sort */ "./node_modules/@angular/material/esm2015/sort.js");
+/* harmony import */ var _angular_material_table__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! @angular/material/table */ "./node_modules/@angular/material/esm2015/table.js");
+/* harmony import */ var _angular_material_tabs__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! @angular/material/tabs */ "./node_modules/@angular/material/esm2015/tabs.js");
+/* harmony import */ var _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! @angular/material/toolbar */ "./node_modules/@angular/material/esm2015/toolbar.js");
+/* harmony import */ var _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! @angular/material/tooltip */ "./node_modules/@angular/material/esm2015/tooltip.js");
+/* harmony import */ var _angular_material_tree__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! @angular/material/tree */ "./node_modules/@angular/material/esm2015/tree.js");
 
 
 
@@ -10410,60 +11283,57 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var MaterialModule = /** @class */ (function () {
-    function MaterialModule() {
-    }
-    MaterialModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
-            exports: [
-                _angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_2__["A11yModule"],
-                _angular_cdk_stepper__WEBPACK_IMPORTED_MODULE_6__["CdkStepperModule"],
-                _angular_cdk_table__WEBPACK_IMPORTED_MODULE_7__["CdkTableModule"],
-                _angular_cdk_tree__WEBPACK_IMPORTED_MODULE_8__["CdkTreeModule"],
-                _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_3__["DragDropModule"],
-                _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_10__["MatAutocompleteModule"],
-                _angular_material_badge__WEBPACK_IMPORTED_MODULE_11__["MatBadgeModule"],
-                _angular_material_bottom_sheet__WEBPACK_IMPORTED_MODULE_12__["MatBottomSheetModule"],
-                _angular_material_button__WEBPACK_IMPORTED_MODULE_13__["MatButtonModule"],
-                _angular_material_button_toggle__WEBPACK_IMPORTED_MODULE_14__["MatButtonToggleModule"],
-                _angular_material_card__WEBPACK_IMPORTED_MODULE_15__["MatCardModule"],
-                _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_16__["MatCheckboxModule"],
-                _angular_material_chips__WEBPACK_IMPORTED_MODULE_17__["MatChipsModule"],
-                _angular_material_stepper__WEBPACK_IMPORTED_MODULE_18__["MatStepperModule"],
-                _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_19__["MatDatepickerModule"],
-                _angular_material_dialog__WEBPACK_IMPORTED_MODULE_20__["MatDialogModule"],
-                _angular_material_divider__WEBPACK_IMPORTED_MODULE_21__["MatDividerModule"],
-                _angular_material_expansion__WEBPACK_IMPORTED_MODULE_22__["MatExpansionModule"],
-                _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_23__["MatGridListModule"],
-                _angular_material_icon__WEBPACK_IMPORTED_MODULE_24__["MatIconModule"],
-                _angular_material_input__WEBPACK_IMPORTED_MODULE_25__["MatInputModule"],
-                _angular_material_list__WEBPACK_IMPORTED_MODULE_26__["MatListModule"],
-                _angular_material_menu__WEBPACK_IMPORTED_MODULE_27__["MatMenuModule"],
-                _angular_material_core__WEBPACK_IMPORTED_MODULE_28__["MatNativeDateModule"],
-                _angular_material_paginator__WEBPACK_IMPORTED_MODULE_29__["MatPaginatorModule"],
-                _angular_material_progress_bar__WEBPACK_IMPORTED_MODULE_30__["MatProgressBarModule"],
-                _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_31__["MatProgressSpinnerModule"],
-                _angular_material_radio__WEBPACK_IMPORTED_MODULE_32__["MatRadioModule"],
-                _angular_material_core__WEBPACK_IMPORTED_MODULE_28__["MatRippleModule"],
-                _angular_material_select__WEBPACK_IMPORTED_MODULE_33__["MatSelectModule"],
-                _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_34__["MatSidenavModule"],
-                _angular_material_slider__WEBPACK_IMPORTED_MODULE_35__["MatSliderModule"],
-                _angular_material_slide_toggle__WEBPACK_IMPORTED_MODULE_36__["MatSlideToggleModule"],
-                _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_37__["MatSnackBarModule"],
-                _angular_material_sort__WEBPACK_IMPORTED_MODULE_38__["MatSortModule"],
-                _angular_material_table__WEBPACK_IMPORTED_MODULE_39__["MatTableModule"],
-                _angular_material_tabs__WEBPACK_IMPORTED_MODULE_40__["MatTabsModule"],
-                _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_41__["MatToolbarModule"],
-                _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_42__["MatTooltipModule"],
-                _angular_material_tree__WEBPACK_IMPORTED_MODULE_43__["MatTreeModule"],
-                _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_4__["PortalModule"],
-                _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_5__["ScrollingModule"],
-                _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_9__["BidiModule"]
-            ]
-        })
-    ], MaterialModule);
-    return MaterialModule;
-}());
+let MaterialModule = class MaterialModule {
+};
+MaterialModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+        exports: [
+            _angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_2__["A11yModule"],
+            _angular_cdk_stepper__WEBPACK_IMPORTED_MODULE_6__["CdkStepperModule"],
+            _angular_cdk_table__WEBPACK_IMPORTED_MODULE_7__["CdkTableModule"],
+            _angular_cdk_tree__WEBPACK_IMPORTED_MODULE_8__["CdkTreeModule"],
+            _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_3__["DragDropModule"],
+            _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_10__["MatAutocompleteModule"],
+            _angular_material_badge__WEBPACK_IMPORTED_MODULE_11__["MatBadgeModule"],
+            _angular_material_bottom_sheet__WEBPACK_IMPORTED_MODULE_12__["MatBottomSheetModule"],
+            _angular_material_button__WEBPACK_IMPORTED_MODULE_13__["MatButtonModule"],
+            _angular_material_button_toggle__WEBPACK_IMPORTED_MODULE_14__["MatButtonToggleModule"],
+            _angular_material_card__WEBPACK_IMPORTED_MODULE_15__["MatCardModule"],
+            _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_16__["MatCheckboxModule"],
+            _angular_material_chips__WEBPACK_IMPORTED_MODULE_17__["MatChipsModule"],
+            _angular_material_stepper__WEBPACK_IMPORTED_MODULE_18__["MatStepperModule"],
+            _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_19__["MatDatepickerModule"],
+            _angular_material_dialog__WEBPACK_IMPORTED_MODULE_20__["MatDialogModule"],
+            _angular_material_divider__WEBPACK_IMPORTED_MODULE_21__["MatDividerModule"],
+            _angular_material_expansion__WEBPACK_IMPORTED_MODULE_22__["MatExpansionModule"],
+            _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_23__["MatGridListModule"],
+            _angular_material_icon__WEBPACK_IMPORTED_MODULE_24__["MatIconModule"],
+            _angular_material_input__WEBPACK_IMPORTED_MODULE_25__["MatInputModule"],
+            _angular_material_list__WEBPACK_IMPORTED_MODULE_26__["MatListModule"],
+            _angular_material_menu__WEBPACK_IMPORTED_MODULE_27__["MatMenuModule"],
+            _angular_material_core__WEBPACK_IMPORTED_MODULE_28__["MatNativeDateModule"],
+            _angular_material_paginator__WEBPACK_IMPORTED_MODULE_29__["MatPaginatorModule"],
+            _angular_material_progress_bar__WEBPACK_IMPORTED_MODULE_30__["MatProgressBarModule"],
+            _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_31__["MatProgressSpinnerModule"],
+            _angular_material_radio__WEBPACK_IMPORTED_MODULE_32__["MatRadioModule"],
+            _angular_material_core__WEBPACK_IMPORTED_MODULE_28__["MatRippleModule"],
+            _angular_material_select__WEBPACK_IMPORTED_MODULE_33__["MatSelectModule"],
+            _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_34__["MatSidenavModule"],
+            _angular_material_slider__WEBPACK_IMPORTED_MODULE_35__["MatSliderModule"],
+            _angular_material_slide_toggle__WEBPACK_IMPORTED_MODULE_36__["MatSlideToggleModule"],
+            _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_37__["MatSnackBarModule"],
+            _angular_material_sort__WEBPACK_IMPORTED_MODULE_38__["MatSortModule"],
+            _angular_material_table__WEBPACK_IMPORTED_MODULE_39__["MatTableModule"],
+            _angular_material_tabs__WEBPACK_IMPORTED_MODULE_40__["MatTabsModule"],
+            _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_41__["MatToolbarModule"],
+            _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_42__["MatTooltipModule"],
+            _angular_material_tree__WEBPACK_IMPORTED_MODULE_43__["MatTreeModule"],
+            _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_4__["PortalModule"],
+            _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_5__["ScrollingModule"],
+            _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_9__["BidiModule"]
+        ]
+    })
+], MaterialModule);
 
 
 
@@ -10505,67 +11375,73 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "User", function() { return User; });
 /* harmony import */ var _services_http_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../services/http.service */ "./src/app/services/http.service.ts");
 
-var User = /** @class */ (function () {
-    function User() {
-    }
-    User.prototype.getLoginUser = function () {
+class User {
+    constructor() { }
+    getLoginUser() {
+        console.log(localStorage.getItem(_services_http_service__WEBPACK_IMPORTED_MODULE_0__["HttpService"].localStorageUserName).toString());
         return localStorage.getItem(_services_http_service__WEBPACK_IMPORTED_MODULE_0__["HttpService"].localStorageUserName).toString();
-    };
-    User.prototype.getLoginUserId = function () {
-        // if (this.getLoginUser() && this.getLoginUser() != undefined) {
+    }
+    getLoginUserId() {
         if (this.getLoginUser() === "undefined" || !this.getLoginUser()) {
             return false;
         }
         else {
-            return JSON.parse(this.getLoginUser())._id;
+            return JSON.parse(this.getLoginUser()).id;
         }
-    };
-    User.prototype.getUserRole = function () {
+    }
+    getLoginUserRole() {
+        if (this.getLoginUser() === "undefined" || !this.getLoginUser()) {
+            return false;
+        }
+        else {
+            return JSON.parse(this.getLoginUser()).role_id;
+        }
+    }
+    getUserRole() {
         if (this.getLoginUser()) {
             return JSON.parse(this.getLoginUser()).status;
         }
         return false;
-    };
-    User.prototype.userIsAdmin = function () {
+    }
+    userIsAdmin() {
         if (this.getLoginUser()) {
             return (JSON.parse(this.getLoginUser()).status == 1 ? true : false);
         }
         return false;
-    };
-    User.prototype.getUser = function () {
+    }
+    getUser() {
         return JSON.parse(this.getLoginUser());
-    };
-    User.prototype.getFirstName = function () {
+    }
+    getFirstName() {
         return JSON.parse(this.getLoginUser()).userFirstname;
-    };
-    User.prototype.getLastName = function () {
+    }
+    getLastName() {
         return JSON.parse(this.getLoginUser()).userLastname;
-    };
-    User.prototype.getFullName = function () {
+    }
+    getFullName() {
         return JSON.parse(this.getLoginUser()).userFirstname + ' ' + JSON.parse(this.getLoginUser()).userLastname;
-    };
-    User.prototype.setLoginUser = function (user) {
-        localStorage.setItem(_services_http_service__WEBPACK_IMPORTED_MODULE_0__["HttpService"].localStorageUserName, JSON.stringify(user));
-    };
-    User.prototype.get = function () {
+    }
+    setLoginUser(response) {
+        localStorage.setItem(_services_http_service__WEBPACK_IMPORTED_MODULE_0__["HttpService"].localStorageUserName, JSON.stringify(response.data));
+        localStorage.setItem(_services_http_service__WEBPACK_IMPORTED_MODULE_0__["HttpService"].localStorageAccessToken, response.token);
+    }
+    get() {
         return localStorage.getItem(_services_http_service__WEBPACK_IMPORTED_MODULE_0__["HttpService"].localStorageUserName);
-    };
-    User.prototype.setAllRooms = function (rooms) {
+    }
+    setAllRooms(rooms) {
         localStorage.setItem(_services_http_service__WEBPACK_IMPORTED_MODULE_0__["HttpService"].localStorageAllRooms, JSON.stringify(rooms));
-    };
-    User.prototype.getRooms = function () {
+    }
+    getRooms() {
         return JSON.parse(localStorage.getItem(_services_http_service__WEBPACK_IMPORTED_MODULE_0__["HttpService"].localStorageAllRooms));
-    };
-    User.prototype.clear = function () {
+    }
+    clear() {
         localStorage.clear();
-    };
-    User.prototype.logout = function () {
+    }
+    logout() {
         localStorage.clear();
         localStorage.removeItem(_services_http_service__WEBPACK_IMPORTED_MODULE_0__["HttpService"].localStorageUserName);
-    };
-    return User;
-}());
-
+    }
+}
 
 
 /***/ }),
@@ -10609,30 +11485,28 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OnpointRoomComponent", function() { return OnpointRoomComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 
 
-var OnpointRoomComponent = /** @class */ (function () {
-    function OnpointRoomComponent() {
-        var _this = this;
+let OnpointRoomComponent = class OnpointRoomComponent {
+    constructor() {
         // set screenWidth on page load
         this.screenWidth = window.innerWidth;
-        window.onresize = function () {
+        window.onresize = () => {
             // set screenWidth on screen size change
-            _this.screenWidth = window.innerWidth;
+            this.screenWidth = window.innerWidth;
         };
     }
-    OnpointRoomComponent.prototype.ngOnInit = function () {
-    };
-    OnpointRoomComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-onpoint-room',
-            template: __webpack_require__(/*! raw-loader!./onpoint-room.component.html */ "./node_modules/raw-loader/index.js!./src/app/onpoint-room/onpoint-room.component.html"),
-            styles: [__webpack_require__(/*! ./onpoint-room.component.css */ "./src/app/onpoint-room/onpoint-room.component.css")]
-        })
-    ], OnpointRoomComponent);
-    return OnpointRoomComponent;
-}());
+    ngOnInit() {
+    }
+};
+OnpointRoomComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-onpoint-room',
+        template: __webpack_require__(/*! raw-loader!./onpoint-room.component.html */ "./node_modules/raw-loader/index.js!./src/app/onpoint-room/onpoint-room.component.html"),
+        styles: [__webpack_require__(/*! ./onpoint-room.component.css */ "./src/app/onpoint-room/onpoint-room.component.css")]
+    })
+], OnpointRoomComponent);
 
 
 
@@ -10660,31 +11534,29 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProfileSidebarComponent", function() { return ProfileSidebarComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 
 
-var ProfileSidebarComponent = /** @class */ (function () {
-    function ProfileSidebarComponent() {
+let ProfileSidebarComponent = class ProfileSidebarComponent {
+    constructor() { }
+    ngOnInit() {
     }
-    ProfileSidebarComponent.prototype.ngOnInit = function () {
-    };
-    ProfileSidebarComponent.prototype.ngAfterViewInit = function () {
+    ngAfterViewInit() {
         $('.btnClose').click(function () {
             $('.card_box').toggleClass('show_hide');
         });
         $('.panelUser').click(function () {
             $('.card_box').toggleClass('show_hide');
         });
-    };
-    ProfileSidebarComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-profile-sidebar',
-            template: __webpack_require__(/*! raw-loader!./profile-sidebar.component.html */ "./node_modules/raw-loader/index.js!./src/app/profile-sidebar/profile-sidebar.component.html"),
-            styles: [__webpack_require__(/*! ./profile-sidebar.component.css */ "./src/app/profile-sidebar/profile-sidebar.component.css")]
-        })
-    ], ProfileSidebarComponent);
-    return ProfileSidebarComponent;
-}());
+    }
+};
+ProfileSidebarComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-profile-sidebar',
+        template: __webpack_require__(/*! raw-loader!./profile-sidebar.component.html */ "./node_modules/raw-loader/index.js!./src/app/profile-sidebar/profile-sidebar.component.html"),
+        styles: [__webpack_require__(/*! ./profile-sidebar.component.css */ "./src/app/profile-sidebar/profile-sidebar.component.css")]
+    })
+], ProfileSidebarComponent);
 
 
 
@@ -10712,24 +11584,22 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RightareaComponent", function() { return RightareaComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 
 
-var RightareaComponent = /** @class */ (function () {
-    function RightareaComponent() {
+let RightareaComponent = class RightareaComponent {
+    constructor() { }
+    ngOnInit() {
     }
-    RightareaComponent.prototype.ngOnInit = function () {
-    };
-    RightareaComponent.prototype.loadTopWidget = function (event) { };
-    RightareaComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-rightarea',
-            template: __webpack_require__(/*! raw-loader!./rightarea.component.html */ "./node_modules/raw-loader/index.js!./src/app/rightarea/rightarea.component.html"),
-            styles: [__webpack_require__(/*! ./rightarea.component.css */ "./src/app/rightarea/rightarea.component.css")]
-        })
-    ], RightareaComponent);
-    return RightareaComponent;
-}());
+    loadTopWidget(event) { }
+};
+RightareaComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-rightarea',
+        template: __webpack_require__(/*! raw-loader!./rightarea.component.html */ "./node_modules/raw-loader/index.js!./src/app/rightarea/rightarea.component.html"),
+        styles: [__webpack_require__(/*! ./rightarea.component.css */ "./src/app/rightarea/rightarea.component.css")]
+    })
+], RightareaComponent);
 
 
 
@@ -10746,19 +11616,19 @@ var RightareaComponent = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AuthService", function() { return AuthService; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _http_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./http.service */ "./src/app/services/http.service.ts");
-/* harmony import */ var angular_web_storage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! angular-web-storage */ "./node_modules/angular-web-storage/fesm5/angular-web-storage.js");
+/* harmony import */ var angular_web_storage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! angular-web-storage */ "./node_modules/angular-web-storage/fesm2015/angular-web-storage.js");
 /* harmony import */ var _models__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../models */ "./src/app/models/index.ts");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
 
 
 
 
 
 
-var AuthService = /** @class */ (function () {
-    function AuthService(http, local, session, user, router) {
+let AuthService = class AuthService {
+    constructor(http, local, session, user, router) {
         this.http = http;
         this.local = local;
         this.session = session;
@@ -10766,67 +11636,71 @@ var AuthService = /** @class */ (function () {
         this.router = router;
         this.USER_KEY = 'login_user';
     }
-    Object.defineProperty(AuthService.prototype, "isLoggedIn", {
-        get: function () {
-            return this.user.getLoginUserId() ? true : false;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    AuthService.prototype.registerUser = function (data) {
-        var _this = this;
-        return this.http.registerUser(data).subscribe(function (data) {
+    get isLoggedIn() {
+        return this.user.getLoginUserId() ? true : false;
+    }
+    get isAdmin() {
+        console.log(this.user.getLoginUserRole(), "------");
+        return this.user.getLoginUserRole() == 1 ? true : false;
+    }
+    createUserAdmin(data) {
+        return this.http.createUserAdmin(data);
+    }
+    registerUser(data) {
+        return this.http.registerUser(data).subscribe((data) => {
             console.log(data);
             if (data && data.hasOwnProperty('success')) {
-                _this.loginSuccess(data);
+                this.loginSuccess(data);
             }
             else {
-                _this.loginFailed();
+                this.loginFailed();
             }
         });
-    };
-    AuthService.prototype.createNewRoom = function (data) {
+    }
+    createNewRoom(data) {
         return this.http.createNewRoom(data);
-    };
-    AuthService.prototype.deleteChatRoom = function (data) {
+    }
+    deleteChatRoom(data) {
         return this.http.deleteChatRoom(data);
-    };
-    AuthService.prototype.getRoomsList = function () {
+    }
+    getRoomsList() {
         return this.http.getRoomsList();
-    };
-    AuthService.prototype.loginUser = function (email, password) {
-        return this.http.getUserDetails({ email: email, password: password });
-    };
-    AuthService.prototype.loginSuccess = function (user) {
+    }
+    loginUser(email, password) {
+        return this.http.getUserDetails({ email, password });
+    }
+    getAllSystemUsers() {
+        return this.http.getAllSystemUsers();
+    }
+    loginSuccess(user) {
         this.initlializeUser(user);
-    };
-    AuthService.prototype.initlializeUser = function (user) {
-        this.user.setLoginUser(user.data);
-        this.user.setAllRooms(user.data.rooms);
+    }
+    initlializeUser(response) {
+        this.user.setLoginUser(response);
+        // this.user.setAllRooms(user.data.rooms);
         this.afterLogin();
-    };
-    AuthService.prototype.afterLogin = function () {
+    }
+    afterLogin() {
         console.log("user.data-----");
         this.router.navigate(['/dashboard']);
-    };
-    AuthService.prototype.loginFailed = function () {
-    };
-    AuthService.prototype.logout = function () {
+    }
+    loginFailed() {
+    }
+    logout() {
         this.user.logout();
         this.router.navigate(['/login']);
-    };
-    AuthService.ctorParameters = function () { return [
-        { type: _http_service__WEBPACK_IMPORTED_MODULE_2__["HttpService"] },
-        { type: angular_web_storage__WEBPACK_IMPORTED_MODULE_3__["LocalStorageService"] },
-        { type: angular_web_storage__WEBPACK_IMPORTED_MODULE_3__["SessionStorageService"] },
-        { type: _models__WEBPACK_IMPORTED_MODULE_4__["User"] },
-        { type: _angular_router__WEBPACK_IMPORTED_MODULE_5__["Router"] }
-    ]; };
-    AuthService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()
-    ], AuthService);
-    return AuthService;
-}());
+    }
+};
+AuthService.ctorParameters = () => [
+    { type: _http_service__WEBPACK_IMPORTED_MODULE_2__["HttpService"] },
+    { type: angular_web_storage__WEBPACK_IMPORTED_MODULE_3__["LocalStorageService"] },
+    { type: angular_web_storage__WEBPACK_IMPORTED_MODULE_3__["SessionStorageService"] },
+    { type: _models__WEBPACK_IMPORTED_MODULE_4__["User"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_5__["Router"] }
+];
+AuthService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()
+], AuthService);
 
 
 
@@ -10843,15 +11717,16 @@ var AuthService = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HttpService", function() { return HttpService; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _app_config__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../app.config */ "./src/app/app.config.ts");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+
+var HttpService_1;
 
 
 
-
-var HttpService = /** @class */ (function () {
-    function HttpService(config, http) {
+let HttpService = HttpService_1 = class HttpService {
+    constructor(config, http) {
         this.config = config;
         this.http = http;
         this.appConfig = {};
@@ -10859,9 +11734,9 @@ var HttpService = /** @class */ (function () {
         this.access_token_auth = true;
         this.appConfig = this.config.getConfig();
     }
-    HttpService.getAuthUser = function () {
+    static getAuthUser() {
         // return new User().getLoginUser();
-    };
+    }
     /**
      * Constructs a `POST` request that interprets the body as a
      * JSON object and returns the response body as a JSON object.
@@ -10872,62 +11747,79 @@ var HttpService = /** @class */ (function () {
      *
      * @return An `Observable` of the response, with the response body as a JSON object.
      */
-    HttpService.prototype.getUserDetails = function (params) {
+    getUserDetails(params) {
         return this.http.post(this.getEndPoint('loginUser', 'POST'), params);
-    };
-    HttpService.prototype.registerUser = function (params) {
+    }
+    registerUser(params) {
         return this.http.post(this.getEndPoint('registerUser', 'POST'), params);
-    };
-    HttpService.prototype.createNewRoom = function (params) {
+    }
+    createNewRoom(params) {
         return this.http.post(this.getEndPoint('createNewRoom', 'POST'), params);
-    };
-    HttpService.prototype.getRoomsList = function () {
+    }
+    getRoomsList() {
         return this.http.post(this.getEndPoint('allRoomsList', 'POST'), {});
-    };
-    HttpService.prototype.deleteChatRoom = function (roomId) {
-        console.log("deleteChatRoom::", roomId);
+    }
+    deleteChatRoom(roomId) {
         return this.http.post(this.getEndPoint('deleteChatRoom', 'POST'), roomId);
-    };
+    }
+    getAllSystemUsers() {
+        return this.http.post(this.getEndPoint('getAllSystemUsers', 'POST'), null, this.buildOptions());
+    }
+    createUserAdmin(params) {
+        return this.http.post(this.getEndPoint('createUserAdmin', 'POST'), params, this.buildOptions());
+    }
+    buildOptions() {
+        let headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpHeaders"]({ 'Content-Type': 'application/json' });
+        headers = headers.append('Authorization', 'Bearer ' + localStorage.getItem(HttpService_1.localStorageAccessToken));
+        return { headers: headers };
+    }
     // tslint:disable-next-line: variable-name
-    HttpService.prototype.getEndPoint = function (string, method, queryParam) {
-        if (queryParam === void 0) { queryParam = ''; }
-        console.log(this.getBaseUrl() + this.getApiEndPoint(string));
+    getEndPoint(string, method, queryParam = '') {
         if (method === 'GET') {
             return this.getBaseUrl() + this.getApiEndPoint(string) + '?' + queryParam;
         }
         return this.getBaseUrl() + this.getApiEndPoint(string);
-    };
-    HttpService.prototype.getBaseUrl = function () {
+    }
+    getBaseUrl() {
         return this.appConfig.apiUrl;
-    };
-    HttpService.prototype.getCommonEndPoints = function () {
+    }
+    execute(str, data) {
+        console.log(localStorage.getItem(HttpService_1.localStorageAccessToken));
+        const httpOptions = {
+            headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpHeaders"]().set('Authorization', `Bearer ${localStorage.getItem(HttpService_1.localStorageAccessToken)}`)
+        };
+        return this.http.post(this.getEndPoint(str, 'POST'), data, httpOptions);
+    }
+    getCommonEndPoints() {
         return {
-            loginUser: 'api/login',
-            registerUser: 'api/register',
+            loginUser: 'login',
+            registerUser: 'register',
+            createUserAdmin: 'admin/create-user',
             allRoomsList: 'api/rooms',
             deleteChatRoom: 'api/deleteroom',
-            createNewRoom: 'api/createroom'
+            createNewRoom: 'api/createroom',
+            getAllSystemUsers: 'admin/contacts'
         };
-    };
-    HttpService.prototype.getApiEndPoint = function (str) {
+    }
+    getApiEndPoint(str) {
         // tslint:disable-next-line: variable-name
-        var end_points = this.getCommonEndPoints();
+        const end_points = this.getCommonEndPoints();
         if (end_points[str] != null) {
             return end_points[str];
         }
         throw new Error(' No end point find with name ' + str);
-    };
-    HttpService.localStorageUserName = 'login_user';
-    HttpService.localStorageAllRooms = 'all_rooms';
-    HttpService.ctorParameters = function () { return [
-        { type: _app_config__WEBPACK_IMPORTED_MODULE_2__["AppConfig"] },
-        { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClient"] }
-    ]; };
-    HttpService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()
-    ], HttpService);
-    return HttpService;
-}());
+    }
+};
+HttpService.localStorageUserName = 'login_user';
+HttpService.localStorageAllRooms = 'all_rooms';
+HttpService.localStorageAccessToken = 'access_token';
+HttpService.ctorParameters = () => [
+    { type: _app_config__WEBPACK_IMPORTED_MODULE_2__["AppConfig"] },
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClient"] }
+];
+HttpService = HttpService_1 = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()
+], HttpService);
 
 
 
@@ -10944,8 +11836,8 @@ var HttpService = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SocketService", function() { return SocketService; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
 /* harmony import */ var socket_io_client__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! socket.io-client */ "./node_modules/socket.io-client/lib/index.js");
 /* harmony import */ var socket_io_client__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(socket_io_client__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _models_Events__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../models/Events */ "./src/app/models/Events.ts");
@@ -10956,38 +11848,36 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var SocketService = /** @class */ (function () {
-    function SocketService(appConfig) {
+let SocketService = class SocketService {
+    constructor(appConfig) {
         this.appConfig = appConfig;
     }
-    SocketService.prototype.initSocket = function () {
-        this.socket = socket_io_client__WEBPACK_IMPORTED_MODULE_3__(this.appConfig.config.nodeServerUrl + "user");
-    };
-    SocketService.prototype.joinRoom = function (roomId) {
+    initSocket() {
+        this.socket = socket_io_client__WEBPACK_IMPORTED_MODULE_3__(`${this.appConfig.config.nodeServerUrl}user`);
+    }
+    joinRoom(roomId) {
         this.socket.emit(_models_Events__WEBPACK_IMPORTED_MODULE_4__["Event"].JOIN_ROOM, roomId);
-    };
-    SocketService.prototype.sendMessage = function (message) {
+    }
+    sendMessage(message) {
         this.socket.emit(_models_Events__WEBPACK_IMPORTED_MODULE_4__["Event"].OUTGOING_MESSAGE, message);
-    };
-    SocketService.prototype.onEvent = function (event) {
-        var _this = this;
-        return new rxjs__WEBPACK_IMPORTED_MODULE_2__["Observable"](function (observer) {
-            _this.socket.on(event, function (data) {
-                console.log("recieved data for event : " + event);
+    }
+    onEvent(event) {
+        return new rxjs__WEBPACK_IMPORTED_MODULE_2__["Observable"](observer => {
+            this.socket.on(event, (data) => {
+                console.log(`recieved data for event : ${event}`);
                 observer.next(data);
             });
         });
-    };
-    SocketService.ctorParameters = function () { return [
-        { type: _app_config__WEBPACK_IMPORTED_MODULE_5__["AppConfig"] }
-    ]; };
-    SocketService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
-            providedIn: 'root'
-        })
-    ], SocketService);
-    return SocketService;
-}());
+    }
+};
+SocketService.ctorParameters = () => [
+    { type: _app_config__WEBPACK_IMPORTED_MODULE_5__["AppConfig"] }
+];
+SocketService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], SocketService);
 
 
 
@@ -11004,37 +11894,36 @@ var SocketService = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserService", function() { return UserService; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _models_User__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../models/User */ "./src/app/models/User.ts");
 
 
 
-var UserService = /** @class */ (function () {
-    function UserService(userModel) {
+let UserService = class UserService {
+    constructor(userModel) {
         this.userModel = userModel;
     }
-    UserService.prototype.getUser = function () {
+    getUser() {
         return this.userModel.getUser();
-    };
-    UserService.prototype.getUserId = function () {
+    }
+    getUserId() {
         return this.userModel.getLoginUserId();
-    };
-    UserService.prototype.userIsAdmin = function () {
+    }
+    userIsAdmin() {
         return this.userModel.userIsAdmin();
-    };
-    UserService.prototype.getRooms = function () {
+    }
+    getRooms() {
         return this.userModel.getRooms();
-    };
-    UserService.ctorParameters = function () { return [
-        { type: _models_User__WEBPACK_IMPORTED_MODULE_2__["User"] }
-    ]; };
-    UserService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
-            providedIn: 'root'
-        })
-    ], UserService);
-    return UserService;
-}());
+    }
+};
+UserService.ctorParameters = () => [
+    { type: _models_User__WEBPACK_IMPORTED_MODULE_2__["User"] }
+];
+UserService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], UserService);
 
 
 
@@ -11051,11 +11940,11 @@ var UserService = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WidgetService", function() { return WidgetService; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 
 
-var WidgetService = /** @class */ (function () {
-    function WidgetService() {
+let WidgetService = class WidgetService {
+    constructor() {
         this.widgetList = [
             {
                 "id": "1",
@@ -11084,16 +11973,15 @@ var WidgetService = /** @class */ (function () {
             }
         ];
     }
-    WidgetService.prototype.getWidgets = function () {
+    getWidgets() {
         return this.widgetList;
-    };
-    WidgetService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
-            providedIn: 'root'
-        })
-    ], WidgetService);
-    return WidgetService;
-}());
+    }
+};
+WidgetService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], WidgetService);
 
 
 
@@ -11110,21 +11998,31 @@ var WidgetService = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "lockeddialogComponent", function() { return lockeddialogComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 
 
-var lockeddialogComponent = /** @class */ (function () {
-    function lockeddialogComponent() {
+let lockeddialogComponent = class lockeddialogComponent {
+    constructor() {
         this.paymethod = 'option1';
         this.selectedcycle = 'weekly';
     }
-    lockeddialogComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            template: "\n  <div class=\"modal-content locked-dialog\">\n    <div class=\"\">\n      <div class=\"modal-header\">\n          Locked Chatroom\n      </div>\n      <div style=\"font-size: 1.7rem;    text-align: center;    padding: 4rem;\">\n          Please contact team admin\n      </div>\n  </div>\n</div>\n  "
-        })
-    ], lockeddialogComponent);
-    return lockeddialogComponent;
-}());
+};
+lockeddialogComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        template: `
+  <div class="modal-content locked-dialog">
+    <div class="">
+      <div class="modal-header">
+          Locked Chatroom
+      </div>
+      <div style="font-size: 1.7rem;    text-align: center;    padding: 4rem;">
+          Please contact team admin
+      </div>
+  </div>
+</div>
+  `
+    })
+], lockeddialogComponent);
 
 
 
@@ -11137,7 +12035,7 @@ var lockeddialogComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/* preferences dialog */\nmat-form-field{\n  width: 100%;\n}\n.modal-footer{\n  border-top: 1px solid #ddd;\n}\nmat-checkbox{\n  width: 100%;\n  display: block;\n}\n.rooms-overflow {\n  padding: 0px 30px;\n    height: 196px;\n    overflow-y: auto;\n    margin: 10px 0;\n}\n.blockandmute-body {\n  border: 1px solid #ddd;\n  padding: 10px;\n  margin: 10px 0;\n}\n.blockandmute-body button{\n  color: #fff!important;;\n}\n.blockandmute-body .label{\n  margin-right: 5px;\n}\n.content .empty-msg{\n  padding: 5px 0 15px;\n  text-align: left;\n  font-size: 1.1rem;\n  color: #666;\n}\n.form-group label {\n  font-weight: bold;\n}\n.blockandmute-title{\n font-weight: bold;\n}\n.preference-container .active{\n  border-left: 2px solid #0C2124!important;\n  background-color: #e26727!important;\n  color: #fff!important;\n}\n.preference-container .content{\n  background: #fff;\n  padding: 10px!important;\n  border-top: 1px solid #ddd;\n}\n.preference-container > .row{\n  display: -webkit-box;\n  display: flex;\n}\n.preference-container > .row .col-md-3{\n  -webkit-box-flex: 1;\n          flex: auto 0;\n  background: #eee;\n}\n.preference-container > .row .col-md-9{\n  -webkit-box-flex: 1;\n          flex: auto 0;\n}\n.preference-container .upload_file{\n position: relative;\n}\n.preference-container .content.profile .btn{\n  width: 100%;\n}\n.preference-container .upload_file input{\n  position: absolute;\n  height: 100%;\n  width: 100%;\n  opacity: 0;\n  z-index: 1;\n  line-height: 38px;\n  cursor: pointer;\n }\n.avatarThumb{\n   border: 1px solid #ddd;\n }\n/* manage_Brocker dialog */\n.manage_Brocker_container {\n  padding: 0 15px;\n}\n.add_own_brocker h4{\n  margin: 20px 0 10px 0;\n  font-size: 18px;\n}\n/* dark theme toggle */\nmat-slide-toggle{\n  position: relative;\n  top: -5px;\n}\n#team-wrapper{\n  padding:20px 0 0px 0;\n}\n/* invite friend dialog */\n.media-right{\n  position: relative;\n  bottom: -10px;\n}\n.invite_friend_container{\n  padding: 15px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc2lkZW5hdi9zaWRlbmF2LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsdUJBQXVCO0FBQ3ZCO0VBQ0UsV0FBVztBQUNiO0FBQ0E7RUFDRSwwQkFBMEI7QUFDNUI7QUFDQTtFQUNFLFdBQVc7RUFDWCxjQUFjO0FBQ2hCO0FBQ0E7RUFDRSxpQkFBaUI7SUFDZixhQUFhO0lBQ2IsZ0JBQWdCO0lBQ2hCLGNBQWM7QUFDbEI7QUFDQTtFQUNFLHNCQUFzQjtFQUN0QixhQUFhO0VBQ2IsY0FBYztBQUNoQjtBQUNBO0VBQ0UscUJBQXFCO0FBQ3ZCO0FBQ0E7RUFDRSxpQkFBaUI7QUFDbkI7QUFDQTtFQUNFLG1CQUFtQjtFQUNuQixnQkFBZ0I7RUFDaEIsaUJBQWlCO0VBQ2pCLFdBQVc7QUFDYjtBQUNBO0VBQ0UsaUJBQWlCO0FBQ25CO0FBQ0E7Q0FDQyxpQkFBaUI7QUFDbEI7QUFDQTtFQUNFLHdDQUF3QztFQUN4QyxtQ0FBbUM7RUFDbkMscUJBQXFCO0FBQ3ZCO0FBQ0E7RUFDRSxnQkFBZ0I7RUFDaEIsdUJBQXVCO0VBQ3ZCLDBCQUEwQjtBQUM1QjtBQUNBO0VBQ0Usb0JBQWE7RUFBYixhQUFhO0FBQ2Y7QUFDQTtFQUNFLG1CQUFZO1VBQVosWUFBWTtFQUNaLGdCQUFnQjtBQUNsQjtBQUNBO0VBQ0UsbUJBQVk7VUFBWixZQUFZO0FBQ2Q7QUFDQTtDQUNDLGtCQUFrQjtBQUNuQjtBQUNBO0VBQ0UsV0FBVztBQUNiO0FBQ0E7RUFDRSxrQkFBa0I7RUFDbEIsWUFBWTtFQUNaLFdBQVc7RUFDWCxVQUFVO0VBQ1YsVUFBVTtFQUNWLGlCQUFpQjtFQUNqQixlQUFlO0NBQ2hCO0FBQ0E7R0FDRSxzQkFBc0I7Q0FDeEI7QUFDQSwwQkFBMEI7QUFDMUI7RUFDQyxlQUFlO0FBQ2pCO0FBQ0E7RUFDRSxxQkFBcUI7RUFDckIsZUFBZTtBQUNqQjtBQUNBLHNCQUFzQjtBQUN0QjtFQUNFLGtCQUFrQjtFQUNsQixTQUFTO0FBQ1g7QUFDQTtFQUNFLG9CQUFvQjtBQUN0QjtBQUNBLHlCQUF5QjtBQUN6QjtFQUNFLGtCQUFrQjtFQUNsQixhQUFhO0FBQ2Y7QUFDQTtFQUNFLGFBQWE7QUFDZiIsImZpbGUiOiJzcmMvYXBwL3NpZGVuYXYvc2lkZW5hdi5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLyogcHJlZmVyZW5jZXMgZGlhbG9nICovXG5tYXQtZm9ybS1maWVsZHtcbiAgd2lkdGg6IDEwMCU7XG59XG4ubW9kYWwtZm9vdGVye1xuICBib3JkZXItdG9wOiAxcHggc29saWQgI2RkZDtcbn1cbm1hdC1jaGVja2JveHtcbiAgd2lkdGg6IDEwMCU7XG4gIGRpc3BsYXk6IGJsb2NrO1xufVxuLnJvb21zLW92ZXJmbG93IHtcbiAgcGFkZGluZzogMHB4IDMwcHg7XG4gICAgaGVpZ2h0OiAxOTZweDtcbiAgICBvdmVyZmxvdy15OiBhdXRvO1xuICAgIG1hcmdpbjogMTBweCAwO1xufVxuLmJsb2NrYW5kbXV0ZS1ib2R5IHtcbiAgYm9yZGVyOiAxcHggc29saWQgI2RkZDtcbiAgcGFkZGluZzogMTBweDtcbiAgbWFyZ2luOiAxMHB4IDA7XG59XG4uYmxvY2thbmRtdXRlLWJvZHkgYnV0dG9ue1xuICBjb2xvcjogI2ZmZiFpbXBvcnRhbnQ7O1xufVxuLmJsb2NrYW5kbXV0ZS1ib2R5IC5sYWJlbHtcbiAgbWFyZ2luLXJpZ2h0OiA1cHg7XG59XG4uY29udGVudCAuZW1wdHktbXNne1xuICBwYWRkaW5nOiA1cHggMCAxNXB4O1xuICB0ZXh0LWFsaWduOiBsZWZ0O1xuICBmb250LXNpemU6IDEuMXJlbTtcbiAgY29sb3I6ICM2NjY7XG59XG4uZm9ybS1ncm91cCBsYWJlbCB7XG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xufVxuLmJsb2NrYW5kbXV0ZS10aXRsZXtcbiBmb250LXdlaWdodDogYm9sZDtcbn1cbi5wcmVmZXJlbmNlLWNvbnRhaW5lciAuYWN0aXZle1xuICBib3JkZXItbGVmdDogMnB4IHNvbGlkICMwQzIxMjQhaW1wb3J0YW50O1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZTI2NzI3IWltcG9ydGFudDtcbiAgY29sb3I6ICNmZmYhaW1wb3J0YW50O1xufVxuLnByZWZlcmVuY2UtY29udGFpbmVyIC5jb250ZW50e1xuICBiYWNrZ3JvdW5kOiAjZmZmO1xuICBwYWRkaW5nOiAxMHB4IWltcG9ydGFudDtcbiAgYm9yZGVyLXRvcDogMXB4IHNvbGlkICNkZGQ7XG59XG4ucHJlZmVyZW5jZS1jb250YWluZXIgPiAucm93e1xuICBkaXNwbGF5OiBmbGV4O1xufVxuLnByZWZlcmVuY2UtY29udGFpbmVyID4gLnJvdyAuY29sLW1kLTN7XG4gIGZsZXg6IGF1dG8gMDtcbiAgYmFja2dyb3VuZDogI2VlZTtcbn1cbi5wcmVmZXJlbmNlLWNvbnRhaW5lciA+IC5yb3cgLmNvbC1tZC05e1xuICBmbGV4OiBhdXRvIDA7XG59XG4ucHJlZmVyZW5jZS1jb250YWluZXIgLnVwbG9hZF9maWxle1xuIHBvc2l0aW9uOiByZWxhdGl2ZTtcbn1cbi5wcmVmZXJlbmNlLWNvbnRhaW5lciAuY29udGVudC5wcm9maWxlIC5idG57XG4gIHdpZHRoOiAxMDAlO1xufVxuLnByZWZlcmVuY2UtY29udGFpbmVyIC51cGxvYWRfZmlsZSBpbnB1dHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBoZWlnaHQ6IDEwMCU7XG4gIHdpZHRoOiAxMDAlO1xuICBvcGFjaXR5OiAwO1xuICB6LWluZGV4OiAxO1xuICBsaW5lLWhlaWdodDogMzhweDtcbiAgY3Vyc29yOiBwb2ludGVyO1xuIH1cbiAuYXZhdGFyVGh1bWJ7XG4gICBib3JkZXI6IDFweCBzb2xpZCAjZGRkO1xuIH1cbiAvKiBtYW5hZ2VfQnJvY2tlciBkaWFsb2cgKi9cbiAubWFuYWdlX0Jyb2NrZXJfY29udGFpbmVyIHtcbiAgcGFkZGluZzogMCAxNXB4O1xufVxuLmFkZF9vd25fYnJvY2tlciBoNHtcbiAgbWFyZ2luOiAyMHB4IDAgMTBweCAwO1xuICBmb250LXNpemU6IDE4cHg7XG59XG4vKiBkYXJrIHRoZW1lIHRvZ2dsZSAqL1xubWF0LXNsaWRlLXRvZ2dsZXtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICB0b3A6IC01cHg7XG59XG4jdGVhbS13cmFwcGVye1xuICBwYWRkaW5nOjIwcHggMCAwcHggMDtcbn1cbi8qIGludml0ZSBmcmllbmQgZGlhbG9nICovXG4ubWVkaWEtcmlnaHR7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgYm90dG9tOiAtMTBweDtcbn1cbi5pbnZpdGVfZnJpZW5kX2NvbnRhaW5lcntcbiAgcGFkZGluZzogMTVweDtcbn0iXX0= */"
+module.exports = "/* preferences dialog */\nmat-form-field{\n  width: 100%;\n}\n.modal-footer{\n  border-top: 1px solid #ddd;\n}\nmat-checkbox{\n  width: 100%;\n  display: block;\n}\n.rooms-overflow {\n  padding: 0px 30px;\n    height: 196px;\n    overflow-y: auto;\n    margin: 10px 0;\n}\n.blockandmute-body {\n  border: 1px solid #ddd;\n  padding: 10px;\n  margin: 10px 0;\n}\n.blockandmute-body button{\n  color: #fff!important;;\n}\n.blockandmute-body .label{\n  margin-right: 5px;\n}\n.content .empty-msg{\n  padding: 5px 0 15px;\n  text-align: left;\n  font-size: 1.1rem;\n  color: #666;\n}\n.form-group label {\n  font-weight: bold;\n}\n.blockandmute-title{\n font-weight: bold;\n}\n.preference-container .active{\n  border-left: 2px solid #0C2124!important;\n  background-color: #e26727!important;\n  color: #fff!important;\n}\n.preference-container .content{\n  background: #fff;\n  padding: 10px!important;\n  border-top: 1px solid #ddd;\n}\n.preference-container > .row{\n  display: -webkit-box;\n  display: flex;\n}\n.preference-container > .row .col-md-3{\n  -webkit-box-flex: 1;\n          flex: auto 0;\n  background: #eee;\n}\n.preference-container > .row .col-md-9{\n  -webkit-box-flex: 1;\n          flex: auto 0;\n}\n.preference-container .upload_file{\n position: relative;\n}\n.preference-container .content.profile .btn{\n  width: 100%;\n}\n.preference-container .upload_file input{\n  position: absolute;\n  height: 100%;\n  width: 100%;\n  opacity: 0;\n  z-index: 1;\n  line-height: 38px;\n  cursor: pointer;\n }\n.avatarThumb{\n   border: 1px solid #ddd;\n }\n.add_own_brocker h4 a {\n  margin-top: 10px!important;\n}\n@media screen and (max-width:767px){\n  .preference-container > .row{\n    display: block;\n  }\n }\n/* manage_Brocker dialog */\n.manage_Brocker_container {\n  padding: 0 15px;\n}\n.add_own_brocker h4{\n  margin: 20px 0 10px 0;\n  font-size: 18px;\n}\n/* dark theme toggle */\nmat-slide-toggle{\n  position: relative;\n  top: -5px;\n}\n#team-wrapper{\n  padding:10px 0;\n}\n/* invite friend dialog */\n.media-right{\n  position: relative;\n  bottom: -10px;\n}\n.invite_friend_container{\n  padding: 15px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc2lkZW5hdi9zaWRlbmF2LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsdUJBQXVCO0FBQ3ZCO0VBQ0UsV0FBVztBQUNiO0FBQ0E7RUFDRSwwQkFBMEI7QUFDNUI7QUFDQTtFQUNFLFdBQVc7RUFDWCxjQUFjO0FBQ2hCO0FBQ0E7RUFDRSxpQkFBaUI7SUFDZixhQUFhO0lBQ2IsZ0JBQWdCO0lBQ2hCLGNBQWM7QUFDbEI7QUFDQTtFQUNFLHNCQUFzQjtFQUN0QixhQUFhO0VBQ2IsY0FBYztBQUNoQjtBQUNBO0VBQ0UscUJBQXFCO0FBQ3ZCO0FBQ0E7RUFDRSxpQkFBaUI7QUFDbkI7QUFDQTtFQUNFLG1CQUFtQjtFQUNuQixnQkFBZ0I7RUFDaEIsaUJBQWlCO0VBQ2pCLFdBQVc7QUFDYjtBQUNBO0VBQ0UsaUJBQWlCO0FBQ25CO0FBQ0E7Q0FDQyxpQkFBaUI7QUFDbEI7QUFDQTtFQUNFLHdDQUF3QztFQUN4QyxtQ0FBbUM7RUFDbkMscUJBQXFCO0FBQ3ZCO0FBQ0E7RUFDRSxnQkFBZ0I7RUFDaEIsdUJBQXVCO0VBQ3ZCLDBCQUEwQjtBQUM1QjtBQUNBO0VBQ0Usb0JBQWE7RUFBYixhQUFhO0FBQ2Y7QUFDQTtFQUNFLG1CQUFZO1VBQVosWUFBWTtFQUNaLGdCQUFnQjtBQUNsQjtBQUNBO0VBQ0UsbUJBQVk7VUFBWixZQUFZO0FBQ2Q7QUFDQTtDQUNDLGtCQUFrQjtBQUNuQjtBQUNBO0VBQ0UsV0FBVztBQUNiO0FBQ0E7RUFDRSxrQkFBa0I7RUFDbEIsWUFBWTtFQUNaLFdBQVc7RUFDWCxVQUFVO0VBQ1YsVUFBVTtFQUNWLGlCQUFpQjtFQUNqQixlQUFlO0NBQ2hCO0FBQ0E7R0FDRSxzQkFBc0I7Q0FDeEI7QUFDQTtFQUNDLDBCQUEwQjtBQUM1QjtBQUNDO0VBQ0M7SUFDRSxjQUFjO0VBQ2hCO0NBQ0Q7QUFDQSwwQkFBMEI7QUFDMUI7RUFDQyxlQUFlO0FBQ2pCO0FBQ0E7RUFDRSxxQkFBcUI7RUFDckIsZUFBZTtBQUNqQjtBQUNBLHNCQUFzQjtBQUN0QjtFQUNFLGtCQUFrQjtFQUNsQixTQUFTO0FBQ1g7QUFDQTtFQUNFLGNBQWM7QUFDaEI7QUFDQSx5QkFBeUI7QUFDekI7RUFDRSxrQkFBa0I7RUFDbEIsYUFBYTtBQUNmO0FBQ0E7RUFDRSxhQUFhO0FBQ2YiLCJmaWxlIjoic3JjL2FwcC9zaWRlbmF2L3NpZGVuYXYuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qIHByZWZlcmVuY2VzIGRpYWxvZyAqL1xubWF0LWZvcm0tZmllbGR7XG4gIHdpZHRoOiAxMDAlO1xufVxuLm1vZGFsLWZvb3RlcntcbiAgYm9yZGVyLXRvcDogMXB4IHNvbGlkICNkZGQ7XG59XG5tYXQtY2hlY2tib3h7XG4gIHdpZHRoOiAxMDAlO1xuICBkaXNwbGF5OiBibG9jaztcbn1cbi5yb29tcy1vdmVyZmxvdyB7XG4gIHBhZGRpbmc6IDBweCAzMHB4O1xuICAgIGhlaWdodDogMTk2cHg7XG4gICAgb3ZlcmZsb3cteTogYXV0bztcbiAgICBtYXJnaW46IDEwcHggMDtcbn1cbi5ibG9ja2FuZG11dGUtYm9keSB7XG4gIGJvcmRlcjogMXB4IHNvbGlkICNkZGQ7XG4gIHBhZGRpbmc6IDEwcHg7XG4gIG1hcmdpbjogMTBweCAwO1xufVxuLmJsb2NrYW5kbXV0ZS1ib2R5IGJ1dHRvbntcbiAgY29sb3I6ICNmZmYhaW1wb3J0YW50Oztcbn1cbi5ibG9ja2FuZG11dGUtYm9keSAubGFiZWx7XG4gIG1hcmdpbi1yaWdodDogNXB4O1xufVxuLmNvbnRlbnQgLmVtcHR5LW1zZ3tcbiAgcGFkZGluZzogNXB4IDAgMTVweDtcbiAgdGV4dC1hbGlnbjogbGVmdDtcbiAgZm9udC1zaXplOiAxLjFyZW07XG4gIGNvbG9yOiAjNjY2O1xufVxuLmZvcm0tZ3JvdXAgbGFiZWwge1xuICBmb250LXdlaWdodDogYm9sZDtcbn1cbi5ibG9ja2FuZG11dGUtdGl0bGV7XG4gZm9udC13ZWlnaHQ6IGJvbGQ7XG59XG4ucHJlZmVyZW5jZS1jb250YWluZXIgLmFjdGl2ZXtcbiAgYm9yZGVyLWxlZnQ6IDJweCBzb2xpZCAjMEMyMTI0IWltcG9ydGFudDtcbiAgYmFja2dyb3VuZC1jb2xvcjogI2UyNjcyNyFpbXBvcnRhbnQ7XG4gIGNvbG9yOiAjZmZmIWltcG9ydGFudDtcbn1cbi5wcmVmZXJlbmNlLWNvbnRhaW5lciAuY29udGVudHtcbiAgYmFja2dyb3VuZDogI2ZmZjtcbiAgcGFkZGluZzogMTBweCFpbXBvcnRhbnQ7XG4gIGJvcmRlci10b3A6IDFweCBzb2xpZCAjZGRkO1xufVxuLnByZWZlcmVuY2UtY29udGFpbmVyID4gLnJvd3tcbiAgZGlzcGxheTogZmxleDtcbn1cbi5wcmVmZXJlbmNlLWNvbnRhaW5lciA+IC5yb3cgLmNvbC1tZC0ze1xuICBmbGV4OiBhdXRvIDA7XG4gIGJhY2tncm91bmQ6ICNlZWU7XG59XG4ucHJlZmVyZW5jZS1jb250YWluZXIgPiAucm93IC5jb2wtbWQtOXtcbiAgZmxleDogYXV0byAwO1xufVxuLnByZWZlcmVuY2UtY29udGFpbmVyIC51cGxvYWRfZmlsZXtcbiBwb3NpdGlvbjogcmVsYXRpdmU7XG59XG4ucHJlZmVyZW5jZS1jb250YWluZXIgLmNvbnRlbnQucHJvZmlsZSAuYnRue1xuICB3aWR0aDogMTAwJTtcbn1cbi5wcmVmZXJlbmNlLWNvbnRhaW5lciAudXBsb2FkX2ZpbGUgaW5wdXR7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgaGVpZ2h0OiAxMDAlO1xuICB3aWR0aDogMTAwJTtcbiAgb3BhY2l0eTogMDtcbiAgei1pbmRleDogMTtcbiAgbGluZS1oZWlnaHQ6IDM4cHg7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiB9XG4gLmF2YXRhclRodW1ie1xuICAgYm9yZGVyOiAxcHggc29saWQgI2RkZDtcbiB9XG4gLmFkZF9vd25fYnJvY2tlciBoNCBhIHtcbiAgbWFyZ2luLXRvcDogMTBweCFpbXBvcnRhbnQ7XG59XG4gQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDo3NjdweCl7XG4gIC5wcmVmZXJlbmNlLWNvbnRhaW5lciA+IC5yb3d7XG4gICAgZGlzcGxheTogYmxvY2s7XG4gIH1cbiB9XG4gLyogbWFuYWdlX0Jyb2NrZXIgZGlhbG9nICovXG4gLm1hbmFnZV9Ccm9ja2VyX2NvbnRhaW5lciB7XG4gIHBhZGRpbmc6IDAgMTVweDtcbn1cbi5hZGRfb3duX2Jyb2NrZXIgaDR7XG4gIG1hcmdpbjogMjBweCAwIDEwcHggMDtcbiAgZm9udC1zaXplOiAxOHB4O1xufVxuLyogZGFyayB0aGVtZSB0b2dnbGUgKi9cbm1hdC1zbGlkZS10b2dnbGV7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgdG9wOiAtNXB4O1xufVxuI3RlYW0td3JhcHBlcntcbiAgcGFkZGluZzoxMHB4IDA7XG59XG4vKiBpbnZpdGUgZnJpZW5kIGRpYWxvZyAqL1xuLm1lZGlhLXJpZ2h0e1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIGJvdHRvbTogLTEwcHg7XG59XG4uaW52aXRlX2ZyaWVuZF9jb250YWluZXJ7XG4gIHBhZGRpbmc6IDE1cHg7XG59Il19 */"
 
 /***/ }),
 
@@ -11155,14 +12053,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PreferencesDialog", function() { return PreferencesDialog; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InviteFriendDialog", function() { return InviteFriendDialog; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _services_auth_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/auth.service */ "./src/app/services/auth.service.ts");
 /* harmony import */ var _services_user_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../services/user.service */ "./src/app/services/user.service.ts");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
 /* harmony import */ var _locked_dialog_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./locked-dialog.component */ "./src/app/sidenav/locked-dialog.component.ts");
 /* harmony import */ var _services_socket_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../services/socket.service */ "./src/app/services/socket.service.ts");
-/* harmony import */ var angular_web_storage__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! angular-web-storage */ "./node_modules/angular-web-storage/fesm5/angular-web-storage.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var angular_web_storage__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! angular-web-storage */ "./node_modules/angular-web-storage/fesm2015/angular-web-storage.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
 
 
 
@@ -11172,8 +12070,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var SidenavComponent = /** @class */ (function () {
-    function SidenavComponent(document, userService, authService, socketService, dialog, localstorage) {
+let SidenavComponent = class SidenavComponent {
+    constructor(document, userService, authService, socketService, dialog, localstorage) {
         this.document = document;
         this.socketService = socketService;
         this.dialog = dialog;
@@ -11190,7 +12088,7 @@ var SidenavComponent = /** @class */ (function () {
         this.userService = userService;
         this.adminImgPath = this.localstorage.get('admin_user_profile');
     }
-    SidenavComponent.prototype.onDarkTheme = function () {
+    onDarkTheme() {
         if (this.darkTheme == true) {
             this.localstorage.set("theme", false);
             this.document.body.classList.remove('dark-theme');
@@ -11199,28 +12097,28 @@ var SidenavComponent = /** @class */ (function () {
             this.localstorage.set("theme", true);
             this.document.body.classList.add('dark-theme');
         }
-    };
-    SidenavComponent.prototype.onManageBrockerDialog = function () {
-        var dialog = this.dialog.open(ManageBrockersDialog, {
+    }
+    onManageBrockerDialog() {
+        const dialog = this.dialog.open(ManageBrockersDialog, {
             width: '900px',
         });
-    };
-    SidenavComponent.prototype.ngOnChanges = function (changes) {
-    };
-    SidenavComponent.prototype.openAddFileDialog = function () {
-        var fileNameDialogRef = this.dialog.open(_locked_dialog_component__WEBPACK_IMPORTED_MODULE_5__["lockeddialogComponent"]);
-    };
-    SidenavComponent.prototype.openPreferencesDialog = function () {
-        var dialogRef = this.dialog.open(PreferencesDialog, {
+    }
+    ngOnChanges(changes) {
+    }
+    openAddFileDialog() {
+        const fileNameDialogRef = this.dialog.open(_locked_dialog_component__WEBPACK_IMPORTED_MODULE_5__["lockeddialogComponent"]);
+    }
+    openPreferencesDialog() {
+        const dialogRef = this.dialog.open(PreferencesDialog, {
             width: '650px',
         });
-    };
-    SidenavComponent.prototype.onInviteFriendDialog = function () {
-        var dialogRef = this.dialog.open(InviteFriendDialog, {
+    }
+    onInviteFriendDialog() {
+        const dialogRef = this.dialog.open(InviteFriendDialog, {
             width: '600px',
         });
-    };
-    SidenavComponent.prototype.clickRoom = function (room) {
+    }
+    clickRoom(room) {
         if (room.status == 'private') {
             this.openAddFileDialog();
         }
@@ -11228,8 +12126,8 @@ var SidenavComponent = /** @class */ (function () {
             this.socketService.joinRoom(room._id);
             this.selectedRoom.emit(room.title);
         }
-    };
-    SidenavComponent.prototype.ngOnInit = function () {
+    }
+    ngOnInit() {
         this.darkTheme = this.localstorage.get('theme');
         if (this.darkTheme == true) {
             this.document.body.classList.add('dark-theme');
@@ -11239,151 +12137,149 @@ var SidenavComponent = /** @class */ (function () {
         }
         this.user = this.userService.getUser();
         this.rooms = this.userService.getRooms();
-        console.log(this.rooms);
-        console.log(this.user);
-        if (this.rooms.length > 0) {
+        if (this.rooms && this.rooms.length > 0) {
             this.roomId = this.rooms[0]._id;
             this.socketService.joinRoom(this.rooms[0]._id);
             this.selectedRoom.emit(this.rooms[0].title);
         }
-    };
-    SidenavComponent.prototype.ngAfterViewInit = function () {
+        else {
+            this.rooms = [];
+        }
+    }
+    ngAfterViewInit() {
         $('.rooms_list a').click(function () {
             $('.rooms_list a').removeClass('active');
             $(this).addClass('active');
         });
-    };
-    SidenavComponent.prototype.logout = function () {
+    }
+    logout() {
         this.auth.logout();
-    };
-    SidenavComponent.ctorParameters = function () { return [
-        { type: Document, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [_angular_common__WEBPACK_IMPORTED_MODULE_8__["DOCUMENT"],] }] },
-        { type: _services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"] },
-        { type: _services_auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"] },
-        { type: _services_socket_service__WEBPACK_IMPORTED_MODULE_6__["SocketService"] },
-        { type: _angular_material__WEBPACK_IMPORTED_MODULE_4__["MatDialog"] },
-        { type: angular_web_storage__WEBPACK_IMPORTED_MODULE_7__["LocalStorageService"] }
-    ]; };
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])()
-    ], SidenavComponent.prototype, "selectedRoom", void 0);
-    SidenavComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-sidenav',
-            template: __webpack_require__(/*! raw-loader!./sidenav.component.html */ "./node_modules/raw-loader/index.js!./src/app/sidenav/sidenav.component.html"),
-            styles: [__webpack_require__(/*! ./sidenav.component.css */ "./src/app/sidenav/sidenav.component.css")]
-        }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](0, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_angular_common__WEBPACK_IMPORTED_MODULE_8__["DOCUMENT"]))
-    ], SidenavComponent);
-    return SidenavComponent;
-}());
+    }
+};
+SidenavComponent.ctorParameters = () => [
+    { type: Document, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [_angular_common__WEBPACK_IMPORTED_MODULE_8__["DOCUMENT"],] }] },
+    { type: _services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"] },
+    { type: _services_auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"] },
+    { type: _services_socket_service__WEBPACK_IMPORTED_MODULE_6__["SocketService"] },
+    { type: _angular_material__WEBPACK_IMPORTED_MODULE_4__["MatDialog"] },
+    { type: angular_web_storage__WEBPACK_IMPORTED_MODULE_7__["LocalStorageService"] }
+];
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])()
+], SidenavComponent.prototype, "selectedRoom", void 0);
+SidenavComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-sidenav',
+        template: __webpack_require__(/*! raw-loader!./sidenav.component.html */ "./node_modules/raw-loader/index.js!./src/app/sidenav/sidenav.component.html"),
+        styles: [__webpack_require__(/*! ./sidenav.component.css */ "./src/app/sidenav/sidenav.component.css")]
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](0, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_angular_common__WEBPACK_IMPORTED_MODULE_8__["DOCUMENT"]))
+], SidenavComponent);
 
 // manage Brockers (webtraser add)
-var ManageBrockersDialog = /** @class */ (function () {
-    function ManageBrockersDialog() {
+let ManageBrockersDialog = class ManageBrockersDialog {
+    // manage Brockers (webtraser add)
+    constructor() {
         this.addOwn = false;
         this.addFromList = true;
     }
-    ManageBrockersDialog.prototype.onClickOwn = function () {
+    onClickOwn() {
         this.addOwn = false;
         this.addFromList = true;
-    };
-    ManageBrockersDialog.prototype.onClickList = function () {
+    }
+    onClickList() {
         this.addFromList = false;
         this.addOwn = true;
-    };
-    ManageBrockersDialog = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'manage-brockers-dialog',
-            template: __webpack_require__(/*! raw-loader!./manage-brockers-dialog.html */ "./node_modules/raw-loader/index.js!./src/app/sidenav/manage-brockers-dialog.html"),
-            styles: [__webpack_require__(/*! ./sidenav.component.css */ "./src/app/sidenav/sidenav.component.css")]
-        })
-    ], ManageBrockersDialog);
-    return ManageBrockersDialog;
-}());
+    }
+};
+ManageBrockersDialog = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'manage-brockers-dialog',
+        template: __webpack_require__(/*! raw-loader!./manage-brockers-dialog.html */ "./node_modules/raw-loader/index.js!./src/app/sidenav/manage-brockers-dialog.html"),
+        styles: [__webpack_require__(/*! ./sidenav.component.css */ "./src/app/sidenav/sidenav.component.css")]
+    })
+], ManageBrockersDialog);
 
 // preferences dialog
-var PreferencesDialog = /** @class */ (function () {
-    function PreferencesDialog(localstorage) {
+let PreferencesDialog = class PreferencesDialog {
+    constructor(localstorage) {
         this.localstorage = localstorage;
         this.profile = true;
         this.imgURL = this.localstorage.get('imgURL');
     }
-    PreferencesDialog.prototype.ngOnChanges = function () {
-    };
-    PreferencesDialog.prototype.onProfile = function () {
+    ngOnChanges() {
+    }
+    onProfile() {
         this.profile = true;
         this.notification = false;
         this.blockMute = false;
         this.billing = false;
         this.advanced = false;
-    };
-    PreferencesDialog.prototype.onNotification = function () {
+    }
+    onNotification() {
         this.profile = false;
         this.notification = true;
         this.blockMute = false;
         this.billing = false;
         this.advanced = false;
-    };
-    PreferencesDialog.prototype.onBlockMute = function () {
+    }
+    onBlockMute() {
         this.profile = false;
         this.notification = false;
         this.blockMute = true;
         this.billing = false;
         this.advanced = false;
-    };
-    PreferencesDialog.prototype.onBilling = function () {
+    }
+    onBilling() {
         this.profile = false;
         this.notification = false;
         this.blockMute = false;
         this.billing = true;
         this.advanced = false;
-    };
-    PreferencesDialog.prototype.onAdvanced = function () {
+    }
+    onAdvanced() {
         this.profile = false;
         this.notification = false;
         this.blockMute = false;
         this.billing = false;
         this.advanced = true;
-    };
-    PreferencesDialog.prototype.preview = function (files) {
-        var _this = this;
+    }
+    preview(files) {
         if (files.length === 0)
             return;
         var reader = new FileReader();
         reader.readAsDataURL(files[0]);
-        reader.onload = function (_event) {
-            _this.imgURL = reader.result;
-            _this.localstorage.set("imgURL", _this.imgURL);
+        reader.onload = (_event) => {
+            this.imgURL = reader.result;
+            this.localstorage.set("imgURL", this.imgURL);
         };
-    };
-    PreferencesDialog.ctorParameters = function () { return [
-        { type: angular_web_storage__WEBPACK_IMPORTED_MODULE_7__["LocalStorageService"] }
-    ]; };
-    PreferencesDialog = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'preferences-dialog',
-            template: __webpack_require__(/*! raw-loader!./preferences-dialog.html */ "./node_modules/raw-loader/index.js!./src/app/sidenav/preferences-dialog.html"),
-            styles: [__webpack_require__(/*! ./sidenav.component.css */ "./src/app/sidenav/sidenav.component.css")]
-        })
-    ], PreferencesDialog);
-    return PreferencesDialog;
-}());
+    }
+};
+PreferencesDialog.ctorParameters = () => [
+    { type: angular_web_storage__WEBPACK_IMPORTED_MODULE_7__["LocalStorageService"] }
+];
+PreferencesDialog = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'preferences-dialog',
+        template: __webpack_require__(/*! raw-loader!./preferences-dialog.html */ "./node_modules/raw-loader/index.js!./src/app/sidenav/preferences-dialog.html"),
+        styles: [__webpack_require__(/*! ./sidenav.component.css */ "./src/app/sidenav/sidenav.component.css")]
+    })
+], PreferencesDialog);
 
 // invite friend dialog
-var InviteFriendDialog = /** @class */ (function () {
-    function InviteFriendDialog() {
-        this.value = "https://MarketMastersAcademy.echofin.co";
+let InviteFriendDialog = class InviteFriendDialog {
+    // invite friend dialog
+    constructor() {
+        this.value = `https://MarketMastersAcademy.echofin.co`;
     }
-    InviteFriendDialog = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'invite-friend-dialog',
-            template: __webpack_require__(/*! raw-loader!./invite-friend-dialog.html */ "./node_modules/raw-loader/index.js!./src/app/sidenav/invite-friend-dialog.html"),
-            styles: [__webpack_require__(/*! ./sidenav.component.css */ "./src/app/sidenav/sidenav.component.css")]
-        })
-    ], InviteFriendDialog);
-    return InviteFriendDialog;
-}());
+};
+InviteFriendDialog = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'invite-friend-dialog',
+        template: __webpack_require__(/*! raw-loader!./invite-friend-dialog.html */ "./node_modules/raw-loader/index.js!./src/app/sidenav/invite-friend-dialog.html"),
+        styles: [__webpack_require__(/*! ./sidenav.component.css */ "./src/app/sidenav/sidenav.component.css")]
+    })
+], InviteFriendDialog);
 
 
 
@@ -11411,19 +12307,19 @@ module.exports = ".login-container{\n  height: 100vh;\n  width: 100%;\n  backgro
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SignupComponent", function() { return SignupComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
 /* harmony import */ var _services_auth_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../services/auth.service */ "./src/app/services/auth.service.ts");
 /* harmony import */ var _models__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../models */ "./src/app/models/index.ts");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
 
 
 
 
 
 
-var SignupComponent = /** @class */ (function () {
-    function SignupComponent(auth, user, router) {
+let SignupComponent = class SignupComponent {
+    constructor(auth, user, router) {
         this.auth = auth;
         this.user = user;
         this.router = router;
@@ -11435,23 +12331,23 @@ var SignupComponent = /** @class */ (function () {
             cpassword: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]("")
         });
     }
-    SignupComponent.prototype.ngOnInit = function () {
-    };
-    SignupComponent.prototype.registerUser = function () {
-        var userData = this.validateData();
+    ngOnInit() {
+    }
+    registerUser() {
+        let userData = this.validateData();
         if (userData) {
             this.auth.registerUser(userData);
         }
         else {
             console.log(this.errorMessage);
         }
-    };
-    SignupComponent.prototype.validateEmail = function (email) {
+    }
+    validateEmail(email) {
         var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return re.test(String(email).toLowerCase());
-    };
-    SignupComponent.prototype.validateData = function () {
-        var userData = this.useData.value;
+    }
+    validateData() {
+        let userData = this.useData.value;
         var procesData = {
             firstname: "",
             lastname: "",
@@ -11461,10 +12357,10 @@ var SignupComponent = /** @class */ (function () {
             status: 0,
         };
         if (userData.fullname) {
-            var name_1 = userData.fullname.split(" ", 2);
-            procesData.firstname = name_1[0];
-            if (name_1.length > 1) {
-                procesData.lastname = name_1[1];
+            let name = userData.fullname.split(" ", 2);
+            procesData.firstname = name[0];
+            if (name.length > 1) {
+                procesData.lastname = name[1];
             }
         }
         else {
@@ -11493,21 +12389,20 @@ var SignupComponent = /** @class */ (function () {
             return false;
         }
         return procesData;
-    };
-    SignupComponent.ctorParameters = function () { return [
-        { type: _services_auth_service__WEBPACK_IMPORTED_MODULE_3__["AuthService"] },
-        { type: _models__WEBPACK_IMPORTED_MODULE_4__["User"] },
-        { type: _angular_router__WEBPACK_IMPORTED_MODULE_5__["Router"] }
-    ]; };
-    SignupComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-signup',
-            template: __webpack_require__(/*! raw-loader!./signup.component.html */ "./node_modules/raw-loader/index.js!./src/app/signup/signup.component.html"),
-            styles: [__webpack_require__(/*! ./signup.component.css */ "./src/app/signup/signup.component.css")]
-        })
-    ], SignupComponent);
-    return SignupComponent;
-}());
+    }
+};
+SignupComponent.ctorParameters = () => [
+    { type: _services_auth_service__WEBPACK_IMPORTED_MODULE_3__["AuthService"] },
+    { type: _models__WEBPACK_IMPORTED_MODULE_4__["User"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_5__["Router"] }
+];
+SignupComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-signup',
+        template: __webpack_require__(/*! raw-loader!./signup.component.html */ "./node_modules/raw-loader/index.js!./src/app/signup/signup.component.html"),
+        styles: [__webpack_require__(/*! ./signup.component.css */ "./src/app/signup/signup.component.css")]
+    })
+], SignupComponent);
 
 
 
@@ -11537,19 +12432,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MediaUploadDialog", function() { return MediaUploadDialog; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NewSignalDialog", function() { return NewSignalDialog; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _services_socket_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/socket.service */ "./src/app/services/socket.service.ts");
 /* harmony import */ var _services_user_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../services/user.service */ "./src/app/services/user.service.ts");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
-/* harmony import */ var angular_web_storage__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! angular-web-storage */ "./node_modules/angular-web-storage/fesm5/angular-web-storage.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
+/* harmony import */ var angular_web_storage__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! angular-web-storage */ "./node_modules/angular-web-storage/fesm2015/angular-web-storage.js");
 
 
 
 
 
 
-var UnlockchatroomComponent = /** @class */ (function () {
-    function UnlockchatroomComponent(socketService, userService, dialog, localstorage) {
+let UnlockchatroomComponent = class UnlockchatroomComponent {
+    constructor(socketService, userService, dialog, localstorage) {
         this.socketService = socketService;
         this.dialog = dialog;
         this.localstorage = localstorage;
@@ -11564,28 +12459,27 @@ var UnlockchatroomComponent = /** @class */ (function () {
         this.userId = userService.getUserId();
         this.adminImgPath = this.localstorage.get('admin_user_profile');
     }
-    UnlockchatroomComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        this.socketService.onEvent("messageToClients").subscribe(function (message) {
-            _this.messages.push(message.data);
+    ngOnInit() {
+        this.socketService.onEvent("messageToClients").subscribe((message) => {
+            this.messages.push(message.data);
         });
-        this.socketService.onEvent('historyCatchUp').subscribe(function (response) {
-            _this.messages = (response.hasOwnProperty('data') ? response.data : []);
+        this.socketService.onEvent('historyCatchUp').subscribe((response) => {
+            this.messages = (response.hasOwnProperty('data') ? response.data : []);
         });
-    };
-    UnlockchatroomComponent.prototype.onUpload = function (event) {
-        var dialog = this.dialog.open(MediaUploadDialog, {
+    }
+    onUpload(event) {
+        const dialog = this.dialog.open(MediaUploadDialog, {
             width: '598px',
         });
-    };
-    UnlockchatroomComponent.prototype.openNewSignal = function () {
-        var dialog = this.dialog.open(NewSignalDialog, {
+    }
+    openNewSignal() {
+        const dialog = this.dialog.open(NewSignalDialog, {
             width: '598px',
         });
-    };
-    UnlockchatroomComponent.prototype.sendMessage = function () {
+    }
+    sendMessage() {
         if (this.chat.message) {
-            var msg = {
+            let msg = {
                 text: this.chat.message,
                 type: 0,
                 senderId: this.userId
@@ -11593,45 +12487,39 @@ var UnlockchatroomComponent = /** @class */ (function () {
             this.socketService.sendMessage(msg);
             this.chat.message = "";
         }
-    };
-    UnlockchatroomComponent.ctorParameters = function () { return [
-        { type: _services_socket_service__WEBPACK_IMPORTED_MODULE_2__["SocketService"] },
-        { type: _services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"] },
-        { type: _angular_material__WEBPACK_IMPORTED_MODULE_4__["MatDialog"] },
-        { type: angular_web_storage__WEBPACK_IMPORTED_MODULE_5__["LocalStorageService"] }
-    ]; };
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])()
-    ], UnlockchatroomComponent.prototype, "selectedRoom", void 0);
-    UnlockchatroomComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-unlockchatroom',
-            template: __webpack_require__(/*! raw-loader!./unlockchatroom.component.html */ "./node_modules/raw-loader/index.js!./src/app/unlockchatroom/unlockchatroom.component.html"),
-            styles: [__webpack_require__(/*! ./unlockchatroom.component.css */ "./src/app/unlockchatroom/unlockchatroom.component.css")]
-        })
-    ], UnlockchatroomComponent);
-    return UnlockchatroomComponent;
-}());
+    }
+};
+UnlockchatroomComponent.ctorParameters = () => [
+    { type: _services_socket_service__WEBPACK_IMPORTED_MODULE_2__["SocketService"] },
+    { type: _services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"] },
+    { type: _angular_material__WEBPACK_IMPORTED_MODULE_4__["MatDialog"] },
+    { type: angular_web_storage__WEBPACK_IMPORTED_MODULE_5__["LocalStorageService"] }
+];
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])()
+], UnlockchatroomComponent.prototype, "selectedRoom", void 0);
+UnlockchatroomComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-unlockchatroom',
+        template: __webpack_require__(/*! raw-loader!./unlockchatroom.component.html */ "./node_modules/raw-loader/index.js!./src/app/unlockchatroom/unlockchatroom.component.html"),
+        styles: [__webpack_require__(/*! ./unlockchatroom.component.css */ "./src/app/unlockchatroom/unlockchatroom.component.css")]
+    })
+], UnlockchatroomComponent);
 
 // media upload
-var MediaUploadDialog = /** @class */ (function () {
-    function MediaUploadDialog() {
-    }
-    MediaUploadDialog = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'media-upload-dialog',
-            template: __webpack_require__(/*! raw-loader!./media-upload-dialog.html */ "./node_modules/raw-loader/index.js!./src/app/unlockchatroom/media-upload-dialog.html"),
-            styles: [__webpack_require__(/*! ./unlockchatroom.component.css */ "./src/app/unlockchatroom/unlockchatroom.component.css")]
-        })
-    ], MediaUploadDialog);
-    return MediaUploadDialog;
-}());
+let MediaUploadDialog = class MediaUploadDialog {
+};
+MediaUploadDialog = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'media-upload-dialog',
+        template: __webpack_require__(/*! raw-loader!./media-upload-dialog.html */ "./node_modules/raw-loader/index.js!./src/app/unlockchatroom/media-upload-dialog.html"),
+        styles: [__webpack_require__(/*! ./unlockchatroom.component.css */ "./src/app/unlockchatroom/unlockchatroom.component.css")]
+    })
+], MediaUploadDialog);
 
 // new Signal
-var NewSignalDialog = /** @class */ (function () {
-    function NewSignalDialog() {
-    }
-    NewSignalDialog.prototype.ngAfterViewInit = function () {
+let NewSignalDialog = class NewSignalDialog {
+    ngAfterViewInit() {
         $('.editTitle').click(function () {
             $(this).prev().focus();
         });
@@ -11639,16 +12527,15 @@ var NewSignalDialog = /** @class */ (function () {
             $('.btn-group p a.btn').removeClass('active');
             $(this).addClass('active');
         });
-    };
-    NewSignalDialog = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'new-signal-dialog',
-            template: __webpack_require__(/*! raw-loader!./new-signal-dialog.html */ "./node_modules/raw-loader/index.js!./src/app/unlockchatroom/new-signal-dialog.html"),
-            styles: [__webpack_require__(/*! ./unlockchatroom.component.css */ "./src/app/unlockchatroom/unlockchatroom.component.css")]
-        })
-    ], NewSignalDialog);
-    return NewSignalDialog;
-}());
+    }
+};
+NewSignalDialog = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'new-signal-dialog',
+        template: __webpack_require__(/*! raw-loader!./new-signal-dialog.html */ "./node_modules/raw-loader/index.js!./src/app/unlockchatroom/new-signal-dialog.html"),
+        styles: [__webpack_require__(/*! ./unlockchatroom.component.css */ "./src/app/unlockchatroom/unlockchatroom.component.css")]
+    })
+], NewSignalDialog);
 
 
 
@@ -11676,23 +12563,21 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserPanelComponent", function() { return UserPanelComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 
 
-var UserPanelComponent = /** @class */ (function () {
-    function UserPanelComponent() {
+let UserPanelComponent = class UserPanelComponent {
+    constructor() { }
+    ngOnInit() {
     }
-    UserPanelComponent.prototype.ngOnInit = function () {
-    };
-    UserPanelComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-user-panel',
-            template: __webpack_require__(/*! raw-loader!./user-panel.component.html */ "./node_modules/raw-loader/index.js!./src/app/user-panel/user-panel.component.html"),
-            styles: [__webpack_require__(/*! ./user-panel.component.css */ "./src/app/user-panel/user-panel.component.css")]
-        })
-    ], UserPanelComponent);
-    return UserPanelComponent;
-}());
+};
+UserPanelComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-user-panel',
+        template: __webpack_require__(/*! raw-loader!./user-panel.component.html */ "./node_modules/raw-loader/index.js!./src/app/user-panel/user-panel.component.html"),
+        styles: [__webpack_require__(/*! ./user-panel.component.css */ "./src/app/user-panel/user-panel.component.css")]
+    })
+], UserPanelComponent);
 
 
 
@@ -11711,7 +12596,7 @@ __webpack_require__.r(__webpack_exports__);
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
-var environment = {
+const environment = {
     production: false
 };
 /*
@@ -11735,8 +12620,8 @@ var environment = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser-dynamic */ "./node_modules/@angular/platform-browser-dynamic/fesm5/platform-browser-dynamic.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser-dynamic */ "./node_modules/@angular/platform-browser-dynamic/fesm2015/platform-browser-dynamic.js");
 /* harmony import */ var _app_app_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app/app.module */ "./src/app/app.module.ts");
 /* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./environments/environment */ "./src/environments/environment.ts");
 
@@ -11747,7 +12632,7 @@ if (_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].produc
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["enableProdMode"])();
 }
 Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformBrowserDynamic"])().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_2__["AppModule"])
-    .catch(function (err) { return console.error(err); });
+    .catch(err => console.error(err));
 
 
 /***/ }),
@@ -11761,7 +12646,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var zone_js_dist_zone__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! zone.js/dist/zone */ "./node_modules/zone.js/dist/zone.js");
+/* harmony import */ var zone_js_dist_zone__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! zone.js/dist/zone */ "./node_modules/zone.js/dist/zone-evergreen.js");
 /* harmony import */ var zone_js_dist_zone__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(zone_js_dist_zone__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var hammerjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! hammerjs */ "./node_modules/hammerjs/hammer.js");
 /* harmony import */ var hammerjs__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(hammerjs__WEBPACK_IMPORTED_MODULE_1__);
@@ -11883,4 +12768,4 @@ module.exports = __webpack_require__(/*! /Users/puneetsethi/Downloads/developmen
 /***/ })
 
 },[[0,"runtime","vendor"]]]);
-//# sourceMappingURL=main-es5.js.map
+//# sourceMappingURL=main-es2015.js.map
