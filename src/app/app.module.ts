@@ -132,7 +132,7 @@ import { AuthAdminGuard } from './auth.admin.guard';
     AdminComponent,
     TopbarComponent,
     EditContactComponent,
-    DeleteContactComponent
+    DeleteContactComponent,
   ],
   imports: [
     BrowserModule,
@@ -145,6 +145,7 @@ import { AuthAdminGuard } from './auth.admin.guard';
     ReactiveFormsModule,
     AppRoutingModule,
     MatTableExporterModule
+    
   ],
   providers: [
     AuthService,

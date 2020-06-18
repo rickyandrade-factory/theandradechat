@@ -29,7 +29,8 @@ export class AdmincontactsComponent implements OnInit {
   searchActive = false;
   displayedColumns: string[] = ['img', 'fullname', 'email', 'phone', 'subscription', 'type', 'devices', 'registered', 'lastActivity', 'action'];
   // dataSource: MatTableDataSource<any[]>
-  dataSource = new MatTableDataSource([
+  dataSource = new MatTableDataSource(
+    [
     // {firstname: 'mohit kumar', email: 'mohit@gmail.com', phone_number: 8783823748, created_at: '2020-04-11 10:15:11', updated_at:'2020-06-17 10:53:34'},
     // {firstname: 'kuldeep spall', email: 'spallkuldeep@gmail.com', phone_number: 8783823748, created_at: '2020-04-11 10:15:11', updated_at:'2020-06-17 10:53:34'},
     // {firstname: 'johan smith', email: 'smith@gmail.com', phone_number: 8783823748, created_at: '2020-04-11 10:15:11', updated_at:'2020-06-17 10:53:34'},
@@ -116,7 +117,7 @@ export class EditContactComponent implements OnInit {
   user: string;
   contact:any;
   editContacts= new FormGroup({
-    name: new FormControl(this.data.firstname),
+    name: new FormControl(`${this.data.firstname} ${this.data.lastname}`),
     email: new FormControl(this.data.email),
     address: new FormControl(null),
     role: new FormControl(this.data.role_id === 1 ? "Admin" : "User")
