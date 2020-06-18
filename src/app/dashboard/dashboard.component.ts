@@ -10,6 +10,8 @@ import {AdminWidgetService} from '../admin/adminwidget/adminwidget.service';
 import { LocalStorageService } from 'angular-web-storage';
 import { DOCUMENT } from '@angular/common';
 import { Router } from '@angular/router';
+import { AuthService } from './services/auth.service';
+
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -25,26 +27,26 @@ export class DashboardComponent implements OnInit {
   userService: UserService;
 
 
-  ngOnInit(){
-  }
+  ngOnInit(){}
   
 
 
   constructor(
     @Inject(DOCUMENT) private document: Document,
     private router: Router,
+    private auth: AuthService,
     private socketService: SocketService,
     public user: User,
     userService: UserService,
     public dialog: MatDialog,
     private adminWidgetService: AdminWidgetService,
-    private localStorage: LocalStorageService
+    private localStorage: LocalStorageService,
   ) {
     this.chartsDisable= this.localStorage.get('widget');
     this.userService = userService;
     this.socketService.initSocket();
-    this.isAdmin = this.userService.userIsAdmin();
-    console.log(`this.isAdmin: ${this.isAdmin}`);
+    this.isAdmin = this.auth.isAdmin;
+    console.log(`this.isAdmin: ${this.auth.isAdmin}`);
     this.document.body.classList.remove('black-theme');
 
     //for mat-drawer responsive
