@@ -45,7 +45,6 @@ export class DashboardComponent implements OnInit {
     this.userService = userService;
     this.socketService.initSocket();
     this.isAdmin = this.auth.isAdmin;
-    console.log(`this.isAdmin: ${this.auth.isAdmin}`);
     this.document.body.classList.remove('black-theme');
 
     //for mat-drawer responsive
@@ -96,7 +95,6 @@ export class DashboardComponent implements OnInit {
   }
 
   setRoomTitle(roomTitle) {
-    console.log(`roomTitle: ${roomTitle}`);
     this.roomTitle = roomTitle;
   }
 

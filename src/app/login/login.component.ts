@@ -41,13 +41,13 @@ export class LoginComponent implements OnInit {
     let userData = this.validateData();
     if (userData) {
       this.isLoading = true;
-      this.auth.loginUser(userData.email, userData.password).subscribe((data: any) => {
+      this.auth.loginUser(userData.email, userData.password).subscribe((response: any) => {
         this.isLoading = false;
-        if (data.success) {
-          console.log("siuccess------------", data);
-          this.auth.loginSuccess(data);
+        if (response.success) {
+          this.auth.loginSuccess(response);
         } else {
-          this.loginFailed(data);
+          this.isLoading = false;
+          this.loginFailed(response);
         }
       });
     } else {
@@ -55,9 +55,10 @@ export class LoginComponent implements OnInit {
     }
   }
 
-  loginFailed(data: any){
+  loginFailed(response: any){
     this.incorrectLogin = true;
-    this.errorMessageLogin = data.error;
+    this.isValid = false;
+    this.errorMessageLogin = response.error.message;
   }
 
   validateEmail(email) {

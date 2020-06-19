@@ -6,7 +6,7 @@ import { lockeddialogComponent } from './locked-dialog.component';
 import { SocketService } from '../services/socket.service';
 import { LocalStorageService } from 'angular-web-storage';
 import { DOCUMENT } from '@angular/common';
-declare var $:any;
+declare var $: any;
 
 @Component({
   selector: 'app-sidenav',
@@ -30,28 +30,28 @@ export class SidenavComponent implements OnInit {
   };
 
   constructor(@Inject(DOCUMENT) private document: Document,
-  userService: UserService, authService: AuthService,
-     private socketService: SocketService,
-     public dialog : MatDialog,
-     private localstorage: LocalStorageService) {
+    userService: UserService, authService: AuthService,
+    private socketService: SocketService,
+    public dialog: MatDialog,
+    private localstorage: LocalStorageService) {
     this.imgURL = this.localstorage.get('imgURL');
     this.auth = authService;
     this.userService = userService;
-    this.adminImgPath= this.localstorage.get('admin_user_profile');
+    this.adminImgPath = this.localstorage.get('admin_user_profile');
   }
 
-  onDarkTheme(){
-    if(this.darkTheme == true){
+  onDarkTheme() {
+    if (this.darkTheme == true) {
       this.localstorage.set("theme", false);
       this.document.body.classList.remove('dark-theme');
     }
-    else{
+    else {
       this.localstorage.set("theme", true);
       this.document.body.classList.add('dark-theme');
     }
   }
 
-  onManageBrockerDialog(){
+  onManageBrockerDialog() {
     const dialog = this.dialog.open(ManageBrockersDialog, {
       width: '900px',
     });
@@ -63,13 +63,13 @@ export class SidenavComponent implements OnInit {
   openAddFileDialog() {
     const fileNameDialogRef = this.dialog.open(lockeddialogComponent);
   }
-  openPreferencesDialog(){
+  openPreferencesDialog() {
     const dialogRef = this.dialog.open(PreferencesDialog, {
       width: '650px',
     });
   }
 
-  onInviteFriendDialog(){
+  onInviteFriendDialog() {
     const dialogRef = this.dialog.open(InviteFriendDialog, {
       width: '600px',
     });
@@ -85,27 +85,29 @@ export class SidenavComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.darkTheme= this.localstorage.get('theme');
-    if(this.darkTheme == true){
+    this.darkTheme = this.localstorage.get('theme');
+    if (this.darkTheme == true) {
       this.document.body.classList.add('dark-theme');
     }
-    else{
+    else {
       this.document.body.classList.remove('dark-theme');
     }
 
     this.user = this.userService.getUser();
-    this.rooms = this.userService.getRooms();
-    if (this.rooms && this.rooms.length > 0) {
-      this.roomId = this.rooms[0]._id;
-      this.socketService.joinRoom(this.rooms[0]._id);
-      this.selectedRoom.emit(this.rooms[0].title);
-    }else{
-      this.rooms = [];
-    }
+    this.auth.setAllRooms().subscribe((rooms) => {
+      if (rooms && rooms.success && rooms.data.length > 0) {
+        this.rooms = rooms.data;
+        this.roomId = rooms.data[0]._id;
+        this.socketService.joinRoom(rooms.data[0]._id);
+        this.selectedRoom.emit(rooms.data[0].title);
+      } else {
+        this.rooms = [];
+      }
+    });
   }
 
   ngAfterViewInit() {
-    $('.rooms_list a').click(function(){
+    $('.rooms_list a').click(function () {
       $('.rooms_list a').removeClass('active');
       $(this).addClass('active');
     });
@@ -125,15 +127,15 @@ export class SidenavComponent implements OnInit {
   styleUrls: ['./sidenav.component.css']
 })
 export class ManageBrockersDialog {
-  addOwn: boolean= false;
-  addFromList: boolean= true;
-  onClickOwn(){
-    this.addOwn= false;
+  addOwn: boolean = false;
+  addFromList: boolean = true;
+  onClickOwn() {
+    this.addOwn = false;
     this.addFromList = true;
   }
-  onClickList(){
-    this.addFromList= false;
-    this.addOwn= true;
+  onClickList() {
+    this.addFromList = false;
+    this.addOwn = true;
   }
 }
 
@@ -143,52 +145,52 @@ export class ManageBrockersDialog {
   templateUrl: 'preferences-dialog.html',
   styleUrls: ['./sidenav.component.css']
 })
-export class PreferencesDialog{
-  profile:boolean= true;
-  notification:boolean;
-  blockMute:boolean;
-  billing:boolean;
-  advanced:boolean;
+export class PreferencesDialog {
+  profile: boolean = true;
+  notification: boolean;
+  blockMute: boolean;
+  billing: boolean;
+  advanced: boolean;
 
-  constructor(private localstorage: LocalStorageService){
+  constructor(private localstorage: LocalStorageService) {
     this.imgURL = this.localstorage.get('imgURL');
   }
   ngOnChanges() {
   }
-  onProfile(){
-    this.profile= true;
-    this.notification= false;
-    this.blockMute= false;
-    this.billing= false;
-    this.advanced= false;
+  onProfile() {
+    this.profile = true;
+    this.notification = false;
+    this.blockMute = false;
+    this.billing = false;
+    this.advanced = false;
   }
-  onNotification(){
-    this.profile= false;
-    this.notification= true;
-    this.blockMute= false;
-    this.billing= false;
-    this.advanced= false;
+  onNotification() {
+    this.profile = false;
+    this.notification = true;
+    this.blockMute = false;
+    this.billing = false;
+    this.advanced = false;
   }
-  onBlockMute(){
-    this.profile= false;
-    this.notification= false;
-    this.blockMute= true;
-    this.billing= false;
-    this.advanced= false;
+  onBlockMute() {
+    this.profile = false;
+    this.notification = false;
+    this.blockMute = true;
+    this.billing = false;
+    this.advanced = false;
   }
-  onBilling(){
-    this.profile= false;
-    this.notification= false;
-    this.blockMute= false;
-    this.billing= true;
-    this.advanced= false;
+  onBilling() {
+    this.profile = false;
+    this.notification = false;
+    this.blockMute = false;
+    this.billing = true;
+    this.advanced = false;
   }
-  onAdvanced(){
-    this.profile= false;
-    this.notification= false;
-    this.blockMute= false;
-    this.billing= false;
-    this.advanced= true;
+  onAdvanced() {
+    this.profile = false;
+    this.notification = false;
+    this.blockMute = false;
+    this.billing = false;
+    this.advanced = true;
   }
 
   // upload
@@ -211,6 +213,6 @@ export class PreferencesDialog{
   templateUrl: 'invite-friend-dialog.html',
   styleUrls: ['./sidenav.component.css']
 })
-export class InviteFriendDialog{
+export class InviteFriendDialog {
   value = `https://MarketMastersAcademy.echofin.co`
 }

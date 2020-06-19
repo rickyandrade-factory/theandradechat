@@ -21,6 +21,10 @@ export class UserService {
     return this.userModel.getLoginUserId();
   }
 
+  getUserChatId() {
+    return this.userModel.getUserChatId();
+  }
+
   userIsAdmin() {
     return this.userModel.userIsAdmin();
   }

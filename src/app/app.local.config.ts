@@ -12,7 +12,7 @@ export class AppLocalConfig {
     apiUrl: 'http://dev.api.ricky.24x7.cloud/api/v1/',
     nodeServerUrl: 'http://dev.api.ricky.24x7.cloud/',
     // apiUrl: 'http://localhost:3007/api/v1/',
-    // nodeServerUrl: 'http://localhost:3007/api/v1/',
+    // nodeServerUrl: 'http://localhost:3007/',
     name: 'MarketMaster Academy',
     title: 'Communication App with Admin Panel & Dashboard App with Angular 8.0 support',
     version: '1.0.0',
