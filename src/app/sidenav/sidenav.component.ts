@@ -95,15 +95,19 @@ export class SidenavComponent implements OnInit {
 
     this.user = this.userService.getUser();
     this.auth.setAllRooms().subscribe((rooms) => {
-      if (rooms && rooms.success && rooms.data.length > 0) {
-        this.rooms = rooms.data;
-        this.roomId = rooms.data[0]._id;
-        this.socketService.joinRoom(rooms.data[0]._id);
-        this.selectedRoom.emit(rooms.data[0].title);
-      } else {
-        this.rooms = [];
-      }
+      this.setRoomsData(rooms);
     });
+  }
+
+  setRoomsData(rooms) {
+    if (rooms && rooms.success && rooms.data.length > 0) {
+      this.rooms = rooms.data;
+      this.roomId = rooms.data[0]._id;
+      this.socketService.joinRoom(rooms.data[0]._id);
+      this.selectedRoom.emit(rooms.data[0].title);
+    } else {
+      this.rooms = [];
+    }
   }
 
   ngAfterViewInit() {
