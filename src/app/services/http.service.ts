@@ -43,18 +43,29 @@ export class HttpService {
     return this.http.post(this.getEndPoint('registerUser', 'POST'), params);
   }
 
+
+  /**
+   * 
+   * @param params 
+   * node server api calls
+   */
   createNewRoom(params) {
-    return this.http.post(this.getEndPoint('createNewRoom', 'POST'), params);
+    return this.http.post(this.getNodeServerEndPoint('createNewRoom', 'POST'), params);
   }
 
   getRoomsList() {
-    return this.http.post(this.getEndPoint('allRoomsList', 'POST'), {});
+    return this.http.post(this.getNodeServerEndPoint('allRoomsList', 'POST'), {});
   }
 
   deleteChatRoom(roomId) {
-    return this.http.post(this.getEndPoint('deleteChatRoom', 'POST'), roomId);
+    return this.http.post(this.getNodeServerEndPoint('deleteChatRoom', 'POST'), roomId);
   }
 
+
+  /**
+   * 
+   * admin api calls
+   */
   getAllSystemUsers() {
     return this.http.post(this.getEndPoint('getAllSystemUsers', 'POST'), null, this.buildOptions());
   }
@@ -76,12 +87,22 @@ export class HttpService {
     return this.getBaseUrl() + this.getApiEndPoint(string);
   }
 
+  getNodeServerEndPoint(string: string, method: string, queryParam: string = '') {
+    if (method === 'GET') {
+      return this.getBaseUrlNodeServer() + this.getApiEndPoint(string) + '?' + queryParam;
+    }
+    return this.getBaseUrlNodeServer() + this.getApiEndPoint(string);
+  }
+
   getBaseUrl() {
     return this.appConfig.apiUrl;
   }
+  
+  getBaseUrlNodeServer() {
+    return this.appConfig.nodeServerUrl;
+  }
 
   execute(str, data) {
-    console.log(localStorage.getItem(HttpService.localStorageAccessToken));
     const httpOptions = {
       headers: new HttpHeaders().set('Authorization', `Bearer ${localStorage.getItem(HttpService.localStorageAccessToken)}`)
     }
@@ -93,6 +114,7 @@ export class HttpService {
       loginUser: 'login',
       registerUser: 'register',
       createUserAdmin: 'admin/create-user',
+      
       allRoomsList: 'api/rooms',
       deleteChatRoom: 'api/deleteroom',
       createNewRoom: 'api/createroom',

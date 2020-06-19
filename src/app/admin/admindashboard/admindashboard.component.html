@@ -139,19 +139,27 @@
                             <div class="box-header with-border">
                                 <h3 class="box-title">Latest Registrations</h3>
                             </div>
-                            <div class="list-group">
+                            <div class="list-group" [ngClass]="{'ActiveSpinner': showSpinner == true}">
+                                <div class="list-group-item text-center" *ngIf="contactsEmpty">
+                                   <h2>No Contacts Available</h2> 
+                                </div>
                                 <div class="list-group-item" *ngFor="let contact of contacts">
                                     <div class="media">
                                         <div class="media-left">
-                                            <img class="img-circle img-sm" src="{{contact.imgPath}}">
+                                            <img class="img-circle img-sm" *ngIf="contact.imgPath" src="{{contact.imgPath}}">
+                                            <span  class="nickname" *ngIf="!contact.imgPath" [ngStyle]="{'backgroundColor': getRandomColor()}">
+                                                {{contact.firstname | substring}}{{contact.lastname | substring}}
+                                            </span>
                                         </div>
                                         <div class="media-body ng-binding">
-                                            <strong>{{contact.fullname}}</strong><br> {{contact.registered}}
+                                            <strong> {{contact.firstname}} {{contact.lastname}}</strong><br> {{contact.updated_at | date: 'short'}}
                                         </div>
                                     </div>
                                 </div>
+                                <mat-progress-spinner [mode]="mode">
+                                </mat-progress-spinner>
                             </div>
-                            <div class="box-footer">
+                            <div class="box-footer wrap-div">
                                 <a routerLink="../contacts" class="btn btn-sm btn-link pull-right">
                                     View All Users
                                 </a>

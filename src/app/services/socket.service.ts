@@ -30,7 +30,6 @@ export class SocketService {
   public onEvent(event: any): Observable<any> {
     return new Observable<Event>(observer => {
       this.socket.on(event, (data) => {
-        console.log(`recieved data for event : ${event}`);
         observer.next(data)
       });
     });

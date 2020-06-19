@@ -20,8 +20,7 @@ export class User {
   country: string;
 
   getLoginUser() {
-    console.log(localStorage.getItem(HttpService.localStorageUserName).toString());
-    return localStorage.getItem(HttpService.localStorageUserName).toString();
+    return localStorage.getItem(HttpService.localStorageUserName) ? localStorage.getItem(HttpService.localStorageUserName).toString() : localStorage.getItem(HttpService.localStorageUserName);
   }
 
   getLoginUserId() {
@@ -29,6 +28,15 @@ export class User {
       return false;
     } else {
       return JSON.parse(this.getLoginUser()).id;
+    }
+  }
+
+  getUserChatId() {
+    if (this.getLoginUser() === "undefined" || !this.getLoginUser()) {
+      return false;
+    } else {
+      console.log(JSON.parse(this.getLoginUser()), "JSON.parse(this.getLoginUser())");
+      return JSON.parse(this.getLoginUser()).chat_id;
     }
   }
 

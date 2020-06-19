@@ -1,5 +1,7 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import {ContactsService} from '../admincontacts/admincontacts.service'
+import { ProgressSpinnerMode } from '@angular/material';
+import { AuthService } from 'src/app/services/auth.service';
 declare var angular: any;
 
 @Component({
@@ -11,10 +13,13 @@ export class AdmindashboardComponent implements OnInit {
 
   selected= 'option2';
   contacts:any;
-  // constructor() { }
   screenWidth: number;
 
-  constructor(private contactsService: ContactsService) {
+  mode: ProgressSpinnerMode = 'determinate';
+  showSpinner = false;
+  contactsEmpty= true;
+
+  constructor(private contactsService: ContactsService, private auth:AuthService) {
     // set screenWidth on page load
     this.screenWidth = window.innerWidth;
     window.onresize = () => {
@@ -23,10 +28,32 @@ export class AdmindashboardComponent implements OnInit {
     };
   }
 
+  getRandomColor() {
+    var color = Math.floor(0x1000000 * Math.random()).toString(16);
+    return '#' + ('000000' + color).slice(-6);
+  }
+
   ngOnInit() {
-    // this.contactsService.getContacts().subscribe(
-    //   (responseData) => this.contacts= responseData
-    // )
+    this.loadContacts();
+  }
+
+  loadContacts() {
+    this.showSpinner = true;
+    this.mode = 'indeterminate';
+    this.auth.getAllSystemUsers().subscribe((response: any) => {
+      if (response.success) {
+        this.showSpinner = false;
+        this.mode = 'determinate';
+        if (response.data.length > 0) {
+          this.contactsEmpty = false;
+        }
+        this.contacts = response.data;
+        this.contacts.slice(0,3)
+      } else {
+        this.showSpinner = false;
+        this.mode = 'determinate';
+      }
+    });
   }
 
 }

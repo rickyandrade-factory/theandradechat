@@ -26,7 +26,7 @@ export class UnlockchatroomComponent implements OnInit {
     private dialog: MatDialog,
     private localstorage: LocalStorageService) {
     this.imgURL = this.localstorage.get('imgURL');
-    this.userId = userService.getUserId();
+    this.userId = userService.getUserChatId();
     this.adminImgPath= this.localstorage.get('admin_user_profile');
   }
 

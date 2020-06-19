@@ -23,18 +23,27 @@ import { analyzeAndValidateNgModules } from '@angular/compiler';
   styleUrls: ['./admincontacts.component.css']
 })
 export class AdmincontactsComponent implements OnInit {
+  toppingList: string[] = ['Extra cheese', 'Mushroom', 'Onion', 'Pepperoni', 'Sausage'];
+  selected = -1;
 
+  /*checkbox change event*/
+  onChange(event) {
+    console.log(event)
+  }
+  
   mode: ProgressSpinnerMode = 'determinate';
   showSpinner = false;
   searchActive = false;
   displayedColumns: string[] = ['img', 'fullname', 'email', 'phone', 'subscription', 'type', 'devices', 'registered', 'lastActivity', 'action'];
-  // dataSource: MatTableDataSource<any[]>
-  dataSource = new MatTableDataSource([
-    // {firstname: 'mohit kumar', email: 'mohit@gmail.com', phone_number: 8783823748, created_at: '2020-04-11 10:15:11', updated_at:'2020-06-17 10:53:34'},
-    // {firstname: 'kuldeep spall', email: 'spallkuldeep@gmail.com', phone_number: 8783823748, created_at: '2020-04-11 10:15:11', updated_at:'2020-06-17 10:53:34'},
-    // {firstname: 'johan smith', email: 'smith@gmail.com', phone_number: 8783823748, created_at: '2020-04-11 10:15:11', updated_at:'2020-06-17 10:53:34'},
-    // {firstname: 'thomas jordan', email: 'thomas121@gmail.com', phone_number: 8783823748, created_at: '2020-04-11 10:15:11', updated_at:'2020-06-17 10:53:34'}
-  ]);
+  dataSource: MatTableDataSource<any[]>
+  // dataSource = new MatTableDataSource(
+  //   [
+  //   // {firstname: 'mohit kumar', email: 'mohit@gmail.com', phone_number: 8783823748, created_at: '2020-04-11 10:15:11', updated_at:'2020-06-17 10:53:34'},
+  //   // {firstname: 'kuldeep spall', email: 'spallkuldeep@gmail.com', phone_number: 8783823748, created_at: '2020-04-11 10:15:11', updated_at:'2020-06-17 10:53:34'},
+  //   // {firstname: 'johan smith', email: 'smith@gmail.com', phone_number: 8783823748, created_at: '2020-04-11 10:15:11', updated_at:'2020-06-17 10:53:34'},
+  //   // {firstname: 'thomas jordan', email: 'thomas121@gmail.com', phone_number: 8783823748, created_at: '2020-04-11 10:15:11', updated_at:'2020-06-17 10:53:34'}
+  // ]
+  // );
   
     dataSourceEmpty = true;
 
@@ -66,10 +75,14 @@ export class AdmincontactsComponent implements OnInit {
 
   ngOnInit() {
      this.loadContacts();
-    this.dataSource.paginator = this.paginator;
-    this.dataSource.sort = this.sort;
+  
   }
 
+  getRandomColor() {
+    var color = Math.floor(0x1000000 * Math.random()).toString(16);
+    return '#' + ('000000' + color).slice(-6);
+  }
+  
   loadContacts() {
     this.showSpinner = true;
     this.mode = 'indeterminate';
@@ -81,6 +94,8 @@ export class AdmincontactsComponent implements OnInit {
           this.dataSourceEmpty = false;
         }
         this.dataSource = new MatTableDataSource(response.data)
+          this.dataSource.paginator = this.paginator;
+          this.dataSource.sort = this.sort;
       } else {
         this.showSpinner = false;
         this.mode = 'determinate';
@@ -116,7 +131,7 @@ export class EditContactComponent implements OnInit {
   user: string;
   contact:any;
   editContacts= new FormGroup({
-    name: new FormControl(this.data.firstname),
+    name: new FormControl(`${this.data.firstname} ${this.data.lastname}`),
     email: new FormControl(this.data.email),
     address: new FormControl(null),
     role: new FormControl(this.data.role_id === 1 ? "Admin" : "User")

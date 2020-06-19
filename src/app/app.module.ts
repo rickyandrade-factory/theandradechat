@@ -68,6 +68,9 @@ import {ProfileDialog} from './admin/topbar/topbar.component';
 import { AdminComponent } from './admin/admin.component';
 import { TopbarComponent } from './admin/topbar/topbar.component';
 import { AuthAdminGuard } from './auth.admin.guard';
+import {CdkTableModule} from '@angular/cdk/table';
+import { SubstringPipe } from './admin/admindashboard/substring.pipe';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -132,7 +135,8 @@ import { AuthAdminGuard } from './auth.admin.guard';
     AdminComponent,
     TopbarComponent,
     EditContactComponent,
-    DeleteContactComponent
+    DeleteContactComponent,
+    SubstringPipe
   ],
   imports: [
     BrowserModule,
@@ -144,7 +148,9 @@ import { AuthAdminGuard } from './auth.admin.guard';
     MatNativeDateModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    MatTableExporterModule
+    MatTableExporterModule,
+    CdkTableModule
+    
   ],
   providers: [
     AuthService,
