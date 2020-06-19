@@ -69,6 +69,7 @@ import { AdminComponent } from './admin/admin.component';
 import { TopbarComponent } from './admin/topbar/topbar.component';
 import { AuthAdminGuard } from './auth.admin.guard';
 import {CdkTableModule} from '@angular/cdk/table';
+import { SubstringPipe } from './admin/admindashboard/substring.pipe';
 
 @NgModule({
   declarations: [
@@ -135,6 +136,7 @@ import {CdkTableModule} from '@angular/cdk/table';
     TopbarComponent,
     EditContactComponent,
     DeleteContactComponent,
+    SubstringPipe
   ],
   imports: [
     BrowserModule,

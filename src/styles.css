@@ -19,6 +19,20 @@ img.appicon {
 .mini-sidebar img.appicon {
   display: block;
 }
+span.nickname {
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: flex;
+  padding: 9px 0px;
+  text-transform: uppercase;
+  border-radius: 100%;
+  background: #000;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+}
 .mat-tooltip {
   color: yellow;
 }
