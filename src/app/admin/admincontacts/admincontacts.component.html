@@ -155,7 +155,7 @@
       <ng-container matColumnDef="typeSearch">
         <th mat-header-cell *matHeaderCellDef>
           <mat-form-field *ngIf="searchActive">
-            <mat-select (selectionChange)="applyFilter($even.value)" placeholder="Select Type">
+            <mat-select (keyup)="applyFilter($event.target.value)" placeholder="Select Type">
               <mat-option value="Admin">Admin</mat-option>
               <mat-option value="Instructor">Instructor</mat-option>
               <mat-option value="Moderator">Moderator</mat-option>
@@ -194,7 +194,7 @@
       No data available
     </div>
 
-    <mat-paginator [pageSizeOptions]="[10, 25, 50, 100]"></mat-paginator>
+    <mat-paginator [pageSizeOptions]="[5, 25, 50, 100]"></mat-paginator>
     <mat-progress-spinner [mode]="mode">
     </mat-progress-spinner>
   </div>

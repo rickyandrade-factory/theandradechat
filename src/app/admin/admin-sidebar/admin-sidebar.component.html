@@ -1,11 +1,13 @@
 <a class="text-center" routerLink="/">
     <span class="logo-mini">
         <img class="navbar-brand-logo" src="assets/circle-chat7.png" style="max-width: 130px;">
+        <img class="navbar-brand-logo appicon" src="assets/appicon_cc.png" style="max-width: 50px;margin: 10px auto;">
     </span>
 </a>
 <div id="team-wrapper" header-company-sidebar=""
     style="position:static; min-width: 300px; padding: 10px;margin-bottom: 4px;border: none;">
     <img class="sidebar-avatar usr_img" src="assets/mini-logo.png" *ngIf="!adminImgPath" (click)="openteamavatar()">
+
     <img class="sidebar-avatar usr_img" src="{{adminImgPath}}" *ngIf="adminImgPath" (click)="openteamavatar()">
     <div class="teamName" title="MarketMastersAcademy">
         <h5 class="ng-binding">MarketMastersAcademy</h5>

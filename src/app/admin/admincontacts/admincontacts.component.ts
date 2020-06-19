@@ -23,7 +23,14 @@ import { analyzeAndValidateNgModules } from '@angular/compiler';
   styleUrls: ['./admincontacts.component.css']
 })
 export class AdmincontactsComponent implements OnInit {
+  toppingList: string[] = ['Extra cheese', 'Mushroom', 'Onion', 'Pepperoni', 'Sausage'];
+  selected = -1;
 
+  /*checkbox change event*/
+  onChange(event) {
+    console.log(event)
+  }
+  
   mode: ProgressSpinnerMode = 'determinate';
   showSpinner = false;
   searchActive = false;
@@ -82,8 +89,8 @@ export class AdmincontactsComponent implements OnInit {
           this.dataSourceEmpty = false;
         }
         this.dataSource = new MatTableDataSource(response.data)
-        this.dataSource.paginator = this.paginator;
-        this.dataSource.sort = this.sort;
+          this.dataSource.paginator = this.paginator;
+          this.dataSource.sort = this.sort;
       } else {
         this.showSpinner = false;
         this.mode = 'determinate';

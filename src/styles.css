@@ -10,6 +10,15 @@ body{
   height:100vh;
   overflow:hidden;
 }
+.mini-sidebar mat-sidenav-content{
+  margin-left:51px!important;
+}
+img.appicon {
+  display: none;
+}
+.mini-sidebar img.appicon {
+  display: block;
+}
 .mat-tooltip {
   color: yellow;
 }
