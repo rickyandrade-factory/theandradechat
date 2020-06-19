@@ -68,6 +68,8 @@ import {ProfileDialog} from './admin/topbar/topbar.component';
 import { AdminComponent } from './admin/admin.component';
 import { TopbarComponent } from './admin/topbar/topbar.component';
 import { AuthAdminGuard } from './auth.admin.guard';
+import {CdkTableModule} from '@angular/cdk/table';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -144,7 +146,8 @@ import { AuthAdminGuard } from './auth.admin.guard';
     MatNativeDateModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    MatTableExporterModule
+    MatTableExporterModule,
+    CdkTableModule
     
   ],
   providers: [
